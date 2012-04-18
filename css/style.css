@@ -1,3 +1,7 @@
+html {
+    background:#F4F4F4;
+}
+
 body {
 	margin: 0px;
 	padding: 0px;
@@ -5,7 +9,7 @@ body {
 	color: #333;
 	text-rendering: optimizeLegibility;
 	font-size:15px;
-	line-height:1.5;
+	line-height:1.6;
 }
 
 h1 {
@@ -17,29 +21,38 @@ h1 {
 h2 {
     font-weight:normal;
     font-size:2em;
-    margin:0.5em 0 0.5em;
+    margin:1em 0 0.5em;
 }
 
 h3 {
     font-weight:normal;
     font-size:1.5em;
-    margin:1em 0 0.5em;
+    margin:2em 0 0.8em;
 }
 
 h4 {
     font-size:1.2em;
-    margin: 1.8em 0 0.5em;
+    margin: 2em 0 0.5em;
 }
 
 p {
     font-size:15px;
-    line-height:1.4;
     margin-bottom:1em;
+    line-height:1.5;
 }
 
 ul li {
     margin-bottom:0.5em;
     line-height:1.5;
+}
+
+a {
+    color:#E0330C;
+}
+
+a:hover {
+  color:#E0330C;
+  text-decoration:underline;  
 }
 
 header {
