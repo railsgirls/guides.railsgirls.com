@@ -1,4 +1,3 @@
-source:      ./_guides
 destination: ./_site
 auto:        false
 lsi:         false
