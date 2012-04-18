@@ -11,9 +11,9 @@ To build apps and other things with Ruby on Rails, we need to setup some softwar
 
 Follow the instructions for your operating system. If you hit into any problems, don&#8217;t panic. Inform us on at the event and we can solve it together.
 
-* <a href="#setup_for_os_x">Setup for OS X</a>
-* <a href="#setup_for_windows">Setup for Windows</a>
-* <a href="#setup_for_ubuntu">Setup for Ubuntu</a>
+* [Setup for OS X](#setup_for_os_x)
+* [Setup for Windows](#setup_for_windows)
+* [Setup for Ubuntu](#setup_for_ubuntu)
 
 <hr />
 
