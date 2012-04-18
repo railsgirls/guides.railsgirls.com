@@ -1,9 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<html>
-	<head>
+<!doctype html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
 		<title>{{ page.title }} - Rails Girls</title>
+		<!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="/css/boostrap.css">
+        <link rel="stylesheet" href="/css/style.css">
 	</head>
 	<body>
-		{{ content }}
+	    <header>
+	        <a id="logo" href="/"><img src="/img/railsgirls-logo.png" alt="Rails Girls Guides" /></a>
+            <nav>
+            </nav>
+	    </header>
+	    
+	    <article>
+		    {{ content }}
+		</article>
+		
+		<footer>
+		    Rails girls
+		</footer>
 	</body>
 </html>
