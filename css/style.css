@@ -4,7 +4,8 @@ body {
     background:#fff;
 	color: #333;
 	text-rendering: optimizeLegibility;
-	font-size:14px;
+	font-size:15px;
+	line-height:1.5;
 }
 
 h1 {
@@ -26,7 +27,19 @@ h3 {
 }
 
 h4 {
-    margin: 1em 0 0.5em;
+    font-size:1.2em;
+    margin: 1.8em 0 0.5em;
+}
+
+p {
+    font-size:15px;
+    line-height:1.4;
+    margin-bottom:1em;
+}
+
+ul li {
+    margin-bottom:0.5em;
+    line-height:1.5;
 }
 
 header {
