@@ -1,0 +1,203 @@
+---
+layout: default
+title: Rails Girls App Tutorial
+permalink: app.html
+---
+
+# Rails Girls Tutorial
+      
+[**Install Rails**](/install)
+
+
+## 0: Get to know the tools
+
+* Texteditor (Komodo Edit) is for writing code and editing files
+* Terminal / Command Prompt is for starting the rails server and running commands
+* Web browser is for viewing your application
+
+
+## 1: Creating the application
+
+We are going to create app called railsgirls.
+
+Open Terminal/Command Prompt:
+
+* OS X: Open Spotlight, type *Terminal* and click appearing *Terminal* options.
+* Windows: Click Start-menu and search for *Command Prompt* click *Command Prompt with Ruby on Rails*.
+
+Type commands:
+
+<pre><code><span class="ps1">$</span> mkdir projects
+<span class="ps1">$</span> cd projects
+<span class="ps1">$</span> rails new railsgirls
+<span class="ps1">$</span> cd railsgirls
+<span class="ps1">$</span> rails s</code></pre>
+
+Open [http://localhost:3000](http://localhost:3000) in browser.
+
+CTRL-C to exit the server in Terminal/Command Prompt.
+
+**Coach:** Quick explanation about what each command does. What was generated? What does the server do. Talk about MVC.
+
+
+## 2: Create Idea scaffold
+
+We are using Rails&#8217; scaffolds to generate a starting point that allows us to list, add, remove, edit, and view things; in our case ideas.
+
+<pre><code><span class="ps1">$</span> rails generate scaffold idea name:string description:text picture:string
+<span class="ps1">$</span> rake db:migrate
+<span class="ps1">$</span> rails s</code></pre>
+
+Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in browser.
+
+CTRL-C exits the server when you have clicked around for a little.
+
+**Coach:** What is a scaffold. What are migrations.
+
+
+## 3: Design
+
+Design doesn&#8217;t look nice. Let&#8217;s do something about it. We&#8217;ll use Twitter&#8217;s Bootstrap project give us nicer default styles really easily.
+
+Open app/views/layouts/application.html.erb and add on top of
+
+<pre><code>&lt;%= stylesheet_link_tag &quot;application&quot; %&gt;</code></pre>
+
+the line
+
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;http://railsgirls.com/assets/bootstrap.css&quot;&gt;</code></pre>
+
+and swap
+
+<pre><code>&lt;%= yield %&gt;</code></pre>
+
+for
+
+<pre><code>&lt;div class=&quot;container&quot;&gt;
+    &lt;%= yield %&gt;
+&lt;/div&gt;</code></pre>
+
+Let&#8217;s also add topbar and footer to the layout and style those and the ideas table.
+
+To the application.html.erb under <code>&lt;body&gt;</code> add:
+
+<pre><code>&lt;div class=&quot;navbar navbar-fixed-top&quot;&gt;
+    &lt;div class=&quot;navbar-inner&quot;&gt;
+        &lt;div class=&quot;container"&gt;
+            &lt;a class=&quot;brand&quot; href=&quot;/&quot;&gt;The Idea app&lt;/a&gt;
+            &lt;ul class=&quot;nav&quot;>
+                &lt;li class=&quot;active"&gt;&lt;a href=&quot;/ideas&quot;&gt;Ideas&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+and before <code>&lt;/body&gt;</code> add:
+
+<pre><code>&lt;footer&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        Rails Girls 2012
+    &lt;/div&gt;
+&lt;/footer&gt;</code></pre>
+
+Open app/assets/stylesheets/application.css and add to the bottom:
+
+<pre><code>#logo { 
+    font-size: 20px;
+    font-family: &quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;
+    float: left;
+    padding: 10px;
+}
+body { padding-top: 100px; }
+footer { margin-top: 100px; }
+table, td, th { vertical-align: middle !important; border: none !important; }
+th { border-bottom: 1px solid #DDD !important; }
+td.picture { width: 140px; }
+td.picture img { width: 140px; }</code></pre>
+
+**Coach:** Talk a little about CSS and layouts.
+
+
+## 4: Adding picture uploads
+
+We need to install additional library to add image processing.
+
+Open Gemfile in the project and add
+
+<pre><code>gem &#39;carrierwave&#39;</code></pre>
+
+under the line
+
+<pre><code>gem &#39;sqlite3&#39;</code></pre>
+
+**Coach:** Tell what libraries are and why they are used. Maybe few words about Open Source?
+
+Now we generate the needed code for picture handling. In the Terminal/Command Prompt run:
+
+<pre><code><span class="ps1">$</span> bundle
+<span class="ps1">$</span> rails generate uploader Picture</code></pre>
+
+Open app/models/idea.rb and add
+
+<pre><code>mount_uploader :picture, PictureUploader</code></pre>
+
+under the line
+
+<pre><code>class Idea &lt; ActiveRecord::Base</code></pre>
+
+Open app/views/ideas/_form.html.erb
+
+<pre><code>&lt;%= f.text_field :picture %&gt;</code></pre>
+
+to
+
+<pre><code>&lt;%= f.file_field :picture %&gt;</code></pre>
+
+and
+
+<pre><code>&lt;%= form_for(@idea) do |f| %&gt;</code></pre>
+
+to
+
+<pre><code>&lt;%= form_for(@idea, :html =&gt; {:multipart =&gt; true}) do |f| %&gt;</code></pre>
+
+The view doesn&#8217;t look nice, it only shows a path to the file, so let&#8217;s fix it
+
+Open app/views/ideas/show.html.erb and change
+
+<pre><code>&lt;%= @idea.picture %&gt;</code></pre>
+
+to
+
+<pre><code>&lt;%= image_tag(@idea.picture_url, :width =&gt; 600) if @idea.picture.present? %&gt;</code></pre>
+
+**Coach:** Talk a little about HTML.
+
+
+## 5: Finetune the routes
+
+If you try to open [http://localhost:3000](http://localhost:3000) it still shows the default page. Let&#8217;s make it redirect to the ideas page.
+
+Run in the Terminal/Command Prompt:
+
+<pre><code><span class="ps1">$</span> rm public/index.html</code></pre>
+
+Then open config/routes.rb and add to the second line of the file
+
+<pre><code>root :to =&gt; redirect(&quot;/ideas&quot;)</code></pre>
+
+**Coach:** Talk about routes.
+
+
+## What next?
+
+* Add design using HTML &amp; CSS
+* Add ratings
+* Use CoffeeScript (or JavaScript) to add interaction
+* Add proper picture resizing to make loading the pictures faster
+      
+
+## Additional Guides
+
+* GUIDE 1: [Add commenting by Janika Liiv](http://janikaliiv.eu/homework/)
+* GUIDE 2: [Put your app online with Heroku by Terence Lee](https://gist.github.com/2413351)
