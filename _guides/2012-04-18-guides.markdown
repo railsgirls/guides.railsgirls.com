@@ -1,0 +1,33 @@
+---
+layout: default
+title: Guides
+permalink: guides.html
+---
+# The How to Guide
+
+## Hosting your first Rails Girls event
+ 
+Our aim is to give tools for women to understand technology. The Rails Girls events do this by providing a great first experience on building the Internet. 
+
+Rails Girls was founded in end of 2010 in Helsinki. Originally intended as a onetime event, we never thought to see so many local chapters all around the world! This guide has been put together to help you get started.
+
+Please contact us at contact@railsgirls.com if you want to organise a local chapter. The roadmap for future events can be seen at [www.railsgirls.com](http://railsgirls.com).
+
+
+### The Basics
+Rails Girls events are non-profit. We don’t charge the participants and do not pay for coaches or speakers. Participants don’t need any previous knowledge about programming and there are no age-limitations. All the participants need is a laptop and some curiosity.
+      
+The two-day event includes a lot of small group working and short focused talks on programming, design and web. No panel discussions or podium-talks - the spirit should be informal and hands-on. The more you can remove abstractions and add inclusivity the better.
+
+#### Rails Girls philosophy
+
+* Show sparks, personality and keep in mind the big picture. Explain, repeat and always tie what your telling into a larger context.
+* Internet was made by people and it doesn’t break by a little tinkering. Continuously show the human side: encourage coaches to talk about open source communities, their programming idols and their aspirations.
+* Copy-pasting rules. Programming per ce isn’t central - you can't really learn to speak chinese in one day, in a similar manner you can only learn the basic vocabulary and expressions in coding. The goal of every event is to make something visible!
+* Girls run this world! But also women, ladies, even boys are allowed in. More than semantics we're interested in a mindset. Both founders we're born in the Spice Girls era, they don't see the word girl as condescending or cutesy-cute.
+
+#### Materials:
+
+* [Speakerdeck](http://speakerdeck.com/u/railsgirls)
+  
+### Program
