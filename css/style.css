@@ -2,9 +2,31 @@ body {
 	margin: 0px;
 	padding: 0px;
     background:#fff;
-	color: #390c00;
+	color: #333;
 	text-rendering: optimizeLegibility;
 	font-size:14px;
+}
+
+h1 {
+    font-weight:normal;
+    font-size:3em;
+    margin:0.5em 0 1em;
+}
+
+h2 {
+    font-weight:normal;
+    font-size:2em;
+    margin:0.5em 0 0.5em;
+}
+
+h3 {
+    font-weight:normal;
+    font-size:1.5em;
+    margin:1em 0 0.5em;
+}
+
+h4 {
+    margin: 1em 0 0.5em;
 }
 
 header {
@@ -54,6 +76,10 @@ footer {
   background:#F4F4F4;
   line-height:1.5;
   text-align:center;
+}
+
+article.container {
+    padding:40px 0;
 }
 
 footer a {

@@ -6,18 +6,22 @@
 		<!--[if lt IE 9]>
         <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        <link rel="stylesheet" href="/css/boostrap.css">
+        <link rel="stylesheet" href="/css/bootstrap.css">
         <link rel="stylesheet" href="/css/style.css">
 	</head>
 	<body>
 	    <header>
-	        <a id="logo" href="/"><img src="/img/railsgirls-logo.png" alt="Rails Girls Guides" /></a>
-            <nav>
-            </nav>
+	        <div class="container">
+    	        <a id="logo" href="/"><img src="/img/railsgirls-logo.png" alt="Rails Girls Guides" /></a>
+                <nav>
+                </nav>
+            </div>
 	    </header>
 	    
-	    <article>
+	    <article class="container">
+	        <div class="span10">
 		    {{ content }}
+		    </div>
 		</article>
 		
 		<footer>
