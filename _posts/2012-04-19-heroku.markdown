@@ -71,7 +71,7 @@ In this case "evening-sky-7498" is your app name.
 Next we need to push our code to heroku by typing `git push heroku master`. You'll see push output like the following:
 
 {% highlight sh %}
-ounting objects: 134, done.
+Counting objects: 134, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (115/115), done.
 Writing objects: 100% (134/134), 35.29 KiB, done.
