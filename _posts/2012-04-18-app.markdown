@@ -178,9 +178,13 @@ to
 
 If you try to open [http://localhost:3000](http://localhost:3000) it still shows the default page. Let&#8217;s make it redirect to the ideas page.
 
-Run in the Terminal/Command Prompt:
+On OS X and Linux, in the Terminal run:
 
 <pre><code><span class="ps1">$</span> rm public/index.html</code></pre>
+
+In Windows, in the Command Prompt run:
+
+<pre><code><span class="ps1"></span> del public\index.html</code></pre>
 
 Then open config/routes.rb and add to the second line of the file
 
