@@ -35,9 +35,9 @@ Picture 2
  
 **Step 3.** Download and install these developer tools for OS X depending of your system version number.
  
-* [Installer for 10.7](https://github.com/downloads/kennethreitz/osx-gcc-installer/GCC-10.7-v2.pkg) <span class="muted">(273Mb)</span></li> 
+* [Installer for 10.7](https://github.com/downloads/kennethreitz/osx-gcc-installer/GCC-10.7-v2.pkg) <span class="muted">(273Mb)</span>
  
-* [Installer for 10.6](https://github.com/downloads/kennethreitz/osx-gcc-installer/GCC-10.6.pkg) <span class="muted">(273Mb)</span></li> 
+* [Installer for 10.6](https://github.com/downloads/kennethreitz/osx-gcc-installer/GCC-10.6.pkg) <span class="muted">(273Mb)</span>
 
 **Step 4.** After the installer has run, open Terminal.app. Click the Spotlight (magnifying glass icon in the top right corner), type *Terminal.app* and click the option that appears (Picture 3).
 
