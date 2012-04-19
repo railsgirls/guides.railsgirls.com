@@ -93,7 +93,7 @@ for
 
 Let&#8217;s also add topbar and footer to the layout and style those and the ideas table.
 
-To the application.html.erb under <code>&lt;body&gt;</code> add:
+To the application.html.erb under `<body>` add:
 
 {% highlight html %}
 <div class="navbar navbar-fixed-top">
@@ -108,7 +108,7 @@ To the application.html.erb under <code>&lt;body&gt;</code> add:
 </div>
 {% endhighlight %}
 
-and before <code>&lt;/body&gt;</code> add:
+and before `</body>` add:
 
 {% highlight html %}
 <footer>
