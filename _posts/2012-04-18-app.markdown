@@ -200,4 +200,4 @@ Then open config/routes.rb and add to the second line of the file
 ## Additional Guides
 
 * GUIDE 1: [Add commenting by Janika Liiv](http://janikaliiv.eu/homework/)
-* GUIDE 2: [Put your app online with Heroku by Terence Lee](https://gist.github.com/2413351)
+* GUIDE 2: [Put your app online with Heroku by Terence Lee](/heroku)
