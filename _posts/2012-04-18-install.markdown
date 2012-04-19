@@ -7,9 +7,9 @@ permalink: install.html
 # Setup recipe for Rails Girls
 <span class="muted">Cooking time: 5min active / 15-30min passive</span>
 
-To build apps and other things with Ruby on Rails, we need to setup some software and developer environment for your computer.
+To build apps and other things with Ruby on Rails, we need to setup some software and the developer environment for your computer.
 
-Follow the instructions for your operating system. If you hit into any problems, don&#8217;t panic. Inform us on at the event and we can solve it together.
+Follow the instructions for your operating system. If you hit into any problems, don&#8217;t panic. Inform us at the event and we can solve it together.
 
 * [Setup for OS X](#setup_for_os_x)
 * [Setup for Windows](#setup_for_windows)
@@ -21,7 +21,9 @@ Follow the instructions for your operating system. If you hit into any problems,
  
 First we need to install general tools needed to install other developer software.
 
-**Step 1.** Lets check the version of the operating system. Click the Apple menu and choose *About this Mac* (Picture 1).
+**Step 1.** Lets check the version of the operating system.
+
+Click the Apple menu and choose *About this Mac* (Picture 1).
 
 ![Apple menu](./images/1.png "Apple menu")
 
@@ -35,9 +37,9 @@ Picture 2
  
 **Step 3.** Download and install these developer tools for OS X depending of your system version number.
  
-* [Installer for 10.7](https://github.com/downloads/kennethreitz/osx-gcc-installer/GCC-10.7-v2.pkg) <span class="muted">(273Mb)</span></li> 
+* [Installer for 10.7](https://github.com/downloads/kennethreitz/osx-gcc-installer/GCC-10.7-v2.pkg) <span class="muted">(273Mb)</span>
  
-* [Installer for 10.6](https://github.com/downloads/kennethreitz/osx-gcc-installer/GCC-10.6.pkg) <span class="muted">(273Mb)</span></li> 
+* [Installer for 10.6](https://github.com/downloads/kennethreitz/osx-gcc-installer/GCC-10.6.pkg) <span class="muted">(273Mb)</span>
 
 **Step 4.** After the installer has run, open Terminal.app. Click the Spotlight (magnifying glass icon in the top right corner), type *Terminal.app* and click the option that appears (Picture 3).
 
@@ -45,14 +47,17 @@ Picture 2
 
 Picture 3
  
-**Step 5.** Now copy and paste this line the Terminal and press Enter. Enjoy the text flying on the screen, it will take quite some time (approximately 30 minutes). Installer might ask for your administrator password. Grabbing a refreshing drink before starting is encouraged!
+**Step 5.** Now copy and paste this line in the Terminal and press Enter. Enjoy the text flying on the screen, it will take quite some time (approximately 30 minutes). The installer might ask for your administrator password. Grabbing a refreshing drink before starting is encouraged!
 
-<pre><code>bash &lt; &lt;(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-osx.sh)</code></pre> 
+{% highlight sh %}
+bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-osx.sh)
+{% endhighlight %} 
         
  ![You've done it](images/complete.png "You've done it")
+
 Now if everything went right, you should have a working Ruby on Rails programming setup. Congrats!
         
-**Final step.** Install a text editor to edit code files. For the workshop we recommend free code editor Komodo Edit.
+**Final step.** Install a text editor to edit code files. For the workshop we recommend the free code editor Komodo Edit.
 
 * [Download Komodo Edit and install it.](http://www.activestate.com/komodo-edit/downloads)
 
@@ -62,7 +67,7 @@ Now if everything went right, you should have a working Ruby on Rails programmin
  
 Download [RailsInstaller](http://rubyforge.org/frs/download.php/75346/railsinstaller-2.0.0.exe) and run it. Click through the installer using the default options.
  
-You also need a text editor to edit code files. For the workshop we recommend free code editor Komodo Edit.
+You also need a text editor to edit code files. For the workshop we recommend the free code editor Komodo Edit.
 
 * [Download the Komodo Edit and install it.](http://www.activestate.com/komodo-edit/downloads)
  
@@ -72,10 +77,12 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 ## Setup for Ubuntu
 
-To install Ruby on Rails development environment you just need to copy and paste this line the Terminal and press Enter. Enjoy the text flying on the screen, it will take quite some time. Grabbing a refreshing drink before starting is encouraged.
+To install Ruby on Rails development environment you just need to copy and paste this line in the Terminal and press Enter. Enjoy the text flying on the screen, it will take quite some time. Grabbing a refreshing drink before starting is encouraged.
  
-<pre><code>bash &lt; &lt;(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)</code></pre> 
+{% highlight sh %}
+bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
+{% endhighlight %} 
 
-You also need a text editor to edit code files. For the workshop we recommend free code editor Komodo Edit.
+You also need a text editor to edit code files. For the workshop we recommend the free code editor Komodo Edit.
 
 * [Download Komodo Edit and install it.](http://www.activestate.com/komodo-edit/downloads)
