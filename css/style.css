@@ -120,6 +120,7 @@ footer a {
 
 .home {
     list-style:none;
+    margin:0;
 }
 
 .home li {

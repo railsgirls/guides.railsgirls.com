@@ -22,7 +22,7 @@ View the guides at http://guides.railsgirls.com or clone this repo and install &
 
 ## Twitter
 
-For updates and more follow [®railsgirls](https://twitter.com/railsgirls)
+For updates and more follow [@railsgirls](https://twitter.com/railsgirls)
 
 ## Blog 
 
