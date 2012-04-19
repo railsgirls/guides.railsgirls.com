@@ -1,0 +1,63 @@
+---
+layout: default
+title: Rails Girls on Heroku
+permalink: heroku.html
+---
+
+### Get Heroku
+
+Follow steps 1 through 3 of the [quickstart guide](https://devcenter.heroku.com/articles/quickstart) to sign up, install the toolbelt, and login.
+
+### Deploying your app
+
+#### Updating our database
+
+First, we need to get our database to work on Heroku, which uses a different database. Please change the following in the Gemfile:
+
+```ruby
+gem 'sqlite3'
+```
+
+to
+
+```ruby
+group :development do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+end
+```
+
+Run `bundle install --without production` to setup your dependencies.
+
+#### Version Control
+
+We need to add our code to version control. You can do this by running the following in the terminal:
+
+```
+git init
+git add .
+git commit -m "initial commit"
+```
+
+__COACHES__: This would be a good time to talk about version control systems and git.
+
+#### Deploying
+
+We need to create our heroku app by typing `heroku create --stack cedar` in the terminal and see something like this:
+
+```
+Creating evening-sky-7498... done, stack is cedar
+http://evening-sky-7498.herokuapp.com/ | git@heroku.com:evening-sky-7498.git
+Git remote heroku added
+```
+
+In this case "evening-sky-7498" is your app name.
+
+Next we need to push our code to heroku by typing `git push heroku master`
+
+Next we need to migrate our database like we did locally: `heroku run rake db:migrate`
+
+You can now hit the app based on the url. For this example app, you can go to http://evening-sky-7498.herokuapp.com/
+
