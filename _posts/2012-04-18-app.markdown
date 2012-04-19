@@ -228,7 +228,7 @@ rm public/index.html
 
 In Windows, in the Command Prompt run:
 
-{% highlight sh %}
+{% highlight bat %}
 del public\index.html
 {% endhighlight %}
 
