@@ -15,8 +15,8 @@ Please contact us at [contact@railsgirls.com](mailto:contact@railsgirls.com) if 
 
 
 ### The Basics
-Rails Girls events are non-profit. We don’t charge the participants and do not pay for coaches or speakers. Participants don’t need any previous knowledge about programming and there are no age-limitations. All the participants need is a laptop and some curiosity.
-
+Rails Girls events are non-profit. We don’t charge the participants and do not pay for coaches or speakers. Participants don’t need any previous knowledge about programming and there are no age-limitations. All the participants need is a laptop and some curiosity. 
+  
 The two-day event includes a lot of small group working and short focused talks on programming, design and web. No panel discussions or podium-talks - the spirit should be informal and hands-on. The more you can remove abstractions and add inclusivity the better.
 
 #### Rails Girls philosophy
@@ -25,10 +25,6 @@ The two-day event includes a lot of small group working and short focused talks 
 * Internet was made by people and it doesn’t break by a little tinkering. Continuously show the human side: encourage coaches to talk about open source communities, their programming idols and their aspirations.
 * Copy-pasting rules. Programming per ce isn’t central - you can't really learn to speak chinese in one day, in a similar manner you can only learn the basic vocabulary and expressions in coding. The goal of every event is to make something visible!
 * Girls run this world! But also women, ladies, even boys are allowed in. More than semantics we're interested in a mindset. Both founders we're born in the Spice Girls era, they don't see the word girl as condescending or cutesy-cute.
-
-#### Materials:
-
-* [Speakerdeck](http://speakerdeck.com/u/railsgirls)
 
 ### Program
 
@@ -40,101 +36,93 @@ Every Rails Girls event starts with an installation fest where the setup is pre-
 * Vocabulary of the web: developing a basic understanding of what components make a web application. Understanding the ABCs of coding: strings, methods, variables, arrays, exclamations, chaining, hashed, symbols, blocks.. as well as the tools (terminal, browser, text editor). Creating a conceptual understanding of webs building blocks: programming languages, frameworks, databases, infrastructure.
 * Have an idea of how to move forward in the programming world: both online and offline.
 
-#### Example program
+### Example programme
 
-##### Friday evening: Installation
+Every Rails Girls event starts with an installation fest where the setup is pre-installed to the girls computers.
 
-###### 19:00 - 21:00 Installations and getting to know each other
+The installation fest can include short talks, but the main point is to offer some sparkling wine, get everything set for the next day and the girls to know each other. The timeframe is tentative - you know your audience and what suits them best. We've hosted events both during weekend and weekdays. 
 
-Have enough coaches to help with installation problems. Have a coach-table where problematic computers can be brought to. Some installations will fail: be prepared to set girls in pairs, don't use endless amounts of time.
+#### Friday evening: Installation
 
-Go through the program for the next days, introduce the coaches. Maybe say a few words about programming in general
+19:00 - 21:00 Installations and getting to know each other
+*Hint*: Have a coach-table where problematic computers can be brought to. 
 
-Try to speak a little with everyone. Sparkling wine helps!
+Some installations will fail: be prepared to set girls in pairs, don't use endless amounts of time.
 
-###### 20:00 - 20:30 Designing the web
+Decorate the place with balloons and posters. Make together a fun <a href="http://open.spotify.com/user/lindaliukas/playlist/1fgkUFCFDrSn621kf4iHhr">playlists</a> for the evening. 
 
-How to approach web app design. Ask for a local designer or ux-person to give a talk on designing web apps. The idea is to do a couple of easy prototyping exercises, underlining that ideas should be simplified and drawing your ideas first is always cheaper and faster than coding.
+Come up with activities to break the ice: ask the girls to write why they are attending the event on post-its or to draw and describe their dream web app. 
 
-__Tips:__ decorate the place with balloons and posters. Make together a fun [playlists](http://open.spotify.com/user/lindaliukas/playlist/1fgkUFCFDrSn621kf4iHhr) for the evening! Come up with activities to break the ice: ask the girls to write why they are attending the event on post-its or to draw and describe their dream web app.
+21 -> Coach dinner
+Go through the application with the coaches on a dinner. 
 
-##### Saturday:
 
-###### 09:00 - 10:00 Registration and coffee
+#### Saturday: Workshop
 
-Reserve enough time for people to mingle and to solve any problems there might be with installations. Set up a table for name badges (with teams assigned) and goodie bags. Take everyones e-mails as they come in!
+09:00 - 10:00 Registration and coffee
+*Hint* Reserve enough time for people to mingle and to solve any problems there might be with installations. Give out workbooks, collect acronyms for the Bento exercise. 
 
-Set up a bowl where girls can leave their acronyms for the [Bentobox exercise](/.).
+10:00 - 10:10 Welcoming words
+*Hint* Mention sponsors, show what we'll build, tell what programming is. 
 
-###### 10:00 - 10:10 Welcoming words
+10:30 - 11:00 UX workshop
 
-Say a few friendly words: why we are here, what the girls can look forward to learning. Showing what we’ll build and how you can do many things around one simple idea.
+11:00 - 11:30 Introduction to programming
+*Hint* Ask one of the coaches to do this. Explain why learning Ruby basics is important even though they'll be using Rails.
 
-###### 10:15 - 11:15 Introduction to programming
+Themes to cover:
++ The difference between dynamic and static websites: what are web apps?
++ What are programming languages? What is Rails? 
++ The tools we’ll be using: browser, terminal, code editor, folder structure
 
-A basic lecture on programming. Ask one of the coaches to do this - let him or her prepare in advance. The other coaches should also comment. Encourage early on a participative and open athmosphere where asking questions is ok. See also [tips for coaches](/.).
+Show & tell with <a href="http://tryruby.org">tryruby.org</a>, first three-four exercises all together. 
 
-* The difference between dynamic and static websites: what are web apps?
-* What are programming languages? What is Rails?
-* The tools we’ll be using: browser, terminal, code editor, folder structure
-* Show & tell with [tryruby.org](http://tryruby.org)
-
-__Tips:__ walk through slowly the [tryruby.org](http://www.tryruby.org) exercises so that the girls can follow on their computers. First three-four chapters might be enough. Write down the terms you use, stop when there are questions. Explain why learning Ruby basics is important even though they'll be using Rails.
-
-###### 11:30 - 13:00 Workshop time
-
-Going through (slowly!) the curriculum at [railsgirls.com/app](http://railsgirls.com/app). Stop to explain what you’re doing and what the different concepts mean. It might be useful for the girls to have a printed version of the app structure they can easily follow.
+11:30 - 13:00 Workshop time
+Going through (slowly!) the curriculum at <a href="http://railsgirls.com/app">railsgirls.com/app</a>. Stop to explain what you’re doing and what the different concepts mean. 
 
 Try to aim for simple explanations even with the cost of accuracy. You don’t need to talk about all underlining concepts. Just try to answer questions when they arise, or move on if they’re too hard or out of scope. You are not here to teach perfect coding skills but to show how to get stuff done. One has to learn how to build web apps before learning how to do it well.
 
+Concepts to cover:
++ Rails Generators
++ Scaffolds: Rails App Structure
++ Gem Management
++ MVC, REST/Resources
++ Models and Active Record
++ Controllers and ActionController
++ Views and ERB
 
-__Concepts to cover:__
+*Tips:* Coaches are people too. They are doing this for the first time too. Teaching might be hard and intimidating, so remember to be available to help coaches or groups with difficult situations or just provide support and encouragement.
 
-* Rails Generators
-* Scaffolds: Rails App Structure
-* Gem Management
-* MVC, REST/Resources
-* _If time:_
-* Models and Active Record
-* Controllers and ActionController
-* Views and ERB
+13:00 - 14:00 Lunch
 
-__Tips:__ Coaches are people too. They are doing this for the first time too. Teaching might be hard and intimidating, so remember to be available to help coaches or groups with difficult situations or just provide support and encouragement.
+14:00 - 14:30 Bentobox exercise
+Putting technical jargon into a context with a conceptual model called Bentobox. 
 
-###### 13:00 - 14:00 Lunch
+Two exercises: 1) Going through the 10 technical concepts with the physical Bentobox boards.  2) Going through the words the girls have themselves submitted with the coaches. 
 
-Lunch tables can have table topics, such as Rails, HTML5 etc. that the girls and coaches can use as discussion starter.
++ [Bentobox slidedeck](http://speakerdeck.com/u/railsgirls/p/rails-girls-bentobox-exercise)
++ [Instruction video](https://vimeo.com/390496322)
 
-###### 14:00 - 14:30 Bentobox exercise
+14:30 - 18:00 Workshop time. 
 
-Putting technical jargon into a context with a conceptual model called Bentobox.
+Time to continue working on the applications. Monitor the situation: when it seems like people have a hard time concentrating, have the coaches or other speakers give quick lightning talks. 
 
-Two exercises:
+Example topics for lighting talks: 
++ Real (female) programmers telling what their career has been like.
++ Design: UX & UI. Making mockups together either with paper or computer. 
++ Fun ways of explaining technical concepts and recent frameworks: what is CoffeeScript explained in 80s pop songs? How would you describe GitHub? What coding and creative writing have in common?
++ Show us something real:  don’t speak in abstractions, be spesific and tell stories.
 
-1. Going through the 10 technical concepts with the physical Bentobox boards.
-2. Going through the words the girls have themselves submitted with the coaches.
+Once everyone has finished their app, there is time to extend the application by modifying the CSS, implementing commenting systems etc. Allow enough time for experimentation. 
 
-* [Download the example slidedeck](http://speakerdeck.com/u/railsgirls/p/rails-girls-bentobox-exercise)
-* [Watch the instruction video](https://vimeo.com/390496322)
+19:00 After party
+*Hint:*
+Invite everyone, also the local developers, boys, those who weren't accepted, to join! 
 
+[Fork this project on GitHub][github], add yourself, and send us a pull request.
 
-###### 14:30 - 18:00 Workshop time.
-
-Time to continue working on the applications. Monitor the situation: when it seems like people have a hard time concentrating, have the coaches or other speakers give quick lightning talks.
-
-__Example topics for lighting talks:__
-
-* Real (female) programmers telling what their career has been like.
-* Design: UX & UI. Making mockups together either with paper or computer.
-* Fun ways of explaining technical concepts and recent frameworks: what is CoffeeScript explained in 80s pop songs? How would you describe GitHub? What coding and creative writing have in common?
-* All kind of creativity is strongly supported!
-* Show us something real:  don’t speak in abstractions, be spesific and tell stories.
-
-Once everyone has finished their app, there is time to extend the application by modifying the CSS, implementing commenting systems etc. Allow enough time for experimentation. At the end, have participants present projects and encourage them to push their apps into Heroku. Motivate into action: mention the next event.
-
-###### 19:00 After party
-
-Invite everyone, also the local developers, boys, those who weren't accepted, to join!
+[self]: http://guides.railsgirls.com/ "The Rails Girls Guide"
+[github]: https://github.com/railsgirls/railsgirls.github.com "Fork on GitHub"
 
 #### Materials
 
@@ -150,30 +138,24 @@ While the event is underway, remember to take pictures, collect tweets and ask q
 #### How to find local developers?
 
 * Google. Almost every country has some sort of a Rails or Ruby community (sometimes called Ruby Brigade or Ruby Tuesday). Look for [Hackernews](http://news.ycombinator.com) meetups, [GitHub](http://www.github.com) contributors or [Dribbble](http://dribbble) draftees. Find the local open source scene. Surf the technology conferences (here's [a list](http://rubythere.com/) of Rubythemed ones, but others are cool too) and meetups at [meetup.com](http://www.meetup.com). Call software development houses, big and small. Don't forget IRC and podcasts!
+
 * Check out hashtags like #rails #ruby and #opensource from [Twitter search](https://twitter.com/#!/search-home). To find people from say close to NYC, use the following search operators "near:NYC within:15mi". Some countries have specific hashtags like #Rubysur and #RubyArg they use, remember to ask!
+
 * Startup community. Startup Digest is a good beginning point for events and communities.
+
 * Often there are one or two key persons who will be able to introduce you further, the technology world is surprisingly connected.
 
 #### How to find participants?
 
 * Use social media: Facebook, Twitter & local networks such as Weibo. Friends, girlfriends, co-workers!
+
 * Local [Girls in Tech](https://twitter.com/#!/gitweet), [DevChix](http://www.devchix.com/), [Geek Girl](http://geekgirlmeetup.com/) chapters etc. Check out also [Meetup.com](http://www.meetup.com/). Twitter lists like @anitaborg's [Tech Women Programs](https://twitter.com/#!/anitaborg_org/tech-women-programs) and similar.
+
 * Think outside the box: universities, book clubs, music stores, design agencies, [Etsy](http://www.etsy.com). We want girls who are interested in technology, but they can still have very varied backgrounds.
 
 #### How to get press?
 
 One of the big aims of Rails Girls is to make it more mainstream for girls to build the web. That’s why we like to engage the local press and bring front the participants and their enthusiasm. We’d be happy to help prepare a press-release for the media. Check out [railsgirls.com/press](http://railsgirls.com/press) for more.
-
-#### l word about branding
-
-Software is a craft, showing. Telling the human side. We encourage our coaches to talk about open source, the fierece figures in programming, the magical stories of \_why's dissapearance or David's hear.
-
-We want to redefine technology. Pinboard. More Sophie Coppola than Barbie.
-
-#### Materials
-
-* Programming 101 slides
-* Bentobox exercise
 
 ### Sponsorships
 
@@ -181,9 +163,31 @@ Rails Girls talks to a demographic that might be hard to reach other ways: women
 
 We are looking for sponsors who are active participants in the local technology scene, whether it’s a startup or a big corporation, a non-profit or a government organization.
 
-Also non-traditional technology companies can be approached: kids stores, universities, women's magazines, beverage brands etc. They all should however have some affiliation or interest in technology.
+Also non-traditional technology companies can be approached: kids stores, universities, women's magazines, beverage brands etc. They all should however have some affiliation or interest in technology. 
 
-Sponsors should be approved beforehand by the core team and are operated fully by the local organizing team. For a breakdown of costs, check out the template.  Rails Girls should always be kept non-profit: if there's money left, it should be used to support the future activities of the attendees.
+Rails Girls should always be kept non-profit: if there's money left, it should be used to support the future activities of the attendees.
+
+### How much does it cost? 
+
+The costs approximated below for 30 participants, 10 coaches - but they may vary a lot. It's easiest to try to get a local sponsor to pay the bills directly or partner with someone who has a set account to handle money. These calculations are done in Finland, in €, where food & alchol is very expensive, but spaces are often free. All in all you should be able to organise an event easily for a little over a thousand euros.  				
+
++ **Sparkling wine + cups** for the installation festival. 6 bottles, 6 euros a bottle. 36 euros. 
+
++ **Breakfast Coffee**, a bun. 40 times around 5 euros. 200 euros
+
++ **Lunch.** Catered lunch can be around 15 euros, but you can do with a lot less by cooking yourself.  Add some water and coffee (50 euros). 650 euros. 		
+
++ **Marketing materials.** Printing workbooks, ordering stickers, posters and other swag. Again, varies a lot, maybe you can use someones printer, but at least around 200 should be reserved.
+
++ **Coach dinner.** At a restaurant or homemade. A way to say thank you to the coaches for their volunteer work. Around 20 euros per head. 200 euros. 		
+
++ **Space.** Try to get this one sponsored/free, they can be really expensive. Often startups are co-operative and can offer their space for use (esp. on weekends).	0 - XXXX euros. 
+
++ **Afterparty.** It's nice if you can throw a good party with free beverages, but can also be done low-key in a local bar or on set/ in the park!	0 - XXXX euros. 	
+
++ **Travel expenses.**	If you don't have any RG-team members in your country, consider inviting us over. We don't do fancy hotels, promise! Same if you want to invite speakers to your event. 	0 - XXX		
+
++ *Total 1286 euros*.
 
 __What do sponsors get?__
 
@@ -192,17 +196,13 @@ __What do sponsors get?__
 * Possibility to speak for 5 minutes
 * In most events there are official pictures taken that the sponsors can use afterwards
 
-We don’t give out the participant info, but sponsors are free to hang out at the event and we’ll be sure to include a short message to the thank you -note. Sponsor swag may be included in the goodie bag to an extent: however it should be something tasteful, not trashy and related to girls.
+Don’t give out the participant info, but sponsors are free to hang out at the event and be sure to include a short message to the thank you -note. Sponsor swag may be included in the goodie bag to an extent: however it should be something tasteful, not trashy and related to girls.
 
-#### Materials
+---
 
-* Example letter for sponsors
-* Example budget
+## FAQ
 
-
-### FAQ
-
-__Who can organise a Rails Girls workshop?__
+#### Who can organise a Rails Girls workshop?
 
 Anyone. What we look for is a group of people dedicated in making this a stellar first experience in the world of web making for girls. What we hope to see is some (not all) of the following:
 
@@ -214,7 +214,7 @@ Anyone. What we look for is a group of people dedicated in making this a stellar
 Start by filling out [railsgirls.com/inyourcity](http://railsgirls.com/inyourcity) and someone from our team will be in contact
 
 
-__What kind of venue is needed?__
+#### What kind of venue is needed?
 
 We recommend choosing a venue with a built-in infrastructure for around 30-50 persons. For a programming event, this means:
 * High-speed, tested Internet. There’s going to be over 30 computers online all the time. Add to that mobilephones, streaming music, funny videos and you get the picture!
@@ -225,7 +225,7 @@ We recommend choosing a venue with a built-in infrastructure for around 30-50 pe
 
 Ask where local developer meetings are usually hosted. Often co-working spaces are also willing to negotiate deals to gain some visibility among new people.
 
-__What is expected from the coaches?__
+#### What is expected from the coaches?
 
 Rails Girls events are organized around small groups, ideally maximum of 4-5 persons per one coach. The coaches don’t need to be hardcore experts on Rails - basic knowledge and willingness to explain trumps expertise. We are looking for people who like answering questions and can keep an upbeat and positive atmosphere through a period of 8 hours!
 
@@ -238,7 +238,7 @@ In addition, we encourage coaches to come up with additional exercises for the g
 * Want to become a Rails Girls coach?
 * Letter for the coaches
 
-__What materials do I get?__
+#### What materials do I get?
 
 Each Rails Girls event gets a specific webpage.
 
@@ -250,7 +250,7 @@ So far we've had
 * Reflectors
 * Tattoos
 
-__How do I choose attendees?__
+#### How do I choose attendees?
 
 In the form we ask only two questions: do you have any previous background in coding and why would you be a good participant for Rails Girls
 
@@ -262,7 +262,7 @@ After selecting participants we generally split them into three groups:
 2. people with some front-end experience (HTML, CSS, Javascript) and
 3. people with a little experience in programming or a background in computer sciences. You can use the different name-tags for each group if you want to (rubies, foxes, octocats, rails..)
 
-__What happens after the event?__
+#### What happens after the event?
 
 Inviting real developers to coach is Rails Girls sessions not only gives the participants a chance for hands-on education, but also makes the barrier to enter the technology world lower. How to keep the girls coding?
 
@@ -271,44 +271,15 @@ Inviting real developers to coach is Rails Girls sessions not only gives the par
 * Invite everyone to the Facebook Group where they can ask questions.
 * Invite the girls together again within a month. You can host these meetups at the Rails Girls global meetup page http://www.meetup.com/Rails-Girls/ - we’ll be happy to promote events. However, it doesn't matter under which brand you want to continue meeting - the important thing'
 
-__What is the little girl all about?__
+---
 
-Her name is Ruby, she's Linda's brainchild and a future rolemodel
-
-Occasionally we use illustrations to help humanize the brand on our websites and designs. Plus, we think they look purdy. Here, then, is everything you need to know about Mozilla and pictures.
-
-This group of fun, loveable monsters brings extra personality to the brand beyond our logo while bringing a little smile to your face. We tend to use them sparingly, but when applied correctly, they liven up text and generally bring some fun to a page.
-
-So much text, what if I just want to scrape all of this and
-Okay, totally up! Make it your own.
-Our idea
-
-If you do localization work for Mozilla, first of all, thank you. Second of all, thank you. We’re incredibly lucky to have community members who undertake this important and difficult task.
-
-Localization isn’t an extra step in our communication process; it is the pt we can't do a thing about those we don't even know exist. So tell us what recurring issues you've experienced, what works and what doesn't — it could be a language thing, a cultural issue or something to do with tone (especially when dealing with languages that have both formal and informal forms). Whatever it is, please pass it on.
-
-__Communications__
-
-* Do you have any previous experience in coding? What kind?
-* What excites you most about technology?
-* Why did you apply for Rails Girls?
-* Why do you want to learn how to code?
-* What would you like to build with your new skills?
-* What was the hardest part in this workshop?
-* Would you recommend Rails Girls to your friends? Why?
-* Is there something that you feel was missing in the event?
-
-Is there something else I could help with before the event?
-
-#### Materials
-
-### Checklist
+## Checklist
 
 This is a small checklist for your event. Rails Girls can be thrown together in a matter of weeks, but to truly have time to make a good event, prepare at least two months. Not all of these steps are of course mandatory and they are here just to help you remember.
 
-#### Before the event:
+### Before the event:
 
-* Fill in the railsgirls.com/inyourcity application and the team will contact you!
+* Fill in the [application](railsgirls.com/inyourcity) and the team will contact you!
 * Start working with the project plan template on Google Docs
 * Decide dates and set a venue
 * Reach out for the local coaches - try finding five people who commit to taking part

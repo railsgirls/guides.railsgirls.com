@@ -55,6 +55,11 @@ a:hover {
   text-decoration:underline;  
 }
 
+hr {
+    border-top-color:#ddd;
+    margin:1em 0;
+}
+
 header {
   height:70px;
   color:#fff;
