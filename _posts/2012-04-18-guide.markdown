@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Guides
-permalink: guides.html
+permalink: guide.html
 ---
 # The How to Guide
 
