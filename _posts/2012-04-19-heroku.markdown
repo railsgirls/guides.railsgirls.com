@@ -4,7 +4,7 @@ title: Rails Girls on Heroku
 permalink: heroku.html
 ---
 
-## Put Your App Online With Heroku
+# Put Your App Online With Heroku
 
 *Created by Terence Lee, [@hone02](https://twitter.com/hone02)*
 

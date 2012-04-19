@@ -36,7 +36,7 @@ h4 {
 }
 
 p {
-    font-size:15px;
+    font-size:16px;
     margin-bottom:1em;
     line-height:1.5;
 }
@@ -57,7 +57,7 @@ a:hover {
 
 hr {
     border-top-color:#ddd;
-    margin:1em 0;
+    margin:2em 0;
 }
 
 header {
@@ -110,7 +110,7 @@ footer {
 }
 
 article.container {
-    padding:40px 0;
+    padding:20px 0;
 }
 
 footer a {
@@ -164,4 +164,14 @@ footer a {
 .home p {
     font-size:18px;
     margin-left:90px;
+}
+
+.hero-links em {
+    margin:0 0.8em;
+    color:#999;
+}
+
+.hero {
+    padding:20px 320px 20px 0;
+    background:url(../img/guides-hero.png) right 80px no-repeat;
 }
