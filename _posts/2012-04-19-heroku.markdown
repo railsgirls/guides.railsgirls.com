@@ -14,32 +14,32 @@ Follow steps 1 through 3 of the [quickstart guide](https://devcenter.heroku.com/
 
 First, we need to get our database to work on Heroku, which uses a different database. Please change the following in the Gemfile:
 
-```ruby
+{% highlight ruby %}
 gem 'sqlite3'
-```
+{% endhighlight %}
 
 to
 
-```ruby
+{% highlight ruby %}
 group :development do
   gem 'sqlite3'
 end
 group :production do
   gem 'pg'
 end
-```
+{% endhighlight %}
 
 Run `bundle install --without production` to setup your dependencies.
 
-#### Version Control
+#### Version Control Systems
 
 We need to add our code to version control. You can do this by running the following in the terminal:
 
-```
+{% highlight sh %}
 git init
 git add .
 git commit -m "initial commit"
-```
+{% endhighlight %}
 
 __COACHES__: This would be a good time to talk about version control systems and git.
 
@@ -48,11 +48,11 @@ __COACHES__: This would be a good time to talk about version control systems and
 
 We need to create our heroku app by typing `heroku create --stack cedar` in the terminal and see something like this:
 
-```
+{% highlight sh %}
 Creating evening-sky-7498... done, stack is cedar
 http://evening-sky-7498.herokuapp.com/ | git@heroku.com:evening-sky-7498.git
 Git remote heroku added
-```
+{% endhighlight %}
 
 In this case "evening-sky-7498" is your app name.
 
