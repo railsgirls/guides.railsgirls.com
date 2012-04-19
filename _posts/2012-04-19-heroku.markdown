@@ -8,7 +8,7 @@ permalink: heroku.html
 
 Follow steps 1 through 3 of the [quickstart guide](https://devcenter.heroku.com/articles/quickstart) to sign up, install the toolbelt, and login.
 
-__COACHES__: Talk about the benefits of deploying to Heroku vs traditional servers.
+__COACH__: Talk about the benefits of deploying to Heroku vs traditional servers.
 
 ### Preparing your app
 
@@ -33,7 +33,7 @@ end
 
 Run `bundle install --without production` to setup your dependencies.
 
-__COACHES__: You can talk about RDBMS and the different ones out there.
+__COACH__: You can talk about RDBMS and the different ones out there.
 
 #### Version Control Systems
 
@@ -45,7 +45,7 @@ git add .
 git commit -m "initial commit"
 {% endhighlight %}
 
-__COACHES__: This would be a good time to talk about version control systems and git.
+__COACH__: This would be a good time to talk about version control systems and git.
 
 
 ### Deploying your app
