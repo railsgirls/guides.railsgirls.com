@@ -9,7 +9,7 @@ permalink: guide.html
 
 Our aim is to give tools for women to understand technology. The Rails Girls events do this by providing a great first experience on building the Internet.
 
-Rails Girls was founded in end of 2010 in Helsinki. Originally intended as a onetime event, we never thought to see so many local chapters all around the world! This guide has been put together to help you get started.
+Rails Girls was founded in end of 2010 in Helsinki. Originally intended as a onetime event, we never thought we'd see so many local chapters all around the world! This guide has been put together to help you get started.
 
 Please contact us at [contact@railsgirls.com](mailto:contact@railsgirls.com) if you want to organise a local chapter. The roadmap for future events can be seen at [www.railsgirls.com](http://railsgirls.com).
 
@@ -23,38 +23,32 @@ The two-day event includes a lot of small group working and short focused talks 
 
 * Show sparks, personality and keep in mind the big picture. Explain, repeat and always tie what you're telling into a larger context.
 * Internet was made by people and it doesn’t break by a little tinkering. Continuously show the human side: encourage coaches to talk about open source communities, their programming idols and their aspirations.
-* Copy-pasting rules. Programming per ce isn’t central - you can't really learn to speak chinese in one day, in a similar manner you can only learn the basic vocabulary and expressions in coding. The goal of every event is to make something visible!
-* Girls run this world! But also women, ladies, even boys are allowed in. More than semantics we're interested in a mindset. Both founders we're born in the Spice Girls era, they don't see the word girl as condescending or cutesy-cute.
+* Copy-pasting rules. Programming per se isn’t central - you can't really learn to speak chinese in one day, in a similar manner you can only learn the basic vocabulary and expressions in coding. The goal of every event is to make something visible!
+* Girls run this world! But also women, ladies, even boys are allowed in. More than semantics we're interested in a mindset. Both founders were born in the Spice Girls era, they don't see the word girl as condescending or cutesy-cute.
 
-### Program
+### Example Program
 
-Every Rails Girls event starts with an installation fest where the setup is pre-installed to the girls computers. See [railsgirls.com/install](http://railsgirls.com/install) for readymade instructions. The installation fest can include short talks, but the main point is to offer some sparkling wine, get everything set for the next day and the girls to know each other. The timeframe is tentative - you know your audience and what suits them best. We've hosted events both during weekend and weekdays. Also, doing two evenings (4PM - 22 PM) might be a more suitable solution for your community needs.
+Every Rails Girls event starts with an installation-fest where the setup is pre-installed to the girls computers. See [railsgirls.com/install](http://railsgirls.com/install) for readymade instructions. The installation-fest can include short talks, but the main point is to offer some sparkling wine, get everything set for the next day and the girls to know each other. The timeframe is tentative - you know your audience and what suits them best. We've hosted events both during weekend and weekdays. Also, doing two evenings (4PM - 22 PM) might be a more suitable solution for your community needs.
 
 #### Learning objectives of the workshop:
 
-* Understanding what is the difference between dynamic and static web page.
-* Vocabulary of the web: developing a basic understanding of what components make a web application. Understanding the ABCs of coding: strings, methods, variables, arrays, exclamations, chaining, hashed, symbols, blocks.. as well as the tools (terminal, browser, text editor). Creating a conceptual understanding of webs building blocks: programming languages, frameworks, databases, infrastructure.
+* Understanding the difference between a dynamic and static web page.
+* Vocabulary of the web: developing a basic understanding of what components make a web application. Understanding the ABCs of coding: strings, methods, variables, arrays, exclamations, chaining, hashed, symbols, blocks.. as well as the tools (terminal, browser, text editor). Creating a conceptual understanding of the web's building blocks: programming languages, frameworks, databases, infrastructure.
 * Have an idea of how to move forward in the programming world: both online and offline.
-
-### Example programme
-
-Every Rails Girls event starts with an installation fest where the setup is pre-installed to the girls computers.
-
-The installation fest can include short talks, but the main point is to offer some sparkling wine, get everything set for the next day and the girls to know each other. The timeframe is tentative - you know your audience and what suits them best. We've hosted events both during weekend and weekdays. 
 
 #### Friday evening: Installation
 
 19:00 - 21:00 Installations and getting to know each other
-*Hint*: Have a coach-table where problematic computers can be brought to. 
+*Hint*: Have a coach table where problematic computers can be brought. 
 
 Some installations will fail: be prepared to set girls in pairs, don't use endless amounts of time.
 
-Decorate the place with balloons and posters. Make together a fun <a href="http://open.spotify.com/user/lindaliukas/playlist/1fgkUFCFDrSn621kf4iHhr">playlists</a> for the evening. 
+Decorate the place with balloons and posters. Put a fun <a href="http://open.spotify.com/user/lindaliukas/playlist/1fgkUFCFDrSn621kf4iHhr">playlist</a> together for the evening. 
 
 Come up with activities to break the ice: ask the girls to write why they are attending the event on post-its or to draw and describe their dream web app. 
 
 21 -> Coach dinner
-Go through the application with the coaches on a dinner. 
+Go through the application with the coaches during dinner. 
 
 
 #### Saturday: Workshop
@@ -78,9 +72,9 @@ Themes to cover:
 Show & tell with <a href="http://tryruby.org">tryruby.org</a>, first three-four exercises all together. 
 
 11:30 - 13:00 Workshop time
-Going through (slowly!) the curriculum at <a href="http://railsgirls.com/app">railsgirls.com/app</a>. Stop to explain what you’re doing and what the different concepts mean. 
+Going (slowly!) through the curriculum at <a href="http://railsgirls.com/app">railsgirls.com/app</a>. Stop to explain what you’re doing and what the different concepts mean. 
 
-Try to aim for simple explanations even with the cost of accuracy. You don’t need to talk about all underlining concepts. Just try to answer questions when they arise, or move on if they’re too hard or out of scope. You are not here to teach perfect coding skills but to show how to get stuff done. One has to learn how to build web apps before learning how to do it well.
+Try to aim for simple explanations even with the cost of accuracy. You don’t need to talk about all underlying concepts. Just try to answer questions when they arise, or move on if they’re too hard or out of scope. You are not here to teach perfect coding skills but to show how to get stuff done. One has to learn how to build web apps before learning how to do it well.
 
 Concepts to cover:
 + Rails Generators
@@ -111,7 +105,7 @@ Example topics for lighting talks:
 + Real (female) programmers telling what their career has been like.
 + Design: UX & UI. Making mockups together either with paper or computer. 
 + Fun ways of explaining technical concepts and recent frameworks: what is CoffeeScript explained in 80s pop songs? How would you describe GitHub? What coding and creative writing have in common?
-+ Show us something real:  don’t speak in abstractions, be spesific and tell stories.
++ Show us something real: don’t speak in abstractions, be specific and tell stories.
 
 Once everyone has finished their app, there is time to extend the application by modifying the CSS, implementing commenting systems etc. Allow enough time for experimentation. 
 
@@ -133,17 +127,17 @@ Invite everyone, also the local developers, boys, those who weren't accepted, to
 
 Every Rails Girls workshop will get a custom website at railsgirls.com/city where the information is collected and then stored. For past cities, see [railsgirls.com/events](railsgirls.com/events)
 
-While the event is underway, remember to take pictures, collect tweets and ask questions from the participants. We love to write blog posts about the speaker and participant experiences. Also a list of the coaches is required.
+While the event is underway, remember to take pictures, collect tweets and ask questions of the participants. We love to write blog posts about the speaker and participant experiences. A list of the coaches is also required.
 
 #### How to find local developers?
 
-* Google. Almost every country has some sort of a Rails or Ruby community (sometimes called Ruby Brigade or Ruby Tuesday). Look for [Hackernews](http://news.ycombinator.com) meetups, [GitHub](http://www.github.com) contributors or [Dribbble](http://dribbble) draftees. Find the local open source scene. Surf the technology conferences (here's [a list](http://rubythere.com/) of Rubythemed ones, but others are cool too) and meetups at [meetup.com](http://www.meetup.com). Call software development houses, big and small. Don't forget IRC and podcasts!
+* Google. Almost every country has some sort of a Rails or Ruby community (sometimes called Ruby Brigade or Ruby Tuesday). Look for [Hackernews](http://news.ycombinator.com) meetups, [GitHub](http://www.github.com) contributors or [Dribbble](http://dribbble) draftees. Find the local open source scene. Surf the technology conferences (here's [a list](http://rubythere.com/) of Ruby-themed ones, but others are cool too) and meetups at [meetup.com](http://www.meetup.com). Call software development houses, big and small. Don't forget IRC and podcasts!
 
-* Check out hashtags like #rails #ruby and #opensource from [Twitter search](https://twitter.com/#!/search-home). To find people from say close to NYC, use the following search operators "near:NYC within:15mi". Some countries have specific hashtags like #Rubysur and #RubyArg they use, remember to ask!
+* Check out hashtags like #rails #ruby and #opensource from [Twitter search](https://twitter.com/#!/search-home). To find people from, say, close to NYC, use the following search operators "near:NYC within:15mi". Some countries have specific hashtags like #Rubysur and #RubyArg they use, remember to ask!
 
 * Startup community. Startup Digest is a good beginning point for events and communities.
 
-* Often there are one or two key persons who will be able to introduce you further, the technology world is surprisingly connected.
+* Often there are one or two key people who will be able to introduce you further. The technology world is surprisingly connected.
 
 #### How to find participants?
 
@@ -155,7 +149,7 @@ While the event is underway, remember to take pictures, collect tweets and ask q
 
 #### How to get press?
 
-One of the big aims of Rails Girls is to make it more mainstream for girls to build the web. That’s why we like to engage the local press and bring front the participants and their enthusiasm. We’d be happy to help prepare a press-release for the media. Check out [railsgirls.com/press](http://railsgirls.com/press) for more.
+One of the big aims of Rails Girls is to make it more mainstream for girls to build the web. That’s why we like to engage the local press and highlight the participants and their enthusiasm. We’d be happy to help prepare a press-release for the media. Check out [railsgirls.com/press](http://railsgirls.com/press) for more.
 
 ### Sponsorships
 
@@ -169,11 +163,11 @@ Rails Girls should always be kept non-profit: if there's money left, it should b
 
 ### How much does it cost? 
 
-The costs approximated below for 30 participants, 10 coaches - but they may vary a lot. It's easiest to try to get a local sponsor to pay the bills directly or partner with someone who has a set account to handle money. These calculations are done in Finland, in €, where food & alchol is very expensive, but spaces are often free. All in all you should be able to organise an event easily for a little over a thousand euros.  				
+The costs below are estimated for 30 participants, 10 coaches - but they may vary a lot. It's easiest to try to get a local sponsor to pay the bills directly or partner with someone who has a set account to handle money. These calculations are done in Finland, in €, where food & alcohol is very expensive, but spaces are often free. All in all you should be able to organise an event easily for a little over a thousand euros.  				
 
 + **Sparkling wine + cups** for the installation festival. 6 bottles, 6 euros a bottle. 36 euros. 
 
-+ **Breakfast Coffee**, a bun. 40 times around 5 euros. 200 euros
++ **Breakfast Coffee**, pastry. 40 times around 5 euros. 200 euros
 
 + **Lunch.** Catered lunch can be around 15 euros, but you can do with a lot less by cooking yourself.  Add some water and coffee (50 euros). 650 euros. 		
 
@@ -185,18 +179,18 @@ The costs approximated below for 30 participants, 10 coaches - but they may vary
 
 + **Afterparty.** It's nice if you can throw a good party with free beverages, but can also be done low-key in a local bar or on set/ in the park!	0 - XXXX euros. 	
 
-+ **Travel expenses.**	If you don't have any RG-team members in your country, consider inviting us over. We don't do fancy hotels, promise! Same if you want to invite speakers to your event. 	0 - XXX		
++ **Travel expenses.**	If you don't have any RG-team members in your country, consider inviting us over. We don't need fancy hotels, promise! Same if you want to invite speakers to your event. 	0 - XXX		
 
 + *Total 1286 euros*.
 
 __What do sponsors get?__
 
 * Logo on event website
-* Rollup space at event, opportunity to distribute handouts and/or swag
-* Possibility to speak for 5 minutes
+* Table space at event, opportunity to distribute handouts and/or swag
+* A chance to speak to attendees for 5 minutes
 * In most events there are official pictures taken that the sponsors can use afterwards
 
-Don’t give out the participant info, but sponsors are free to hang out at the event and be sure to include a short message to the thank you -note. Sponsor swag may be included in the goodie bag to an extent: however it should be something tasteful, not trashy and related to girls.
+Don’t give out the participant info, but sponsors are free to hang out at the event and be sure to include a short message to the sponsor in a thank-you note. Sponsor swag may be included in the goodie bag to an extent, but it should be something tasteful, not trashy and related to girls.
 
 ---
 
