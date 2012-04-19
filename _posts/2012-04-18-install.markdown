@@ -47,7 +47,9 @@ Picture 3
  
 **Step 5.** Now copy and paste this line the Terminal and press Enter. Enjoy the text flying on the screen, it will take quite some time (approximately 30 minutes). Installer might ask for your administrator password. Grabbing a refreshing drink before starting is encouraged!
 
-<pre><code>bash &lt; &lt;(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-osx.sh)</code></pre> 
+{% highlight sh %}
+bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-osx.sh)
+{% endhighlight %} 
         
  ![You've done it](images/complete.png "You've done it")
 Now if everything went right, you should have a working Ruby on Rails programming setup. Congrats!
@@ -74,7 +76,9 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 To install Ruby on Rails development environment you just need to copy and paste this line the Terminal and press Enter. Enjoy the text flying on the screen, it will take quite some time. Grabbing a refreshing drink before starting is encouraged.
  
-<pre><code>bash &lt; &lt;(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)</code></pre> 
+{% highlight sh %}
+bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
+{% endhighlight %} 
 
 You also need a text editor to edit code files. For the workshop we recommend free code editor Komodo Edit.
 

@@ -29,11 +29,13 @@ Open Terminal/Command Prompt:
 
 Type commands:
 
-<pre><code><span class="ps1">$</span> mkdir projects
-<span class="ps1">$</span> cd projects
-<span class="ps1">$</span> rails new railsgirls
-<span class="ps1">$</span> cd railsgirls
-<span class="ps1">$</span> rails s</code></pre>
+{% highlight sh %}
+mkdir projects
+cd projects
+rails new railsgirls
+cd railsgirls
+rails s
+{% endhighlight %}
 
 Open [http://localhost:3000](http://localhost:3000) in browser.
 
@@ -46,9 +48,11 @@ CTRL-C to exit the server in Terminal/Command Prompt.
 
 We are using Rails&#8217; scaffolds to generate a starting point that allows us to list, add, remove, edit, and view things; in our case ideas.
 
-<pre><code><span class="ps1">$</span> rails generate scaffold idea name:string description:text picture:string
-<span class="ps1">$</span> rake db:migrate
-<span class="ps1">$</span> rails s</code></pre>
+{% highlight sh %}
+rails generate scaffold idea name:string description:text picture:string
+rake db:migrate
+rails s
+{% endhighlight %}
 
 Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in browser.
 
@@ -63,48 +67,61 @@ Design doesn&#8217;t look nice. Let&#8217;s do something about it. We&#8217;ll u
 
 Open app/views/layouts/application.html.erb and add on top of
 
-<pre><code>&lt;%= stylesheet_link_tag &quot;application&quot; %&gt;</code></pre>
+{% highlight erb %}
+<%= stylesheet_link_tag "application" %>
+{% endhighlight %}
 
 the line
 
-<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;http://railsgirls.com/assets/bootstrap.css&quot;&gt;</code></pre>
+{% highlight erb %}
+<link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css">
+{% endhighlight %}
 
 and swap
 
-<pre><code>&lt;%= yield %&gt;</code></pre>
+{% highlight erb %}
+<%= yield %>
+{% endhighlight %}
 
 for
 
-<pre><code>&lt;div class=&quot;container&quot;&gt;
-    &lt;%= yield %&gt;
-&lt;/div&gt;</code></pre>
+{% highlight erb %}
+<div class="container">
+    <%= yield %>
+</div>
+{% endhighlight %}
 
 Let&#8217;s also add topbar and footer to the layout and style those and the ideas table.
 
 To the application.html.erb under <code>&lt;body&gt;</code> add:
 
-<pre><code>&lt;div class=&quot;navbar navbar-fixed-top&quot;&gt;
-    &lt;div class=&quot;navbar-inner&quot;&gt;
-        &lt;div class=&quot;container"&gt;
-            &lt;a class=&quot;brand&quot; href=&quot;/&quot;&gt;The Idea app&lt;/a&gt;
-            &lt;ul class=&quot;nav&quot;>
-                &lt;li class=&quot;active"&gt;&lt;a href=&quot;/ideas&quot;&gt;Ideas&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+{% highlight html %}
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="/">The Idea app</a>
+            <ul class="nav">
+                <li class="active"><a href="/ideas">Ideas</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endhighlight %}
 
 and before <code>&lt;/body&gt;</code> add:
 
-<pre><code>&lt;footer&gt;
-    &lt;div class=&quot;container&quot;&gt;
+{% highlight html %}
+<footer>
+    <div class="container">
         Rails Girls 2012
-    &lt;/div&gt;
-&lt;/footer&gt;</code></pre>
+    </div>
+</footer>
+{% endhighlight %}
 
 Open app/assets/stylesheets/application.css and add to the bottom:
 
-<pre><code>#logo { 
+{% highlight css %}
+#logo { 
     font-size: 20px;
     font-family: &quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;
     float: left;
@@ -115,7 +132,8 @@ footer { margin-top: 100px; }
 table, td, th { vertical-align: middle !important; border: none !important; }
 th { border-bottom: 1px solid #DDD !important; }
 td.picture { width: 140px; }
-td.picture img { width: 140px; }</code></pre>
+td.picture img { width: 140px; }
+{% endhighlight %}
 
 **Coach:** Talk a little about CSS and layouts.
 
@@ -126,52 +144,74 @@ We need to install additional library to add image processing.
 
 Open Gemfile in the project and add
 
-<pre><code>gem &#39;carrierwave&#39;</code></pre>
+{% highlight ruby %}
+gem 'carrierwave'
+{% endhighlight %}
 
 under the line
 
-<pre><code>gem &#39;sqlite3&#39;</code></pre>
+{% highlight ruby %}
+gem 'sqlite3'
+{% endhighlight %}
 
 **Coach:** Tell what libraries are and why they are used. Maybe few words about Open Source?
 
 Now we generate the needed code for picture handling. In the Terminal/Command Prompt run:
 
-<pre><code><span class="ps1">$</span> bundle
-<span class="ps1">$</span> rails generate uploader Picture</code></pre>
+{% highlight sh %}
+bundle
+rails generate uploader Picture
+{% endhighlight %}
 
 Open app/models/idea.rb and add
 
-<pre><code>mount_uploader :picture, PictureUploader</code></pre>
+{% highlight ruby %}
+mount_uploader :picture, PictureUploader
+{% endhighlight %}
 
 under the line
 
-<pre><code>class Idea &lt; ActiveRecord::Base</code></pre>
+{% highlight ruby %}
+class Idea < ActiveRecord::Base
+{% endhighlight %}
 
 Open app/views/ideas/_form.html.erb
 
-<pre><code>&lt;%= f.text_field :picture %&gt;</code></pre>
+{% highlight erb %}
+<%= f.text_field :picture %>
+{% endhighlight %}
 
 to
 
-<pre><code>&lt;%= f.file_field :picture %&gt;</code></pre>
+{% highlight erb %}
+<%= f.file_field :picture %>
+{% endhighlight %}
 
 and
 
-<pre><code>&lt;%= form_for(@idea) do |f| %&gt;</code></pre>
+{% highlight erb %}
+<%= form_for(@idea) do |f| %>
+{% endhighlight %}
 
 to
 
-<pre><code>&lt;%= form_for(@idea, :html =&gt; {:multipart =&gt; true}) do |f| %&gt;</code></pre>
+{% highlight erb %}
+<%= form_for(@idea, :html => {:multipart => true}) do |f| %>
+{% endhighlight %}
 
 The view doesn&#8217;t look nice, it only shows a path to the file, so let&#8217;s fix it
 
 Open app/views/ideas/show.html.erb and change
 
-<pre><code>&lt;%= @idea.picture %&gt;</code></pre>
+{% highlight erb %}
+<%= @idea.picture %>
+{% endhighlight %}
 
 to
 
-<pre><code>&lt;%= image_tag(@idea.picture_url, :width =&gt; 600) if @idea.picture.present? %&gt;</code></pre>
+{% highlight erb %}
+<%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
+{% endhighlight %}
 
 **Coach:** Talk a little about HTML.
 
@@ -182,15 +222,21 @@ If you try to open [http://localhost:3000](http://localhost:3000) it still shows
 
 On OS X and Linux, in the Terminal run:
 
-<pre><code><span class="ps1">$</span> rm public/index.html</code></pre>
+{% highlight sh %}
+rm public/index.html
+{% endhighlight %}
 
 In Windows, in the Command Prompt run:
 
-<pre><code><span class="ps1"></span> del public\index.html</code></pre>
+{% highlight sh %}
+del public\index.html
+{% endhighlight %}
 
 Then open config/routes.rb and add to the second line of the file
 
-<pre><code>root :to =&gt; redirect(&quot;/ideas&quot;)</code></pre>
+{% highlight ruby %}
+root :to => redirect("/ideas")
+{% endhighlight %}
 
 **Coach:** Talk about routes.
 
