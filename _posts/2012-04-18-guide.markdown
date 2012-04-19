@@ -5,6 +5,7 @@ permalink: guide.html
 ---
 # The How to Guide
 
+
 ## Hosting your first Rails Girls event
 
 Our aim is to give tools for women to understand technology. The Rails Girls events do this by providing a great first experience on building the Internet.
@@ -101,7 +102,7 @@ Putting technical jargon into a context with a conceptual model called Bentobox.
 Two exercises: 1) Going through the 10 technical concepts with the physical Bentobox boards.  2) Going through the words the girls have themselves submitted with the coaches. 
 
 + [Bentobox slidedeck](http://speakerdeck.com/u/railsgirls/p/rails-girls-bentobox-exercise)
-+ [Instruction video](https://vimeo.com/390496322)
++ [Instruction video](http://vimeo.com/39049632)
 
 14:30 - 18:00 Workshop time. 
 
