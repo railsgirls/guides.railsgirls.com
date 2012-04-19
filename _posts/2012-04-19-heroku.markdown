@@ -4,6 +4,10 @@ title: Rails Girls on Heroku
 permalink: heroku.html
 ---
 
+## Put Your App Online With Heroku
+
+*Created by Terence Lee, [@hone02](https://twitter.com/hone02)*
+
 ### Get Heroku
 
 Follow steps 1 through 3 of the [quickstart guide](https://devcenter.heroku.com/articles/quickstart) to sign up, install the toolbelt, and login.

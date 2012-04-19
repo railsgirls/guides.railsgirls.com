@@ -4,7 +4,9 @@ title: Rails Girls App Tutorial
 permalink: app.html
 ---
 
-# Rails Girls Tutorial
+# Rails Girls App Tutorial
+
+*Created by Vesa Vänskä, [@vesan](https://twitter.com/vesan)*
       
 [**Install Rails**](/install)
 
