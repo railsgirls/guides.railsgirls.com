@@ -8,6 +8,8 @@ permalink: heroku.html
 
 Follow steps 1 through 3 of the [quickstart guide](https://devcenter.heroku.com/articles/quickstart) to sign up, install the toolbelt, and login.
 
+__COACHES__: Talk about the benefits of deploying to Heroku vs traditional servers.
+
 ### Preparing your app
 
 #### Updating our database
@@ -31,6 +33,8 @@ end
 
 Run `bundle install --without production` to setup your dependencies.
 
+__COACHES__: You can talk about RDBMS and the different ones out there.
+
 #### Version Control Systems
 
 We need to add our code to version control. You can do this by running the following in the terminal:
@@ -46,6 +50,8 @@ __COACHES__: This would be a good time to talk about version control systems and
 
 ### Deploying your app
 
+#### App creation
+
 We need to create our heroku app by typing `heroku create --stack cedar` in the terminal and see something like this:
 
 {% highlight sh %}
@@ -56,9 +62,32 @@ Git remote heroku added
 
 In this case "evening-sky-7498" is your app name.
 
-Next we need to push our code to heroku by typing `git push heroku master`
+#### Pushing the code
 
-Next we need to migrate our database like we did locally: `heroku run rake db:migrate`
+Next we need to push our code to heroku by typing `git push heroku master`. You'll see push output like the following:
 
-You can now hit the app based on the url. For this example app, you can go to http://evening-sky-7498.herokuapp.com/
+{% highlight sh %}
+ounting objects: 134, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (115/115), done.
+Writing objects: 100% (134/134), 35.29 KiB, done.
+Total 134 (delta 26), reused 0 (delta 0)
+
+-----> Heroku receiving push
+-----> Ruby/Rails app detected
+-----> Installing dependencies using Bundler version 1.1.2
+       Running: bundle install --without development:test --path vendor/bundle --binstubs bin/ --deployment
+       Fetching gem metadata from https://rubygems.org/.......
+...
+-----> Launching... done, v4
+       http://evening-sky-7498.herokuapp.com deployed to Heroku
+{% endhighlight %}
+
+You'll know the app is done being pushed, when you see the "Launching..." text like above.
+
+#### Migrate database
+
+Next we need to migrate our database like we did locally during the workshop: `heroku run rake db:migrate`
+
+When that command is finished being run, you can hit the app based on the url. For this example app, you can go to [http://evening-sky-7498.herokuapp.com/](http://evening-sky-7498.herokuapp.com). You can also type `heroku open` in the terminal to visit the page.
 
