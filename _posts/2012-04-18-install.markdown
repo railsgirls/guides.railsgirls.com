@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Setup recipe for Rails Girls
-permalink: install.html
+permalink: install
 ---
 
 # Setup recipe for Rails Girls

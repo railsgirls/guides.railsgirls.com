@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Contributing a Guide
-permalink: contributing.html
+permalink: contributing
 ---
+
 # Contributing a Guide
 
 The guides site uses [jekyll](https://github.com/mojombo/jekyll) to power the site and all the documents are written using [markdown](http://daringfireball.net/projects/markdown/). To contribute a guide, you just need to follow these simple steps.
