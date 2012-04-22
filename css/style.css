@@ -184,6 +184,10 @@ footer a {
     color:#999;
 }
 
+.hero-links {
+    margin:2em 0;
+}
+
 .hero {
     padding:20px 320px 20px 0;
     background:url(../img/guides-hero.png) right 80px no-repeat;
