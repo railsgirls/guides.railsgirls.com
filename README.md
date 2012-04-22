@@ -20,10 +20,24 @@ View the guides at http://guides.railsgirls.com or clone this repo and install &
 
 `jekyll --server --auto`
 
+
+## Contributing a Guide
+
+To contribute a guide, view the instructions at http://guides.railsgirls.com/contributing
+
 ## Twitter
 
 For updates and more follow [@railsgirls](https://twitter.com/railsgirls)
 
-## Blog 
+## Website & Blog 
 
-Blog for Rails Girls movement can be found at http://blog.railsgirls.com
+Official website and blog for Rails Girls movement can be found at http://railsgirls.com
+
+## Credits
+
+* Karri Saarinen / [@karrisaarinen](https://twitter.com/karrisaarinen) / [github]http://github.com/ksaa
+* Linda Liukas / [@lindaliukas](https://twitter.com/lindaliukas) / [github]http://github.com/lindaliukas
+* Vesa Vänskä / [@vesan](https://twitter.com/vesan) / [github]http://github.com/vesan
+* Terence Lee / [@hone02](https://twitter.com/hone02) [github]http://github.com/hone
+
+..and all the other coaches and people making Rails Girls awesome.
