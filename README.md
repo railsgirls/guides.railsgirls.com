@@ -35,9 +35,9 @@ Official website and blog for Rails Girls movement can be found at http://railsg
 
 ## Credits
 
-* Karri Saarinen / [@karrisaarinen](https://twitter.com/karrisaarinen) / [github]http://github.com/ksaa
-* Linda Liukas / [@lindaliukas](https://twitter.com/lindaliukas) / [github]http://github.com/lindaliukas
-* Vesa Vänskä / [@vesan](https://twitter.com/vesan) / [github]http://github.com/vesan
-* Terence Lee / [@hone02](https://twitter.com/hone02) [github]http://github.com/hone
+* Karri Saarinen / [@karrisaarinen](https://twitter.com/karrisaarinen) / [github](http://github.com/ksaa)
+* Linda Liukas / [@lindaliukas](https://twitter.com/lindaliukas) / [github](http://github.com/lindaliukas)
+* Vesa Vänskä / [@vesan](https://twitter.com/vesan) / [github](http://github.com/vesan)
+* Terence Lee / [@hone02](https://twitter.com/hone02) [github](http://github.com/hone)
 
 ..and all the other coaches and people making Rails Girls awesome.
