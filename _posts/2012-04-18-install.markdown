@@ -25,13 +25,13 @@ First we need to install general tools needed to install other developer softwar
 
 Click the Apple menu and choose *About this Mac* (Picture 1).
 
-![Apple menu](./images/1.png "Apple menu")
+![Apple menu](/images/1.png "Apple menu")
 
 Picture 1
         
  **Step 2.** In the window you find the version of your operating system (Picture 2). If your version number starts with 10.6 or 10.7 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
 
-![About this Mac dialog](./images/2.png "About this Mac dialog")
+![About this Mac dialog](/images/2.png "About this Mac dialog")
 
 Picture 2
  
@@ -43,7 +43,7 @@ Picture 2
 
 **Step 4.** After the installer has run, open Terminal.app. Click the Spotlight (magnifying glass icon in the top right corner), type *Terminal.app* and click the option that appears (Picture 3).
 
-![Spotlight](images/3.png "Spotlight")
+![Spotlight](/images/3.png "Spotlight")
 
 Picture 3
  
@@ -53,7 +53,7 @@ Picture 3
 bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-osx.sh)
 {% endhighlight %} 
         
- ![You've done it](images/complete.png "You've done it")
+ ![You've done it](/images/complete.png "You've done it")
 
 Now if everything went right, you should have a working Ruby on Rails programming setup. Congrats!
         
