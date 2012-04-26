@@ -157,11 +157,30 @@ One of the big aims of Rails Girls is to make it more mainstream for girls to bu
 
 Rails Girls talks to a demographic that might be hard to reach other ways: women who have an interest in technology, who are possible users, employees or partners of the sponsoring company.
 
-We are looking for sponsors who are active participants in the local technology scene, whether it’s a startup or a big corporation, a non-profit or a government organization.
+We are looking for sponsors who are active participants in the local technology scene, whether it’s a startup or a big corporation, a non-profit or a government organization. 
 
 Also non-traditional technology companies can be approached: kids stores, universities, women's magazines, beverage brands etc. They all should however have some affiliation or interest in technology. 
 
-Rails Girls should always be kept non-profit: if there's money left, it should be used to support the future activities of the attendees.
+Rails Girls should always be kept non-profit: if there's money left, it should be used to support the future activities of the attendees. Don’t forget that you don’t need that much funding and even a two-person startup could be very willing to chip in.
+
+### Example letter for sponsors
+
+Dear xxx, 
+
+We are organizing a Rails Girls programming workshop in (insert city) on (insert dates). 
+
+Rails Girls is a two-day non-profit event for women and girls to give them a great first experience in software craftmanship. We aim to give the tools to understand technology along with the community and inspiration to get started.  
+
+Rails Girls is not just about programming, it’s about building things. During the workshop, we’ll build an application and also have inspiring lightning talks and exercises.
+
+For a closer look, please see www.railsgirls.com for past events and coverage.Here’s also a short video on the Berlin event held in April 2012: [http://vimeo.com/40852182](http://vimeo.com/40852182) 
+
+We are now looking for sponsors to help us realize this all. 
+We’d love to have your support! 
+
+Yours, name
+
+
 
 ### How much does it cost? 
 
@@ -193,6 +212,8 @@ __What do sponsors get?__
 * In most events there are official pictures taken that the sponsors can use afterwards
 
 Don’t give out the participant info, but sponsors are free to hang out at the event and be sure to include a short message to the sponsor in a thank-you note. Sponsor swag may be included in the goodie bag to an extent, but it should be something tasteful, not trashy and related to girls.
+
+
 
 ---
 
