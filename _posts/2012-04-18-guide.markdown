@@ -224,7 +224,7 @@ Don’t give out the participant info, but sponsors are free to hang out at the 
 Anyone. What we look for is a group of people dedicated in making this a stellar first experience in the world of web making for girls. What we hope to see is some (not all) of the following:
 
 * Contacts to the local developer scene. We are pretty technology agnostic, so it doesn’t have to be purely Ruby & Rails people. In practice every event needs 5 or more coaches that have basic knowledge of Rails and two days to contribute. In general the events have been around 25 - 40 people strong.
-* Event organisation know-how. Nt heaps, but some practicalities under the belt.
+* Event organisation know-how. Not heaps, but some practicalities under the belt.
 * An inkling of an idea where to look for girls interested in technology. University, literature, arts, sports - we try to look for people who are interested in Internet, but do not have experience in coding.
 * Willingness to guide the girls in the future if they have questions or want to organize their own events or find local developer gatherings.
 
@@ -250,7 +250,7 @@ You can get to know the curriculum by checking out [railsgirls.com/app](http://r
 
 We hope the coaches are ok with having their name and twitter-id/github/some mean of contact on railsgirls.com so the girls always have a local face to answer their questions.
 
-In addition, we encourage coaches to come up with additional exercises for the group. After completing the ideation app many girls will want to try tweaking the look & feel of the site, implementing commenting, Facebook sharing, pushing the app to Heroku etc. We have some plans to include these coach-planned mini-lectures in the site as well.
+In addition, we encourage coaches to come up with additional exercises for the group. After completing the ideation app many girls will want to try tweaking the look & feel of the site, implementing commenting, Facebook sharing, pushing the app to Heroku, etc. We have some plans to include these coach-planned mini-lectures in the site as well.
 
 * Want to become a Rails Girls coach?
 * Letter for the coaches
