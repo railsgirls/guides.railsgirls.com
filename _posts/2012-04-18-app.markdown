@@ -8,26 +8,26 @@ permalink: app
 
 *Created by Vesa Vänskä, [@vesan](https://twitter.com/vesan)*
       
-[**Install Rails**](/install)
+[**First, make sure you installed Rails, otherwise please follow this link.**](/install)
 
 
-## 0: Get to know the tools
+## Step 0: Get to know the tools
 
-* Texteditor (Komodo Edit) is for writing code and editing files
-* Terminal / Command Prompt is for starting the rails server and running commands
-* Web browser is for viewing your application
+* Texteditor: (Gedit, Vim, Emacs, Komodo Edit, Sublime Text) are examples of texteditors your can use for writing code and editing files.
+* Terminal / Command Prompt is where you start the rails server and run commands.
+* Web browser (Firefox, Safari, Chrome) are for viewing your application.
 
 
-## 1: Creating the application
+## Step 1: Creating the application
 
-We are going to create app called railsgirls.
+We are going to create app called *railsgirls*.
 
-Open Terminal/Command Prompt:
+First, let's open Terminal/Command Prompt:
 
 * OS X: Open Spotlight, type *Terminal* and click appearing *Terminal* options.
 * Windows: Click Start-menu and search for *Command Prompt* click *Command Prompt with Ruby on Rails*.
 
-Type commands:
+Next, type these commands:
 
 {% highlight sh %}
 mkdir projects
@@ -44,7 +44,7 @@ CTRL-C to exit the server in Terminal/Command Prompt.
 **Coach:** Quick explanation about what each command does. What was generated? What does the server do. Talk about MVC.
 
 
-## 2: Create Idea scaffold
+## Step 2: Create Idea scaffold
 
 We are using Rails&#8217; scaffolds to generate a starting point that allows us to list, add, remove, edit, and view things; in our case ideas.
 
@@ -58,12 +58,12 @@ Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in browser.
 
 CTRL-C exits the server when you have clicked around for a little.
 
-**Coach:** What is a scaffold. What are migrations.
+**Coach:** What is a scaffold? What are migrations?
 
 
-## 3: Design
+## Step 3: Design
 
-Design doesn&#8217;t look nice. Let&#8217;s do something about it. We&#8217;ll use Twitter&#8217;s Bootstrap project give us nicer default styles really easily.
+Design doesn&#8217;t look nice. Let&#8217;s do something about it. We&#8217;ll use Twitter&#8217;s Bootstrap project to give us nicer default styles really easily.
 
 Open app/views/layouts/application.html.erb and add on top of
 
@@ -138,7 +138,7 @@ td.picture img { width: 140px; }
 **Coach:** Talk a little about CSS and layouts.
 
 
-## 4: Adding picture uploads
+## Step 4: Adding picture uploads
 
 We need to install additional library to add image processing.
 
@@ -216,7 +216,7 @@ to
 **Coach:** Talk a little about HTML.
 
 
-## 5: Finetune the routes
+## Step 5: Finetune the routes
 
 If you try to open [http://localhost:3000](http://localhost:3000) it still shows the default page. Let&#8217;s make it redirect to the ideas page.
 
