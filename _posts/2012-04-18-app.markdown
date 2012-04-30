@@ -251,5 +251,5 @@ root :to => redirect("/ideas")
 
 ## Additional Guides
 
-* GUIDE 1: [Add commenting by Janika Liiv](http://janikaliiv.eu/homework/)
+* GUIDE 1: [Add commenting by Janika Liiv](/commenting)
 * GUIDE 2: [Put your app online with Heroku by Terence Lee](/heroku)
