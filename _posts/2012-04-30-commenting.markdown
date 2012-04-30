@@ -4,6 +4,7 @@ title: Commenting functionality for the Rails Girls app
 permalink: commenting
 ---
 # Commenting for Rails Girls App
+*Created by Janika Liiv, [@janikaliiv](https://twitter.com/janikaliiv)*
 
 We are going to add the possibility to comment ideas in your *railsgirls* application.
 
