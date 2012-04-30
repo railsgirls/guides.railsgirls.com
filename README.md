@@ -16,6 +16,17 @@ View the guides at http://guides.railsgirls.com or clone this repo and install &
 
 `bundle install`
 
+### Pygments and Code Highlighting
+
+The guides use the [pygments](http://pygments.org/) library to do syntax highlighting. If you don't have it installed you won't be able to see the highlight sections like the following:
+
+```
+{% highlight %}
+{% endhighlight %}
+```
+
+If you aren't editing the code blocks, you can safely ignore this. If you want pygments, you can follow the [install instructions](https://github.com/mojombo/jekyll/wiki/Install) in the "Pygments" section.
+
 ### Run jekyll
 
 `jekyll --server --auto`
