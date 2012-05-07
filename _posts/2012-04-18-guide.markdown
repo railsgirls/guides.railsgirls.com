@@ -257,9 +257,9 @@ In addition, we encourage coaches to come up with additional exercises for the g
 
 "Dear community member, 
 
-We wish to invite you to take part in the Rails Girls event on (insert date). The event is aimed for girls and women with no previous programming experience, but a lot of passion to building things. Rails Girls is an international non-profit, volunteer-based workshop. We've had events in Shanghai, Berlin, Helsinki, Singapore.. We except to receive around a 100 applications. 
+We wish to invite you to take part in the Rails Girls event on (insert date). The event is aimed for girls and women with no previous programming experience, but a lot of passion to building things. Rails Girls is an international non-profit, volunteer-based workshop. We've had events in Shanghai, Berlin, Helsinki, and Singapore. We expect to receive around a 100 applications.
 
-In addition to giving a safe and fun first experience to coding for the girls we want to engage them to the local developer, open source & startup scene. Attached some information on what coaching requires in practice. In addition we have room for small lightning talks on technical subjects. If you have something you'd like to speak about, let us know. 
+In addition to giving a safe and fun first experience to coding for the girls we want to engage them with local developers, open source, and the startup scene. We've attached some information on what coaching requires in practice. In addition, we have room for small lightning talks on technical subjects. If you have something you'd like to speak about, let us know.
 
 For more information about the non-profit event, check railsgirls.com or guides.railsgirls.com
 
