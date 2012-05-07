@@ -337,7 +337,7 @@ What happens next?
 
 We will hold the event in (insert address)
 
-On (insert date) we’ll dive into development. We’ll work in small groups with four to six person teams, your team members will have about the same experience level as you. We'll be all developing a simple listing application. We'll wrap the day around (insert time). There's also going to be an evening party. 
+On (insert date) we’ll dive into development. We’ll work in small groups with four to six person teams. Your team members will have about the same experience level as you. We'll be all developing a simple listing application. We'll wrap the day around (insert time). There's also going to be an evening party.
 
 We have a lot of people wanting to get to the class, so if you can’t make it this time, let us know as soon as possible!
 
@@ -369,7 +369,7 @@ Best,
 
 Dear Rails Girls,
 
-Thank you for taking part in the Rails Girls event. We truly felt lucky to have such a talented, enthusiastic crowd of people with us and hope many of you will continue working with Rails in the future - you have the tools, now build something cool!
+Thank you for taking part in the Rails Girls event. We truly felt lucky to have such a talented & enthusiastic crowd of people with us and hope many of you will continue working with Rails in the future - you have the tools, now build something cool!
 
 (Say a few words about the sponsors and coaches - thank you for the community)
  
