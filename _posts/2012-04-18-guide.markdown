@@ -246,14 +246,14 @@ Ask where local developer meetings are usually hosted. Often co-working spaces a
 
 Rails Girls events are organized around small groups, ideally maximum of 4-5 persons per one coach. The coaches don’t need to be hardcore experts on Rails - basic knowledge and willingness to explain trumps expertise. We are looking for people who like answering questions and can keep an upbeat and positive atmosphere through a period of 8 hours!
 
-You can get to know the curriculum by checking out [railsgirls.com/app](http://railsgirls.com/app). There is also always a pre-event coach dinner where we’ll go through some pedagogical suggestions and check everyone knows what is happening. Avoid jargon, tie examples to what your doing, encourage asking questions. The installation instructions can be found at [railsgirls.com/install](http://railsgirls.com/install)
+You can get to know the curriculum by checking out [railsgirls.com/app](http://railsgirls.com/app). There is also always a pre-event coach dinner where we’ll go through some pedagogical suggestions and check everyone knows what is happening. Avoid jargon, tie examples to what your doing, encourage asking questions. The installation instructions can be found at [railsgirls.com/install](http://railsgirls.com/install). We also understand that coaches are human and that for most of the people this is the first time teaching something. Worry not - the girls have always been really happy with whatever they learn and just the chance to ask questions is enough. 
+
 
 We hope the coaches are ok with having their name and twitter-id/github/some mean of contact on railsgirls.com so the girls always have a local face to answer their questions.
 
-In addition, we encourage coaches to come up with additional exercises for the group. After completing the ideation app many girls will want to try tweaking the look & feel of the site, implementing commenting, Facebook sharing, pushing the app to Heroku, etc. We have some plans to include these coach-planned mini-lectures in the site as well.
+In addition, we encourage coaches to come up with additional exercises for the group. After completing the ideation app many girls will want to try tweaking the look & feel of the site, implementing commenting, Facebook sharing, pushing the app to Heroku, etc. 
 
 ##### Sample letter for potential coaches
-
 
 "Dear community member, 
 
@@ -263,26 +263,10 @@ In addition to giving a safe and fun first experience to coding for the girls we
 
 For more information about the non-profit event, check railsgirls.com or guides.railsgirls.com
 
+(You can also include the chapter "What is expected from the coaches" to the mail)"
+
 ---
 
-What is expected from the coaches?
-
-Rails Girls events are organised around small groups, ideally maximum of 4-5 persons per one coach. The coaches don’t need to be hardcore experts on Rails - basic knowledge and willingness to explain trumps expertise.
-
-We are looking for people who like answering questions and can keep an upbeat and positive atmosphere through a period of 8 hours! We also understand that coaches are human and that for most of the people this is the first time teaching something. Worry not - the girls have always been really happy with whatever they learn and just the chance to ask questions is enough. 
-
-You can get to know the curriculum by checking out http://guides.railsgirls.com/app/. There is also always a pre-event coach dinner where we’ll go through some pedagogical suggestions and check everyone knows what is happening. The installation instructions can be found at http://guides.railsgirls.com/install
-
-In addition, we encourage coaches to come up with additional exercises for the group. After completing the ideation app many girls will want to try tweaking the look & feel of the site, implementing commenting, Facebook sharing, pushing the app to Heroku etc. See http://github.com/railsgirls for more. 
-
-Concepts to cover:
-Rails Generators
-Rails App Structure (scaffolding)
-Bundler and Gem Management
-MVC, REST/Resources, Scaffolds
-Models and Active Record
-Controllers and ActionController
-Views and ERB
 
 
 #### What materials do I get?
@@ -309,19 +293,6 @@ After selecting participants we generally split them into three groups:
 2. people with some front-end experience (HTML, CSS, Javascript) and
 3. people with a little experience in programming or a background in computer sciences. You can use the different name-tags for each group if you want to (rubies, foxes, octocats, rails..)
 
-
-
-
-
-
-#### What happens after the event?
-
-Inviting real developers to coach is Rails Girls sessions not only gives the participants a chance for hands-on education, but also makes the barrier to enter the technology world lower. How to keep the girls coding?
-
-* Encourage them to continue practicing by trying different exercises like Codecademy and such.
-* Mention at least two forthcoming developer events where the local coaches will be. Try to get the girls to attend actual developer meetups
-* Invite everyone to the Facebook Group where they can ask questions.
-* Invite the girls together again within a month. You can host these meetups at the Rails Girls global meetup page http://www.meetup.com/Rails-Girls/ - we’ll be happy to promote events. However, it doesn't matter under which brand you want to continue meeting - the important thing'
 
 ##### Sample letter of acceptance
 
@@ -391,6 +362,20 @@ There was a LOT of interest in doing follow-up events. If you have ideas for thi
  
 And thats all for now,
 Your Rails Girls team 
+
+
+
+
+
+#### What happens after the event?
+
+Inviting real developers to coach is Rails Girls sessions not only gives the participants a chance for hands-on education, but also makes the barrier to enter the technology world lower. How to keep the girls coding?
+
+* Encourage them to continue practicing by trying different exercises like Codecademy and such.
+* Mention at least two forthcoming developer events where the local coaches will be. Try to get the girls to attend actual developer meetups
+* Invite everyone to the Facebook Group where they can ask questions.
+* Invite the girls together again within a month. You can host these meetups at the Rails Girls global meetup page http://www.meetup.com/Rails-Girls/ - we’ll be happy to promote events. However, it doesn't matter under which brand you want to continue meeting - the important thing'
+
 
 
 ---
