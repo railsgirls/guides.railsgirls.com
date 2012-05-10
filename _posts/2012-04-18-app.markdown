@@ -123,7 +123,7 @@ Open app/assets/stylesheets/application.css and add to the bottom:
 {% highlight css %}
 #logo { 
     font-size: 20px;
-    font-family: &quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     float: left;
     padding: 10px;
 }
