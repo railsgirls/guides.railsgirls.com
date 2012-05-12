@@ -304,7 +304,7 @@ Congratulations! We’re happy to invite you to join in on the  Rails Girls work
 
 What happens next?
 
-(Insert date for installation fest) starts at (insert time) with an installation fest - so please bring your laptop with you! You should also try to pre-install Rails with instructions from [http://guides.railsgirls.com/install/] http://guides.railsgirls.com/install/
+(Insert date for installation fest) starts at (insert time) with an installation fest - so please bring your laptop with you! You should also try to pre-install Rails with instructions from <http://guides.railsgirls.com/install/>
 
 We will hold the event in (insert address)
 
