@@ -147,12 +147,14 @@ footer a {
   font-style: normal;
   font-weight: bold;
   border-radius: 70px;
+  transition: 0.10s background-color ease-in;
   -webkit-transition: 0.10s background-color ease-in;
   -moz-transition: 0.10s background-color ease-in;
 }
 
 .home li:hover i {
   background-color: #d3360b;
+  transition: 0.10s background-color ease-in;
   -webkit-transition: 0.10s background-color ease-in;
   -moz-transition: 0.10s background-color ease-in;
 }
