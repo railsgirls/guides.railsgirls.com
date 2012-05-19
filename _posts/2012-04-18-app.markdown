@@ -41,12 +41,14 @@ Open [http://localhost:3000](http://localhost:3000) in browser.
 
 CTRL-C to exit the server in Terminal/Command Prompt.
 
-**Coach:** Quick explanation about what each command does. What was generated? What does the server do. Talk about MVC.
+**Coach:** Quick explanation about what each command does. What was generated? What does the server do.
 
 
 ## Step 2: Create Idea scaffold
 
 We are using Rails&#8217; scaffolds to generate a starting point that allows us to list, add, remove, edit, and view things; in our case ideas.
+
+**Coach:** What is a scaffold (1. the command, 2. the model name and related db table; pluralization/naming conventions, 3. attributes and types)? What are migrations and when do you need to do them, why?
 
 {% highlight sh %}
 rails generate scaffold idea name:string description:text picture:string
@@ -58,10 +60,9 @@ Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in browser.
 
 CTRL-C exits the server when you have clicked around for a little.
 
-**Coach:** What is a scaffold? What are migrations?
-
-
 ## Step 3: Design
+
+**Coach:** Talk about the relationship of HTML and Rails; what part of views is HTML and what is Embedded Ruby (ERB)? How does this relate to MVC (models and controllers control the logic of dynamically generating HTML, or views)?
 
 Design doesn&#8217;t look nice. Let&#8217;s do something about it. We&#8217;ll use Twitter&#8217;s Bootstrap project to give us nicer default styles really easily.
 
