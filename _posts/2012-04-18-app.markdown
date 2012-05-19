@@ -161,6 +161,13 @@ Now we generate the needed code for picture handling. In the Terminal/Command Pr
 
 {% highlight sh %}
 bundle
+{% endhighlight %}
+
+**At this point you need to restart the Rails server process in Terminal/Command Prompt.** This is needed for the app to load the added gem.
+
+Then you can start adding the picture upload by running a command:
+
+{% highlight sh %}
 rails generate uploader Picture
 {% endhighlight %}
 
