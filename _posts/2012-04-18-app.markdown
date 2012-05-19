@@ -48,6 +48,8 @@ CTRL-C to exit the server in Terminal/Command Prompt.
 
 We are using Rails&#8217; scaffolds to generate a starting point that allows us to list, add, remove, edit, and view things; in our case ideas.
 
+**Coach:** What is a scaffold (1. the command, 2. the model name and related db table; pluralization/naming conventions, 3. attributes and types)? What are migrations and when do you need to do them, why?
+
 {% highlight sh %}
 rails generate scaffold idea name:string description:text picture:string
 rake db:migrate
@@ -58,7 +60,7 @@ Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in browser.
 
 CTRL-C exits the server when you have clicked around for a little.
 
-**Coach:** What is a scaffold? What are migrations?
+
 
 
 ## Step 3: Design
