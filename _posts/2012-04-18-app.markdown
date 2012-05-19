@@ -176,7 +176,7 @@ under the line
 class Idea < ActiveRecord::Base
 {% endhighlight %}
 
-Open app/views/ideas/_form.html.erb
+Open app/views/ideas/_form.html.erb and change
 
 {% highlight erb %}
 <%= f.text_field :picture %>
@@ -200,7 +200,7 @@ to
 <%= form_for(@idea, :html => {:multipart => true}) do |f| %>
 {% endhighlight %}
 
-The view doesn&#8217;t look nice, it only shows a path to the file, so let&#8217;s fix it
+The view doesn&#8217;t look nice, it only shows a path to the file, so let&#8217;s fix it.
 
 Open app/views/ideas/show.html.erb and change
 
