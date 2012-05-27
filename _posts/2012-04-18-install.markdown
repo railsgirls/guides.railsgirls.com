@@ -18,46 +18,34 @@ Follow the instructions for your operating system. If you hit into any problems,
 <hr />
 
 ## Setup for OS X
- 
-First we need to install general tools needed to install other developer software.
 
-**Step 1.** Lets check the version of the operating system.
-
-Click the Apple menu and choose *About this Mac* (Picture 1).
-
-![Apple menu](/images/1.png "Apple menu")
-
-Picture 1
-        
- **Step 2.** In the window you find the version of your operating system (Picture 2). If your version number starts with 10.6 or 10.7 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
-
-![About this Mac dialog](/images/2.png "About this Mac dialog")
-
-Picture 2
- 
-**Step 3.** Download and install these developer tools for OS X depending of your system version number.
- 
-* [Installer for 10.7](https://github.com/downloads/kennethreitz/osx-gcc-installer/GCC-10.7-v2.pkg) <span class="muted">(273Mb)</span>
- 
-* [Installer for 10.6](https://github.com/downloads/kennethreitz/osx-gcc-installer/GCC-10.6.pkg) <span class="muted">(273Mb)</span>
-
-**Step 4.** After the installer has run, open Terminal.app. Click the Spotlight (magnifying glass icon in the top right corner), type *Terminal.app* and click the option that appears (Picture 3).
+**Step 1.** Open Terminal.app. Click the Spotlight (magnifying glass icon in the top right corner), type *Terminal.app* and click the option that appears (Picture 1).
 
 ![Spotlight](/images/3.png "Spotlight")
 
-Picture 3
+Picture 1
  
-**Step 5.** Now copy and paste this line in the Terminal and press Enter. Enjoy the text flying on the screen, it will take quite some time (approximately 30 minutes). The installer might ask for your administrator password. Grabbing a refreshing drink before starting is encouraged!
-
+**Step 2.** Now copy and paste this line in the Terminal and press Enter.
+ 
 {% highlight sh %}
 bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-osx.sh)
-{% endhighlight %} 
-        
- ![You've done it](/images/complete.png "You've done it")
+{% endhighlight %}
 
-Now if everything went right, you should have a working Ruby on Rails programming setup. Congrats!
-        
-**Final step.** Install a text editor to edit code files. For the workshop we recommend the free code editor Komodo Edit.
+It should look something like this and finish within a few minutes.
+
+{% highlight sh %}
+Downloading Tokaido.app
+######################################################################## 100.0%
+Setting up Tokaido.app
+ruby 1.9.3p194 (2012-04-20) [x86_64-darwin11.4.0]
+Rails 3.2.3
+Done!
+Please restart your terminal.
+{% endhighlight %}
+
+Now if everything went right, you just need to open a new Termianl and you should have a working Ruby on Rails programming setup. Congrats!
+
+You also need a text editor to edit code files. For the workshop we recommend the free code editor Komodo Edit.
 
 * [Download Komodo Edit and install it.](http://www.activestate.com/komodo-edit/downloads)
 
