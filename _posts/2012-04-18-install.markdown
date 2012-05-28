@@ -37,8 +37,20 @@ It should look something like this and finish within a few minutes.
 Downloading Tokaido.app
 ######################################################################## 100.0%
 Setting up Tokaido.app
-ruby 1.9.3p194 (2012-04-20) [x86_64-darwin11.4.0]
-Rails 3.2.3
+
+- - - - - - - - -
+
+Now we are going to print some information to check that everything is done:
+
+ ,;;;, ,;;;,
+;;;' ';' ';;; Should be ruby 1.9.3p194: ruby 1.9.3p194
+;;;       ;;;
+ ';;,   ,;;'  Should be Rails 3.2.3: Rails 3.2.3
+   ';;,;;'
+     ';'
+
+- - - - - - - - -
+
 Done!
 Please restart your terminal.
 {% endhighlight %}
