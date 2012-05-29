@@ -56,7 +56,7 @@ Done!
 Please restart your terminal.
 {% endhighlight %}
 
-Now if everything went right, you just need to open a new Termianl and you should have a working Ruby on Rails programming setup. Congrats!
+Now if everything went right, you just need to open a new Terminal and you should have a working Ruby on Rails programming setup. Congrats!
 
 You also need a text editor to edit code files. For the workshop we recommend the free code editor Komodo Edit.
 
