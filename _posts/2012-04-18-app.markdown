@@ -240,7 +240,7 @@ In Windows, in the Command Prompt run:
 del public\index.html
 {% endhighlight %}
 
-Then open config/routes.rb and add to the second line of the file
+Then open config/routes.rb and add the following after the first line:
 
 {% highlight ruby %}
 root :to => redirect("/ideas")
