@@ -9,7 +9,7 @@ permalink: thumbnails
 *Created by Miha Filej, [@mfilej](https://twitter.com/mfilej)*
 
 __Coach__: Explain what specifying the image width in HTML at the end of Step
-4 does and how it is different from resizing images on the server.
+4 does and how it differs from resizing images on the server.
 
 ## Installing ImageMagick
 
@@ -19,6 +19,8 @@ __Coach__: Explain what specifying the image width in HTML at the end of Step
   *Leopards* if you have 10.5 or 10.6).
 * Windows: download and run the [ImageMagick installer][im-win] (use the first
   *download* link).
+* Linux: On Ubuntu and Debian, run `sudo apt-get install imagemagick`. Use the
+  appropriate package manager instead of `apt-get` for other distributions.
 
   [im-osx]: http://cactuslab.com/imagemagick/
   [step2]:  http://guides.railsgirls.com/install/#setup_for_os_x_old
