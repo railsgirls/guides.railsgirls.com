@@ -13,7 +13,7 @@ Our aim is to give tools for women to understand technology. The Rails Girls eve
 
 Rails Girls was founded in end of 2010 in Helsinki. Originally intended as a onetime event, we never thought we'd see so many local chapters all around the world! This guide has been put together to help you get started.
 
-Please contact us at [contact@railsgirls.com](mailto:contact@railsgirls.com) if you want to organise a local chapter. The roadmap for future events can be seen at [www.railsgirls.com](http://railsgirls.com).
+Please contact us at [contact@railsgirls.com](mailto:contact@railsgirls.com) if you want to organize a local chapter or have feedback on the guides. The roadmap for future events can be seen at [www.railsgirls.com](http://railsgirls.com).
 
 
 ### The Basics
@@ -48,6 +48,8 @@ Some installations will fail: be prepared to set girls in pairs, don't use endle
 Decorate the place with balloons and posters. Put a fun <a href="http://open.spotify.com/user/lindaliukas/playlist/1fgkUFCFDrSn621kf4iHhr">playlist</a> together for the evening. 
 
 Come up with activities to break the ice: ask the girls to write why they are attending the event on post-its or to draw and describe their dream web app. 
+
+Remember to do a [http://www.fridayhug.com] (www.fridayhug.com)! 
 
 21 -> Coach dinner
 Go through the application with the coaches during dinner. 
@@ -122,14 +124,15 @@ Invite everyone, also the local developers, boys, those who weren't accepted, to
 
 #### Materials
 
-* Programming 101 slides
-* Bentobox exercise
++ [Download materials](http://www.speakerdeck.com/u/railsgirls)
 
 ### Promotion of Rails Girls
 
 Every Rails Girls workshop will get a custom website at railsgirls.com/city where the information is collected and then stored. For past cities, see [railsgirls.com/events](railsgirls.com/events)
 
 While the event is underway, remember to take pictures, collect tweets and ask questions of the participants. We love to write blog posts about the speaker and participant experiences. A list of the coaches is also required.
+
++ [Download materials](http://www.speakerdeck.com/u/railsgirls)
 
 #### How to find local developers?
 
@@ -230,6 +233,9 @@ Anyone. What we look for is a group of people dedicated in making this a stellar
 
 Start by filling out [railsgirls.com/inyourcity](http://railsgirls.com/inyourcity) and someone from our team will be in contact
 
+#### Where can I find all the materials for posters, nametags, sample presentations and such?
+Check out below, and let us know if something is missing!
++ [Download materials](http://www.speakerdeck.com/u/railsgirls)
 
 #### What kind of venue is needed?
 
@@ -280,6 +286,10 @@ So far we've had
 * Stickers
 * Reflectors
 * Tattoos
+
+Also, check out:
+
++ [Download materials](http://www.speakerdeck.com/u/railsgirls)
 
 #### How do I choose attendees?
 
@@ -398,7 +408,7 @@ This is a small checklist for your event. Rails Girls can be thrown together in 
   5. Partners - a two parapgraph sentence and a logo (100 x 100px or 250 x 90px and in png format)
   6. Coaches with twitter-handle
 
-* Start marketing the event
+* Start marketing the event, you can use materials from [here](http://www.speakerdeck.com/u/railsgirls)
 * Start looking for sponsors
 * Reach out for press and write a pre-event story
 * E-mail accepted participants and non-accepted applicants
@@ -414,6 +424,6 @@ This is a small checklist for your event. Rails Girls can be thrown together in 
 #### After the event
 
 * Update website to include pictures and possible blogposts
-* Invite participants to [Facebook group](http://www.facebook.com/groups/railsgirls/)
-* Send a thank you note to participants
+* Invite active participants to [global e-mail list](https://groups.google.com/group/rails-girls-team)
+* Send a thank you note to participants and ask for [feedback](http://www.railsgirls.com/feedback)
 * Send a thank you note for organizers
