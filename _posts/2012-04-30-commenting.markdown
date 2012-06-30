@@ -101,7 +101,7 @@ In app/controllers/ideas_controller.rb add to show action after the row
 
 this
 {% highlight ruby %}
-@comment = @idea.comments.new
+@comment = @idea.comments.build
 {% endhighlight %}
 
 Open comments/_form.html and after
