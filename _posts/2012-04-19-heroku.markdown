@@ -56,7 +56,7 @@ __COACH__: This would be a good time to talk about version control systems and g
 
 #### App creation
 
-We need to create our heroku app by typing `heroku create --stack cedar` in the terminal and see something like this:
+We need to create our heroku app by typing `heroku create` in the terminal and see something like this:
 
 {% highlight sh %}
 Creating evening-sky-7498... done, stack is cedar
