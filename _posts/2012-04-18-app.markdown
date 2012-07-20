@@ -243,6 +243,7 @@ del public\index.html
 Then open config/routes.rb and add the following after the first line:
 
 {% highlight ruby %}
+resources :ideas
 root :to => redirect("/ideas")
 {% endhighlight %}
 
