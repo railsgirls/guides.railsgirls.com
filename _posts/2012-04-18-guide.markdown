@@ -134,6 +134,12 @@ While the event is underway, remember to take pictures, collect tweets and ask q
 
 + [Download materials](http://www.speakerdeck.com/u/railsgirls)
 
+#### Website
+E-mail contact(a)railsgirls.com and ask to be included in the repo. Look for readme.txt for further instructions! Before making a site you should have at least two coaches and one sponsor onboard. 
+
+
++ [Counter for the site] (https://github.com/ys/rails-girls-count#readme)
+
 #### How to find local developers?
 
 * Google. Almost every country has some sort of a Rails or Ruby community (sometimes called Ruby Brigade or Ruby Tuesday). Look for [Hackernews](http://news.ycombinator.com) meetups, [GitHub](http://www.github.com) contributors or [Dribbble](http://dribbble) draftees. Find the local open source scene. Surf the technology conferences (here's [a list](http://rubythere.com/) of Ruby-themed ones, but others are cool too) and meetups at [meetup.com](http://www.meetup.com). Call software development houses, big and small. Don't forget IRC and podcasts!
