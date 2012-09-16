@@ -121,18 +121,10 @@ and before `</body>` add
 Now let's also change the styling of the ideas table. Open `app/assets/stylesheets/application.css` and at the bottom add
 
 {% highlight css %}
-#logo {
-    font-size: 20px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    float: left;
-    padding: 10px;
-}
 body { padding-top: 100px; }
 footer { margin-top: 100px; }
 table, td, th { vertical-align: middle !important; border: none !important; }
 th { border-bottom: 1px solid #DDD !important; }
-td.picture { width: 140px; }
-td.picture img { width: 140px; }
 {% endhighlight %}
 
 **Coach:** Talk a little about CSS and layouts.
