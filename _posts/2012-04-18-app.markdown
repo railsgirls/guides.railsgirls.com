@@ -34,7 +34,7 @@ mkdir projects
 cd projects
 rails new railsgirls
 cd railsgirls
-rails s
+rails server
 {% endhighlight %}
 
 Open [http://localhost:3000](http://localhost:3000) in browser.
@@ -53,7 +53,7 @@ We are using Rails&#8217; scaffolds to generate a starting point that allows us 
 {% highlight sh %}
 rails generate scaffold idea name:string description:text picture:string
 rake db:migrate
-rails s
+rails server
 {% endhighlight %}
 
 Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in browser.
