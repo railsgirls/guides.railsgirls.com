@@ -88,7 +88,7 @@ for
 
 {% highlight erb %}
 <div class="container">
-    <%= yield %>
+  <%= yield %>
 </div>
 {% endhighlight %}
 
@@ -98,14 +98,14 @@ To the application.html.erb under `<body>` add:
 
 {% highlight html %}
 <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container">
-            <a class="brand" href="/">The Idea app</a>
-            <ul class="nav">
-                <li class="active"><a href="/ideas">Ideas</a></li>
-            </ul>
-        </div>
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/">The Idea app</a>
+      <ul class="nav">
+        <li class="active"><a href="/ideas">Ideas</a></li>
+      </ul>
     </div>
+  </div>
 </div>
 {% endhighlight %}
 
@@ -113,9 +113,9 @@ and before `</body>` add:
 
 {% highlight html %}
 <footer>
-    <div class="container">
-        Rails Girls 2012
-    </div>
+  <div class="container">
+    Rails Girls 2012
+  </div>
 </footer>
 {% endhighlight %}
 
