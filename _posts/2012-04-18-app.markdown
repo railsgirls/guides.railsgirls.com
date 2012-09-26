@@ -7,27 +7,28 @@ permalink: app
 # Rails Girls App Tutorial
 
 *Created by Vesa Vänskä, [@vesan](https://twitter.com/vesan)*
-      
-[**First, make sure you installed Rails, otherwise please follow this link.**](/install)
+
+**Make sure you have Rails installed.** [**Follow the installation guide**](/install) to get set up.
 
 
 ## Step 0: Get to know the tools
 
-* Texteditor: (Gedit, Vim, Emacs, Komodo Edit, Sublime Text) are examples of texteditors your can use for writing code and editing files.
-* Terminal / Command Prompt is where you start the rails server and run commands.
-* Web browser (Firefox, Safari, Chrome) are for viewing your application.
+* Text editor: [Sublime Text](http://www.sublimetext.com), [Komodo Edit](http://www.activestate.com/komodo-edit), Vim, Emacs, and Gedit are examples of text editors your can use for writing code and editing files.
+* Terminal (known as Command Prompt on Windows): where you start the Rails server and run commands.
+* Web browser (Firefox, Safari, Chrome): for viewing your application.
 
 
 ## Step 1: Creating the application
 
-We are going to create app called *railsgirls*.
+We're going to create a new Rails app called *railsgirls*.
 
-First, let's open Terminal/Command Prompt:
+First, let's open a terminal:
 
-* OS X: Open Spotlight, type *Terminal* and click appearing *Terminal* options.
-* Windows: Click Start-menu and search for *Command Prompt* click *Command Prompt with Ruby on Rails*.
+* Mac OS X: Open Spotlight, type *Terminal* and click the *Terminal* application.
+* Windows: Click Start and look for *Command Prompt*, then click *Command Prompt with Ruby on Rails*.
+* Linux (Ubuntu): Search for *Terminal* on the dash and click *Terminal*.
 
-Next, type these commands:
+Next, type these commands in the terminal:
 
 {% highlight sh %}
 mkdir projects
@@ -37,18 +38,18 @@ cd railsgirls
 rails server
 {% endhighlight %}
 
-Open [http://localhost:3000](http://localhost:3000) in browser.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-CTRL-C to exit the server in Terminal/Command Prompt.
+Hit `CTRL-C` in the terminal to quit the server.
 
-**Coach:** Quick explanation about what each command does. What was generated? What does the server do.
+**Coach:** Explain what each command does. What was generated? What does the server do?
 
 
 ## Step 2: Create Idea scaffold
 
-We are using Rails&#8217; scaffolds to generate a starting point that allows us to list, add, remove, edit, and view things; in our case ideas.
+We're going to use Rails' scaffold functionality to generate a starting point that allows us to list, add, remove, edit, and view things; in our case ideas.
 
-**Coach:** What is a scaffold (1. the command, 2. the model name and related db table; pluralization/naming conventions, 3. attributes and types)? What are migrations and when do you need to do them, why?
+**Coach:** What is Rails scaffolding? (Explain the command, the model name and related database table, naming conventions, attributes and types, etc.) What are migrations and why do you need them?
 
 {% highlight sh %}
 rails generate scaffold idea name:string description:text picture:string
@@ -56,73 +57,71 @@ rake db:migrate
 rails server
 {% endhighlight %}
 
-Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in browser.
+Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in your browser.
 
-CTRL-C exits the server when you have clicked around for a little.
+Hit `CTRL-C` to quit the server again when you've clicked around a little.
 
 ## Step 3: Design
 
-**Coach:** Talk about the relationship of HTML and Rails; what part of views is HTML and what is Embedded Ruby (ERB)? How does this relate to MVC (models and controllers control the logic of dynamically generating HTML, or views)?
+**Coach:** Talk about the relationship between HTML and Rails. What part of views is HTML and what is Embedded Ruby (ERB)? What is MVC and how does this relate to it? (Models and controllers are responsible for generating the HTML views.)
 
-Design doesn&#8217;t look nice. Let&#8217;s do something about it. We&#8217;ll use Twitter&#8217;s Bootstrap project to give us nicer default styles really easily.
+The app doesn't look very nice yet. Let's do something about that. We'll use the Twitter Bootstrap project to give us nicer styling really easily.
 
-Open app/views/layouts/application.html.erb and add on top of
+Open `app/views/layouts/application.html.erb` in your text editor and above the line
 
 {% highlight erb %}
 <%= stylesheet_link_tag "application" %>
 {% endhighlight %}
 
-the line
+add
 
 {% highlight erb %}
 <link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css">
 {% endhighlight %}
 
-and swap
+and replace
 
 {% highlight erb %}
 <%= yield %>
 {% endhighlight %}
 
-for
+with
 
 {% highlight erb %}
 <div class="container">
-    <%= yield %>
+  <%= yield %>
 </div>
 {% endhighlight %}
 
-Let&#8217;s also add topbar and footer to the layout and style those and the ideas table.
-
-To the application.html.erb under `<body>` add:
+Let's also add a navigation bar and footer to the layout. In the same file, under `<body>` add
 
 {% highlight html %}
 <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container">
-            <a class="brand" href="/">The Idea app</a>
-            <ul class="nav">
-                <li class="active"><a href="/ideas">Ideas</a></li>
-            </ul>
-        </div>
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/">The Idea app</a>
+      <ul class="nav">
+        <li class="active"><a href="/ideas">Ideas</a></li>
+      </ul>
     </div>
+  </div>
 </div>
 {% endhighlight %}
 
-and before `</body>` add:
+and before `</body>` add
 
 {% highlight html %}
 <footer>
-    <div class="container">
-        Rails Girls 2012
-    </div>
+  <div class="container">
+    Rails Girls 2012
+  </div>
 </footer>
 {% endhighlight %}
 
-Open app/assets/stylesheets/application.css and add to the bottom:
+Now let's also change the styling of the ideas table. Open `app/assets/stylesheets/application.css` and at the bottom add
 
 {% highlight css %}
-#logo { 
+#logo {
     font-size: 20px;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     float: left;
@@ -141,49 +140,49 @@ td.picture img { width: 140px; }
 
 ## Step 4: Adding picture uploads
 
-We need to install additional library to add image processing.
+We need to install a piece of software to let us upload files in Rails.
 
-Open Gemfile in the project and add
-
-{% highlight ruby %}
-gem 'carrierwave'
-{% endhighlight %}
-
-under the line
+Open `Gemfile` in the project directory and under the line
 
 {% highlight ruby %}
 gem 'sqlite3'
 {% endhighlight %}
 
-**Coach:** Tell what libraries are and why they are used. Maybe few words about Open Source?
+add
 
-Now we generate the needed code for picture handling. In the Terminal/Command Prompt run:
+{% highlight ruby %}
+gem 'carrierwave'
+{% endhighlight %}
+
+**Coach:** Explain what libraries are and why they are useful. Describe what open source software is.
+
+In the terminal run:
 
 {% highlight sh %}
 bundle
 {% endhighlight %}
 
-**At this point you need to restart the Rails server process in Terminal/Command Prompt.** This is needed for the app to load the added gem.
+At this point you need to **restart the Rails server process** in the terminal. This is needed for the app to load the added library.
 
-Then you can start adding the picture upload by running a command:
+Now we can generate the code for handling uploads. In the terminal run:
 
 {% highlight sh %}
 rails generate uploader Picture
 {% endhighlight %}
 
-Open app/models/idea.rb and add
-
-{% highlight ruby %}
-mount_uploader :picture, PictureUploader
-{% endhighlight %}
-
-under the line
+Open `app/models/idea.rb` and under the line
 
 {% highlight ruby %}
 class Idea < ActiveRecord::Base
 {% endhighlight %}
 
-Open app/views/ideas/_form.html.erb and change
+add
+
+{% highlight ruby %}
+mount_uploader :picture, PictureUploader
+{% endhighlight %}
+
+Open `app/views/ideas/_form.html.erb` and change
 
 {% highlight erb %}
 <%= f.text_field :picture %>
@@ -204,12 +203,12 @@ and
 to
 
 {% highlight erb %}
-<%= form_for(@idea, :html => {:multipart => true}) do |f| %>
+<%= form_for(@idea, :html => { :multipart => true }) do |f| %>
 {% endhighlight %}
 
-The view doesn&#8217;t look nice, it only shows a path to the file, so let&#8217;s fix it.
+When you upload a picture it doesn't look nice because it only shows a path to the file, so let's fix that.
 
-Open app/views/ideas/show.html.erb and change
+Open `app/views/ideas/show.html.erb` and change
 
 {% highlight erb %}
 <%= @idea.picture %>
@@ -226,24 +225,24 @@ to
 
 ## Step 5: Finetune the routes
 
-If you try to open [http://localhost:3000](http://localhost:3000) it still shows the default page. Let&#8217;s make it redirect to the ideas page.
+If you try to open [http://localhost:3000](http://localhost:3000) it still shows the default page. Let's make it redirect to the ideas page.
 
-On OS X and Linux, in the Terminal run:
+On Mac OS X and Linux, in the terminal run:
 
 {% highlight sh %}
 rm public/index.html
 {% endhighlight %}
 
-In Windows, in the Command Prompt run:
+On Windows, in the command prompt run:
 
 {% highlight bat %}
 del public\index.html
 {% endhighlight %}
 
-Then open config/routes.rb and add the following after the first line:
+Then open `config/routes.rb` and after the first line add
 
 {% highlight ruby %}
-root :to => redirect("/ideas")
+root :to => redirect('/ideas')
 {% endhighlight %}
 
 **Coach:** Talk about routes.
@@ -254,11 +253,11 @@ root :to => redirect("/ideas")
 * Add design using HTML &amp; CSS
 * Add ratings
 * Use CoffeeScript (or JavaScript) to add interaction
-* Add proper picture resizing to make loading the pictures faster
-      
+* Add picture resizing to make loading the pictures faster
+
 
 ## Additional Guides
 
-* GUIDE 1: [Add commenting by Janika Liiv](/commenting)
-* GUIDE 2: [Put your app online with Heroku by Terence Lee](/heroku)
-* GUIDE 3: [Build a map of workshop participants by Rails Girls Berlin](http://blog.railsgirlsberlin.de/apptutorial/)
+* Guide 1: [Add commenting by Janika Liiv](/commenting)
+* Guide 2: [Put your app online with Heroku by Terence Lee](/heroku)
+* Guide 3: [Build a map of workshop participants by Rails Girls Berlin](http://blog.railsgirlsberlin.de/apptutorial/)
