@@ -252,4 +252,4 @@ root :to => redirect('/ideas')
 
 * Guide 1: [Add commenting by Janika Liiv](/commenting)
 * Guide 2: [Put your app online with Heroku by Terence Lee](/heroku)
-* Guide 3: [Build a map of workshop participants by Rails Girls Berlin](http://blog.railsgirlsberlin.de/apptutorial/)
+* Guide 3: [Build a map of workshop participants by Rails Girls Berlin](http://railsgirlsberlin.de/apptutorial/)
