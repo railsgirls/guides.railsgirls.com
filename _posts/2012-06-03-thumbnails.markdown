@@ -36,7 +36,7 @@ under the line
 gem 'carrierwave'
 {% endhighlight %}
 
-In the Terminal/Command Prompt run:
+In the Terminal run:
 
 {% highlight sh %}
 bundle
