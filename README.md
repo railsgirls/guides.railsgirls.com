@@ -31,6 +31,10 @@ If you aren't editing the code blocks, you can safely ignore this. If you want p
 
 `jekyll --server --auto`
 
+### Having trouble?
+
+You might find some useful hints in this jekyll issue if it's not working as expected: [Issue 503](https://github.com/mojombo/jekyll/issues/503)
+
 
 ## Contributing a Guide
 
