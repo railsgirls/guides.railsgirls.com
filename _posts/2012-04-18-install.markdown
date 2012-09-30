@@ -22,6 +22,8 @@ Follow the instructions for your operating system. If you hit into any problems,
 
 Download [RailsInstaller](https://github.com/downloads/railsinstaller/railsinstaller-nix/RailsInstaller-1.0.3-osx-10.7.app.tgz). Double click the downloaded file and it will unpack it into the current directory. Double click the the newly unpacked 'RailsInstaller-1.0.3-osx-10.7.app' and follow the instructions. It will open a README file with 'Rails Installer OS X' at the top. Please ignore the instructions in this file.
 
+**Note!** After installing, when you try to create your first Rails application, you may get an error message about missing MAKE tool. In this case you should install [Xcode](https://developer.apple.com/xcode/) or the command-line developer tools for it. This may require registering as a developer, which is free and instantaneous. If after this detour, you still get an error about missing GCC, then you should link the */usr/bin/gcc command* to an alias */usr/bin/gcc-4.2* or whichever version it complains about not finding. To do this use e.g. *Terminal.app* and *ln -s /usr/bin/gcc /usr/bin/gcc-4.2* command.
+
 You also need a text editor to edit code files. For the workshop we recommend the free code editor Komodo Edit.
 
 * [Download the Komodo Edit and install it.](http://www.activestate.com/komodo-edit/downloads)
