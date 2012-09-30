@@ -13,17 +13,12 @@ __Coach__: Explain what specifying the image width in HTML at the end of Step
 
 ## Installing ImageMagick
 
-* OS X: download and run one of the [ImageMagick installers][im-osx] depending
-  on the version of your operating system (take a look at [Step 2][step2] to
-  see which one is right for you -- choose *Lion* if you have 10.7 or
-  *Leopards* if you have 10.5 or 10.6).
+* OS X: run `brew install imagemagick`
 * Windows: download and run the [ImageMagick installer][im-win] (use the first
   *download* link).
 * Linux: On Ubuntu and Debian, run `sudo apt-get install imagemagick`. Use the
   appropriate package manager instead of `apt-get` for other distributions.
 
-  [im-osx]: http://cactuslab.com/imagemagick/
-  [step2]:  http://guides.railsgirls.com/install/#setup_for_os_x_old
   [im-win]: http://www.imagemagick.org/script/binary-releases.php?ImageMagick=vkv0r0at8sjl5qo91788rtuvs3#windows
 
 __Coach__: What is ImageMagick and how is it different from libraries/gems we
