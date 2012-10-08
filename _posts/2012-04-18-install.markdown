@@ -12,7 +12,6 @@ To build apps and other things with Ruby on Rails, we need to setup some softwar
 Follow the instructions for your operating system. If you hit into any problems, don&#8217;t panic. Inform us at the event and we can solve it together.
 
 * [Setup for OS X](#setup_for_os_x)
-* [Setup for OS X Old](#setup_for_os_x_old)
 * [Setup for Windows](#setup_for_windows)
 * [Setup for Ubuntu](#setup_for_ubuntu)
 
@@ -20,57 +19,28 @@ Follow the instructions for your operating system. If you hit into any problems,
 
 ## Setup for OS X
 
-Download [RailsInstaller](https://github.com/downloads/railsinstaller/railsinstaller-nix/RailsInstaller-1.0.3-osx-10.7.app.tgz). Double click the downloaded file and it will unpack it into the current directory. Double click the the newly unpacked 'RailsInstaller-1.0.3-osx-10.7.app' and follow the instructions. It will open a README file with 'Rails Installer OS X' at the top. Please ignore the instructions in this file.
+**Step 1.** Let&#8217;s check the version of the operating system.
 
-You also need a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
-
-* [Download Sublime Text and install it](http://www.sublimetext.com/2)
-
-<hr />
-
-## Setup for OS X Old
-
-First we need to install general tools needed to install other developer software.
-
-**Step 1.** Lets check the version of the operating system.
-
-Click the Apple menu and choose *About this Mac* (Picture 1).
+Click the Apple menu and choose *About this Mac*.
 
 ![Apple menu](/images/1.png "Apple menu")
 
-Picture 1
-
- **Step 2.** In the window you find the version of your operating system (Picture 2). If your version number starts with 10.6 or 10.7 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
+**Step 2.** In the window you will find the version of your operating system. If your version number starts with 10.6, 10.7 or 10.8 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
 
 ![About this Mac dialog](/images/2.png "About this Mac dialog")
 
-Picture 2
+**Step 3.** Download the RailsInstaller for your version of OS X:
 
-**Step 3.** Download and install these developer tools for OS X depending of your system version number.
+* [RailsInstaller for 10.7 and 10.8](https://github.com/downloads/railsinstaller/railsinstaller-nix/RailsInstaller-1.0.3-osx-10.7.app.tgz) <span class="muted">(325MB)</span>
+* [RailsInstaller for 10.6](https://github.com/downloads/railsinstaller/railsinstaller-nix/RailsInstaller-1.0.3-osx-10.6.app.tgz) <span class="muted">(224MB)</span>
 
-* [Installer for 10.7](https://github.com/downloads/kennethreitz/osx-gcc-installer/GCC-10.7-v2.pkg) <span class="muted">(273Mb)</span>
-
-* [Installer for 10.6](https://github.com/downloads/kennethreitz/osx-gcc-installer/GCC-10.6.pkg) <span class="muted">(273Mb)</span>
-
-**Step 4.** After the installer has run, open Terminal.app. Click the Spotlight (magnifying glass icon in the top right corner), type *Terminal.app* and click the option that appears (Picture 3).
-
-![Spotlight](/images/3.png "Spotlight")
-
-Picture 3
-
-**Step 5.** Now copy and paste this line in the Terminal and press Enter. Enjoy the text flying on the screen, it will take quite some time (approximately 30 minutes). The installer might ask for your administrator password. Grabbing a refreshing drink before starting is encouraged!
-
-{% highlight sh %}
-bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-osx-rvm.sh)
-{% endhighlight %}
-
- ![You've done it](/images/complete.png "You've done it")
-
-Now if everything went right, you should have a working Ruby on Rails programming setup. Congrats!
+Double click the downloaded file and it will unpack it into the current directory. Double click the the newly unpacked 'RailsInstaller-1.0.3-osx-10.7.app' or 'RailsInstaller-1.0.3-osx-10.6.app' and follow the instructions. It will open a README file with 'Rails Installer OS X' at the top. Please **ignore** the instructions in this file.
 
 **Final step.** Install a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
 
 * [Download Sublime Text and install it](http://www.sublimetext.com/2)
+
+Now you should have a working Ruby on Rails programming setup. Congrats!
 
 <hr />
 
@@ -78,7 +48,7 @@ Now if everything went right, you should have a working Ruby on Rails programmin
 
 Download [RailsInstaller](http://rubyforge.org/frs/download.php/75346/railsinstaller-2.0.0.exe) and run it. Click through the installer using the default options.
 
-You also need a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
+**Final step.** You also need a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
 
 * [Download Sublime Text and install it](http://www.sublimetext.com/2)
 
@@ -94,6 +64,10 @@ To install Ruby on Rails development environment you just need to copy and paste
 bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
 {% endhighlight %}
 
-You also need a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
+**Final step.** You also need a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
 
 * [Download Sublime Text and install it](http://www.sublimetext.com/2)
+
+Now you should have a working Ruby on Rails programming setup. Congrats!
+
+<hr />
