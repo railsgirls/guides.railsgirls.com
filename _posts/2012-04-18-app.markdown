@@ -113,7 +113,7 @@ and before `</body>` add
 {% highlight html %}
 <footer>
   <div class="container">
-    Rails Girls 2012
+    Rails Girls 2013
   </div>
 </footer>
 {% endhighlight %}
