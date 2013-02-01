@@ -13,7 +13,9 @@ Our aim is to give tools for women to understand technology. The Rails Girls eve
 
 Rails Girls was founded in end of 2010 in Helsinki. Originally intended as a onetime event, we never thought we'd see so many local chapters all around the world! This guide has been put together to help you get started.
 
-Please contact us at [contact@railsgirls.com](mailto:contact@railsgirls.com) if you want to organize a local chapter or have feedback on the guides. The roadmap for future events can be seen at [www.railsgirls.com](http://railsgirls.com).
+If you want to organize an event, start by filling out [http://railsgirls.com/inyourcity](http://railsgirls.com/inyourcity) and someone from our team will be in contact
+
+The roadmap for future events can be seen at [www.railsgirls.com](http://railsgirls.com).
 
 
 ### The Basics
@@ -237,7 +239,7 @@ Anyone. What we look for is a group of people dedicated in making this a stellar
 * An inkling of an idea where to look for girls interested in technology. University, literature, arts, sports - we try to look for people who are interested in Internet, but do not have experience in coding.
 * Willingness to guide the girls in the future if they have questions or want to organize their own events or find local developer gatherings.
 
-Start by filling out [railsgirls.com/inyourcity](http://railsgirls.com/inyourcity) and someone from our team will be in contact
+Start by filling out [http://railsgirls.com/inyourcity](http://railsgirls.com/inyourcity) and someone from our team will be in contact
 
 #### Where can I find all the materials for posters, nametags, sample presentations and such?
 Check out below, and let us know if something is missing!
