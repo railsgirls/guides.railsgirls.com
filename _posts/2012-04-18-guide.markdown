@@ -392,7 +392,7 @@ Inviting real developers to coach is Rails Girls sessions not only gives the par
 * Encourage them to continue practicing by trying different exercises like Codecademy and such.
 * Mention at least two forthcoming developer events where the local coaches will be. Try to get the girls to attend actual developer meetups
 * Invite everyone to the Facebook Group where they can ask questions.
-* Invite the girls together again within a month. You can host these meetups at the Rails Girls global meetup page http://www.meetup.com/Rails-Girls/ - we’ll be happy to promote events. However, it doesn't matter under which brand you want to continue meeting - the important thing'
+* Invite the girls together again within a month. You can host these meetups at the Rails Girls global meetup page <http://www.meetup.com/Rails-Girls/> - we’ll be happy to promote events. However, it doesn't matter under which brand you want to continue meeting - the important thing'
 
 
 

@@ -6,7 +6,7 @@ permalink: design
 
 # Add design using HTML & CSS
 
-*Created by Alex Liao, [@alexliao](http://bannka.com/alex)
+*Created by Alex Liao, [@alexliao](http://bannka.com/alex)*
 
 Now the app is running well, only still looks like scalffold. Let's add some design to make it a professional web site. When you finished this tutorial, your app will looks like [this](http://railsgirlsapp.herokuapp.com/ideas)
 
