@@ -10,15 +10,26 @@ permalink: app
 
 **Make sure you have Rails installed.** [**Follow the installation guide**](/install) to get set up.
 
+## Get to know the tools
 
-## Step 0: Get to know the tools
+<div class="indent" markdown="1">
 
-* Text editor: [Sublime Text](http://www.sublimetext.com), [Komodo Edit](http://www.activestate.com/komodo-edit), Vim, Emacs, and Gedit are examples of text editors your can use for writing code and editing files.
-* Terminal (known as Command Prompt on Windows): where you start the Rails server and run commands.
-* Web browser (Firefox, Safari, Chrome): for viewing your application.
+<h3><i class="icon-text-editor">&nbsp;</i></h3>
+### Text Editor
 
+[Sublime Text](http://www.sublimetext.com), [Komodo Edit](http://www.activestate.com/komodo-edit), Vim, Emacs, and Gedit are examples of text editors your can use for writing code and editing files.
 
-## Step 1: Creating the application
+<h3><i class="icon-prompt">&nbsp;</i></h3>
+### Terminal (known as Command Prompt on Windows)
+Where you start the rails server and run commands.
+
+<h3><i class="icon-browser">&nbsp;</i></h3>
+### Web browser
+(Firefox, Safari, Chrome) for viewing your application.
+
+</div>
+
+## *1.*Creating the application
 
 We're going to create a new Rails app called *railsgirls*.
 
@@ -44,8 +55,7 @@ Hit `CTRL-C` in the terminal to quit the server.
 
 **Coach:** Explain what each command does. What was generated? What does the server do?
 
-
-## Step 2: Create Idea scaffold
+## *2.*Create Idea scaffold
 
 We're going to use Rails' scaffold functionality to generate a starting point that allows us to list, add, remove, edit, and view things; in our case ideas.
 
@@ -61,7 +71,7 @@ Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in your browser.
 
 Hit `CTRL-C` to quit the server again when you've clicked around a little.
 
-## Step 3: Design
+## *3.*Design
 
 **Coach:** Talk about the relationship between HTML and Rails. What part of views is HTML and what is Embedded Ruby (ERB)? What is MVC and how does this relate to it? (Models and controllers are responsible for generating the HTML views.)
 
