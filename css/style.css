@@ -4,7 +4,6 @@ html {
 
 body {
   margin: 0px;
-  padding: 0px;
   background: #fff;
   color: #333;
   text-rendering: optimizeLegibility;
@@ -244,4 +243,21 @@ i.icon-small-prompt{
 }
 i.icon-small-browser {
   background-image: url("/images/icon-small-browser.png");
+}
+/* Correct padding on smaller screens */
+@media (max-width: 767px) {
+ header, footer{
+   margin-left:-20px;
+   margin-right:-20px;
+   padding-left:20px;
+   padding-right:20px;
+ } 
+}
+
+/* Don't show the homepage image on mobile */
+@media (max-width: 480px) { 
+  .hero {
+    padding: 20px 0;
+    background:none;
+  }
 }
