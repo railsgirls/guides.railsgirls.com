@@ -104,7 +104,7 @@ this
 @comment = @idea.comments.build
 {% endhighlight %}
 
-Open comments/_form.html and after
+Open app/views/comments/_form.html and after
 {% highlight erb %}
   <div class="field">
     <%= f.label :body %><br />
