@@ -32,7 +32,7 @@ The two-day event includes a lot of small group working and short focused talks 
 
 ### Example Program
 
-Every Rails Girls event starts with an installation-fest where the setup is pre-installed to the girls computers. See [railsgirls.com/install](http://railsgirls.com/install) for readymade instructions. The installation-fest can include short talks, but the main point is to offer some sparkling wine, get everything set for the next day and the girls to know each other. The timeframe is tentative - you know your audience and what suits them best. We've hosted events both during weekend and weekdays. Also, doing two evenings (4PM - 22 PM) might be a more suitable solution for your community needs.
+Every Rails Girls event starts with an installation-fest where the setup is pre-installed to the girls computers. See [guides.railsgirls.com/install](http://guides.railsgirls.com/install) for readymade instructions. The installation-fest can include short talks, but the main point is to offer some sparkling wine, get everything set for the next day and the girls to know each other. The timeframe is tentative - you know your audience and what suits them best. We've hosted events both during weekend and weekdays. Also, doing two evenings (4PM - 22 PM) might be a more suitable solution for your community needs.
 
 #### Learning objectives of the workshop:
 
@@ -78,7 +78,7 @@ Themes to cover:
 Show & tell with <a href="http://tryruby.org">tryruby.org</a>, first three-four exercises all together. 
 
 11:30 - 13:00 Workshop time
-Going (slowly!) through the curriculum at <a href="http://railsgirls.com/app">railsgirls.com/app</a>. Stop to explain what you’re doing and what the different concepts mean. 
+Going (slowly!) through the curriculum at <a href="http://guides.railsgirls.com/app">guides.railsgirls.com/app</a>. Stop to explain what you’re doing and what the different concepts mean. 
 
 Try to aim for simple explanations even with the cost of accuracy. You don’t need to talk about all underlying concepts. Just try to answer questions when they arise, or move on if they’re too hard or out of scope. You are not here to teach perfect coding skills but to show how to get stuff done. One has to learn how to build web apps before learning how to do it well.
 
@@ -260,7 +260,7 @@ Ask where local developer meetings are usually hosted. Often co-working spaces a
 
 Rails Girls events are organized around small groups, ideally maximum of 4-5 persons per one coach. The coaches don’t need to be hardcore experts on Rails - basic knowledge and willingness to explain trumps expertise. We are looking for people who like answering questions and can keep an upbeat and positive atmosphere through a period of 8 hours!
 
-You can get to know the curriculum by checking out [railsgirls.com/app](http://railsgirls.com/app). There is also always a pre-event coach dinner where we’ll go through some pedagogical suggestions and check everyone knows what is happening. Avoid jargon, tie examples to what your doing, encourage asking questions. The installation instructions can be found at [railsgirls.com/install](http://railsgirls.com/install). We also understand that coaches are human and that for most of the people this is the first time teaching something. Worry not - the girls have always been really happy with whatever they learn and just the chance to ask questions is enough. 
+You can get to know the curriculum by checking out [guides.railsgirls.com/app](http://guides.railsgirls.com/app). There is also always a pre-event coach dinner where we’ll go through some pedagogical suggestions and check everyone knows what is happening. Avoid jargon, tie examples to what your doing, encourage asking questions. The installation instructions can be found at [guides.railsgirls.com/install](http://guides.railsgirls.com/install). We also understand that coaches are human and that for most of the people this is the first time teaching something. Worry not - the girls have always been really happy with whatever they learn and just the chance to ask questions is enough. 
 
 
 We hope the coaches are ok with having their name and twitter-id/github/some mean of contact on railsgirls.com so the girls always have a local face to answer their questions.
