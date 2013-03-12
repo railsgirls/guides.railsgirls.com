@@ -10,6 +10,7 @@ permalink: app
 
 **Make sure you have Rails installed.** [**Follow the installation guide**](/install) to get set up.
 
+
 ## Get to know the tools
 
 <div class="indent" markdown="1">
@@ -28,6 +29,7 @@ Where you start the rails server and run commands.
 (Firefox, Safari, Chrome) for viewing your application.
 
 </div>
+
 
 ## *1.*Creating the application
 
@@ -49,11 +51,12 @@ cd railsgirls
 rails server
 {% endhighlight %}
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000) in your browser. You should see "Welcome aboard" page, which means that the generation of your new app worked correctly.
 
 Hit `CTRL-C` in the terminal to quit the server.
 
 **Coach:** Explain what each command does. What was generated? What does the server do?
+
 
 ## *2.*Create Idea scaffold
 
@@ -67,9 +70,10 @@ rake db:migrate
 rails server
 {% endhighlight %}
 
-Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in your browser.
+Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in your browser. Click around and test what you got by running these few command-line commands.
 
 Hit `CTRL-C` to quit the server again when you've clicked around a little.
+
 
 ## *3.*Design
 
@@ -137,6 +141,8 @@ table, td, th { vertical-align: middle !important; border: none !important; }
 th { border-bottom: 1px solid #DDD !important; }
 {% endhighlight %}
 
+Now refresh the browser to see what was changed. You can also change the HTML & CSS further.
+
 **Coach:** Talk a little about CSS and layouts.
 
 
@@ -144,7 +150,7 @@ th { border-bottom: 1px solid #DDD !important; }
 
 We need to install a piece of software to let us upload files in Rails.
 
-Open `Gemfile` in the project directory and under the line
+Open `Gemfile` in the project directory using your text editor and under the line
 
 {% highlight ruby %}
 gem 'sqlite3'
@@ -196,7 +202,7 @@ to
 <%= f.file_field :picture %>
 {% endhighlight %}
 
-When you upload a picture it doesn't look nice because it only shows a path to the file, so let's fix that.
+In your browser, add new idea with a picture. When you upload a picture it doesn't look nice because it only shows a path to the file, so let's fix that.
 
 Open `app/views/ideas/show.html.erb` and change
 
@@ -210,12 +216,14 @@ to
 <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
 {% endhighlight %}
 
+Now refresh your browser to see what changed.
+
 **Coach:** Talk a little about HTML.
 
 
 ## Step 5: Finetune the routes
 
-If you try to open [http://localhost:3000](http://localhost:3000) it still shows the default page. Let's make it redirect to the ideas page.
+If you try to open [http://localhost:3000](http://localhost:3000) it still shows the "Welcome aboard" page. Let's make it redirect to the ideas page.
 
 On Mac OS X and Linux, in the terminal run:
 
@@ -234,6 +242,8 @@ Then open `config/routes.rb` and after the first line add
 {% highlight ruby %}
 root :to => redirect('/ideas')
 {% endhighlight %}
+
+Test the change by opening the root path in your browser.
 
 **Coach:** Talk about routes.
 
