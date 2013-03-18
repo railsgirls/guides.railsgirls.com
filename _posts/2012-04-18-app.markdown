@@ -43,6 +43,8 @@ First, let's open a terminal:
 
 Next, type these commands in the terminal:
 
+<div class="os-specific">
+  <div class="nix">
 {% highlight sh %}
 mkdir projects
 cd projects
@@ -50,6 +52,18 @@ rails new railsgirls
 cd railsgirls
 rails server
 {% endhighlight %}
+  </div>
+
+  <div class="win">
+{% highlight sh %}
+mkdir projects
+cd projects
+ruby rails new railsgirls
+cd railsgirls
+ruby script\rails server
+{% endhighlight %}
+  </div>
+</div>
 
 Open [http://localhost:3000](http://localhost:3000) in your browser. You should see "Welcome aboard" page, which means that the generation of your new app worked correctly.
 
@@ -64,11 +78,23 @@ We're going to use Rails' scaffold functionality to generate a starting point th
 
 **Coach:** What is Rails scaffolding? (Explain the command, the model name and related database table, naming conventions, attributes and types, etc.) What are migrations and why do you need them?
 
+<div class="os-specific">
+  <div class="nix">
 {% highlight sh %}
 rails generate scaffold idea name:string description:text picture:string
 rake db:migrate
 rails server
 {% endhighlight %}
+  </div>
+
+  <div class="win">
+{% highlight sh %}
+ruby rails generate scaffold idea name:string description:text picture:string
+ruby rake db:migrate
+ruby rails server
+{% endhighlight %}
+  </div>
+</div>
 
 Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in your browser. Click around and test what you got by running these few command-line commands.
 

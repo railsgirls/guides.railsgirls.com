@@ -244,6 +244,20 @@ i.icon-small-prompt{
 i.icon-small-browser {
   background-image: url("/images/icon-small-browser.png");
 }
+
+.commandline {
+  margin-bottom: 4em;
+}
+
+.commandline .picker {
+  display: block;
+  float: right;
+}
+
+.commandline .active {
+  font-weight: bold;
+}
+
 /* Correct padding on smaller screens */
 @media (max-width: 767px) {
  header, footer{
