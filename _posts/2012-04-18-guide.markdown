@@ -27,7 +27,7 @@ The two-day event includes a lot of small group working and short focused talks 
 
 * Show sparks, personality and keep in mind the big picture. Explain, repeat and always tie what you're telling into a larger context.
 * Internet was made by people and it doesn’t break by a little tinkering. Continuously show the human side: encourage coaches to talk about open source communities, their programming idols and their aspirations.
-* Copy-pasting rules. Programming per se isn’t central - you can't really learn to speak chinese in one day, in a similar manner you can only learn the basic vocabulary and expressions in coding. The goal of every event is to make something visible!
+* Copy-pasting rules. Programming per se isn’t central - you can't really learn to speak Chinese in one day, in a similar manner you can only learn the basic vocabulary and expressions in coding. The goal of every event is to make something visible!
 * Girls run this world! But also women, ladies, even boys are allowed in. More than semantics we're interested in a mindset. Both founders were born in the Spice Girls era, they don't see the word girl as condescending or cutesy-cute.
 
 ### Example Program
@@ -132,7 +132,15 @@ Invite everyone, also the local developers, boys, those who weren't accepted, to
 
 Every Rails Girls workshop will get a custom website at railsgirls.com/city where the information is collected and then stored. For past cities, see [railsgirls.com/events](railsgirls.com/events)
 
-While the event is underway, remember to take pictures, collect tweets and ask questions of the participants. We love to write blog posts about the speaker and participant experiences. A list of the coaches is also required.
+You can also set up your own Facebook and Twitter page (remember to add links to your workshop's page!) or whatever service is popular in you community. Promoting the event through social media can go a long way these days, but make sure you have somebody to take care of the chosen channels. Some tips:
+
+* Keep the tone of posts friendly, positive and welcoming. Be direct in inviting fans/followers to share the event with their friends.
+* Photos are especially powerful messengers. Create your own graphics (*some ideas: "I'm a Rails Girl" Facebook cover for the event, word cloud with first names of girls who signed up, an infographic of applications*) or promote photos from other workshops if this is your event. Follow other Rails Girls pages and account to get ideas for content and pass it along to your community. 
+* Try various pitches for events to attract different types of girls; some will be in it for the fun and meeting new people, some to learn new things, some will be fueled by the desire to show guys girls can do anything. No need to focus on just one group!
+* Don't be afraid to publicly thank girls, coaches, blogs, media and other supporters who help you spread the word about your workshop for their support.
+* If your language supports it, use feminine forms when addressing girls.
+
+While the event is underway, remember to take pictures, collect tweets and ask questions of the participants. You'll be thankful for all of that for your next event. We love to write blog posts about the speaker and participant experiences. A list of the coaches is also required.
 
 + [Download materials](http://www.speakerdeck.com/u/railsgirls)
 
@@ -162,7 +170,9 @@ E-mail contact(a)railsgirls.com and ask to be included in the repo. Look for rea
 
 #### How to get press?
 
-One of the big aims of Rails Girls is to make it more mainstream for girls to build the web. That’s why we like to engage the local press and highlight the participants and their enthusiasm. We’d be happy to help prepare a press-release for the media. Check out [railsgirls.com/press](http://railsgirls.com/press) for more.
+One of the big aims of Rails Girls is to make it more mainstream for girls to build the web. That’s why we like to engage the local press and highlight the participants and their enthusiasm. We’d be happy to help prepare a press-release for the media. Check out [railsgirls.com/press](http://railsgirls.com/press) for more. If you're working with a big company as a sponsor, their PR department might be able to help you spread the message about the workshop.
+
+Send the press release to local blogs, find contact at various media outlets. The more doors you knock on, the greater you chance of getting through. Make a list of journalists and bloggers you contact, mark those that respond to your emails, so they can be the first ones to receive your next press release. You can also write a press release after the event that includes photos and statements from satisfied participants.
 
 ### Sponsorships
 
@@ -251,8 +261,10 @@ We recommend choosing a venue with a built-in infrastructure for around 30-50 pe
 * High-speed, tested Internet. There’s going to be over 30 computers online all the time. Add to that mobilephones, streaming music, funny videos and you get the picture!
 * Space for 4-6 person groups to gather together: chairs and tables, sometimes big pillows will do! This doesn’t have to be in the same room.
 * Possibility to set up extension chords and a projector.
+* Enough electric outlets to spare. Some girls might have older laptops that will need to be plugged in at all times.
 * Location for food and beverage setup - lunch space for catering or a nearby lunch venue.
 * External monitors for teams are encouraged but not mandatory, helps the coaches show what is happening in the code.
+* Whiteboards can be helpful for coaches to explain more abstract concept. Alternatively, paper and pen work just fine. Just have something at hand people can draw on.
 
 Ask where local developer meetings are usually hosted. Often co-working spaces are also willing to negotiate deals to gain some visibility among new people.
 
@@ -266,6 +278,10 @@ You can get to know the curriculum by checking out [guides.railsgirls.com/app](h
 We hope the coaches are ok with having their name and twitter-id/github/some mean of contact on railsgirls.com so the girls always have a local face to answer their questions.
 
 In addition, we encourage coaches to come up with additional exercises for the group. After completing the ideation app many girls will want to try tweaking the look & feel of the site, implementing commenting, Facebook sharing, pushing the app to Heroku, etc. 
+
+#### How to find coaches?
+
+Ask around, ask sponsors (tech companies), ask anyone to help you out. Once you do get some coaches on board, they can help you out with their own contacts. Influential bloggers or Twitter users in your local dev community can help you out by broadcasting a call for coaches. *Hint: You can also thank coaches for their help by providing a spot at the workshop for their girlfriends ;)*
 
 ##### Sample letter for potential coaches
 
@@ -433,5 +449,6 @@ This is a small checklist for your event. Rails Girls can be thrown together in 
 
 * Update website to include pictures and possible blogposts
 * Invite active participants to [global e-mail list](https://groups.google.com/group/rails-girls-team)
-* Send a thank you note to participants and ask for [feedback](http://www.railsgirls.com/feedback)
+* Send a thank you note to participants and ask for [feedback](http://www.railsgirls.com/feedback) (you can also create your own feedback form in your local language)
+* Send a thank you note to coaches
 * Send a thank you note for organizers
