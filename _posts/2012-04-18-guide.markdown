@@ -132,7 +132,7 @@ Invite everyone, also the local developers, boys, those who weren't accepted, to
 
 Every Rails Girls workshop will get a custom website at railsgirls.com/city where the information is collected and then stored. For past cities, see [railsgirls.com/events](railsgirls.com/events)
 
-You can also set up your own Facebook and Twitter page (remember to add links to your workshop's page!) or whatever service is popular in you community. Promoting the event through social media can go a long way these days, but make sure you have somebody to take care of the chosen channels. Some tips:
+You can also set up your own Facebook and Twitter page (remember to add links to your workshop's page!) or whatever service is popular in your community. Promoting the event through social media can go a long way these days, but make sure you have somebody to take care of the chosen channels. Some tips:
 
 * Keep the tone of posts friendly, positive and welcoming. Be direct in inviting fans/followers to share the event with their friends.
 * Photos are especially powerful messengers. Create your own graphics (*some ideas: "I'm a Rails Girl" Facebook cover for the event, word cloud with first names of girls who signed up, an infographic of applications*) or promote photos from other workshops if this is your event. Follow other Rails Girls pages and account to get ideas for content and pass it along to your community. 
