@@ -244,7 +244,7 @@ Don’t give out the participant info, but sponsors are free to hang out at the 
 
 Anyone. What we look for is a group of people dedicated in making this a stellar first experience in the world of web making for girls. What we hope to see is some (not all) of the following:
 
-* Contacts to the local developer scene. We are pretty technology agnostic, so it doesn’t have to be purely Ruby & Rails people. In practice every event needs 5 or more coaches that have basic knowledge of Rails and two days to contribute. In general the events have been around 25 - 40 people strong.
+* Contacts to the local developer scene. We are pretty technology agnostic, so it doesn’t have to be purely Ruby & Rails people. In practice every event needs 5 or more coaches (the number of coaches depends on the number of girls you're planning to accept) that have basic knowledge of Rails and two days to contribute. In general the events have been around 25 - 40 people strong.
 * Event organisation know-how. Not heaps, but some practicalities under the belt.
 * An inkling of an idea where to look for girls interested in technology. University, literature, arts, sports - we try to look for people who are interested in Internet, but do not have experience in coding.
 * Willingness to guide the girls in the future if they have questions or want to organize their own events or find local developer gatherings.
@@ -270,7 +270,9 @@ Ask where local developer meetings are usually hosted. Often co-working spaces a
 
 #### What is expected from the coaches?
 
-Rails Girls events are organized around small groups, ideally maximum of 4-5 persons per one coach. The coaches don’t need to be hardcore experts on Rails - basic knowledge and willingness to explain trumps expertise. We are looking for people who like answering questions and can keep an upbeat and positive atmosphere through a period of 8 hours!
+Rails Girls events are organized around small groups, maximum of 4-5 persons per one coach. If possible, try to have groups of 3 girls for each coach. For instance, if you're doing an even for 30 girls, aim for having 10 coaches (a few more for backup don't hurt). We know this isn't always possible, but do try not to have groups of more than 5 girls, so the coach can still answer all questions in the group.
+
+The coaches don’t need to be hardcore experts on Rails - basic knowledge and willingness to explain trumps expertise. So, if your local Rails community isn't very strong, do expand your search. You can have a mix of Rails experts and people with web development expertise in other frameworks. We are looking for people who like answering questions and can keep an upbeat and positive atmosphere through a period of 8 hours!
 
 You can get to know the curriculum by checking out [guides.railsgirls.com/app](http://guides.railsgirls.com/app). There is also always a pre-event coach dinner where we’ll go through some pedagogical suggestions and check everyone knows what is happening. Avoid jargon, tie examples to what your doing, encourage asking questions. The installation instructions can be found at [guides.railsgirls.com/install](http://guides.railsgirls.com/install). We also understand that coaches are human and that for most of the people this is the first time teaching something. Worry not - the girls have always been really happy with whatever they learn and just the chance to ask questions is enough. 
 
