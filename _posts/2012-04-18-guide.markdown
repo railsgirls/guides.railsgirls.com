@@ -130,7 +130,7 @@ Invite everyone, also the local developers, boys, those who weren't accepted, to
 
 ### Promotion of Rails Girls
 
-Every Rails Girls workshop will get a custom website at railsgirls.com/city where the information is collected and then stored. For past cities, see [railsgirls.com/events](railsgirls.com/events)
+Every Rails Girls workshop will get a custom website at railsgirls.com/city where the information is collected and then stored. For past cities, see [railsgirls.com/events](http://railsgirls.com/events)
 
 You can also set up your own Facebook and Twitter page (remember to add links to your workshop's page!) or whatever service is popular in your community. Promoting the event through social media can go a long way these days, but make sure you have somebody to take care of the chosen channels. Some tips:
 
