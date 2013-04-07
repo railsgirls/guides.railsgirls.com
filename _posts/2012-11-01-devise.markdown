@@ -47,8 +47,12 @@ before the `end` keyword.
 Open up `app/views/layouts/application.html.erb` and add:
 
 {% highlight erb %}
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+<% if notice %>
+  <p class="alert alert-notice"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-error"><%= alert %></p>
+<% end %>
 {% endhighlight %}
 right above
 {% highlight ruby %}
