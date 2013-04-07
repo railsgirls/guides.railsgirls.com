@@ -26,12 +26,11 @@ to install the gem
 
 ## Step 1: Set up devise in your app
 
-Open a terminal or command prompt (on Windows), go to your app's directory and run. Next, type these commands in the terminal:
+Run the following command in the terminal.
 
 {% highlight sh %}
 rails g devise:install
 {% endhighlight %}
-
 
 
 ## Step 2: Configure Devise
