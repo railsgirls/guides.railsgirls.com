@@ -61,17 +61,14 @@ as third line from the bottom (before the first of two `end` keywords)
 
 ## Step 3: Setup the User model
 
-We'll use a bundled generator script to create a User model that is set up to user Devise.
+We'll use a bundled generator script to create the User model.
 {% highlight sh %}
    rails g devise user
+   rake db:migrate
 {% endhighlight %}
 
-Make any changes you need to the newly created `app/models/user.rb`, as well as the accompanying migration in db/migrate directory.
-Once configured to your needs run:
-{% highlight sh %}
-  rake db:migrate
-{% endhighlight %}
-to set up the database.
+**Coach:** Explain what user model has been generated. What are the
+fields?
 
 ## Step 4: Create Some Users
 
