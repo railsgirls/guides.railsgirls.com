@@ -8,6 +8,8 @@ permalink: devise
 
 *Created by Piotr Steininger, [@polishprince](https://twitter.com/polishprince)*
 
+*Updated by Ernesto Jimenez, [@ernesto_jimenez](https://twitter.com/ernesto_jimenez)*
+
 **This guide assumes that you have already built a RailsGirls app by ** [**following the app development guide**](/app).
 
 
