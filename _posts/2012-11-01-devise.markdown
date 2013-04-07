@@ -42,13 +42,6 @@ Ensure you have defined default url options in your environments files. Open up 
 
 before the `end` keyword.
 
-Open up `config/routes.rb` and add this line:
-{% highlight ruby %}
-   root :to => "home#index"
-{% endhighlight %}
-
-before the `end` keyword.
-
 Open up `app/views/layouts/application.html.erb` and add:
 
 {% highlight erb %}
