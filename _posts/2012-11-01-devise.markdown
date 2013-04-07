@@ -79,44 +79,30 @@ Make sure your rails server is running, open [http://localhost:3000/users/sign_u
 ## Step 5: Add sign-up and login links
 
 All we need to do now is to add appropriate links or notice about the user being logged in in the top right corner of the navigation bar.
-In order to do that, change the following lines in `app/views/layouts/application.html.erb`:
-{% highlight ruby %}
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="brand" href="/">The Idea app</a>
-      <ul class="nav">
-        <li class="active"><a href="/ideas">Ideas</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+
+In order to do that, edit `app/views/layouts/application.html.erb` add:
+{% highlight erb %}
+<p class="navbar-text pull-right">
+<% if user_signed_in? %>
+  Logged in as <strong><%= current_user.email %></strong>.
+  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+<% end %>
 {% endhighlight %}
-to
-{% highlight ruby %}
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="brand" href="/">The Idea app</a>
-      <ul class="nav">
-        <li class="active"><a href="/ideas">Ideas</a></li>
-      </ul>
-      <p class="navbar-text pull-right">
-        <% if user_signed_in? %>
-          Logged in as <strong><%= current_user.email %></strong>.
-          <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-        <% else %>
-          <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-          <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-        <% end %>
-      </p>
-    </div>
-  </div>
-</div>
+right after
+{% highlight erb %}
+<ul class="nav">
+  <li class="active"><a href="/ideas">Ideas</a></li>
+</ul>
 {% endhighlight %}
 
-Test it out by logging in and out
+
+Open your browser and try logging in and out from.
+
+**Coach:** Talk about the `user_signed_in?` and `current_user` helpers. Why are they useful?
 
 ## What next?
 
