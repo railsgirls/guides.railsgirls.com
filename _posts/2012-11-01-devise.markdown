@@ -70,21 +70,11 @@ We'll use a bundled generator script to create the User model.
 **Coach:** Explain what user model has been generated. What are the
 fields?
 
-## Step 4: Create Some Users
+## Step 4: Create your first user
 
-Depending on how you configured the User model, you may be able to simply register for the account through your web browser.
-In that case, make sure your server is running, and go to [http://localhost:3000/users/sign_up](http://localhost:3000/users/sign_up).
+Now that you have set everyting up you can create your first user. Devise creates all the code and routes required to create accounts, log in, log out, etc.
 
-Otherwise you can create a user via rails console:
-{% highlight sh %}
- rails c
-{% endhighlight %}
-and create a user as follows (replace the values with your own)
-{% highlight ruby %}
- User.create(:email=>"me@example.com",:password => "test123", :password_confirmation => "test123")
-{% endhighlight %}
-
-You can now go to [http://localhost:3000/users/sign_in](http://localhost:3000/users/sign_in) to log in.
+Make sure your rails server is running, open [http://localhost:3000/users/sign_up](http://localhost:3000/users/sign_up) and create your user account.
 
 ## Step 5: Add sign-up and login links
 
