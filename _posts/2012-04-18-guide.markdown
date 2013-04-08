@@ -270,7 +270,7 @@ Ask where local developer meetings are usually hosted. Often co-working spaces a
 
 #### What is expected from the coaches?
 
-Rails Girls events are organized around small groups, maximum of 4-5 persons per one coach. If possible, try to have groups of 3 girls for each coach. For instance, if you're doing an even for 30 girls, aim for having 10 coaches (a few more for backup don't hurt). We know this isn't always possible, but do try not to have groups of more than 5 girls, so the coach can still answer all questions in the group.
+Rails Girls events are organized around small groups, maximum of 4-5 persons per one coach. If possible, try to have groups of 3 girls for each coach. For instance, if you're doing an event for 30 girls, aim for having 10 coaches (a few more for backup don't hurt). We know this isn't always possible, but do try not to have groups of more than 5 girls, so the coach can still answer all questions in the group.
 
 The coaches don’t need to be hardcore experts on Rails - basic knowledge and willingness to explain trumps expertise. So, if your local Rails community isn't very strong, do expand your search. You can have a mix of Rails experts and people with web development expertise in other frameworks. We are looking for people who like answering questions and can keep an upbeat and positive atmosphere through a period of 8 hours!
 
