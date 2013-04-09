@@ -16,7 +16,7 @@ Unfortunately (!) the event is already over and I've written this
 blog post to help you find the best way to keep going with learning on
 how to program!
 
-There are 4 steps which I've came up with and I encourage you to
+There are 4 steps which I've come up with and I encourage you to
 really take them to your heart and do them.
 
 Originally this article was planned as a talk for the end of the Rails Girls Basel event but the girls
@@ -47,7 +47,7 @@ to take things to the next level:
 
 * [Railscasts](http://railscasts.com/) - Short and simple screencasts about Rails by Ryan Bates.
 * [Confreaks](http://www.confreaks.com/) - Talks from conferences all over the world.
-* [Peepcode](https://peepcode.com/) - Paid Screencasts by Corey Haines and Aaron Patterson.
+* [Peepcode](https://peepcode.com/) - Paid Screencasts by Geoffrey Grosenbach.
 * [Richard Schneems Screencast](http://www.youtube.com/user/schneems/videos)
 
 ### MOAR
