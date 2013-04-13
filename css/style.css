@@ -245,16 +245,16 @@ i.icon-small-browser {
   background-image: url("/images/icon-small-browser.png");
 }
 
-.commandline {
+.os-specific {
   margin-bottom: 4em;
 }
 
-.commandline .picker {
+.os-specific .picker {
   display: block;
   float: right;
 }
 
-.commandline .active {
+.os-specific .active {
   font-weight: bold;
 }
 
