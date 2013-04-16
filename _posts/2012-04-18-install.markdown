@@ -46,7 +46,7 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 ## Setup for Windows
 
-Download [RailsInstaller](http://rubyforge.org/frs/download.php/76855/railsinstaller-2.2.0.exe) and run it. Click through the installer using the default options.
+Download [RailsInstaller](http://rubyforge.org/frs/download.php/76862/railsinstaller-2.2.1.exe) and run it. Click through the installer using the default options.
 
 Installation of Git and SSH-keys is required if you want to [put your app online with Heroku](/heroku).
 
