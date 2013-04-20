@@ -30,7 +30,7 @@ rails g scaffold comment user_name:string body:text idea_id:integer
 {% endhighlight %}
 
 ## Step 3: Add foreign key connections
-Add to migration the foreing key  connection. Open db/migrate/ and the file, which name ends with 'create_comments.rb'. After
+Add to migration the foreign key connection. Open db/migrate/ and the file, which name ends with 'create_comments.rb'. After
 {% highlight ruby %}
 t.timestamps
 end
