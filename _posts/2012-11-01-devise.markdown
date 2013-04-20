@@ -24,7 +24,7 @@ and run
 {% highlight sh %}
 bundle install
 {% endhighlight %}
-to install the gem
+to install the gem. **Also remember to restart the Rails server**.
 
 ## Step 1: Set up devise in your app
 
