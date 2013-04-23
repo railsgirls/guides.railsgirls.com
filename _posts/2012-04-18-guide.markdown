@@ -440,17 +440,21 @@ This is a small checklist for your event. Rails Girls can be thrown together in 
 * E-mail accepted participants and non-accepted applicants
 * E-mail installation instructions and last minute event details
 * Set a date for coach dinner and send them instructions
+* Check if there are other events taking place the same weekend
 
 #### During the event
 
 * Tweet!
 * Remember to take photos
 * Interview participants and speakers about their experiences
+* Do a Friday Hug! Learn more about Friday hugs at [Fridayhug.com](http://fridayhug.com)
+* Have a Skype with other Rails Girls chapters hosting events at the same time
 
 #### After the event
 
-* Update website to include pictures and possible blogposts
+* Update website to include pictures and blogposts
 * Invite active participants to [global e-mail list](https://groups.google.com/group/rails-girls-team)
 * Send a thank you note to participants and ask for [feedback](http://www.railsgirls.com/feedback) (you can also create your own feedback form in your local language)
 * Send a thank you note to coaches
 * Send a thank you note for organizers
+* Add yourself to the [Rails Girls Map](http://rails-girls-map.herokuapp.com/)
