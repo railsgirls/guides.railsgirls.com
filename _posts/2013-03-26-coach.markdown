@@ -32,7 +32,8 @@ Rails Girls workshops give the first experience in software craftsmanship throug
 
 
 ### Time to complete app
-There's loads of time to complete the app, and so it is more important to slowly explain what is happening in each step, as it is a lot of copy pasting and if attendees rush through the guide, they will be done soon but not understand at all what happened. There's a LOT (4-5)h reserved for the app, tweeking it and putting it online for others to see so there is no horry :) 
+There's loads of time to complete the app, and so it is more important to slowly explain what is happening in each step, as it is a lot of copy pasting and if attendees rush through the guide, they will be done soon but not understand at all what happened. 
+<br> There's a LOT (4-5) h reserved for the app, tweeking it and putting it online for others to see so there is no horry :) 
 
 
 ### Swag
