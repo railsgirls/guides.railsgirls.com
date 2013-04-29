@@ -12,20 +12,24 @@ permalink: engineyard
 
 You'll need to get your database to work on Engine Yard, which uses a different database than the Rails default. Please change the following in the Gemfile:
 
-{% highlight ruby %}
-gem 'sqlite3'
-{% endhighlight %}
+
+> `gem 'sqlite3'`
+
 
 to
 
-{% highlight ruby %}
-group :development do
-  gem 'sqlite3'
-end
-group :production do
-  gem 'pg'
-end
-{% endhighlight %}
+> `group :development do`
+  >> 	`gem 'sqlite3'`
+
+> 	`end`
+
+
+> `group :production do`
+  >> 	`gem 'pg'`
+
+> 	`end`
+
+
 
 Run `bundle install --without production` to setup your dependencies.
 
@@ -33,11 +37,13 @@ Run `bundle install --without production` to setup your dependencies.
 
 You need to add your app to your Git repository. You can do this by running the following in the terminal:
 
-{% highlight sh %}
-git init
-git add .
-git commit -m "initial commit"
-{% endhighlight %}
+
+>	`git init`
+
+>	`git add .`
+
+>	`git commit -m "initial commit"`
+
 
 __COACH__: This would be a good time to talk about version control systems and git.
 
@@ -51,38 +57,43 @@ Go to Engine Yard's [Website](https://www.engineyard.com/) and click on "Ruby" t
 
 ### Create your Engine Yard Cloud account
 
-Choose a name for your account. We suggest picking something relevant to who you are, either as a developer, or as an organization if you will be having collaborators. Click the button "Start Trial"
+1. 	Choose a name for your account. We suggest picking something relevant to who you are, either as a developer, or as an organization if you will be having collaborators. Click the button "Start Trial"
 
-Feel free to explore what is in the drop downs, but let's go with the defaults for now, since they are in line with a basic Rails app. 
+2. 	Feel free to explore what is in the drop downs, but let's go with the defaults for now, since they are in line with a basic Rails app. 
 
-In the box labeled "Git Repository URI", paste the URI from your Github repo. Be sure to use the URI from the SSH version of your application. HINT: The format should be the same as the placeholder text on your Engine Yard application page (or like this: "git@github.com:mfjenn/blogotron.git")
+3. 	In the box labeled "Git Repository URI", paste the URI from your Github repo. Be sure to use the URI from the SSH version of your application. HINT: The format should be the same as the placeholder text on your Engine Yard application page (or like this: "git@github.com:mfjenn/blogotron.git")
 
 
 ### Putting Your Deploy Key in Place
 
 You should now be on a page that says "Allow Engine Yard access to private repository".
-*	Copy the block of text in the box and go to your GitHub settings page.
-*	Go to the SSH page
-*	Click on the button that says "add a key"
-*	Paste the block of text from your Engine Yard page here. Save it
-*	Go back to your Engine Yard Page and Click the button that says, "My deploy key is in place". 
+
+1.	Copy the block of text in the box and go to your GitHub settings page.
+2.	Go to the SSH page
+3.	Click on the button that says "add a key"
+4.	Paste the block of text from your Engine Yard page here. Save it
+5.	Go back to your Engine Yard Page and Click the button that says, "My deploy key is in place". 
 
 __COACH__: Talk about the difference between private and public repos and when to use either.
 
 ### Creating and Configuring Your Environment
 
-Once you click the "My deploy key is in place" button, you will be taken to a page that says, "Create New Environment for (Your Account Name) App". It is here where we will configure your application. Feel free to explore all the options in the drop downs, but let's use the defaults for now. You do not need to set a domain name. Click the button that says, "Create Environment". 
+Once you click the "My deploy key is in place" button, you will be taken to a page that says, "Create New Environment for (Your Account Name) App". It is here where we will configure your application. Feel free to explore all the options in the drop downs, but let's use the defaults for now. You do not need to set a domain name. 
+*	Click the button that says, "Create Environment". 
 
 #### Environment Setup
 
-On this page, let's select the staging configuration. Click "Boot This Configuration". You will go to a new page where you see several status bars moving. Our Platform is provisioning your instances. We need to wait till these turn to green dots. This usually takes about 10 minutes, so does anyone need to take a break? It's a good time to go grab some water or a coffee. 
+On this page, let's select the staging configuration.
+*	Click "Boot This Configuration". You will go to a new page where you see several status bars moving. Our Platform is provisioning your instances. We need to wait till these turn to green dots. This usually takes about 10 minutes, so does anyone need to take a break? It's a good time to go grab some water or a coffee. 
 
 __COACH__: Talk about Staging vs. Production, and why it's important to have replicas. Talk about what is a master & Slave. How does Engine Yard's Failover work? Why is that important? 
 
 
 #### Deploying Your Application
 
-Once all of the lights are green, click "Deploy". Once you see the phrase "<your name> successfully deployed HEAD" you will know it has been deployed! Congratulations! Click on the link that says "View your application" to visit your application online. If you get a red notification that your deploy failed, we just have some debugging to do. Raise your hand and a coach can come over to to help. 
+1.	Once all of the lights are green, click "Deploy". 
+2.	Once you see the phrase "<your name> successfully deployed HEAD" you will know it has been deployed! Congratulations! 3.	Click on the link that says "View your application" to visit your application online. 
+4.	If you get a red notification that your deploy failed, we just have some debugging to do. Raise your hand and a coach can come over to to help. 
 	
 	
 #### Stopping Your Instances to Save Your Hours
