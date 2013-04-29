@@ -13,16 +13,16 @@ permalink: engineyard
 You'll need to get your database to work on Engine Yard, which uses a different database than the Rails default. Please change the following in the Gemfile:
 
 
-> `gem 'sqlite3'`
+		`gem 'sqlite3'`
 
 
 to
 
-> `group :development do`
+		`group :development do`
 
-  	> 		`gem 'sqlite3'`
+  			`gem 'sqlite3'`
 
-> 	`end`
+		`end`
 
 
 > `group :production do`
