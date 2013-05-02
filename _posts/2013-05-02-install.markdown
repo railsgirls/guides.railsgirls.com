@@ -13,7 +13,7 @@ Follow the instructions for your operating system. If you hit into any problems,
 
 * [Setup for OS X](#setup_for_os_x)
 * [Setup for Windows](#setup_for_windows)
-* [Setup for Ubuntu](#setup_for_ubuntu)
+* [Setup for Linux](#setup_for_linux)
 
 <hr />
 
@@ -58,12 +58,20 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 <hr />
 
-## Setup for Ubuntu
+## Setup for Linux
 
-To install Ruby on Rails development environment you just need to copy and paste this line in the Terminal and press Enter. Enjoy the text flying on the screen, it will take quite some time. Grabbing a refreshing drink before starting is encouraged.
+To install the Ruby on Rails development environment you just need to copy the line below for your Linux distribution (Ubuntu or Fedora), paste it in the Terminal and press Enter. Enjoy the text flying on the screen; it will take quite some time. Grabbing a refreshing drink before starting is encouraged.
+
+**For Ubuntu:**
 
 {% highlight sh %}
 bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
+{% endhighlight %}
+
+**For Fedora:**
+
+{% highlight sh %}
+bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-fedora.sh)
 {% endhighlight %}
 
 **Final step.** You also need a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
@@ -73,3 +81,4 @@ bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/r
 Now you should have a working Ruby on Rails programming setup. Congrats!
 
 <hr />
+
