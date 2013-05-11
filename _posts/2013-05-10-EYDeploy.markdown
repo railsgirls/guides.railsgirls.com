@@ -90,7 +90,8 @@ __COACH__: Talk about Staging vs. Production, and why it's important to have rep
 #### Deploying Your Application
 
 1.	Once all of the lights are green, click "Deploy". 
-2.	Once you see the phrase "YOUR NAME successfully deployed HEAD" you will know it has been deployed! Congratulations! 3.	Click on the link that says "View your application" to visit your application online. 
+2.	Once you see the phrase "YOUR NAME successfully deployed HEAD" you will know it has been deployed! Congratulations!
+3.	Click on the link that says "View your application" to visit your application online. 
 4.	If you get a red notification that your deploy failed, we just have some debugging to do. Raise your hand and a coach can come over to to help. 
 	
 	
