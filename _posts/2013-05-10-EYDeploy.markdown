@@ -47,7 +47,7 @@ __COACH__: This would be a good time to talk about version control systems and g
 
 ### Be Sure to Have a Rails Application in a Repository on Github 
 
-You will need to have a GituHub account and a repo we can pull an app from. Follow these directions on [GitHub](https://help.github.com/articles/create-a-repo) to create a repo and push your app to it. If you do not have a working Rails application, you can fork [Engine Yard's sample todo app](https://github.com/engineyard/todo) to your own repo. A coach can walk you through this if you need help. 
+You will need to have a GitHub account and a repo we can pull an app from. Follow these directions on [GitHub](https://help.github.com/articles/create-a-repo) to create a repo and push your app to it. If you do not have a working Rails application, you can fork [Engine Yard's sample todo app](https://github.com/engineyard/todo) to your own repo. A coach can walk you through this if you need help. 
 
 ### Sign up for a Free Trial Engine Yard Account
 
@@ -90,7 +90,8 @@ __COACH__: Talk about Staging vs. Production, and why it's important to have rep
 #### Deploying Your Application
 
 1.	Once all of the lights are green, click "Deploy". 
-2.	Once you see the phrase "<your name> successfully deployed HEAD" you will know it has been deployed! Congratulations! 3.	Click on the link that says "View your application" to visit your application online. 
+2.	Once you see the phrase "&lt;your name&gt; successfully deployed HEAD" you will know it has been deployed! Congratulations!
+3.	Click on the link that says "View your application" to visit your application online. 
 4.	If you get a red notification that your deploy failed, we just have some debugging to do. Raise your hand and a coach can come over to to help. 
 	
 	
