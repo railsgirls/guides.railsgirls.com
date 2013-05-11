@@ -47,7 +47,7 @@ __COACH__: This would be a good time to talk about version control systems and g
 
 ### Be Sure to Have a Rails Application in a Repository on Github 
 
-You will need to have a GituHub account and a repo we can pull an app from. Follow these directions on [GitHub](https://help.github.com/articles/create-a-repo) to create a repo and push your app to it. If you do not have a working Rails application, you can fork [Engine Yard's sample todo app](https://github.com/engineyard/todo) to your own repo. A coach can walk you through this if you need help. 
+You will need to have a GitHub account and a repo we can pull an app from. Follow these directions on [GitHub](https://help.github.com/articles/create-a-repo) to create a repo and push your app to it. If you do not have a working Rails application, you can fork [Engine Yard's sample todo app](https://github.com/engineyard/todo) to your own repo. A coach can walk you through this if you need help. 
 
 ### Sign up for a Free Trial Engine Yard Account
 
