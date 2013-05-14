@@ -46,6 +46,8 @@ to take things to the next level:
 ### Screencasts & Videos
 
 * [Railscasts](http://railscasts.com/) - Short and simple screencasts about Rails by Ryan Bates.
+  **Note**: *Ryan is giving away 3 month RailsCasts pro subscription coupons to all Rails Girls attendees for free.
+  If you haven't received one at the Rails Girls event you attended, ask your event organizer to [send an email to Ed Drain](mailto:geekprogrammer.ed@gmail.com). He will send the coupons to your event organizer.*
 * [Confreaks](http://www.confreaks.com/) - Talks from conferences all over the world.
 * [Peepcode](https://peepcode.com/) - Paid Screencasts by Geoffrey Grosenbach.
 * [Richard Schneems Screencast](http://www.youtube.com/user/schneems/videos)
