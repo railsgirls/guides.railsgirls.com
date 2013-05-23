@@ -1,75 +1,75 @@
 ---
 layout: default
-title: Setup recipe for Rails Girls
+title: Instale Ruby on Rails
 permalink: install
 ---
 
-# Setup recipe for Rails Girls
-<span class="muted">Cooking time: 5min active / 15-30min passive</span>
+# Instale Ruby on Rails
+<!-- <span class="muted">Cooking time: 5min active / 15-30min passive</span> -->
 
-To build apps and other things with Ruby on Rails, we need to setup some software and the developer environment for your computer.
+Antes de comenzar a construir tus aplicaciones con Ruby on Rails, tienes que instalar en tu computadora, algunos softwares con su respectivo entorno de desarrollo.
 
-Follow the instructions for your operating system. If you hit into any problems, don&#8217;t panic. Inform us at the event and we can solve it together.
+Sigue las instrucciones para tu sistema operativo, si tienes problemas con la instalación, no entres en pánico. Infórmenos en el evento que podremos resolverlo juntos :) .
 
-* [Setup for OS X](#setup_for_os_x)
-* [Setup for Windows](#setup_for_windows)
-* [Setup for Ubuntu](#setup_for_ubuntu)
+* [Instalacion en OS X](#instalacion_en_os_x)
+* [Instalacion en Windows](#instalacion_en_windows)
+* [Instalacion en Ubuntu](#instalacion_en_ubuntu)
 
 <hr />
 
-## Setup for OS X
+## Instalacion en OS X
 
-**Step 1.** Let&#8217;s check the version of the operating system.
+**Paso 1.** Vamos a verificar la versión del sistema operativo.
 
-Click the Apple menu and choose *About this Mac*.
+Click en el menú Apple y elija *Acerca de este Mac (About this Mac)*.
 
 ![Apple menu](/images/1.png "Apple menu")
 
-**Step 2.** In the window you will find the version of your operating system. If your version number starts with 10.6, 10.7 or 10.8 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
+**Paso 2.** En la ventana encontrarás la version de tu sistema operativo. Si el número de version inicia con 10.6, 10.7 o 10.8 esta guía es para ti. Si no es así, entonces tienes que actualizar tu sistema operativo.
 
 ![About this Mac dialog](/images/2.png "About this Mac dialog")
 
-**Step 3.** Download the RailsInstaller for your version of OS X:
+**Paso 3.** Descarga el RailsInstaller para la versión de tu sistema operativo (OS X):
 
-* [RailsInstaller for 10.7 and 10.8](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz) <span class="muted">(325MB)</span>
-* [RailsInstaller for 10.6](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.6.app.tgz) <span class="muted">(224MB)</span>
+* [RailsInstaller para 10.7 y 10.8](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz) <span class="muted">(325MB)</span>
+* [RailsInstaller para 10.6](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.6.app.tgz) <span class="muted">(224MB)</span>
 
-Double click the downloaded file and it will unpack it into the current directory. Double click the the newly unpacked 'RailsInstaller-1.0.3-osx-10.7.app' or 'RailsInstaller-1.0.3-osx-10.6.app' and follow the instructions. It will open a README file with 'Rails Installer OS X' at the top. Please **ignore** the instructions in this file.
+Haga doble click en el archivo descargado y esto se descomprimirá en el directorio actual. Ubique el archivo descomprimido 'RailsInstaller-1.0.3-osx-10.7.app' o 'RailsInstaller-1.0.3-osx-10.6.app' y sigue las instrucciones. Se abrirá un archivo README con título 'Rails Installer OS X'. Por favor **ignore** las instrucciones de ese archivo.
 
-**Final step.** Install a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
+**Último paso.** Instale un editor de texto para editar tus archivos de código. Para este evento recomendamos el editor de texto Sublime Text.
 
-* [Download Sublime Text and install it](http://www.sublimetext.com/2)
+* [Descarga e instala Sublime Text](http://www.sublimetext.com/2)
 
-Now you should have a working Ruby on Rails programming setup. Congrats!
-
-<hr />
-
-## Setup for Windows
-
-Download [RailsInstaller](http://rubyforge.org/frs/download.php/76855/railsinstaller-2.2.0.exe) and run it. Click through the installer using the default options.
-
-Installation of Git and SSH-keys is required if you want to [put your app online with Heroku](/heroku).
-
-**Final step.** You also need a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
-
-* [Download Sublime Text and install it](http://www.sublimetext.com/2)
-
-Now you should have a working Ruby on Rails programming setup. Congrats!
+Listo. Ahora usted ya debería tener instalado Ruby on Rails. Felicidades!
 
 <hr />
 
-## Setup for Ubuntu
+## Instalacion en Windows
 
-To install Ruby on Rails development environment you just need to copy and paste this line in the Terminal and press Enter. Enjoy the text flying on the screen, it will take quite some time. Grabbing a refreshing drink before starting is encouraged.
+Descarga [RailsInstaller](http://rubyforge.org/frs/download.php/76855/railsinstaller-2.2.0.exe) y ejecutelo. Siga las instrucciones usando las opciones por defecto.
+
+La instalación de Git y SSH-keys son requeridos si usted quiere [poner su aplicación en linea con Heroku](/heroku).
+
+**Último paso.** También es necesario un editor de textos para editar tus archivos de código. Para este evento recomendamos el editor de texto Sublime Text.
+
+* [Descarga e instala Sublime Text](http://www.sublimetext.com/2)
+
+Listo. Ahora usted ya debería tener instalado Ruby on Rails. Felicidades!
+
+<hr />
+
+## Instalacion en Ubuntu
+
+Para instalar Ruby on Rails sólo necesita copiar y pegar esta linea en la terminal y presione "Enter". Disfrute los textos volando en su pantalla, esto tomará un poco de tiempo. Recomendamos una bebida refrescante antes de iniciar la instalación.
 
 {% highlight sh %}
 bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
 {% endhighlight %}
 
-**Final step.** You also need a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
+**Último paso.** También es necesario un editor de textos para editar tus archivos de código. Para este evento recomendamos el editor de texto Sublime Text.
 
-* [Download Sublime Text and install it](http://www.sublimetext.com/2)
+* [Descarga e instala Sublime Text](http://www.sublimetext.com/2)
 
-Now you should have a working Ruby on Rails programming setup. Congrats!
+Listo. Ahora usted ya debería tener instalado Ruby on Rails. Felicidades!
 
 <hr />
