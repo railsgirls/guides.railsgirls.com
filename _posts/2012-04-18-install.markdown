@@ -5,19 +5,19 @@ permalink: install
 ---
 
 # Instale Ruby on Rails
-<span class="muted">Cooking time: 5min active / 15-30min passive</span>
+<!-- <span class="muted">Cooking time: 5min active / 15-30min passive</span> -->
 
 Antes de comenzar a construir tus aplicaciones con Ruby on Rails, tienes que instalar en tu computadora, algunos softwares con su respectivo entorno de desarrollo.
 
 Sigue las instrucciones para tu sistema operativo, si tienes problemas con la instalación, no entres en pánico. Infórmenos en el evento que podremos resolverlo juntos :) .
 
-* [Instalación en OS X](#setup_for_os_x)
-* [Instalación en Windows](#setup_for_windows)
-* [Instalación en Ubuntu](#setup_for_ubuntu)
+* [Instalacion en OS X](#instalacion_en_os_x)
+* [Instalacion en Windows](#instalacion_en_windows)
+* [Instalacion en Ubuntu](#instalacion_en_ubuntu)
 
 <hr />
 
-## Instalación en OS X
+## Instalacion en OS X
 
 **Paso 1.** Vamos a verificar la versión del sistema operativo.
 
@@ -44,7 +44,7 @@ Listo. Ahora usted ya debería tener instalado Ruby on Rails. Felicidades!
 
 <hr />
 
-## Instalación en Windows
+## Instalacion en Windows
 
 Descarga [RailsInstaller](http://rubyforge.org/frs/download.php/76855/railsinstaller-2.2.0.exe) y ejecutelo. Siga las instrucciones usando las opciones por defecto.
 
@@ -58,7 +58,7 @@ Listo. Ahora usted ya debería tener instalado Ruby on Rails. Felicidades!
 
 <hr />
 
-## Instalación en Ubuntu
+## Instalacion en Ubuntu
 
 Para instalar Ruby on Rails sólo necesita copiar y pegar esta linea en la terminal y presione "Enter". Disfrute los textos volando en su pantalla, esto tomará un poco de tiempo. Recomendamos una bebida refrescante antes de iniciar la instalación.
 
