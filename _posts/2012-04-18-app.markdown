@@ -4,44 +4,44 @@ title: Rails Girls App Tutorial
 permalink: app
 ---
 
-# Rails Girls App Tutorial
+# Desarrolla tu primera aplicación
 
 *Created by Vesa Vänskä, [@vesan](https://twitter.com/vesan)*
 
-**Make sure you have Rails installed.** [**Follow the installation guide**](/install) to get set up.
+**Asegúrate de tener instalado Rails.** [**Sigue la guía de instalación**](/install) si aún no lo has instalado.
 
 
-## Get to know the tools
+## Conozca las herramientas
 
 <div class="indent" markdown="1">
 
 <h3><i class="icon-text-editor">&nbsp;</i></h3>
-### Text Editor
+### Editor de Texto
 
-[Sublime Text](http://www.sublimetext.com), [Komodo Edit](http://www.activestate.com/komodo-edit), Vim, Emacs, and Gedit are examples of text editors your can use for writing code and editing files.
+[Sublime Text](http://www.sublimetext.com), [Komodo Edit](http://www.activestate.com/komodo-edit), Vim, Emacs, y Gedit son ejemplos de editors de textos que podrás usar para escribir código y editar archivos.
 
 <h3><i class="icon-prompt">&nbsp;</i></h3>
-### Terminal (known as Command Prompt on Windows)
-Where you start the rails server and run commands.
+### Terminal (Conocido como Command Prompt en Windows)
+Es el lugar donde inicias el servidor Rails y ejecutas comandos.
 
 <h3><i class="icon-browser">&nbsp;</i></h3>
-### Web browser
-(Firefox, Safari, Chrome) for viewing your application.
+### Navegador web
+(Firefox, Safari, Chrome) para vizualizar tu aplicación.
 
 </div>
 
 
-## *1.*Creating the application
+## *1.*Creando la applicación
 
-We're going to create a new Rails app called *railsgirls*.
+Vamos a iniciar creando una nueva aplicación llamada *railsgirls*.
 
-First, let's open a terminal:
+Primero, abrimos una terminal:
 
-* Mac OS X: Open Spotlight, type *Terminal* and click the *Terminal* application.
-* Windows: Click Start and look for *Command Prompt*, then click *Command Prompt with Ruby on Rails*.
-* Linux (Ubuntu): Search for *Terminal* on the dash and click *Terminal*.
+* Mac OS X: Abre Spotlight, digite *Terminal* y click en la applicación *Terminal*.
+* Windows: Click en Inicio y busca *Comando Prompt*, luego click *Comando Prompt con Ruby on Rails*.
+* Linux (Ubuntu): Buscar por *Terminal* en el dash y click *Terminal*.
 
-Next, type these commands in the terminal:
+Luego, digite estos comandos en el terminal:
 
 <div class="os-specific">
   <div class="nix">
@@ -65,18 +65,18 @@ ruby script\rails server
   </div>
 </div>
 
-Open [http://localhost:3000](http://localhost:3000) in your browser. You should see "Welcome aboard" page, which means that the generation of your new app worked correctly.
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador. Debería verse una página "Welcome aboard", lo que significa que la generación de tu nueva aplicación esta funcionando correctamente.
 
-Hit `CTRL-C` in the terminal to quit the server.
+Presione `CTRL-C` en la terminal para salir del servidor.
 
-**Coach:** Explain what each command does. What was generated? What does the server do?
+**Coach:** Explique que hace cada comando. ¿Qué fue generado? ¿Quá hace el servidor?
 
 
-## *2.*Create Idea scaffold
+## *2.*Crear idea scaffold
 
-We're going to use Rails' scaffold functionality to generate a starting point that allows us to list, add, remove, edit, and view things; in our case ideas.
+Vamos a usar la funcionalidad de scaffold para generar un punto de partida que nos permita listar, agregar, eliminar, editar, y ver cosas; en nuestro caso ideas.
 
-**Coach:** What is Rails scaffolding? (Explain the command, the model name and related database table, naming conventions, attributes and types, etc.) What are migrations and why do you need them?
+**Coach:** ¿Qué es Rails scaffolding? (Explique el comando, el nombre de modelo y la relación de tablas en la base de datos, nombrando las convenciones, atributos y tipos, etc.) ¿Qué son las migraciones y por qué son necesarias?
 
 <div class="os-specific">
   <div class="nix">
@@ -96,36 +96,36 @@ ruby rails server
   </div>
 </div>
 
-Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in your browser. Click around and test what you got by running these few command-line commands.
+Abre [http://localhost:3000/ideas](http://localhost:3000/ideas) en tu navegador. Prueba lo que tienes ejecutando, con estas pocas líneas de comando.
 
-Hit `CTRL-C` to quit the server again when you've clicked around a little.
+Presione `CTRL-C` en la terminal para salir del servidor.
 
 
-## *3.*Design
+## *3.*Diseño
 
-**Coach:** Talk about the relationship between HTML and Rails. What part of views is HTML and what is Embedded Ruby (ERB)? What is MVC and how does this relate to it? (Models and controllers are responsible for generating the HTML views.)
+**Coach:** Hable acerca de la relación entre HTML y Rails. ¿Qué parte de las vistas es HTML y qué es Ruby Embebido (ERB)? ¿Qué es MVC y cómo se relaciona con todo esto? (Modelos y controladores son responsables para la generacion de las vistas con HTML.)
 
-The app doesn't look very nice yet. Let's do something about that. We'll use the Twitter Bootstrap project to give us nicer styling really easily.
+La aplicación no se ve muy bien aún. Vamos a hacer algo con esto. Usaremos el proyecto Twitter Bootstrap para darle un mejor estilo.
 
-Open `app/views/layouts/application.html.erb` in your text editor and above the line
+Abre `app/views/layouts/application.html.erb` en tu editor de texto y encima de la linea
 
 {% highlight erb %}
 <%= stylesheet_link_tag "application" %>
 {% endhighlight %}
 
-add
+incluya
 
 {% highlight erb %}
 <link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css">
 {% endhighlight %}
 
-and replace
+y reemplace
 
 {% highlight erb %}
 <%= yield %>
 {% endhighlight %}
 
-with
+por
 
 {% highlight erb %}
 <div class="container">
@@ -133,7 +133,7 @@ with
 </div>
 {% endhighlight %}
 
-Let's also add a navigation bar and footer to the layout. In the same file, under `<body>` add
+Tambíen vamos agregar un barra de navegación y un pie de página en nuestro layout. En el mismo archivo, debajo de `<body>` agregar
 
 {% highlight html %}
 <div class="navbar navbar-fixed-top">
@@ -148,7 +148,7 @@ Let's also add a navigation bar and footer to the layout. In the same file, unde
 </div>
 {% endhighlight %}
 
-and before `</body>` add
+y antes de `</body>` agregar
 
 {% highlight html %}
 <footer>
@@ -158,7 +158,7 @@ and before `</body>` add
 </footer>
 {% endhighlight %}
 
-Now let's also change the styling of the ideas table. Open `app/assets/stylesheets/application.css` and at the bottom add
+Ahora además vamos a cambiar el stilo de la tabla ideas. Abre `app/assets/stylesheets/application.css` y al final agregar
 
 {% highlight css %}
 body { padding-top: 100px; }
@@ -167,122 +167,122 @@ table, td, th { vertical-align: middle !important; border: none !important; }
 th { border-bottom: 1px solid #DDD !important; }
 {% endhighlight %}
 
-Now refresh the browser to see what was changed. You can also change the HTML & CSS further.
+Ahora refresque el navegador para ver qué fue cambiado. Además puedes cambiar el HTML & CSS libremente.
 
-**Coach:** Talk a little about CSS and layouts.
+**Coach:** Hable un poco acerca de CSS y layouts.
 
 
-## Step 4: Adding picture uploads
+## Paso 4: Agregando subida de imagenes
 
-We need to install a piece of software to let us upload files in Rails.
+Necesitamos instalar una pieza de sotfware para nuestra subida de imagenes en Rails.
 
-Open `Gemfile` in the project directory using your text editor and under the line
+Abre `Gemfile` en el directorio del proyecto usando tu editor texto y debajo de la linea
 
 {% highlight ruby %}
 gem 'sqlite3'
 {% endhighlight %}
 
-add
+Agregue
 
 {% highlight ruby %}
 gem 'carrierwave'
 {% endhighlight %}
 
-**Coach:** Explain what libraries are and why they are useful. Describe what open source software is.
+**Coach:** Explique qué son las librerias y por qué son muy útiles. Describe qué es el software open source.
 
-In the terminal run:
+En la terminal ejecute:
 
 {% highlight sh %}
 bundle
 {% endhighlight %}
 
-At this point you need to **restart the Rails server process** in the terminal. This is needed for the app to load the added library.
+En este punto necesitamos **reiniciar el proceso del servidor Rails** en la terminal. Es necesario para que la aplicación cargue la libreria adicionada.
 
-Now we can generate the code for handling uploads. In the terminal run:
+Ahora podemos generar el código para el manejo de uploads. En la terminal ejecutar:
 
 {% highlight sh %}
 rails generate uploader Picture
 {% endhighlight %}
 
-Open `app/models/idea.rb` and under the line
+Abre `app/models/idea.rb` y debajo de la línea
 
 {% highlight ruby %}
 class Idea < ActiveRecord::Base
 {% endhighlight %}
 
-add
+agregue
 
 {% highlight ruby %}
 mount_uploader :picture, PictureUploader
 {% endhighlight %}
 
-Open `app/views/ideas/_form.html.erb` and change
+Abre `app/views/ideas/_form.html.erb` y cambie
 
 {% highlight erb %}
 <%= f.text_field :picture %>
 {% endhighlight %}
 
-to
+a
 
 {% highlight erb %}
 <%= f.file_field :picture %>
 {% endhighlight %}
 
-In your browser, add new idea with a picture. When you upload a picture it doesn't look nice because it only shows a path to the file, so let's fix that.
+En tu navegador, agregar nueva idea con una imagen. Cuando cargas una imagen no se ve bien, porque te muestra sólo la ruta del archivo, Así que vamos arreglar eso.
 
-Open `app/views/ideas/show.html.erb` and change
+Abre `app/views/ideas/show.html.erb` y cambie
 
 {% highlight erb %}
 <%= @idea.picture %>
 {% endhighlight %}
 
-to
+a
 
 {% highlight erb %}
 <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
 {% endhighlight %}
 
-Now refresh your browser to see what changed.
+Ahora refresca tu navegador para ver los cambios.
 
-**Coach:** Talk a little about HTML.
+**Coach:** Hable un poco acerca de HTML.
 
 
-## Step 5: Finetune the routes
+## Paso 5: Ajustes finales en las rutas
 
-If you try to open [http://localhost:3000](http://localhost:3000) it still shows the "Welcome aboard" page. Let's make it redirect to the ideas page.
+Si al abrir [http://localhost:3000](http://localhost:3000) aún seguiremos viendo la página "Welcome aboard". Vamos a redireccionar a la página de ideas.
 
-On Mac OS X and Linux, in the terminal run:
+En Mac OS X y Linux, en la terminal ejecute:
 
 {% highlight sh %}
 rm public/index.html
 {% endhighlight %}
 
-On Windows, in the command prompt run:
+En Windows, en el command prompt ejecute:
 
 {% highlight bat %}
 del public\index.html
 {% endhighlight %}
 
-Then open `config/routes.rb` and after the first line add
+Luego abre `config/routes.rb` y después de la primera linea agregar
 
 {% highlight ruby %}
 root :to => redirect('/ideas')
 {% endhighlight %}
 
-Test the change by opening the root path in your browser.
+Verifique el cambio abriendo la ruta raiz en tu navegador.
 
-**Coach:** Talk about routes.
-
-
-## What next?
-
-* Add design using HTML &amp; CSS
-* Add ratings
-* Use CoffeeScript (or JavaScript) to add interaction
-* Add picture resizing to make loading the pictures faster
+**Coach:** Hable acerca de routes.
 
 
-## Additional Guides
+## ¿Qué sigue?
+
+* Agregar diseño usando HTML &amp; CSS
+* Agregar ratings
+* Use CoffeeScript (o JavaScript) para adicionar interacción
+* Agregar redimencionamiento de imagen para que la carga de imagenes sea más rápido
+
+
+## Guías adicionales
 
 * Guide 1: [Add commenting by Janika Liiv](/commenting)
 * Guide 2: [Put your app online with Heroku by Terence Lee](/heroku)
