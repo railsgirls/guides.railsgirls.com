@@ -4,47 +4,48 @@ title: Adding Authentication with Devise
 permalink: devise
 ---
 
-# Adding Authentication with Devise
+# Agregando Autentificación con Devise
 
 *Created by Piotr Steininger, [@polishprince](https://twitter.com/polishprince)*
 
 *Updated by Ernesto Jimenez, [@ernesto_jimenez](https://twitter.com/ernesto_jimenez)*
 
-**This guide assumes that you have already built a RailsGirls app by ** [**following the app development guide**](/app).
+**Esta guía asume que ya tienes creado una aplicación RailsGirls ** [**siguiendo la guía desarrolla tu aplicación**](/app).
 
 
-## Step 0: Add devise gem
+## Paso 0: Agrega gema devise
 
-Open up your `Gemfile` and add this line
+Abre tu `Gemfile` y agrega esta linea
 
 {% highlight ruby %}
 gem 'devise'
 {% endhighlight %}
-and run
+y ejecute
 {% highlight sh %}
 bundle install
 {% endhighlight %}
-to install the gem
+para instalar la gema
 
-## Step 1: Set up devise in your app
+## Paso 1: Configure devise en tu aplicación
 
-Run the following command in the terminal.
+Ejecute el siguiente comando en la terminal.
 
 {% highlight sh %}
 rails g devise:install
 {% endhighlight %}
 
 
-## Step 2: Configure Devise
+## Paso 2: Configure Devise
 
-Ensure you have defined default url options in your environments files. Open up `config/environments/development.rb` and add this line:
+Asegúrese de tener definido las opciones por defecto para url en tus archivos "environments". Abre `config/environments/development.rb` y adicione esta línea:
+
 {% highlight ruby %}
    config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 {% endhighlight %}
 
-before the `end` keyword.
+Antes de la palabra clave `end`.
 
-Open up `app/views/layouts/application.html.erb` and add:
+Abre `app/views/layouts/application.html.erb` y adicione:
 
 {% highlight erb %}
 <% if notice %>
@@ -54,39 +55,40 @@ Open up `app/views/layouts/application.html.erb` and add:
   <p class="alert alert-error"><%= alert %></p>
 <% end %>
 {% endhighlight %}
-right above
+justo encima de
 {% highlight ruby %}
    <%= yield %>
 {% endhighlight %}
 
-Finally, if you plan to [deploy to heroku](/heroku) you should open up `config/application.rb` and add this line:
+Finalmente, si tu intención es [publicar en heroku](/heroku) debes abrir `config/application.rb` y adicionar esta línea:
 {% highlight ruby %}
   config.assets.initialize_on_precompile = false
 {% endhighlight %}
-as third line from the bottom (before the first of two `end` keywords)
+como tercera línea desde la parte de abajo (antes de las dos ultimas palabras claves `end`)
 
-## Step 3: Setup the User model
+## Paso 3: Configurar el modelo User(usuario)
 
-We'll use a bundled generator script to create the User model.
+Usaremos un script generador de paquetes para crear el modelo User(usuario)
 {% highlight sh %}
    rails g devise user
    rake db:migrate
 {% endhighlight %}
 
-**Coach:** Explain what user model has been generated. What are the
-fields?
+**Coach:** Explique cual es el modelo que fue generado. Cuáles son sus campos?
 
-## Step 4: Create your first user
 
-Now that you have set everyting up you can create your first user. Devise creates all the code and routes required to create accounts, log in, log out, etc.
+## Paso 4: Crear tu primer usuario
 
-Make sure your rails server is running, open [http://localhost:3000/users/sign_up](http://localhost:3000/users/sign_up) and create your user account.
+Ahora que tienes configurado todo puedes crear tu primer usuario. Devise crea todo el código y rutas requeridas para crear cuentas, inicio de sesión, cierre de sesión, etc.
 
-## Step 5: Add sign-up and login links
+Asegúrese que su servidor rails se esta ejecutando, abre [http://localhost:3000/users/sign_up](http://localhost:3000/users/sign_up) y crea una cuenta de usuario.
 
-All we need to do now is to add appropriate links or notice about the user being logged in in the top right corner of the navigation bar.
 
-In order to do that, edit `app/views/layouts/application.html.erb` add:
+## Paso 5: Agregar links de registro e inicio de sesión
+
+Todo lo que necesitamos hacer ahora es adicionar apropiadamente links o avisos acerca del usuario que inicio sesión en la esquina superior derecha de la barra de navegación.
+
+En orden hacer esto, editar `app/views/layouts/application.html.erb` y agregar:
 {% highlight erb %}
 <p class="navbar-text pull-right">
 <% if user_signed_in? %>
@@ -98,7 +100,7 @@ In order to do that, edit `app/views/layouts/application.html.erb` add:
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
 <% end %>
 {% endhighlight %}
-right after
+Justo despúes de
 {% highlight erb %}
 <ul class="nav">
   <li class="active"><a href="/ideas">Ideas</a></li>
@@ -106,15 +108,13 @@ right after
 {% endhighlight %}
 
 
-Open your browser and try logging in and out from.
+Abre tu navegador y prueba iniciando y cerrando una sesión.
 
-**Coach:** Talk about the `user_signed_in?` and `current_user` helpers. Why are they useful?
+**Coach:** Hable acerca del `user_signed_in?` y `current_user` helpers. Por qué son útiles?
 
-## What next?
+## Qué sigue?
 
-* Add extra fields to the User model
-* Add relationships between users and ideas
-* Restrict users to only be able to edit their own ideas
-* Expand to use roles or permissions (use one of the popular authorization gem like CanCan)
-
-
+* Agregar campos extra para el modelo User(usuario)
+* Agregar relación entre usuarios e ideas
+* Restringir que los usuarios solo puedan editar sus propias ideas
+* Expandir para crear roles o permisos (use una de las más populares gemas de autorización como CanCan)

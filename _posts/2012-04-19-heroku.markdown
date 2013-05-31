@@ -4,21 +4,21 @@ title: Rails Girls on Heroku
 permalink: heroku
 ---
 
-# Put Your App Online With Heroku
+# Publica tu aplicación en línea con Heroku
 
 *Created by Terence Lee, [@hone02](https://twitter.com/hone02)*
 
-### Get Heroku
+### Instalando Heroku
 
-Follow steps 1 through 3 of the [quickstart guide](https://devcenter.heroku.com/articles/quickstart) to sign up, install the toolbelt, and login.
+Sigue los pasos 1 hasta el 3 de [quickstart guide](https://devcenter.heroku.com/articles/quickstart) to sign up(registrar), install the toolbelt(instalar la herramienta), y login.
 
-__COACH__: Talk about the benefits of deploying to Heroku vs traditional servers.
+__COACH__: Hable acerca de los beneficios de Heroku vs servidores tradicionales para la implementación.
 
-### Preparing your app
+### Preparando tu aplicación
 
-#### Updating our database
+#### Actualizando nuestra base de datos
 
-First, we need to get our database to work on Heroku, which uses a different database. Please change the following in the Gemfile:
+Primero, necesitamos conseguir nuestra base de datos para trabajar en Heroku, el cual usa una base de datos diferente. Por favor cambiar lo siguiente en el Gemfile:
 
 {% highlight ruby %}
 gem 'sqlite3'
@@ -35,13 +35,13 @@ group :production do
 end
 {% endhighlight %}
 
-Run `bundle install --without production` to setup your dependencies.
+Ejecute `bundle install --without production` para configurar sus dependencias.
 
-__COACH__: You can talk about RDBMS and the different ones out there.
+__COACH__: Tu puedes hablar acerca de RDBMS y las diferencias con otros sistemas de almacenamiento.
 
-#### Version Control Systems
+#### Sistema de Control de Versiones
 
-We need to add our code to version control. You can do this by running the following in the terminal:
+Necesitamos adicionar a nuestro código un control de versiones. Puedes hacer esto ejecutando en la terminal:
 
 {% highlight sh %}
 git init
@@ -49,14 +49,14 @@ git add .
 git commit -m "initial commit"
 {% endhighlight %}
 
-__COACH__: This would be a good time to talk about version control systems and git.
+__COACH__: Este es un buen momento para hablar acerca del control de versiones y git.
 
 
-### Deploying your app
+### Publicando tu aplicación
 
-#### App creation
+#### Creación de la aplicación
 
-We need to create our heroku app by typing `heroku create` in the terminal and see something like this:
+Necesitamos crear nuestra aplicación heroku digitando `heroku create` en la terminal y ver algo como esto:
 
 {% highlight sh %}
 Creating evening-sky-7498... done, stack is cedar
@@ -64,11 +64,11 @@ http://evening-sky-7498.herokuapp.com/ | git@heroku.com:evening-sky-7498.git
 Git remote heroku added
 {% endhighlight %}
 
-In this case "evening-sky-7498" is your app name.
+En este caso "evening-sky-7498" es el nombre de la aplicación.
 
-#### Pushing the code
+#### Pushing el código
 
-Next we need to push our code to heroku by typing `git push heroku master`. You'll see push output like the following:
+Lo siguiente que necesitamos para hacer "push" nuestro código a heroku es digitar `git push heroku master`. Verás la salida del push como lo siguiente:
 
 {% highlight sh %}
 Counting objects: 134, done.
@@ -87,11 +87,11 @@ Total 134 (delta 26), reused 0 (delta 0)
        http://evening-sky-7498.herokuapp.com deployed to Heroku
 {% endhighlight %}
 
-You'll know the app is done being pushed, when you see the "Launching..." text like above.
+El proceso se completa con éxito, cuando ves el texto "Launching ..." como arriba.
 
-#### Migrate database
+#### Migrando la base de datos
 
-Next we need to migrate our database like we did locally during the workshop: `heroku run rake db:migrate`
+Necesitamos migrar nuestra base de datos tal como lo hicimos localmente durante el evento: `heroku run rake db:migrate`
 
-When that command is finished being run, you can hit the app based on the url. For this example app, you can go to [http://evening-sky-7498.herokuapp.com/](http://evening-sky-7498.herokuapp.com). You can also type `heroku open` in the terminal to visit the page.
+Cuando se termine de ejecutar el comando, puedes acceder a tu aplicación mediante su URL. Para esta aplicación de ejemplo, puedes ir a [http://evening-sky-7498.herokuapp.com/](http://evening-sky-7498.herokuapp.com). También puedes digitar `heroku open` en la terminal para visitar la página.
 
