@@ -72,6 +72,8 @@ Also, don't be discouraged if you'll sometimes need to try a few different expla
 
 If you need help with anything, don't be afraid to use Google or ask another coach to help you out. And don't be afraid to ask for a break if you need it, it's going to be a long day, but we can promise you'll get home with a big smile and a warm heart :)
 
+* Check Lucy Bain's additional [teaching notes to the app](https://github.com/lbain/railsgirls)
+
 ### Are you in?
 
 Good, we're happy to have you on board! Get in touch with organizers of your local event (if you aren't already) and they'll answer all the other questions you might have. You can usually find their contact info on the event's page. 
