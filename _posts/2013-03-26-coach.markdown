@@ -33,7 +33,7 @@ Rails Girls workshops give the first experience in software craftsmanship throug
 
 ### Time to complete app
 There's loads of time to complete the app, and so it is more important to slowly explain what is happening in each step, as it is a lot of copy pasting and if attendees rush through the guide, they will be done soon but not understand at all what happened. 
-<br> There's a LOT (4-5) h reserved for the app, tweeking it and putting it online for others to see so there is no horry :) 
+<br> There's a LOT (4-5) h reserved for the app, tweaking it and putting it online for others to see so there is no hurry :) 
 
 
 ### Swag
@@ -56,7 +56,7 @@ Usually there'll be at least somebody at the event who works with Rails on a reg
 The structure of workshop varies a bit from city to city, so your local organizer group will be able you to guide you through the details. Usually there's a pre-event meeting or dinner with coaches where you can ask all you questions. 
 
 ### Answering questions
-Often coaches who are just one step ahead of attendees are the best at explaining :) Use real life metaphores and explain very high-level. Explaining too deep will cause a flood of information that is not necessary at the beginning. 
+Often coaches who are just one step ahead of attendees are the best at explaining :) Use real life metaphors and explain very high-level. Explaining too deep will cause a flood of information that is not necessary at the beginning. 
 
 #### Installation Party
 
