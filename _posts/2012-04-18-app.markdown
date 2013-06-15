@@ -167,6 +167,12 @@ table, td, th { vertical-align: middle !important; border: none !important; }
 th { border-bottom: 1px solid #DDD !important; }
 {% endhighlight %}
 
+No se olvide de iniciar el servidor nuevamente:
+
+{% highlight sh %}
+rails server
+{% endhighlight %}
+
 Ahora refresque el navegador para ver qué fue cambiado. Además puedes cambiar el HTML & CSS libremente.
 
 **Coach:** Hable un poco acerca de CSS y layouts.
