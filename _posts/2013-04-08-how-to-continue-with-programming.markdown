@@ -128,3 +128,7 @@ You can do this via [Twitter](https://twitter.com/railsgirls) or email.
 Ask the organizers and coaches of your event for their email addresses and if they would like to help you.
 
 Thats it, keep on coding and let's build the future!
+
+## 5. More resources
+
+* [http://pragtob.wordpress.com/2013/06/14/8-ways-to-enable-workshop-attendees-to-keep-learning/](8 ways to enable workshop attendees to keep learning)
