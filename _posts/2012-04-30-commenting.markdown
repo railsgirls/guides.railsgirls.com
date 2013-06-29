@@ -88,7 +88,7 @@ add
   <div>
     <strong><%= comment.user_name %></strong>
     <br />
-    <p><%= comment.body %><p>
+    <p><%= comment.body %></p>
   </div>
 <% end %>
 <%= render 'comments/form' %>
