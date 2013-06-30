@@ -131,4 +131,5 @@ Thats it, keep on coding and let's build the future!
 
 ## 5. More resources
 
-* [http://pragtob.wordpress.com/2013/06/14/8-ways-to-enable-workshop-attendees-to-keep-learning/](8 ways to enable workshop attendees to keep learning)
+- [8 ways to enable workshop attendess to keep learning](http://pragtob.wordpress.com/2013/06/14/8-ways-to-enable-workshop-attendess-to-keep-learning/)
+

@@ -84,7 +84,7 @@ Some other great first-hand tips from Rails Girls coaches:
 
 - [4 lessons learned from teaching at Rails Girls Berlin](http://pragtob.wordpress.com/2012/08/14/4-lessons-learned-from-teaching-at-rails-girls-berlin/)
 - [I infiltrated #railsgirlslj, here’s what it was like](http://swizec.com/blog/i-infiltrated-railsgirlsj-heres-what-it-was-like/swizec/5717)
-- [8 ways to enable workshop attendees to keep learning] (http://pragtob.wordpress.com/2013/06/14/8-ways-to-enable-workshop-attendees-to-keep-learning/)
+- [8 ways to enable workshop attendess to keep learning](http://pragtob.wordpress.com/2013/06/14/8-ways-to-enable-workshop-attendess-to-keep-learning/)
 
 [app]: http://guides.railsgirls.com/app
 [install]: http://guides.railsgirls.com/install/
