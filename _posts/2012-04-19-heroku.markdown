@@ -39,6 +39,28 @@ Run `bundle install --without production` to setup your dependencies.
 
 __COACH__: You can talk about RDBMS and the different ones out there.
 
+#### Adding rails\_12factor
+
+Next, we need to add rails\_12factor entry into our Gemfile to make our app available on Heroku.
+Please change the following in the Gemfile:
+
+{% highlight ruby %}
+group :production do
+  gem 'pg'
+end
+{% endhighlight %}
+
+to
+
+{% highlight ruby %}
+group :production do
+  gem 'pg'
+  gem 'rails\_12factor'
+end
+{% endhighlight %}
+
+__COACH__: You can talk about logging on Heroku.
+
 #### Version Control Systems
 
 We need to add our code to version control. You can do this by running the following in the terminal:
