@@ -36,6 +36,12 @@ Click the Apple menu and choose *About this Mac*.
 
 Double click the downloaded file and it will unpack it into the current directory. Double click the the newly unpacked 'RailsInstaller-1.0.3-osx-10.7.app' or 'RailsInstaller-1.0.3-osx-10.6.app' and follow the instructions. It will open a README file with 'Rails Installer OS X' at the top. Please **ignore** the instructions in this file.
 
+If the Rails version wasn't latest, you could update it using a following command on terminal.
+
+{% highlight sh %}
+gem update rails --no-ri --no-rdoc
+{% endhighlight %}
+
 **Final step.** Install a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
 
 * [Download Sublime Text and install it](http://www.sublimetext.com/2)
@@ -47,6 +53,12 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 ## Setup for Windows
 
 Download [RailsInstaller](http://rubyforge.org/frs/download.php/76862/railsinstaller-2.2.1.exe) and run it. Click through the installer using the default options.
+
+If the Rails version wasn't latest, you could update it using a following command on "Command Prompt with Ruby on Rails".
+
+{% highlight sh %}
+gem update rails --no-ri --no-rdoc
+{% endhighlight %}
 
 Installation of Git and SSH-keys is required if you want to [put your app online with Heroku](/heroku).
 

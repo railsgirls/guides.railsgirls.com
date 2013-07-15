@@ -110,7 +110,7 @@ The app doesn't look very nice yet. Let's do something about that. We'll use the
 Open `app/views/layouts/application.html.erb` in your text editor and above the line
 
 {% highlight erb %}
-<%= stylesheet_link_tag "application" %>
+<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
 {% endhighlight %}
 
 add
@@ -251,19 +251,7 @@ Now refresh your browser to see what changed.
 
 If you try to open [http://localhost:3000](http://localhost:3000) it still shows the "Welcome aboard" page. Let's make it redirect to the ideas page.
 
-On Mac OS X and Linux, in the terminal run:
-
-{% highlight sh %}
-rm public/index.html
-{% endhighlight %}
-
-On Windows, in the command prompt run:
-
-{% highlight bat %}
-del public\index.html
-{% endhighlight %}
-
-Then open `config/routes.rb` and after the first line add
+Open `config/routes.rb` and after the first line add
 
 {% highlight ruby %}
 root :to => redirect('/ideas')
