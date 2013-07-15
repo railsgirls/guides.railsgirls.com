@@ -55,7 +55,7 @@ to
 {% highlight ruby %}
 group :production do
   gem 'pg'
-  gem 'rails\_12factor'
+  gem 'rails_12factor'
 end
 {% endhighlight %}
 
