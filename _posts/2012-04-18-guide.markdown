@@ -453,6 +453,7 @@ This is a small checklist for your event. Rails Girls can be thrown together in 
 #### After the event
 
 * Update website to include pictures and blogposts
+* Upload your photos to our [official Flickr group](http://flickr.com/groups/railsgirls/) (preferably under a [Creative Commons](http://www.flickr.com/groups/railsgirls/discuss/72157634650757777/) licence!)
 * Invite active participants to [global e-mail list](https://groups.google.com/group/rails-girls-team)
 * Send a thank you note to participants and ask for [feedback](http://www.railsgirls.com/feedback) (you can also create your own feedback form in your local language)
 * Send a thank you note to coaches
