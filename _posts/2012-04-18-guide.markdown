@@ -32,7 +32,7 @@ The two-day event includes a lot of small group working and short focused talks 
 
 ### Example Program
 
-Every Rails Girls event starts with an installation-fest where the setup is pre-installed to the girls computers. See [guides.railsgirls.com/install](http://guides.railsgirls.com/install) for readymade instructions. The installation-fest can include short talks, but the main point is to offer some sparkling wine, get everything set for the next day and the girls to know each other. The timeframe is tentative - you know your audience and what suits them best. We've hosted events both during weekend and weekdays. Also, doing two evenings (4PM - 22 PM) might be a more suitable solution for your community needs.
+Every Rails Girls event starts with an installation-fest where the setup is pre-installed to the girl's computers. See [guides.railsgirls.com/install](http://guides.railsgirls.com/install) for readymade instructions. The installation-fest can include short talks, but the main point is to offer some sparkling wine, get everything set for the next day and the girls to know each other. The timeframe is tentative - you know your audience and what suits them best. We've hosted events both during weekend and weekdays. Also, doing two evenings (4PM - 22 PM) might be a more suitable solution for your community needs.
 
 #### Learning objectives of the workshop:
 
