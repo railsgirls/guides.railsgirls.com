@@ -1,0 +1,181 @@
+<!doctype html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>How to Push to GitHub - Rails Girls</title>
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="/js/prefixfree.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/guides.js"></script>
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="/css/code.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/favicon.png" rel="shortcut icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a class="span3" href="/" id="logo">
+          <img alt="Rails Girls Guides" src="/images/railsgirls-guides.png" />
+        </a>
+        <nav></nav>
+      </div>
+    </header>
+    <article class="container">
+      <div class="span10">
+        <h1 id='push_your_app_to_github'>Push Your App to GitHub</h1>
+
+<p><em>Created by Alyson La, <a href='https://www.twitter.com/taxaly'>@taxaly</a></em></p>
+
+<h2 id='things_you_need_before_you_get_started'>Things you need before you get started</h2>
+
+<h3 id='git__github'>Git &amp; GitHub</h3>
+
+<ul>
+<li>
+<p>Check if Git is installed * In the terminal type <code>git --version</code> (1.8 or higher preferred)</p>
+</li>
+
+<li>
+<p>If not, download Git <a href='http://git-scm.com/downloads'>here</a>. Then, setup your local Git profile - In the terminal:</p>
+
+<ul>
+<li>Type <code>git config --global user.name &quot;your-name&quot;</code></li>
+
+<li>Type <code>git config --global user.email &quot;your-email&quot;</code></li>
+
+<li><em>To check if Git is already config-ed you can type</em> <code>git config --list</code></li>
+</ul>
+</li>
+
+<li>
+<p>Create a free <a href='https://github.com'>GitHub</a> account or login if you already have one</p>
+</li>
+</ul>
+
+<p><strong>COACH:</strong> Talk a little about git, verison control, and open source</p>
+
+<h2 id='push_your_app_to_github_using_the_command_line'>Push your app to GitHub using the command line</h2>
+
+<p>On your GitHub profile click &#8220;new repo&#8221; <img alt='screen shot 2013-06-01 at 12 38 50 pm' src='https://f.cloud.github.com/assets/2623954/595307/eb70c6cc-caf2-11e2-9d2d-60deb31ac049.png' /> give it a name (example: rails-girls), brief description, choose the &#8220;public&#8221; repo option, and click &#8220;create repository&#8221;.</p>
+
+<p>In the command line&#8211;make sure you <code>cd</code> into your railgirls folder&#8211;and type:</p>
+
+<p><code>git init</code></p>
+
+<p>This initializes a git repository in your project</p>
+
+<p><em>Note:</em> If you&#8217;ve already done the <a href='/heroku'>Heroku guide</a>, then you&#8217;ve already initialized a git repository &amp; you can move on to the next steps.</p>
+
+<p>Next type:</p>
+
+<p><code>touch README</code></p>
+
+<p>This creates a file called &#8220;README&#8221; in your railsgirls directory</p>
+
+<p><strong>COACH:</strong> Talk a little about READMEs</p>
+
+<p>Then type:</p>
+
+<p><code>git status</code></p>
+
+<p>This will list out all the files in your working directory.</p>
+
+<p><strong>COACH:</strong> Talk about some of your favorite git commands</p>
+
+<p>Then type:</p>
+
+<p><code>git add .</code></p>
+
+<p>This adds in all of your files &amp; changes so far to a staging area.</p>
+
+<p>Then type:</p>
+
+<p><code>git commit -m &quot;first commit&quot;</code></p>
+
+<p>This commits all of your files, adding the message &#8220;first commit&#8221;</p>
+
+<p>Next type:</p>
+
+<p><code>git remote add origin https://github.com/username/rails-girls.git</code></p>
+
+<p><em>Your GitHub Repository page will list the repository URL, so feel free to copy and paste from there, rather than typing it in manually. You can copy and paste the link from your GitHub repository page by clicking the clipboard icon next to the URL.</em></p>
+
+<p>This creates a remote, or <em>connection</em>, named &#8220;origin&#8221; pointing at the GitHub repository you just created.</p>
+
+<p>Then type:</p>
+
+<p><code>git push -u origin master</code></p>
+
+<p>This sends your commits in your &#8220;master&#8221; branch to GitHub</p>
+
+<p>Congratulations your app is on GitHub! Go check it out by going to the same url you used above: https://github.com/username/rails-girls (without the .git part)</p>
+
+<p>If you want to continue making changes and pushing them to GitHub you&#8217;ll just need to use the following three commands:</p>
+
+<p><code>git add .</code></p>
+
+<p><code>git commit -m &quot;type your commit message here&quot;</code></p>
+
+<p><code>git push origin master</code></p>
+
+<h2 id='whats_next'>What&#8217;s next?</h2>
+
+<h3 id='be_a_part_of_the_open_source_community'>Be a Part of the Open Source Community</h3>
+
+<ul>
+<li>Follow your fellow Rails Girls &amp; coaches on GitHub</li>
+
+<li>Star or watch their projects</li>
+
+<li><a href='https://help.github.com/articles/fork-a-repo'>Fork</a> a repo, then clone and push changes to your fork. Share the changes with the originator by sending them a <a href='https://help.github.com/articles/using-pull-requests'>pull request</a>!</li>
+
+<li>Create an issue on a project when you find a bug</li>
+
+<li>Explore other open source projects - search by programming languange or key word</li>
+</ul>
+
+<h3 id='learn_more_git'>Learn more Git</h3>
+
+<ul>
+<li>Check out <a href='http://try.github.io/'>trygit.org</a></li>
+
+<li>Use a <a href='https://na1.salesforce.com/help/doc/en/salesforce_git_developer_cheatsheet.pdf'>Git Cheatsheet</a></li>
+
+<li>Look up Git Commands at <a href='http://git-scm.com/'>git-scm.org</a></li>
+</ul>
+      </div>
+    </article>
+    <footer>
+      <p>
+        This work is licensed under a
+        <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 License</a>
+      </p>
+      <p>
+        <a href="http://railsgirls.com">Rails Girls</a>
+        &middot; Crafted with excitement from Helsinki, Finland &middot; Follow us on
+        <a href="http://twitter.com/railsgirls">Twitter</a>
+        and
+        <a href="https://www.facebook.com/railsgirls">Facebook</a>
+      </p>
+    </footer>
+    <script type="text/javascript">
+      //<![CDATA[
+        var _gaq = _gaq || [];
+        _gaq.push(["_setAccount", "UA-19631067-3"]);
+        _gaq.push(["_trackPageview"]);
+
+        (function() {
+          var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+          ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+          var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      //]]>
+    </script>
+  </body>
+</html>

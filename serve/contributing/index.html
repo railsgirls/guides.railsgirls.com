@@ -1,0 +1,102 @@
+<!doctype html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contributing a Guide - Rails Girls</title>
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="/js/prefixfree.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/guides.js"></script>
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="/css/code.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/favicon.png" rel="shortcut icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a class="span3" href="/" id="logo">
+          <img alt="Rails Girls Guides" src="/images/railsgirls-guides.png" />
+        </a>
+        <nav></nav>
+      </div>
+    </header>
+    <article class="container">
+      <div class="span10">
+        <h1 id='contributing_a_guide'>Contributing a Guide</h1>
+
+<p>The guides site uses <a href='https://github.com/mojombo/jekyll'>jekyll</a> to power the site and all the documents are written using <a href='http://daringfireball.net/projects/markdown/'>markdown</a>. To contribute a guide, you just need to follow these simple steps.</p>
+
+<ol>
+<li>
+<p>Fork the <a href='https://github.com/railsgirls/railsgirls.github.com'>repository on github</a> by clicking on the &#8220;Fork&#8221; button.</p>
+</li>
+
+<li>
+<p>Do a <code>git clone</code> of your fork.</p>
+</li>
+
+<li>
+<p>Create a file named <code>YYYY-MM-DD-guide_name.markdown</code> inside the <code>_posts</code> directory of your fork.</p>
+</li>
+
+<li>
+<p>In this file, you&#8217;ll need to add some YAML front matter at the top of the file so it looks like this: <div class='highlight'><pre><code class='yaml'><span class='nn'>---</span>
+<span class='l-Scalar-Plain'>layout</span><span class='p-Indicator'>:</span> <span class='l-Scalar-Plain'>default</span>
+<span class='l-Scalar-Plain'>title</span><span class='p-Indicator'>:</span> <span class='l-Scalar-Plain'>Name of the Guide</span>
+<span class='l-Scalar-Plain'>permalink</span><span class='p-Indicator'>:</span> <span class='l-Scalar-Plain'>one-word-summary.html</span>
+<span class='nn'>---</span>
+</code></pre></div></p>
+</li>
+
+<li>
+<p>Commit this new guide to your git repo.</p>
+</li>
+
+<li>
+<p>After you commit, push that to your fork.</p>
+</li>
+
+<li>
+<p>You can now open a pull request explaining your guide. That&#8217;s it!</p>
+</li>
+</ol>
+
+<p>You can follow the structure of our <a href='https://github.com/railsgirls/railsgirls.github.com/blob/master/_posts/2012-04-18-app.markdown'>Rails Girls App Tutorial</a>.</p>
+
+<p>Thanks so much for taking the time to help us make Rails Girls awesome.</p>
+      </div>
+    </article>
+    <footer>
+      <p>
+        This work is licensed under a
+        <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 License</a>
+      </p>
+      <p>
+        <a href="http://railsgirls.com">Rails Girls</a>
+        &middot; Crafted with excitement from Helsinki, Finland &middot; Follow us on
+        <a href="http://twitter.com/railsgirls">Twitter</a>
+        and
+        <a href="https://www.facebook.com/railsgirls">Facebook</a>
+      </p>
+    </footer>
+    <script type="text/javascript">
+      //<![CDATA[
+        var _gaq = _gaq || [];
+        _gaq.push(["_setAccount", "UA-19631067-3"]);
+        _gaq.push(["_trackPageview"]);
+
+        (function() {
+          var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+          ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+          var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      //]]>
+    </script>
+  </body>
+</html>

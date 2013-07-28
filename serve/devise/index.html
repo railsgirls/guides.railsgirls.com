@@ -1,0 +1,155 @@
+<!doctype html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Adding Authentication with Devise - Rails Girls</title>
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="/js/prefixfree.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/guides.js"></script>
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="/css/code.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/favicon.png" rel="shortcut icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a class="span3" href="/" id="logo">
+          <img alt="Rails Girls Guides" src="/images/railsgirls-guides.png" />
+        </a>
+        <nav></nav>
+      </div>
+    </header>
+    <article class="container">
+      <div class="span10">
+        <h1 id='adding_authentication_with_devise'>Adding Authentication with Devise</h1>
+
+<p><em>Created by Piotr Steininger, <a href='https://twitter.com/polishprince'>@polishprince</a></em></p>
+
+<p><em>Updated by Ernesto Jimenez, <a href='https://twitter.com/ernesto_jimenez'>@ernesto_jimenez</a></em></p>
+
+<p><strong>This guide assumes that you have already built a RailsGirls app by</strong> <a href='/app'><strong>following the app development guide</strong></a>.</p>
+
+<h2 id='step_0_add_devise_gem'>Step 0: Add devise gem</h2>
+
+<p>Open up your <code>Gemfile</code> and add this line</p>
+<div class='highlight'><pre><code class='ruby'><span class='n'>gem</span> <span class='s1'>&#39;devise&#39;</span>
+</code></pre></div>
+<p>and run</p>
+<div class='highlight'><pre><code class='sh'>bundle install
+</code></pre></div>
+<p>to install the gem. <strong>Also remember to restart the Rails server</strong>.</p>
+
+<h2 id='step_1_set_up_devise_in_your_app'>Step 1: Set up devise in your app</h2>
+
+<p>Run the following command in the terminal.</p>
+<div class='highlight'><pre><code class='sh'>rails g devise:install
+</code></pre></div>
+<h2 id='step_2_configure_devise'>Step 2: Configure Devise</h2>
+
+<p>Ensure you have defined default url options in your environments files. Open up <code>config/environments/development.rb</code> and add this line:</p>
+<div class='highlight'><pre><code class='ruby'>   <span class='n'>config</span><span class='o'>.</span><span class='n'>action_mailer</span><span class='o'>.</span><span class='n'>default_url_options</span> <span class='o'>=</span> <span class='p'>{</span> <span class='ss'>:host</span> <span class='o'>=&gt;</span> <span class='s1'>&#39;localhost:3000&#39;</span> <span class='p'>}</span>
+</code></pre></div>
+<p>before the <code>end</code> keyword.</p>
+
+<p>Open up <code>app/views/layouts/application.html.erb</code> and add:</p>
+<div class='highlight'><pre><code class='erb'><span class='cp'>&lt;%</span> <span class='k'>if</span> <span class='n'>notice</span> <span class='cp'>%&gt;</span><span class='x' />
+<span class='x'>  &lt;p class=&quot;alert alert-notice&quot;&gt;</span><span class='cp'>&lt;%=</span> <span class='n'>notice</span> <span class='cp'>%&gt;</span><span class='x'>&lt;/p&gt;</span>
+<span class='cp'>&lt;%</span> <span class='k'>end</span> <span class='cp'>%&gt;</span><span class='x' />
+<span class='cp'>&lt;%</span> <span class='k'>if</span> <span class='n'>alert</span> <span class='cp'>%&gt;</span><span class='x' />
+<span class='x'>  &lt;p class=&quot;alert alert-error&quot;&gt;</span><span class='cp'>&lt;%=</span> <span class='n'>alert</span> <span class='cp'>%&gt;</span><span class='x'>&lt;/p&gt;</span>
+<span class='cp'>&lt;%</span> <span class='k'>end</span> <span class='cp'>%&gt;</span><span class='x' />
+</code></pre></div>
+<p>right above</p>
+<div class='highlight'><pre><code class='ruby'>   <span class='o'>&lt;%=</span> <span class='k'>yield</span> <span class='o'>%&gt;</span>
+</code></pre></div>
+<p>Finally, if you plan to <a href='/heroku'>deploy to heroku</a> you should open up <code>config/application.rb</code> and add this line:</p>
+<div class='highlight'><pre><code class='ruby'>  <span class='n'>config</span><span class='o'>.</span><span class='n'>assets</span><span class='o'>.</span><span class='n'>initialize_on_precompile</span> <span class='o'>=</span> <span class='kp'>false</span>
+</code></pre></div>
+<p>as third line from the bottom (before the first of two <code>end</code> keywords)</p>
+
+<h2 id='step_3_setup_the_user_model'>Step 3: Setup the User model</h2>
+
+<p>We&#8217;ll use a bundled generator script to create the User model.</p>
+<div class='highlight'><pre><code class='sh'>   rails g devise user
+   rake db:migrate
+</code></pre></div>
+<p><strong>Coach:</strong> Explain what user model has been generated. What are the fields?</p>
+
+<h2 id='step_4_create_your_first_user'>Step 4: Create your first user</h2>
+
+<p>Now that you have set everyting up you can create your first user. Devise creates all the code and routes required to create accounts, log in, log out, etc.</p>
+
+<p>Make sure your rails server is running, open <a href='http://localhost:3000/users/sign_up'>http://localhost:3000/users/sign_up</a> and create your user account.</p>
+
+<h2 id='step_5_add_signup_and_login_links'>Step 5: Add sign-up and login links</h2>
+
+<p>All we need to do now is to add appropriate links or notice about the user being logged in in the top right corner of the navigation bar.</p>
+
+<p>In order to do that, edit <code>app/views/layouts/application.html.erb</code> add:</p>
+<div class='highlight'><pre><code class='erb'><span class='x'>&lt;p class=&quot;navbar-text pull-right&quot;&gt;</span>
+<span class='cp'>&lt;%</span> <span class='k'>if</span> <span class='n'>user_signed_in?</span> <span class='cp'>%&gt;</span><span class='x' />
+<span class='x'>  Logged in as &lt;strong&gt;</span><span class='cp'>&lt;%=</span> <span class='n'>current_user</span><span class='o'>.</span><span class='n'>email</span> <span class='cp'>%&gt;</span><span class='x'>&lt;/strong&gt;.</span>
+<span class='x'>  </span><span class='cp'>&lt;%=</span> <span class='n'>link_to</span> <span class='s1'>&#39;Edit profile&#39;</span><span class='p'>,</span> <span class='n'>edit_user_registration_path</span><span class='p'>,</span> <span class='ss'>:class</span> <span class='o'>=&gt;</span> <span class='s1'>&#39;navbar-link&#39;</span> <span class='cp'>%&gt;</span><span class='x'> |</span>
+<span class='x'>  </span><span class='cp'>&lt;%=</span> <span class='n'>link_to</span> <span class='s2'>&quot;Logout&quot;</span><span class='p'>,</span> <span class='n'>destroy_user_session_path</span><span class='p'>,</span> <span class='nb'>method</span><span class='p'>:</span> <span class='ss'>:delete</span><span class='p'>,</span> <span class='ss'>:class</span> <span class='o'>=&gt;</span> <span class='s1'>&#39;navbar-link&#39;</span>  <span class='cp'>%&gt;</span><span class='x' />
+<span class='cp'>&lt;%</span> <span class='k'>else</span> <span class='cp'>%&gt;</span><span class='x' />
+<span class='x'>  </span><span class='cp'>&lt;%=</span> <span class='n'>link_to</span> <span class='s2'>&quot;Sign up&quot;</span><span class='p'>,</span> <span class='n'>new_user_registration_path</span><span class='p'>,</span> <span class='ss'>:class</span> <span class='o'>=&gt;</span> <span class='s1'>&#39;navbar-link&#39;</span>  <span class='cp'>%&gt;</span><span class='x'> |</span>
+<span class='x'>  </span><span class='cp'>&lt;%=</span> <span class='n'>link_to</span> <span class='s2'>&quot;Login&quot;</span><span class='p'>,</span> <span class='n'>new_user_session_path</span><span class='p'>,</span> <span class='ss'>:class</span> <span class='o'>=&gt;</span> <span class='s1'>&#39;navbar-link&#39;</span>  <span class='cp'>%&gt;</span><span class='x' />
+<span class='cp'>&lt;%</span> <span class='k'>end</span> <span class='cp'>%&gt;</span><span class='x' />
+</code></pre></div>
+<p>right after</p>
+<div class='highlight'><pre><code class='erb'><span class='x'>&lt;ul class=&quot;nav&quot;&gt;</span>
+<span class='x'>  &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;/ideas&quot;&gt;Ideas&lt;/a&gt;&lt;/li&gt;</span>
+<span class='x'>&lt;/ul&gt;</span>
+</code></pre></div>
+<p>Open your browser and try logging in and out from.</p>
+
+<p><strong>Coach:</strong> Talk about the <code>user_signed_in?</code> and <code>current_user</code> helpers. Why are they useful?</p>
+
+<h2 id='what_next'>What next?</h2>
+
+<ul>
+<li>Add extra fields to the User model</li>
+
+<li>Add relationships between users and ideas</li>
+
+<li>Restrict users to only be able to edit their own ideas</li>
+
+<li>Expand to use roles or permissions (use one of the popular authorization gem like CanCan)</li>
+</ul>
+      </div>
+    </article>
+    <footer>
+      <p>
+        This work is licensed under a
+        <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 License</a>
+      </p>
+      <p>
+        <a href="http://railsgirls.com">Rails Girls</a>
+        &middot; Crafted with excitement from Helsinki, Finland &middot; Follow us on
+        <a href="http://twitter.com/railsgirls">Twitter</a>
+        and
+        <a href="https://www.facebook.com/railsgirls">Facebook</a>
+      </p>
+    </footer>
+    <script type="text/javascript">
+      //<![CDATA[
+        var _gaq = _gaq || [];
+        _gaq.push(["_setAccount", "UA-19631067-3"]);
+        _gaq.push(["_trackPageview"]);
+
+        (function() {
+          var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+          ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+          var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      //]]>
+    </script>
+  </body>
+</html>

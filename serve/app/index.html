@@ -1,0 +1,299 @@
+<!doctype html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rails Girls App Tutorial - Rails Girls</title>
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="/js/prefixfree.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/guides.js"></script>
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="/css/code.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/favicon.png" rel="shortcut icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a class="span3" href="/" id="logo">
+          <img alt="Rails Girls Guides" src="/images/railsgirls-guides.png" />
+        </a>
+        <nav></nav>
+      </div>
+    </header>
+    <article class="container">
+      <div class="span10">
+        <h1 id='rails_girls_app_tutorial'>Rails Girls App Tutorial</h1>
+
+<p><em>Created by Vesa Vänskä, <a href='https://twitter.com/vesan'>@vesan</a></em></p>
+
+<p><strong>Make sure you have Rails installed.</strong> <a href='/install'><strong>Follow the installation guide</strong></a> to get set up.</p>
+
+<h2 id='get_to_know_the_tools'>Get to know the tools</h2>
+<div class='indent'>
+
+<h3><i class='icon-text-editor'>
+<p>&#160;</p>
+</i></h3>
+<h3>Text Editor</h3>
+
+<p><a href='http://www.sublimetext.com'>Sublime Text</a>, <a href='http://www.activestate.com/komodo-edit'>Komodo Edit</a>, Vim, Emacs, and Gedit are examples of text editors your can use for writing code and editing files.</p>
+<h3><i class='icon-prompt'>
+<p>&#160;</p>
+</i></h3>
+<h3>Terminal (known as Command Prompt on Windows)</h3>
+
+<p>Where you start the rails server and run commands.</p>
+<h3><i class='icon-browser'>
+<p>&#160;</p>
+</i></h3>
+<h3>Web browser</h3>
+
+<p>(Firefox, Safari, Chrome) for viewing your application.</p>
+</div>
+<h2 id='1creating_the_application'><em>1.</em>Creating the application</h2>
+
+<p>We&#8217;re going to create a new Rails app called <em>railsgirls</em>.</p>
+
+<p>First, let&#8217;s open a terminal:</p>
+
+<ul>
+<li>Mac OS X: Open Spotlight, type <em>Terminal</em> and click the <em>Terminal</em> application.</li>
+
+<li>Windows: Click Start and look for <em>Command Prompt</em>, then click <em>Command Prompt with Ruby on Rails</em>.</li>
+
+<li>Linux (Ubuntu): Search for <em>Terminal</em> on the dash and click <em>Terminal</em>.</li>
+</ul>
+
+<p>Next, type these commands in the terminal:</p>
+<div class='os-specific'>
+  <div class='nix'>
+
+<div class='highlight'><pre><code class='sh'>mkdir projects
+<span class='nb'>cd </span>projects
+rails new railsgirls
+<span class='nb'>cd </span>railsgirls
+rails server
+</code></pre></div>
+
+  </div>
+
+  <div class='win'>
+
+<div class='highlight'><pre><code class='sh'>mkdir projects
+<span class='nb'>cd </span>projects
+rails new railsgirls
+<span class='nb'>cd </span>railsgirls
+ruby script<span class='se'>\r</span>ails server
+</code></pre></div>
+
+  </div>
+</div>
+<p>Open <a href='http://localhost:3000'>http://localhost:3000</a> in your browser. You should see &#8220;Welcome aboard&#8221; page, which means that the generation of your new app worked correctly.</p>
+
+<p>Hit <code>CTRL-C</code> in the terminal to quit the server.</p>
+
+<p><strong>Coach:</strong> Explain what each command does. What was generated? What does the server do?</p>
+
+<h2 id='2create_idea_scaffold'><em>2.</em>Create Idea scaffold</h2>
+
+<p>We&#8217;re going to use Rails&#8217; scaffold functionality to generate a starting point that allows us to list, add, remove, edit, and view things; in our case ideas.</p>
+
+<p><strong>Coach:</strong> What is Rails scaffolding? (Explain the command, the model name and related database table, naming conventions, attributes and types, etc.) What are migrations and why do you need them?</p>
+<div class='os-specific'>
+  <div class='nix'>
+
+<div class='highlight'><pre><code class='sh'>rails generate scaffold idea name:string description:text picture:string
+rake db:migrate
+rails server
+</code></pre></div>
+
+  </div>
+
+  <div class='win'>
+
+<div class='highlight'><pre><code class='sh'>rails generate scaffold idea name:string description:text picture:string
+rake db:migrate
+ruby script<span class='se'>\r</span>ails server
+</code></pre></div>
+
+  </div>
+</div>
+<p>Open <a href='http://localhost:3000/ideas'>http://localhost:3000/ideas</a> in your browser. Click around and test what you got by running these few command-line commands.</p>
+
+<p>Hit <code>CTRL-C</code> to quit the server again when you&#8217;ve clicked around a little.</p>
+
+<h2 id='3design'><em>3.</em>Design</h2>
+
+<p><strong>Coach:</strong> Talk about the relationship between HTML and Rails. What part of views is HTML and what is Embedded Ruby (ERB)? What is MVC and how does this relate to it? (Models and controllers are responsible for generating the HTML views.)</p>
+
+<p>The app doesn&#8217;t look very nice yet. Let&#8217;s do something about that. We&#8217;ll use the Twitter Bootstrap project to give us nicer styling really easily.</p>
+
+<p>Open <code>app/views/layouts/application.html.erb</code> in your text editor and above the line</p>
+<div class='highlight'><pre><code class='erb'><span class='cp'>&lt;%=</span> <span class='n'>stylesheet_link_tag</span> <span class='s2'>&quot;application&quot;</span><span class='p'>,</span> <span class='ss'>media</span><span class='p'>:</span> <span class='s2'>&quot;all&quot;</span><span class='p'>,</span> <span class='s2'>&quot;data-turbolinks-track&quot;</span> <span class='o'>=&gt;</span> <span class='kp'>true</span> <span class='cp'>%&gt;</span><span class='x' />
+</code></pre></div>
+<p>add</p>
+<div class='highlight'><pre><code class='erb'><span class='x'>&lt;link rel=&quot;stylesheet&quot; href=&quot;http://railsgirls.com/assets/bootstrap.css&quot;&gt;</span>
+</code></pre></div>
+<p>and replace</p>
+<div class='highlight'><pre><code class='erb'><span class='cp'>&lt;%=</span> <span class='k'>yield</span> <span class='cp'>%&gt;</span><span class='x' />
+</code></pre></div>
+<p>with</p>
+<div class='highlight'><pre><code class='erb'><span class='x'>&lt;div class=&quot;container&quot;&gt;</span>
+<span class='x'>  </span><span class='cp'>&lt;%=</span> <span class='k'>yield</span> <span class='cp'>%&gt;</span><span class='x' />
+<span class='x'>&lt;/div&gt;</span>
+</code></pre></div>
+<p>Let&#8217;s also add a navigation bar and footer to the layout. In the same file, under <code>&lt;body&gt;</code> add</p>
+<div class='highlight'><pre><code class='html'><span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;navbar navbar-fixed-top&quot;</span><span class='nt'>&gt;</span>
+  <span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;navbar-inner&quot;</span><span class='nt'>&gt;</span>
+    <span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;container&quot;</span><span class='nt'>&gt;</span>
+      <span class='nt'>&lt;a</span> <span class='na'>class=</span><span class='s'>&quot;brand&quot;</span> <span class='na'>href=</span><span class='s'>&quot;/&quot;</span><span class='nt'>&gt;</span>The Idea app<span class='nt'>&lt;/a&gt;</span>
+      <span class='nt'>&lt;ul</span> <span class='na'>class=</span><span class='s'>&quot;nav&quot;</span><span class='nt'>&gt;</span>
+        <span class='nt'>&lt;li</span> <span class='na'>class=</span><span class='s'>&quot;active&quot;</span><span class='nt'>&gt;&lt;a</span> <span class='na'>href=</span><span class='s'>&quot;/ideas&quot;</span><span class='nt'>&gt;</span>Ideas<span class='nt'>&lt;/a&gt;&lt;/li&gt;</span>
+      <span class='nt'>&lt;/ul&gt;</span>
+    <span class='nt'>&lt;/div&gt;</span>
+  <span class='nt'>&lt;/div&gt;</span>
+<span class='nt'>&lt;/div&gt;</span>
+</code></pre></div>
+<p>and before <code>&lt;/body&gt;</code> add</p>
+<div class='highlight'><pre><code class='html'><span class='nt'>&lt;footer&gt;</span>
+  <span class='nt'>&lt;div</span> <span class='na'>class=</span><span class='s'>&quot;container&quot;</span><span class='nt'>&gt;</span>
+    Rails Girls 2013
+  <span class='nt'>&lt;/div&gt;</span>
+<span class='nt'>&lt;/footer&gt;</span>
+</code></pre></div>
+<p>Now let&#8217;s also change the styling of the ideas table. Open <code>app/assets/stylesheets/application.css</code> and at the bottom add</p>
+<div class='highlight'><pre><code class='css'><span class='nt'>body</span> <span class='p'>{</span> <span class='k'>padding-top</span><span class='o'>:</span> <span class='m'>100px</span><span class='p'>;</span> <span class='p'>}</span>
+<span class='nt'>footer</span> <span class='p'>{</span> <span class='k'>margin-top</span><span class='o'>:</span> <span class='m'>100px</span><span class='p'>;</span> <span class='p'>}</span>
+<span class='nt'>table</span><span class='o'>,</span> <span class='nt'>td</span><span class='o'>,</span> <span class='nt'>th</span> <span class='p'>{</span> <span class='k'>vertical-align</span><span class='o'>:</span> <span class='k'>middle</span> <span class='cp'>!important</span><span class='p'>;</span> <span class='k'>border</span><span class='o'>:</span> <span class='k'>none</span> <span class='cp'>!important</span><span class='p'>;</span> <span class='p'>}</span>
+<span class='nt'>th</span> <span class='p'>{</span> <span class='k'>border-bottom</span><span class='o'>:</span> <span class='m'>1px</span> <span class='k'>solid</span> <span class='m'>#DDD</span> <span class='cp'>!important</span><span class='p'>;</span> <span class='p'>}</span>
+</code></pre></div>
+<p>Now refresh the browser to see what was changed. You can also change the HTML &amp; CSS further.</p>
+
+<p><strong>Coach:</strong> Talk a little about CSS and layouts.</p>
+
+<h2 id='step_4_adding_picture_uploads'>Step 4: Adding picture uploads</h2>
+
+<p>We need to install a piece of software to let us upload files in Rails.</p>
+
+<p>Open <code>Gemfile</code> in the project directory using your text editor and under the line</p>
+<div class='highlight'><pre><code class='ruby'><span class='n'>gem</span> <span class='s1'>&#39;sqlite3&#39;</span>
+</code></pre></div>
+<p>add</p>
+<div class='highlight'><pre><code class='ruby'><span class='n'>gem</span> <span class='s1'>&#39;carrierwave&#39;</span>
+</code></pre></div>
+<p><strong>Coach:</strong> Explain what libraries are and why they are useful. Describe what open source software is.</p>
+
+<p>In the terminal run:</p>
+<div class='highlight'><pre><code class='sh'>bundle
+</code></pre></div>
+<p>At this point you need to <strong>restart the Rails server process</strong> in the terminal. This is needed for the app to load the added library.</p>
+
+<p>Now we can generate the code for handling uploads. In the terminal run:</p>
+<div class='highlight'><pre><code class='sh'>rails generate uploader Picture
+</code></pre></div>
+<p>Open <code>app/models/idea.rb</code> and under the line</p>
+<div class='highlight'><pre><code class='ruby'><span class='k'>class</span> <span class='nc'>Idea</span> <span class='o'>&lt;</span> <span class='ss'>ActiveRecord</span><span class='p'>:</span><span class='ss'>:Base</span>
+</code></pre></div>
+<p>add</p>
+<div class='highlight'><pre><code class='ruby'><span class='n'>mount_uploader</span> <span class='ss'>:picture</span><span class='p'>,</span> <span class='no'>PictureUploader</span>
+</code></pre></div>
+<p>Open <code>app/views/ideas/_form.html.erb</code> and change</p>
+<div class='highlight'><pre><code class='erb'><span class='cp'>&lt;%=</span> <span class='n'>f</span><span class='o'>.</span><span class='n'>text_field</span> <span class='ss'>:picture</span> <span class='cp'>%&gt;</span><span class='x' />
+</code></pre></div>
+<p>to</p>
+<div class='highlight'><pre><code class='erb'><span class='cp'>&lt;%=</span> <span class='n'>f</span><span class='o'>.</span><span class='n'>file_field</span> <span class='ss'>:picture</span> <span class='cp'>%&gt;</span><span class='x' />
+</code></pre></div>
+<p>In your browser, add new idea with a picture. When you upload a picture it doesn&#8217;t look nice because it only shows a path to the file, so let&#8217;s fix that.</p>
+
+<p>Open <code>app/views/ideas/show.html.erb</code> and change</p>
+
+<p><div class='highlight'><pre><code class='erb'><span class='cp'>&lt;%=</span> <span class='vi'>@idea</span><span class='o'>.</span><span class='n'>picture</span> <span class='cp'>%&gt;</span><span class='x' />
+</code></pre></div></p>
+
+<p>to</p>
+
+<p><div class='highlight'><pre><code class='erb'><span class='cp'>&lt;%=</span> <span class='n'>image_tag</span><span class='p'>(</span><span class='vi'>@idea</span><span class='o'>.</span><span class='n'>picture_url</span><span class='p'>,</span> <span class='ss'>:width</span> <span class='o'>=&gt;</span> <span class='mi'>600</span><span class='p'>)</span> <span class='k'>if</span> <span class='vi'>@idea</span><span class='o'>.</span><span class='n'>picture</span><span class='o'>.</span><span class='n'>present?</span> <span class='cp'>%&gt;</span><span class='x' />
+</code></pre></div></p>
+
+<p>Now refresh your browser to see what changed.</p>
+
+<p><strong>Coach:</strong> Talk a little about HTML.</p>
+
+<h2 id='step_5_finetune_the_routes'>Step 5: Finetune the routes</h2>
+
+<p>If you try to open <a href='http://localhost:3000'>http://localhost:3000</a> it still shows the &#8220;Welcome aboard&#8221; page. Let&#8217;s make it redirect to the ideas page.</p>
+
+<p>Open <code>config/routes.rb</code> and after the first line add</p>
+<div class='highlight'><pre><code class='ruby'><span class='n'>root</span> <span class='ss'>:to</span> <span class='o'>=&gt;</span> <span class='n'>redirect</span><span class='p'>(</span><span class='s1'>&#39;/ideas&#39;</span><span class='p'>)</span>
+</code></pre></div>
+<p>Test the change by opening the root path in your browser.</p>
+
+<p><strong>Coach:</strong> Talk about routes.</p>
+
+<h2 id='what_next'>What next?</h2>
+
+<ul>
+<li>Add design using HTML &#38; CSS</li>
+
+<li>Add ratings</li>
+
+<li>Use CoffeeScript (or JavaScript) to add interaction</li>
+
+<li>Add picture resizing to make loading the pictures faster</li>
+</ul>
+
+<h2 id='additional_guides'>Additional Guides</h2>
+
+<ul>
+<li>Guide 0: <a href='https://github.com/PragTob/rails-beginner-cheatsheet'>Handy cheatsheet for Ruby, Rails, console etc.</a></li>
+
+<li>Guide 1: <a href='/commenting'>Add commenting by Janika Liiv</a></li>
+
+<li>Guide 2: <a href='/heroku'>Put your app online with Heroku by Terence Lee</a></li>
+
+<li>Guide 3: <a href='http://railsgirlsberlin.de/apptutorial/'>Build a map of workshop participants by Rails Girls Berlin</a></li>
+
+<li>Guide 4: <a href='/thumbnails'>Create thumbnail images for the uploads by Miha Filej</a></li>
+
+<li>Guide 5: <a href='/design'>Add design using HTML &#38; CSS by Alex Liao</a></li>
+
+<li>Guide 6: <a href='/devise/'>Add Authentication (user accounts) with Devise by Piotr Steininger</a></li>
+
+<li>Guide 7: <a href='https://github.com/lbain/railsgirls'>Go through additional explanations for the App by Lucy Bain</a></li>
+</ul>
+      </div>
+    </article>
+    <footer>
+      <p>
+        This work is licensed under a
+        <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 License</a>
+      </p>
+      <p>
+        <a href="http://railsgirls.com">Rails Girls</a>
+        &middot; Crafted with excitement from Helsinki, Finland &middot; Follow us on
+        <a href="http://twitter.com/railsgirls">Twitter</a>
+        and
+        <a href="https://www.facebook.com/railsgirls">Facebook</a>
+      </p>
+    </footer>
+    <script type="text/javascript">
+      //<![CDATA[
+        var _gaq = _gaq || [];
+        _gaq.push(["_setAccount", "UA-19631067-3"]);
+        _gaq.push(["_trackPageview"]);
+
+        (function() {
+          var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+          ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+          var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      //]]>
+    </script>
+  </body>
+</html>

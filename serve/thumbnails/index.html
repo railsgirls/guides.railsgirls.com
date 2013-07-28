@@ -1,0 +1,118 @@
+<!doctype html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Show thumbnails when listing ideas - Rails Girls</title>
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="/js/prefixfree.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/guides.js"></script>
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="/css/code.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/favicon.png" rel="shortcut icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a class="span3" href="/" id="logo">
+          <img alt="Rails Girls Guides" src="/images/railsgirls-guides.png" />
+        </a>
+        <nav></nav>
+      </div>
+    </header>
+    <article class="container">
+      <div class="span10">
+        <h1 id='create_thumbnails_with_carrierwave'>Create thumbnails with Carrierwave</h1>
+
+<p><em>Created by Miha Filej, <a href='https://twitter.com/mfilej'>@mfilej</a></em></p>
+
+<p><strong>Coach</strong>: Explain what specifying the image width in HTML at the end of Step 4 does and how it differs from resizing images on the server.</p>
+
+<h2 id='installing_imagemagick'>Installing ImageMagick</h2>
+
+<ul>
+<li>
+<p>OS X: run <code>brew install imagemagick</code>. If you don&#8217;t have the brew command, you can <a href='http://mxcl.github.io/homebrew/'>install Homebrew here</a>.</p>
+</li>
+
+<li>
+<p>Windows: download and run the <a href='http://www.imagemagick.org/script/binary-releases.php?ImageMagick=vkv0r0at8sjl5qo91788rtuvs3#windows'>ImageMagick installer</a> (use the first <em>download</em> link).</p>
+</li>
+
+<li>
+<p>Linux: On Ubuntu and Debian, run <code>sudo apt-get install imagemagick</code>. Use the appropriate package manager instead of <code>apt-get</code> for other distributions.</p>
+</li>
+</ul>
+
+<p><strong>Coach</strong>: What is ImageMagick and how is it different from libraries/gems we used before?</p>
+
+<p>Open <code>Gemfile</code> in the project and add</p>
+<div class='highlight'><pre><code class='ruby'><span class='n'>gem</span> <span class='s1'>&#39;mini_magick&#39;</span><span class='p'>,</span> <span class='s1'>&#39;3.5.0&#39;</span>
+</code></pre></div>
+<p>under the line</p>
+<div class='highlight'><pre><code class='ruby'><span class='n'>gem</span> <span class='s1'>&#39;carrierwave&#39;</span>
+</code></pre></div>
+<p>In the Terminal run:</p>
+<div class='highlight'><pre><code class='sh'>bundle
+</code></pre></div>
+<h2 id='telling_our_app_to_create_thumbnails_when_an_image_is_uploaded'>Telling our app to create thumbnails when an image is uploaded</h2>
+
+<p>Open <code>app/uploaders/picture_uploader.rb</code> and find the line that looks like this:</p>
+<div class='highlight'><pre><code class='ruby'>  <span class='c1'># include CarrierWave::MiniMagick</span>
+</code></pre></div>
+<p>Remove the <code>#</code> sign.</p>
+
+<p><strong>Coach</strong>: Explain the concept of comments in code.</p>
+
+<p>Below the line you just changed, add:</p>
+<div class='highlight'><pre><code class='ruby'><span class='n'>version</span> <span class='ss'>:thumb</span> <span class='k'>do</span>
+  <span class='n'>process</span> <span class='ss'>:resize_to_fill</span> <span class='o'>=&gt;</span> <span class='o'>[</span><span class='mi'>50</span><span class='p'>,</span> <span class='mi'>50</span><span class='o'>]</span>
+<span class='k'>end</span>
+</code></pre></div>
+<p>The images uploaded from now on should be resized, but the ones we already have weren&#8217;t affected. So edit one of the existing ideas and re-add a picture.</p>
+
+<h2 id='displaying_the_thumbnails'>Displaying the thumbnails</h2>
+
+<p>To see if the uploaded picture was resized open <code>app/views/ideas/index.html.erb</code>. Change the line</p>
+<div class='highlight'><pre><code class='erb'><span class='x'>&lt;td&gt;</span><span class='cp'>&lt;%=</span> <span class='n'>idea</span><span class='o'>.</span><span class='n'>picture</span> <span class='cp'>%&gt;</span><span class='x'>&lt;/td&gt;</span>
+</code></pre></div>
+<p>to</p>
+<div class='highlight'><pre><code class='erb'><span class='x'>&lt;td&gt;</span><span class='cp'>&lt;%=</span> <span class='n'>image_tag</span> <span class='n'>idea</span><span class='o'>.</span><span class='n'>picture_url</span><span class='p'>(</span><span class='ss'>:thumb</span><span class='p'>)</span> <span class='k'>if</span> <span class='n'>idea</span><span class='o'>.</span><span class='n'>picture?</span> <span class='cp'>%&gt;</span><span class='x'>&lt;/td&gt;</span>
+</code></pre></div>
+<p>Take a look at the list of ideas in the browser to see if the thumbnail is there.</p>
+      </div>
+    </article>
+    <footer>
+      <p>
+        This work is licensed under a
+        <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 License</a>
+      </p>
+      <p>
+        <a href="http://railsgirls.com">Rails Girls</a>
+        &middot; Crafted with excitement from Helsinki, Finland &middot; Follow us on
+        <a href="http://twitter.com/railsgirls">Twitter</a>
+        and
+        <a href="https://www.facebook.com/railsgirls">Facebook</a>
+      </p>
+    </footer>
+    <script type="text/javascript">
+      //<![CDATA[
+        var _gaq = _gaq || [];
+        _gaq.push(["_setAccount", "UA-19631067-3"]);
+        _gaq.push(["_trackPageview"]);
+
+        (function() {
+          var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+          ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+          var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      //]]>
+    </script>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+<!doctype html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rails Girls on Heroku - Rails Girls</title>
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="/js/prefixfree.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/jquery.cookie.js"></script>
+    <script src="/js/guides.js"></script>
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="/css/code.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/favicon.png" rel="shortcut icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a class="span3" href="/" id="logo">
+          <img alt="Rails Girls Guides" src="/images/railsgirls-guides.png" />
+        </a>
+        <nav></nav>
+      </div>
+    </header>
+    <article class="container">
+      <div class="span10">
+        <h1 id='put_your_app_online_with_heroku'>Put Your App Online With Heroku</h1>
+
+<p><em>Created by Terence Lee, <a href='https://twitter.com/hone02'>@hone02</a></em></p>
+
+<h3 id='get_heroku'>Get Heroku</h3>
+
+<p>Follow steps 1 through 3 of the <a href='https://devcenter.heroku.com/articles/quickstart'>quickstart guide</a> to sign up, install the toolbelt, and login.</p>
+
+<p><strong>COACH</strong>: Talk about the benefits of deploying to Heroku vs traditional servers.</p>
+
+<h3 id='preparing_your_app'>Preparing your app</h3>
+
+<h4 id='updating_our_database'>Updating our database</h4>
+
+<p>First, we need to get our database to work on Heroku, which uses a different database. Please change the following in the Gemfile:</p>
+<div class='highlight'><pre><code class='ruby'><span class='n'>gem</span> <span class='s1'>&#39;sqlite3&#39;</span>
+</code></pre></div>
+<p>to</p>
+<div class='highlight'><pre><code class='ruby'><span class='n'>group</span> <span class='ss'>:development</span> <span class='k'>do</span>
+  <span class='n'>gem</span> <span class='s1'>&#39;sqlite3&#39;</span>
+<span class='k'>end</span>
+<span class='n'>group</span> <span class='ss'>:production</span> <span class='k'>do</span>
+  <span class='n'>gem</span> <span class='s1'>&#39;pg&#39;</span>
+<span class='k'>end</span>
+</code></pre></div>
+<p>Run <code>bundle install --without production</code> to setup your dependencies.</p>
+
+<p><strong>COACH</strong>: You can talk about RDBMS and the different ones out there.</p>
+
+<h4 id='adding_rails_12factor'>Adding rails_12factor</h4>
+
+<p>Next, we need to add rails_12factor entry into our Gemfile to make our app available on Heroku. Please change the following in the Gemfile:</p>
+<div class='highlight'><pre><code class='ruby'><span class='n'>group</span> <span class='ss'>:production</span> <span class='k'>do</span>
+  <span class='n'>gem</span> <span class='s1'>&#39;pg&#39;</span>
+<span class='k'>end</span>
+</code></pre></div>
+<p>to</p>
+<div class='highlight'><pre><code class='ruby'><span class='n'>group</span> <span class='ss'>:production</span> <span class='k'>do</span>
+  <span class='n'>gem</span> <span class='s1'>&#39;pg&#39;</span>
+  <span class='n'>gem</span> <span class='s1'>&#39;rails_12factor&#39;</span>
+<span class='k'>end</span>
+</code></pre></div>
+<p><strong>COACH</strong>: You can talk about logging on Heroku.</p>
+
+<h4 id='version_control_systems'>Version Control Systems</h4>
+
+<p>We need to add our code to version control. You can do this by running the following in the terminal:</p>
+<div class='highlight'><pre><code class='sh'>git init
+git add .
+git commit -m <span class='s2'>&quot;initial commit&quot;</span>
+</code></pre></div>
+<p><strong>COACH</strong>: This would be a good time to talk about version control systems and git.</p>
+
+<h3 id='deploying_your_app'>Deploying your app</h3>
+
+<h4 id='app_creation'>App creation</h4>
+
+<p>We need to create our heroku app by typing <code>heroku create</code> in the terminal and see something like this:</p>
+<div class='highlight'><pre><code class='sh'>Creating evening-sky-7498... <span class='k'>done</span>, stack is cedar
+http://evening-sky-7498.herokuapp.com/ | git@heroku.com:evening-sky-7498.git
+Git remote heroku added
+</code></pre></div>
+<p>In this case &#8220;evening-sky-7498&#8221; is your app name.</p>
+
+<h4 id='pushing_the_code'>Pushing the code</h4>
+
+<p>Next we need to push our code to heroku by typing <code>git push heroku master</code>. You&#8217;ll see push output like the following:</p>
+<div class='highlight'><pre><code class='sh'>Counting objects: 134, <span class='k'>done</span>.
+Delta compression using up to 4 threads.
+Compressing objects: 100% <span class='o'>(</span>115/115<span class='o'>)</span>, <span class='k'>done</span>.
+Writing objects: 100% <span class='o'>(</span>134/134<span class='o'>)</span>, 35.29 KiB, <span class='k'>done</span>.
+Total 134 <span class='o'>(</span>delta 26<span class='o'>)</span>, reused 0 <span class='o'>(</span>delta 0<span class='o'>)</span>
+
+-----&gt; Heroku receiving push
+-----&gt; Ruby/Rails app detected
+-----&gt; Installing dependencies using Bundler version 1.1.2
+       Running: bundle install --without development:test --path vendor/bundle --binstubs bin/ --deployment
+       Fetching gem metadata from https://rubygems.org/.......
+...
+-----&gt; Launching... <span class='k'>done</span>, v4
+       http://evening-sky-7498.herokuapp.com deployed to Heroku
+</code></pre></div>
+<p>You&#8217;ll know the app is done being pushed, when you see the &#8220;Launching&#8230;&#8221; text like above.</p>
+
+<h4 id='migrate_database'>Migrate database</h4>
+
+<p>Next we need to migrate our database like we did locally during the workshop: <code>heroku run rake db:migrate</code></p>
+
+<p>When that command is finished being run, you can hit the app based on the url. For this example app, you can go to <a href='http://evening-sky-7498.herokuapp.com'>http://evening-sky-7498.herokuapp.com/</a>. You can also type <code>heroku open</code> in the terminal to visit the page.</p>
+      </div>
+    </article>
+    <footer>
+      <p>
+        This work is licensed under a
+        <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 License</a>
+      </p>
+      <p>
+        <a href="http://railsgirls.com">Rails Girls</a>
+        &middot; Crafted with excitement from Helsinki, Finland &middot; Follow us on
+        <a href="http://twitter.com/railsgirls">Twitter</a>
+        and
+        <a href="https://www.facebook.com/railsgirls">Facebook</a>
+      </p>
+    </footer>
+    <script type="text/javascript">
+      //<![CDATA[
+        var _gaq = _gaq || [];
+        _gaq.push(["_setAccount", "UA-19631067-3"]);
+        _gaq.push(["_trackPageview"]);
+
+        (function() {
+          var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+          ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+          var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      //]]>
+    </script>
+  </body>
+</html>
