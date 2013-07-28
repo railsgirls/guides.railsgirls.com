@@ -6,7 +6,7 @@ permalink: videos
 
 # Rails Girls Happiness All Around the World
 
-This is a selection of Rails Girls videos from around the world. Have one to share? Drop us a line through team(a)railsgirls.com or make a PR. 
+This is a selection of Rails Girls videos from around the world. Have one to share? Add it here. 
 
 ### Rails Girls Brno 2013
 <iframe src="http://player.vimeo.com/video/70095213" width="500" height="281" frameborder="0"> </iframe> <p><a href="http://vimeo.com/70095213">Rails Girls Brno</a> from <a href="http://vimeo.com/user19466822">Rails Girls CZ</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
