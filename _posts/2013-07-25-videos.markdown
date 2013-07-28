@@ -34,12 +34,13 @@ This is a selection of Rails Girls videos from around the world. Have one to sha
 
 ### Rails Girls Zurich 2012
 
-<div><iframe src="http://player.vimeo.com/video/53032561" width="500" height="281" frameborder="0"></iframe><p><a href="http://vimeo.com/53032561">Rails Girls Zurich</a> from <a href="http://vimeo.com/danielpuglisi">Daniel Puglisi</a> on <a href="https://vimeo.com">Vimeo</a>.</p></div>
+<div><iframe src="http://player.vimeo.com/video/53032561" width="500" height="281" frameborder="0"> </iframe> <p><a href="http://vimeo.com/53032561">Rails Girls Zurich</a> from <a href="http://vimeo.com/danielpuglisi">Daniel Puglisi</a> on <a href="https://vimeo.com">Vimeo</a>.</p></div>
 
 ### Rails Girls Cologne 2012
 
-<div><iframe src="http://player.vimeo.com/video/51511255" width="500" height="281" frameborder="0"></iframe><p><a href="http://vimeo.com/51511255">Rails Girls Cologne - September 2012</a> from <a href="http://vimeo.com/user14112349">Liane Th&ouml;nnes</a> on <a href="https://vimeo.com">Vimeo</a>.</p></div>
+<div><iframe src="http://player.vimeo.com/video/51511255" width="500" height="281" frameborder="0"> </iframe> <p><a href="http://vimeo.com/51511255">Rails Girls Cologne - September 2012</a> from <a href="http://vimeo.com/user14112349">Liane Th&ouml;nnes</a> on <a href="https://vimeo.com">Vimeo</a>.</p></div>
 
 ### Rails Girls Rheinland 2013
 
-<div><iframe src="http://player.vimeo.com/video/62054262" width="500" height="281" frameborder="0"></iframe><p><a href="http://vimeo.com/62054262">Rails Girls Rheinland - March 1 + 2</a> from <a href="http://vimeo.com/user14112349">Liane Th&ouml;nnes</a> on <a href="https://vimeo.com">Vimeo</a>.</p></div>
+<div><iframe src="http://player.vimeo.com/video/62054262" width="500" height="281" frameborder="0"> </iframe> <p><a href="http://vimeo.com/62054262">Rails Girls Rheinland - March 1 + 2</a> from <a href="http://vimeo.com/user14112349">Liane Th&ouml;nnes</a> on <a href="https://vimeo.com">Vimeo</a>.</p></div>
+
