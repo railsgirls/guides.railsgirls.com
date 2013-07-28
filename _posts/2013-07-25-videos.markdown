@@ -6,32 +6,40 @@ permalink: videos
 
 # Rails Girls Happiness All Around the World
 
-This is a selection of Rails Girls videos from around the world. Have one to share? Add it here. 
+This is a selection of Rails Girls videos from around the world. Have one to share? Add it here.
 
 ### Rails Girls Brno 2013
-<iframe src="http://player.vimeo.com/video/70095213" width="500" height="281" frameborder="0"> </iframe> <p><a href="http://vimeo.com/70095213">Rails Girls Brno</a> from <a href="http://vimeo.com/user19466822">Rails Girls CZ</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<div><iframe src="http://player.vimeo.com/video/70095213" width="500" height="281" frameborder="0"> </iframe><p><a href="http://vimeo.com/70095213">Rails Girls Brno</a> from <a href="http://vimeo.com/user19466822">Rails Girls CZ</a> on <a href="https://vimeo.com">Vimeo</a>.</p></div>
 
 ### Rails Girls Helsinki 2010
-<iframe src="http://player.vimeo.com/video/17752439" width="500" height="281" frameborder="0"> </iframe> <p><a href="http://vimeo.com/17752439">Rails for Girls</a> from <a href="http://vimeo.com/kiskolabs">Kisko Labs</a> on <a href="https://vimeo.com">Vimeo</a>.</p>	
+
+<div><iframe src="http://player.vimeo.com/video/17752439" width="500" height="281" frameborder="0"> </iframe><p><a href="http://vimeo.com/17752439">Rails for Girls</a> from <a href="http://vimeo.com/kiskolabs">Kisko Labs</a> on <a href="https://vimeo.com">Vimeo</a>.</p></div>
 
 ### Rails Girls Summer of Code 2013
-<iframe src="http://player.vimeo.com/video/67004430" width="500" height="281" frameborder="0"> </iframe> <p><a href="http://vimeo.com/67004430">Rails Girls Summer of Code</a> from <a href="http://vimeo.com/langalex">Alexander Lang</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<div><iframe src="http://player.vimeo.com/video/67004430" width="500" height="281" frameborder="0"> </iframe><p><a href="http://vimeo.com/67004430">Rails Girls Summer of Code</a> from <a href="http://vimeo.com/langalex">Alexander Lang</a> on <a href="https://vimeo.com">Vimeo</a>.</p></div>
 
 ### Rails Girls Berlin 2012
-<iframe src="http://player.vimeo.com/video/40852182" width="500" height="281" frameborder="0"> </iframe> <p><a href="http://vimeo.com/40852182">Rails Girls Berlin 2012</a> from <a href="http://vimeo.com/langalex">Alexander Lang</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<div><iframe src="http://player.vimeo.com/video/40852182" width="500" height="281" frameborder="0"> </iframe> <p><a href="http://vimeo.com/40852182">Rails Girls Berlin 2012</a> from <a href="http://vimeo.com/langalex">Alexander Lang</a> on <a href="https://vimeo.com">Vimeo</a>.</p></div>
 
 ### Rails Girls Warsaw 2012
-<iframe src="http://player.vimeo.com/video/52451847" width="500" height="281" frameborder="0"> </iframe> <p><a href="http://vimeo.com/52451847">Rails Girls Warsaw 2012</a> from <a href="http://vimeo.com/terczer">Terczer</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<div><iframe src="http://player.vimeo.com/video/52451847" width="500" height="281" frameborder="0"> </iframe><p><a href="http://vimeo.com/52451847">Rails Girls Warsaw 2012</a> from <a href="http://vimeo.com/terczer">Terczer</a> on <a href="https://vimeo.com">Vimeo</a>.</p></div>
 
 ### Rails Girls Maribor 2012
-<iframe src="http://player.vimeo.com/video/68032937" width="500" height="281" frameborder="0"> </iframe> <p><a href="http://vimeo.com/68032937">Rails Girls Maribor</a> from <a href="http://vimeo.com/user207750">Gretzki</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<div><iframe src="http://player.vimeo.com/video/68032937" width="500" height="281" frameborder="0"> </iframe> <p><a href="http://vimeo.com/68032937">Rails Girls Maribor</a> from <a href="http://vimeo.com/user207750">Gretzki</a> on <a href="https://vimeo.com">Vimeo</a>.</p></div>
 
 ### Rails Girls Zurich 2012
-<iframe src="http://player.vimeo.com/video/53032561" width="500" height="281" frameborder="0"> </iframe> <p><a href="http://vimeo.com/53032561">Rails Girls Zurich</a> from <a href="http://vimeo.com/danielpuglisi">Daniel Puglisi</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<div><iframe src="http://player.vimeo.com/video/53032561" width="500" height="281" frameborder="0"></iframe><p><a href="http://vimeo.com/53032561">Rails Girls Zurich</a> from <a href="http://vimeo.com/danielpuglisi">Daniel Puglisi</a> on <a href="https://vimeo.com">Vimeo</a>.</p></div>
 
 ### Rails Girls Cologne 2012
-<iframe src="http://player.vimeo.com/video/51511255" width="500" height="281" frameborder="0"> </iframe> <p><a href="http://vimeo.com/51511255">Rails Girls Cologne - September 2012</a> from <a href="http://vimeo.com/user14112349">Liane Th&ouml;nnes</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<div><iframe src="http://player.vimeo.com/video/51511255" width="500" height="281" frameborder="0"></iframe><p><a href="http://vimeo.com/51511255">Rails Girls Cologne - September 2012</a> from <a href="http://vimeo.com/user14112349">Liane Th&ouml;nnes</a> on <a href="https://vimeo.com">Vimeo</a>.</p></div>
 
 ### Rails Girls Rheinland 2013
-<iframe src="http://player.vimeo.com/video/62054262" width="500" height="281" frameborder="0"> </iframe> <p><a href="http://vimeo.com/62054262">Rails Girls Rheinland - March 1 + 2</a> from <a href="http://vimeo.com/user14112349">Liane Th&ouml;nnes</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
+<div><iframe src="http://player.vimeo.com/video/62054262" width="500" height="281" frameborder="0"></iframe><p><a href="http://vimeo.com/62054262">Rails Girls Rheinland - March 1 + 2</a> from <a href="http://vimeo.com/user14112349">Liane Th&ouml;nnes</a> on <a href="https://vimeo.com">Vimeo</a>.</p></div>

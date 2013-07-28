@@ -14,7 +14,10 @@ permalink: bundlerfordevelopment.html
 
     Fork Bundler so you can create pull requests with your changes
 
-    <img src ../images/fork.jpg" />
+<p>
+<img src="../images/fork1.jpg" />
+<br />
+</p>
 
 2. Download a copy of your fork of Bundler
     
