@@ -23,7 +23,7 @@ Open `app/views/layouts/application.html.erb` in your text editor and replace th
 with
 
 {% highlight html %}
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap.min.css">
 {% endhighlight %}
 
 and replace
