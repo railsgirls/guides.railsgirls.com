@@ -52,7 +52,7 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 ## Setup for Windows
 
-Download [RailsInstaller](http://rubyforge.org/frs/download.php/76862/railsinstaller-2.2.1.exe) and run it. Click through the installer using the default options.
+Download [RailsInstaller](https://github.com/railsinstaller/railsinstaller-windows/releases/download/2.2.2/railsinstaller-2.2.2.exe) and run it. Click through the installer using the default options.
 
 If the Rails version wasn't latest, you could update it using a following command on "Command Prompt with Ruby on Rails".
 
