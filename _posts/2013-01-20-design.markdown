@@ -73,7 +73,7 @@ add
 
 ## Step 3: Design the idea list
 
-Now it's time to make the idea list page look professional. For that, we are going to replace the table layout with a div layout
+Now it's time to make the idea list page look professional. For that, we are going to replace the table layout with a div layout.
 
 **Coach:** Talk a little about table vs div.
 
@@ -82,16 +82,17 @@ Open `app/views/ideas/index.html.erb` in your text editor and replace all lines 
 {% highlight erb %}
 <h1>Listing ideas</h1>
 
-<% @ideas.each do |idea| %>
-<div class="row">
-  <div class="span4">
-    <%= image_tag idea.picture_url, :width => '100%' if idea.picture.present?%>
-    <h4><%= link_to idea.name, idea %></h4>
-    <%= idea.description %>
+<% @ideas.in_groups_of(3) do |group| %>
+  <div class="row">
+    <% group.compact.each do |idea| %>
+      <div class="span4">
+        <%= image_tag idea.picture_url, :width => '100%' if idea.picture.present?%>
+        <h4><%= link_to idea.name, idea %></h4>
+        <%= idea.description %>
+      </div>
+    <% end %>
   </div>
 <% end %>
-
-<br />
 {% endhighlight %}
 
 **Coach:** Explain what the new code means line by line, and talk a little about Bootstrap 12 grids layout.
@@ -129,7 +130,7 @@ Open `app/views/ideas/show.html.erb` in your text editor and replace all lines w
 
 ## What next?
 
-* Design the new idea form with your new knowledge
+* Use your new knowledge to design the new idea form
 * Add more design to the pages as you wish
 * Follow the other guides to learn more about Rails
 
