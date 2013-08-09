@@ -60,7 +60,7 @@ mkdir projects
 cd projects
 rails new railsgirls
 cd railsgirls
-ruby script\rails server
+ruby bin\rails server
 {% endhighlight %}
   </div>
 </div>
@@ -91,7 +91,7 @@ rails server
 {% highlight sh %}
 rails generate scaffold idea name:string description:text picture:string
 rake db:migrate
-ruby script\rails server
+ruby bin\rails server
 {% endhighlight %}
   </div>
 </div>
