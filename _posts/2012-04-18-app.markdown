@@ -257,7 +257,9 @@ Open `config/routes.rb` and after the first line add
 root :to => redirect('/ideas')
 {% endhighlight %}
 
-Test the change by opening the root path in your browser.
+Delete the file `index.html` from the `public/` folder.
+
+Test the change by opening the root path (that is, http://localhost:3000/) in your browser.
 
 **Coach:** Talk about routes.
 
