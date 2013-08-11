@@ -129,3 +129,30 @@ Next we need to migrate our database like we did locally during the workshop: `h
 
 When that command is finished being run, you can hit the app based on the url. For this example app, you can go to [http://evening-sky-7498.herokuapp.com/](http://evening-sky-7498.herokuapp.com). You can also type `heroku open` in the terminal to visit the page.
 
+
+#### Closing notes
+
+Heroku's platform is not without its quirks. Applications run on Heroku live within an ephermeral environment - this means that (except for information stored in your database) any files created by your application will disappear if it restarts (for example, when you push a new version).
+
+###### [Ephemeral filesystem](https://devcenter.heroku.com/articles/dynos#ephemeral-filesystem)
+> Each dyno gets its own ephemeral filesystem, with a fresh copy of the most recently deployed code. During the dyno’s lifetime its running processes can use the filesystem as a temporary scratchpad, but no files that are written are visible to processes in any other dyno and any files written will be discarded the moment the dyno is stopped or restarted.
+
+In the [App](/app) tutorial the ability to attach a file to the Idea record is added, which results in new files being written to your applications `public/uploads` folder. The ephemeral storage in Heroku can be seen with the following steps:
+
+1. Launch the app with `heroku open`
+2. Add a new Idea with an image
+3. Restart the application by running `heroku restart`
+4. Go back to your Idea and reload the page - the image should no longer be visible
+
+##### Working around Ephemeral Storage
+
+Obviously this doesn't seem to be useful if you were running a real life application, but there are ways to work around this which is commonly used by a lot of popular websites.
+
+The most common method is to use an external asset host such as Amazon S3 (Simple Storage Service) or Rackspace CloudFiles. These services provide (for a low cost - usually less then $0.10 per GB) storage 'in the cloud' (meaning the files could potentially be hosted anywhere) which your application can use as persistent storage.
+
+While this functionality is a bit out of scope for this tutorial there are some resources available which you can use to find your way:
+
+* [How to: Make Carrierwave work on Heroku](https://github.com/carrierwaveuploader/carrierwave/wiki/How-to%3A-Make-Carrierwave-work-on-Heroku)
+* [Amazon S2 - The Beginner' Guide](http://www.hongkiat.com/blog/amazon-s3-the-beginners-guide/)
+
+As always if you require any more information or assistance your coaches will be able to assist.
