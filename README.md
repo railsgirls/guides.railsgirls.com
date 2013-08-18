@@ -34,7 +34,7 @@ If you aren't editing the code blocks, you can safely ignore this. If you want p
 ### Run jekyll
 
 ```
-$ jekyll --server --auto
+$ bundle exec jekyll --server --auto
 ```
 
 ### Having trouble?
@@ -49,7 +49,7 @@ To contribute a guide, view the instructions at http://guides.railsgirls.com/con
 
 For updates and more follow [@railsgirls](https://twitter.com/railsgirls)
 
-## Website & Blog 
+## Website & Blog
 
 Official website and blog for Rails Girls movement can be found at http://railsgirls.com
 
