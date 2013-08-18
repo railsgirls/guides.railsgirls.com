@@ -200,13 +200,13 @@ In the terminal run:
 bundle
 {% endhighlight %}
 
-At this point you need to **restart the Rails server process** in the terminal. This is needed for the app to load the added library.
-
 Now we can generate the code for handling uploads. In the terminal run:
 
 {% highlight sh %}
 rails generate uploader Picture
 {% endhighlight %}
+
+At this point you need to **restart the Rails server process** in the terminal. This is needed for the app to load the added library.
 
 Open `app/models/idea.rb` and under the line
 
