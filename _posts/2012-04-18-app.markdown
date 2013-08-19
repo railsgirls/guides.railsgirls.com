@@ -206,7 +206,11 @@ Now we can generate the code for handling uploads. In the terminal run:
 rails generate uploader Picture
 {% endhighlight %}
 
-At this point you need to **restart the Rails server process** in the terminal. This is needed for the app to load the added library.
+At this point you need to **restart the Rails server process** in the terminal.
+
+Hit `CTRL-C` in the terminal to quit the server. Once it has stopped, you can press the up arrow to get to the last command entered, then hit enter to start the server again.
+
+This is needed for the app to load the added library.
 
 Open `app/models/idea.rb` and under the line
 
