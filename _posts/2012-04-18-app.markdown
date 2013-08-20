@@ -171,7 +171,7 @@ table, td, th { vertical-align: middle !important; border: none !important; }
 th { border-bottom: 1px solid #DDD !important; }
 {% endhighlight %}
 
-Now refresh the browser to see what was changed. You can also change the HTML & CSS further.
+Now make sure you saved your files and refresh the browser to see what was changed. You can also change the HTML & CSS further.
 
 **Coach:** Talk a little about CSS and layouts.
 
