@@ -24,7 +24,7 @@ bundle install
 
 ## Step 2: Create comment scaffold
 
-Create comment scaffold, with the commentator name, the comment body (contents of the comment) and with the reference to the ideas table (idea_id). 
+Create comment scaffold, with the commentator name, the comment body (contents of the comment) and with the reference to the ideas table (idea_id).
 {% highlight sh %}
 rails g scaffold comment user_name:string body:text idea_id:integer
 {% endhighlight %}
@@ -53,8 +53,8 @@ rails s
 
 ## Step 4: Add relations to models
 
-You need to make sure that Rails knows the connection between objects (ideas and comments). 
-As one idea can have many comments we need to make sure the idea model knows that. 
+You need to make sure that Rails knows the connection between objects (ideas and comments).
+As one idea can have many comments we need to make sure the idea model knows that.
 Open app/models/idea.rb and after the row
 {% highlight ruby %}
 class Idea < ActiveRecord::Base
@@ -115,6 +115,6 @@ Open app/views/comments/_form.html and after
 
 add the row
 {% highlight erb %}
-<%= f.hidden_field :idea_id %>
+<%= f.hidden_field :id %>
 {% endhighlight %}
 That's it. Now view an idea you have inserted to your application and there you should see the form for inserting a comment
