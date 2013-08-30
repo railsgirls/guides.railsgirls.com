@@ -51,7 +51,7 @@ You will need to have a GitHub account and a repo we can pull an app from. Follo
 
 ### Sign up for a Free Trial Engine Yard Account
 
-Go to Engine Yard's [Website](https://www.engineyard.com/) and click on "Ruby" to sign up for your Free 500 Hour Trial. The sign up will send you a confirmation email, so go check your email, click on the link and sign in to your account. Click on the link under "Your available applications" that says "Engine Yard Cloud". This will take you to your dashboard. 
+Go to Engine Yard's [Website](https://www.engineyard.com/) and click on "GET STARTED FREE" to sign up for your Free 500 Hour Trial. The sign up will send you a confirmation email, so go check your email, click on the link and sign in to your account. Click on the link under "Your available applications" that says "Engine Yard Cloud". This will take you to your dashboard. 
 
 ### Create your Engine Yard Cloud account
 
