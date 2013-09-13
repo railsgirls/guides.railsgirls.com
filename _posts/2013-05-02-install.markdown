@@ -42,6 +42,12 @@ If the Rails version wasn't latest, you could update it using a following comman
 gem update rails --no-ri --no-rdoc
 {% endhighlight %}
 
+Make sure that all works well by running the application generator command.
+
+{% highlight sh %}
+rails new railsgirls
+{% endhighlight %}
+
 **Final step.** Install a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
 
 * [Download Sublime Text and install it](http://www.sublimetext.com/2)
@@ -58,6 +64,12 @@ If the Rails version wasn't latest, you could update it using a following comman
 
 {% highlight sh %}
 gem update rails --no-ri --no-rdoc
+{% endhighlight %}
+
+Make sure that all works well by running the application generator command.
+
+{% highlight sh %}
+rails new railsgirls
 {% endhighlight %}
 
 Installation of Git and SSH-keys is required if you want to [put your app online with Heroku](/heroku).
@@ -84,6 +96,12 @@ bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/r
 
 {% highlight sh %}
 bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-fedora.sh)
+{% endhighlight %}
+
+Make sure that all works well by running the application generator command.
+
+{% highlight sh %}
+rails new railsgirls
 {% endhighlight %}
 
 **Final step.** You also need a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
