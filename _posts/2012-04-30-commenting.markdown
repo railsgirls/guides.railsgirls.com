@@ -6,54 +6,20 @@ permalink: commenting
 # Commenting for Rails Girls App
 *Created by Janika Liiv, [@janikaliiv](https://twitter.com/janikaliiv)*
 
-We are going to add the possibility to comment ideas in your *railsgirls* application.
+We are going to add the possibility to comment on ideas in your *railsgirls* application.
 
 The instructions for installing rails and building the ideas app can be found [here](/app)
 
-## Step 1: Add foreigner gem
+## Step 1: Create comment scaffold
 
-Add to Gemfile
-{% highlight ruby %}
-gem 'foreigner'
-{% endhighlight %}
-
-In your terminal stop the server if it's running and type
-{% highlight sh %}
-bundle install
-{% endhighlight %}
-
-## Step 2: Create comment scaffold
-
-Create comment scaffold, with the commentator name, the comment body (contents of the comment) and with the reference to the ideas table (idea_id). 
+Create a comment scaffold, with the commentator name, the comment body (contents of the comment) and with the reference to the ideas table (idea_id).
 {% highlight sh %}
 rails g scaffold comment user_name:string body:text idea_id:integer
 {% endhighlight %}
 
-## Step 3: Add foreign key connections
-Add to migration the foreign key connection. Open db/migrate/ and the file, which name ends with 'create_comments.rb'. After
-{% highlight ruby %}
-t.timestamps
-end
-{% endhighlight %}
+## Step 2: Add relations to models
 
-add
-{% highlight ruby %}
-add_foreign_key :comments, :ideas
-{% endhighlight %}
-
-Now migrate the database changes by typing in your terminal
-{% highlight sh %}
-rake db:migrate
-{% endhighlight %}
-
-start your server with:
-{% highlight sh %}
-rails s
-{% endhighlight %}
-
-## Step 4: Add relations to models
-
-You need to make sure that Rails knows the connection between objects (ideas and comments). 
+You need to make sure that Rails knows the relation between objects (ideas and comments). 
 As one idea can have many comments we need to make sure the idea model knows that. 
 Open app/models/idea.rb and after the row
 {% highlight ruby %}
@@ -64,7 +30,7 @@ add
 has_many :comments
 {% endhighlight %}
 
-The comment also has to know that it belongs to an idea.So open app/models/comment.rb and after
+The comment also has to know that it belongs to an idea. So open app/models/comment.rb and after
 {% highlight ruby %}
 class Comment < ActiveRecord::Base
 {% endhighlight %}
@@ -111,7 +77,6 @@ Open app/views/comments/_form.html and after
     <%= f.text_area :body %>
   </div>
 {% endhighlight %}
-
 
 add the row
 {% highlight erb %}
