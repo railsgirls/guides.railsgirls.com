@@ -459,3 +459,4 @@ This is a small checklist for your event. Rails Girls can be thrown together in 
 * Send a thank you note to coaches
 * Send a thank you note for organizers
 * Add yourself to the [Rails Girls Map](http://rails-girls-map.herokuapp.com/)
+* Share the numbers of your event by filling out this short [Questionaire](https://railsgirls.wufoo.eu/forms/rails-girls-events-all-the-numbers/)
