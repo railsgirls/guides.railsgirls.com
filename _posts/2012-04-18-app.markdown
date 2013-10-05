@@ -343,6 +343,8 @@ Test the change by opening the root path (that is, http://localhost:3000/) in yo
 
 **Coach:** Talk about routes, and include details on the order of routes and their relation to static files.
 
+**Rails 3 users:** You will need to delete the index.html from the `/public/` folder for this to work.
+
 
 ## What next?
 
