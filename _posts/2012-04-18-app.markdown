@@ -345,6 +345,23 @@ Test the change by opening the root path (that is, http://localhost:3000/) in yo
 
 **Rails 3 users:** You will need to delete the index.html from the `/public/` folder for this to work.
 
+## Create static pages to your app
+
+Lets add a static pages to our app that will hold information about the author of this application — you!
+
+{% highlight sh %}
+rails generate controller pages info
+{% endhighlight %}
+
+This command will create you a new folder under `/views` called `/pages` and under that a file called `info.html.erb` which will be your info page.
+
+It also adds a new simple route to your routes.rb.
+
+{% highlight ruby %}
+get "pages/info"
+{% endhighlight %}
+
+Now you can open the file `/views/pages/info.html.erb` and add information about you in HTML and then take your browser to [http://localhost:3000/pages/info](http://localhost:3000/pages/info) to see your new info page.
 
 ## What next?
 
