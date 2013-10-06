@@ -160,6 +160,21 @@ We're going to use Rails' scaffold functionality to generate a starting point th
   <div class="nix">
 {% highlight sh %}
 rails generate scaffold idea name:string description:text picture:string
+{% endhighlight %}
+  </div>
+
+  <div class="win">
+{% highlight sh %}
+rails generate scaffold idea name:string description:text picture:string
+{% endhighlight %}
+  </div>
+</div>
+
+The scaffold creates new files in your project directory, but to get it to work properly we need to run a couple of other commands to update our database and restart the server.
+
+<div class="os-specific">
+  <div class="nix">
+{% highlight sh %}
 rake db:migrate
 rails server
 {% endhighlight %}
@@ -167,7 +182,6 @@ rails server
 
   <div class="win">
 {% highlight sh %}
-rails generate scaffold idea name:string description:text picture:string
 rake db:migrate
 ruby bin\rails server
 {% endhighlight %}
