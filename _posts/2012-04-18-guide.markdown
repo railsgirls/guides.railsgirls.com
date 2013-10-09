@@ -190,7 +190,7 @@ Dear xxx,
 
 We are organizing a Rails Girls programming workshop in (insert city) on (insert dates).
 
-Rails Girls is a two-day non-profit event for women of all ages to give them a great first experience in software craftmanship. We aim to give the tools to understand technology along with the community and inspiration to get started.
+Rails Girls is a two-day non-profit event for women of all ages to give them a great first experience in software craftsmanship. We aim to give the tools to understand technology along with the community and inspiration to get started.
 
 Rails Girls is not just about programming, it’s about building things. During the workshop, we’ll build an application and also have inspiring lightning talks and exercises.
 
