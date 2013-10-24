@@ -33,8 +33,13 @@ Remote-pairing is so great because people who can benefit from people who would 
 If
  you are coaching, you and the person you are coaching can look on the left side of their browsers screen and see your icon in a particular directory.  If the coachee clicks on that directory they will see your icon again on either a file or another directory.  You can follow those down to whatever file you want to edit and look in the code for their cursor.  Its **that** easy!
 
+## Alternatives to Madeye
+
+It is the guide author's belief that Madeye is the best thing going for pair programming.  However, this guide is  a gift to you, the reader as well as to those you may pair with, and so, not to shirk my duty to the Pair Programming World, I offer this one link that contains so many other options: [PairProgramWith.Me](http://pairprogramwith.me).  I hope you find the best way for you and your pair-programming buddies.
+
 ## My last thought  
-What a great and generous world this would be, if all of us extended some of our privledge to someone who has less.  It would be a world that reflects that commonest of sayings that you probably hear at a  meeting of your local Ruby/Rails meet-ups: "MINSWAN" -- Matz is nice, so we are nice!  Let's get started being nice to each other!
+The Ruby community is so great examples of people helping others.  One has only to look at the folks nominated every year as [Ruby Heros](http://rubyheroes.com/) to see  this in action. 
+What a great and generous world this would be, if all of us extended some of our privilege to someone who has less.  It would be a world that reflects that commonest of sayings that you probably hear at a  meeting of your local Ruby/Rails meet-ups: "MINSWAN" -- Matz is nice, so we are nice!  Let's get started being nice to each other!
 
 
 
