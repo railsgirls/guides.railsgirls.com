@@ -359,9 +359,9 @@ Test the change by opening the root path (that is, http://localhost:3000/) in yo
 
 **Rails 3 users:** You will need to delete the index.html from the `/public/` folder for this to work.
 
-## Create static pages to your app
+## Create static page in your app
 
-Lets add a static pages to our app that will hold information about the author of this application — you!
+Lets add a static page to our app that will hold information about the author of this application — you!
 
 {% highlight sh %}
 rails generate controller pages info
