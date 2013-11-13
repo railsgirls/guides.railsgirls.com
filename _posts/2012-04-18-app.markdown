@@ -42,7 +42,7 @@ First, let's open a terminal:
 
 * Mac OS X: Open Spotlight, type *Terminal* and click the *Terminal* application.
 * Windows: Click Start and look for *Command Prompt*, then click *Command Prompt with Ruby on Rails*.
-* Linux (Ubuntu): Search for *Terminal* on the dash and click *Terminal*.
+* Linux (Ubuntu/Fedora): Search for *Terminal* on the dash and click *Terminal*.
 
 Next, type these commands in the terminal:
 
@@ -359,9 +359,9 @@ Test the change by opening the root path (that is, http://localhost:3000/) in yo
 
 **Rails 3 users:** You will need to delete the index.html from the `/public/` folder for this to work.
 
-## Create static pages to your app
+## Create static page in your app
 
-Lets add a static pages to our app that will hold information about the author of this application — you!
+Lets add a static page to our app that will hold information about the author of this application — you!
 
 {% highlight sh %}
 rails generate controller pages info
@@ -389,7 +389,7 @@ Now you can open the file `/views/pages/info.html.erb` and add information about
 
 * Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](https://github.com/PragTob/rails-beginner-cheatsheet)
 * Guide 1: [Add commenting by Janika Liiv](/commenting)
-* Guide 2: [Put your app online with Heroku by Terence Lee](/heroku)
+* Guide 2: [Put your app online with Heroku by Terence Lee](/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift)
 * Guide 3: [Build a map of workshop participants by Rails Girls Berlin](http://railsgirlsberlin.de/apptutorial/)
 * Guide 4: [Create thumbnail images for the uploads by Miha Filej](/thumbnails)
 * Guide 5: [Add design using HTML &amp; CSS by Alex Liao](/design)
