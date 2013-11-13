@@ -53,7 +53,7 @@ Copy everything from the Rails application you have created elsewhere (probably 
 cp -rf ../railsgirls/* .
 {% endhighlight %}
 
-Prevent any pictures that we uploaded during app development being pushed to the cloud by running the command `echo "public/uploads" >> .gitignore`.
+To prevent any pictures that we uploaded during app development being pushed to the cloud, run the command `echo "public/uploads" >> .gitignore`.
 
 Add and commit the new and changed files in Git with the below commands.
 
@@ -66,7 +66,7 @@ __COACH__: Explain the Git commands used and how .gitignore works.
 
 #### Change database
 
-We need to change the Rails Girls app database from SQLite to PostgreSQL. Open your application's *Gemfile* and replace:
+The next step is to change the Rails Girls app database from SQLite to PostgreSQL. Open your application's *Gemfile* and replace:
 
 {% highlight ruby %}
 gem 'sqlite3'
@@ -95,17 +95,17 @@ __COACH__: Talk about relational databases and how Git keeps track of changes.
 
 ### Deploy app to OpenShift
 
-To deploy your changes, enter the command `git push` in your terminal. Refresh the app in your browser to see the result.
+To deploy all your changes to the cloud, enter the command `git push` in your terminal. Refresh the app in your browser to see the result.
 
 ### Add environment variables
 
-The app should be looking pretty good now, but there are some potential issues lurking because of the ephemeral nature of the deployment. When we push a new version of the application, anything stored within OpenShift's copy of the repo will be wiped to make way for the new files. This includes some log files and our user image uploads. To fix this, we can redirect these files to persistent directories on OpenShift instead; the filepaths of the locations we need are stored in environment variables.
+The app should be looking pretty good now, but there are some potential issues lurking because of the ephemeral nature of the deployment. When we push a new version of the application, anything stored within OpenShift's copy of the repo will be wiped to make way for the new files. This includes some log files and the images uploaded by users. To fix this, we can store these files in persistent directories on OpenShift instead; the filepaths of the locations we need are stored in environment variables.
 
 #### Redirect production log
 
-To redirect the production log, open *config/environments/production.rb*.
+To change the location of the production log, open *config/environments/production.rb*.
 
-Beneath the line:
+Beneath the comment line:
 
 {% highlight ruby %}
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
@@ -141,7 +141,7 @@ with
   end
 {% endhighlight %}
 
-Now our images will be stored in a persistent directory but still show up under a URL like what we were using previously (we've just changed *uploads* to *files*). To make this work, we also need to add a symbolic link on the filesystem from the repository location to the real storage location. To do this, open *.openshift/action_hooks/build* and add the following code:
+Now uploaded images will be stored in a persistent directory, but they will still be available through a similar URL to what we were using previously (we've just changed *uploads* to *files*). To make this work, we also need to add a symbolic link on the filesystem from the repository location to the real storage location. To do this, open *.openshift/action_hooks/build* and add the following code:
 
 {% highlight sh %}
 if [ ! -d $OPENSHIFT_DATA_DIR/uploads ]; then mkdir $OPENSHIFT_DATA_DIR/uploads; fi
@@ -158,28 +158,34 @@ git commit -m "Added OpenShift environment variables"
 git push
 {% endhighlight %}
 
-The images you uploaded before making this change will no longer work as the filepaths are now incorrect, but anything uploaded now will stick around between app rebuilds.
+The images you uploaded before making this change will no longer work, but anything uploaded now will stick around between app rebuilds.
 
-__COACH__: Explain the motivation for using environment variables.
+__COACH__: Explain the motivation for using environment variables and how symbolic links work.
 
 ### Push code to GitHub
 
-Now that your application is under source control with Git, you may also wish to share a copy with others on a Git repository website such as GitHub. To push your code to a GitHub repository, [create a repository](https://github.com/new) on GitHub and copy the SSH string (something like git@github.com:username/reponame.git). 
+Now that your application is under source control with Git, you may also wish to share a copy with others on a Git repository website such as GitHub. To push your code to a GitHub repository, [create a repository](https://github.com/new) on GitHub and copy the SSH string (something like git@github.com:*username*/*reponame*.git). 
 
 In your OpenShift app repository, open *.git/config*. Under the line that looks like:
 
 {% highlight sh %}
 [remote "origin"]
-        url = ssh://0123456789abcdef01234567@openshiftapp-yourdomain.rhcloud.com/~/git/openshiftapp.git/
+        url = ssh://*0123456789abcdef01234567*@openshiftapp-*yourdomain*.rhcloud.com/~/git/*openshiftapp*.git/
 {% endhighlight %}
 
 add another 'url =' line and paste in the string you copied
 
 {% highlight sh %}
-        url = git@github.com:username/reponame.git
+        url = git@github.com:*username*/*reponame*.git
 {% endhighlight %}
 
-Run the command `git push -u origin master` and your code will now be pushed both to OpenShift and GitHub (you can go back to the regular `git push` for future updates).
+Run the command `git push -u origin master` and your code will now be pushed both to OpenShift and GitHub (you can go back to the regular `git push` command for future updates).
 
 __COACH__: Talk about the benefits of open source code.
+
+
+### Conclusion
+
+Your Rails app is now running in the cloud on OpenShift. You can push whatever other changes you like and share the URL to show off your app to your friends.
+
 
