@@ -170,23 +170,16 @@ __COACH__: Explain symbolic links.
 
 Now that your application is under source control with Git, you may also wish to share a copy with others on a Git repository website such as GitHub. To push your code to a GitHub repository, [create a repository](https://github.com/new) on GitHub and copy the SSH string (something like git@github.com:*username*/*reponame*.git). 
 
-In your OpenShift app repository, open *.git/config*. Under the line that looks like:
+Navigate to your OpenShift app repository in the terminal and enter the following commands, replacing the SSH location with the string you copied:
 
 {% highlight sh %}
-[remote "origin"]
-        url = ssh://*0123456789abcdef01234567*@openshiftapp-*yourdomain*.rhcloud.com/~/git/*openshiftapp*.git/
+git remote add github git@github.com:*username*/*reponame*.git
+git push github master 
 {% endhighlight %}
 
-add another 'url =' line and paste in the string you copied
+The 'master' branch of the local copy of your repository will be pushed to GitHub. Go to the GitHub website to check it out.
 
-{% highlight sh %}
-        url = git@github.com:*username*/*reponame*.git
-{% endhighlight %}
-
-Run the command `git push -u origin master` and your code will now be pushed both to OpenShift and GitHub (you can go back to the regular `git push` command for future updates).
-
-__COACH__: Talk about the benefits of open source code.
-
+__COACH__: Talk about Git branches and the benefits of open source code.
 
 ### Conclusion
 
