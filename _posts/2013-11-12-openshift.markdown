@@ -89,7 +89,7 @@ We also have to add some environment variables so the application can find the d
 
 Open the *config/database.yml* file to check it has been updated. It should now contain environment variables, such as ENV['OPENSHIFT_POSTGRESQL_DB_USERNAME'].
 
-Commit your changes with the command `git commit -m "Changed app database"`.
+Commit your changes with the command `git commit -am "Changed app database"`.
 
 __COACH__: Talk about relational databases and how Git keeps track of changes.
 
@@ -101,7 +101,9 @@ To deploy all your changes to the cloud, enter the command `git push` in your te
 
 The app should be looking pretty good now, but there are some potential issues lurking because of the ephemeral nature of the deployment. When we push a new version of the application, anything stored within OpenShift's copy of the repo will be wiped to make way for the new files. This includes some log files and the images uploaded by users. To fix this, we can store these files in persistent directories on OpenShift instead; the filepaths of the locations we need are stored in environment variables.
 
-#### Redirect production log
+__COACH__: Explain the motivation for using environment variables.
+
+#### Redirect production logging
 
 To change the location of the production log, open *config/environments/production.rb*.
 
@@ -118,6 +120,8 @@ Add the line:
 {% endhighlight %}
 
 You can tail your application's logs with the command `rhc tail openshiftapp` (the output from the change you just made won't show up until the new file has been committed and pushed to OpenShift).
+
+__COACH__: Discuss the value of application logging.
 
 #### Persist uploaded images
 
@@ -158,9 +162,9 @@ git commit -m "Added OpenShift environment variables"
 git push
 {% endhighlight %}
 
-The images you uploaded before making this change will no longer work, but anything uploaded now will stick around between app rebuilds.
+The images you uploaded before making this change will no longer display, but anything uploaded now will stick around between app rebuilds.
 
-__COACH__: Explain the motivation for using environment variables and how symbolic links work.
+__COACH__: Explain symbolic links.
 
 ### Push code to GitHub
 
@@ -186,6 +190,6 @@ __COACH__: Talk about the benefits of open source code.
 
 ### Conclusion
 
-Your Rails app is now running in the cloud on OpenShift. You can push whatever other changes you like and share the URL to show off your app to your friends.
+Your Rails app is now running in the cloud on [OpenShift](https://www.openshift.com/developers). You can push whatever other changes you like and share the URL to show off your app to your friends.
 
 
