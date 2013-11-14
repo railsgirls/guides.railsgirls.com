@@ -8,9 +8,11 @@ permalink: ninefold
 
 *Created by Risa Batta, [@mookiy](https://twitter.com/mookiy)*
 
-OK. You’ve got the basics down and want to show off your awesome new Rails App to the world. Great! 
+OK. You’ve got the basics down and want to show off your awesome new Rails App to the world. Great!
 
-### Preparing your app
+<hr /> 
+
+## Preparing your app
 
 #### Update your database to Postgres
 
@@ -34,6 +36,7 @@ end
 
 Save then run `bundle install --without production` to setup your dependencies. By running bundle install, the Gemfile and Gemfile.lock files will match up. By running --without production, it skips the group :production.
 
+
 #### Version control
 
 You’ll have to add your app to your Git repository. Type the following into the terminal:
@@ -46,49 +49,43 @@ git commit -m "initial commit"
 
 Now you’ll have to push your work to GitHub. You can create an account for free here: [GitHub](http://www.github.com). Follow the directions found here to create a repo and push your app to it: [Create a repo](https://help.github.com/articles/create-a-repo).
 
-#### Deployment
+<hr />
 
-Ninefold will be pulling your code in from GitHub, so first thing’s first. Sign up for a free account at [Ninefold.com](http://www.ninefold.com).  
-![Alright stop!](/images/ninefold/ninefold1.png)
+## Deployment
 
-Click on the giant Deploy Now button.
+#### Deploying with Ninefold
 
-![Collaborate and listen](/images/ninefold/deploy_now.png)
+Ninefold will be pulling your code in from GitHub, so first thing’s first. 
 
-Choose GitHub as your repository you want to deploy from.
+**Step 1.** Sign up for a free account at [ninefold.com](http://www.ninefold.com).  
+
+**Step 2.** Click on the giant Deploy Now button.
+
+![Alright stop! Collaborate and listen](/images/ninefold/deploy_now.png)
+
+**Step 3.** Choose GitHub as your repository you want to deploy from.  Of course, if you've got your repository elsewhere like BitBucket, choose that!
 
 ![Ice is back with my brand new invention](/images/ninefold/select_repo1.png)
 
-Click on Sign in with GitHub.  (Of course, read the blurb about how Ninefold accesses your GitHub)
-
-![Something grabs ahold of me tightly](/images/ninefold/deploy_github.png)
+**Step 4.** Click on Sign in with GitHub.  Of course, read the blurb about how Ninefold accesses your GitHub.
 
 We will ask you to grant us some permissions. (We require write access in order to add WebHooks. And Ninefold triggers a redeploy every time you commit to the branch you’ve deployed against.  Of course, Ninefold will never make changes to your codebase or read your followers or your gists. These were just set by GitHub by default.)
 
-Time to select a repository and branch in the Connect Repository step.  Remember to choose the Rails app you want to deploy. 
+![Something grabs ahold of me tightly](/images/ninefold/deploy_github.png)
 
-* Click on the Repo you want (e.g. railsgirls). 
-* Choose the branch (e.g. master).  
-* Click Next.
+**Step 5.** Time to select a repository and branch in the Connect Repository step.  Remember to choose the Rails app you want to deploy. You will want to click on the Repo you want (e.g. railsgirls) and then the branch (e.g. master).  Click Next. 
 
 ![Flow like a harpoon daily and nightly](/images/ninefold/select_repo2.png) ![Will it ever stop? Yo! I don't know!](/images/ninefold/select_repo3.png)
 
-In the next window, choose your app’s infrastructure.
-
-* Choose the tiered (db and app servers are separate) or the combined one.  
-* Choose your primary region.  
-* Choose your database disk size.  
-* Click Next.
+**Step 6.** In the next window, choose your app’s infrastructure (the types of servers / location).  Pick a tiered (database and app servers are separate) or a combined one.  Pick your primary region based on your location.  Pick your database disk size (this is use case dependent, but you can always start small and increase it to fit your needs).  Click Next.
 
 ![Turn off the lights, and we'll glow](/images/ninefold/select_infrastructure2.png)
 
-This is the last step! Name your app (it will also become part of your deployed app name).
-* Ensure the software stack is correct and any add-ons are added on.
-* If you’ve got additional deployment commands, go ahead and click them and add them in.  If not, click Deploy App.
+**Step 7.** This is the last step! Name your app (it will also become part of your deployed app name).  Double check to make sure the software stack is correct, i.e. your Ruby version is correct, and any add-ons are added on.  If you've got additional deployment commands such as post-migration rake tasks, add them in. Click Deploy App.
 
 ![To the extreme we rock the mic like a vandal](/images/ninefold/select_extras.png)
 
-Boom, done! Grab a drink, sit back, and relax. Ninefold will deploy your app!
+**Step 8.** Boom, done! Grab a drink, sit back, and relax. Ninefold will deploy your app!
 
 ![Light up the stage and deploy our apps like a champ-dle](/images/ninefold/boom_done.png)
 
