@@ -63,13 +63,13 @@ Ninefold will be pulling your code in from GitHub, so first thing’s first.
 
 ![Alright stop! Collaborate and listen](/images/ninefold/deploy_now.png)
 
-**Step 3.** Choose GitHub as your repository you want to deploy from.  Of course, if you've got your repository elsewhere like BitBucket, choose that!
+**Step 3.** Choose GitHub as your repository you want to deploy from.  
 
 ![Ice is back with my brand new invention](/images/ninefold/select_repo1.png)
 
 **Step 4.** Click on Sign in with GitHub.  Of course, read the blurb about how Ninefold accesses your GitHub.
 
-We will ask you to grant us some permissions. (We require write access in order to add WebHooks. And Ninefold triggers a redeploy every time you commit to the branch you’ve deployed against.  Of course, Ninefold will never make changes to your codebase or read your followers or your gists. These were just set by GitHub by default.)
+We will ask you to grant us some permissions. (Ninefold will never make changes to your codebase or read your followers or your gists. These were just set by GitHub by default. We just require this so we can redeploy your app for you.)
 
 ![Something grabs ahold of me tightly](/images/ninefold/deploy_github.png)
 
@@ -77,11 +77,11 @@ We will ask you to grant us some permissions. (We require write access in order 
 
 ![Flow like a harpoon daily and nightly](/images/ninefold/select_repo2.png) ![Will it ever stop? Yo! I don't know!](/images/ninefold/select_repo3.png)
 
-**Step 6.** In the next window, choose your app’s infrastructure (the types of servers / location).  Pick a tiered (database and app servers are separate) or a combined one.  Pick your primary region based on your location.  Pick your database disk size (this is use case dependent, but you can always start small and increase it to fit your needs).  Click Next.
+**Step 6.** In the next window, choose a combined server.  Pick your primary region based on your location.  Click Next.
 
 ![Turn off the lights, and we'll glow](/images/ninefold/select_infrastructure2.png)
 
-**Step 7.** This is the last step! Name your app (it will also become part of your deployed app name).  Double check to make sure the software stack is correct, i.e. your Ruby version is correct, and any add-ons are added on.  If you've got additional deployment commands such as post-migration rake tasks, add them in. Click Deploy App.
+**Step 7.** This is the last step! Name your app (it will also become part of your deployed app name).  Click Deploy App.
 
 ![To the extreme we rock the mic like a vandal](/images/ninefold/select_extras.png)
 
@@ -89,6 +89,14 @@ We will ask you to grant us some permissions. (We require write access in order 
 
 ![Light up the stage and deploy our apps like a champ-dle](/images/ninefold/boom_done.png)
 
-#### Closing remarks
+**Step 9.** Once your app's been deployed, you'll see a screen with your App name. Once you click that, you'll see your app information.  Click on the name that has yourappname1234.ninefold-apps.com (railsgirlsd45c.ninefold-apps.com in my case).
 
-Every time you push your changes to your github, Ninefold will automatically redeploy your app for you!
+![Ice ice baby, dat datadat dat da da](/images/ninefold/view_app2.png)
+
+**Step 10.** Celebrate! Your app is now online for the world to see!
+
+<hr />
+
+## Closing remarks
+
+Every time you push your changes to your github, Ninefold will automatically redeploy your app for you (just takes a few minutes)!
