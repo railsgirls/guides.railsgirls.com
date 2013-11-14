@@ -80,14 +80,18 @@ In the next window, choose your app’s infrastructure.
 * Choose your database disk size.  
 * Click Next.
 
-![Turn off the lights, and I'll glow](/images/ninefold/select_infrastructure2.png)
+![Turn off the lights, and we'll glow](/images/ninefold/select_infrastructure2.png)
 
 This is the last step! Name your app (it will also become part of your deployed app name).
 * Ensure the software stack is correct and any add-ons are added on.
 * If you’ve got additional deployment commands, go ahead and click them and add them in.  If not, click Deploy App.
 
-![To the extreme I rock the mic like a vandal](/images/ninefold/select_extras.png)
+![To the extreme we rock the mic like a vandal](/images/ninefold/select_extras.png)
 
 Boom, done! Grab a drink, sit back, and relax. Ninefold will deploy your app!
 
-![Light up the stage and deploy your app like a champ-dle](/images/ninefold/boom_done.png)
+![Light up the stage and deploy our apps like a champ-dle](/images/ninefold/boom_done.png)
+
+#### Closing remarks
+
+Every time you push your changes to your github, Ninefold will automatically redeploy your app for you!
