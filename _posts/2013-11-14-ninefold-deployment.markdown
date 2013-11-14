@@ -89,9 +89,9 @@ We will ask you to grant us some permissions. (Ninefold will never make changes 
 
 ![Light up the stage and deploy our apps like a champ-dle](/images/ninefold/boom_done.png)
 
-**Step 9.** Once your app's been deployed, you'll see a screen with your App name. Once you click that, you'll see your app information.  Click on the name that has yourappname1234.ninefold-apps.com (railsgirlsd45c.ninefold-apps.com in my case).
+**Step 9.** Once your app's been deployed, you'll want to click on View Details. You'll see your app information.  Click on the name that has yourappname1234.ninefold-apps.com (railsgirls4fcd.ninefold-apps.com in my case).
 
-![Ice ice baby, dat datadat dat da da](/images/ninefold/view_app2.png)
+![Ice ice baby, dat datadat dat da da](/images/ninefold/view_app.png)
 
 **Step 10.** Celebrate! Your app is now online for the world to see!
 
