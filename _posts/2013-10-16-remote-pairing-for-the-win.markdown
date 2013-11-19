@@ -26,7 +26,8 @@ Remote-pairing is so great because people who can benefit from people who would 
 
 ## How do I install Madeye?
 1. Install [Node.js](http://howtonode.org/how-to-install-nodejs)
-2. At your terminal type: `sudo npm install -g madeye` Now Madeye is installed!
+2. If you are installing to Linux or Mac, at the  terminal type: `sudo npm install -g madeye`.  Otherwise, if you are installing to a Windows machine, type:  `npm install -g madeye`.
+3. Now Madeye is installed!
 3. Type `madeye` in the directory you want to share.  
 4. Madeye will report in your terminal the URL to share with your teammates and all of you can go there and edit code.  
 
