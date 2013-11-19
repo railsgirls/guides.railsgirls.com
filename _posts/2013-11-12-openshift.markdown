@@ -10,7 +10,7 @@ permalink: openshift
 
 ### Get OpenShift 
 
-OpenShift is a cloud computing Platform as a Service (PaaS) that makes it super easy to deploy apps online. It is open source and written in Ruby.
+OpenShift is a cloud computing Platform as a Service (PaaS) that makes it easy to deploy apps online. It is open source and written in Ruby.
 
 To get started [create an OpenShift Online account](https://openshift.redhat.com/app/account/new?web_user[promo_code]=railsgirls), which allows you to put three apps online for free. Once you are signed up, install the OpenShift RHC Client Tools by running these commands in a terminal and following the prompts:
 
@@ -19,7 +19,7 @@ gem install rhc
 rhc setup
 {% endhighlight %}
 
-The above instructions assume you installed Ruby using RVM. If you used another approach, there is more info about installing RHC for different set-ups in [this guide](https://www.openshift.com/developers/rhc-client-tools-install).
+The above instructions assume you installed Ruby using RVM or RailsInstaller. If you used another approach, there is more info about installing RHC for different set-ups in [this guide](https://www.openshift.com/developers/rhc-client-tools-install) (you may need to do `sudo gem install rhc`).
 
 __COACH__: Talk about the benefits of deploying to a PaaS such as OpenShift, as opposed to traditional servers. Discuss SSH and why we need to upload a public key to communicate securely.
 
@@ -27,46 +27,80 @@ __COACH__: Talk about the benefits of deploying to a PaaS such as OpenShift, as 
 
 #### Create OpenShift application
 
-Create an OpenShift Rails application with a PostgreSQL database and navigate to its source code by running the following commands in a terminal:
+We are going to create an OpenShift Ruby application with a PostgreSQL database, using a sample OpenShift Rails application as our starting point. Before we do that, in your terminal change to the parent directory of the one containing your *railsgirls* code, probably called *projects*. The *cd* command below will take you there if you are currently in your *railsgirls* directory; if not, substitute another *cd* command.
+
+{% highlight sh %}
+cd ..
+pwd
+{% endhighlight %}
+
+The output from the *pwd* or 'present working directory' command should show you are now in the *projects* directory (or whatever your parent directory was called). To create the OpenShift app in the cloud and make a local copy of its contents, run the following command in your terminal:
 
 {% highlight sh %}
 rhc app create openshiftapp ruby-1.9 postgresql-9.2 --from-code=https://github.com/openshift/rails-example.git
-cd openshiftapp
 {% endhighlight %}
 
-Open a browser window and go to the application URL given in the terminal output to view the example Rails application (the URL will have the form http://openshiftapp-*yourdomain*.rhcloud.com).
+The terminal output should include a URL; open a browser window and go to the application URL to view the sample Rails application (the URL will have the form http://openshiftapp-*yourdomain*.rhcloud.com).
 
-__COACH__: Explain version control systems and what 'git clone' means.
+__COACH__: Explain what Git is and why we use version control systems.
 
-#### Replace example app code
 
-Remove the example OpenShift application code and commit your changes by running the below commands from within your new OpenShift app directory (*openshiftapp*):
+#### Add version control
+
+We now have a sample app running in the cloud, but we actually need only a few pieces from its codebase. Before we copy across the bits we require, we should put our Rails Girls app under version control with Git.
+
+Change back to your *railsgirls* app directory and initialize it as a Git repository with the following commands:
 
 {% highlight sh %}
-git rm -rf ./*
-git commit -am "Removed OpenShift example app code"
+cd railsgirls
+git init
 {% endhighlight %}
 
-Copy everything from the Rails application you have created elsewhere (probably in *railsgirls*) into this directory by running a command similar to the following from your new OpenShift app directory (*openshiftapp*). You may need to change the path below to point to the location of your *railsgirls* directory.
+We don't want the pictures uploaded during app development to be part of our repository, so run the following command to instruct Git to ignore them:
 
 {% highlight sh %}
-cp -rf ../railsgirls/* .
+echo "public/uploads" >> .gitignore
 {% endhighlight %}
 
-To prevent any pictures that we uploaded during app development being pushed to the cloud, run the command `echo "public/uploads" >> .gitignore`.
+Add and commit all your app files to the Git repository with the following commands:
+
+{% highlight sh %}
+git add --all
+git commit -m "First commit of Ideas app"
+{% endhighlight %}
+
+__COACH__: Explain the Git commands used and .gitignore.
+
+#### Copy sample app code
+
+We need the *.openshift* directory and *config/database.yml* file from the sample application in order for our Rails app to run on OpenShift. Copy these from the *openshiftapp* directory to the *railsgirls* directory. You can use Windows Explorer or another graphical file system tool to do this if you like, or alternatively run the following commands from the *railsgirls* directory in your terminal:
+
+<div class="os-specific">
+   <div class="nix">
+{% highlight sh %}
+cp -r ../openshiftapp/.openshift .
+cp ../openshiftapp/config/database.yml config
+{% endhighlight %}
+  </div>
+
+  <div class="win">
+{% highlight sh %}
+xcopy /e /i ..\openshiftapp\.openshift .openshift
+copy ..\openshiftapp\config\database.yml config
+{% endhighlight %}
+  </div>
+</div>
 
 Add and commit the new and changed files in Git with the below commands.
 
 {% highlight sh %}
-git add -A
-git commit -m "Added Rails Girls app code"
+git add --all
+git commit -m "Added OpenShift config"
 {% endhighlight %}
-
-__COACH__: Explain the Git commands used and how .gitignore works.
 
 #### Change database
 
-The next step is to change the Rails Girls app database from SQLite to PostgreSQL. Open your application's *Gemfile* and replace:
+The next step is to change our Rails Girls app database from SQLite to PostgreSQL. Open your application's *Gemfile* and replace:
 
 {% highlight ruby %}
 gem 'sqlite3'
@@ -75,27 +109,45 @@ gem 'sqlite3'
 with
 
 {% highlight ruby %}
-group :development do
-  gem 'sqlite3'
-end
-group :production do
-  gem 'pg'
-end
+gem 'sqlite3', :group => [:development, :test]
+gem 'pg', :group => [:production, :staging]
 {% endhighlight %}
 
-Run `bundle install --without production` to set up your dependencies.
+Do a bundle to set up your dependencies:
 
-We also have to add some environment variables so the application can find the database when it is running on OpenShift. We can do that by restoring an older version of the *config/database.yml* file that we deleted with the rest of the example code earlier, as this version had the content we need. To achieve this, run the command `git checkout 68fcda0 config/database.yml`, where *68fcda0* is an identifier for a particular Git commit. You can see all the commits where this file has been changed with the command `git log config/database.yml` (type *q* to exit this view).
+{% highlight sh %}
+bundle install --without production
+{% endhighlight %}
 
-Open the *config/database.yml* file to check it has been updated. It should now contain environment variables, such as ENV['OPENSHIFT_POSTGRESQL_DB_USERNAME'].
+On some platforms, this may generate platform-specific versions of your Gems that cause issues when you push your app to the cloud. To prevent this, open your *Gemfile.lock* file and check the versions of the 'sqlite3' and 'pg' Gems. If they have a platform-specific suffix, such as *-x86-mingw32*, remove this (eg. change *pg (0.16.0-x86-mingw32)* to *pg (0.16.0)* and *sqlite3 (1.3.8-x86-mingw32)* to *sqlite3 (1.3.8)*). Save and close the file, and run the above bundle command again before continuing.
 
-Commit your changes with the command `git commit -am "Changed app database"`.
+Add and commit your changes in Git:
 
-__COACH__: Talk about relational databases and how Git keeps track of changes.
+{% highlight sh %}
+git add --all
+git commit -m "Changed database to PostgreSQL"
+{% endhighlight %}
+
+__COACH__: Talk about relational databases and the differences between SQLite and PostgreSQL.
 
 ### Deploy app to OpenShift
 
-To deploy all your changes to the cloud, enter the command `git push` in your terminal. Refresh the app in your browser to see the result.
+We are now ready to deploy the Rails Girls app to OpenShift. We need to tell our Git repository where to push the code. To get the location of your OpenShift code repository, run the following command, and copy the Git URL from the output. 
+
+{% highlight sh %}
+rhc app show openshiftapp
+{% endhighlight %}
+
+Now run the following commands, replacing the SSH string with your Git URL. We are using '-f' for force here because we are happy to wipe away the history of the current OpenShift repository, which contains the sample Rails app. When you are pushing future changes, you can just use 'git push'.
+
+{% highlight sh %}
+git remote add openshift ssh://0123456789abcdef01234567@openshiftapp-yourdomain.rhcloud.com/~/git/openshiftapp.git/
+git push -f --set-upstream openshift master
+{% endhighlight %}
+
+Refresh the app in your browser to see the result.
+
+__COACH__: Talk about Git remotes.
 
 ### Add environment variables
 
@@ -110,13 +162,13 @@ To change the location of the production log, open *config/environments/producti
 Beneath the comment line:
 
 {% highlight ruby %}
-  # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
+# config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
 {% endhighlight %}
 
 Add the line:
 
 {% highlight ruby %}
-  config.logger = ActiveSupport::Logger.new(File.join(ENV['OPENSHIFT_RUBY_LOG_DIR'], "production-#{Time.now.strftime('%Y%m%d')}.log"))
+config.logger = ActiveSupport::Logger.new(File.join(ENV['OPENSHIFT_RUBY_LOG_DIR'], "production.log"))
 {% endhighlight %}
 
 You can tail your application's logs with the command `rhc tail openshiftapp` (the output from the change you just made won't show up until the new file has been committed and pushed to OpenShift).
@@ -128,28 +180,28 @@ __COACH__: Discuss the value of application logging.
 The directory where uploaded pictures are currently stored is within the app repository, so it will be deleted when we rebuild. To switch the uploads directory to one that will persist, open *app/uploaders/picture_uploader.rb* and replace
 
 {% highlight ruby %}
-  def store_dir
-    "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
-  end
+def store_dir
+  "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
+end
 {% endhighlight %}
 
 with
 
 {% highlight ruby %}
-  def store_dir
-    ENV['OPENSHIFT_DATA_DIR'] + "/uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
-  end
+def store_dir
+  ENV['OPENSHIFT_DATA_DIR'] + "/uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
+end
 
-  def url
-    "/files/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}/" + File.basename(file.path) 
-  end
+def url
+  "/uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}/#{File.basename(file.path)}" 
+end
 {% endhighlight %}
 
-Now uploaded images will be stored in a persistent directory, but they will still be available through a similar URL to what we were using previously (we've just changed *uploads* to *files*). To make this work, we also need to add a symbolic link on the filesystem from the repository location to the real storage location. To do this, open *.openshift/action_hooks/build* and add the following code:
+Now uploaded images will be stored in a persistent directory, but they will still be available through the same URL as what we were using previously. To make this work, we also need to add a symbolic link on the filesystem from the repository location to the real storage location. To do this, open *.openshift/action_hooks/build* and add the following code:
 
 {% highlight sh %}
-if [ ! -d $OPENSHIFT_DATA_DIR/uploads ]; then mkdir $OPENSHIFT_DATA_DIR/uploads; fi
-ln -sf $OPENSHIFT_DATA_DIR/uploads $OPENSHIFT_REPO_DIR/public/files
+mkdir -p $OPENSHIFT_DATA_DIR/uploads
+ln -sf $OPENSHIFT_DATA_DIR/uploads $OPENSHIFT_REPO_DIR/public/uploads
 
 {% endhighlight %}
 
@@ -168,12 +220,12 @@ __COACH__: Explain symbolic links.
 
 ### Push code to GitHub
 
-Now that your application is under source control with Git, you may also wish to share a copy with others on a Git repository website such as GitHub. To push your code to a GitHub repository, [create a repository](https://github.com/new) on GitHub and copy the SSH string (something like git@github.com:*username*/*reponame*.git). 
+Now that your application is under source control with Git, you may also wish to share a copy with others on a Git repository website such as GitHub. To push your code to a GitHub repository, [create a repository](https://github.com/new) on GitHub and copy the HTTPS string (something like https://github.com/username/reponame.git). 
 
-Navigate to your OpenShift app repository in the terminal and enter the following commands, replacing the SSH location with the string you copied:
+Navigate to your OpenShift app repository in the terminal and enter the following commands, replacing the HTTPS location with the string you copied:
 
 {% highlight sh %}
-git remote add github git@github.com:*username*/*reponame*.git
+git remote add github https://github.com/username/reponame.git
 git push github master 
 {% endhighlight %}
 
