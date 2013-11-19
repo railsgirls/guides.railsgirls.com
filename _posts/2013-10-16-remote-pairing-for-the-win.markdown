@@ -26,7 +26,8 @@ Remote-pairing is so great because people who can benefit from people who would 
 
 ## How do I install Madeye?
 1. Install [Node.js](http://howtonode.org/how-to-install-nodejs)
-2. At your terminal type: `sudo npm install -g madeye` Now Madeye is installed!
+2. If you are installing to Linux or Mac, at the  terminal type: `sudo npm install -g madeye`.  Otherwise, if you are installing to a Windows machine, type:  `npm install -g madeye`.
+3. Now Madeye is installed!
 3. Type `madeye` in the directory you want to share.  
 4. Madeye will report in your terminal the URL to share with your teammates and all of you can go there and edit code.  
 
@@ -38,8 +39,8 @@ If
 It is the guide author's belief that Madeye is the best thing going for pair programming.  However, this guide is  a gift to you, the reader as well as to those you may pair with, and so, not to shirk my duty to the Pair Programming World, I offer this one link that contains so many other options: [PairProgramWith.Me](http://pairprogramwith.me).  I hope you find the best way for you and your pair-programming buddies.
 
 ## My last thought  
-The Ruby community is so great examples of people helping others.  One has only to look at the folks nominated every year as [Ruby Heros](http://rubyheroes.com/) to see  this in action. 
-What a great and generous world this would be, if all of us extended some of our privilege to someone who has less.  It would be a world that reflects that commonest of sayings that you probably hear at a  meeting of your local Ruby/Rails meet-ups: "MINSWAN" -- Matz is nice, so we are nice!  Let's get started being nice to each other!
+The Ruby community is such a great example of people helping others.  One has only to look at the folks nominated every year as [Ruby Heros](http://rubyheroes.com/) to see  this in action. 
+What a great and generous world this would be, if all of us extended some of our privilege to someone who has less.  It would be a world that reflects that most common of sayings that you probably hear at meetings of your local Ruby/Rails meet-up: "MINSWAN" -- Matz is nice, so we are nice!  Let's get started being nice to each other!
 
 
 
