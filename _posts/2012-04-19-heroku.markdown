@@ -16,6 +16,21 @@ __COACH__: Talk about the benefits of deploying to Heroku vs traditional servers
 
 ### Preparing your app
 
+#### Version Control Systems
+
+We need to add our code to version control. You can do this by running the following in the terminal:
+
+{% highlight sh %}
+git init
+echo "public/uploads" >> .gitignore
+echo "tmp" >> .gitignore
+echo "logs" >> .gitignore
+git add .
+git commit -m "initial commit"
+{% endhighlight %}
+
+__COACH__: This would be a good time to talk about version control systems and git, also explain the .gitignore and why we don't want these files included.
+
 #### Updating our database
 
 First, we need to get our database to work on Heroku, which uses a different database. Please change the following in the Gemfile:
@@ -37,19 +52,38 @@ end
 
 Run `bundle install --without production` to setup your dependencies.
 
-__COACH__: You can talk about RDBMS and the different ones out there.
+__COACH__: You can talk about RDBMS and the different ones out there, plus include some details on Heroku's dependency on Postgresql.
 
-#### Version Control Systems
+#### Adding rails\_12factor
 
-We need to add our code to version control. You can do this by running the following in the terminal:
+Next, we need to add rails\_12factor entry into our Gemfile to make our app available on Heroku. 
 
-{% highlight sh %}
-git init
-git add .
-git commit -m "initial commit"
+This gem modifies the way Rails works to suit Heroku, for example Logging is updated and the configuration for static assets (your images, stylesheets and javascript files) is tweaked to work properly within Heroku's systems.
+
+Please change the following in the Gemfile:
+
+{% highlight ruby %}
+group :production do
+  gem 'pg'
+end
 {% endhighlight %}
 
-__COACH__: This would be a good time to talk about version control systems and git.
+to
+
+{% highlight ruby %}
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+{% endhighlight %}
+
+After this run `bundle`, then commit the changes to Gemfile.lock to your repository:
+
+{% highlight sh %}
+git commit -a -m "Added rails\_12factor gem and updated Gemfile.lock"
+{% endhighlight %}
+
+__COACH__: You can talk about logging on Heroku, as well as its other quirks.
 
 
 ### Deploying your app
@@ -95,3 +129,30 @@ Next we need to migrate our database like we did locally during the workshop: `h
 
 When that command is finished being run, you can hit the app based on the url. For this example app, you can go to [http://evening-sky-7498.herokuapp.com/](http://evening-sky-7498.herokuapp.com). You can also type `heroku open` in the terminal to visit the page.
 
+
+#### Closing notes
+
+Heroku's platform is not without its quirks. Applications run on Heroku live within an ephermeral environment - this means that (except for information stored in your database) any files created by your application will disappear if it restarts (for example, when you push a new version).
+
+###### [Ephemeral filesystem](https://devcenter.heroku.com/articles/dynos#ephemeral-filesystem)
+> Each dyno gets its own ephemeral filesystem, with a fresh copy of the most recently deployed code. During the dyno’s lifetime its running processes can use the filesystem as a temporary scratchpad, but no files that are written are visible to processes in any other dyno and any files written will be discarded the moment the dyno is stopped or restarted.
+
+In the [App](/app) tutorial the ability to attach a file to the Idea record is added, which results in new files being written to your applications `public/uploads` folder. The ephemeral storage in Heroku can be seen with the following steps:
+
+1. Launch the app with `heroku open`
+2. Add a new Idea with an image
+3. Restart the application by running `heroku restart`
+4. Go back to your Idea and reload the page - the image should no longer be visible
+
+##### Working around Ephemeral Storage
+
+Obviously this doesn't seem to be useful if you were running a real life application, but there are ways to work around this which is commonly used by a lot of popular websites.
+
+The most common method is to use an external asset host such as Amazon S3 (Simple Storage Service) or Rackspace CloudFiles. These services provide (for a low cost - usually less then $0.10 per GB) storage 'in the cloud' (meaning the files could potentially be hosted anywhere) which your application can use as persistent storage.
+
+While this functionality is a bit out of scope for this tutorial there are some resources available which you can use to find your way:
+
+* [How to: Make Carrierwave work on Heroku](https://github.com/carrierwaveuploader/carrierwave/wiki/How-to%3A-Make-Carrierwave-work-on-Heroku)
+* [Amazon S3 - The Beginner' Guide](http://www.hongkiat.com/blog/amazon-s3-the-beginners-guide/)
+
+As always if you require any more information or assistance your coaches will be able to assist.

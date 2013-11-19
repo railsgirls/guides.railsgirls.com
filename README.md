@@ -12,9 +12,13 @@ View the guides at http://guides.railsgirls.com or clone this repo and install &
 
 ### Installing jekyll
 
-`cd railsgirls.github.com`
+```
+$ cd railsgirls.github.com
+```
 
-`bundle install`
+```
+$ bundle install
+```
 
 ### Pygments and Code Highlighting
 
@@ -29,12 +33,13 @@ If you aren't editing the code blocks, you can safely ignore this. If you want p
 
 ### Run jekyll
 
-`jekyll --server --auto`
+```
+$ bundle exec jekyll --server --auto
+```
 
 ### Having trouble?
 
 You might find some useful hints in this jekyll issue if it's not working as expected: [Issue 503](https://github.com/mojombo/jekyll/issues/503)
-
 
 ## Contributing a Guide
 
@@ -44,14 +49,13 @@ To contribute a guide, view the instructions at http://guides.railsgirls.com/con
 
 For updates and more follow [@railsgirls](https://twitter.com/railsgirls)
 
-## Website & Blog 
+## Website & Blog
 
 Official website and blog for Rails Girls movement can be found at http://railsgirls.com
 
 ## E-mail list
 
 Global mailing list for Rails Girls events at http://groups.google.com/group/rails-girls-team
-
 
 ## Credits
 

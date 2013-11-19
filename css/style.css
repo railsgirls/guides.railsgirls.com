@@ -4,7 +4,6 @@ html {
 
 body {
   margin: 0px;
-  padding: 0px;
   background: #fff;
   color: #333;
   text-rendering: optimizeLegibility;
@@ -22,6 +21,14 @@ h2 {
   font-weight: normal;
   font-size: 2em;
   margin: 1em 0 0.5em;
+}
+h2 em {
+  display: inline-block;
+  width: 50px;
+  font-style: normal;
+  font-weight: bold;
+  margin-left: -50px;
+  color: #CCC;
 }
 
 h3 {
@@ -59,6 +66,7 @@ hr {
   border-top-color: #ddd;
   margin: 2em 0;
 }
+
 
 header {
   height: 70px;
@@ -109,13 +117,14 @@ footer {
   text-align: center;
 }
 
-article.container {
-  padding: 20px 0;
-}
 
 footer a {
   color: #111;
   border-color: #111;
+}
+
+.indent {
+  margin-left: 70px;
 }
 
 .home {
@@ -192,4 +201,77 @@ footer a {
 .hero {
   padding: 20px 320px 20px 0;
   background: url(../images/guides-hero.png) right 80px no-repeat;
+}
+.highlight {
+  margin-left: 40px;
+}
+/* Icons for the guide */
+i.icon-text-editor, i.icon-prompt, i.icon-browser {
+  background-position: 0 0;
+  display: inline-block;
+  margin-left: -70px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+i.icon-text-editor {
+  background-image: url("/images/icon-text-editor.png");
+}
+
+i.icon-prompt{
+  background-image: url("/images/icon-prompt.png");
+}
+
+i.icon-browser {
+  background-image: url("/images/icon-browser.png");
+}
+i.icon-small-text-editor, i.icon-small-prompt, i.icon-small-browser {
+  background-position: 0 0;
+  display: inline-block;
+  margin-left: 0px;
+  float: left;
+  width: 50px;
+  height: 20px;
+  line-height: 20px;
+}
+i.icon-small-text-editor {
+  background-image: url("/images/icon-small-text-editor.png");
+}
+i.icon-small-prompt{
+  background-image: url("/images/icon-small-prompt.png");
+}
+i.icon-small-browser {
+  background-image: url("/images/icon-small-browser.png");
+}
+
+.os-specific {
+  margin-bottom: 4em;
+}
+
+.os-specific .picker {
+  display: block;
+  float: right;
+}
+
+.os-specific .active {
+  font-weight: bold;
+}
+
+/* Correct padding on smaller screens */
+@media (max-width: 767px) {
+ header, footer{
+   margin-left:-20px;
+   margin-right:-20px;
+   padding-left:20px;
+   padding-right:20px;
+ } 
+}
+
+/* Don't show the homepage image on mobile */
+@media (max-width: 480px) { 
+  .hero {
+    padding: 20px 0;
+    background:none;
+  }
 }

@@ -8,6 +8,8 @@ permalink: devise
 
 *Created by Piotr Steininger, [@polishprince](https://twitter.com/polishprince)*
 
+*Updated by Ernesto Jimenez, [@ernesto_jimenez](https://twitter.com/ernesto_jimenez)*
+
 **This guide assumes that you have already built a RailsGirls app by ** [**following the app development guide**](/app).
 
 
@@ -22,16 +24,15 @@ and run
 {% highlight sh %}
 bundle install
 {% endhighlight %}
-to install the gem
+to install the gem. **Also remember to restart the Rails server**.
 
 ## Step 1: Set up devise in your app
 
-Open a terminal or command prompt (on Windows), go to your app's directory and run. Next, type these commands in the terminal:
+Run the following command in the terminal.
 
 {% highlight sh %}
 rails g devise:install
 {% endhighlight %}
-
 
 
 ## Step 2: Configure Devise
@@ -43,18 +44,15 @@ Ensure you have defined default url options in your environments files. Open up 
 
 before the `end` keyword.
 
-Open up `config/routes.rb` and add this line:
-{% highlight ruby %}
-   root :to => "home#index"
-{% endhighlight %}
-
-before the `end` keyword.
-
 Open up `app/views/layouts/application.html.erb` and add:
 
 {% highlight erb %}
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+<% if notice %>
+  <p class="alert alert-notice"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-error"><%= alert %></p>
+<% end %>
 {% endhighlight %}
 right above
 {% highlight ruby %}
@@ -69,75 +67,54 @@ as third line from the bottom (before the first of two `end` keywords)
 
 ## Step 3: Setup the User model
 
-We'll use a bundled generator script to create a User model that is set up to user Devise.
+We'll use a bundled generator script to create the User model.
 {% highlight sh %}
    rails g devise user
+   rake db:migrate
 {% endhighlight %}
 
-Make any changes you need to the newly created `app/models/user.rb`, as well as the accompanying migration in db/migrate directory.
-Once configured to your needs run:
-{% highlight sh %}
-  rake db:migrate
-{% endhighlight %}
-to set up the database.
+**Coach:** Explain what user model has been generated. What are the
+fields?
 
-## Step 4: Create Some Users
+Then add this line to your `app/models/user.rb`:
 
-Depending on how you configured the User model, you may be able to simply register for the account through your web browser.
-In that case, make sure your server is running, and go to [http://localhost:3000/users/sign_up](http://localhost:3000/users/sign_up).
-
-Otherwise you can create a user via rails console:
-{% highlight sh %}
- rails c
-{% endhighlight %}
-and create a user as follows (replace the values with your own)
 {% highlight ruby %}
- User.create(:email=>"me@example.com",:password => "test123", :password_confirmation => "test123")
+attr_accessible :email, :password, :password_confirmation
 {% endhighlight %}
 
-You can now go to [http://localhost:3000/users/sign_in](http://localhost:3000/users/sign_in) to log in.
+## Step 4: Create your first user
+
+Now that you have set everyting up you can create your first user. Devise creates all the code and routes required to create accounts, log in, log out, etc.
+
+Make sure your rails server is running, open [http://localhost:3000/users/sign_up](http://localhost:3000/users/sign_up) and create your user account.
 
 ## Step 5: Add sign-up and login links
 
 All we need to do now is to add appropriate links or notice about the user being logged in in the top right corner of the navigation bar.
-In order to do that, change the following lines in `app/views/layouts/application.html.erb`:
-{% highlight ruby %}
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="brand" href="/">The Idea app</a>
-      <ul class="nav">
-        <li class="active"><a href="/ideas">Ideas</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+
+In order to do that, edit `app/views/layouts/application.html.erb` add:
+{% highlight erb %}
+<p class="navbar-text pull-right">
+<% if user_signed_in? %>
+  Logged in as <strong><%= current_user.email %></strong>.
+  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+<% end %>
 {% endhighlight %}
-to
-{% highlight ruby %}
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="brand" href="/">The Idea app</a>
-      <ul class="nav">
-        <li class="active"><a href="/ideas">Ideas</a></li>
-      </ul>
-      <p class="navbar-text pull-right">
-        <% if user_signed_in? %>
-          Logged in as <strong><%= current_user.email %></strong>.
-          <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-          <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-        <% else %>
-          <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-          <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-        <% end %>
-      </p>
-    </div>
-  </div>
-</div>
+right after
+{% highlight erb %}
+<ul class="nav">
+  <li class="active"><a href="/ideas">Ideas</a></li>
+</ul>
 {% endhighlight %}
 
-Test it out by logging in and out
+
+Open your browser and try logging in and out from.
+
+**Coach:** Talk about the `user_signed_in?` and `current_user` helpers. Why are they useful?
 
 ## What next?
 

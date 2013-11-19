@@ -11,14 +11,30 @@ permalink: app
 **Make sure you have Rails installed.** [**Follow the installation guide**](/install) to get set up.
 
 
-## Step 0: Get to know the tools
+## Get to know the tools
 
-* Text editor: [Sublime Text](http://www.sublimetext.com), [Komodo Edit](http://www.activestate.com/komodo-edit), Vim, Emacs, and Gedit are examples of text editors your can use for writing code and editing files.
-* Terminal (known as Command Prompt on Windows): where you start the Rails server and run commands.
-* Web browser (Firefox, Safari, Chrome): for viewing your application.
+<div class="indent" markdown="1">
 
+<h3><i class="icon-text-editor">&nbsp;</i></h3>
+### Text Editor
 
-## Step 1: Creating the application
+[Sublime Text](http://www.sublimetext.com), [Komodo Edit](http://www.activestate.com/komodo-edit), Vim, Emacs, and Gedit are examples of text editors your can use for writing code and editing files.
+
+<h3><i class="icon-prompt">&nbsp;</i></h3>
+### Terminal (known as Command Prompt on Windows)
+Where you start the rails server and run commands.
+
+<h3><i class="icon-browser">&nbsp;</i></h3>
+### Web browser
+(Firefox, Safari, Chrome) for viewing your application.
+
+</div>
+
+### Important
+
+It is important that you select the instructions specific to your operating system - the commands you need to run on a Windows computer are slightly different to Mac or Linux. If you're having trouble check the Operating System switcher at the bottom of the commands.
+
+## *1.*Creating the application
 
 We're going to create a new Rails app called *railsgirls*.
 
@@ -26,42 +42,158 @@ First, let's open a terminal:
 
 * Mac OS X: Open Spotlight, type *Terminal* and click the *Terminal* application.
 * Windows: Click Start and look for *Command Prompt*, then click *Command Prompt with Ruby on Rails*.
-* Linux (Ubuntu): Search for *Terminal* on the dash and click *Terminal*.
+* Linux (Ubuntu/Fedora): Search for *Terminal* on the dash and click *Terminal*.
 
 Next, type these commands in the terminal:
 
+<div class="os-specific">
+  <div class="nix">
 {% highlight sh %}
 mkdir projects
-cd projects
-rails new railsgirls
-cd railsgirls
-rails server
 {% endhighlight %}
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+    <div>
+You can verify that a directory named <code>projects</code> was created by running the list command: <code>ls</code>. You should see the <code>projects</code> directory in the output. Now you want to change the directory you are currently in to the <code>projects</code> folder by running:
+    </div>
+
+{% highlight sh %}
+cd projects
+{% endhighlight %}
+
+    <div>
+You can verify you are now in an empty directory or folder by again running the <code>ls</code> command. Now you want to create a new app called <code>railsgirls</code> by running:
+    </div>
+
+{% highlight sh %}
+rails new railsgirls
+{% endhighlight %}
+
+    <div>
+This will create a new app in the folder <code>railsgirls</code>, so we again want to change the directory to be inside of our rails app by running:
+    </div>
+
+{% highlight sh %}
+cd railsgirls
+{% endhighlight %}
+
+    <div>
+If you run <code>ls</code> inside of the directory you should see folders such as <code>app</code> and <code>config</code>. You can then start the rails server by running:
+    </div>
+
+{% highlight sh %}
+rails server
+{% endhighlight %}
+  </div>
+
+  <div class="win">
+{% highlight sh %}
+mkdir projects
+{% endhighlight %}
+
+    <div>
+You can verify that a directory named <code>projects</code> was created by running the list command: <code>dir</code>. You should see the <code>projects</code> directory in the output. Now you want to change the directory you are currently in to the <code>projects</code> folder by running:
+    </div>
+
+{% highlight sh %}
+cd projects
+{% endhighlight %}
+
+    <div>
+You can verify you are now in an empty directory or folder by again running the <code>dir</code> command. Now you want to create a new app called <code>railsgirls</code> by running:
+    </div>
+
+{% highlight sh %}
+rails new railsgirls
+{% endhighlight %}
+
+    <div>
+This will create a new app in the folder <code>railsgirls</code>, so we again want to change the directory to be inside of our rails app by running:
+    </div>
+
+{% highlight sh %}
+cd railsgirls
+{% endhighlight %}
+
+    <div>
+If you run <code>dir</code> inside of the directory you should see folders such as <code>app</code> and <code>config</code>. You can then start the rails server by running:
+    </div>
+
+{% highlight sh %}
+ruby bin\rails server
+{% endhighlight %}
+  </div>
+</div>
+
+**Windows users:** You may need to replace `bin\rails` with `script\rails`, depending on the version of Rails you have installed.
+
+Open [http://localhost:3000](http://localhost:3000) in your browser. You should see "Welcome aboard" page, which means that the generation of your new app worked correctly.
+
+Notice in this window the command prompt is not visible because you are now in the Rails server, the command prompt looks like this:
+
+<div class="os-specific">
+  <div class="nix">
+{% highlight sh %}
+$
+{% endhighlight %}
+  </div>
+  <div class="win">
+{% highlight sh %}
+>
+{% endhighlight %}
+  </div>
+</div>
+
+When the command prompt is not visible you cannot execute new commands. If you try running `cd` or another command it will not work. To return to the normal command prompt:
 
 Hit `CTRL-C` in the terminal to quit the server.
 
 **Coach:** Explain what each command does. What was generated? What does the server do?
 
 
-## Step 2: Create Idea scaffold
+## *2.*Create Idea scaffold
 
 We're going to use Rails' scaffold functionality to generate a starting point that allows us to list, add, remove, edit, and view things; in our case ideas.
 
 **Coach:** What is Rails scaffolding? (Explain the command, the model name and related database table, naming conventions, attributes and types, etc.) What are migrations and why do you need them?
 
+<div class="os-specific">
+  <div class="nix">
 {% highlight sh %}
 rails generate scaffold idea name:string description:text picture:string
+{% endhighlight %}
+  </div>
+
+  <div class="win">
+{% highlight sh %}
+rails generate scaffold idea name:string description:text picture:string
+{% endhighlight %}
+  </div>
+</div>
+
+The scaffold creates new files in your project directory, but to get it to work properly we need to run a couple of other commands to update our database and restart the server.
+
+<div class="os-specific">
+  <div class="nix">
+{% highlight sh %}
 rake db:migrate
 rails server
 {% endhighlight %}
+  </div>
 
-Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in your browser.
+  <div class="win">
+{% highlight sh %}
+rake db:migrate
+ruby bin\rails server
+{% endhighlight %}
+  </div>
+</div>
+
+Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in your browser. Click around and test what you got by running these few command-line commands.
 
 Hit `CTRL-C` to quit the server again when you've clicked around a little.
 
-## Step 3: Design
+
+## *3.*Design
 
 **Coach:** Talk about the relationship between HTML and Rails. What part of views is HTML and what is Embedded Ruby (ERB)? What is MVC and how does this relate to it? (Models and controllers are responsible for generating the HTML views.)
 
@@ -70,7 +202,7 @@ The app doesn't look very nice yet. Let's do something about that. We'll use the
 Open `app/views/layouts/application.html.erb` in your text editor and above the line
 
 {% highlight erb %}
-<%= stylesheet_link_tag "application" %>
+<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
 {% endhighlight %}
 
 add
@@ -113,7 +245,7 @@ and before `</body>` add
 {% highlight html %}
 <footer>
   <div class="container">
-    Rails Girls 2012
+    Rails Girls 2013
   </div>
 </footer>
 {% endhighlight %}
@@ -127,6 +259,8 @@ table, td, th { vertical-align: middle !important; border: none !important; }
 th { border-bottom: 1px solid #DDD !important; }
 {% endhighlight %}
 
+Now make sure you saved your files and refresh the browser to see what was changed. You can also change the HTML & CSS further.
+
 **Coach:** Talk a little about CSS and layouts.
 
 
@@ -134,7 +268,7 @@ th { border-bottom: 1px solid #DDD !important; }
 
 We need to install a piece of software to let us upload files in Rails.
 
-Open `Gemfile` in the project directory and under the line
+Open `Gemfile` in the project directory using your text editor and under the line
 
 {% highlight ruby %}
 gem 'sqlite3'
@@ -154,13 +288,17 @@ In the terminal run:
 bundle
 {% endhighlight %}
 
-At this point you need to **restart the Rails server process** in the terminal. This is needed for the app to load the added library.
-
 Now we can generate the code for handling uploads. In the terminal run:
 
 {% highlight sh %}
 rails generate uploader Picture
 {% endhighlight %}
+
+At this point you need to **restart the Rails server process** in the terminal.
+
+Hit `CTRL-C` in the terminal to quit the server. Once it has stopped, you can press the up arrow to get to the last command entered, then hit enter to start the server again.
+
+This is needed for the app to load the added library.
 
 Open `app/models/idea.rb` and under the line
 
@@ -186,19 +324,7 @@ to
 <%= f.file_field :picture %>
 {% endhighlight %}
 
-and
-
-{% highlight erb %}
-<%= form_for(@idea) do |f| %>
-{% endhighlight %}
-
-to
-
-{% highlight erb %}
-<%= form_for(@idea, :html => { :multipart => true }) do |f| %>
-{% endhighlight %}
-
-When you upload a picture it doesn't look nice because it only shows a path to the file, so let's fix that.
+In your browser, add new idea with a picture. When you upload a picture it doesn't look nice because it only shows a path to the file, so let's fix that.
 
 Open `app/views/ideas/show.html.erb` and change
 
@@ -212,33 +338,44 @@ to
 <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
 {% endhighlight %}
 
+Now refresh your browser to see what changed.
+
 **Coach:** Talk a little about HTML.
 
 
 ## Step 5: Finetune the routes
 
-If you try to open [http://localhost:3000](http://localhost:3000) it still shows the default page. Let's make it redirect to the ideas page.
+If you try to open [http://localhost:3000](http://localhost:3000) it still shows the "Welcome aboard" page. Let's make it redirect to the ideas page.
 
-On Mac OS X and Linux, in the terminal run:
-
-{% highlight sh %}
-rm public/index.html
-{% endhighlight %}
-
-On Windows, in the command prompt run:
-
-{% highlight bat %}
-del public\index.html
-{% endhighlight %}
-
-Then open `config/routes.rb` and after the first line add
+Open `config/routes.rb` and after the first line add
 
 {% highlight ruby %}
 root :to => redirect('/ideas')
 {% endhighlight %}
 
-**Coach:** Talk about routes.
+Test the change by opening the root path (that is, http://localhost:3000/) in your browser.
 
+**Coach:** Talk about routes, and include details on the order of routes and their relation to static files.
+
+**Rails 3 users:** You will need to delete the index.html from the `/public/` folder for this to work.
+
+## Create static page in your app
+
+Lets add a static page to our app that will hold information about the author of this application — you!
+
+{% highlight sh %}
+rails generate controller pages info
+{% endhighlight %}
+
+This command will create you a new folder under `/views` called `/pages` and under that a file called `info.html.erb` which will be your info page.
+
+It also adds a new simple route to your routes.rb.
+
+{% highlight ruby %}
+get "pages/info"
+{% endhighlight %}
+
+Now you can open the file `/views/pages/info.html.erb` and add information about you in HTML and then take your browser to [http://localhost:3000/pages/info](http://localhost:3000/pages/info) to see your new info page.
 
 ## What next?
 
@@ -250,7 +387,12 @@ root :to => redirect('/ideas')
 
 ## Additional Guides
 
+* Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](https://github.com/PragTob/rails-beginner-cheatsheet)
 * Guide 1: [Add commenting by Janika Liiv](/commenting)
-* Guide 2: [Put your app online with Heroku by Terence Lee](/heroku)
+* Guide 2: [Put your app online with Heroku by Terence Lee](/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift) / [Put your app online with Ninefold](/ninefold)
 * Guide 3: [Build a map of workshop participants by Rails Girls Berlin](http://railsgirlsberlin.de/apptutorial/)
 * Guide 4: [Create thumbnail images for the uploads by Miha Filej](/thumbnails)
+* Guide 5: [Add design using HTML &amp; CSS by Alex Liao](/design)
+* Guide 6: [Add Authentication (user accounts) with Devise by Piotr Steininger](/devise/)
+* Guide 7: [Go through additional explanations for the App by Lucy Bain](https://github.com/lbain/railsgirls)
+

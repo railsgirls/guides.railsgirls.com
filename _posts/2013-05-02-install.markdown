@@ -13,7 +13,7 @@ Follow the instructions for your operating system. If you hit into any problems,
 
 * [Setup for OS X](#setup_for_os_x)
 * [Setup for Windows](#setup_for_windows)
-* [Setup for Ubuntu](#setup_for_ubuntu)
+* [Setup for Linux](#setup_for_linux)
 
 <hr />
 
@@ -31,10 +31,22 @@ Click the Apple menu and choose *About this Mac*.
 
 **Step 3.** Download the RailsInstaller for your version of OS X:
 
-* [RailsInstaller for 10.7 and 10.8](https://github.com/downloads/railsinstaller/railsinstaller-nix/RailsInstaller-1.0.3-osx-10.7.app.tgz) <span class="muted">(325MB)</span>
-* [RailsInstaller for 10.6](https://github.com/downloads/railsinstaller/railsinstaller-nix/RailsInstaller-1.0.3-osx-10.6.app.tgz) <span class="muted">(224MB)</span>
+* [RailsInstaller for 10.7 and 10.8](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz) <span class="muted">(325MB)</span>
+* [RailsInstaller for 10.6](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.6.app.tgz) <span class="muted">(224MB)</span>
 
 Double click the downloaded file and it will unpack it into the current directory. Double click the the newly unpacked 'RailsInstaller-1.0.3-osx-10.7.app' or 'RailsInstaller-1.0.3-osx-10.6.app' and follow the instructions. It will open a README file with 'Rails Installer OS X' at the top. Please **ignore** the instructions in this file.
+
+If the Rails version wasn't latest, you could update it using a following command on terminal.
+
+{% highlight sh %}
+gem update rails --no-ri --no-rdoc
+{% endhighlight %}
+
+Make sure that all works well by running the application generator command.
+
+{% highlight sh %}
+rails new railsgirls
+{% endhighlight %}
 
 **Final step.** Install a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
 
@@ -46,7 +58,19 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 ## Setup for Windows
 
-Download [RailsInstaller](http://rubyforge.org/frs/download.php/75894/railsinstaller-2.1.0.exe) and run it. Click through the installer using the default options.
+Download [RailsInstaller](https://github.com/railsinstaller/railsinstaller-windows/releases/download/2.2.2/railsinstaller-2.2.2.exe) and run it. Click through the installer using the default options.
+
+If the Rails version wasn't latest, you could update it using a following command on "Command Prompt with Ruby on Rails".
+
+{% highlight sh %}
+gem update rails --no-ri --no-rdoc
+{% endhighlight %}
+
+Make sure that all works well by running the application generator command.
+
+{% highlight sh %}
+rails new railsgirls
+{% endhighlight %}
 
 Installation of Git and SSH-keys is required if you want to [put your app online with Heroku](/heroku).
 
@@ -58,12 +82,26 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 <hr />
 
-## Setup for Ubuntu
+## Setup for Linux
 
-To install Ruby on Rails development environment you just need to copy and paste this line in the Terminal and press Enter. Enjoy the text flying on the screen, it will take quite some time. Grabbing a refreshing drink before starting is encouraged.
+To install the Ruby on Rails development environment you just need to copy the line below for your Linux distribution (Ubuntu or Fedora), paste it in the Terminal and press Enter. Enjoy the text flying on the screen; it will take quite some time. Grabbing a refreshing drink before starting is encouraged.
+
+**For Ubuntu:**
 
 {% highlight sh %}
 bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
+{% endhighlight %}
+
+**For Fedora:**
+
+{% highlight sh %}
+bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-fedora.sh)
+{% endhighlight %}
+
+Make sure that all works well by running the application generator command.
+
+{% highlight sh %}
+rails new railsgirls
 {% endhighlight %}
 
 **Final step.** You also need a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
@@ -73,3 +111,4 @@ bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/r
 Now you should have a working Ruby on Rails programming setup. Congrats!
 
 <hr />
+

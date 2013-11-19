@@ -30,7 +30,7 @@ rails g scaffold comment user_name:string body:text idea_id:integer
 {% endhighlight %}
 
 ## Step 3: Add foreign key connections
-Add to migration the foreing key  connection. Open db/migrate/ and the file, which name ends with 'create_comments.rb'. After
+Add to migration the foreign key connection. Open db/migrate/ and the file, which name ends with 'create_comments.rb'. After
 {% highlight ruby %}
 t.timestamps
 end
@@ -88,7 +88,7 @@ add
   <div>
     <strong><%= comment.user_name %></strong>
     <br />
-    <p><%= comment.body %><p>
+    <p><%= comment.body %></p>
   </div>
 <% end %>
 <%= render 'comments/form' %>
@@ -104,7 +104,7 @@ this
 @comment = @idea.comments.build
 {% endhighlight %}
 
-Open comments/_form.html and after
+Open app/views/comments/_form.html and after
 {% highlight erb %}
   <div class="field">
     <%= f.label :body %><br />

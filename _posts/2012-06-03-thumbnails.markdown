@@ -13,13 +13,14 @@ __Coach__: Explain what specifying the image width in HTML at the end of Step
 
 ## Installing ImageMagick
 
-* OS X: run `brew install imagemagick`
+* OS X: run `brew install imagemagick`. If you don't have the brew command, you can [install Homebrew here][in-homebrew].
 * Windows: download and run the [ImageMagick installer][im-win] (use the first
   *download* link).
 * Linux: On Ubuntu and Debian, run `sudo apt-get install imagemagick`. Use the
   appropriate package manager instead of `apt-get` for other distributions.
 
   [im-win]: http://www.imagemagick.org/script/binary-releases.php?ImageMagick=vkv0r0at8sjl5qo91788rtuvs3#windows
+  [in-homebrew]: http://mxcl.github.io/homebrew/
 
 __Coach__: What is ImageMagick and how is it different from libraries/gems we
 used before?
@@ -27,7 +28,7 @@ used before?
 Open `Gemfile` in the project and add
 
 {% highlight ruby %}
-gem 'mini_magick'
+gem 'mini_magick', '3.5.0'
 {% endhighlight %}
 
 under the line
