@@ -110,7 +110,7 @@ with
 
 {% highlight ruby %}
 gem 'sqlite3', :group => [:development, :test]
-gem 'pg', :group => [:production, :staging]
+gem 'pg', :group => [:production]
 {% endhighlight %}
 
 Do a bundle to set up your dependencies:
@@ -171,6 +171,8 @@ Add the line:
 config.logger = ActiveSupport::Logger.new(File.join(ENV['OPENSHIFT_RUBY_LOG_DIR'], "production.log"))
 {% endhighlight %}
 
+***Rails 3 users: Change 'ActiveSupport::Logger' to 'ActiveSupport::BufferedLogger'.***
+
 You can tail your application's logs with the command `rhc tail openshiftapp` (the output from the change you just made won't show up until the new file has been committed and pushed to OpenShift).
 
 __COACH__: Discuss the value of application logging.
@@ -189,11 +191,13 @@ with
 
 {% highlight ruby %}
 def store_dir
-  ENV['OPENSHIFT_DATA_DIR'] + "/uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
+  prefix = ENV['OPENSHIFT_DATA_DIR'] ? "#{ENV['OPENSHIFT_DATA_DIR']}/" : ""
+  "#{prefix}uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
 end
 
 def url
-  "/uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}/#{File.basename(file.path)}" 
+  return "/uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}/#{File.basename(file.path)}" if ENV['OPENSHIFT_DATA_DIR'] && file
+  super
 end
 {% endhighlight %}
 
@@ -210,6 +214,7 @@ This action hook code will run every time the OpenShift app is built, so the lin
 Commit your changes and push them to the cloud:
 
 {% highlight sh %}
+git add --all
 git commit -m "Added OpenShift environment variables"
 git push
 {% endhighlight %}
