@@ -26,20 +26,6 @@ with
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap.min.css">
 {% endhighlight %}
 
-and replace
-
-{% highlight html %}
-<div class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-{% endhighlight %}
-
-with
-
-{% highlight html %}
-<div class="topbar">
-  <div class="fill">
-{% endhighlight %}
-
 Open `app/assets/stylesheets/application.css`, replace the line
 
 {% highlight html %}
