@@ -8,7 +8,11 @@ permalink: videos
 
 This is a selection of Rails Girls videos from around the world. Have one to share? Add it here.
 
-### Rails Girls Taipei-01 2013
+### Rails Girls Taipei-02 2013.11
+
+<div><iframe width="500" height="375" src="http://www.youtube.com/embed/BJpaj96RgHw" frameborder="0"> </iframe><p><a href="http://railsgirls.tw">Rails Girls Taiwan</a> on <a href="https://www.youtube.com/channel/UCGaidly9iC-V3P6hScH95Cw">Youtube</a>.</p></div>
+
+### Rails Girls Taipei-01 2013.09
 
 <div><iframe width="500" height="375" src="http://www.youtube.com/embed/9jZTbqokELM?rel=0" frameborder="0"> </iframe><p><a href="http://railsgirls.tw">Rails Girls Taiwan</a> on <a href="https://www.youtube.com/channel/UCGaidly9iC-V3P6hScH95Cw">Youtube</a>.</p></div>
 
