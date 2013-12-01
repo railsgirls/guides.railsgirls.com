@@ -76,12 +76,6 @@ We'll use a bundled generator script to create the User model.
 **Coach:** Explain what user model has been generated. What are the
 fields?
 
-Then add this line to your `app/models/user.rb`:
-
-{% highlight ruby %}
-attr_accessible :email, :password, :password_confirmation
-{% endhighlight %}
-
 ## Step 4: Create your first user
 
 Now that you have set everyting up you can create your first user. Devise creates all the code and routes required to create accounts, log in, log out, etc.
