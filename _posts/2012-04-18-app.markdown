@@ -367,7 +367,7 @@ Lets add a static page to our app that will hold information about the author of
 rails generate controller pages info
 {% endhighlight %}
 
-This command will create you a new folder under `/views` called `/pages` and under that a file called `info.html.erb` which will be your info page.
+This command will create you a new folder under `app/views` called `/pages` and under that a file called `info.html.erb` which will be your info page.
 
 It also adds a new simple route to your routes.rb.
 
@@ -375,7 +375,7 @@ It also adds a new simple route to your routes.rb.
 get "pages/info"
 {% endhighlight %}
 
-Now you can open the file `/views/pages/info.html.erb` and add information about you in HTML and then take your browser to [http://localhost:3000/pages/info](http://localhost:3000/pages/info) to see your new info page.
+Now you can open the file `app/views/pages/info.html.erb` and add information about you in HTML and then take your browser to [http://localhost:3000/pages/info](http://localhost:3000/pages/info) to see your new info page.
 
 ## What next?
 
