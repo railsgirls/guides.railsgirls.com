@@ -111,7 +111,7 @@ Finally, be forced user to redirect to login page if user was not logged in. Ope
   before_action :authenticate_user!
 {% endhighlight %}
 
-before the `end` keyword.
+after `protect_from_forgery with: :exception`.
 
 Open your browser and try logging in and out from.
 
