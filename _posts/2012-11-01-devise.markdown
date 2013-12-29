@@ -108,7 +108,7 @@ right after
 Finally, be forced user to redirect to login page if user was not logged in. Open up `app/controllers/application_controller.rb` and add:
 
 {% highlight ruby %}
-  before_filter :authenticate_user!
+  before_action :authenticate_user!
 {% endhighlight %}
 
 before the `end` keyword.
