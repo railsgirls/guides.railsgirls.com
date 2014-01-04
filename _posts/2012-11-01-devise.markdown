@@ -105,6 +105,13 @@ right after
 </ul>
 {% endhighlight %}
 
+Finally, be forced user to redirect to login page if user was not logged in. Open up `app/controllers/application_controller.rb` and add:
+
+{% highlight ruby %}
+  before_action :authenticate_user!
+{% endhighlight %}
+
+after `protect_from_forgery with: :exception`.
 
 Open your browser and try logging in and out from.
 
