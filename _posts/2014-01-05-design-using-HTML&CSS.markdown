@@ -1,3 +1,9 @@
+---
+layout: default
+title: 使用HTML和CSS美化你的应用
+permalink: design-html-css
+---
+
 1.美化header样式
 
 + 打开文件 app/assets/stylesheets/application.css 并在最底端添加：
