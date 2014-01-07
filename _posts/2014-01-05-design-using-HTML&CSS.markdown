@@ -1,25 +1,27 @@
 ---
 layout: default
-title: 使用HTML和CSS美化你的应用
+title: Add design to your App with HTML and CSS
 permalink: design-html-css
 ---
 
-1.美化header样式
+1.Design your header
 
-+ 打开文件 app/assets/stylesheets/application.css 并在最底端添加：
++ put the following code to the bottom of `app/assets/stylesheets/application.css`:
 
-    ```
+    ``` 
     .navbar { 
         min-height: 38px; 
       background-color: #f55e55; 
     }
     ```
 
-    刷新页面，查看样式有什么变化。 此处解释什么是css选择器，学员可以尝试修改header的颜色，字体等。 简单的颜色选取参考网站： [http://color.uisdc.com/](http://color.uisdc.com/)
+  Now refresh the page and check the changes. You can try change the
+    color or font of the header. You can check the color reference
+    from [http://color.uisdc.com/](http://color.uisdc.com/).
     
-    **教练：**解释display的属性，什么是内联元素，什么是块级元素
+    **Coach: ** talk about the property `display`, inline and block element.
     
-+ 在文件底部加入下面的代码：
++ Then put these lines at the bottom：
 
     ```
     .navbar a.brand { font-size: 18px; }
@@ -30,33 +32,35 @@ permalink: design-html-css
     }
     ```
     
-    **教练：**解释css中链接的四种状态
+    **Coach: ** explain the 4 states of a link
     
 
-2.美化表格样式
+2.Design your table
 
- + 对于表格，我们可以使用[Bootstrap](http://www.bootcss.com/)的表格样式。打开app/views/ideas/index.html.erb文件，找到：
+ + We simply use the twitter [Bootstrap](http://www.bootcss.com/) to
+   polish our table。find this line from
+   app/views/ideas/index.html.erb and replace:
  
    ```
    <table>
    ```
    
-   将其改为
+   with
    
    ```
    <table class="table">
    ```
    
- + 修改图片大小，找到这段代码
+ + Modify size of the picture using the following lines
  
      ```
      <%= image_tag(idea.picture_url, :width => 600) if idea.picture.present? %>
      ```
      
-     尝试修改width
+     try to change the width and see what's gonna happen
      
      
- + 打开文件app/assets/stylesheets/ideas.css.scss，加入以下代码：
+ + add the following lines to the bottom of file app/assets/stylesheets/ideas.css.scss:
  
   ```
   .container a:hover { 
@@ -67,12 +71,14 @@ permalink: design-html-css
   ```
   
   
- + 尝试为页面添加背景图片，使用background-image属性，背景纹理资源参考此网站[http://subtlepatterns.com/](http://subtlepatterns.com/)
+ + try add some background style with property `background-image`,
+   reference to
+   [http://subtlepatterns.com/](http://subtlepatterns.com/) for some patterns.
 
 
-3.footer样式调整
+3.add style to footer
 
-  + 打开文件 app/assets/stylesheets/application.css 并在最底端添加：
++ add the lines to bottom of  app/assets/stylesheets/application.css:
   
     ```
     footer { 
@@ -81,13 +87,15 @@ permalink: design-html-css
     }
     ```
     
-    尝试在footer中加入更多内容，并调整位置
+    try put more things into `footer`, then adjust it's position.
 
-4.按钮样式
+4.add style to button
 
-  + 打开[http://localhost:3000/ideas/new](http://localhost:3000/ideas/new)页面，可以看到页面上的Create Idea按钮。
+  + open
+    [http://localhost:3000/ideas/new](http://localhost:3000/ideas/new)
+    and find the `Create Idea` button.
    
-   在文件app/assets/stylesheets/ideas.css.scss最后加入
+   add these lines to app/assets/stylesheets/ideas.css.scss
    
    ```
    .container input[type="submit"] { 
@@ -99,4 +107,5 @@ permalink: design-html-css
     }
    ```
    
-   **教练：**解释css中border的使用，学员可以尝试修改按钮样式，加圆角，阴影，颜色等。
+   **Coach** explain how to use `border` in css, try modify the style
+     of button like round the corner, add shadow or color etc.
