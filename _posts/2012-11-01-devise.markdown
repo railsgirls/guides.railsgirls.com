@@ -59,11 +59,6 @@ right above
    <%= yield %>
 {% endhighlight %}
 
-Finally, if you plan to [deploy to heroku](/heroku) you should open up `config/application.rb` and add this line:
-{% highlight ruby %}
-  config.assets.initialize_on_precompile = false
-{% endhighlight %}
-as third line from the bottom (before the first of two `end` keywords)
 
 ## Step 3: Setup the User model
 
