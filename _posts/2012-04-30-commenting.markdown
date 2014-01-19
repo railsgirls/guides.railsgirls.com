@@ -117,4 +117,13 @@ add the row
 {% highlight erb %}
 <%= f.hidden_field :idea_id %>
 {% endhighlight %}
+
+next, remove 
+{% highlight erb %}
+<div class="field">
+  <%= f.label :idea_id %><br>
+  <%= f.number_field :idea_id %>
+</div>
+{% endhighlight %}
+
 That's it. Now view an idea you have inserted to your application and there you should see the form for inserting a comment
