@@ -334,6 +334,20 @@ to
 <%= f.file_field :picture %>
 {% endhighlight %}
 
+Sometimes, you might get an *TypeError: can't cast ActionDispatch::Http::UploadedFile to string*.
+
+If this happens, in file `app/views/ideas/_form.html.erb` change the line
+
+{% highlight erb %}
+<%= form_for(@idea) do |f| %>
+{% endhighlight %}
+
+to
+
+{% highlight erb %}
+<%= form_for @idea, :html => {:multipart => true} do |f| %>
+{% endhighlight %}
+
 In your browser, add new idea with a picture. When you upload a picture it doesn't look nice because it only shows a path to the file, so let's fix that.
 
 Open `app/views/ideas/show.html.erb` and change
