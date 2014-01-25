@@ -56,7 +56,7 @@ __COACH__: You can talk about RDBMS and the different ones out there, plus inclu
 
 #### Adding rails\_12factor
 
-Next, we need to add rails\_12factor entry into our Gemfile to make our app available on Heroku. 
+Next, we need to add rails\_12factor entry into our Gemfile to make our app available on Heroku.
 
 This gem modifies the way Rails works to suit Heroku, for example Logging is updated and the configuration for static assets (your images, stylesheets and javascript files) is tweaked to work properly within Heroku's systems.
 

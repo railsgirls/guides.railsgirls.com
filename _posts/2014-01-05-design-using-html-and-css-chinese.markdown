@@ -9,9 +9,9 @@ permalink: design-html-css-chinese
 + 打开文件 `app/assets/stylesheets/application.css` 并在最底端添加：
 
     ```
-    .navbar {  
-      min-height: 38px;  
-      background-color: #f55e55;  
+    .navbar {
+      min-height: 38px;
+      background-color: #f55e55;
     }
     ```
 
@@ -22,11 +22,11 @@ permalink: design-html-css-chinese
 + 在文件底部加入下面的代码：
 
     ```
-    .navbar a.brand { font-size: 18px; }  
-    .navbar a.brand:hover {  
-     color: #fff;  
-     background-color: transparent;  
-     text-decoration: none;  
+    .navbar a.brand { font-size: 18px; }
+    .navbar a.brand:hover {
+     color: #fff;
+     background-color: transparent;
+     text-decoration: none;
     }
     ```
 
@@ -59,10 +59,10 @@ permalink: design-html-css-chinese
  + 打开文件`app/assets/stylesheets/ideas.css.scss`，加入以下代码：
 
   ```
-  .container a:hover { 
-    color: #f55e55; 
-    text-decoration: none; 
-    background-color: rgba(255, 255, 255, 0); 
+  .container a:hover {
+    color: #f55e55;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0);
   }
   ```
 
@@ -75,9 +75,9 @@ permalink: design-html-css-chinese
   + 打开文件 `app/assets/stylesheets/application.css` 并在最底端添加：
 
     ```
-    footer { 
-      background-color: #ebebeb; 
-      padding: 30px 0; 
+    footer {
+      background-color: #ebebeb;
+      padding: 30px 0;
     }
     ```
 
@@ -90,12 +90,12 @@ permalink: design-html-css-chinese
    在文件`app/assets/stylesheets/ideas.css.scss`最后加入
 
    ```
-   .container input[type="submit"] { 
-      height: 30px; 
-      font-size: 13px; 
-      background-color: #f55e55; 
-      border: none; 
-      color: #fff; 
+   .container input[type="submit"] {
+      height: 30px;
+      font-size: 13px;
+      background-color: #f55e55;
+      border: none;
+      color: #fff;
     }
    ```
 

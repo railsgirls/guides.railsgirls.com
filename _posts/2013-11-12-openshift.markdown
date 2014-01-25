@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Rails Girls on OpenShift
-permalink: openshift 
+permalink: openshift
 ---
 
-# Put Your App Online With OpenShift 
+# Put Your App Online With OpenShift
 
 *Created by Katie Miller, [@codemiller](https://twitter.com/codemiller)*
 
-### Get OpenShift 
+### Get OpenShift
 
 OpenShift is a cloud computing Platform as a Service (PaaS) that makes it easy to deploy apps online. It is open source and written in Ruby.
 
@@ -132,7 +132,7 @@ __COACH__: Talk about relational databases and the differences between SQLite an
 
 ### Deploy app to OpenShift
 
-We are now ready to deploy the Rails Girls app to OpenShift. We need to tell our Git repository where to push the code. To get the location of your OpenShift code repository, run the following command, and copy the Git URL from the output. 
+We are now ready to deploy the Rails Girls app to OpenShift. We need to tell our Git repository where to push the code. To get the location of your OpenShift code repository, run the following command, and copy the Git URL from the output.
 
 {% highlight sh %}
 rhc app show openshiftapp
@@ -225,13 +225,13 @@ __COACH__: Explain symbolic links.
 
 ### Push code to GitHub
 
-Now that your application is under source control with Git, you may also wish to share a copy with others on a Git repository website such as GitHub. To push your code to a GitHub repository, [create a repository](https://github.com/new) on GitHub and copy the HTTPS string (something like https://github.com/username/reponame.git). 
+Now that your application is under source control with Git, you may also wish to share a copy with others on a Git repository website such as GitHub. To push your code to a GitHub repository, [create a repository](https://github.com/new) on GitHub and copy the HTTPS string (something like https://github.com/username/reponame.git).
 
 Navigate to your OpenShift app repository in the terminal and enter the following commands, replacing the HTTPS location with the string you copied:
 
 {% highlight sh %}
 git remote add github https://github.com/username/reponame.git
-git push github master 
+git push github master
 {% endhighlight %}
 
 The 'master' branch of the local copy of your repository will be pushed to GitHub. Go to the GitHub website to check it out.

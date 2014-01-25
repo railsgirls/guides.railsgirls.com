@@ -32,12 +32,12 @@ Rails Girls workshops give the first experience in software craftsmanship throug
 
 
 ### Time to complete app
-There's loads of time to complete the app, and so it is more important to slowly explain what is happening in each step, as it is a lot of copy pasting and if attendees rush through the guide, they will be done soon but not understand at all what happened. 
-<br> There's a LOT (4-5) h reserved for the app, tweaking it and putting it online for others to see so there is no hurry :) 
+There's loads of time to complete the app, and so it is more important to slowly explain what is happening in each step, as it is a lot of copy pasting and if attendees rush through the guide, they will be done soon but not understand at all what happened.
+<br> There's a LOT (4-5) h reserved for the app, tweaking it and putting it online for others to see so there is no hurry :)
 
 
 ### Swag
-Believe it or not, for most, it is really important. It makes the environment different. You decide how, but little crafts (making buttons), stickers, cupcakes, balloons, posters, or anything you can come up with makes all the difference. 
+Believe it or not, for most, it is really important. It makes the environment different. You decide how, but little crafts (making buttons), stickers, cupcakes, balloons, posters, or anything you can come up with makes all the difference.
 
 
 ### Inclusivity
@@ -47,20 +47,20 @@ Rails Girls is a an inclusive, safe and welcoming experience to everyone. The wo
 
 ### What if I've never done anything in Rails?
 
-Why haven't you yet? Just kidding. That's not a problem at all, we've had a lot of coaches just like you and they were *super awesome*. As long as you're comfortable with any other similar framework, you'll be fine. Take a look at the [basic app guide][app] and you'll probably be able to figure out what's going on pretty soon. Pay attention to the "**Coach**" bits that tell you what you should be able to explain. 
+Why haven't you yet? Just kidding. That's not a problem at all, we've had a lot of coaches just like you and they were *super awesome*. As long as you're comfortable with any other similar framework, you'll be fine. Take a look at the [basic app guide][app] and you'll probably be able to figure out what's going on pretty soon. Pay attention to the "**Coach**" bits that tell you what you should be able to explain.
 
-Usually there'll be at least somebody at the event who works with Rails on a regular basis, so don't be afraid to ask for help when bundle installs go all weird on you. Also, if you come across something unusual, just Google it with your group! It's ok to admit that you don't know everything and show the girls how you use Google to solve your everyday programming dilemmas. 
+Usually there'll be at least somebody at the event who works with Rails on a regular basis, so don't be afraid to ask for help when bundle installs go all weird on you. Also, if you come across something unusual, just Google it with your group! It's ok to admit that you don't know everything and show the girls how you use Google to solve your everyday programming dilemmas.
 
 ### What exactly will I be doing as a coach?
 
-The structure of workshop varies a bit from city to city, so your local organizer group will be able you to guide you through the details. Usually there's a pre-event meeting or dinner with coaches where you can ask all you questions. 
+The structure of workshop varies a bit from city to city, so your local organizer group will be able you to guide you through the details. Usually there's a pre-event meeting or dinner with coaches where you can ask all you questions.
 
 ### Answering questions
-Often coaches who are just one step ahead of attendees are the best at explaining :) Use real life metaphors and explain very high-level. Explaining too deep will cause a flood of information that is not necessary at the beginning. 
+Often coaches who are just one step ahead of attendees are the best at explaining :) Use real life metaphors and explain very high-level. Explaining too deep will cause a flood of information that is not necessary at the beginning.
 
 #### Installation Party
 
-Generally speaking, the Rails Girls workshops begin with an Installation party during which you'll be asked to help girls [install the required software][install] (Rails and a text editor). You don't have to be an expert on all operating systems, but you can help on those you are familiar with. 
+Generally speaking, the Rails Girls workshops begin with an Installation party during which you'll be asked to help girls [install the required software][install] (Rails and a text editor). You don't have to be an expert on all operating systems, but you can help on those you are familiar with.
 
 #### Helping girls build their first app
 
@@ -68,7 +68,7 @@ During the following day, you will be the star of the show and help your group o
 
 Going through the tutorial on your own at home will usually be all the preparation you need. The girls will have the app guide open on their screens, so just guide them through the process, providing explanations of what's going on at each step. The explanations shouldn't be highly technical; try to simplify the answer by providing easy to remember metaphors. And remember that there is no such thing as a stupid question at a Rails Girls workshop! Let girls know they can ask you about anything along the way; you can spend more time on parts they find more interesting.
 
-Also, don't be discouraged if you'll sometimes need to try a few different explanations. Most girls will be beginners, so they won't have many existing points of reference (bonus point: nor will they have any bad habits some programmers tend to pick up along the way). If you get to the end of the basic app tutorial, you can explore additional guides at the end or work on whatever your group is most interested in; design is usually a popular choice, but some girls will want to try building another app. You can also prepare your own challenges for girls or explore helpful resources (documentation etc). 
+Also, don't be discouraged if you'll sometimes need to try a few different explanations. Most girls will be beginners, so they won't have many existing points of reference (bonus point: nor will they have any bad habits some programmers tend to pick up along the way). If you get to the end of the basic app tutorial, you can explore additional guides at the end or work on whatever your group is most interested in; design is usually a popular choice, but some girls will want to try building another app. You can also prepare your own challenges for girls or explore helpful resources (documentation etc).
 
 If you need help with anything, don't be afraid to use Google or ask another coach to help you out. And don't be afraid to ask for a break if you need it, it's going to be a long day, but we can promise you'll get home with a big smile and a warm heart :)
 
@@ -76,9 +76,9 @@ If you need help with anything, don't be afraid to use Google or ask another coa
 
 ### Are you in?
 
-Good, we're happy to have you on board! Get in touch with organizers of your local event (if you aren't already) and they'll answer all the other questions you might have. You can usually find their contact info on the event's page. 
+Good, we're happy to have you on board! Get in touch with organizers of your local event (if you aren't already) and they'll answer all the other questions you might have. You can usually find their contact info on the event's page.
 
-If you're traveling abroad at the time of a Rails Girls workshop, do feel free to contact the organizers of the city you'll be visiting; we're always happy to welcome additional coaches! Not to mention that a Rails Girls workshop is a great excuse to visit a new city ;) 
+If you're traveling abroad at the time of a Rails Girls workshop, do feel free to contact the organizers of the city you'll be visiting; we're always happy to welcome additional coaches! Not to mention that a Rails Girls workshop is a great excuse to visit a new city ;)
 
 Some other great first-hand tips from Rails Girls coaches:
 

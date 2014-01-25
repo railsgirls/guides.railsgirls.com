@@ -10,7 +10,7 @@ permalink: ninefold
 
 OK. You’ve got the basics down and want to show off your awesome new Rails App to the world. Great!
 
-<hr /> 
+<hr />
 
 ## Preparing your app
 
@@ -22,7 +22,7 @@ In order to deploy to Ninefold, you’ll need to change your Gemfile to get your
 gem 'sqlite3'
 {% endhighlight %}
 
-to 
+to
 
 {% highlight ruby %}
 group :development do
@@ -55,15 +55,15 @@ Now you’ll have to push your work to GitHub. You can create an account for fre
 
 #### Deploying with Ninefold
 
-Ninefold will be pulling your code in from GitHub, so first thing’s first. 
+Ninefold will be pulling your code in from GitHub, so first thing’s first.
 
-**Step 1.** Sign up for a free account at [ninefold.com](http://www.ninefold.com).  
+**Step 1.** Sign up for a free account at [ninefold.com](http://www.ninefold.com).
 
 **Step 2.** Click on the giant Deploy Now button.
 
 ![Alright stop! Collaborate and listen](/images/ninefold/deploy_now.png)
 
-**Step 3.** Choose GitHub as your repository you want to deploy from.  
+**Step 3.** Choose GitHub as your repository you want to deploy from.
 
 ![Ice is back with my brand new invention](/images/ninefold/select_repo1.png)
 
@@ -73,7 +73,7 @@ We will ask you to grant us some permissions. (Ninefold will never make changes 
 
 ![Something grabs ahold of me tightly](/images/ninefold/deploy_github.png)
 
-**Step 5.** Time to select a repository and branch in the Connect Repository step.  Remember to choose the Rails app you want to deploy. You will want to click on the Repo you want (e.g. railsgirls) and then the branch (e.g. master).  Click Next. 
+**Step 5.** Time to select a repository and branch in the Connect Repository step.  Remember to choose the Rails app you want to deploy. You will want to click on the Repo you want (e.g. railsgirls) and then the branch (e.g. master).  Click Next.
 
 ![Flow like a harpoon daily and nightly](/images/ninefold/select_repo2.png) ![Will it ever stop? Yo! I don't know!](/images/ninefold/select_repo3.png)
 
