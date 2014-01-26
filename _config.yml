@@ -1,11 +1,9 @@
-destination: ./_site
-lsi:         false
-port:        4000
-pygments:    true
-markdown:    maruku
-permalink:   pretty
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_dir:    images/latex
-  png_url:    /images/latex
+permalink: pretty
+markdown: redcarpet
+exclude:
+  - ".rvmrc"
+  - ".rbenv-version"
+  - ".ruby-version"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
