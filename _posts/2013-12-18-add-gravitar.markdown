@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Adding Graviatar to you app
-permalink: gravatar.html
+permalink: gravatar
 ---
 
 # Adding Gravatar to your App
