@@ -1,0 +1,87 @@
+---
+layout: default
+title: Rails Girls on anynines
+permalink: anynines
+---
+
+# Put your app online with anynines
+
+*Created by Floor Drees, [@floordrees](https://twitter.com/floordrees)*
+
+### Get anynines
+
+[Create an anynines account](http://anynines.com/).
+
+Next, install the a9s gem which downloads the needed gems for interacting with the anynines system:
+{% highlight sh %}
+gem install a9s  
+{% endhighlight %}
+
+__COACH__: Talk about the benefits of deploying to anynines vs utilizing US data centers.
+
+
+### [Login to anynines](https://support.anynines.com/entries/24083808-How-to-deploy-your-apps-on-anynines)
+
+Now select the anynines api endpoint as target and authenticate using your user credentials:
+
+{% highlight sh %}
+cf target https://api.de.a9s.eu  
+cf login --email [your@email] --password [yourpassword]  
+{% endhighlight %}
+
+
+Or if that doesn't work for you, use:
+
+{% highlight sh %}
+cf login -t  
+{% endhighlight %}
+
+... which will prompt you for your email address and password.
+
+Wonder what that `cf` stands for? It's short for [Cloud Foundry](http://www.cloudfoundry.com/), a system anynines is using behind the scenes.
+
+You can deploy your code by using the `cf push` command now. Doublecheck that you're in the directory of the application you want to deploy (in your terminal).  
+A wizard will guide you through the configuration process, where you'll choose your memory limit (128M 2; 256M 3; 512M; 1G), Subdomain ('railsgirls' in our case) and Domain (we use de.a9sapp.eu). When you see an output like below, you're on the right track:
+
+{% highlight sh %}
+Creating route railsgirls.de.a9sapp.eu... OK   
+Binding railsgirls.de.a9sapp.eu to railsgirls... OK  
+{% endhighlight %}
+
+The available services for your anynines hosted app are as follows:  
+1: elasticsearch 0.20  
+2: mongodb 2.0  
+3: mysql 5.5  
+4: postgresql 9.1  
+5: rabbitmq 2.8  
+6: redis 2.2  
+7: swift 1.0  
+
+... or you can opt for `user-provided`.
+
+We're using Postgres (numero 4).
+
+{% highlight sh %}
+Creating service postgresql-d2197... OK  
+Binding postgresql-d2197 to railsgirls... OK  
+{% endhighlight %}
+
+Ending with... `Push successful! App 'railsgirls' available at railsgirls.de.a9sapp.eu`. Score!
+
+### Version Control
+
+We need to add our new code to version control. You can do this by running the following in the terminal:
+
+{% highlight sh %}
+git status
+git add .
+git commit -m "add anynines deployment"
+{% endhighlight %}
+
+__COACH__: This would be a great time to talk about version control systems and git, if you haven't already.
+
+### Help
+
+You can check all available cf sub-commands by typing `cf help`, check your current space and organization using the target command `cf target`. And you can use the `cf apps` command to get a status list of your applications running within the current space.
+
+Happy deploying!

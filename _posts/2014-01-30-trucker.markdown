@@ -56,10 +56,10 @@ __COACH__: This would be a great time to talk about version control systems and 
 
 #### Push the application to Trucker.io
 
-First perform a `push` command and enter the name you want your application to sport (we used 'trucker-test').
+First perform a `push` command and enter the name you want your application to sport (we used 'railsgirls').
 {% highlight sh %}
 $ truck push
-Name> trucker-test
+Name> railsgirls
 
 {% highlight sh %}
 Instances> 1
@@ -70,18 +70,18 @@ Instances> 1
 4: 1G
 Memory Limit> 256M
 
-Creating trucker-test... OK
+Creating railsgirls... OK
 
-1: trucker-test
+1: railsgirls
 2: none
-Subdomain> trucker-test
+Subdomain> railsgirls
 
 1: trucker.io
 2: none
 Domain> trucker.io
 
-Creating route trucker-test.trucker.io... OK
-Binding trucker-test.trucker.io to trucker-test... OK
+Creating route railsgirls.trucker.io... OK
+Binding railsgirls.trucker.io to railsgirls... OK
 {% endhighlight %}
 
 Next, add MySQL as your database:
@@ -124,174 +124,15 @@ Uploading trucker-rails
 your app will be deployed. The output in your terminal should look something like this:
 
 {% highlight sh %}
-Uploading trucker-test... OK
-Preparing to start trucker-test... OK
+Uploading railsgirls... OK
+Preparing to start railsgirls... OK
 -----> Downloaded app package (40K)
 -----> Using Ruby version: ruby-1.9.3
 -----> Installing dependencies using Bundler version 1.3.2
 (...)
-Checking status of app 'trucker-test'...
+Checking status of app 'railsgirls'...
   1 of 1 instances running (1 running)
-Push successful! App 'trucker-test' available at http://trucker-test.trucker.io
+Push successful! App 'railsgirls' available at http://railsgirls.trucker.io
 {% endhighlight %}
 
-Your application is now available at http://trucker-test.trucker.io!
-
-### Database stuff
-
-#### Rails Console
-
-To use the Rails console with your database service, you will have to create a so-called tunnel to the service, and choose ‘none’ when it asks you which client to start. The console command lets you interact with your Rails application from the command line. This is useful when testing out quick ideas with code and changing data server-side without touching the website. You can also use the alias "c" to invoke the console: `rails c`.
-{% highlight sh %}
-$ truck tunnel rds-mysql-aa0d6
-
-Opening tunnel on port 10000... OK
-
-Service connection info:
-  username : a1bc23d4567890
-  password : abcde1fg
-  name     : ab_c123d45de67f890
-  jdbcUrl  : jdbc:mysql://a1bc23d4567890:abcde1fg@ccdb.cb1a3tdjjo2d.eu-west-1.rds.amazonaws.com:3306/ab_c123d45de67f890
-  uri      : mysql://a1bc23d4567890:abcde1fg@ccdb.cb1a3tdjjo2d.eu-west-1.rds.amazonaws.com:3306/ab_c123d45de67f890?reconnect=true
-
-Press Ctrl-C to exit...
-{% endhighlight %}
-
-__COACH__: Talk about Rails console.
-
-Next, create another database section in your config/database.yml file with the service connection info in the truck tunnel output:
-
-{% highlight sh %}
-proxied-trucker: 
-  adapter: mysql2 
-  database : ab_c123d45de67f890
-  username : a1bc23d4567890
-  password : abcde1fg
-  port: 10000 
-  host: 127.0.0.1
-{% endhighlight %}
-
-Finally, in a another terminal, run rails console, passing in the database environment you created:
-
-{% highlight sh %}
-$ RAILS_ENV=proxied-trucker bundle exec rails console
-{% endhighlight %}
-
-That’s it, you now have a Rails console proxied to your Trucker database service!
-
-__COACH__: Talk about proxies.
-
-#### rake
-
-Remember how we '`rake`-d' migrations in the main app? Using our newly proxied environment you can now also perform rake commands when it comes to deployment.
-
-{% highlight sh %}
-$ RAILS_ENV=proxied-trucker bundle exec rake [command]
-{% endhighlight %}
-
-#### Database migrations
-
-One option is to setup the proxied RAILS_ENV as mentioned above and perform a rake command.
-{% highlight sh %}
-$ RAILS_ENV=proxied-trucker bundle exec rake db:migrate
-{% endhighlight %}
-
-It is possible to include your migration execution whenever your application starts. To do so you have to create a new initializer file in the config/initializers directory. Let’s call it `run_migrations.rb`.
-
-The file should contain the following line of code for executing the database migrations:
-{% highlight ruby %}
-ActiveRecord::Migrator.migrate(Rails.root.join("db/migrate"), nil)
-{% endhighlight %}
-
-And that’s it. Next time migrations will be run automatically when you execute `truck push`.
-
-### Continuous Deployment with Github and Travis CI
-
-__COACH__: This would be a great time to talk about Continuous Deployment.
-
-Go to your local app directory and create a `.travis.yml` file. For the moment, paste the following content. We’ll add some more information later, using the Travis gem.
-{% highlight ruby %}
-language: ruby
-script: 'RAILS_ENV=test bundle exec rake test'
-{% endhighlight %}
-
-Now your app contains the Travis configuration but how should Travis know when to pull your code from Github? This is where Github hooks come into play!
-
-Time to finish our setup by telling Travis how to deploy to Trucker.io. Let's get that Travis gem first. In your terminal, type: 
-
-{% highlight sh %}
-gem install travis
-{% endhighlight %}
-
-Now use the `travis` command to setup the Trucker.io deployment:
-{% highlight sh %}
-travis setup cloudfoundry
-{% endhighlight %}
-
-In case you don’t know the Trucker.io target URL use
-{% highlight sh %}
-truck target
-{% endhighlight %}
-
-to gather all information required for Travis setup. This includes target url, username, the organization and space you've defined in an earlier step.
-
-The Trucker.io target URL is:
-{% highlight sh %}
-https://api.trucker.io
-{% endhighlight %}
-
-After the `travis` command has finished, your `.travis.yml` should look something like this:
-{% highlight ruby %}
-language: ruby
-script: 'RAILS_ENV=test bundle exec rake test'
-deploy:
-  provider: cloudfoundry
-  target: https://api.trucker.io
-  username: john.doe@example.com
-  password:
-    secure: your encryped password determined by the travis gem=
-  organization: john_doe_example_com
-  space: heaven
-  on:
-    repo: trucker/trucker-travis
-{% endhighlight %}
-
-Don’t forget to commit and push your changes to `.travis.yml` as it will be required in your Github repository to take effect:
-
-{% highlight sh %}
-git status
-git add .
-git commit -m "add Travis gem"
-{% endhighlight %}
-
-From now on whenever you commit changes to your Github repository, your app will be deployed automagically and your tests (might you have any) will be run.
-
-#### Try it out!
-
-Travis will then show log output similar to this:
-{% highlight sh %}
-Installing deploy dependencies
-...
-22 gems installed
-dpl.2
-Preparing deploy
-Setting target to http://api.trucker.io...... OK
-target: https://api.trucker.io
-Authenticating.. .  ... OK
-Switching to organization john_doe_example_com... OK
-Switching to space heaven... OK
-dpl.3
-Deploying application
-Using manifest file manifest.yml
-Uploading trucker-travis... OK
-Stopping trucker-travis... OK
-Preparing to start trucker-travis... OK
-Checking status of app 'trucker-travis'...
-  0 of 1 instances running (1 starting)
-  0 of 1 instances running (1 starting)
-  1 of 1 instances running (1 running)
-Push successful! App 'trucker-travis' available at http://trucker-travis.trucker.io
-Logging out... OK
-{% endhighlight %}
-
-This means your are done and good to go. Have fun with continuous deployment!
+Your application is now available at http://railsgirls.trucker.io!
