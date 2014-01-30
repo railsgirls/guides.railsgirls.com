@@ -14,7 +14,7 @@ Continuous deployment is part of the continuous delivery 'movement'. The idea be
 
 With a working continuous deployment chain in place you'll enforce Git deployments (everything must be committed to be tested and everything must be tested to be deployed), making collaboration easier and deployment faster. So you can focus on making your app even more awesome!
 
-There are a few great companions sailing the continuous wave, in this guide we'll set up continuous deployment for Ruby on Rails app from GitHub to Heroku, using the [Codeship](http://www.codeship.io). 
+There are a few great companies sailing the continuous wave, in this guide we'll set up continuous deployment for our Ruby on Rails app from GitHub to Heroku, using the [Codeship](http://www.codeship.io). 
 
 __COACH__: Talk about the benefits of continuous deployment.
 

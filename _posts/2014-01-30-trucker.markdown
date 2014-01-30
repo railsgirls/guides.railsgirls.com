@@ -13,7 +13,7 @@ permalink: trucker
 Follow steps 1 through 3 of the [Getting Started guide](http://developers.trucker.io/Getting-Started) to create an account, install the command line tool and login.
 
 To install `trucker-cli` (the command line tool), type:
-{% highlight ruby %}
+{% highlight sh %}
 $ gem install trucker-cli
 {% endhighlight %}
 
