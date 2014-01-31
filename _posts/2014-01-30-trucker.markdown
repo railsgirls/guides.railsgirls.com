@@ -76,11 +76,11 @@ Creating railsgirls... OK
 2: none
 Subdomain> railsgirls
 
-1: trucker.io
+1: ie.trucker.io
 2: none
-Domain> trucker.io
+Domain> ie.trucker.io
 
-Creating route railsgirls.trucker.io... OK
+Creating route railsgirls.ie.trucker.io... OK
 Binding railsgirls.trucker.io to railsgirls... OK
 {% endhighlight %}
 
@@ -132,7 +132,7 @@ Preparing to start railsgirls... OK
 (...)
 Checking status of app 'railsgirls'...
   1 of 1 instances running (1 running)
-Push successful! App 'railsgirls' available at http://railsgirls.trucker.io
+Push successful! App 'railsgirls' available at http://railsgirls.ie.trucker.io
 {% endhighlight %}
 
-Your application is now available at http://railsgirls.trucker.io!
+Your application is now available at http://railsgirls.ie.trucker.io!
