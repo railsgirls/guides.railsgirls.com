@@ -1,0 +1,123 @@
+---
+layout: default
+title: You better check you app, before you wreck your app
+permalink: testing-rspec
+---
+
+# Test your app with rspec
+
+*Created by Floor Drees, [@floordrees](https://twitter.com/floordrees)* 
+
+Rspec is a Ruby testing framework, that describes our application's behavior in a syntax that doesn't look much like Ruby. It outputs test results in your terminal, so you'll test your reading skills as well (pun intended).
+
+__COACH__: Talk about testing and Behavior Driven Development.
+
+### Install rspec
+
+For starters, let's install rspec and all of its dependencies. 
+{% highlight sh %}
+gem install rspec
+{% endhighlight %}
+
+Then we call
+{% highlight sh %}
+rspec --init
+{% endhighlight %}
+
+in our project directory. This creates `spec_helper.rb` in the spec folder, and `.rspec`.
+
+Rubyists often use the words 'test' and 'specification' interchangeably, that's why you'll store your tests in the 'specs' folder. Save your test as `idea-spec.rb` (`<name_of_spec>_spec.rb`).
+
+Inside that new file, write:
+  
+{% highlight ruby %}
+require "spec_helper"
+require idea
+{% endhighlight %}
+
+Next, let's describe one of our specifications
+{% highlight ruby %}
+describe idea do
+  it "has a title" # your examples (tests) go here
+end
+{% endhighlight %}
+
+In your terminal run
+{% highlight sh %}
+rspec spec/lib/idea_spec.rb
+{% endhighlight %}
+
+which will output that your test is pending as it's not yet implemented. 
+
+__COACH__: Talk about googling one's terminal output.
+
+Let's do something about that!
+{% highlight ruby %}
+describe idea do
+  it "has a title" # yep, you can totally use 'it'
+    idea = idea.new # creating a new idea 'instance'
+    idea.title.should be_true # this is our expectation
+  end
+end
+{% endhighlight %}
+
+should give you a more satisfying output.
+
+#### Marking to-do's with tests
+
+Yeah! To-do lists. Awesome. A nifty rspec feature is the functionality to mark certain tests as pending. 
+
+Leaving out the `do` and the `end` in the example body, like so
+
+{% highlight ruby %}
+it "has a title"
+{% endhighlight %}
+
+will mark a test as pending. For bigger applications, where you want to tackle one test at a time, you can also add an `x` in front of an example, making it read 
+{% highlight ruby %}
+describe idea do  
+  xit "has a title" do
+end
+{% endhighlight %}
+
+or use the word `pending` in your example.
+
+### Behavior Driven Development
+
+Normally we would go about BDD testing in a slightly different way. Thinking about the application we want to build, we'll write down our expectations and then start building step by step, with the specifications in mind. 
+
+We'd first write 
+
+{% highlight ruby %}
+describe idea do
+  it "has a title"
+    idea = idea.new 
+    idea.title.should be_true 
+    # or, alternatively: idea.title.should == true
+    end
+end
+{% endhighlight %}
+
+and only then create a file named `idea.rb` introducing the idea class
+
+{% highlight ruby %}
+class idea
+attr_accessor :title
+end
+{% endhighlight %}
+
+as running `rspec spec/lib/idea_spec.rb` in your terminal before you've implemented that class will throw you an error. Luckely, errors are nothing to be afraid of. Rspec errors actually help you write (the necessary) code! 
+
+__COACH__: Talk a bit about refactoring.
+
+Try and write tests for the follow up guides to check if you're implementing ALL the right things. 
+
+{% highlight ruby %}
+describe Attendee do
+  it "tests everything"
+end
+{% endhighlight %}
+
+Just saying.
+
+Happy testing!
