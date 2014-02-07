@@ -16,16 +16,19 @@ permalink: app
 <div class="indent" markdown="1">
 
 <h3><i class="icon-text-editor">&nbsp;</i></h3>
-### Text Editor
+
+<h3>Text Editor</h3>
 
 [Sublime Text](http://www.sublimetext.com), [Komodo Edit](http://www.activestate.com/komodo-edit), Vim, Emacs, and Gedit are examples of text editors your can use for writing code and editing files.
 
 <h3><i class="icon-prompt">&nbsp;</i></h3>
-### Terminal (known as Command Prompt on Windows)
+
+<h3>Terminal (known as Command Prompt on Windows)</h3>
 Where you start the rails server and run commands.
 
 <h3><i class="icon-browser">&nbsp;</i></h3>
-### Web browser
+
+<h3>Web browser</h3>
 (Firefox, Safari, Chrome) for viewing your application.
 
 </div>
