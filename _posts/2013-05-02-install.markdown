@@ -25,11 +25,11 @@ Click the Apple menu and choose *About this Mac*.
 
 ![Apple menu](/images/1.png "Apple menu")
 
-**Step 2.** In the window you will find the version of your operating system. If your version number starts with 10.6, 10.7 or 10.8 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
+**Step 2.** In the window you will find the version of your operating system. If your version number starts with 10.6, 10.7, 10.8 or 10.9 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
 
 ![About this Mac dialog](/images/2.png "About this Mac dialog")
 
-**Step 3.** Download the RailsInstaller for your version of OS X:
+**Step 3-A.** Download the RailsInstaller for your version of OS X (For 10.6, 10.7 or 10.8):
 
 * [RailsInstaller for 10.7 and 10.8](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz) <span class="muted">(325MB)</span>
 * [RailsInstaller for 10.6](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.6.app.tgz) <span class="muted">(224MB)</span>
@@ -46,6 +46,59 @@ Make sure that all works well by running the application generator command.
 
 {% highlight sh %}
 rails new railsgirls
+{% endhighlight %}
+
+**Step 3-B.** Install with rbenv (For 10.9):
+
+If your version number starts with 10.9, follow these steps. We are installing homebrew and rbenv.
+
+3-B-1. Install Command line tools on terminal:
+
+{% highlight sh %}
+xcode-select --install
+{% endhighlight %}
+
+3-B-2. Install [Homebrew](http://brew.sh/):
+
+{% highlight sh %}
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+{% endhighlight %}
+
+3-B-3. Install [rbenv](https://github.com/sstephenson/rbenv):
+
+{% highlight sh %}
+brew update
+brew install rbenv ruby-build
+echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
+source ~/.bash_profile
+{% endhighlight %}
+
+3-B-4. Build Ruby with rbenv:
+
+You can find newest Ruby version with a command "rbenv install -l".
+
+{% highlight sh %}
+rbenv install 2.1.0
+{% endhighlight %}
+
+If you got "OpenSSL::SSL::SSLError: ... : certificate verify failed" error, try this way.
+
+{% highlight sh %}
+brew install curl-ca-bundle
+cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
+{% endhighlight %}
+
+3-B-5. Set default Ruby:
+
+{% highlight sh %}
+rbenv global 2.1.0
+{% endhighlight %}
+
+3-B-6. Install rails:
+
+{% highlight sh %}
+gem i rails
 {% endhighlight %}
 
 **Final step.** Install a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
