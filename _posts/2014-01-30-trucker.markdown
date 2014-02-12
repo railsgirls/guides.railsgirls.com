@@ -60,6 +60,8 @@ First perform a `push` command and enter the name you want your application to s
 {% highlight sh %}
 $ truck push
 Name> railsgirls
+{% endhighlight %}
+
 
 {% highlight sh %}
 Instances> 1
