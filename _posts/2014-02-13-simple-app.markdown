@@ -21,7 +21,7 @@ permalink: simpleapp
 
 <h3>Text Editor</h3>
 
-[Sublime Text](http://www.sublimetext.com), [Komodo Edit](http://www.activestate.com/komodo-edit), Vim, Emacs, and Gedit are examples of text editors your can use for writing code and editing files.
+<p><a href="http://www.sublimetext.com">Sublime Text</a>, <a href="http://www.activestate.com/komodo-edit">Komodo Edit</a>, Vim, Emacs, and Gedit are examples of text editors your can use for writing code and editing files.</p>
 
 <h3><i class="icon-prompt">&nbsp;</i></h3>
 
