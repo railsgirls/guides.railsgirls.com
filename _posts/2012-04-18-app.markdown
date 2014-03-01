@@ -168,7 +168,7 @@ rails generate scaffold idea name:string description:text picture:string
 
   <div class="win">
 {% highlight sh %}
-rails generate scaffold idea name:string description:text picture:string
+ruby bin/rails generate scaffold idea name:string description:text picture:string
 {% endhighlight %}
   </div>
 </div>
