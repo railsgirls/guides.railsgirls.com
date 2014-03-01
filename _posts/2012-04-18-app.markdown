@@ -257,7 +257,7 @@ and before `</body>` add
 {% highlight html %}
 <footer>
   <div class="container">
-    Rails Girls 2013
+    Rails Girls 2014
   </div>
 </footer>
 <script src="//railsgirls.com/assets/bootstrap.js"></script>
