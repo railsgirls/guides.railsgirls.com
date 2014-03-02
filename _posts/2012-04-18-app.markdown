@@ -168,7 +168,7 @@ rails generate scaffold idea name:string description:text picture:string
 
   <div class="win">
 {% highlight sh %}
-rails generate scaffold idea name:string description:text picture:string
+ruby bin/rails generate scaffold idea name:string description:text picture:string
 {% endhighlight %}
   </div>
 </div>
@@ -257,7 +257,7 @@ and before `</body>` add
 {% highlight html %}
 <footer>
   <div class="container">
-    Rails Girls 2013
+    Rails Girls 2014
   </div>
 </footer>
 <script src="//railsgirls.com/assets/bootstrap.js"></script>
