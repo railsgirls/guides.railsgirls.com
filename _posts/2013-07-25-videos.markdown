@@ -42,10 +42,7 @@ This is a selection of Rails Girls videos from around the world. Have one to sha
 
 ### Rails Girls Sofia 2013
 
-<div>
-    <iframe width="640" height="360" src="//www.youtube.com/embed/7TFnMUAM9Dg?rel=0" frameborder="0" allowfullscreen></iframe>
-    <p><a href="//www.youtube.com/embed/7TFnMUAM9Dg?rel=0">Rails Girls Sofia 2013</a> by <a href="http://dimitartenev.com/">Dimitar Tenev</a>.</p>
-</div>
+<div><iframe src="//player.vimeo.com/video/88082907?color=ff0179" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/88082907">Rails Girls Sofia - May 2013</a> from <a href="http://vimeo.com/mitio">Dimitar Dimitrov</a> on <a href="https://vimeo.com">Vimeo</a>.</p></div>
 
 ### Rails Girls Ljubljana 2013
 
