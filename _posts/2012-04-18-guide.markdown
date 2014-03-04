@@ -13,7 +13,7 @@ Our aim is to give tools for women to understand technology. The Rails Girls eve
 
 Rails Girls was founded in end of 2010 in Helsinki. Originally intended as a onetime event, we never thought we'd see so many local chapters all around the world! This guide has been put together to help you get started.
 
-If you want to organize an event, start by filling out [http://railsgirls.com/inyourcity](http://railsgirls.com/inyourcity) and someone from our team will be in contact
+If you want to organize an event, start by filling out [http://railsgirls.com/inyourcity](http://railsgirls.com/inyourcity) and you'll receive more instructions. 
 
 The roadmap for future events can be seen at [www.railsgirls.com](http://railsgirls.com).
 
@@ -411,6 +411,7 @@ Inviting real developers to coach is Rails Girls sessions not only gives the par
 * Mention at least two forthcoming developer events where the local coaches will be. Try to get the women to attend actual developer meetups
 * Invite everyone to the Facebook Group where they can ask questions.
 * Invite the women together again within a month. You can host these meetups at the Rails Girls global meetup page <http://www.meetup.com/Rails-Girls/> - we’ll be happy to promote events. However, it doesn't matter under which brand you want to continue meeting - the important thing'
+* Write about your event for blog.railsgirls.com by [submitting a story](http://blog.railsgirls.com/submit)
 
 
 
@@ -460,3 +461,4 @@ This is a small checklist for your event. Rails Girls can be thrown together in 
 * Send a thank you note for organizers
 * Add yourself to the [Rails Girls Map](http://rails-girls-map.herokuapp.com/)
 * Share the numbers of your event by filling out this short [Questionaire](https://railsgirls.wufoo.eu/forms/rails-girls-events-all-the-numbers/)
+* Write a blogpost to the global blog by [submitting yout story](http://blog.railsgirls.com/submit) - or ask one of the participants or coaches to write one!
