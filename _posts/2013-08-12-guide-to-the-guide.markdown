@@ -99,8 +99,9 @@ In order to create our idea model, we use the `scaffold` command which includes 
 
 #### Active Record
 In Rails, the default system for communicating with an application’s database is called *Active Record*, which provides various methods for creating, saving, and finding data. To retrieve information from the database, *Active Record* establishes relationships between different parts of the application using naming conventions:
-- Table names have all lowercase letters and underscores between words, e.g. “idea”, “invoice_items”
-- The model is named using the convention of unbroken MixedCase and is always the singular of the table name, e.g. if the table name is “invoice_items”, the model name would be “InvoiceItem”. So, in this case our table name is ideas and our model is Idea.
+
+- Table names have all lowercase letters and underscores between words, e.g. “ideas”, “invoice\_items”
+- The model is named using the convention of unbroken MixedCase and is always the singular of the table name, e.g. if the table name is “invoice\_items”, the model name would be “InvoiceItem”. So, in this case our table name is "ideas" and our model is "Idea".
 
 #### Model attributes and types
 
