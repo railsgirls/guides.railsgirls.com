@@ -80,7 +80,7 @@ end
 After this run `bundle`, then commit the changes to Gemfile.lock to your repository:
 
 {% highlight sh %}
-git commit -a -m "Added rails\_12factor gem and updated Gemfile.lock"
+git commit -a -m "Added rails_12factor gem and updated Gemfile.lock"
 {% endhighlight %}
 
 __COACH__: You can talk about logging on Heroku, as well as its other quirks.
