@@ -175,20 +175,22 @@ Within the CSS you have applied:
 For each Rails application there is a default layout file called `application.html.erb`, located in the layouts folder of your views directory. With this file you can create a default format for all of the pages in your application.
 
 {% highlight html %}
-	`<link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css">`
+<link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css">
 {% endhighlight %}
 
 In the above code, the `link rel` (link relation) is defining the nature of the URL that the `href` (hypertext reference) attribute is requesting content from. This argument indicates that the external source requested is a stylesheet and the web browser will need to fetch this file to render the page properly.
 
-`<%= stylesheet_link_tag "application" %>`
+{% highlight erb %}
+<%= stylesheet_link_tag "application" %>
+{% endhighlight %}
 
 This code returns a stylesheet link tag for the source, in this case “application”, i.e. `application.css`. This means that the styling you implemented in application.css will be applied to the various pages of your application.
 
 
 {% highlight erb %}
-	<div class="container">
-	  <%= yield %>
-	</div>
+<div class="container">
+  <%= yield %>
+</div>
 {% endhighlight %}
 
 In this code:
