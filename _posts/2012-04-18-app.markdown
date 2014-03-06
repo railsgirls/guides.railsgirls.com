@@ -268,8 +268,8 @@ Now let's also change the styling of the ideas table. Open `app/assets/styleshee
 {% highlight css %}
 body { padding-top: 100px; }
 footer { margin-top: 100px; }
-table, td, th { vertical-align: middle !important; border: none !important; }
-th { border-bottom: 1px solid #DDD !important; }
+table, td, th { vertical-align: middle; border: none; }
+th { border-bottom: 1px solid #DDD; }
 {% endhighlight %}
 
 Now make sure you saved your files and refresh the browser to see what was changed. You can also change the HTML & CSS further.
