@@ -192,6 +192,7 @@ This code returns a stylesheet link tag for the source, in this case “applicat
 {% endhighlight %}
 
 In this code:
+
 - The HTML `div` tag divides the code into parts.
 - The *container class* adds additional styling to everything inside the div tags
 - The `<%= yield %>` argument is responsible for inserting the unique content from each page into the container `div`. This means that in your application the overall layout can be consistent even though the content will differ from page to page.
