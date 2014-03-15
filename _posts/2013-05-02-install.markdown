@@ -98,7 +98,7 @@ rbenv global 2.1.1
 3-B-6. Install rails:
 
 {% highlight sh %}
-gem i rails
+gem i rails --no-ri --no-rdoc
 {% endhighlight %}
 
 **Final step.** Install a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
