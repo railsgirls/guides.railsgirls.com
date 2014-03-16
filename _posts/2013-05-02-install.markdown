@@ -17,7 +17,7 @@ Follow the instructions for your operating system. If you hit into any problems,
 
 <hr />
 
-## Setup for OS X
+<h2 id='setup_for_os_x'>Setup for OS X</h2>
 
 **Step 1.** Let&#8217;s check the version of the operating system.
 
@@ -109,7 +109,7 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 <hr />
 
-## Setup for Windows
+<h2 id='setup_for_windows'>Setup for Windows</h2>
 
 Download [RailsInstaller](https://github.com/railsinstaller/railsinstaller-windows/releases/download/2.2.2/railsinstaller-2.2.2.exe) and run it. Click through the installer using the default options.
 
@@ -133,7 +133,7 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 <hr />
 
-## Setup for Linux
+<h2 id='setup_for_linux'>Setup for Linux</h2>
 
 To install the Ruby on Rails development environment you just need to copy the line below for your Linux distribution (Ubuntu or Fedora), paste it in the Terminal and press Enter. Enjoy the text flying on the screen; it will take quite some time. Grabbing a refreshing drink before starting is encouraged.
 
