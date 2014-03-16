@@ -56,7 +56,7 @@ mkdir projects
 {% endhighlight %}
 
     <div>
-You can verify that a directory named <code>projects</code> was created by running the list command: <code>ls</code>. You should see the <code>projects</code> directory in the output. Now you want to change the directory you are currently in to the <code>projects</code> folder by running:
+<p>You can verify that a directory named <code>projects</code> was created by running the list command: <code>ls</code>. You should see the <code>projects</code> directory in the output. Now you want to change the directory you are currently in to the <code>projects</code> folder by running:</p>
     </div>
 
 {% highlight sh %}
@@ -64,7 +64,7 @@ cd projects
 {% endhighlight %}
 
     <div>
-You can verify you are now in an empty directory or folder by again running the <code>ls</code> command. Now you want to create a new app called <code>railsgirls</code> by running:
+<p>You can verify you are now in an empty directory or folder by again running the <code>ls</code> command. Now you want to create a new app called <code>railsgirls</code> by running:</p>
     </div>
 
 {% highlight sh %}
@@ -72,7 +72,7 @@ rails new railsgirls
 {% endhighlight %}
 
     <div>
-This will create a new app in the folder <code>railsgirls</code>, so we again want to change the directory to be inside of our rails app by running:
+<p>This will create a new app in the folder <code>railsgirls</code>, so we again want to change the directory to be inside of our rails app by running:</p>
     </div>
 
 {% highlight sh %}
@@ -80,7 +80,7 @@ cd railsgirls
 {% endhighlight %}
 
     <div>
-If you run <code>ls</code> inside of the directory you should see folders such as <code>app</code> and <code>config</code>. You can then start the rails server by running:
+<p>If you run <code>ls</code> inside of the directory you should see folders such as <code>app</code> and <code>config</code>. You can then start the rails server by running:</p>
     </div>
 
 {% highlight sh %}
@@ -94,7 +94,7 @@ mkdir projects
 {% endhighlight %}
 
     <div>
-You can verify that a directory named <code>projects</code> was created by running the list command: <code>dir</code>. You should see the <code>projects</code> directory in the output. Now you want to change the directory you are currently in to the <code>projects</code> folder by running:
+<p>You can verify that a directory named <code>projects</code> was created by running the list command: <code>dir</code>. You should see the <code>projects</code> directory in the output. Now you want to change the directory you are currently in to the <code>projects</code> folder by running:</p>
     </div>
 
 {% highlight sh %}
@@ -102,7 +102,7 @@ cd projects
 {% endhighlight %}
 
     <div>
-You can verify you are now in an empty directory or folder by again running the <code>dir</code> command. Now you want to create a new app called <code>railsgirls</code> by running:
+<p>You can verify you are now in an empty directory or folder by again running the <code>dir</code> command. Now you want to create a new app called <code>railsgirls</code> by running:</p>
     </div>
 
 {% highlight sh %}
@@ -110,7 +110,7 @@ rails new railsgirls
 {% endhighlight %}
 
     <div>
-This will create a new app in the folder <code>railsgirls</code>, so we again want to change the directory to be inside of our rails app by running:
+<p>This will create a new app in the folder <code>railsgirls</code>, so we again want to change the directory to be inside of our rails app by running:</p>
     </div>
 
 {% highlight sh %}
@@ -118,7 +118,7 @@ cd railsgirls
 {% endhighlight %}
 
     <div>
-If you run <code>dir</code> inside of the directory you should see folders such as <code>app</code> and <code>config</code>. You can then start the rails server by running:
+<p>If you run <code>dir</code> inside of the directory you should see folders such as <code>app</code> and <code>config</code>. You can then start the rails server by running:</p>
     </div>
 
 {% highlight sh %}
