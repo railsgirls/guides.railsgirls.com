@@ -52,11 +52,7 @@ rails new railsgirls
 
 If your version number starts with 10.9, follow these steps. We are installing homebrew and rbenv.
 
-3-B-1. Install Command line tools on terminal:
-
-{% highlight sh %}
-xcode-select --install
-{% endhighlight %}
+3-B-1. Install Command line tools from [Apple's website](https://developer.apple.com/downloads/index.action)
 
 3-B-2. Install [Homebrew](http://brew.sh/):
 
@@ -64,7 +60,13 @@ xcode-select --install
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 {% endhighlight %}
 
-3-B-3. Install [rbenv](https://github.com/sstephenson/rbenv):
+3-B-3. Install [Automake](http://www.gnu.org/software/automake/)
+
+{% highlight sh %}
+brew install automake
+{% endhighlight %}
+
+3-B-4. Install [rbenv](https://github.com/sstephenson/rbenv):
 
 {% highlight sh %}
 brew update
@@ -74,7 +76,7 @@ echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
 source ~/.bash_profile
 {% endhighlight %}
 
-3-B-4. Build Ruby with rbenv:
+3-B-5. Build Ruby with rbenv:
 
 You can find newest Ruby version with a command "rbenv install -l".
 
@@ -89,13 +91,13 @@ brew install curl-ca-bundle
 cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
 {% endhighlight %}
 
-3-B-5. Set default Ruby:
+3-B-6. Set default Ruby:
 
 {% highlight sh %}
 rbenv global 2.1.1
 {% endhighlight %}
 
-3-B-6. Install rails:
+3-B-7. Install rails:
 
 {% highlight sh %}
 gem i rails --no-ri --no-rdoc
