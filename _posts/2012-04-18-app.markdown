@@ -4,36 +4,36 @@ title: Rails Girls App Tutorial
 permalink: app
 ---
 
-# Rails Girls App Tutorial
+# Guida alla tua prima app
 
 *Created by Vesa Vänskä, [@vesan](https://twitter.com/vesan)*
 
 **Make sure you have Rails installed.** [**Follow the installation guide**](/install) to get set up.
 
 
-## Get to know the tools
+## Conosce i propri tool
 
 <div class="indent" markdown="1">
 
 <h3><i class="icon-text-editor">&nbsp;</i></h3>
 
-<h3>Text Editor</h3>
+<h3>Editor di testo</h3>
 
-<p><a href="http://www.sublimetext.com">Sublime Text</a>, <a href="http://www.activestate.com/komodo-edit">Komodo Edit</a>, Vim, Emacs, and Gedit are examples of text editors your can use for writing code and editing files.</p>
+<p><a href="http://www.sublimetext.com">Sublime Text</a>, <a href="http://www.activestate.com/komodo-edit">Komodo Edit</a>, Vim, Emacs, and Gedit sono esempi di editor di testo che puoi utilizzare per scrivere o modificare dei file di testo.</p>
 
 <h3><i class="icon-prompt">&nbsp;</i></h3>
 
-<h3>Terminal (known as Command Prompt on Windows)</h3>
-Where you start the rails server and run commands.
+<h3>Terminale (conosciuto anche come Command Prompt in Windows)</h3>
+Dove puoi far partire rails server ed eseguire altri comandi.
 
 <h3><i class="icon-browser">&nbsp;</i></h3>
 
 <h3>Web browser</h3>
-(Firefox, Safari, Chrome) for viewing your application.
+(Firefox, Safari, Chrome) per vedere la tua applicazione funzionare.
 
 </div>
 
-### Important
+### Importante
 
 It is important that you select the instructions specific to your operating system - the commands you need to run on a Windows computer are slightly different to Mac or Linux. If you're having trouble check the Operating System switcher at the bottom of the commands.
 
