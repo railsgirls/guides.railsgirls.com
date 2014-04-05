@@ -147,6 +147,8 @@ To install the Ruby on Rails development environment you just need to copy the l
 bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
 {% endhighlight %}
 
+If you are going to use RVM installations with gnome-terminal, you'll probably need to change it's default options before you can see and use the right Ruby and Rails versions. Find out how: [RVM documentation](http://rvm.io/integration/gnome-terminal).
+
 **For Fedora:**
 
 {% highlight sh %}
