@@ -274,6 +274,8 @@ th { border-bottom: 1px solid #DDD; }
 
 Now make sure you saved your files and refresh the browser to see what was changed. You can also change the HTML & CSS further.
 
+In case your Terminal shows you an error message that *sort of* implies there is something wrong with your JavaScript or CoffeeScript, install [nodejs](http://nodejs.org/download/). This issue should not appear when you've used the RailsInstaller (but when you've installed Rails via ```gem install rails```).
+
 **Coach:** Talk a little about CSS and layouts.
 
 
@@ -422,4 +424,3 @@ Now you can open the file `app/views/pages/info.html.erb` and add information ab
 * Guide 5: [Add design using HTML &amp; CSS by Alex Liao](/design)
 * Guide 6: [Add Authentication (user accounts) with Devise by Piotr Steininger](/devise/)
 * Guide 7: [Go through additional explanations for the App by Lucy Bain](https://github.com/lbain/railsgirls)
-
