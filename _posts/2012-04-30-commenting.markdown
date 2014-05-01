@@ -59,6 +59,7 @@ add
     <strong><%= comment.user_name %></strong>
     <br />
     <p><%= comment.body %></p>
+    <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } if comment.id != nil %></p>
   </div>
 <% end %>
 <%= render 'comments/form' %>
@@ -95,4 +96,4 @@ next, remove
 </div>
 {% endhighlight %}
 
-That's it. Now view an idea you have inserted to your application and there you should see the form for inserting a comment
+That's it. Now view an idea you have inserted to your application and there you should see the form for inserting a comment as well as deleting older comments.
