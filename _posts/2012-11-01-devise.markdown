@@ -59,6 +59,13 @@ right above
    <%= yield %>
 {% endhighlight %}
 
+Open up `app/views/ideas/show.html.erb` and remove the line that says:
+
+{% highlight erb %}
+<p id="notice"><%= notice %></p>
+{% endhighlight %}
+
+Do the same for `app/views/comments/show.html.erb`. These lines are not necessary as we've put the notice in the `app/views/layouts/application.html.erb` file.
 
 ## Step 3: Setup the User model
 
@@ -73,7 +80,7 @@ fields?
 
 ## Step 4: Create your first user
 
-Now that you have set everyting up you can create your first user. Devise creates all the code and routes required to create accounts, log in, log out, etc.
+Now that you have set everything up you can create your first user. Devise creates all the code and routes required to create accounts, log in, log out, etc.
 
 Make sure your rails server is running, open [http://localhost:3000/users/sign_up](http://localhost:3000/users/sign_up) and create your user account.
 
@@ -116,7 +123,7 @@ Open your browser and try logging in and out from.
 
 * Add extra fields to the User model
 * Add relationships between users and ideas
-* Restrict users to only be able to edit their own ideas
+* Restrict users to only be able to edit their own ideas and delete their own comments
 * Expand to use roles or permissions (use one of the popular authorization gem like CanCan)
 
 
