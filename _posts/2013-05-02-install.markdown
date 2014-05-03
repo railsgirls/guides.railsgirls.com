@@ -14,6 +14,7 @@ Follow the instructions for your operating system. If you run into any problems,
 * [Setup for OS X](#setup-for-os-x)
 * [Setup for Windows](#setup-for-windows)
 * [Setup for Linux](#setup-for-linux)
+* [Alternative Installment for all OS](#virtual-machine)
 
 <hr />
 
@@ -168,4 +169,8 @@ rails new railsgirls
 Now you should have a working Ruby on Rails programming setup. Congrats!
 
 <hr />
+
+## Virtual Machine
+
+Instead of installing all tools on your machine, you can also set up a development environment in a Virtual Machine. Please find all the details [here]({% post_url 2014-03-24-alternative-dev-environment %}).
 
