@@ -37,7 +37,7 @@ Please download the virtal machine created for this event from [here](http://www
 Let's open the already install VirtualBox application. Please find Machine/Add in the menu. Browse the previously created folder containing our VM, and select the file with *vbox* extension.
 If you did everything right, a new VM appeared on the left sidebar with the name *RailsGirls*. So we can start it for the first time!
 
-![Virtualbox / Starting VM]({{ site.url }}/images/virtualbox.png)
+![Virtualbox / Starting VM](/images/virtualbox.png)
 
 #### Starting
 
@@ -57,7 +57,7 @@ Now as our VM is up and running, let login to it. We could log in from the Virtu
 Because of this, you can log in to the VM with a browser. Open your favourite browser (Chrome :) ), and type in [http://localhost:57575](http://localhost:57575) as a URL.
 If we did everything right, we should see a butterfly:
 
-![Butterfly / Console in your browser]({{ site.url }}/images/butterfly_login.png)
+![Butterfly / Console in your browser](/images/butterfly_login.png)
 
 We are going to refer to this tab in your browser as a console, you'll have to type on all commands destined to Rails here.
 
