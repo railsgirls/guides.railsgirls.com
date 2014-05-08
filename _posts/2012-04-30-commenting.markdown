@@ -54,12 +54,12 @@ Open app/views/ideas/show.html and after the image_tag
 add
 {% highlight erb %}
 <h3>Comments</h3>
-<% @idea.comments.each do |comment| %>
+<% @comments.each do |comment| %>
   <div>
     <strong><%= comment.user_name %></strong>
     <br />
     <p><%= comment.body %></p>
-    <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } if comment.id != nil %></p>
+    <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
   </div>
 <% end %>
 <%= render 'comments/form' %>
@@ -72,6 +72,7 @@ In app/controllers/ideas_controller.rb add to show action after the row
 
 this
 {% highlight ruby %}
+@comments = @idea.comments.all
 @comment = @idea.comments.build
 {% endhighlight %}
 
