@@ -23,11 +23,11 @@ h2 {
   margin: 1em 0 0.5em;
 }
 h2 em {
+  position: absolute;
   display: inline-block;
-  width: 50px;
+  margin-left: -1.5em;
   font-style: normal;
   font-weight: bold;
-  margin-left: -50px;
   color: #CCC;
 }
 
@@ -67,6 +67,9 @@ hr {
   margin: 2em 0;
 }
 
+table {
+  margin-bottom: 1em;
+}
 
 header {
   height: 70px;
