@@ -122,12 +122,10 @@ cd railsgirls
     </div>
 
 {% highlight sh %}
-ruby bin\rails server
+rails server
 {% endhighlight %}
   </div>
 </div>
-
-**Windows users:** You may need to replace `bin\rails` with `script\rails`, depending on the version of Rails you have installed.
 
 Open [http://localhost:3000](http://localhost:3000) in your browser. You should see "Welcome aboard" page, which means that the generation of your new app worked correctly.
 
@@ -168,7 +166,7 @@ rails generate scaffold idea name:string description:text picture:string
 
   <div class="win">
 {% highlight sh %}
-ruby bin/rails generate scaffold idea name:string description:text picture:string
+rails generate scaffold idea name:string description:text picture:string
 {% endhighlight %}
   </div>
 </div>
@@ -178,15 +176,15 @@ The scaffold creates new files in your project directory, but to get it to work 
 <div class="os-specific">
   <div class="nix">
 {% highlight sh %}
-rake db:migrate
+bin/rake db:migrate
 rails server
 {% endhighlight %}
   </div>
 
   <div class="win">
 {% highlight sh %}
-rake db:migrate
-ruby bin\rails server
+ruby bin/rake db:migrate
+rails server
 {% endhighlight %}
   </div>
 </div>
