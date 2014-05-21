@@ -19,15 +19,15 @@ __COACH__: Talk about the benefits of deploying to anynines vs utilising US data
 3. Now select the anynines api endpoint as target and authenticate using your user credentials:
 
 {% highlight sh %}
-cf target https://api.de.a9s.eu  
-cf login --email [your@email] --password [yourpassword]  
+cf api https://api.de.a9s.eu  
+cf login -u [your@email] -p [yourpassword]  
 {% endhighlight %}
 
 
 Or if that doesn't work for you, use:
 
 {% highlight sh %}
-cf login -t  
+cf login
 {% endhighlight %}
 
 ... which will prompt you for your email address and password.
