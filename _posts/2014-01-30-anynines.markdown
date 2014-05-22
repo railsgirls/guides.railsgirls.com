@@ -8,59 +8,56 @@ permalink: anynines
 
 *Created by Floor Drees, [@floordrees](https://twitter.com/floordrees)*
 
-### Get anynines
+__COACH__: Talk about the benefits of deploying to anynines vs utilising US data centers.
 
-[Create an anynines account](http://anynines.com/).
+### Get yourself some anynines
 
-Next, install the a9s gem which downloads the needed gems for interacting with the anynines system:
-{% highlight sh %}
-gem install a9s  
-{% endhighlight %}
+1. [Create an anynines account](http://anynines.com/).
 
-__COACH__: Talk about the benefits of deploying to anynines vs utilizing US data centers.
+2. [Download and install the Command Line Interface](https://anynines.zendesk.com/entries/60241846-How-to-install-the-CLI-v6) to interact with anynines.
 
-
-### [Login to anynines](https://support.anynines.com/entries/24083808-How-to-deploy-your-apps-on-anynines)
-
-Now select the anynines api endpoint as target and authenticate using your user credentials:
+3. Now select the anynines api endpoint as target and authenticate using your user credentials:
 
 {% highlight sh %}
-cf target https://api.de.a9s.eu  
-cf login --email [your@email] --password [yourpassword]  
+cf api https://api.de.a9s.eu  
+cf login -u [your@email] -p [yourpassword]  
 {% endhighlight %}
 
 
 Or if that doesn't work for you, use:
 
 {% highlight sh %}
-cf login -t  
+cf login
 {% endhighlight %}
 
 ... which will prompt you for your email address and password.
 
 Wonder what that `cf` stands for? It's short for [Cloud Foundry](http://www.cloudfoundry.com/), a system anynines is using behind the scenes.
 
-You can deploy your code by using the `cf push` command now. Doublecheck that you're in the directory of the application you want to deploy (in your terminal).  
-A wizard will guide you through the configuration process, where you'll choose your memory limit (128M 2; 256M 3; 512M; 1G), Subdomain ('railsgirls' in our case) and Domain (we use de.a9sapp.eu). When you see an output like below, you're on the right track:
+### Push your app online
 
+Let's push this source code from your local machine to anynines:
 {% highlight sh %}
-Creating route railsgirls.de.a9sapp.eu... OK   
-Binding railsgirls.de.a9sapp.eu to railsgirls... OK  
+$> cf push [application-name-of-your-choosing]
 {% endhighlight %}
 
-The available services for your anynines hosted app are as follows:  
-1: elasticsearch 0.20  
-2: mongodb 2.0  
-3: mysql 5.5  
-4: postgresql 9.1  
-5: rabbitmq 2.8  
-6: redis 2.2  
-7: swift 1.0  
+This will fail miserably since the example application needs a MySQL database to start. So, lets create one! The command below will create a MySQl service with a free service plan. After the plan name you have to specify a name for the service instance. This name will be used for further commands to refer to this service instance:
 
-... or you can opt for `user-provided`.
+$> cf create-service mysql Pluto-free [service-name-you-can-choose]
 
-We're using Postgres (numero 4).
+(Really, you can use any name. Make it count!)
 
+Next, binding the MySQL service instance to the application, to grant the application access to the MySQL instance, type:
+{% highlight sh %}
+$> cf bind-service [app-name-you-have-chosen-above] [service-name-you-have-chosen-above]
+{% endhighlight %}
+
+Finally we have to restart the application to make sure the service binding takes effect:
+{% highlight sh %}
+$> cf restart [app-name-you-have-chosen-above]
+{% endhighlight %}
+
+You will see this:  
 {% highlight sh %}
 Creating service postgresql-d2197... OK  
 Binding postgresql-d2197 to railsgirls... OK  
@@ -82,6 +79,7 @@ __COACH__: This would be a great time to talk about version control systems and 
 
 ### Help
 
-You can check all available cf sub-commands by typing `cf help`, check your current space and organization using the target command `cf target`. And you can use the `cf apps` command to get a status list of your applications running within the current space.
+You can check all available cf sub-commands by typing `cf help`.
+In case your terminal does not have all the answers, the anynines team probably does. Just shoot them a mail at support@anynines.com.
 
 Happy deploying!
