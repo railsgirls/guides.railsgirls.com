@@ -14,11 +14,11 @@ This guide assumes that you have already built a Rails Girls app by following th
 
 You need to have an e-mail address registered with Gravatar for this to work. If you do not already have one you can go to [gravatar.com](http://en.gravatar.com/).
 
-## *1.*Add the Gravtastic gem
+## *1.* Add the Gravtastic gem
 
 Open up your gemfile and under your `devise` gem add
 
-{% highlight erb %}
+{% highlight ruby %}
 gem 'gravtastic'
 {% endhighlight %}
 
@@ -30,7 +30,7 @@ bundle install
 
 This will install the gravtastic gem. Then remember to restart your rails server.
 
-## *2.*Set up Gravatar in your app
+## *2.* Set up Gravatar in your app
 
 Open `app/models/user.rb`, and add these lines
 
