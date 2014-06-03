@@ -10,7 +10,7 @@ permalink: devise
 
 *Updated by Ernesto Jimenez, [@ernesto_jimenez](https://twitter.com/ernesto_jimenez)*
 
-**This guide assumes that you have already built a RailsGirls app by** [**following the app development guide**](/app).
+**This guide assumes that you have already built a Rails Girls app by** [**following the app development guide**](/app).
 
 
 ## *1.*Add devise gem

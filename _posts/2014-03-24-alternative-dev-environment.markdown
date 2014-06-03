@@ -9,13 +9,13 @@ permalink: virtual-machine
 A development environment is the sum of all applications and tools with which a developer can do her daily work. Beyond an internet browser and a code editor all programs are included which are necessary for running and serving our application. For Ruby on Rails development, we certainly need Ruby, and the Rails framework and we also need a database, a web application server, etc.
 By default an experienced developer would install all of these tools to her environment, but it's an advanced task. Moreover you are working on different operating systems, most of you are working on Windows, where installing a proper Ruby development environment is a huge problem.
 
-Considering the things above, we created a virtual development environment for the first RailsGirls Budapest event, hoping that we can ease every participant's job.
+Considering the things above, we created a virtual development environment for the first Rails Girls Budapest event, hoping that we can ease every participant's job.
 
 <!-- more -->
 
 ## Virtual Machine
 
-A [virtual machine (VM)](http://en.wikipedia.org/wiki/Virtual_machine) is a software-based emulation of a computer. 
+A [virtual machine (VM)](http://en.wikipedia.org/wiki/Virtual_machine) is a software-based emulation of a computer.
 
 ### Limitations
 
@@ -31,7 +31,7 @@ We created a virtual machine for you, with all the needed programs/tools preinst
 
 VirtualBox is Oracle's virtualization platform, which can be downloaded on all the supported operating system (Win, OS X, Linux). Let's download the installer from [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads), and install it after.
 
-### RailsGirls virtual machine
+### Rails Girls virtual machine
 
 Please download the virtal machine created for this event from [here](http://www.digitalnatives.hu/demos/railsgirls/railsgirls_virtualbox_vm.zip). After downloading, please unzip the file, and put it's contents to a folder.
 Let's open the already install VirtualBox application. Please find Machine/Add in the menu. Browse the previously created folder containing our VM, and select the file with *vbox* extension.
@@ -92,7 +92,7 @@ Start the VM again, and log into it with the known process:
 
 * open [http://localhost:57575](http://localhost:57575)
 * log in with vagrant / vagrant
-* don't forget to run `/bin/bash --login` 
+* don't forget to run `/bin/bash --login`
 
 #### System check
 
