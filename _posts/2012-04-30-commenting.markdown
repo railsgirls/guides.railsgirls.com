@@ -10,7 +10,7 @@ We are going to add the possibility to comment on ideas in your *railsgirls* app
 
 The instructions for installing rails and building the ideas app can be found [here](/app)
 
-## Step 1: Create comment scaffold
+## *1.*Create comment scaffold
 
 Create a comment scaffold, with the commentator name, the comment body (contents of the comment) and with the reference to the ideas table (idea_id).
 {% highlight sh %}
@@ -21,10 +21,10 @@ This will create a migration file that lets your database know about the new com
 rake db:migrate
 {% endhighlight %}
 
-## Step 2: Add relations to models
+## *2.*Add relations to models
 
-You need to make sure that Rails knows the relation between objects (ideas and comments). 
-As one idea can have many comments we need to make sure the idea model knows that. 
+You need to make sure that Rails knows the relation between objects (ideas and comments).
+As one idea can have many comments we need to make sure the idea model knows that.
 Open app/models/idea.rb and after the row
 {% highlight ruby %}
 class Idea < ActiveRecord::Base
@@ -44,7 +44,7 @@ add the row
 belongs_to :idea
 {% endhighlight %}
 
-## Step 3: Render the comment form and existing comments
+## *3.*Render the comment form and existing comments
 
 Open app/views/ideas/show.html and after the image_tag
 {% highlight erb %}

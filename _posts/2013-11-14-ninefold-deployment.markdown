@@ -57,43 +57,43 @@ Now you’ll have to push your work to GitHub. You can create an account for fre
 
 Ninefold will be pulling your code in from GitHub, so first thing’s first.
 
-**Step 1.** Sign up for a free account at [ninefold.com](http://www.ninefold.com).
+## *1.*Sign up for a free account at [ninefold.com](http://www.ninefold.com).
 
-**Step 2.** Click on the giant Deploy Now button.
+## *2.*Click on the giant Deploy Now button.
 
 ![Alright stop! Collaborate and listen](/images/ninefold/deploy_now.png)
 
-**Step 3.** Choose GitHub as your repository you want to deploy from.
+## *3.*Choose GitHub as your repository you want to deploy from.
 
 ![Ice is back with my brand new invention](/images/ninefold/select_repo1.png)
 
-**Step 4.** Click on Sign in with GitHub.  Of course, read the blurb about how Ninefold accesses your GitHub.
+## *4.*Click on Sign in with GitHub.  Of course, read the blurb about how Ninefold accesses your GitHub.
 
 We will ask you to grant us some permissions. (Ninefold will never make changes to your codebase or read your followers or your gists. These were just set by GitHub by default. We just require this so we can redeploy your app for you.)
 
 ![Something grabs ahold of me tightly](/images/ninefold/deploy_github.png)
 
-**Step 5.** Time to select a repository and branch in the Connect Repository step.  Remember to choose the Rails app you want to deploy. You will want to click on the Repo you want (e.g. railsgirls) and then the branch (e.g. master).  Click Next.
+## *5.*Time to select a repository and branch in the Connect Repository step.  Remember to choose the Rails app you want to deploy. You will want to click on the Repo you want (e.g. railsgirls) and then the branch (e.g. master).  Click Next.
 
 ![Flow like a harpoon daily and nightly](/images/ninefold/select_repo2.png) ![Will it ever stop? Yo! I don't know!](/images/ninefold/select_repo3.png)
 
-**Step 6.** In the next window, choose a combined server.  Pick your primary region based on your location.  Click Next.
+## *6.*In the next window, choose a combined server.  Pick your primary region based on your location.  Click Next.
 
 ![Turn off the lights, and we'll glow](/images/ninefold/select_infrastructure2.png)
 
-**Step 7.** This is the last step! Name your app (it will also become part of your deployed app name).  Click Deploy App.
+## *7.*This is the last step! Name your app (it will also become part of your deployed app name).  Click Deploy App.
 
 ![To the extreme we rock the mic like a vandal](/images/ninefold/select_extras.png)
 
-**Step 8.** Boom, done! Grab a drink, sit back, and relax. Ninefold will deploy your app!
+## *8.*Boom, done! Grab a drink, sit back, and relax. Ninefold will deploy your app!
 
 ![Light up the stage and deploy our apps like a champ-dle](/images/ninefold/boom_done.png)
 
-**Step 9.** Once your app's been deployed, you'll want to click on View Details. You'll see your app information.  Click on the name that has yourappname1234.ninefold-apps.com (railsgirls4fcd.ninefold-apps.com in my case).
+## *9.*Once your app's been deployed, you'll want to click on View Details. You'll see your app information.  Click on the name that has yourappname1234.ninefold-apps.com (railsgirls4fcd.ninefold-apps.com in my case).
 
 ![Ice ice baby, dat datadat dat da da](/images/ninefold/view_app.png)
 
-**Step 10.** Celebrate! Your app is now online for the world to see!
+## *10.*Celebrate! Your app is now online for the world to see!
 
 <hr />
 
