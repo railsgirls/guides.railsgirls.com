@@ -14,6 +14,9 @@
     <link href="/css/bootstrap-responsive.css" rel="stylesheet" />
     <link href="/css/code.css" rel="stylesheet" />
     <link href="/css/style.css" rel="stylesheet" />
+    {% for css_name in page.extra_css %}
+        <link rel="stylesheet" href="/css/{{ css_name }}.css">
+    {% endfor %}
     <link href="/favicon.png" rel="shortcut icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
