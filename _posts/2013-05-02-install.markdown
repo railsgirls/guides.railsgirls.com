@@ -20,18 +20,18 @@ Follow the instructions for your operating system. If you run into any problems,
 
 ## Setup for OS X
 
-## *1.* Let&#8217;s check the version of the operating system.
+### *1.* Let&#8217;s check the version of the operating system.
 
 Click the Apple menu and choose *About this Mac*.
 
 ![Apple menu](/images/1.png "Apple menu")
 
-## *2.* In the window you will find the version of your operating system. 
+### *2.* In the window you will find the version of your operating system.
 If your version number starts with 10.6, 10.7, 10.8 or 10.9 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
 
 ![About this Mac dialog](/images/2.png "About this Mac dialog")
 
-## *3a.* If your OS X version is 10.6, 10.7, or 10.8:
+### *3a.* If your OS X version is 10.6, 10.7, or 10.8:
 Download the RailsInstaller for your version of OS X:
 
 * [RailsInstaller for 10.7 and 10.8](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz) <span class="muted">(325MB)</span>
@@ -51,7 +51,7 @@ Make sure that all works well by running the application generator command.
 rails new railsgirls
 {% endhighlight %}
 
-## *3b.* If your OS X version is 10.9:
+### *3b.* If your OS X version is 10.9:
 
 If your version number starts with 10.9, follow these steps. We are installing homebrew and rbenv.
 
@@ -104,11 +104,16 @@ rbenv global 2.1.2
 gem i rails --no-ri --no-rdoc
 {% endhighlight %}
 
-## *4.* Install a text editor to edit code files. 
+### *4.* Install a text editor to edit code files
 
 For the workshop we recommend the text editor Sublime Text.
 
 * [Download Sublime Text and install it](http://www.sublimetext.com/2)
+
+### *5.* Update your browser
+
+Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
+
 
 Now you should have a working Ruby on Rails programming setup. Congrats!
 
@@ -116,9 +121,17 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 ## Setup for Windows
 
+### *1.* Install Rails
+
 Download [RailsInstaller](https://github.com/railsinstaller/railsinstaller-windows/releases/download/2.2.2/railsinstaller-2.2.2.exe) and run it. Click through the installer using the default options.
 
-If the Rails version wasn't the latest, you could update it using a following command on "Command Prompt with Ruby on Rails".
+Open `Command Prompt with Ruby on Rails` and run the following command:
+
+{% highlight sh %}
+rails -v
+{% endhighlight %}
+
+If the Rails version is less than 4, update it using a following command:
 
 {% highlight sh %}
 gem update rails --no-ri --no-rdoc
@@ -128,21 +141,34 @@ Make sure that all works well by running the application generator command.
 
 {% highlight sh %}
 rails new railsgirls
+cd railsgirls
+rails server
 {% endhighlight %}
 
-**Final step.** You also need a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
+### *2.* Install a text editor to edit code files
+
+For the workshop we recommend the text editor Sublime Text.
 
 * [Download Sublime Text and install it](http://www.sublimetext.com/2)
 
 Now you should have a working Ruby on Rails programming setup. Congrats!
 
+### *3.* Update your browser
+
+If you use Internet Explorer, we recommend installing [Firefox](mozilla.org/firefox) or [Google Chrome](google.com/chrome).
+
+Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
+
 <hr />
 
 ## Setup for Linux
 
+### *1.* Install Rails
+
+
 To install the Ruby on Rails development environment you just need to copy the line below for your Linux distribution (Ubuntu or Fedora), paste it in the Terminal and press Enter. Enjoy the text flying on the screen; it will take quite some time. Grabbing a refreshing drink before starting is encouraged.
 
-**For Ubuntu:**
+#### For Ubuntu:
 
 {% highlight sh %}
 bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
@@ -150,7 +176,7 @@ bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/
 
 If you are going to use RVM installations with gnome-terminal, you'll probably need to change it's default options before you can see and use the right Ruby and Rails versions. Find out how: [RVM documentation](http://rvm.io/integration/gnome-terminal).
 
-**For Fedora:**
+#### For Fedora:
 
 {% highlight sh %}
 bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-fedora.sh)
@@ -158,13 +184,26 @@ bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/
 
 Make sure that all works well by running the application generator command.
 
+Make sure that all works well by running the application generator command.
+
 {% highlight sh %}
 rails new railsgirls
+cd railsgirls
+rails server
 {% endhighlight %}
 
-**Final step.** You also need a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
+
+### *2.* Install a text editor to edit code files
+
+For the workshop we recommend the text editor Sublime Text.
 
 * [Download Sublime Text and install it](http://www.sublimetext.com/2)
+
+
+### *3.* Update your browser
+
+Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
+
 
 Now you should have a working Ruby on Rails programming setup. Congrats!
 
