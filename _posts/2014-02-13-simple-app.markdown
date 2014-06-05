@@ -290,7 +290,7 @@ Now make sure you saved your files and refresh the browser to see what was chang
 **Coach:** Talk a little about CSS and layouts.
 
 
-## Step 4: Adding picture uploads
+## *4.*Adding picture uploads
 
 We need to install a piece of software to let us upload files in Rails.
 
@@ -383,7 +383,7 @@ Now refresh your browser to see what changed.
 **Coach:** Talk a little about HTML.
 
 
-## Step 5: Finetune the routes
+## *5.*Finetune the routes
 
 If you try to open [http://localhost:3000](http://localhost:3000) it still shows the "Welcome aboard" page. Let's make it redirect to the ideas page.
 

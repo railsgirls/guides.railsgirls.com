@@ -267,7 +267,7 @@ In case your Terminal shows you an error message that *sort of* implies there is
 **Coach:** Talk a little about CSS and layouts.
 
 
-## Step 4: Adding picture uploads
+## *4.*Adding picture uploads
 
 We need to install a piece of software to let us upload files in Rails.
 
@@ -360,7 +360,7 @@ Now refresh your browser to see what changed.
 **Coach:** Talk a little about HTML.
 
 
-## Step 5: Finetune the routes
+## *5.*Finetune the routes
 
 If you try to open [http://localhost:3000](http://localhost:3000) it still shows the "Welcome aboard" page. Let's make it redirect to the ideas page.
 
@@ -394,7 +394,7 @@ get "pages/info"
 
 Now you can open the file `app/views/pages/info.html.erb` and add information about you in HTML and then take your browser to [http://localhost:3000/pages/info](http://localhost:3000/pages/info) to see your new info page.
 
-## What next?
+## *6+.*What next?
 
 * Add design using HTML &amp; CSS
 * Add ratings
@@ -412,5 +412,5 @@ Now you can open the file `app/views/pages/info.html.erb` and add information ab
 * Guide 5: [Add Authentication (user accounts) with Devise by Piotr Steininger](/devise/)
 * Guide 6: [Adding profile pictures with Gravatar](/gravatar)
 * Guide 7: [Test your app with RSpec](/testing-rspec)
-* Guide 8: [Continuous Deployment with Travis-CI](/continuous-travis) / Continuous Deployment with Codeship](/continuous)
+* Guide 8: [Continuous Deployment with Travis-CI](/continuous-travis) / [Continuous Deployment with Codeship](/continuous)
 * Guide 9: [Go through additional explanations for the App by Lucy Bain](https://github.com/lbain/railsgirls)
