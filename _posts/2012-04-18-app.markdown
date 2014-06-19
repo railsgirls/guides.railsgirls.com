@@ -224,7 +224,9 @@ ___
 ## Step 4: Design
 
 
-The app doesn't look very nice yet. Let's do something about that. We'll use the Twitter Bootstrap project to give us nicer styling really easily.
+The app doesn't look very nice yet. Let's do something about that.
+
+[Twitter Bootstrap](http://getbootstrap.com/) is a free collection of styles that look nice. By including it in a web page, and following their conventions on how to structure the HTML, you get a nice style without much effort.
 
 Open `app/views/layouts/application.html.erb` in your text editor and above the line
 
@@ -311,9 +313,7 @@ Save the file again and refresh the browser to see what was changed.
 
 ### Play more if you want to
 
-[Bootstrap](http://getbootstrap.com/) is a free collection of styles that look nice. By including it in a web page, and following their conventions on how to structure the HTML, you get a nice style without much effort.
 
-But, if you want to experiment more with CSS and understand it better, you can play with it online. If you'd like to do that, go to [http://cssdesk.com/VFVEk](http://cssdesk.com/VFVEk).
 
 ___
 
