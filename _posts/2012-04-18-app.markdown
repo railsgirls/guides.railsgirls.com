@@ -127,9 +127,12 @@ rails server
 
 Open [http://localhost:3000](http://localhost:3000) in your browser. You should see the "Welcome aboard" page, which means that the generation of your new app worked correctly.
 
-Going back to the Terminal window, notice that now the command prompt is not visible because the Rails server took control of the window. To return to the normal command prompt, hit `CTRL-C` in the terminal to quit the server.
+Going back to the Terminal window, notice that now the command prompt is not visible because the Rails server took control of the window. When you don't see the command prompt, you cannot enter commands in the Terminal.
 
-Now that the server isn't working, refreshing [http://localhost:3000](http://localhost:3000) in your browser will show an error page.
+
+To return to the normal command prompt, hit `CTRL-C` in the terminal to quit the server. (Now that the server isn't working, refreshing [http://localhost:3000](http://localhost:3000) in your browser will show an error page.)
+
+
 
 **Coach:** Explain what each command does. What was generated? What does the server do?
 
@@ -147,8 +150,16 @@ ___
 
 Now open the file `app/views/pages/info.html.erb` and inspect its contents. What you see there was generated automatically, and it is written in a language called HTML.
 
+
+**Coach:** Talk briefly about routes (interface between URL and the app), Controllers and Views.
+
 ___
 
+Start the server again:
+
+{% highlight sh %}
+rails server
+{% endhighlight %}
 
 Open [http://localhost:3000/pages/info](http://localhost:3000/pages/info) in your browser to see the info page and try to figure out the connection between what is written in the `app/views/pages/info.html.erb` file and what you see in the browser (or ask your coach :D)
 
@@ -156,13 +167,15 @@ Open [http://localhost:3000/pages/info](http://localhost:3000/pages/info) in you
 
 ___
 
-The next step is to replace that text with some information about you. Afterwards, refresh the page in the browser to see it in the website.
+Now, replace the generated text with some useful information. You can add whatever you want, for example some text about yourself.
+
+Afterwards, refresh the page [http://localhost:3000/pages/info](http://localhost:3000/pages/info) in the browser to see the information that you added.
 
 ___
 
-To experiment a bit more with HTML, open [http://htmledit.squarefree.com/](http://htmledit.squarefree.com/) and play with the editor.
+To experiment a bit more with HTML, you can play with the editor from [http://htmledit.squarefree.com/](http://htmledit.squarefree.com/).
 
-Then you can ask your coach to show you more HTML tags and see how they work.
+Or you can ask your coach to show you more HTML tags and see how they work.
 
 
 ## Step 3: Create the `Idea` scaffold
@@ -197,13 +210,15 @@ rails server
   </div>
 </div>
 
+**Coach:** Talk about the separation between the application and the database.
+
 Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in your browser. Click around and test what you got by running these few command-line commands.
 
 When you're done exploring, hit `CTRL-C` in the Terminal to quit the server again.
 
 ___
 
-**Coach:** Talk about the relationship between HTML and Rails. What part of views is HTML and what is Embedded Ruby (ERB)? What is MVC and how does this relate to it? (Models and controllers are responsible for generating the HTML views.)
+**Coach:** Talk about dynamic websites, about saving data in a database and retrieving it. Explain Models and how they are used in Controllers. Talk about showing dynamic data in Views, using Embedded Ruby (ERB). Recap MVC, its the parts and their relationship to each other.
 
 
 ## Step 4: Design
@@ -304,16 +319,15 @@ ___
 
 You can also change the HTML &amp; CSS of your Ideas website - tell your coach what you'd like to do and they'll help you.
 
-One example would be to add, in the header, a link to the information page (from Step 1). Open `app/views/layouts/application.html.erb` and in the middle, replace
+One example would be to add, in the header, a link to the information page (from Step 1). Open `app/views/layouts/application.html.erb` and in the middle, after
 
 {% highlight html %}
           <li><a href="/ideas">Ideas</a></li>
 {% endhighlight %}
 
-with
+add
 
 {% highlight html %}
-          <li><a href="/ideas">Ideas</a></li>
           <li><a href="/pages/info">About</a></li>
 {% endhighlight %}
 
@@ -324,7 +338,9 @@ with
 
 We need to install a piece of software to let us upload files in Rails.
 
-Open `Gemfile` in the project directory using your text editor and under the line
+**Coach:** Explain what libraries are and why they are useful. Describe what open source software is.
+
+In the text editor, open `Gemfile` and under the line
 
 {% highlight ruby %}
 gem 'sqlite3'
@@ -336,18 +352,12 @@ add
 gem 'carrierwave'
 {% endhighlight %}
 
-**Coach:** Explain what libraries are and why they are useful. Describe what open source software is.
-
-In the terminal run:
+In the terminal, stop the server by pressing `CTRL-C`, and run the command that loads the new library:
 
 {% highlight sh %}
 bundle
 {% endhighlight %}
 
-
-At this point you need to **restart the Rails server process** in the terminal.
-
-Hit `CTRL-C` in the terminal to quit the server. Once it has stopped, you can press the up arrow to get to the last command entered, then hit enter to start the server again. (This is needed for the app to load the added library.)
 
 ___
 
@@ -397,9 +407,11 @@ to
 
 ___
 
-In your browser, add new idea with a picture. When you upload a picture it doesn't look nice because it only shows a path to the file, so let's fix that.
+Now let's start the server again. In the Terminal, you can press the UP arrow (repeatedly) to see the commands that you entered before. When you find `rails server`, hit enter to start the server again.
 
-Open `app/views/ideas/show.html.erb` and change
+In your browser, in the ideas page, [http://localhost:3000/ideas](http://localhost:3000/ideas), add a new idea with a picture.
+
+When you upload a picture, it would be nice to actually see it, but fow now it only shows the path to the file. Let's fix that: open `app/views/ideas/show.html.erb` and change
 
 {% highlight erb %}
 <%= @idea.picture %>
