@@ -167,7 +167,7 @@ rails new railsgirls
 **Final step.** You also need a text editor to edit code files. For the workshop we recommend the text editor Sublime Text.
 
 * [Download Sublime Text and install it](http://www.sublimetext.com/2)
-* Change the theme, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
+* Go to [http://colorsublime.com/how-to-install-a-theme](http://colorsublime.com/how-to-install-a-theme) and change the theme, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
 
 Now you should have a working Ruby on Rails programming setup. Congrats!
 
