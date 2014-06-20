@@ -48,13 +48,13 @@ Sign up for a [free GitHub account](https://github.com/signup/free) if you donâ€
 
 ### [*5.*Design](/touristic-autism_design)
 
-### [*6.*Image upload and Thumbnails](/touristic-autism_image-upload.markdown)
+### [*6.*Image upload and Thumbnails](/touristic-autism_image-upload)
 
 **Optional - for advanced Rails Girls:**
 
-### [*7.*Continuous Deployment](/_posts/2014-05-29-touristic-autism_continuous-deployment.markdown)
+### [*7.*Continuous Deployment](/touristic-autism_continuous-deployment)
 
-### [*8.*Continuous Testing and Integration](/_posts/2014-05-29-touristic-autism_static-pages-tdd.markdown)
+### [*8.*Continuous Testing and Integration](/touristic-autism_static-pages-tdd)
 
 
 
