@@ -44,10 +44,14 @@ routes, HTTP Methods: GET, POST, PUT and DELETE
 “Localhost” refers specifically to your computer (considered the “local host”), from which a server is being launched. Localhost provides a way for developers to see their application in a browser and test the functionality while it is still in development.
 
 ## <a id="2_create_idea_scaffold">*2.* Create Idea scaffold</a>
+
 ### What is Rails scaffolding?
+
 Every web application consists of many different concepts or resources (such as “users”, “ideas”, “posts”, “comments”, etc.).
 Rails scaffolding is a command (`rails generate scaffold`) for introducing a new resource into your application. It generates all of the code files necessary for representing and interacting with this resource.
+
 ### What is a model?
+
 In Rails, a model represents a definition of a resource in your application, and how it should interact with other parts of the application. Depending on the nature of the website, these resources could be users, posts, groups etc. When a model is generated, a corresponding *database table* is created. This database table contains information that represents specified attributes of the model, e.g. for a User model, there might be a ‘name’ column and an ‘email’ column, and there will be rows for each subsequent user created. In the application you are creating, these resources are ideas and the model is ‘Idea’.
 
 {% highlight rb %}

@@ -42,7 +42,7 @@ Every Rails Girls event starts with an installation-fest where the setup is pre-
 
 #### Friday evening: Installation
 
-19:00 - 21:00 Installations and getting to know each other
+19:00 - 21:00 Installations and getting to know each other  
 *Hint*: Have a coach table where problematic computers can be brought.
 
 Some installations will fail: be prepared to set women up in pairs, don't use endless amounts of time.
@@ -59,18 +59,19 @@ Go through the application with the coaches during dinner.
 
 #### Saturday: Workshop
 
-09:00 - 10:00 Registration and coffee
+09:00 - 10:00 Registration and coffee  
 *Hint* Reserve enough time for people to mingle and to solve any problems there might be with installations. Give out workbooks, collect acronyms for the Bento exercise.
 
-10:00 - 10:10 Welcoming words
+10:00 - 10:10 Welcoming words  
 *Hint* Mention sponsors, show what we'll build, tell what programming is.
 
 10:30 - 11:00 UX workshop
 
-11:00 - 11:30 Introduction to programming
+11:00 - 11:30 Introduction to programming  
 *Hint* Ask one of the coaches to do this. Explain why learning Ruby basics is important even though they'll be using Rails.
 
 Themes to cover:
+
 + The difference between dynamic and static websites: what are web apps?
 + What are programming languages? What is Rails?
 + The tools we’ll be using: browser, terminal, code editor, folder structure
@@ -109,6 +110,7 @@ Two exercises: 1) Going through the 10 technical concepts with the physical Bent
 Time to continue working on the applications. Monitor the situation: when it seems like people have a hard time concentrating, have the coaches or other speakers give quick lightning talks.
 
 Example topics for lighting talks:
+
 + Real (female) programmers telling what their career has been like.
 + Design: UX & UI. Making mockups together either with paper or computer.
 + Fun ways of explaining technical concepts and recent frameworks: what is CoffeeScript explained in 80s pop songs? How would you describe GitHub? What coding and creative writing have in common?
@@ -116,7 +118,7 @@ Example topics for lighting talks:
 
 Once everyone has finished their app, there is time to extend the application by modifying the CSS, implementing commenting systems etc. Allow enough time for experimentation.
 
-19:00 After party
+19:00 After party  
 *Hint:*
 Invite everyone, also the local developers, boys, those who weren't accepted, to join!
 
@@ -149,7 +151,7 @@ While the event is underway, remember to take pictures, collect tweets and ask q
 E-mail contact(a)railsgirls.com and ask to be included in the repo. Look for readme.txt for further instructions! Before making a site you should have at least two coaches and one sponsor onboard.
 
 
-+ [Counter for the site] (https://github.com/ys/rails-girls-count#readme)
++ [Counter for the site](https://github.com/ys/rails-girls-count#readme)
 
 #### How to find local developers?
 
@@ -254,11 +256,13 @@ Start by filling out [http://railsgirls.com/inyourcity](http://railsgirls.com/in
 
 #### Where can I find all the materials for posters, nametags, sample presentations and such?
 Check out below, and let us know if something is missing!
+
 + [Download materials](http://www.speakerdeck.com/u/railsgirls)
 
 #### What kind of venue is needed?
 
 We recommend choosing a venue with a built-in infrastructure for around 30-50 persons. For a programming event, this means:
+
 * High-speed, tested Internet. There’s going to be over 30 computers online all the time. Add to that mobilephones, streaming music, funny videos and you get the picture!
 * Space for 4-6 person groups to gather together: chairs and tables, sometimes big pillows will do! This doesn’t have to be in the same room.
 * Possibility to set up extension chords and a projector.
