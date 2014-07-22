@@ -386,7 +386,7 @@ Thank you for taking part in the Rails Girls event. We truly felt lucky to have 
 (Say a few words about the sponsors and coaches - thank you for the community)
 
 Three things we want to share:
-
+in
 Workshop Materials
 (Almost all) materials can be found in the guides section at http://guides.railsgirls.com. You can find presentations, materials and instructions from the workshop. If you took pictures or blogged about the event - let us know! We'll be publishing regularly on blog.railsgirls.com
 
@@ -428,7 +428,7 @@ This is a small checklist for your event. Rails Girls can be thrown together in 
 
 ### Before the event:
 
-* Fill in the [application](railsgirls.com/inyourcity) and the team will contact you!
+* Fill in the [application](http://railsgirls.com/inyourcity) and the team will contact you!
 * Start working with the project plan template on Google Docs
 * Decide dates and set a venue
 * Reach out for the local coaches - try finding five people who commit to taking part
