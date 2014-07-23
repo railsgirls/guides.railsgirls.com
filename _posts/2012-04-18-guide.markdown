@@ -30,6 +30,15 @@ The two-day event includes a lot of small group working and short focused talks 
 * Copy-pasting rules. Programming per se isn’t central - you can't really learn to speak Chinese in one day, in a similar manner you can only learn the basic vocabulary and expressions in coding. The goal of every event is to make something visible!
 * Girls run this world! But also women, ladies, even boys are allowed in. More than semantics we're interested in a mindset. Both founders were born in the Spice Girls era, they don't see the word girl as condescending or cutesy-cute.
 
+#### Codes of Conduct
+Rails Girls events are inclusive, friendly and safe environments. They have zero tolerance of harrasment or bullying. You can include a Code of Conduct to your event. Below are examples:
+* [http://railsgirlssummerofcode.org/about/code-of-conduct/](Rails Girls Summer of Code Code of Conduct)
+* [http://www.pyladies.com/CodeOfConduct/](PyLadies Code of Conduct)
+* [http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy](Geek Feminism Wiki Anti Harassment example)
+* [http://confcodeofconduct.com/](Conf Code of Conduct)
+* [https://docs.google.com/document/d/1XEnFI3R30IiGXOpC4idb0ku3pw8OoJcBpG9mg3iKiAo/edit](Rails Girls DC Code of Conduct)
+* [https://docs.google.com/document/d/1EiTZ-__VDuXpN1OqgVKnYr2Km_N3fD9WWN3g5cv5hAA/edit](Rails Girls NZ Code of Conduct)
+
 ### Example Program
 
 Every Rails Girls event starts with an installation-fest where the setup is pre-installed to the girl's computers. See [guides.railsgirls.com/install](http://guides.railsgirls.com/install) for readymade instructions. The installation-fest can include short talks, but the main point is to offer some sparkling wine, get everything set for the next day and the women to know each other. The timeframe is tentative - you know your audience and what suits them best. We've hosted events both during weekend and weekdays. Also, doing two evenings (4PM - 22 PM) might be a more suitable solution for your community needs.
