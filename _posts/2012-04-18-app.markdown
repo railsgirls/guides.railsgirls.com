@@ -199,8 +199,8 @@ Open `app/views/layouts/application.html.erb` in your text editor and above the 
 add
 
 {% highlight erb %}
-<link rel="stylesheet" href="//railsgirls.com/assets/bootstrap.css" />
-<link rel="stylesheet" href="//railsgirls.com/assets/bootstrap-theme.css" />
+<link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css" />
+<link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap-theme.css" />
 {% endhighlight %}
 
 and replace
@@ -248,7 +248,7 @@ and before `</body>` add
     Rails Girls 2014
   </div>
 </footer>
-<script src="//railsgirls.com/assets/bootstrap.js"></script>
+<script src="http://railsgirls.com/assets/bootstrap.js"></script>
 {% endhighlight %}
 
 Now let's also change the styling of the ideas table. Open `app/assets/stylesheets/application.css` and at the bottom add
