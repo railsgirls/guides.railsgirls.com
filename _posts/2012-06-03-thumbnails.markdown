@@ -28,7 +28,7 @@ used before?
 Open `Gemfile` in the project and add
 
 {% highlight ruby %}
-gem 'mini_magick', '3.5.0'
+gem 'mini_magick', '3.8.0'
 {% endhighlight %}
 
 under the line
