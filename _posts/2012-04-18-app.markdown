@@ -367,7 +367,7 @@ If you try to open [http://localhost:3000](http://localhost:3000) it still shows
 Open `config/routes.rb` and after the first line add
 
 {% highlight ruby %}
-root :to => redirect('/ideas')
+root :to => 'ideas#index'
 {% endhighlight %}
 
 Test the change by opening the root path (that is, http://localhost:3000/) in your browser.
