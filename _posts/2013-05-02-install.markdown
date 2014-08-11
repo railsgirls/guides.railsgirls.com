@@ -151,22 +151,10 @@ rails server
 
 For the workshop we recommend the text editor Atom.
 
-Install [Atom](https://github.com/atom/atom/blob/master/README.md#windows) with follow steps.
-
-* Install [chocolatey](https://chocolatey.org/)
-  * Open Command Prompt and run this command.
-{% highlight sh %}
-@powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
-{% endhighlight %}
-
-* Close and reopen Command Prompt.
-
-* Run this command. (You might confirm to authorize admin rights on the way to install.)
-{% highlight sh %}
-cinst Atom
-{% endhighlight %}
-
-* You can launch Atom editor with search by the word "atom" on your windows search.
+* [Download Atom and install it](https://github.com/atom/atom/releases/latest)
+  * Download an atom zip file for windows and decompress it.
+  * Copy the folder into your Program Files.
+  * Launch atom in the folder.
 
 If you are using Windows Vista or before versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2).
 
