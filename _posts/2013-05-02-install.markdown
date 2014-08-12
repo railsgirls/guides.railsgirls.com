@@ -110,7 +110,7 @@ For the workshop we recommend the text editor Atom.
 
 * [Download Atom and install it](https://atom.io/)
 
-If you are using Mac OS X 10.7 or before versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2).
+If you are using Mac OS X 10.7 or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2).
 
 ### *5.* Update your browser
 
@@ -156,7 +156,7 @@ For the workshop we recommend the text editor Atom.
   * Copy the folder into your Program Files.
   * Launch atom in the folder.
 
-If you are using Windows Vista or before versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2).
+If you are using Windows Vista or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2).
 
 Now you should have a working Ruby on Rails programming setup. Congrats!
 
