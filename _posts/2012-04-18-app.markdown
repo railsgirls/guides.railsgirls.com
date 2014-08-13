@@ -127,7 +127,7 @@ rails server
   </div>
 </div>
 
-Open [http://localhost:3000](http://localhost:3000) in your browser. You should see "Welcome aboard" page, which means that the generation of your new app worked correctly.
+Open <http://localhost:3000> in your browser. You should see "Welcome aboard" page, which means that the generation of your new app worked correctly.
 
 Notice in this window the command prompt is not visible because you are now in the Rails server, the command prompt looks like this:
 
@@ -179,7 +179,7 @@ rails server
   </div>
 </div>
 
-Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in your browser. Click around and test what you got by running these few command-line commands.
+Open <http://localhost:3000/ideas> in your browser. Click around and test what you got by running these few command-line commands.
 
 Hit `CTRL-C` to quit the server again when you've clicked around a little.
 
@@ -362,7 +362,7 @@ Now refresh your browser to see what changed.
 
 ## *5.*Finetune the routes
 
-If you try to open [http://localhost:3000](http://localhost:3000) it still shows the "Welcome aboard" page. Let's make it redirect to the ideas page.
+If you try to open <http://localhost:3000> it still shows the "Welcome aboard" page. Let's make it redirect to the ideas page.
 
 Open `config/routes.rb` and after the first line add
 
@@ -370,7 +370,7 @@ Open `config/routes.rb` and after the first line add
 root :to => redirect('/ideas')
 {% endhighlight %}
 
-Test the change by opening the root path (that is, http://localhost:3000/) in your browser.
+Test the change by opening the root path (that is, <http://localhost:3000/>) in your browser.
 
 **Coach:** Talk about routes, and include details on the order of routes and their relation to static files.
 
@@ -392,7 +392,7 @@ It also adds a new simple route to your routes.rb.
 get "pages/info"
 {% endhighlight %}
 
-Now you can open the file `app/views/pages/info.html.erb` and add information about you in HTML and then take your browser to [http://localhost:3000/pages/info](http://localhost:3000/pages/info) to see your new info page.
+Now you can open the file `app/views/pages/info.html.erb` and add information about you in HTML and then take your browser to <http://localhost:3000/pages/info> to see your new info page.
 
 ## *6+.*What next?
 
