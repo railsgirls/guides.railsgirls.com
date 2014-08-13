@@ -8,11 +8,11 @@ permalink: commenting
 
 We are going to add the possibility to comment on ideas in your *railsgirls* application.
 
-The instructions for installing rails and building the ideas app can be found [here](/app)
+The instructions for installing rails and building the ideas app can be found [here](/app).
 
 ## *1.*Create comment scaffold
 
-Create a comment scaffold, with the commentator name, the comment body (contents of the comment) and with the reference to the ideas table (idea_id).
+Create a comment scaffold, with the commentator name, the comment body (contents of the comment) and with the reference to the ideas table (`idea_id`).
 {% highlight sh %}
 rails g scaffold comment user_name:string body:text idea_id:integer
 {% endhighlight %}
@@ -34,7 +34,7 @@ add
 has_many :comments
 {% endhighlight %}
 
-The comment also has to know that it belongs to an idea. So open app/models/comment.rb and after
+The comment also has to know that it belongs to an idea. So open `app/models/comment.rb` and after
 {% highlight ruby %}
 class Comment < ActiveRecord::Base
 {% endhighlight %}
@@ -65,7 +65,7 @@ add
 <%= render 'comments/form' %>
 {% endhighlight %}
 
-In app/controllers/ideas_controller.rb add to show action after the row
+In `app/controllers/ideas_controller.rb` add to show action after the row
 {% highlight ruby %}
 @idea = Idea.find(params[:id])
 {% endhighlight %}
@@ -76,7 +76,7 @@ this
 @comment = @idea.comments.build
 {% endhighlight %}
 
-Open app/views/comments/_form.html and after
+Open `app/views/comments/_form.html.erb` and after
 {% highlight erb %}
   <div class="field">
     <%= f.label :body %><br />
