@@ -29,7 +29,7 @@ git add .
 git commit -m "initial commit"
 {% endhighlight %}
 
-__COACH__: This would be a good time to talk about version control systems and git, also explain the .gitignore and why we don't want these files included.
+__COACH__: This would be a good time to talk about version control systems and git, also explain the `.gitignore` and why we don't want these files included.
 
 #### Updating our database
 
@@ -52,11 +52,12 @@ end
 
 Run `bundle install --without production` to setup your dependencies.
 
-__COACH__: You can talk about RDBMS and the different ones out there, plus include some details on Heroku's dependency on Postgresql.
+__COACH__: You can talk about RDBMS and the different ones out there, plus include some details on Heroku's dependency on PostgreSQL.
 
-#### Adding rails\_12factor
 
-Next, we need to add rails\_12factor entry into our Gemfile to make our app available on Heroku.
+#### Adding rails_12factor
+
+Next, we need to add `rails_12factor` entry into our Gemfile to make our app available on Heroku.
 
 This gem modifies the way Rails works to suit Heroku, for example Logging is updated and the configuration for static assets (your images, stylesheets and javascript files) is tweaked to work properly within Heroku's systems.
 
@@ -90,49 +91,51 @@ __COACH__: You can talk about logging on Heroku, as well as its other quirks.
 
 #### App creation
 
-We need to create our heroku app by typing `heroku create` in the terminal and see something like this:
+We need to create our Heroku app by typing `heroku create` in the terminal and see something like this:
 
 {% highlight sh %}
-Creating evening-sky-7498... done, stack is cedar
-http://evening-sky-7498.herokuapp.com/ | git@heroku.com:evening-sky-7498.git
+Creating sheltered-refuge-6377... done, stack is cedar
+http://sheltered-refuge-6377.herokuapp.com/ | git@heroku.com:sheltered-refuge-6377.git
 Git remote heroku added
 {% endhighlight %}
 
-In this case "evening-sky-7498" is your app name.
+In this case "sheltered-refuge-6377" is your app name.
 
 #### Pushing the code
 
 Next we need to push our code to heroku by typing `git push heroku master`. You'll see push output like the following:
 
 {% highlight sh %}
-Counting objects: 134, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (115/115), done.
-Writing objects: 100% (134/134), 35.29 KiB, done.
-Total 134 (delta 26), reused 0 (delta 0)
+Initializing repository, done.
+Counting objects: 101, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (91/91), done.
+Writing objects: 100% (101/101), 22.68 KiB | 0 bytes/s, done.
+Total 101 (delta 6), reused 0 (delta 0)
 
------> Heroku receiving push
------> Ruby/Rails app detected
------> Installing dependencies using Bundler version 1.1.2
-       Running: bundle install --without development:test --path vendor/bundle --binstubs bin/ --deployment
-       Fetching gem metadata from https://rubygems.org/.......
+-----> Ruby app detected
+-----> Compiling Ruby/Rails
+-----> Using Ruby version: ruby-2.0.0
+-----> Installing dependencies using 1.6.3
+       Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+       Fetching gem metadata from https://rubygems.org/..........
 ...
------> Launching... done, v4
-       http://evening-sky-7498.herokuapp.com deployed to Heroku
+-----> Launching... done, v6
+       http://sheltered-refuge-6377.herokuapp.com/ deployed to Heroku
 {% endhighlight %}
 
 You'll know the app is done being pushed, when you see the "Launching..." text like above.
 
 #### Migrate database
 
-Next we need to migrate our database like we did locally during the workshop: `heroku run rake db:migrate`
+Next we need to migrate our database like we did locally during the workshop: `heroku run rake db:migrate`.
 
-When that command is finished being run, you can hit the app based on the url. For this example app, you can go to [http://evening-sky-7498.herokuapp.com/](http://evening-sky-7498.herokuapp.com). You can also type `heroku open` in the terminal to visit the page.
+When that command is finished being run, you can hit the app based on the url. For this example app, you can go to <http://sheltered-refuge-6377.herokuapp.com/>. You can also type `heroku open` in the terminal to visit the page.
 
 
 #### Closing notes
 
-Heroku's platform is not without its quirks. Applications run on Heroku live within an ephermeral environment - this means that (except for information stored in your database) any files created by your application will disappear if it restarts (for example, when you push a new version).
+Heroku's platform is not without its quirks. Applications run on Heroku live within an ephermeral environment — this means that (except for information stored in your database) any files created by your application will disappear if it restarts (for example, when you push a new version).
 
 ###### [Ephemeral filesystem](https://devcenter.heroku.com/articles/dynos#ephemeral-filesystem)
 > Each dyno gets its own ephemeral filesystem, with a fresh copy of the most recently deployed code. During the dyno’s lifetime its running processes can use the filesystem as a temporary scratchpad, but no files that are written are visible to processes in any other dyno and any files written will be discarded the moment the dyno is stopped or restarted.
