@@ -199,8 +199,8 @@ Open `app/views/layouts/application.html.erb` in your text editor and above the 
 add
 
 {% highlight erb %}
-<link rel="stylesheet" href="//railsgirls.com/assets/bootstrap.css" />
-<link rel="stylesheet" href="//railsgirls.com/assets/bootstrap-theme.css" />
+<link rel="stylesheet" href="//railsgirls.com/assets/bootstrap.css">
+<link rel="stylesheet" href="//railsgirls.com/assets/bootstrap-theme.css">
 {% endhighlight %}
 
 and replace
