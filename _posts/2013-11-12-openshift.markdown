@@ -89,10 +89,12 @@ cp ../openshiftapp/config/database.yml config
   <div class="win">
 {% highlight sh %}
 xcopy /e /i ..\openshiftapp\.openshift .openshift
-copy ..\openshiftapp\config\database.yml config
+xcopy /y ..\openshiftapp\config\database.yml config
 {% endhighlight %}
   </div>
 </div>
+
+Check that the copying has worked by looking in the `railsgirls` app directory. There should now be a subdirectory called `.openshift`. Open the file `config/database.yml`; it should now contain OpenShift environment variables such as `OPENSHIFT_APP_NAME`. If your `database.yml` file does not contain variables like this, try opening `.openshift/config/database.yml` or `openshiftapp/config/database.yml` in your editor and copying across the contents of the file. 
 
 Add and commit the new and changed files in Git with the below commands.
 
