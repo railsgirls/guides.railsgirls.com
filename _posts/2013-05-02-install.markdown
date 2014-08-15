@@ -109,6 +109,7 @@ gem i rails --no-ri --no-rdoc
 For the workshop we recommend the text editor Sublime Text.
 
 * [Download Sublime Text and install it](http://www.sublimetext.com/2)
+* Change the theme, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
 
 ### *5.* Update your browser
 
@@ -150,6 +151,7 @@ rails server
 For the workshop we recommend the text editor Sublime Text.
 
 * [Download Sublime Text and install it](http://www.sublimetext.com/2)
+* Change the theme, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
 
 Now you should have a working Ruby on Rails programming setup. Congrats!
 
@@ -198,6 +200,7 @@ rails server
 For the workshop we recommend the text editor Sublime Text.
 
 * [Download Sublime Text and install it](http://www.sublimetext.com/2)
+* Go to [http://colorsublime.com/how-to-install-a-theme](http://colorsublime.com/how-to-install-a-theme) and change the theme, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
 
 
 ### *3.* Update your browser
