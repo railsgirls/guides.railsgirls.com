@@ -106,9 +106,11 @@ gem i rails --no-ri --no-rdoc
 
 ### *4.* Install a text editor to edit code files
 
-For the workshop we recommend the text editor Sublime Text.
+For the workshop we recommend the text editor Atom.
 
-* [Download Sublime Text and install it](http://www.sublimetext.com/2)
+* [Download Atom and install it](https://atom.io/)
+
+If you are using Mac OS X 10.7 or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2).
 
 ### *5.* Update your browser
 
@@ -147,9 +149,14 @@ rails server
 
 ### *2.* Install a text editor to edit code files
 
-For the workshop we recommend the text editor Sublime Text.
+For the workshop we recommend the text editor Atom.
 
-* [Download Sublime Text and install it](http://www.sublimetext.com/2)
+* [Download Atom and install it](https://github.com/atom/atom/releases/latest)
+  * Download an atom zip file for windows and decompress it.
+  * Copy the folder into your Program Files.
+  * Launch atom in the folder.
+
+If you are using Windows Vista or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2).
 
 Now you should have a working Ruby on Rails programming setup. Congrats!
 
