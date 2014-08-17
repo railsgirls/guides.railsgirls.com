@@ -254,6 +254,6 @@ Go to [https://nitrous.io](https://nitrous.io/) and signup for free.
 * In the middle, you find the editor where you can modify your files
 * At the bottom, you find the terminal where you can run commands
 * Everything you need is here in you browser window - you do not need to start an editor or terminal anywhere else
-* If your following a guide or tutorial, use the commands for linux even if you are on a windows computer - your operating system does not matter, since all commands are run on your development box, which is a linux machine
+* If your following a guide or tutorial, use the commands for Linux even if you are on a Windows computer - your operating system does not matter, since all commands are run on your development box, which is a Linux machine
 * If a guide or tutorial asks you to point your browser to something like http://localhost:3000, go to the 'Preview' menu and pick 'Port 3000'
 * If, for example, you're asked to open http://localhost:3000/posts, please append '/posts' manually to the URL that has been opened
