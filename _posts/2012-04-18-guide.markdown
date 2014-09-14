@@ -280,7 +280,7 @@ We recommend choosing a venue with a built-in infrastructure for around 30-50 pe
 * Enough electric outlets to spare. Some women might have older laptops that will need to be plugged in at all times.
 * Location for food and beverage setup - lunch space for catering or a nearby lunch venue.
 * External monitors for teams are encouraged but not mandatory, helps the coaches show what is happening in the code.
-* Whiteboards can be helpful for coaches to explain more abstract concept. Alternatively, paper and pen work just fine. Just have something at hand people can draw on.
+* Whiteboards can be helpful for coaches to explain more abstract concepts. Alternatively, paper and pen work just fine. Just have something at hand people can draw on.
 
 Ask where local developer meetings are usually hosted. Often co-working spaces are also willing to negotiate deals to gain some visibility among new people.
 
@@ -412,7 +412,7 @@ Two things to keep you going:
 
 There was a LOT of interest in doing follow-up events. If you have ideas for this or want to volunteer for the organizing team, let us know and sign up for the group e-mailing list at http://groups.google.com/group/rails-girls-team!
 
-And thats all for now,
+And that’s all for now,
 Your Rails Girls team
 
 
@@ -424,7 +424,7 @@ Your Rails Girls team
 Inviting real developers to coach is Rails Girls sessions not only gives the participants a chance for hands-on education, but also makes the barrier to enter the technology world lower. How to keep the women coding?
 
 * Encourage them to continue practicing by trying different exercises like Codecademy and such.
-* Mention at least two forthcoming developer events where the local coaches will be. Try to get the women to attend actual developer meetups
+* Mention at least two forthcoming developer events where the local coaches will be. Try to get the women to attend actual developer meetups.
 * Invite everyone to the Facebook Group where they can ask questions.
 * Invite the women together again within a month. You can host these meetups at the Rails Girls global meetup page <http://www.meetup.com/Rails-Girls/> - we’ll be happy to promote events. However, it doesn't matter under which brand you want to continue meeting - the important thing'
 * Write about your event for blog.railsgirls.com by [submitting a story](http://blog.railsgirls.com/submit)
