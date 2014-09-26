@@ -65,7 +65,7 @@ xcode-select --install
 #### *3b2.* Install [Homebrew](http://brew.sh/):
 
 {% highlight sh %}
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 {% endhighlight %}
 
 #### *3b3.* Install [rbenv](https://github.com/sstephenson/rbenv):
