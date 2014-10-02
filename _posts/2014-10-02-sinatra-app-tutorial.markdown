@@ -24,13 +24,14 @@ Remember how we needed to install Ruby on Rails? Similarly we need to install Si
 
 Create a `suffragist.rb` file with the following contents:
 
-```Ruby
+{% highlight ruby %}
 require 'sinatra'
 
 get '/' do
   'Hello, voter!'
 end
-```
+{% endhighlight %}
+
 
 You can actually call your Ruby file whatever you'd like. `vote.rb` for instance would totally work as well, when used consistently. But [suffragist](http://www.vocabulary.com/dictionary/suffragist) actually references to a super important event in the women's rights movement, so let's just go with that for now!  
 
@@ -53,7 +54,7 @@ a directory for our views (and name it `views`).
 
 Put this code into an `index.erb` file in the `views` directory:
 
-```HTML
+{% highlight erb %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -78,26 +79,26 @@ Put this code into an `index.erb` file in the `views` directory:
     </form>
   </body>
 </html>
-```
+{% endhighlight %}
 
 And into `suffragist.rb`:
 
-```Ruby
+{% highlight ruby %}
 Choices = {
   'HAM' => 'Hamburger',
   'PIZ' => 'Pizza',
   'CUR' => 'Curry',
   'NOO' => 'Noodles',
 }
-```
+{% endhighlight %}
 
 Change the `get` action:
 
-```Ruby
+{% highlight ruby %}
 get '/' do
   erb :index
 end
-```
+{% endhighlight %}
 
 Run `ruby suffragist.rb`, check your
 results and quit the server with `ctrl-c`.
@@ -112,22 +113,20 @@ templates. Explain what global constants are.
 Adjust the `index.erb` file in the `views`
 directory and add the `<h1>…</h1>` line:
 
-```HTML
-…
+{% highlight erb %}
   <body class='container'>
     <h1><%= @title %></h1>
     <p>What's for dinner?</p>
-…
-```
+{% endhighlight %}
 
 Change the `get` action:
 
-```Ruby
+{% highlight ruby %}
 get '/' do
   @title = 'Welcome to the Suffragist!'
   erb :index
 end
-```
+{% endhighlight %}
 
 __COACH__: Explain what instance variables are and
 how Sinatra makes them visible in the views.
@@ -138,18 +137,18 @@ how Sinatra makes them visible in the views.
 
 Put this into `suffragist.rb`:
 
-```Ruby
+{% highlight ruby %}
 post '/cast' do
   @title = 'Thanks for casting your vote!'
   @vote  = params['vote']
   erb :cast
 end
-```
+{% endhighlight %}
 
 Create a new file in the `views` directory, `cast.erb`,
 and put there some HTML with embedded Ruby code:
 
-```HTML
+{% highlight erb %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -163,7 +162,7 @@ and put there some HTML with embedded Ruby code:
     <p><a href='/results'>See the results!</a></p>
   </body>
 </html>
-```
+{% endhighlight %}
 
 __COACH__: Explain how POST works. How to catch what
 was sent in the form? Where do `params` come from?
@@ -175,7 +174,7 @@ was sent in the form? Where do `params` come from?
 Create a `layout.erb` file in the `views`
 directory. Put the following in there:
 
-```HTML
+{% highlight erb %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -188,7 +187,7 @@ directory. Put the following in there:
     <%= yield %>
   </body>
 </html>
-```
+{% endhighlight %}
 
 Remove the above part from the other two templates
 (`index.erb` and `cast.erb` in the `views` directory).
@@ -202,16 +201,16 @@ out common code work in general. Explain what `yield` does.
 
 Paste the following code into `suffragist.rb`:
 
-```Ruby
+{% highlight ruby %}
 get '/results' do
   @votes = { 'waw' => 7, 'krk' => 5 }
   erb :results
 end
-```
+{% endhighlight %}
 
 Create a new file in the `views` directory, called `results.erb`.
 
-```HTML
+{% highlight erb %}
 <table class='table table-hover table-striped'>
   <% Choices.each do |id, text| %>
     <tr>
@@ -222,7 +221,7 @@ Create a new file in the `views` directory, called `results.erb`.
   <% end %>
 </table>
 <p><a href='/'>Cast more votes!</a></p>
-```
+{% endhighlight %}
 
 Run `ruby suffragist.rb`, check
 your results and quit the server with `ctrl-c`.
@@ -238,14 +237,14 @@ Time for something new! Let’s store our choices.
 
 Add the following to the top of `suffragist.rb`:
 
-```Ruby
+{% highlight ruby %}
 require 'yaml/store'
-```
+{% endhighlight %}
 
 Add some more code into `suffragist.rb` – replace
 `post '/cast'` and `get '/results'` with the following:
 
-```Ruby
+{% highlight ruby %}
 post '/cast' do
   @title = 'Thanks for casting your vote!'
   @vote  = params['vote']
@@ -264,7 +263,7 @@ get '/results' do
   @votes = @store.transaction { @store['votes'] }
   erb :results
 end
-```
+{% endhighlight %}
 
 __COACH__: Explain what YAML is.
 
