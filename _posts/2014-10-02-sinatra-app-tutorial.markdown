@@ -10,6 +10,8 @@ permalink: sinatra-app
 
 We will create a little voting app from scratch using a web development framework for Ruby called Sinatra, which is much like Ruby on Rails. Just another tool to get the job done really, and a fun one too!
 
+Imagine your group of friends is figuring out what to order for your weekly movie watching marathon. With the many fast food options out there, this can become quite a discussion. This is where our app comes into play!
+
 __COACH__: Explain shortly what [Sinatra](http://www.sinatrarb.com) is.
 
 ## Install Sinatra
@@ -230,7 +232,7 @@ missing values from the hash default to zero.
 
 
 
-### Persist the results using `YAML::Store`
+### Persist the results using YAML::Store
 
 Time for something new! Let’s store our choices.
 
