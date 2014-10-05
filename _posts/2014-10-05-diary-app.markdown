@@ -4,7 +4,7 @@ title: Rails Girls Diary tutorial
 permalink: diary-app
 ---
 
-# Create your first voting app with Sinatra
+# Create your first diary app with Ruby on Rails
 
 *Created by Piotr Szotkowski, [@chastell](https://twitter.com/chastell)*
 
