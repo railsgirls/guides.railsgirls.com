@@ -6,7 +6,7 @@ permalink: diary-app
 
 # Create your first diary app with Ruby on Rails
 
-*Created by Piotr Szotkowski, [@chastell](https://twitter.com/chastell)*
+*Created by Piotr Szotkowski ([chastell](http://chastell.net)) and Tomasz Stachewicz ([tomash](http://tomash.wrug.eu/about.html))*
 
 We will create a little voting app from scratch using a web development framework for Ruby called Rails. Think what your first application should be about – ideally something simple that includes a collection of some sort: e.g., a to-do list, a diary, etc. We’ll use a diary as the base here.
 
