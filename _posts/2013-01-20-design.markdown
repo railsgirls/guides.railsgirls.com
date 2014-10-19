@@ -12,20 +12,6 @@ Now the app is running well, but it still looks like scaffold. Let's add some de
 
 ## *1.*Adjust the application layout
 
-First, let's use bootstrap.min.css to apply a more lightweight style set to your app.
-
-Open `app/views/layouts/application.html.erb` in your text editor and replace the line
-
-{% highlight html %}
-<link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css">
-{% endhighlight %}
-
-with
-
-{% highlight html %}
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap.min.css">
-{% endhighlight %}
-
 Open `app/assets/stylesheets/application.css`, replace the line
 
 {% highlight html %}
