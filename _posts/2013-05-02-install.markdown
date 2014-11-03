@@ -28,7 +28,7 @@ Click the Apple menu and choose *About this Mac*.
 ![Apple menu](/images/1.png "Apple menu")
 
 ### *2.* In the window you will find the version of your operating system.
-If your version number starts with 10.6, 10.7, 10.8 or 10.9 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
+If your version number starts with 10.6, 10.7, 10.8, 10.9 or 10.10 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
 
 ![About this Mac dialog](/images/2.png "About this Mac dialog")
 
@@ -104,6 +104,38 @@ rbenv global 2.1.2
 {% highlight sh %}
 gem i rails --no-ri --no-rdoc
 {% endhighlight %}
+
+### *3c.* If your OS X version is 10.10:
+
+Mac OS X comes with a “system Ruby” pre-installed. Mac OS X Yosemite includes Ruby 2.0.0p481 which is not the newest version. You should update to Ruby 2.1.3 by using [RVM](https://rvm.io/), the Ruby Version Manager. First install RVM:
+
+{% highlight sh %}
+\curl -L https://get.rvm.io | bash -s stable --ruby
+{% endhighlight %}
+
+The ```--ruby``` flag will install the newest version of Ruby.
+
+Check for [the current version of Rails](http://rubygems.org/gems/rails).
+
+Now normally, you'd install Rails into what's called *the global gemset*. Instead, we'll make a gemset just for the current stable release:
+
+{% highlight sh %}
+rvm use ruby-2.1.3@rails4.1 --create
+{% endhighlight %}
+
+And then, if you want the most recent stable release for your project:
+
+{% highlight sh %}
+gem install rails
+{% endhighlight %}
+
+Run
+
+{% highlight sh %}
+$ rails -v
+{% endhighlight %}
+
+... to check if you are actually using the most current Rails version.
 
 ### *4.* Install a text editor to edit code files
 
@@ -240,7 +272,7 @@ Go to [https://nitrous.io](https://nitrous.io/) and signup for free.
 * Login to your nitrous account
 * Go to the dashboard by using the green 'Open dashboard' button
 * Create a nitrous box: pick Ruby/Rails from the templates - everything else can stay as is, but you can change the name of your box if you want to
-* It takes a moment until your box is ready 
+* It takes a moment until your box is ready
 
 ### *4.* Find and restart your development box
 * If you've just created your box, you can probably skip these steps - they're good to know if you login to nitrous again later
