@@ -46,7 +46,7 @@ belongs_to :idea
 
 ## *3.*Render the comment form and existing comments
 
-Open app/views/ideas/show.html and after the image_tag
+Open app/views/ideas/show.html.erb and after the image_tag
 {% highlight erb %}
 <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
 {% endhighlight %}
