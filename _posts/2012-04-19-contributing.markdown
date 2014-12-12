@@ -16,7 +16,7 @@ The guides site uses [jekyll](https://github.com/mojombo/jekyll) to power the si
 ---
 layout: default
 title: Name of the Guide
-permalink: one-word-summary.html
+permalink: one-word-summary
 ---
 {% endhighlight %}
 5. Commit this new guide to your git repo.
