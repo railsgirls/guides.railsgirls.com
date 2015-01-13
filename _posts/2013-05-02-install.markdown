@@ -125,7 +125,7 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 ### *1.* Install Rails
 
-Download [RailsInstaller](https://github.com/railsinstaller/railsinstaller-windows/releases/download/2.2.2/railsinstaller-2.2.2.exe) and run it. Click through the installer using the default options.
+Download [RailsInstaller](https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.1.0.exe) and run it. Click through the installer using the default options.
 
 Open `Command Prompt with Ruby on Rails` and run the following command:
 
