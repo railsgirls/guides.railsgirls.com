@@ -12,20 +12,6 @@ Now the app is running well, but it still looks like scaffold. Let's add some de
 
 ## *1.*Adjust the application layout
 
-First, let's use bootstrap.min.css to apply a more lightweight style set to your app.
-
-Open `app/views/layouts/application.html.erb` in your text editor and replace the line
-
-{% highlight html %}
-<link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css">
-{% endhighlight %}
-
-with
-
-{% highlight html %}
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap.min.css">
-{% endhighlight %}
-
 Open `app/assets/stylesheets/application.css`, replace the line
 
 {% highlight html %}
@@ -71,8 +57,8 @@ Open `app/views/ideas/index.html.erb` in your text editor and replace all lines 
 <% @ideas.in_groups_of(3) do |group| %>
   <div class="row">
     <% group.compact.each do |idea| %>
-      <div class="span4">
-        <%= image_tag idea.picture_url, :width => '100%' if idea.picture.present?%>
+      <div class="col-md-4">
+        <%= image_tag idea.picture_url, width: '100%' if idea.picture.present?%>
         <h4><%= link_to idea.name, idea %></h4>
         <%= idea.description %>
       </div>
@@ -95,16 +81,16 @@ Open `app/views/ideas/show.html.erb` in your text editor and replace all lines w
 <p id="notice"><%= notice %></p>
 
 <div class="row">
-  <div class="span9">
-    <%= image_tag(@idea.picture_url, :width => "100%") if @idea.picture.present? %>
+  <div class="col-md-9">
+    <%= image_tag(@idea.picture_url, width: '100%') if @idea.picture.present? %>
   </div>
 
-  <div class="span3">
+  <div class="col-md-3">
     <p><b>Name: </b><%= @idea.name %></p>
     <p><b>Description: </b><%= @idea.description %></p>
     <p>
       <%= link_to 'Edit', edit_idea_path(@idea) %> |
-      <%= link_to 'Destroy', @idea, confirm: 'Are you sure?', method: :delete %> |
+      <%= link_to 'Destroy', @idea, data: { confirm: 'Are you sure?' }, method: :delete %> |
       <%= link_to 'Back', ideas_path %>
     </p>
   </div>
