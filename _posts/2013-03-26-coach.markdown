@@ -86,6 +86,7 @@ Some other great first-hand tips from Rails Girls coaches:
 - [I infiltrated #railsgirlslj, here’s what it was like](http://swizec.com/blog/i-infiltrated-railsgirlsj-heres-what-it-was-like/swizec/5717)
 - [8 ways to enable workshop attendess to keep learning](http://pragtob.wordpress.com/2013/06/14/8-ways-to-enable-workshop-attendess-to-keep-learning/)
 - [What I learned learning Rails / becoming a better teacher](http://floordrees.tumblr.com/post/58784746482/what-i-learned-learning-rails-becoming-a-better)
+- [Tips for coaching a programming study group](http://coaching.rubymonstas.org/)
 
 [app]: http://guides.railsgirls.com/app
 [install]: http://guides.railsgirls.com/install/
