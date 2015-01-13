@@ -27,7 +27,7 @@ Click the Apple menu and choose *About this Mac*.
 ![Apple menu](/images/1.png "Apple menu")
 
 ### *2.* In the window you will find the version of your operating system.
-If your version number starts with 10.6, 10.7, 10.8 or 10.9 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
+If your version number starts with 10.6, 10.7, 10.8, 10.9 or 10.10 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
 
 ![About this Mac dialog](/images/2.png "About this Mac dialog")
 
@@ -51,9 +51,9 @@ Make sure that all works well by running the application generator command.
 rails new railsgirls
 {% endhighlight %}
 
-### *3b.* If your OS X version is 10.9:
+### *3b.* If your OS X version is 10.9 or higher:
 
-If your version number starts with 10.9, follow these steps. We are installing homebrew and rbenv.
+If your version number starts with 10.9 or 10.10, follow these steps. We are installing homebrew and rbenv.
 
 #### *3b1.* Install Command line tools on terminal:
 
@@ -64,7 +64,7 @@ xcode-select --install
 #### *3b2.* Install [Homebrew](http://brew.sh/):
 
 {% highlight sh %}
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 {% endhighlight %}
 
 #### *3b3.* Install [rbenv](https://github.com/sstephenson/rbenv):
@@ -82,7 +82,7 @@ source ~/.bash_profile
 You can find the newest version of Ruby with the command "rbenv install -l".
 
 {% highlight sh %}
-rbenv install 2.1.2
+rbenv install 2.2.0
 {% endhighlight %}
 
 If you got "OpenSSL::SSL::SSLError: ... : certificate verify failed" error, try it this way.
@@ -95,7 +95,7 @@ cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts Op
 #### *3b5.* Set default Ruby:
 
 {% highlight sh %}
-rbenv global 2.1.2
+rbenv global 2.2.0
 {% endhighlight %}
 
 #### *3b6.* Install rails:
