@@ -28,11 +28,64 @@ Click the Apple menu and choose *About this Mac*.
 ![Apple menu](/images/1.png "Apple menu")
 
 ### *2.* In the window you will find the version of your operating system.
-If your version number starts with 10.6, 10.7, 10.8 or 10.9 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
+If your version number starts with 10.6, 10.7, 10.8, 10.9 or 10.10 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
 
 ![About this Mac dialog](/images/2.png "About this Mac dialog")
 
-### *3a.* If your OS X version is 10.6, 10.7, or 10.8:
+### *3a.* If your OS X version is 10.9 or higher:
+
+If your version number starts with 10.9 or 10.10, follow these steps. We are installing homebrew and rbenv.
+
+#### *3a1.* Install Command line tools on terminal:
+
+{% highlight sh %}
+xcode-select --install
+{% endhighlight %}
+
+#### *3a2.* Install [Homebrew](http://brew.sh/):
+
+{% highlight sh %}
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+{% endhighlight %}
+
+#### *3a3.* Install [rbenv](https://github.com/sstephenson/rbenv):
+
+{% highlight sh %}
+brew update
+brew install rbenv rbenv-gem-rehash ruby-build
+echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
+source ~/.bash_profile
+{% endhighlight %}
+
+#### *3a4.* Build Ruby with rbenv:
+
+You can find the newest version of Ruby with the command "rbenv install -l".
+
+{% highlight sh %}
+rbenv install 2.2.0
+{% endhighlight %}
+
+If you got "OpenSSL::SSL::SSLError: ... : certificate verify failed" error, try it this way.
+
+{% highlight sh %}
+brew install curl-ca-bundle
+cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
+{% endhighlight %}
+
+#### *3a5.* Set default Ruby:
+
+{% highlight sh %}
+rbenv global 2.2.0
+{% endhighlight %}
+
+#### *3a6.* Install rails:
+
+{% highlight sh %}
+gem i rails --no-ri --no-rdoc
+{% endhighlight %}
+
+### *3b.* If your OS X version is 10.6, 10.7, or 10.8:
 Download the RailsInstaller for your version of OS X:
 
 * [RailsInstaller for 10.7 and 10.8](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz) <span class="muted">(325MB)</span>
@@ -50,59 +103,6 @@ Make sure that all works well by running the application generator command.
 
 {% highlight sh %}
 rails new railsgirls
-{% endhighlight %}
-
-### *3b.* If your OS X version is 10.9:
-
-If your version number starts with 10.9, follow these steps. We are installing homebrew and rbenv.
-
-#### *3b1.* Install Command line tools on terminal:
-
-{% highlight sh %}
-xcode-select --install
-{% endhighlight %}
-
-#### *3b2.* Install [Homebrew](http://brew.sh/):
-
-{% highlight sh %}
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-{% endhighlight %}
-
-#### *3b3.* Install [rbenv](https://github.com/sstephenson/rbenv):
-
-{% highlight sh %}
-brew update
-brew install rbenv rbenv-gem-rehash ruby-build
-echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
-source ~/.bash_profile
-{% endhighlight %}
-
-#### *3b4.* Build Ruby with rbenv:
-
-You can find the newest version of Ruby with the command "rbenv install -l".
-
-{% highlight sh %}
-rbenv install 2.1.2
-{% endhighlight %}
-
-If you got "OpenSSL::SSL::SSLError: ... : certificate verify failed" error, try it this way.
-
-{% highlight sh %}
-brew install curl-ca-bundle
-cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
-{% endhighlight %}
-
-#### *3b5.* Set default Ruby:
-
-{% highlight sh %}
-rbenv global 2.1.2
-{% endhighlight %}
-
-#### *3b6.* Install rails:
-
-{% highlight sh %}
-gem i rails --no-ri --no-rdoc
 {% endhighlight %}
 
 ### *4.* Install a text editor to edit code files
@@ -126,7 +126,7 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 ### *1.* Install Rails
 
-Download [RailsInstaller](https://github.com/railsinstaller/railsinstaller-windows/releases/download/3.0.0-alpha.2/railsinstaller-3.0.0.exe) and run it. Click through the installer using the default options.
+Download [RailsInstaller](https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.1.0.exe) and run it. Click through the installer using the default options.
 
 Open `Command Prompt with Ruby on Rails` and run the following command:
 
