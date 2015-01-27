@@ -8,9 +8,47 @@ permalink: sinatra
 
 ##Goal
 
-The goal of this tutorial is to create a coffee listing application without the magic of Rails. You will hopefully gain a greater understanding of the underlying principles involved in programming web applications, and gain a greater appreciation for some of the things Rails does for you.
+Have you ever thought about how information gets to and from your web browser? In this tutorial we're going to look at how it all works by exploring HTTP.
 
-This tutorial uses [**Sinatra**](http://www.sinatrarb.com/) as a tool to demonstrate some basic web principles. Sinatra is a small framework for creating web applications in Ruby with minimal effort. You can find a list of [things built with Sinatra here](http://www.sinatrarb.com/wild.html).
+We're going to use [**Sinatra**](http://www.sinatrarb.com/) as a tool to demonstrate some basic web principles. Sinatra is a small framework for creating web applications in Ruby with minimal effort. You can find a list of [things built with Sinatra here](http://www.sinatrarb.com/wild.html).
+
+Sinatra is different from Rails. They're both frameworks for helping you to write web apps, but Sinatra contains fewer features and less magic.
+
+## Introduction
+ 
+HTTP is used to send information between an application (like your Rails Girls app) and a browser.
+The basis of communication with HTTP is a request/response pair. Requests are sent by the browser to the server (e.g. your app) and the response is sent back from the server to your browser for a user to view.
+
+To make a request in a browser, you need to use a URL. A URL contains a lot of information about what information you are requesting so that the server can send you the correct response.
+
+A URL will contain;
+* The protocol you will communicate with
+* The domain that has the information you want
+* The path to the resource on that server 
+* Optionally there might be parameters on the end of the url, as key/value pairs, containing extra information about the request
+* The // towards the beginning of the URL specifies that this request wants to make contact with a server.
+* The ? towards the end of the url signals the end of the file path, and the beginning of any optional parameters.
+
+<img src="../images/url-breakdown.png" alt="Breakdown of a URL" />
+
+URLs reveal the resource you want, but the action that needs to be performed on that resource needs to be specified using HTTP verbs.
+
+The most common HTTP verbs are
+
+GET: fetch an existing resource
+POST: create a new resource. (Usually includes data needed to create the new resource)
+PUT: update an existing resource.
+DELETE: delete an existing resource.
+
+You would have used all these verbs on your Rails Girls app when you enabled it to show, create, edit and delete posts or notes.
+
+A request to a server needs to include both a URL and HTTP verb.
+
+In the following exercises you will build a small coffee listing application that uses a combination of resource folder names and HTTP verbs to show how browsers communicate with your application.
+
+Your app will look something like this in the browser:
+
+<img src="../images/coffee-app.png" alt="Sinatra Coffee App" />
 
 ## *0.*Install Sinatra >> "Hello World"
 
@@ -19,6 +57,7 @@ Let's start off by getting Sinatra running.
 In your terminal, install the gem:
 {% highlight sh %}
 gem install sinatra
+gem install sinatra-contrib
 {% endhighlight %}
 
 ## *1.*"Hello World"
@@ -26,45 +65,85 @@ Create a file called `app.rb` and paste the following into Sublime Text:
 
 {% highlight ruby %}
 require "sinatra"
+require "sinatra/reloader"
 
 get "/" do
 "Hello world!"
 end
 {% endhighlight %}
 
-And back in your terminal, run with:
+And back in your terminal, run this code with:
 {% highlight sh %}
 ruby app.rb
 {% endhighlight %}
 
 View your current site at: [http://localhost:4567](http://localhost:4567)
 
-Hit `ctrl-c` at your command prompt to stop your app. (Just like for your Rails app!)
+The information showing now in your browser is the response to a GET request.
 
-## *2.*Reload your files
+When you enter http://localhost:4567 you're sending a GET request to your Sinatra server.
 
-Sinatra doesn't reload your code changes for you like Rails does, so let's add an extension to Sinatra to get this functionality. In the console:
+What you see in the browser is the response from your Sinatra server.
 
+Where you've written "/", you are just specifying the root url, but you can create any path name you want.
+
+In the same file, try creating more pages to visit, using the same syntax as the block above. You can add as many pages as you like, and have them say whatever you want. 
+
+e.g.
 {% highlight sh %}
-gem install sinatra-contrib
+get "/page-name" do 
+ "This is text on the page"
+ end
 {% endhighlight %}
 
-And in `app.rb` (in Sublime Text), after the `require "sinatra" line`, add:
-
-{% highlight ruby %}
-require "sinatra/reloader"
-{% endhighlight %}
-
-Now start up your app again with:
-{% highlight sh %}
-ruby app.rb
-{% endhighlight %}
-
-Everything should look the same as it did before, but now you can change the files and your site should reload the files. Give it a try! Change the "Hello world!" text to something else (maybe "I love Ruby!") and refresh your browser.
+If you need to you can hit `ctrl-c` in your command prompt to stop your app. (Just like for your Rails app!), however you don't need to stop and start to see your changes. 
 
 If you get stuck, make sure your app.rb looks like [this one](http://tjmcewan.github.io/coffeecalc/snippets/install_sinatra.rb.txt).
 
-## *3.*Web Inspector >> Request Headers
+## *3.* HTML Form >> Get Parameters
+
+To start listing coffees in our app, we'll need an HTML form to send through which coffee we want and how much it costs.
+
+This means sending a request to the Sinatra server, including some information.
+
+To send information to the server, we can use a form.
+
+Replace your `get "/"` from above with this:
+
+{% highlight ruby %}
+get "/" do
+"
+<html>
+<body>
+<form action='/' method='get'>
+What: <input name='what'>
+Cost: <input name='cost'>
+<button type='submit'>add coffee</button>
+</form>
+<!-- coffees go here -->
+</body>
+</html>
+"
+end
+
+
+{% endhighlight %}
+
+For simplicity, this form sends the information to the same URL ("/"). 
+
+Refresh your browser and you should see the form you just created.
+
+Now let's see what the browser sends to the server when you submit the form. Put some text into the form and click the 'add coffee' button. Check out your Sinatra logs back in your terminal and you should see something like this:
+
+{% highlight HTTP %}
+GET /?what=flat+white&cost=3.50 HTTP/1.1
+{% endhighlight %}
+
+**Coach:** Talk about where the parameter names come from and what the question mark is doing.
+
+If it's not quite working, make sure your code looks like [this code](http://tjmcewan.github.io/coffeecalc/snippets/html_form.rb.txt).
+
+## *4.*Web Inspector >> Request Headers
 
 In your browser, open up your web console. (For most browsers, this can be accessed by *right clicking something on the page and choosing "Inspect Element"*.) I recommend you use Chrome for this; if you are using Chrome, you're looking for the 'Network' tab.
 
@@ -83,48 +162,16 @@ Accept-Language: en-US,en;q=0.8
 
 **Coach:** Explain what HTTP headers are and they mean.
 
-The important part to note is the first line `GET / HTTP/1.1` - this is what a "GET" request for a server's "root URL" looks like. You can also see this in Sinatra's log output, in the terminal window.
+The important part to note is the first line, which shows you the HTTP verb and the URL it was called on.
 
 **Note:** If Sinatra says it has "backup from WEBrick", Ruby's built-in webserver, then you may see multiple GET requests each time you refresh.  Only one request is actually being issued, you can safely ignore the other.
 
-## *4.* HTML Form >> Get Parameters
 
-To get our coffees into our app, we'll need an HTML form to send through which coffee we want and how much it costs. Replace your `get "/"` from above with this:
+## *5.* Global Variable
 
-{% highlight ruby %}
-get "/" do
-"""
-<html>
-<body>
-<form action='/' method='get'>
-What: <input name='what'>
-Cost: <input name='cost'>
-<button type='submit'>add coffee</button>
-</form>
-<!-- coffees go here -->
-</body>
-</html>
-"""
-end
-{% endhighlight %}
+So our form is sending the coffee information to our app, but we're not doing anything with it yet. We should save the coffee information after it is sent to the server.
 
-**Hint:** triple quotes in Ruby will preserve new lines.
-
-For simplicty, this form sends the information to the same URL ("/"). Refresh your browser and you should see the form you just created.
-
-Now let's see what the browser sends to the server when you submit the form. Put some text into the form and click the 'add coffee' button. Check out the request headers in the Network tab and you should see something like this:
-
-{% highlight HTTP %}
-GET /?what=flat+white&cost=3.50 HTTP/1.1
-{% endhighlight %}
-
-**Coach:** Talk about where the parameter names come from and what the question mark is doing.
-
-If it's not quite working, make sure your code looks like [this code](http://tjmcewan.github.io/coffeecalc/snippets/html_form.rb.txt).
-
-## *5.* Store coffees >> Global Variable
-
-So our form is sending the coffee info to our app, but we're not doing anything with it yet. We should save the coffee information before we send the HTML form to the browser. For simplicity, let's just store the coffee details in a variable. So that they'll be available between requests, we'll need to use a [**global**](http://en.wikipedia.org/wiki/Global_variable) variable. This is a drastically simplified version of what Rails calls the Model layer.
+For simplicity, let's just store the coffee details in a variable. So that they'll be available between requests, we'll need to use a [**global**](http://en.wikipedia.org/wiki/Global_variable) variable. This is a drastically simplified version of what Rails calls the Model layer.
 
 Add this to your `app.rb` somewhere (convention says it should be near the top, under the `require` lines):
 {% highlight ruby %}
@@ -135,25 +182,38 @@ This creates an empty array when your app first starts up.
 
 **Hint:** This global variable won't be around for very long - it will be reset to the empty array each time the server restarts.  Because we're using Sinatra's reloader, this will be every time you save your `app.rb` file.  Don't worry though, it will suit our purposes nicely.
 
-Now you'll need to get the information into that `$coffees` array when the request is received. When you fill in your form and click the submit button, Sinatra grabs the information out of the URL and makes it available as a Hash called `params`.
+## *6.* Receiving information >> Storing Coffees
 
-Have a go at adding the coffee params to the $coffees variable yourself, but first replace `<!-- coffees go here -->` in your form with:
+Now you'll need to get the information into that `$coffees` array when the request is received. When you fill in your form and click the submit button, remember that your information is put on the end of the URL, after the ?, to be sent back to the server.
+
+ Sinatra grabs that information from the end of the URL and makes it available as a Hash called `params`. For example:
+ 
+ {% highlight ruby %}
+ params = {coffee = 'flat white', value ='2'}
+{% endhighlight %}
+
+You will need to write some code to take them from the params hash and add them to your  $coffees variable. 
+
+Before you start, first replace `<!-- coffees go here -->` in your form with:
 
 {% highlight ruby %}
 #{ $coffees.inspect }
 {% endhighlight %}
 
-This will display the `$coffees` variable in the HTML in your browser so we can tell if the information is being stored.
+This will display the `$coffees` variable in the HTML in your browser so we can tell if coffees are being added to your $coffees variable (i.e. that your code is working).
 
-You should do the same with `params.inspect`, to see how the parameters are stored.
+**Hint:** 
+Your global variable is an array, so if you get stuck, try [Ruby's Array documentation ](http://www.ruby-doc.org/core-2.1.0/Array.html#method-i-3C-3C) to find out how you can add information to an array.  
 
-**Hint:** If you get stuck, try [Ruby's Array documentation first](http://www.ruby-doc.org/core-2.1.0/Array.html#method-i-3C-3C).  If you're still stuck, [check here](http://tjmcewan.github.io/coffeecalc/snippets/store_coffees.rb.txt).
+If you're still stuck, [check here](http://tjmcewan.github.io/coffeecalc/snippets/store_coffees.rb.txt).
 
 If you're storing your params correctly, you should be able to refresh the browser and see that a new hash gets added to the `$coffees` array each time.
 
-## *6.* Template Method
+## *6.* Tidy Up
 
-That big string in our `get` route is making it a bit hard to see what our app does, so let's move it to its own method. Copy the HTML form out of your `get` route and paste it into a method called `template`. Like so:
+That big chunk of HTML in our `get` code is making it a bit hard to see what our app does. Let's move it to its own method. 
+
+Cut the HTML form out of your `get` code and paste it into a method called `template` (keep all your code in the same file). Like so:
 
 {% highlight ruby %}
 def template
@@ -161,9 +221,7 @@ def template
 end
 {% endhighlight %}
 
-**Hint:** The part you copy should include the triple quotes.
-
-Then replace the form from your `get` route with a simple call to the template method, like so:
+Now replace the form from your `get` code with a simple call to the template method, like this:
 
 {% highlight ruby %}
 get "/" do
@@ -176,13 +234,15 @@ This will also make it easier to re-use the form, should we ever need to.
 
 **Hint:** [Check here](http://tjmcewan.github.io/coffeecalc/snippets/template_method.rb.txt) if something went awry.
 
-## *7.* Remove Get
+## *7.* Moving Beyond GET
 
-As you saw in the store coffees section, if you refresh your browser, your app adds the information into the `$coffees` global repeatedly. This is because we're storing the params from the URL each time our `get` route is requested.
+As you saw in the store coffees section, if you refresh your browser, your app adds the information into the `$coffees` global variable repeatedly. This is because we're storing the params from the URL each time our `get` code is requested.
 
-This is a good point to mention that `GET` requests should not do things that change the state of the system - it's too easy for unintended side-effects to occur. Things that are meant to be stored in the system or manipulate something should be sent via a `POST` request.
+This is a good point to mention that `GET` requests should not do things that add information to our app - while it does work, like in this instance, it's too easy for unintended side-effects to occur. In this case it's better to use a `POST` request.
 
-So armed with that knowledge, let's change our form's method to `post`:
+Remember `GET` requests are asking to fetch a resource, whereas POST requests are asking to create a resource.
+
+So armed with that knowledge, let's change our form's method to `POST`:
 
 * Locate the section in the form that specifies the method as `get` and change it to `post`.
 * Now refresh your browser and submit a new coffee.
@@ -198,13 +258,14 @@ end
 
 This is Sinatra's way of telling you that the route you requested doesn't exist. You may also know this as HTTP error number 404: *page not found*.
 
+
 ## *8.* Add Post
 
-Let's *add* our `post` route into Sinatra (don't remove the get one!):
+Let's *add* our `post` code into Sinatra (don't remove the get one!):
 
-* Grab the "Hello world" `post` route from Sinatra's 404 page and put it after our `get` route. (**Hint:** Do not copy from above; this page uses smart quotes & will break your code.)
-* Replace the "Hello world" with a call to our `template` method. (**Hint:** Don't remove the call to `template` from our `get` route.)
-* Now *move* the line that stores the coffee params over from the `get` route (ensure this goes *above* the call to `template`).
+* Grab the "Hello world" `post` code from Sinatra's 404 page and put it after our `get`. (**Hint:** Do not copy from above; this page uses smart quotes & will break your code.)
+* Replace the "Hello world" with a call to our `template` method. (**Hint:** Don't remove the call to `template` from our `get` code.)
+* Now *move* the line that stores the coffee params over from the `get` code (ensure this goes *above* the call to `template`).
 
 As usual, you can check your progress [over here](http://tjmcewan.github.io/coffeecalc/snippets/get_vs_post.rb.txt).
 
@@ -212,15 +273,18 @@ Now if you refresh the page after submitting a coffee, you should see a warning 
 
 <img src="../images/chrome-confirm-resubmission.png" alt="Chrome's confirm resubmission dialog" />
 
-This is a much better situation than before - this will prompt us to think about the consequences and we will probably avoid inadvertantly adding the same coffee multiple times.
+You might have seen this sometimes when you've submitted forms online. Having this warning prompts us to think about the consequences of our refresh and we will probably avoid inadvertently adding the same coffee multiple times.
 
-Do you think it would stop non-technical users from refreshing the page? Instead of worrying about the answer to that, let's just make it so we don't have to. We can do better!
+Remember GET requests are asking to fetch a resource, whereas POST requests are asking to create a resource. If you refresh a page on a GET request, you are simply asking repeatedly to see the same page, which usually won't be a problem.
+
+However, if you refresh a page on a POST request, this means you are resending the POST request, and could be creating a new resource each time you refresh. That's why the browser gives you a warning before allowing you to do it.
+
 
 ## *9.* Add a Redirect
 
-The fundamental issue is that our application sends back a proper HTML response when a `POST` request is issued and this represents the page's location. When you refresh the page, you're asking the browser to re-request this location and the only way it knows how to get to that location is to send that `POST` request (which often changes the system, so isn't what we want).
+In order to get around this form-resubmission problem, lets tell the browser to load a different page as soon as it receives the response to our `POST`.  We do this using a special HTTP response known as a "redirect".
 
-The way to fix this is to not send a proper HTML response back. Instead of the call to our `template` method, we redirect the browser to another location.
+Instead of the call to our `template` method, we can redirect the browser to another location.
 
 In Sinatra, it looks like this:
 
@@ -239,7 +303,6 @@ Location: http://localhost:4567/
 {% endhighlight %}
 
 To see this in action, have a look in Chrome's Web Inspector (Network tab) and send your app a coffee:
-
 
 <img src="../images/chrome-post-redirect.png" alt="Chrome's network tab showing a post/redirect/get" />
 
