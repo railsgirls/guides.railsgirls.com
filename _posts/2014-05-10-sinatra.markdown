@@ -46,6 +46,10 @@ A request to a server needs to include both a URL and HTTP verb.
 
 In the following exercises you will build a small coffee listing application that uses a combination of resource folder names and HTTP verbs to show how browsers communicate with your application.
 
+Your app will look something like this in the browser:
+
+<img src="../images/coffee-app.png" alt="Sinatra Coffee App" />
+
 ## *0.*Install Sinatra >> "Hello World"
 
 Let's start off by getting Sinatra running.
@@ -230,13 +234,15 @@ This will also make it easier to re-use the form, should we ever need to.
 
 **Hint:** [Check here](http://tjmcewan.github.io/coffeecalc/snippets/template_method.rb.txt) if something went awry.
 
-## *7.* Moving beyond GET
+## *7.* Moving Beyond GET
 
-As you saw in the store coffees section, if you refresh your browser, your app adds the information into the `$coffees` global repeatedly. This is because we're storing the params from the URL each time our `get` code is requested.
+As you saw in the store coffees section, if you refresh your browser, your app adds the information into the `$coffees` global variable repeatedly. This is because we're storing the params from the URL each time our `get` code is requested.
 
 This is a good point to mention that `GET` requests should not do things that add information to our app - while it does work, like in this instance, it's too easy for unintended side-effects to occur. In this case it's better to use a `POST` request.
 
-So armed with that knowledge, let's change our form's method to `post`:
+Remember `GET` requests are asking to fetch a resource, whereas POST requests are asking to create a resource.
+
+So armed with that knowledge, let's change our form's method to `POST`:
 
 * Locate the section in the form that specifies the method as `get` and change it to `post`.
 * Now refresh your browser and submit a new coffee.
@@ -267,7 +273,7 @@ Now if you refresh the page after submitting a coffee, you should see a warning 
 
 <img src="../images/chrome-confirm-resubmission.png" alt="Chrome's confirm resubmission dialog" />
 
-You might have seen this sometimes when you've submitted forms online. Having this warning prompts us to think about the consequences of our refresh and we will probably avoid inadvertantly adding the same coffee multiple times.
+You might have seen this sometimes when you've submitted forms online. Having this warning prompts us to think about the consequences of our refresh and we will probably avoid inadvertently adding the same coffee multiple times.
 
 Remember GET requests are asking to fetch a resource, whereas POST requests are asking to create a resource. If you refresh a page on a GET request, you are simply asking repeatedly to see the same page, which usually won't be a problem.
 
@@ -276,7 +282,7 @@ However, if you refresh a page on a POST request, this means you are resending t
 
 ## *9.* Add a Redirect
 
-In order to get around this form-resubmission problem, lets tell the browser to load a different page as soon as it receives the response to our `POST'.  We do this using a special HTTP response known as a "redirect".
+In order to get around this form-resubmission problem, lets tell the browser to load a different page as soon as it receives the response to our `POST`.  We do this using a special HTTP response known as a "redirect".
 
 Instead of the call to our `template` method, we can redirect the browser to another location.
 
