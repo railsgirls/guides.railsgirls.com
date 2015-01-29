@@ -150,6 +150,44 @@ rails server
 
 ## Possible errors
 
+### Gem::RemoteFetcher error
+
+If you get this error when running `rails new railsgirls` or `gem update rails`:
+
+{% highlight sh %}
+Gem::RemoteFetcher::FetchError: SSL_connect returned=1 errno=0 state=SSLv3 read
+server certificate B: certificate verify failed (https://rubygems.org/gems/i18n-
+0.6.11.gem)
+{% endhighlight %}
+
+This means you have an older version of Rubygems and will need to update it manually first verify your Rubygems version
+
+{% highlight sh %}
+gem -v
+{% endhighlight %}
+
+If it is lower than `2.2.3` you will need to manually update it:
+
+
+First download the [ruby-gems-update gem](https://github.com/rubygems/rubygems/releases/download/v2.2.3/rubygems-update-2.2.3.gem and put it at c:\\rubygems-update-2.2.3.gem). Move the file to `c:\\rubygems-update-2.2.3.gem` then run:
+
+{% highlight sh %}
+gem install --local c:\\rubygems-update-2.2.3.gem
+update_rubygems --no-ri --no-rdoc
+gem uninstall rubygems-update -x
+{% endhighlight %}
+
+Check your version of rubygems
+
+{% highlight sh %}
+gem -v
+{% endhighlight %}
+
+Make sure it is higher than `2.2.3`. Re-run the command that was failing previously.
+
+
+### 'x64_mingw' is not a valid platform` Error
+
 Sometimes you get the following error when running `rails server`:
 `'x64_mingw' is not a valid platform` If you experience this error after using the RailsInstaller you have to do a small edit to the file `Gemfile`:
 
@@ -251,7 +289,7 @@ Go to [https://nitrous.io](https://nitrous.io/) and signup for free.
 * Login to your nitrous account
 * Go to the dashboard by using the green 'Open dashboard' button
 * Create a nitrous box: pick Ruby/Rails from the templates - everything else can stay as is, but you can change the name of your box if you want to
-* It takes a moment until your box is ready 
+* It takes a moment until your box is ready
 
 ### *4.* Find and restart your development box
 * If you've just created your box, you can probably skip these steps - they're good to know if you login to nitrous again later
