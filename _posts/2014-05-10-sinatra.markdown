@@ -22,6 +22,7 @@ The basis of communication with HTTP is a request/response pair. Requests are se
 To make a request in a browser, you need to use a URL. A URL contains a lot of information about what information you are requesting so that the server can send you the correct response.
 
 A URL will contain;
+
 * The protocol you will communicate with
 * The domain that has the information you want
 * The path to the resource on that server 
@@ -35,10 +36,10 @@ URLs reveal the resource you want, but the action that needs to be performed on 
 
 The most common HTTP verbs are
 
-GET: fetch an existing resource
-POST: create a new resource. (Usually includes data needed to create the new resource)
-PUT: update an existing resource.
-DELETE: delete an existing resource.
+* GET: fetch an existing resource
+* POST: create a new resource. (Usually includes data needed to create the new resource)
+* PUT: update an existing resource.
+* DELETE: delete an existing resource.
 
 You would have used all these verbs on your Rails Girls app when you enabled it to show, create, edit and delete posts or notes.
 
