@@ -128,7 +128,7 @@ Rather than returning the number of notes, Code so that it returns an array of n
 
 `[]` defines an empty array. `[1, 2]` defines an array with two elements (1 and 2).
 
-The shovel operator (`<<`) adds an element to an array. Eg. `[1, 2] << 3` will add 30 to the array, resulting in `[10, 20, 30]`
+The shovel operator (`<<`) adds an element to an array. Eg. `[10, 20] << 30` will add 30 to the array, resulting in `[10, 20, 30]`
 
 the `times` method executes a block of code several times - eg. `5.times { puts 'hello' }` will print 'hello' 5 times.
 
