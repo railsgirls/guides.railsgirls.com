@@ -292,6 +292,8 @@ gem 'carrierwave'
 
 **Coach:** Explain what libraries are and why they are useful. Describe what open source software is.
 
+Hit `CTRL-C` in the terminal to quit the server.
+
 In the terminal run:
 
 {% highlight sh %}
@@ -304,10 +306,10 @@ Now we can generate the code for handling uploads. In the terminal run:
 rails generate uploader Picture
 {% endhighlight %}
 
-At this point you need to **restart the Rails server process** in the terminal.
+Please start the rails server now.
 
-Hit `CTRL-C` in the terminal to quit the server. Once it has stopped, you can press the up arrow to get to the last command entered, then hit enter to start the server again.
-
+Note: Some people might be using a second terminal to run the rails server continuously. 
+If so you need to **restart the Rails server process** now.
 This is needed for the app to load the added library.
 
 Open `app/models/idea.rb` and under the line
