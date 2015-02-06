@@ -229,13 +229,18 @@ Imagine your ATM now holds $5 and $10. People want as few notes as possible.
 
 **Tips for getting tests green:**
 
-The `floor` method rounds a number down to the nearest whole integer. For example:
+In ruby, when you do division with two whole numbers (integers), the result is rounded down to the nearest whole number.
 
 {% highlight ruby %}
-my_number = 3.87.floor # my_number contains 3
+new_number = 25/10
+# new_number contains 2, because 25/10 = 2.5, and ruby will round that down to 2.
+{% endhighlight %}
 
-new_number = (25/10).floor
-# new_number contains 2, because 25/10 = 2.5, and floor will round that down to 2.
+The percent sign (%) is called the modulo operator and you can use it to get the remainder
+
+{% highlight ruby %}
+new_number = 25%10
+# new_number contains 5, because 10 goes into 25 two times and there is 5 remainder
 {% endhighlight %}
 
 
