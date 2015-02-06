@@ -91,6 +91,14 @@ my_age = 28
 half_my_age = my_age / 2
 {% endhighlight %}
 
+In ruby, when you do division with two whole numbers (integers), the result is rounded down to the nearest whole number.
+
+{% highlight ruby %}
+new_number = 25/10
+# new_number contains 2, because 25/10 = 2.5, and ruby will round that down to 2.
+{% endhighlight %}
+
+
 ### Tests for step 2:
 
 {% highlight ruby %}
@@ -226,23 +234,6 @@ Imagine your ATM now holds $5 and $10. People want as few notes as possible.
 
 * `withdraw(25)` should return `[10, 10, 5]`
 * `withdraw(11)` should return `false`, because $11 cannot be made up of $5 and $10 notes
-
-**Tips for getting tests green:**
-
-In ruby, when you do division with two whole numbers (integers), the result is rounded down to the nearest whole number.
-
-{% highlight ruby %}
-new_number = 25/10
-# new_number contains 2, because 25/10 = 2.5, and ruby will round that down to 2.
-{% endhighlight %}
-
-The percent sign (%) is called the modulo operator and you can use it to get the remainder
-
-{% highlight ruby %}
-new_number = 25%10
-# new_number contains 5, because 10 goes into 25 two times and there is 5 remainder
-{% endhighlight %}
-
 
 ### Tests for step 5
 
