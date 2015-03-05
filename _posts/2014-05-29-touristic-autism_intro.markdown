@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Touristic Autism-friendly Spots App 
+title: Touristic Autism-friendly Spots App
 permalink: touristic-autism_intro
 ---
 
@@ -10,7 +10,7 @@ permalink: touristic-autism_intro
 *for [Rails Girls Galway](https://github.com/RailsGirlsGalway)*
 
 
-This guide merges, adapts and extends some of the basic RailsGirls guides **for the scenario**: description, displaying and commenting touristic places and rate them with respect to their autism-friendliness. This application was requested by the [Galway Autism Partnership](http://www.galwayautismpartnership.com/) to support autistic adults during their travelings. 
+This guide merges, adapts and extends some of the basic RailsGirls guides **for the scenario**: description, displaying and commenting touristic places and rate them with respect to their autism-friendliness. This application was requested by the [Galway Autism Partnership](http://www.galwayautismpartnership.com/) to support autistic adults during their travelings.
 
 The extension comprises of the following **new features**:
 
@@ -35,7 +35,7 @@ $ git config --global user.email your.email@example.com
     <div>
 <p>one-time setup steps for GitHub.</p>
     </div>
-Sign up for a [free GitHub account](https://github.com/signup/free) if you donâ€™t have one already. 
+Sign up for a [free GitHub account](https://github.com/signup/free) if you donâ€™t have one already.
 
 
 ### [*1.*Basic Web Application](/touristic-autism_basic-app)
@@ -62,7 +62,7 @@ Sign up for a [free GitHub account](https://github.com/signup/free) if you donâ€
 ## Additional Guides
 
 * Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](https://github.com/PragTob/rails-beginner-cheatsheet)
-* Guide 1: [Put your app online with Heroku by Terence Lee](/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift) / [Put your app online with Ninefold](/ninefold) / [Put your app online with Shelly Cloud](/shellycloud) / [Put your app online with anynines](/anynines) / [Put your app online with Trucker.io](/trucker)
+* Guide 1: [Put your app online with Heroku by Terence Lee](/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift) / [Put your app online with Shelly Cloud](/shellycloud) / [Put your app online with anynines](/anynines) / [Put your app online with Trucker.io](/trucker)
 * Guide 2: [Adding profile pictures with Gravatar](/gravatar)
 * Guide 3: [Go through additional explanations for the App by Lucy Bain](https://github.com/lbain/railsgirls)
 
@@ -71,7 +71,7 @@ Sign up for a [free GitHub account](https://github.com/signup/free) if you donâ€
 
 ## Undoing things
 
-Rails has some facilities to help you recover from mistakes. 
+Rails has some facilities to help you recover from mistakes.
 
 For instance, you may decide to change the name of a controller. Since, when generating a controller, Rails creates many more files than the controller file itself, undoing the generation means removing a whole set of files. In Rails, this can be accomplished with rails destroy. In particular, these two commands cancel each other out:
 

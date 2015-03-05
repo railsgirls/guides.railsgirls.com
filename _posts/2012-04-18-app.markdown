@@ -308,7 +308,7 @@ rails generate uploader Picture
 
 Please start the rails server now.
 
-Note: Some people might be using a second terminal to run the rails server continuously. 
+Note: Some people might be using a second terminal to run the rails server continuously.
 If so you need to **restart the Rails server process** now.
 This is needed for the app to load the added library.
 
@@ -415,7 +415,7 @@ Now you can open the file `app/views/pages/info.html.erb` and add information ab
 
 * Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](https://github.com/PragTob/rails-beginner-cheatsheet)
 * Guide 1: [Add commenting by Janika Liiv](/commenting)
-* Guide 2: [Put your app online with Heroku by Terence Lee](/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift) / [Put your app online with Ninefold](/ninefold) / [Put your app online with Shelly Cloud](/shellycloud) / [Put your app online with anynines](/anynines) / [Put your app online with Trucker.io](/trucker)
+* Guide 2: [Put your app online with Heroku by Terence Lee](/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift) / [Put your app online with Shelly Cloud](/shellycloud) / [Put your app online with anynines](/anynines) / [Put your app online with Trucker.io](/trucker)
 * Guide 3: [Create thumbnail images for the uploads by Miha Filej](/thumbnails)
 * Guide 4: [Add design using HTML &amp; CSS by Alex Liao](/design)
 * Guide 5: [Add Authentication (user accounts) with Devise by Piotr Steininger](/devise/)
