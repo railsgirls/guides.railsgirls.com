@@ -44,7 +44,7 @@ __Coach:__ Talk about relational databases and the differences between SQLite an
 
 ## Initialize your git repository
 
-You should now commit the changes to your git repository. If you haven't initialized one yet, take a look at this [Github Rails Girls guide](http://guides.railsgirls.com/github/) or use the [Github's docs](https://help.github.com/articles/set-up-git) directly.
+You should now commit the changes to your git repository. If you haven't initialized one yet, take a look at this [GitHub Rails Girls guide](http://guides.railsgirls.com/github/) or use the [GitHub's docs](https://help.github.com/articles/set-up-git) directly.
 
 When your repo is all set, use `git commit` to save your changes.
 
@@ -73,7 +73,7 @@ Login successful
 Uploading your public SSH key
 {% endhighlight %}
 
-*Tip*: The `shelly` gem will look for a public SSH key in your `~/.ssh` directory, choosing either a DSA key `id_dsa.pub` or a RSA key `id_rsa.pub`. If you're not sure if you have a SSH key already, take a look at this helpful [Github article](https://help.github.com/articles/generating-ssh-keys).
+*Tip*: The `shelly` gem will look for a public SSH key in your `~/.ssh` directory, choosing either a DSA key `id_dsa.pub` or a RSA key `id_rsa.pub`. If you're not sure if you have a SSH key already, take a look at this helpful [GitHub article](https://help.github.com/articles/generating-ssh-keys).
 
 ## Create your cloud
 

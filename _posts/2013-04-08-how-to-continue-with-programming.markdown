@@ -45,11 +45,11 @@ to take things to the next level:
 
 ### Screencasts & Videos
 
-* [Railscasts](http://railscasts.com/) - Short and simple screencasts about Rails by Ryan Bates.
+* [RailsCasts](http://railscasts.com/) - Short and simple screencasts about Rails by Ryan Bates.
   **Note**: *Ryan is giving away 3 month RailsCasts pro subscription coupons to all Rails Girls attendees for free.
   If you haven't received one at the Rails Girls event you attended, ask your event organizer to [send an email to Ed Drain](mailto:geekprogrammer.ed@gmail.com). He will send the coupons to your event organizer.*
 * [Confreaks](http://www.confreaks.com/) - Talks from conferences all over the world.
-* [Peepcode](https://peepcode.com/) - Paid Screencasts by Geoffrey Grosenbach.
+* [PeepCode](https://peepcode.com/) - Paid Screencasts by Geoffrey Grosenbach.
 * [Richard Schneems Screencast](http://www.youtube.com/user/schneems/videos)
 
 ### MOAR
@@ -105,7 +105,7 @@ There are already a few groups which you can join:
 
 One of the girls at the Rails Girls Basel event (thanks [Helena](https://twitter.com/HBobbiRo)!) had the great idea
 that we could put up a list with all the attendees, coaches and organizers of the event.
-We created this list and its on [Github](https://github.com/RailsGirlsSwitzerland/attendees) now, check it out [here](http://railsgirlsswitzerland.github.io/attendees/site/2013_04_basel.html).
+We created this list and its on [GitHub](https://github.com/RailsGirlsSwitzerland/attendees) now, check it out [here](http://railsgirlsswitzerland.github.io/attendees/site/2013_04_basel.html).
 Feel free to fork the repository and adjust it to the needs of your Rails Girls event.
 
 Try to setup such a list for your event too, this way its a lot easier to stay in contact with everyone than just

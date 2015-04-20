@@ -8,7 +8,7 @@ permalink: engineyard
 
 *Created by Mary Jenn, [@mfjenn](https://twitter.com/mfjenn)*
 
-#### Ensure You're Using PostGres for Your Database
+#### Ensure You're Using Postgres for Your Database
 
 You'll need to get your database to work on Engine Yard, which uses a different database than the Rails default. Please change the following in the Gemfile:
 
@@ -45,7 +45,7 @@ You need to add your app to your Git repository. You can do this by running the 
 
 __COACH__: This would be a good time to talk about version control systems and git.
 
-### Be Sure to Have a Rails Application in a Repository on Github
+### Be Sure to Have a Rails Application in a Repository on GitHub
 
 You will need to have a GitHub account and a repo we can pull an app from. Follow these directions on [GitHub](https://help.github.com/articles/create-a-repo) to create a repo and push your app to it. If you do not have a working Rails application, you can fork [Engine Yard's sample todo app](https://github.com/engineyard/todo) to your own repo. A coach can walk you through this if you need help.
 
@@ -59,7 +59,7 @@ Go to Engine Yard's [Website](https://www.engineyard.com/) and click on "GET STA
 
 2. 	Feel free to explore what is in the drop downs, but let's go with the defaults for now, since they are in line with a basic Rails app.
 
-3. 	In the box labeled "Git Repository URI", paste the URI from your Github repo. Be sure to use the URI from the SSH version of your application. HINT: The format should be the same as the placeholder text on your Engine Yard application page (or like this: "git@github.com:mfjenn/blogotron.git")
+3. 	In the box labeled "Git Repository URI", paste the URI from your GitHub repo. Be sure to use the URI from the SSH version of your application. HINT: The format should be the same as the placeholder text on your Engine Yard application page (or like this: "git@github.com:mfjenn/blogotron.git")
 
 
 ### Putting Your Deploy Key in Place

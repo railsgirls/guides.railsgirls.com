@@ -160,7 +160,7 @@ server certificate B: certificate verify failed (https://rubygems.org/gems/i18n-
 0.6.11.gem)
 {% endhighlight %}
 
-This means you have an older version of Rubygems and will need to update it manually first verify your Rubygems version
+This means you have an older version of RubyGems and will need to update it manually first verify your RubyGems version
 
 {% highlight sh %}
 gem -v

@@ -33,7 +33,7 @@ VirtualBox is Oracle's virtualization platform, which can be downloaded on all t
 
 ### Rails Girls virtual machine
 
-Please download the virtal machine created for this event from [here](http://www.digitalnatives.hu/demos/railsgirls/railsgirls_virtualbox_vm.zip). After downloading, please unzip the file, and put it's contents to a folder.
+Please download the virtual machine created for this event from [here](http://www.digitalnatives.hu/demos/railsgirls/railsgirls_virtualbox_vm.zip). After downloading, please unzip the file, and put it's contents to a folder.
 Let's open the already install VirtualBox application. Please find Machine/Add in the menu. Browse the previously created folder containing our VM, and select the file with *vbox* extension.
 If you did everything right, a new VM appeared on the left sidebar with the name *RailsGirls*. So we can start it for the first time!
 

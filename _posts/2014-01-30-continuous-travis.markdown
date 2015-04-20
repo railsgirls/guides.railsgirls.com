@@ -14,13 +14,13 @@ Continuous deployment is part of the continuous delivery 'movement'. The idea be
 
 With a working continuous deployment chain in place you'll enforce Git deployments (everything must be committed to be tested and everything must be tested to be deployed), making collaboration easier and deployment faster. So you can focus on making your app even more awesome!
 
-There are a few great companies sailing the continuous wave, in this guide we'll set up continuous deployment for our Ruby on Rails app from GitHub to anynines, using [Travis-ci](http://about.travis-ci.org/). 
+There are a few great companies sailing the continuous wave, in this guide we'll set up continuous deployment for our Ruby on Rails app from GitHub to anynines, using [Travis CI](http://about.travis-ci.org/). 
 
 __COACH__: Talk about the benefits of continuous deployment.
 
-###Github, Travis CI and anynines
+###GitHub, Travis CI and anynines
 
-The first thing we need is an app in a Github repository. And we have just that! Next you'll need to make sure you followed the guide on how to deploy your app via anynines until the very last step.
+The first thing we need is an app in a GitHub repository. And we have just that! Next you'll need to make sure you followed the guide on how to deploy your app via anynines until the very last step.
 
 Then, we need to create a file called `manifest.yml` in the main directory of your app, so we can save some information about the deployment there. In your terminal run:
 
@@ -40,9 +40,9 @@ language: ruby
 script: 'true'
 {% endhighlight %}
 
-Your app now contains the Travis configuration but how should Travis know when to pull your code from Github and trigger test execution? This is where Github hooks come into play!
+Your app now contains the Travis configuration but how should Travis know when to pull your code from GitHub and trigger test execution? This is where GitHub hooks come into play!
 
-#### Travis CI Github hook activation
+#### Travis CI GitHub hook activation
 
 Commit and push a code change to your repository and check travis-ci.org to see if your test suite is being executed. You should also receive an email that your build succeeded.
 
@@ -79,16 +79,16 @@ deploy:
   target: https://api.de.a9s.eu
   username: jane.doe@example.com
   password:
-    secure: your encryped password determined by the travis gem=
+    secure: your encrypted password determined by the travis gem
   organization: railsgirls
   space: heaven
   on:
     repo: jane/railsgirls
 {% endhighlight %}
 
-Don’t forget to commit and push your changes to ``.travis.yml`` as it will be required in your Github repository to take effect.
+Don’t forget to commit and push your changes to ``.travis.yml`` as it will be required in your GitHub repository to take effect.
 
-From now on whenever you commit changes to your Github repository, tests will be run and your app is being deployed. Travis will then show a log output similar to this:
+From now on whenever you commit changes to your GitHub repository, tests will be run and your app is being deployed. Travis will then show a log output similar to this:
 
 {% highlight sh %}
 Installing deploy dependencies
@@ -159,4 +159,4 @@ Push successful! App 'railsgirls' available at http://railsgirls.de.a9sapp.eu
 Logging out... OK
 {% endhighlight %}
 
-This means your are done and good to go! 
+This means your are done and good to go!
