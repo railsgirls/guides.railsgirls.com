@@ -8,7 +8,7 @@ permalink: bundlerfordevelopment
 
 1. Fork Bundler
 
-    Go to the Bundler Github [https://github.com/bundler/bundler](https://github.com/bundler/bundler)
+    Go to the Bundler GitHub [https://github.com/bundler/bundler](https://github.com/bundler/bundler)
 
     Press the fork button.
 
@@ -32,7 +32,7 @@ permalink: bundlerfordevelopment
 
     `$ git remote add upstream https://github.com/bundler/bundler.git`
 
-    This connects your local repo to the upstream repo at Github.
+    This connects your local repo to the upstream repo at GitHub.
 
 
 5. Install Bundler development dependencies

@@ -45,7 +45,7 @@ Now let's deploy your application to Heroku. Go to your project settings by clic
 
 You are asked to enter the name of your Heroku application and your API key. I sure hope you wrote that down somewhere! Enter your application's name and API key (to retrieve your Heroku API key, go to your Heroku account and click "Show API key") and save your deployment configuration.
 
-From now on the Codeship will deploy your application to Heroku, everytime you push to your GitHub repository. Neat! 
+From now on the Codeship will deploy your application to Heroku, every time you push to your GitHub repository. Neat! 
 
 ### Give it a try
 Now let's push a change and see if it gets deployed. Change something in your application first, then commit and push the change.

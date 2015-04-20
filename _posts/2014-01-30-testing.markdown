@@ -73,7 +73,7 @@ describe Idea do
 end
 {% endhighlight %}
 
-which looks a lot nicer, but there's a lot of magic involved. For now it's probably jyst nice to know that we can 'refactor' those big chuncks of code into smaller bits with a little more experience.  
+which looks a lot nicer, but there's a lot of magic involved. For now it's probably just nice to know that we can 'refactor' those big chunks of code into smaller bits with a little more experience.
 
 __COACH__: Talk a bit about refactoring.  
 
@@ -120,7 +120,7 @@ attr_accessor  :title
 end
 {% endhighlight %}
 
-as running `rspec spec/lib/idea_spec.rb` in your terminal before you've implemented that class will throw you an error. Luckely, errors are nothing to be afraid of. RSpec errors actually help you write (the necessary) code! 
+as running `rspec spec/lib/idea_spec.rb` in your terminal before you've implemented that class will throw you an error. Luckily, errors are nothing to be afraid of. RSpec errors actually help you write (the necessary) code! 
 
 Try and write tests for the follow up guides to check if you're implementing ALL the right things. 
 

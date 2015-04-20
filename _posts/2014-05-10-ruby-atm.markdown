@@ -6,7 +6,7 @@ permalink: ruby-atm
 
 *Created by Joshua Paling, [@joshuapaling](https://twitter.com/joshuapaling)*
 
-In this exercise you will write a function to handle withdrawing money from an ATM. It is intended to challenge you - it is harder than the previous excercises, so you should do them first! Be prepared to ask lots of questions, Google things, and take a step back from the computer. But you'll learn a lot!
+In this exercise you will write a function to handle withdrawing money from an ATM. It is intended to challenge you - it is harder than the previous exercises, so you should do them first! Be prepared to ask lots of questions, Google things, and take a step back from the computer. But you'll learn a lot!
 
 You should use pair, group, or remote programming so you have other programmers to bounce ideas off. You'll use Test Driven Development. However, all the tests have been pre-written for you, so you can focus on the code itself.
 

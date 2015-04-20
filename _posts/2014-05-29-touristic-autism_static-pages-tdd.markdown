@@ -16,7 +16,7 @@ We will use Guard and RSpec to monitor some of our files and run tests over them
 
 If any error is found, then we are going to dig into it so to understand the cause and fix it, by using Pry.
 
-Finally, since we are assuming to be developing in collaboration with other via GitHub, we will also make sure that each contribution does not conflit when integrating with the others' ones. For this very reason, we will also commit, push and test the integration often, in a process called "Continuous Integration". We will use Travis-CI to support us.
+Finally, since we are assuming to be developing in collaboration with other via GitHub, we will also make sure that each contribution does not conflict when integrating with the others' ones. For this very reason, we will also commit, push and test the integration often, in a process called "Continuous Integration". We will use Travis CI to support us.
 
 ##Continuous testing with Guard
 
@@ -73,7 +73,7 @@ Now, as in proper Test-Driven Development(TDD), let's create a test for our stat
 
 We're going to create a file titled home_spec.rb and place it in the spec/feature folder (as this is what we told Guard to expect). The purpose of this file is to become our specification file (in other words, this is going to be our test code and will represent the expected functionality).
 
-Note: in Ruby the words "test" and "specification" are often considered interchangable.
+Note: in Ruby the words "test" and "specification" are often considered interchangeable.
 
 ###TDD: Writing Test Code Before Application Code
 
@@ -202,9 +202,9 @@ When you run your code you'll notice that the terminal will stop and place you i
 
 From this point Pry has access to the local scope. You can type "exit" to exit Pry and for your code to continue executing.
 
-**Note:** Try finding where you are: (by typying) whereami; Stack Trace: wtf; Inspecting (available methods and properties): ls; Changing Scope: cd.
+**Note:** Try finding where you are: (by typing) whereami; Stack Trace: wtf; Inspecting (available methods and properties): ls; Changing Scope: cd.
 
-##Continuous Integration (CI) with Travis-CI
+##Continuous Integration (CI) with Travis CI
 
 The principle of CI is to commit/push early and often to avoid conflicts between your code and the master branch. When you do (in this case we're committing to GitHub) then that should kick off a 'build' on your CI server which runs the relevant tests to ensure all is working as it should be.
 
@@ -212,12 +212,12 @@ Travis CI is a hosted continuous integration service for the open source communi
 
 The process is this:
 
-*   Sign into Travis-CI using your GitHub account
+*   Sign into Travis CI using your GitHub account
 *    Go to your "Accounts" page
 *    Turn "on" any repositories you want to run CI on
 *    Create a .travis.yml file within the root directory of your project and commit it to your GitHub repository
 
-The .travis.yml file determines the configuration settings for Travis-CI so it knows how to handle running the tests for your project. Let's create it as follows:
+The .travis.yml file determines the configuration settings for Travis CI so it knows how to handle running the tests for your project. Let's create it as follows:
 
 {% highlight sh %}
 language: ruby
@@ -239,9 +239,9 @@ notifications:
     - you@example.com
 {% endhighlight %}
 
-We need to add "gem 'rake'" to our Gemfile within the ":test" group, as this is a requirement of Travis-CI.
+We need to add "gem 'rake'" to our Gemfile within the ":test" group, as this is a requirement of Travis CI.
 
-Travis-CI uses RVM (Ruby Version Manager) for installing Rubies on their servers. So we need to specify what Ruby versions we want to run our tests against.
+Travis CI uses RVM (Ruby Version Manager) for installing Rubies on their servers. So we need to specify what Ruby versions we want to run our tests against.
 
 Also, let's add to spec/spec_helper.rb the following:
 {% highlight sh %}
@@ -268,5 +268,5 @@ group :development do
 end
 {% endhighlight %}
 
-**Note:** if you have any issues regarding Travis-CI then you can join the "#travis" channel on IRC freenode to get help answering any questions you may have.
+**Note:** if you have any issues regarding Travis CI then you can join the "#travis" channel on IRC freenode to get help answering any questions you may have.
 
