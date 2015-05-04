@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Touristic Autism-friendly Spots App 
+title: Touristic Autism-friendly Spots App
 permalink: touristic-autism_resource-modeling
 ---
 
@@ -10,7 +10,7 @@ permalink: touristic-autism_resource-modeling
 *for [Rails Girls Galway](https://github.com/RailsGirlsGalway)*
 The basic guides that have been merged and adapted are the [Ruby on Rails Tutorial](http://www.railstutorial.org/book), the [basic RailsGirls app](http://guides.railsgirls.com/app/) and the tutorials for [creating thumbnails](http://guides.railsgirls.com/thumbnails), [authenticating users](http://guides.railsgirls.com/devise/), [adding design](http://guides.railsgirls.com/design), [deploying to OpenShift](http://guides.railsgirls.com/openshift/) and [adding comments](http://guides.railsgirls.com/commenting).
 
-What do we want our app to do? As a first thing, we would like to 
+What do we want our app to do? As a first thing, we would like to
 * authenticate **users**
 * allow authenticated users to create a new touristic **place** description
 * allow authenticated users to **comment** those places
@@ -19,7 +19,6 @@ What do we want our app to do? As a first thing, we would like to
 Note that these requirements help us identify 4 different resources: user, place, comment, rating. We are now going to model them specifying their properties and their associations with each other.
 
 We will enable the rating in the next tutorial.
-
 
 ## Authenticated Tourists/Users
 
@@ -46,12 +45,11 @@ Run the following command in the terminal.
 rails g devise:install
 {% endhighlight %}
 
-
 ## Step 2: Configure Devise
 
 Ensure you have defined default url options in your environments files. Open up `config/environments/development.rb` and add this line:
 {% highlight ruby %}
-   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 {% endhighlight %}
 
 before the `end` keyword.
@@ -68,20 +66,18 @@ Open up `app/views/layouts/application.html.erb` and add:
 {% endhighlight %}
 right above
 {% highlight ruby %}
-   <%= yield %>
+<%= yield %>
 {% endhighlight %}
-
-
 
 ## Step 3: Setup the User model
 
 We'll use a bundled generator script to create the User model.
 {% highlight sh %}
-   rails g devise user
-   rake db:migrate
+rails g devise user
+rake db:migrate
 {% endhighlight %}
 
-**Coach:** Explain what user model has been generated. What are the fields? Note that a model inherits abilities to interact with the DB from its ActiveRecord::Base super-class (ref. MVC). 
+**Coach:** Explain what user model has been generated. What are the fields? Note that a model inherits abilities to interact with the DB from its ActiveRecord::Base super-class (ref. MVC).
 
 ## Step 4: Create your first user
 
@@ -99,18 +95,17 @@ In order to do that, edit `app/views/layouts/application.html.erb` by adding at 
 <% if user_signed_in? %>
   Logged in as <strong><%= current_user.email %></strong>.
   <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link' %>
 <% else %>
-  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link' %> |
+  <%= link_to "Login", new_user_session_path, :class => 'navbar-link' %>
 <% end %></p>
 {% endhighlight %}
-
 
 Finally, force the user to redirect to the login page if the user was not logged in. Open up `app/controllers/application_controller.rb` and add:
 
 {% highlight ruby %}
-  before_action :authenticate_user!
+before_action :authenticate_user!
 {% endhighlight %}
 
 after `protect_from_forgery with: :exception`.
@@ -134,7 +129,7 @@ rails generate scaffold place name:string address:string latitude:decimal longit
 Note the column user:references that is created to support the 1-to-many association with Users.
 </div>
 
-The scaffold creates new files in your project directory. However, we have defined (modeled) a "structure" for our "place" resource and we want all the future instances of this resource to stick to this structure and get stored somewhere, i.e., in a database. 
+The scaffold creates new files in your project directory. However, we have defined (modeled) a "structure" for our "place" resource and we want all the future instances of this resource to stick to this structure and get stored somewhere, i.e., in a database.
 We are already using a database (see `gem 'sqlite'` in your Gemfile). Let's add the structure of "place" as a table to our database with the following.
 
 <div class="os-specific">
@@ -150,11 +145,9 @@ ruby bin/rake db:migrate
 {% endhighlight %}
   </div>
 
-
 Then start the server again. Open [http://localhost:3000/places](http://localhost:3000/places) in your browser and check out all the new functionalities that our web application is now providing to handle "place" resources. All thanks to what Ruby on Rails automatically generates with `generate scaffold`.
 Each new instance of "place" that will be stored in the database, will be automatically assigned a unique identifier called "primary key", with no need for us to specify it as one of the fields (along with picture, name, etc.)
 </div>
-
 
 **Coach:** What is Rails scaffolding? What are migrations and why do you need them?
 Note the pages that have been created to manipulate the "place" resources and their naming convention.
@@ -180,19 +173,18 @@ Open up `app/views/places/show.html.erb` and remove the line that says:
 
 This line is not necessary as we've already put the authenticated user notice in the `app/views/layouts/application.html.erb` file.
 
-
-Let's add-commit-push to your GitHub repo! 
+Let's add-commit-push to your GitHub repo!
 
 ### Resource Associations
 
-Note that places aren't yet properly associated with users. For instance, when creating a new place the field "User" is expected to be filled by ourselves and when viewing a user profile there isn't any list of places created by him/her and viceversa. Also, when deleting a user account all the places he/she created do not get deleted automatically. 
+Note that places aren't yet properly associated with users. For instance, when creating a new place the field "User" is expected to be filled by ourselves and when viewing a user profile there isn't any list of places created by him/her and viceversa. Also, when deleting a user account all the places he/she created do not get deleted automatically.
 
 Let's properly create the 1-to-many association between User and Places.
 
-#### Step 1. Add 1-to-many association 
+#### Step 1. Add 1-to-many association
 
-You need to make sure that Rails knows the relation between the User and Place resources. 
-As one user can create many places we need to make sure the user model knows that. 
+You need to make sure that Rails knows the relation between the User and Place resources.
+As one user can create many places we need to make sure the user model knows that.
 Open app/models/user.rb and after the row
 {% highlight ruby %}
 class User < ActiveRecord::Base
@@ -241,29 +233,23 @@ Allow only the place creator to edit/delete a place.
 
 Open app/vies/places/index.html.erb and substitute
 
-
 {% highlight sh %}
 <td><%= link_to 'Edit', edit_place_path(place) %></td>
-		<td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+<td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 {% endhighlight %}
 
 with
 
-
 {% highlight sh %}
- <% if user_signed_in? %>
-	  <% if current_user.id == place.user_id %>
-
-		<td><%= link_to 'Edit', edit_place_path(place) %></td>
-		<td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-	    <% end %>
-	<% end %>
+<% if user_signed_in? %>
+  <% if current_user.id == place.user_id %>
+    <td><%= link_to 'Edit', edit_place_path(place) %></td>
+    <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <% end %>
+<% end %>
 {% endhighlight %}
 
 That's it. Now view a user you have inserted to your application and there you should see the form for creating a place as well as deleting older places.
-
-
-
 
 ## Place's Comments
 
@@ -279,13 +265,11 @@ bin/rake db:migrate
 Start the server, check out the new service in your browser. Then, add-commit-push to github.
 </div>
 
-
 **Coach:** show that the scaffold generator has updated the Rails routes file with a rule for the Review resource
 
+## Resource Association
 
-##Resource Association
-
-#### Step 1. Add 1-to-many association 
+#### Step 1. Add 1-to-many association
 
 Open app/models/place.rb and after the row
 {% highlight ruby %}
@@ -324,20 +308,16 @@ with the row
 
 next, substitute
 {% highlight erb %}
-  <div class="field">
-    <%= f.label :place_id %><br>
-    <%= f.number_field :place_id %>
-  </div>
+<div class="field">
+  <%= f.label :place_id %><br>
+  <%= f.number_field :place_id %>
+</div>
 {% endhighlight %}
 
 with the row
 {% highlight erb %}
 <%= f.hidden_field :place_id%>
 {% endhighlight %}
-
-
-
-
 
 Open app/views/places/show.html.erb and just before the bottom links add
 {% highlight erb %}
@@ -364,16 +344,11 @@ this
 @comment = @place.comments.build
 {% endhighlight %}
 
-
-
-
-
 ## Step 3: Set edit/delete permissions
 
 Allow only the comment creator to edit/delete a comment.
 
 Open app/views/places/show.html.erb and substitute
-
 
 {% highlight sh %}
 <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
@@ -381,25 +356,17 @@ Open app/views/places/show.html.erb and substitute
 
 with
 
-
 {% highlight sh %}
- <% if user_signed_in? %>
-	  <% if current_user.id == comment.user_id %>
-
+<% if user_signed_in? %>
+  <% if current_user.id == comment.user_id %>
     <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
-
   <% end %>
-	<% end %>
+<% end %>
 {% endhighlight %}
-
-
-
-
 
 ## Resource Field Validation
 
 At the moment comments, places and users are characterized by information that is never validated for its correctness. Still, for instance, there should be a limit on the length of comments in review or on the format of a user's email address.
-
 
 Then let's add a constraint over the length of the comment's body field (we'll use the 'validates' keyword).
 Open app/models/comment.rb and add between 'class' and 'end':
@@ -407,7 +374,7 @@ Open app/models/comment.rb and add between 'class' and 'end':
 <div class="os-specific">
   <div class="nix">
 {% highlight sh %}
-  validates :body, length: { maximum: 140 }
+validates :body, length: { maximum: 140 }
 {% endhighlight %}
   </div>
 If we now try to enter more than 140 characters we'll get an error. (try it out! ;) )
@@ -428,6 +395,3 @@ Test the change by opening the root path (that is, http://localhost:3000/) in yo
 **Coach:** Talk about routes, and include details on the order of routes and their relation to static files.
 
 **Rails 3 users:** You will need to delete the index.html from the `/public/` folder for this to work.
-
-
-

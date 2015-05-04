@@ -12,7 +12,6 @@ permalink: devise
 
 **This guide assumes that you have already built a Rails Girls app by** [**following the app development guide**](/app).
 
-
 ## *1.*Add devise gem
 
 Open up your `Gemfile` and add this line
@@ -33,7 +32,6 @@ Run the following command in the terminal.
 {% highlight sh %}
 rails g devise:install
 {% endhighlight %}
-
 
 ## *3.*Configure Devise
 
@@ -56,7 +54,7 @@ Open up `app/views/layouts/application.html.erb` and add:
 {% endhighlight %}
 right above
 {% highlight ruby %}
-   <%= yield %>
+<%= yield %>
 {% endhighlight %}
 
 Open up `app/views/ideas/show.html.erb` and remove the line that says:
@@ -71,8 +69,8 @@ Do the same for `app/views/comments/show.html.erb`. These lines are not necessar
 
 We'll use a bundled generator script to create the User model.
 {% highlight sh %}
-   rails g devise user
-   rake db:migrate
+rails g devise user
+rake db:migrate
 {% endhighlight %}
 
 **Coach:** Explain what user model has been generated. What are the
@@ -94,10 +92,10 @@ In order to do that, edit `app/views/layouts/application.html.erb` add:
 <% if user_signed_in? %>
   Logged in as <strong><%= current_user.email %></strong>.
   <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link' %>
 <% else %>
-  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link' %> |
+  <%= link_to "Login", new_user_session_path, :class => 'navbar-link' %>
 <% end %>
 {% endhighlight %}
 right after
@@ -110,7 +108,7 @@ right after
 Finally, force the user to redirect to the login page if the user was not logged in. Open up `app/controllers/application_controller.rb` and add:
 
 {% highlight ruby %}
-  before_action :authenticate_user!
+before_action :authenticate_user!
 {% endhighlight %}
 
 after `protect_from_forgery with: :exception`.
@@ -125,5 +123,3 @@ Open your browser and try logging in and out from.
 * Add relationships between users and ideas
 * Restrict users to only be able to edit their own ideas and delete their own comments
 * Expand to use roles or permissions (use one of the popular authorization gem like CanCan)
-
-

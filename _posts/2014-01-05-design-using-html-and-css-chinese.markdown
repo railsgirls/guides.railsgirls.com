@@ -32,7 +32,6 @@ permalink: design-html-css-chinese
 
     **教练：**解释css中链接的四种状态
 
-
 2.美化表格样式
 
  + 对于表格，我们可以使用[Bootstrap](http://www.bootcss.com/)的表格样式。打开`app/views/ideas/index.html.erb`文件，找到：
@@ -55,7 +54,6 @@ permalink: design-html-css-chinese
 
      尝试修改width
 
-
  + 打开文件`app/assets/stylesheets/ideas.css.scss`，加入以下代码：
 
   ```
@@ -66,9 +64,7 @@ permalink: design-html-css-chinese
   }
   ```
 
-
  + 尝试为页面添加背景图片，使用`background-image`属性，背景纹理资源参考此网站[http://subtlepatterns.com/](http://subtlepatterns.com/)
-
 
 3.footer样式调整
 

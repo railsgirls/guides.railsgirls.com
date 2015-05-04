@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Touristic Autism-friendly Spots App 
+title: Touristic Autism-friendly Spots App
 permalink: touristic-autism_resource-rating
 ---
 
@@ -10,7 +10,7 @@ permalink: touristic-autism_resource-rating
 *for [Rails Girls Galway](https://github.com/RailsGirlsGalway)*
 The basic guides that have been merged and adapted are the [Ruby on Rails Tutorial](http://www.railstutorial.org/book), the [basic RailsGirls app](http://guides.railsgirls.com/app/) and the tutorials for [creating thumbnails](http://guides.railsgirls.com/thumbnails), [authenticating users](http://guides.railsgirls.com/devise/), [adding design](http://guides.railsgirls.com/design), [deploying to OpenShift](http://guides.railsgirls.com/openshift/) and [adding comments](http://guides.railsgirls.com/commenting).
 
-What do we want our app to do? As a first thing, we would like to 
+What do we want our app to do? As a first thing, we would like to
 * authenticate **users**
 * allow authenticated users to create a new touristic **place** description
 * allow authenticated users to **comment** those places
@@ -47,14 +47,14 @@ You should add the letsrate_rateable function with its dimensions option, to the
 
 In app/models/place.rb add
 
-{% highlight sh %}
-  letsrate_rateable "autism_friendly", "overall"
+{% highlight ruby %}
+letsrate_rateable "autism_friendly", "overall"
 {% endhighlight %}
 
 Then you need to add a call letsrate_rater in the user model:
 
-{% highlight sh %}
-  letsrate_rater
+{% highlight ruby %}
+letsrate_rater
 {% endhighlight %}
 
 ## Step 3: Render the Views
@@ -63,7 +63,7 @@ There is a helper method which name is rating_for to add the star links. By defa
 
 Open app/views/places/show.html.erb and add
 
-{% highlight sh %}
+{% highlight erb %}
 <p>
 <strong>Votes:</strong><br />
 Autism_friendly : <%= rating_for @place, "autism_friendly" %> <br />
@@ -79,7 +79,6 @@ Overall : <%= rating_for_user @place, current_user, "autism_friendly", :star => 
 {% endhighlight %}
 
 You can use the rating_for_user helper method to show the star rating for the user.
-
 
 That's it! ^__^
 Try it out by restarting the server, add, commit and push on GitHub. If all it's working then you can also deploy ;)

@@ -49,7 +49,7 @@ Open `app/uploaders/picture_uploader.rb` and find the line that looks like
 this:
 
 {% highlight ruby %}
-  # include CarrierWave::MiniMagick
+# include CarrierWave::MiniMagick
 {% endhighlight %}
 
 Remove the `#` sign.

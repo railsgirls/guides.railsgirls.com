@@ -12,9 +12,7 @@ We will create a little voting app from scratch using a web development framewor
 
 __COACH__: For the rationale behind this slightly different beginners tutorial, take a look at this [post](http://dotclass.org/rails-girls-warsaw-programme/).
 
-
 **Make sure you have Rails installed.** [**Follow the installation guide**](/install) to get set up.
-
 
 ## Get to know the tools
 
@@ -24,7 +22,7 @@ __COACH__: For the rationale behind this slightly different beginners tutorial, 
 
 ### Text Editor
 
-* [Atom](https://atom.io/), [Sublime Text](http://www.sublimetext.com),  Vim and Emacs are examples of text editors your can use for writing code and editing files.
+* [Atom](https://atom.io/), [Sublime Text](http://www.sublimetext.com), Vim and Emacs are examples of text editors your can use for writing code and editing files.
 
 <h3><i class="icon-prompt">&nbsp;</i></h3>
 
@@ -79,17 +77,17 @@ Add the following HTML between the `<body>` and `</body>` tags (feel free to adj
 
 {% highlight erb %}
 <h1>My Rails Girls Diary</h1>
-  <div>
-    <h2>Submitted a Rails Girls application</h2>
-      <p>1.02.2014</p>
-      <p>Just submitted an application to a Rails Girls workshop. Can’t wait to see whether I’ll get in!</p>
-      <h2>Got in!</h2>
-      <p>15.02.2014</p>
-      <p>Received an email that my application got accepted! I’ll be at a RG workshop next week!</p>
-    <h2>The first day starts…</h2>
-      <p>22.02.2014</p>
-      <p>Today is the first day of the Rails Girls workshop. My coach is quite strange but it seems we all have Rails installed now and can start learning.</p>
-  </div>
+<div>
+  <h2>Submitted a Rails Girls application</h2>
+  <p>1.02.2014</p>
+  <p>Just submitted an application to a Rails Girls workshop. Can’t wait to see whether I’ll get in!</p>
+  <h2>Got in!</h2>
+  <p>15.02.2014</p>
+  <p>Received an email that my application got accepted! I’ll be at a RG workshop next week!</p>
+  <h2>The first day starts…</h2>
+  <p>22.02.2014</p>
+  <p>Today is the first day of the Rails Girls workshop. My coach is quite strange but it seems we all have Rails installed now and can start learning.</p>
+</div>
 {% endhighlight %}
 
 These are your first three diary entries. Note how the different tags get displayed and note the recurring structure.
@@ -103,13 +101,13 @@ Add the following either before or after the above diary entries (again, do adju
 {% highlight erb %}
 <div>
   <h1>My favourite websites</h1>
-    <ul>
-      <li><a href="http://railsgirls.com">Rails Girls</a></li>
-      <li><a href="https://en.wikibooks.org/wiki/Ruby_Programming">Wikibooks</a></li>
-      <li><a href="http://guides.rubyonrails.org">Ruby on Rails Guides</a></li>
-    </ul>
-  </div>
-  <img src="http://railsgirls.com/images/rg-warsaw.png" />
+  <ul>
+    <li><a href="http://railsgirls.com">Rails Girls</a></li>
+    <li><a href="https://en.wikibooks.org/wiki/Ruby_Programming">Wikibooks</a></li>
+    <li><a href="http://guides.rubyonrails.org">Ruby on Rails Guides</a></li>
+  </ul>
+</div>
+<img src="http://railsgirls.com/images/rg-warsaw.png" />
 {% endhighlight %}
 
 This is an HTML unordered list with some list items containing anchors (links) with hypertext references (URLs) to other pages. It’s followed by a paragraph containing an image – and the image’s source is at the given URL.
@@ -164,7 +162,7 @@ If you look at the structure of your list of links, it seems that every list ite
 
 Replace the contents of the `<ul>` tags with the following:
 
-{% highlight html %}
+{% highlight erb %}
 <%
   @websites = [
     ["http://railsgirls.com", "Rails Girls"],
@@ -242,8 +240,8 @@ Edit the `app/views/welcome/index.html.erb` view and replace the lines with the 
 {% highlight erb %}
 <% for entry in @entries %>
   <h2><%= entry.title %></h2>
-    <p><%= entry.date %></p>
-    <p><%= entry.contents %></p>
+  <p><%= entry.date %></p>
+  <p><%= entry.contents %></p>
 <% end %>
 {% endhighlight %}
 
@@ -292,8 +290,8 @@ This line means ‘take the `id` parameter and use it in the `Entry.find` method
 
 {% highlight erb %}
 <h2><%= @entry.title %></h2>
-  <p><%= @entry.date %></p>
-  <p><%= @entry.contents %></p>
+<p><%= @entry.date %></p>
+<p><%= @entry.contents %></p>
 {% endhighlight %}
 
 Visit [http://localhost:3000/entries/1](http://localhost:3000/entries/1) and compare it with [http://localhost:3000/entries/2](http://localhost:3000/entries/2) to see how using `params[’id’]` means that different diary entries get displayed.
@@ -310,7 +308,7 @@ Run `rake routes` again; notice how the row for the `entries#show` action starts
 
 Note how we use the `link_to` method that takes two parameters, the text to display (`entry.title`) and the path to link to. Check the source of the page to see what is the path for subsequent titles. Note how the path is created by calling the `entry_path` method with `entry` as its argument.
 
-__COACH__: Remind how the HTML for links looks like. Explain the relation between `entry_path` and the `entry` prefix from `rake routes`. Explain why the `entry_path` method needs the `entry` argument. Explain what the `entry_url` method does (and how it differs from the `entry_path`  method) if you want to.
+__COACH__: Remind how the HTML for links looks like. Explain the relation between `entry_path` and the `entry` prefix from `rake routes`. Explain why the `entry_path` method needs the `entry` argument. Explain what the `entry_url` method does (and how it differs from the `entry_path` method) if you want to.
 
 Now let’s try to get back from an entry screen to the index of all entries: edit the `app/views/entries/show.html.erb` template and add a link to the entries index, like this:
 

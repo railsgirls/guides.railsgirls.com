@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Touristic Autism-friendly Spots App 
+title: Touristic Autism-friendly Spots App
 permalink: touristic-autism_continuous-deployment
 ---
 
@@ -10,23 +10,19 @@ permalink: touristic-autism_continuous-deployment
 *for [Rails Girls Galway](https://github.com/RailsGirlsGalway)*
 The basic guides that have been merged and adapted are the [Ruby on Rails Tutorial](http://www.railstutorial.org/book), the [basic RailsGirls app](http://guides.railsgirls.com/app/) and the tutorials for [creating thumbnails](http://guides.railsgirls.com/thumbnails), [authenticating users](http://guides.railsgirls.com/devise/), [adding design](http://guides.railsgirls.com/design), [deploying to OpenShift](http://guides.railsgirls.com/openshift/) and [adding comments](http://guides.railsgirls.com/commenting).
 
-
-
 We’re going to deploy our (still-empty) Rails application to production. Deploying early and often allows us to catch any deployment problems early in our development cycle or else there could be troubles during the integration phases.
 Several shared hosts, virtual private servers, full-service deployment companies and cloud deployment services all provide facilities that makes it very easy to deploy Rails applications.
 
 OpenShift is one of the cloud deployment services offering such facilities. It is a cloud computing Platform as a Service (PaaS) that makes it easy to deploy apps online. It is open source and written in Ruby.
-
-
 
 [Create an OpenShift Online account](https://openshift.redhat.com/app/account/new?web_user[promo_code]=railsgirls), which allows you to put three apps online for free. Once you are signed up, install the OpenShift RHC Client Tools by adding the rhc gem in the production environment. Add the following to the Gemfiile (which is written in Ruby ndr):
 
 <div class="os-specific">
   <div class="nix">
     {% highlight sh %}
-      group :production do
-        gem install rhc
-      end
+group :production do
+  gem install rhc
+end
 {% endhighlight %}
   </div>
 If you are not using RVM or RailsInstaller then follow [this guide](https://www.openshift.com/developers/rhc-client-tools-install) (you may need to do "sudo gem install rhc").
@@ -37,11 +33,11 @@ Then run in the terminal:
 <div class="os-specific">
   <div class="nix">
     {% highlight sh %}
-  bundle install --without production
-  rhc setup
+bundle install --without production
+rhc setup
 {% endhighlight %}
   </div>
-The --without production option prevents the local installation of any production gems. 
+The `--without production` option prevents the local installation of any production gems.
 
 If Bundler complains about a readline error, try adding gem ’rb-readline’ to your Gemfile.
 
@@ -66,7 +62,7 @@ We need the .openshift directory and config/database.yml file from the sample ap
 <div class="os-specific">
   <div class="nix">
     {% highlight sh %}
-cd railsgirls-galway-2014 
+cd railsgirls-galway-2014
 cp -r ../openshiftapp/.openshift .
 cp ../openshiftapp/config/database.yml config
 {% endhighlight %}
@@ -84,7 +80,7 @@ gem 'pg', :group => [:production]
 gem 'rails_12factor', :group => [:production]
 {% endhighlight %}
   </div>
-Now do a bundle excluding the gems in production. 
+Now do a bundle excluding the gems in production.
 
 On some platforms, this may generate platform-specific versions of your Gems that cause issues when you push your app to the cloud. To prevent this, open your Gemfile.lock file and check the versions of the ‘sqlite3’ and ‘pg’ Gems. If they have a platform-specific suffix, such as -x86-mingw32, remove this (eg. change pg (0.16.0-x86-mingw32) to pg (0.16.0) and sqlite3 (1.3.8-x86-mingw32) to sqlite3 (1.3.8)). Save and close the file, and run the above bundle command again before continuing.
 
@@ -93,13 +89,12 @@ Add and commit your changes in Git
 
 **Coach:** Talk about relational databases and the differences between SQLite and PostgreSQL.
 
-
 We are now ready to deploy the Rails Girls app to OpenShift. We need to tell our Git repository where to push the code. To get the location of your OpenShift code repository, run the following command, and copy the Git URL from the output.
 
 <div class="os-specific">
   <div class="nix">
     {% highlight sh %}
-       rhc app show openshiftapp
+rhc app show openshiftapp
 {% endhighlight %}
   </div>
 </div>
@@ -114,7 +109,7 @@ git push -f --set-upstream openshift master
 {% endhighlight %}
   </div>
 Refresh the app in your browser to see the result.
-If the app fails to visualize (500 Internal Server Error) often (error from the rhc tail openshiftapp : "Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`") the following solves. 
+If the app fails to visualize (500 Internal Server Error) often (error from the rhc tail openshiftapp : "Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`") the following solves.
 Get a secret with "rake secret" assign it to the environment variable 'SECRET_KEY_BASE' and export the variable to ~/.bash_profile.
 OpenShift (but also Heroku) needs to serve static assets like images and CSS:
 

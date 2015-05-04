@@ -6,7 +6,7 @@ permalink: trucker
 
 # Put Your App Online With Trucker.io
 
-*Created by Floor Drees, [@floordrees](https://twitter.com/floordrees) for [Rails Girls Leiden](http://railsgirls.com/leiden)* 
+*Created by Floor Drees, [@floordrees](https://twitter.com/floordrees) for [Rails Girls Leiden](http://railsgirls.com/leiden)*
 
 ### Get Trucker
 
@@ -21,12 +21,12 @@ $ gem install trucker-cli
 
 You can create and manage applications using the Trucker control panel. However you will need to also log in using the Trucker command line client:
 {% highlight sh %}
-$ truck target https://api.ie.trucker.io  
-Setting target to https://api.ie.trucker.io... OK  
+$ truck target https://api.ie.trucker.io
+Setting target to https://api.ie.trucker.io... OK
 
-$ truck login  
-email>  
-password>  
+$ truck login
+email>
+password>
 {% endhighlight %}
 
 At this point, the Trucker client will require that you choose a space to work in. Spaces are environments whose purpose is to organize your applications based on their life-cycle stage. Your Trucker account comes equipped with the following spaces:
@@ -61,7 +61,6 @@ First perform a `push` command and enter the name you want your application to s
 $ truck push
 Name> railsgirls
 {% endhighlight %}
-
 
 {% highlight sh %}
 Instances> 1
@@ -107,8 +106,7 @@ Binding rds-mysql-aa0d6 to trucker-rails... OK
 
 __COACH__: Talk about MySQL.
 
-
-We don't want to add other services, so you can answer the following questions with `n`: 
+We don't want to add other services, so you can answer the following questions with `n`:
 {% highlight sh %}
 Create another service?> n
 
