@@ -37,7 +37,7 @@ permalink: app
 
 ### Important
 
-It is important that you select the instructions specific to your operating system - the commands you need to run on a Windows computer are slightly different to Mac or Linux. If you're having trouble check the Operating System switcher at the bottom of the commands. In case you're using a cloud service (e.g. nitrous), you need to run the Linux commands even if you are on a Windows computer.
+It is important that you select the instructions specific to your operating system - the commands you need to run on a Windows computer are slightly different to Mac or Linux. If you're having trouble check the Operating System switcher at the bottom of the commands.
 
 ## *1.*Creating the application
 
@@ -48,7 +48,6 @@ First, let's open a terminal:
 * Mac OS X: Open Spotlight, type *Terminal* and click the *Terminal* application.
 * Windows: Click Start and look for *Command Prompt*, then click *Command Prompt with Ruby on Rails*.
 * Linux (Ubuntu/Fedora): Search for *Terminal* on the dash and click *Terminal*.
-* Cloud service (e.g. nitrous): Log in to your account, start your box and switch to its IDE (see [installation guide](/install#using-a-cloud-service) for details). The terminal is usually at the bottom of your browser window.
 
 Next, type these commands in the terminal:
 
@@ -130,7 +129,7 @@ rails server
   </div>
 </div>
 
-Open <http://localhost:3000> in your browser. If you are using a cloud service (e.g. nitrous), use its preview functionality instead (see [installation guide](/install#using-a-cloud-service) for details).
+Open <http://localhost:3000> in your browser.
 
 You should see "Welcome aboard" page, which means that the generation of your new app worked correctly.
 
@@ -184,7 +183,7 @@ rails server
   </div>
 </div>
 
-Open <http://localhost:3000/ideas> in your browser. Cloud service (e.g. nitrous) users need to append '/ideas' to their preview url instead (see [installation guide](/install#using-a-cloud-service)).
+Open <http://localhost:3000/ideas> in your browser.
 
 Click around and test what you got by running these few command-line commands.
 
@@ -371,7 +370,7 @@ Now refresh your browser to see what changed.
 
 ## *5.*Finetune the routes
 
-Open <http://localhost:3000> (or your preview url, if you are using a cloud service). It still shows the "Welcome aboard" page. Let's make it redirect to the ideas page.
+Open <http://localhost:3000>. It still shows the "Welcome aboard" page. Let's make it redirect to the ideas page.
 
 Open `config/routes.rb` and after the first line add
 
@@ -401,7 +400,7 @@ It also adds a new simple route to your routes.rb.
 get "pages/info"
 {% endhighlight %}
 
-Now you can open the file `app/views/pages/info.html.erb` and add information about you in HTML. To see your new info page, take your browser to <http://localhost:3000/pages/info> or, if you are a cloud service user, append '/pages/info' to your preview url.
+Now you can open the file `app/views/pages/info.html.erb` and add information about you in HTML. To see your new info page, take your browser to <http://localhost:3000/pages/info>.
 
 ## *6+.*What next?
 
