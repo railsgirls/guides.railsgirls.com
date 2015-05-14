@@ -239,7 +239,7 @@ next, remove
 
 Allow only the place creator to edit/delete a place.
 
-Open app/vies/places/index.html.erb and substitute
+Open app/views/places/index.html.erb and substitute
 
 
 {% highlight sh %}
