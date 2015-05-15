@@ -39,7 +39,7 @@ rails g devise:install
 
 Ensure you have defined default url options in your environments files. Open up `config/environments/development.rb` and add this line:
 {% highlight ruby %}
-   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 {% endhighlight %}
 
 before the `end` keyword.
