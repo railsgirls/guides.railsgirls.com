@@ -6,19 +6,18 @@ permalink: guide
 
 # The How to Guide
 
-
 ## Hosting your first Rails Girls event
 
 Our aim is to give tools for women to understand technology. The Rails Girls events do this by providing a great first experience on building the Internet.
 
 Rails Girls was founded in end of 2010 in Helsinki. Originally intended as a onetime event, we never thought we'd see so many local chapters all around the world! This guide has been put together to help you get started.
 
-If you want to organize an event, start by filling out [http://railsgirls.com/inyourcity](http://railsgirls.com/inyourcity) and you'll receive more instructions. 
+If you want to organize an event, start by filling out [http://railsgirls.com/inyourcity](http://railsgirls.com/inyourcity) and you'll receive more instructions.
 
 The roadmap for future events can be seen at [www.railsgirls.com](http://railsgirls.com).
 
-
 ### The Basics
+
 Rails Girls events are non-profit. We don’t charge the participants and do not pay for coaches or speakers. Participants don’t need any previous knowledge about programming and there are no age-limitations. All the participants need is a laptop and some curiosity.
 
 The two-day event includes a lot of small group working and short focused talks on programming, design and web. No panel discussions or podium-talks - the spirit should be informal and hands-on. The more you can remove abstractions and add inclusivity the better.
@@ -32,7 +31,7 @@ The two-day event includes a lot of small group working and short focused talks 
 
 #### Codes of Conduct
 
-Rails Girls events are inclusive, friendly and safe environments. They have zero tolerance of harrasment or bullying. You can include a Code of Conduct to your event. Below are examples:
+Rails Girls events are inclusive, friendly and safe environments. They have zero tolerance of harassment or bullying. You can include a Code of Conduct to your event. Below are examples:
 
 * [Rails Girls Summer of Code Code of Conduct](http://railsgirlssummerofcode.org/about/code-of-conduct/)
 * [PyLadies Code of Conduct](http://www.pyladies.com/CodeOfConduct/)
@@ -66,7 +65,6 @@ Remember to do a [FridayHug](http://fridayhug.com)!
 
 21 -> Coach dinner
 Go through the application with the coaches during dinner.
-
 
 #### Saturday: Workshop
 
@@ -110,7 +108,7 @@ Concepts to cover:
 14:00 - 14:30 Bentobox exercise
 Putting technical jargon into a context with a conceptual model called Bentobox.
 
-Two exercises: 1) Going through the 10 technical concepts with the physical Bentobox boards.  2) Going through the words the women have themselves submitted with the coaches.
+Two exercises: 1) Going through the 10 technical concepts with the physical Bentobox boards. 2) Going through the words the women have themselves submitted with the coaches.
 
 + [Bentobox slidedeck](http://speakerdeck.com/u/railsgirls/p/rails-girls-bentobox-exercise)
 + [Instruction video](http://vimeo.com/39049632)
@@ -159,27 +157,22 @@ While the event is underway, remember to take pictures, collect tweets and ask q
 + [Download materials](http://www.speakerdeck.com/u/railsgirls)
 
 #### Website
-E-mail contact(a)railsgirls.com and ask to be included in the repo. Look for readme.txt for further instructions! Before making a site you should have at least two coaches and one sponsor onboard.
 
+E-mail contact(a)railsgirls.com and ask to be included in the repo. Look for readme.txt for further instructions! Before making a site you should have at least two coaches and one sponsor onboard.
 
 + [Counter for the site](https://github.com/ys/rails-girls-count#readme)
 
 #### How to find local developers?
 
-* Google. Almost every country has some sort of a Rails or Ruby community (sometimes called Ruby Brigade or Ruby Tuesday). Look for [Hackernews](http://news.ycombinator.com) meetups, [GitHub](http://www.github.com) contributors or [Dribbble](http://dribbble) draftees. Find the local open source scene. Surf the technology conferences (here's [a list](http://rubythere.com/) of Ruby-themed ones, but others are cool too) and meetups at [meetup.com](http://www.meetup.com). Call software development houses, big and small. Don't forget IRC and podcasts!
-
+* Google. Almost every country has some sort of a Rails or Ruby community (sometimes called Ruby Brigade or Ruby Tuesday). Look for [Hacker News](http://news.ycombinator.com) meetups, [GitHub](http://www.github.com) contributors or [Dribbble](https://dribbble.com) draftees. Find the local open source scene. Surf the technology conferences (here's [a list](http://rubythere.com/) of Ruby-themed ones, but others are cool too) and meetups at [meetup.com](http://www.meetup.com). Call software development houses, big and small. Don't forget IRC and podcasts!
 * Check out hashtags like #rails #ruby and #opensource from [Twitter search](https://twitter.com/#!/search-home). To find people from, say, close to NYC, use the following search operators "near:NYC within:15mi". Some countries have specific hashtags like #Rubysur and #RubyArg they use, remember to ask!
-
 * Startup community. Startup Digest is a good beginning point for events and communities.
-
 * Often there are one or two key people who will be able to introduce you further. The technology world is surprisingly connected.
 
 #### How to find participants?
 
 * Use social media: Facebook, Twitter & local networks such as Weibo. Friends, girlfriends, co-workers!
-
 * Local [Girls in Tech](https://twitter.com/#!/gitweet), [DevChix](http://www.devchix.com/), [Geek Girl](http://geekgirlmeetup.com/) chapters etc. Check out also [Meetup.com](http://www.meetup.com/). Twitter lists like @anitaborg's [Tech Women Programs](https://twitter.com/#!/anitaborg_org/tech-women-programs) and similar.
-
 * Think outside the box: universities, book clubs, music stores, design agencies, [Etsy](http://www.etsy.com). We want women who are interested in technology, but they can still have very varied backgrounds.
 
 #### How to get press?
@@ -215,28 +208,18 @@ We’d love to have your support!
 
 Yours, name
 
-
-
 ### How much does it cost?
 
 The costs below are estimated for 30 participants, 10 coaches - but they may vary a lot. It's easiest to try to get a local sponsor to pay the bills directly or partner with someone who has a set account to handle money. These calculations are done in Finland, in €, where food & alcohol is very expensive, but spaces are often free. All in all you should be able to organise an event easily for a little over a thousand euros.
 
 + **Sparkling wine + cups** for the installation festival. 6 bottles, 6 euros a bottle. 36 euros.
-
 + **Breakfast Coffee**, pastry. 40 times around 5 euros. 200 euros
-
-+ **Lunch.** Catered lunch can be around 15 euros, but you can do with a lot less by cooking yourself.  Add some water and coffee (50 euros). 650 euros.
-
++ **Lunch.** Catered lunch can be around 15 euros, but you can do with a lot less by cooking yourself. Add some water and coffee (50 euros). 650 euros.
 + **Marketing materials.** Printing workbooks, ordering stickers, posters and other swag. Again, varies a lot, maybe you can use someones printer, but at least around 200 should be reserved.
-
 + **Coach dinner.** At a restaurant or homemade. A way to say thank you to the coaches for their volunteer work. Around 20 euros per head. 200 euros.
-
-+ **Space.** Try to get this one sponsored/free, they can be really expensive. Often startups are co-operative and can offer their space for use (esp. on weekends).	0 - XXXX euros.
-
-+ **Afterparty.** It's nice if you can throw a good party with free beverages, but can also be done low-key in a local bar or on set in the park!	0 - XXXX euros.
-
-+ **Travel expenses.**	If you don't have any RG-team members in your country, consider inviting us over. We don't need fancy hotels, promise! Same if you want to invite speakers to your event. 	0 - XXX
-
++ **Space.** Try to get this one sponsored/free, they can be really expensive. Often startups are co-operative and can offer their space for use (esp. on weekends). 0 - XXXX euros.
++ **Afterparty.** It's nice if you can throw a good party with free beverages, but can also be done low-key in a local bar or on set in the park! 0 - XXXX euros.
++ **Travel expenses.** If you don't have any RG-team members in your country, consider inviting us over. We don't need fancy hotels, promise! Same if you want to invite speakers to your event. 0 - XXX
 + *Total 1286 euros*.
 
 __What do sponsors get?__
@@ -247,8 +230,6 @@ __What do sponsors get?__
 * In most events there are official pictures taken that the sponsors can use afterwards
 
 Don’t give out the participant info, but sponsors are free to hang out at the event and be sure to include a short message to the sponsor in a thank-you note. Sponsor swag may be included in the goodie bag to an extent, but it should be something tasteful, not trashy and/or related to women.
-
-
 
 ---
 
@@ -266,6 +247,7 @@ Anyone. What we look for is a group of people dedicated in making this a stellar
 Start by filling out [http://railsgirls.com/inyourcity](http://railsgirls.com/inyourcity) and someone from our team will be in contact
 
 #### Where can I find all the materials for posters, nametags, sample presentations and such?
+
 Check out below, and let us know if something is missing!
 
 + [Download materials](http://www.speakerdeck.com/u/railsgirls)
@@ -292,7 +274,6 @@ The coaches don’t need to be hardcore experts on Rails - basic knowledge and w
 
 You can get to know the curriculum by checking out [guides.railsgirls.com/app](http://guides.railsgirls.com/app). There is also always a pre-event coach dinner where we’ll go through some pedagogical suggestions and check everyone knows what is happening. Avoid jargon, tie examples to what your doing, encourage asking questions. The installation instructions can be found at [guides.railsgirls.com/install](http://guides.railsgirls.com/install). We also understand that coaches are human and that for most of the people this is the first time teaching something. Worry not - the women have always been really happy with whatever they learn and just the chance to ask questions is enough.
 
-
 We hope the coaches are ok with having their name and twitter-id/github/some mean of contact on railsgirls.com so the women always have a local face to answer their questions.
 
 In addition, we encourage coaches to come up with additional exercises for the group. After completing the ideation app many women will want to try tweaking the look & feel of the site, implementing commenting, Facebook sharing, pushing the app to Heroku, etc.
@@ -314,8 +295,6 @@ For more information about the non-profit event, check railsgirls.com or guides.
 (You can also include the chapter "What is expected from the coaches" to the mail)"
 
 ---
-
-
 
 #### What materials do I get?
 
@@ -342,9 +321,8 @@ Rails Girls is intended for anyone and we want to keep it flexible enough for le
 After selecting participants we generally split them into three groups:
 
 1. people with no previous programming experience
-2. people with some front-end experience (HTML, CSS, Javascript) and
+2. people with some front-end experience (HTML, CSS, JavaScript) and
 3. people with a little experience in programming or a background in computer sciences. You can use the different name-tags for each group if you want to (rubies, foxes, octocats, rails..)
-
 
 ##### Sample letter of acceptance
 
@@ -352,7 +330,7 @@ Title: Rails Girls workshop - welcome!
 
 Dear attendee,
 
-Congratulations! We’re happy to invite you to join in on the  Rails Girls workshop in (insert city). We hope that this workshop will provide you a great first experience on building web apps.
+Congratulations! We’re happy to invite you to join in on the Rails Girls workshop in (insert city). We hope that this workshop will provide you a great first experience on building web apps.
 
 What happens next?
 
@@ -405,7 +383,7 @@ Make Rails Girls better - give us feedback!
 We want to hear from you! Give us feedback about the workshop or how we can make the event better – it’s really quick, and it’ll help us improve our workshop at railsgirls.com/feedback
 
 Keep on coding!
-We realize there was quite a lot of stuff in todays lecture and for most of you it all felt a little overwhelming. We strongly recommend trying out Rails for Zombies exercise at http://www.codeschool.com/ latest by next weekend, it'll refreshen all you've learned so far and teach you some more.
+We realize there was quite a lot of stuff in today's lecture and for most of you it all felt a little overwhelming. We strongly recommend trying out Rails for Zombies exercise at http://www.codeschool.com/ latest by next weekend, it'll refreshen all you've learned so far and teach you some more.
 
 Two things to keep you going:
 - (Insert here a couple of community events that the participants should take part in)
@@ -414,10 +392,6 @@ There was a LOT of interest in doing follow-up events. If you have ideas for thi
 
 And that’s all for now,
 Your Rails Girls team
-
-
-
-
 
 #### What happens after the event?
 
@@ -428,8 +402,6 @@ Inviting real developers to coach is Rails Girls sessions not only gives the par
 * Invite everyone to the Facebook Group where they can ask questions.
 * Invite the women together again within a month. You can host these meetups at the Rails Girls global meetup page <http://www.meetup.com/Rails-Girls/> - we’ll be happy to promote events. However, it doesn't matter under which brand you want to continue meeting - the important thing'
 * Write about your event for blog.railsgirls.com by [submitting a story](http://blog.railsgirls.com/submit)
-
-
 
 ---
 
@@ -448,9 +420,8 @@ This is a small checklist for your event. Rails Girls can be thrown together in 
   2. Application deadlines.
   3. Short introductory text, around 200 characters. Check out the past events for inspiration!
   4. Speakers of the day
-  5. Partners - a two parapgraph sentence and a logo (100 x 100px or 250 x 90px and in png format)
+  5. Partners - a two paragraph sentence and a logo (100 x 100px or 250 x 90px and in png format)
   6. Coaches with twitter-handle
-
 * Start marketing the event, you can use materials from [here](http://www.speakerdeck.com/u/railsgirls)
 * Start looking for sponsors
 * Reach out for press and write a pre-event story
@@ -476,5 +447,5 @@ This is a small checklist for your event. Rails Girls can be thrown together in 
 * Send a thank you note to coaches
 * Send a thank you note for organizers
 * Add yourself to the [Rails Girls Map](http://rails-girls-map.herokuapp.com/)
-* Share the numbers of your event by filling out this short [Questionaire](https://railsgirls.wufoo.eu/forms/rails-girls-events-all-the-numbers/)
+* Share the numbers of your event by filling out this short [Questionnaire](https://railsgirls.wufoo.eu/forms/rails-girls-events-all-the-numbers/)
 * Write a blogpost to the global blog by [submitting your story](http://blog.railsgirls.com/submit) - or ask one of the participants or coaches to write one!

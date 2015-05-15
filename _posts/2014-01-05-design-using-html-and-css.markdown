@@ -10,7 +10,7 @@ permalink: design-html-css
 
     ```
     .navbar {
-        min-height: 38px;
+      min-height: 38px;
       background-color: #f55e55;
     }
     ```
@@ -26,14 +26,13 @@ permalink: design-html-css
     ```
     .navbar a.brand { font-size: 18px; }
     .navbar a.brand:hover {
-     color: #fff;
-     background-color: transparent;
-     text-decoration: none;
+      color: #fff;
+      background-color: transparent;
+      text-decoration: none;
     }
     ```
 
     **Coach: ** explain the 4 states of a link
-
 
 2.Design your table
 
@@ -59,7 +58,6 @@ permalink: design-html-css
 
      try to change the width and see what's gonna happen
 
-
  + add the following lines to the bottom of file app/assets/stylesheets/ideas.css.scss:
 
   ```
@@ -70,15 +68,13 @@ permalink: design-html-css
   }
   ```
 
-
  + try add some background style with property `background-image`,
    reference to
    [http://subtlepatterns.com/](http://subtlepatterns.com/) for some patterns.
 
-
 3.add style to footer
 
-+ add the lines to bottom of  app/assets/stylesheets/application.css:
++ add the lines to bottom of app/assets/stylesheets/application.css:
 
     ```
     footer {
@@ -99,12 +95,12 @@ permalink: design-html-css
 
    ```
    .container input[type="submit"] {
-      height: 30px;
-      font-size: 13px;
-      background-color: #f55e55;
-      border: none;
-      color: #fff;
-    }
+     height: 30px;
+     font-size: 13px;
+     background-color: #f55e55;
+     border: none;
+     color: #fff;
+   }
    ```
 
    **Coach** explain how to use `border` in css, try modify the style

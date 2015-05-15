@@ -11,22 +11,25 @@ permalink: guide-to-the-guide
 This guide is an accompaniment to the [Rails Girls Guide](/app) you will be using to build your first Rails application. Its purpose is to provide background information about the structure of a Rails application, Rails terminology and commands, so you can understand what is happening when you are implementing the code in the Rails Girls Guide. We hope that this guide will provide you with a way to retain what you learn over the course of this workshop, and to maintain your interest in Rails development. Welcome!
 
 ### [**1.** Creating the application](#1_create_the_application)
+
 Commands you need to know
 
 ### [**2.** Creating Idea scaffold](#2_create_idea_scaffold)
+
 Scaffolding, models, migrations
 
 ### [**3.** Designing](#3_design)
+
 The design layers ( HTML, CSS, ERB)
 MVC Architecture
 
 ### [**4.** Adding picture uploads](#4_add_picture_uploads)
+
 Libraries, gems and open-source
 
 ### [**5.** Finetuning the routes](#5_finetune_the_routes)
+
 routes, HTTP Methods: GET, POST, PUT and DELETE
-
-
 
 ## <a id="1_create_the_application">*1.* Create the application</a>
 
@@ -69,39 +72,40 @@ In order to create our idea model, we use the `scaffold` command which includes 
 ### The ideas table
 
 <table class="table table-hover table-bordered">
-	<thead>
-		<tr>
-			<th>id</th>
-			<th>name</th>
-			<th>description</th>
-			<th>picture</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>1</td>
-			<td>“Money-spinner”</td>
-			<td>“Open a moveable shop!”</td>
-			<td>“GreatIdea.jpg”</td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td>“Champagne For Breakfast!”</td>
-			<td>“We should do this every Friday!”</td>
-			<td>“Champagne.jpg”</td>
-		</tr>
-		<tr>
-			<td>3</td>
-			<td>...</td>
-			<td>...</td>
-			<td>...</td>
-		</tr>
-	</tbody>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>description</th>
+      <th>picture</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>“Money-spinner”</td>
+      <td>“Open a moveable shop!”</td>
+      <td>“GreatIdea.jpg”</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>“Champagne For Breakfast!”</td>
+      <td>“We should do this every Friday!”</td>
+      <td>“Champagne.jpg”</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+  </tbody>
 </table>
 
 ### Naming conventions
 
 #### Active Record
+
 In Rails, the default system for communicating with an application’s database is called *Active Record*, which provides various methods for creating, saving, and finding data. To retrieve information from the database, *Active Record* establishes relationships between different parts of the application using naming conventions:
 
 - Table names have all lowercase letters and underscores between words, e.g. “ideas”, “invoice\_items”
@@ -112,27 +116,16 @@ In Rails, the default system for communicating with an application’s database 
 As we’ve already discussed, a model can have attributes (properties) represented by columns in the corresponding database table. To be supported by the Active Record system, these attributes must conform to a list of appropriate types:
 
 - `:binary` - stores data such as images, audio files or movies
-
 - `:boolean` - stores true or false values (such as whether a particular user is an administrator of an application or not)
-
 - `:date` - stores only a date (year, month, day)
-
 - `:datetime` - stores both a date and a time
-
 - `:decimal` - stores decimal numbers with precision that varies according to your specifications
-
 - `:float` - stores decimal points with fixed precision i.e. you can’t specify the precision (`:decimal` is better for mathematical operations in which precision is required, but `:float` is processed faster and is better in situations where speed is required and accuracy is secondary)
-
 - `:integer` - stores whole numbers
-
 - `:primary_key` - the primary key of a table is assumed to be the id
-
 - `:string` - stores 255 characters of text information, i.e. is used for short text fields (names, emails etc)
-
 - `:text` - stores text information with no character limit (used for comments, blog posts etc)
-
 - `:time` - stores only a time
-
 - `:timestamp` - stores both a time and date. `:timestamp` is different from `:datetime` and serves a different purpose, but there’s no need to go into that here
 
 ### What are migrations and why do you need them?
@@ -142,13 +135,16 @@ Migrations change the state of the database. When you run the `scaffold` command
 The `rake db:migrate` command updates the database according to the specifications in the migration file. This command, known as “migrating up”, ensures that your idea model is added to the database. Migrations can also be undone (“migrating down”) using the command `rake db:rollback`.
 
 ## <a id="3_design">*3.* Design</a>
+
 In a Ruby on Rails application, the user interface (what someone visiting the website will see), is often written in HTML with Embedded Ruby (ERB) code. This code is contained in a specific directory called ‘views’, located in the `app` folder of your Rails application directory.
 
 ### HTML
+
 HTML, which stands for HyperText Markup Language, is the primary language for creating web pages and other information that can be displayed in a web browser. HTML is written using tags, angle brackets which tend to come in pairs (a “start tag” and an “end tag”), enclosing text-based content. In paired tags, the end tag also has a slash after the opening angle bracket, to distinguish it from the start tag. A paragraph (represented in HTML by the letter ‘p’) would use a start tag like this: `<p>` and an end tag like this: `</p>`, to enclose the text intended for display. Unpaired tags that are opened but don’t need to be closed (e.g. `<br>`, which defines a single line break) are known as “empty elements”. The web browser uses HTML tags to interpret how the contents will be displayed.
 
 ### ERB: Embedded Ruby
-ERB is a system supplied by Ruby that allows you to insert pure Ruby code into files written in other languages, such as Javascript or HTML. The Ruby code is contained within specific angle brackets (`<%` and `%>`) which instruct the system to execute the contents. If an `=` sign accompanies the angle brackets, (`<%=` and %`>`) then the contents are executed and rendered on the page.
+
+ERB is a system supplied by Ruby that allows you to insert pure Ruby code into files written in other languages, such as JavaScript or HTML. The Ruby code is contained within specific angle brackets (`<%` and `%>`) which instruct the system to execute the contents. If an `=` sign accompanies the angle brackets, (`<%=` and %`>`) then the contents are executed and rendered on the page.
 
 For example, if you had 25 active ideas in your application, the code:
 `There are currently <%= Idea.count %> active ideas`
@@ -156,6 +152,7 @@ would render as:
 > There are currently 25 active ideas
 
 ### MVC Architecture
+
 In a standard Rails application (like you one you have generated), the `app/` folder of your application starts out with three folders (or directories): ‘models’ (which we have already discussed), ‘controllers’ and ‘views’. The relationship between these directories is the foundation (known as MVC Architecture) of the application, and of Rails development.
 
 When you ran the `rails generate scaffold` command, in addition to creating the idea model, you also created an accompanying ideas controller (`ideas_controller.rb`), located in the controllers folder, and an ideas views folder containing several files that you will use to create a dynamic application.
@@ -163,6 +160,7 @@ When you ran the `rails generate scaffold` command, in addition to creating the 
 When attempting to display a Rails website, a web browser sends a request via the server which eventually hits the Rails *controller*. *Controllers* act as mediators between the *views* and the *models*. When the *controller* receives the information, it communicates with a *model* representing a resource of the application (in our case, an “idea”) which in turn communicates with the database. Upon retrieving the required information from the *model*, the *controller* renders the *view* which returns the complete web page to the browser as HTML.
 
 ### CSS and layouts
+
 CSS (Cascading Style Sheets) is a language used to describe the formatting of pages written in a ‘markup language’, i.e. a language for processing, defining and presenting text with a prescribed formatting code e.g. tags, that distinguish it from plain text. The most common application of CSS is in conjunction with HTML.
 {% highlight css %}
 body { padding-top: 100px; }
@@ -190,7 +188,6 @@ In the above code, the `link rel` (link relation) is defining the nature of the 
 
 This code returns a stylesheet link tag for the source, in this case “application”, i.e. `application.css`. This means that the styling you implemented in application.css will be applied to the various pages of your application.
 
-
 {% highlight erb %}
 <div class="container">
   <%= yield %>
@@ -206,6 +203,7 @@ In this code:
 ## <a id="4_add_picture_uploads">*4.* Add picture uploads</a>
 
 ### Libraries
+
 Many programming languages, including Ruby, use a wide range of libraries. In Ruby’s case, most of these libraries are released in the form of self-contained packages called *gems*, which contain all the information required to install and implement them. These gems are contained in your application’s `Gemfile` and if you look in this file you’ll notice that when you created your first Rails application it came with several gems that ensure your application functions correctly.
 
 Gems help simplify and prevent repetition in a developer’s code, in keeping with the DRY (Don’t Repeat Yourself) principle of software development. Gems may solve specific problems, add specific functionality, or address specific requirements, meaning that should another developer encounter a similar scenario, instead of writing new code, they can install a gem containing pre-written code. For example, “CarrierWave”, the gem you are adding to your gemfile is designed to make it easy to upload files to your application.
@@ -226,7 +224,7 @@ The code we are implementing, `<%= f.file_field :picture %>`, tells Rails to cre
 
 In the code `<%= @idea.picture %>`, `@idea` is known as an *instance variable*. Instance variables are prefixed with an @ symbol and are defined in the controller action that corresponds with the view in which they are referenced. For the purposes of the code we are implementing, `@idea` is defined in the ‘show’ action of the `Ideas` controller, with the code `@idea = Idea.find(params[:id])`. This makes it available for us to use in the view `show.html.erb`. It could be defined differently in different controller actions (e.g. index or new). The code `@idea = Idea.find(params[:id])` uses the Rails `find` method to retrieve specific ideas from the database.
 
-The code that follows the `@idea` variable (`.picture`) tells Rails to access the ‘picture’ attribute of our resource (idea). By replacing the code  `<%= @idea.picture %>` with `<%= image_tag(@idea.picture_url...)` we are using the Ruby `image_tag` *helper* which translates to an HTML `<img>` tag (used to define images in HTML) but by default retrieves images from the folder public/images, which is where our uploaded images are stored. The `image_tag` helper also allows us to insert a block of code which creates a path to an image associated with a particular idea (`@idea.picture_url`).
+The code that follows the `@idea` variable (`.picture`) tells Rails to access the ‘picture’ attribute of our resource (idea). By replacing the code `<%= @idea.picture %>` with `<%= image_tag(@idea.picture_url...)` we are using the Ruby `image_tag` *helper* which translates to an HTML `<img>` tag (used to define images in HTML) but by default retrieves images from the folder public/images, which is where our uploaded images are stored. The `image_tag` helper also allows us to insert a block of code which creates a path to an image associated with a particular idea (`@idea.picture_url`).
 
 You will notice that within this block of code you are implementing we are also able to set a default width for each image (`:width => 600`). The final line of code `if @idea.picture.present?` tells Rails to check the corresponding database table to see whether a picture exists before rendering the code underneath.
 
@@ -234,85 +232,84 @@ You will notice that within this block of code you are implementing we are also 
 
 In a functional Rails application, there is an inbuilt system in place for translating incoming requests from the browser in order to return the intended response. This system is called *routing*. Requests from the browser are interpreted as specific HTTP methods. HTTP (Hypertext Transfer Protocol) is the protocol that defines how information (usually webpages or webpage components composed of text with hyperlinks - ‘hypertext’), is formatted and transmitted across the internet. There are four primary HTTP methods, each of which is a request to perform an operation on a specific resource (e.g. users, posts); GET, POST, PUT and DELETE. Rails’ inbuilt routing system automatically generates routes for each resource that map to specific actions (index, show, new, edit, create, update, delete) defined in the controller. So, for each of our models, there are seven related actions defined in the associated controller, `ideas_controller.rb`. These actions specify the appropriate response (a ‘method’) which is most likely to render the corresponding view, e.g. `ideas/index.html.erb`.
 
-
 <table class="table table-bordered table-hover">
-	<thead>
-		<tr>
-			<td>HTTP Method</td>
-			<td>Path</td>
-			<td>Action</td>
-			<td>used for</td>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>GET</td>
-			<td>/ideas</td>
-			<td>index</td>
-			<td>displaying a list of all ideas</td>
-		</tr>
-		<tr>
-			<td>GET</td>
-			<td>/ideas/new</td>
-			<td>new</td>
-			<td>returning an HTML form for creating a new idea</td>
-		</tr>
-		<tr>
-			<td>POST</td>
-			<td>/ideas</td>
-			<td>create</td>
-			<td>creating a new idea</td>
-		</tr>
-		<tr>
-			<td>GET</td>
-			<td>/photos/:id</td>
-			<td>show</td>
-			<td>displaying a specific photo</td>
-		</tr>
-		<tr>
-			<td>GET</td>
-			<td>/photos/:id/edit</td>
-			<td>edit</td>
-			<td>returning an HTML form for editing a specific photo</td>
-		</tr>
-		<tr>
-			<td>PUT</td>
-			<td>/photos/:id</td>
-			<td>update</td>
-			<td>updating a specific photo</td>
-		</tr>
-		<tr>
-			<td>DELETE</td>
-			<td>/photos/:id</td>
-			<td>destroy</td>
-			<td>deleting a specific photo</td>
-		</tr>
-	</tbody>
+  <thead>
+    <tr>
+      <td>HTTP Method</td>
+      <td>Path</td>
+      <td>Action</td>
+      <td>used for</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>/ideas</td>
+      <td>index</td>
+      <td>displaying a list of all ideas</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>/ideas/new</td>
+      <td>new</td>
+      <td>returning an HTML form for creating a new idea</td>
+    </tr>
+    <tr>
+      <td>POST</td>
+      <td>/ideas</td>
+      <td>create</td>
+      <td>creating a new idea</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>/photos/:id</td>
+      <td>show</td>
+      <td>displaying a specific photo</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>/photos/:id/edit</td>
+      <td>edit</td>
+      <td>returning an HTML form for editing a specific photo</td>
+    </tr>
+    <tr>
+      <td>PUT</td>
+      <td>/photos/:id</td>
+      <td>update</td>
+      <td>updating a specific photo</td>
+    </tr>
+    <tr>
+      <td>DELETE</td>
+      <td>/photos/:id</td>
+      <td>destroy</td>
+      <td>deleting a specific photo</td>
+    </tr>
+  </tbody>
 </table>
-
 
 If you look in your `ideas_controller.rb` you can see these actions and the associated behaviour, and the HTTP method that corresponds with each action:
 
 {% highlight rb %}
 def show
-    @idea = Idea.find(params[:id])
+  @idea = Idea.find(params[:id])
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @idea }
-    end
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @idea }
   end
+end
 
-  # GET /ideas/new
-  # GET /ideas/new.json
+# GET /ideas/new
+# GET /ideas/new.json
 {% endhighlight %}
 
 `show` - the controller action
 
 {% highlight rb %}
 respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @idea }
+  format.html # show.html.erb
+  format.json { render json: @idea }
+end
 {% endhighlight %}
 
 (This code is difficult to dissect with much clarity at this stage but if you persist with Rails you will get a better understanding as time progresses.)

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Touristic Autism-friendly Spots App 
+title: Touristic Autism-friendly Spots App
 permalink: touristic-autism_image-upload
 ---
 
@@ -10,7 +10,6 @@ permalink: touristic-autism_image-upload
 *for [Rails Girls Galway](https://github.com/RailsGirlsGalway)*
 The basic guides that have been merged and adapted are the [Ruby on Rails Tutorial](http://www.railstutorial.org/book), the [basic RailsGirls app](http://guides.railsgirls.com/app/) and the tutorials for [creating thumbnails](http://guides.railsgirls.com/thumbnails), [authenticating users](http://guides.railsgirls.com/devise/), [adding design](http://guides.railsgirls.com/design), [deploying to OpenShift](http://guides.railsgirls.com/openshift/) and [adding comments](http://guides.railsgirls.com/commenting).
 
-
 We need to install a piece of software to let us upload files in Rails.
 
 Open `Gemfile` in the project directory using your text editor and add
@@ -18,7 +17,6 @@ Open `Gemfile` in the project directory using your text editor and add
 {% highlight ruby %}
 gem 'carrierwave'
 {% endhighlight %}
-
 
 In the terminal run:
 
@@ -158,4 +156,3 @@ to
 
 Take a look at the list of ideas in the browser to see if the thumbnail is
 there.
-

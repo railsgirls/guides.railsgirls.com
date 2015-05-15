@@ -68,7 +68,6 @@ This is a selection of Rails Girls videos from around the world. Have one to sha
 
 <div><iframe src="http://player.vimeo.com/video/51511255" width="500" height="281" frameborder="0"> </iframe> <p><a href="http://vimeo.com/51511255">Rails Girls Cologne - September 2012</a> from <a href="http://vimeo.com/user14112349">Liane Th&ouml;nnes</a> on <a href="https://vimeo.com">Vimeo</a>.</p></div>
 
-
 ### Rails Girls Ljubljana 2012
 
 <div><iframe scrolling="no" marginheight="0" marginwidth="0" src="http://tsstartup.viidea.net/rg12_ruby_on_rails_workshop_for_girls/video/1/iframe/" frameborder="0" height="286px" width="500px"> </iframe></div>

@@ -19,10 +19,9 @@ __COACH__: Talk about the benefits of deploying to anynines vs utilising US data
 3. Now select the anynines api endpoint as target and authenticate using your user credentials:
 
 {% highlight sh %}
-cf api https://api.de.a9s.eu  
-cf login -u [your@email] -p [yourpassword]  
+cf api https://api.de.a9s.eu
+cf login -u [your@email] -p [yourpassword]
 {% endhighlight %}
-
 
 Or if that doesn't work for you, use:
 
@@ -57,10 +56,10 @@ Finally we have to restart the application to make sure the service binding take
 $> cf restart [app-name-you-have-chosen-above]
 {% endhighlight %}
 
-You will see this:  
+You will see this:
 {% highlight sh %}
-Creating service postgresql-d2197... OK  
-Binding postgresql-d2197 to railsgirls... OK  
+Creating service postgresql-d2197... OK
+Binding postgresql-d2197 to railsgirls... OK
 {% endhighlight %}
 
 Ending with... `Push successful! App 'railsgirls' available at railsgirls.de.a9sapp.eu`. Score!

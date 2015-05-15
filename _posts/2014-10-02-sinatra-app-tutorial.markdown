@@ -32,9 +32,7 @@ get '/' do
 end
 {% endhighlight %}
 
-
-You can actually call your Ruby file whatever you'd like. `vote.rb` for instance would totally work as well, when used consistently. But [suffragist](http://www.vocabulary.com/dictionary/suffragist) actually references to a super important event in the women's rights movement, so let's just go with that for now!  
-
+You can actually call your Ruby file whatever you'd like. `vote.rb` for instance would totally work as well, when used consistently. But [suffragist](http://www.vocabulary.com/dictionary/suffragist) actually references to a super important event in the women's rights movement, so let's just go with that for now!
 
 ### Run your app
 
@@ -44,8 +42,6 @@ see a ‘Hello, voter!’ page, which means that the generation of your new
 app worked correctly. Hit `ctrl-c` in the terminal to quit the server.
 
 __COACH__: Explain POST and GET methods, and how to communicate with the browser.
-
-
 
 ### Add the index view
 
@@ -106,17 +102,15 @@ results and quit the server with `ctrl-c`.
 __COACH__: Talk a little about HTML and erb. Explain
 templates. Explain what global constants are.
 
-
-
 ### Templates
 
 Adjust the `index.erb` file in the `views`
 directory and add the `<h1>…</h1>` line:
 
 {% highlight erb %}
-  <body class='container'>
-    <h1><%= @title %></h1>
-    <p>What's for dinner?</p>
+<body class='container'>
+  <h1><%= @title %></h1>
+  <p>What's for dinner?</p>
 {% endhighlight %}
 
 Change the `get` action:
@@ -130,8 +124,6 @@ end
 
 __COACH__: Explain what instance variables are and
 how Sinatra makes them visible in the views.
-
-
 
 ### Add the ability to POST results
 
@@ -167,8 +159,6 @@ and put there some HTML with embedded Ruby code:
 __COACH__: Explain how POST works. How to catch what
 was sent in the form? Where do `params` come from?
 
-
-
 ### Factor out a common layout
 
 Create a `layout.erb` file in the `views`
@@ -194,8 +184,6 @@ Remove the above part from the other two templates
 
 __COACH__: Talk about the structure of HTML documents and how factoring
 out common code work in general. Explain what `yield` does.
-
-
 
 ### Add the results route and the results view
 
@@ -228,8 +216,6 @@ your results and quit the server with `ctrl-c`.
 
 __COACH__: Explain HTML tables and how how the
 missing values from the hash default to zero.
-
-
 
 ### Persist the results using YAML::Store
 
@@ -267,7 +253,6 @@ end
 
 __COACH__: Explain what YAML is.
 
-
 ### See how the YAML file changes when votes are cast
 
 Let’s open `votes.yml`. And vote. And check again.
@@ -278,8 +263,6 @@ opportunity to search the Internet for a solution. They don’t
 have to know everything about killing processes to find a solution.
 
 __COACH__: In the end explain shortly the differences between Sinatra and Rails.
-
-
 
 ## Play with the app
 

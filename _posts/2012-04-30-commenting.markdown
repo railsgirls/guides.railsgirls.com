@@ -78,10 +78,10 @@ this
 
 Open `app/views/comments/_form.html.erb` and after
 {% highlight erb %}
-  <div class="field">
-    <%= f.label :body %><br />
-    <%= f.text_area :body %>
-  </div>
+<div class="field">
+  <%= f.label :body %><br />
+  <%= f.text_area :body %>
+</div>
 {% endhighlight %}
 
 add the row

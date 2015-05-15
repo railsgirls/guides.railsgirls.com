@@ -79,7 +79,7 @@ __COACH__: Explain the Git commands used and .gitignore.
 We need the `.openshift` directory and `config/database.yml` file from the sample application for our Rails app to run on OpenShift. Copy these from the `openshiftapp` directory to the `railsgirls` directory. You can use Windows Explorer or another graphical file system tool to do this if you like, or alternatively run the following commands from the `railsgirls` directory in your terminal:
 
 <div class="os-specific">
-   <div class="nix">
+  <div class="nix">
 {% highlight sh %}
 cp -r ../openshiftapp/.openshift .
 cp ../openshiftapp/config/database.yml config
@@ -94,7 +94,7 @@ xcopy /y ..\openshiftapp\config\database.yml config
   </div>
 </div>
 
-Check that the copying has worked by looking in the `railsgirls` app directory. There should now be a subdirectory called `.openshift`. Open the file `config/database.yml`; it should now contain OpenShift environment variables such as `OPENSHIFT_APP_NAME`. If your `database.yml` file does not contain variables like this, try opening `.openshift/config/database.yml` or `openshiftapp/config/database.yml` in your editor and copying across the contents of the file. 
+Check that the copying has worked by looking in the `railsgirls` app directory. There should now be a subdirectory called `.openshift`. Open the file `config/database.yml`; it should now contain OpenShift environment variables such as `OPENSHIFT_APP_NAME`. If your `database.yml` file does not contain variables like this, try opening `.openshift/config/database.yml` or `openshiftapp/config/database.yml` in your editor and copying across the contents of the file.
 
 Add and commit the new and changed files in Git with the below commands.
 
@@ -154,9 +154,9 @@ Refresh the app in your browser to see the result.
 
 __COACH__: Talk about Git remotes.
 
-### Extra credit 
+### Extra credit
 
-Congratulations - your Rails application is now online for the whole world to admire. The following sections explain optional further steps you can take to improve and share your app. 
+Congratulations - your Rails application is now online for the whole world to admire. The following sections explain optional further steps you can take to improve and share your app.
 
 #### Persist uploaded images
 
@@ -226,5 +226,3 @@ __COACH__: Talk about Git branches and the benefits of open source code.
 ### Conclusion
 
 Your Rails app is now running in the cloud on [OpenShift](https://www.openshift.com/developers). You can push whatever other changes you like and share the URL to show off your app to your friends.
-
-

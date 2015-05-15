@@ -12,7 +12,6 @@ permalink: simpleapp
 
 **Make sure you have Rails installed.** [**Follow the installation guide**](/install) to get set up.
 
-
 ## Get to know the tools
 
 <div class="indent" markdown="1">
@@ -208,7 +207,6 @@ Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in your browser.
 
 Hit `CTRL-C` to quit the server again when you've clicked around a little.
 
-
 ## *3.*Design
 
 **Coach:** Talk about the relationship between HTML and Rails. What part of views is HTML and what is Embedded Ruby (ERB)? What is MVC and how does this relate to it? (Models and controllers are responsible for generating the HTML views.)
@@ -288,7 +286,6 @@ th { border-bottom: 1px solid #DDD !important; }
 Now make sure you saved your files and refresh the browser to see what was changed. You can also change the HTML & CSS further.
 
 **Coach:** Talk a little about CSS and layouts.
-
 
 ## *4.*Adding picture uploads
 
@@ -382,7 +379,6 @@ Now refresh your browser to see what changed.
 
 **Coach:** Talk a little about HTML.
 
-
 ## *5.*Finetune the routes
 
 If you try to open [http://localhost:3000](http://localhost:3000) it still shows the "Welcome aboard" page. Let's make it redirect to the ideas page.
@@ -424,7 +420,6 @@ Now you can open the file `app/views/pages/info.html.erb` and add information ab
 * Use CoffeeScript (or JavaScript) to add interaction
 * Add picture resizing to make loading the pictures faster
 
-
 ## Additional Guides
 
 * Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](https://github.com/PragTob/rails-beginner-cheatsheet)
@@ -435,4 +430,3 @@ Now you can open the file `app/views/pages/info.html.erb` and add information ab
 * Guide 5: [Add design using HTML &amp; CSS by Alex Liao](/design)
 * Guide 6: [Add Authentication (user accounts) with Devise by Piotr Steininger](/devise/)
 * Guide 7: [Go through additional explanations for the App by Lucy Bain](https://github.com/lbain/railsgirls)
-
