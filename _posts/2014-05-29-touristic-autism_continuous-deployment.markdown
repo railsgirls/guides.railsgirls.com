@@ -25,7 +25,7 @@ OpenShift is one of the cloud deployment services offering such facilities. It i
   <div class="nix">
     {% highlight sh %}
       group :production do
-        gem install rhc
+        gem 'rhc'
       end
 {% endhighlight %}
   </div>
