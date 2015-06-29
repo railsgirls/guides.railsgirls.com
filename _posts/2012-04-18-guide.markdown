@@ -17,6 +17,7 @@ If you want to organize an event, start by filling out [http://railsgirls.com/in
 
 The roadmap for future events can be seen at [www.railsgirls.com](http://railsgirls.com).
 
+You are also welcome to join our [organizers' Slack discussion forum](https://rails-girls-slack.herokuapp.com/).
 
 ### The Basics
 Rails Girls events are non-profit. We don’t charge the participants and do not pay for coaches or speakers. Participants don’t need any previous knowledge about programming and there are no age-limitations. All the participants need is a laptop and some curiosity.
