@@ -4,9 +4,11 @@ title: Ruby ATM
 permalink: ruby-atm
 ---
 
+# Ruby ATM
+
 *Created by Joshua Paling, [@joshuapaling](https://twitter.com/joshuapaling)*
 
-In this exercise you will write a function to handle withdrawing money from an ATM. It is intended to challenge you - it is harder than the previous excercises, so you should do them first! Be prepared to ask lots of questions, Google things, and take a step back from the computer. But you'll learn a lot!
+In this exercise you will write a function to handle withdrawing money from an ATM. It is intended to challenge you! Be prepared to ask lots of questions, Google things, and take a step back from the computer. But you'll learn a lot!
 
 You should use pair, group, or remote programming so you have other programmers to bounce ideas off. You'll use Test Driven Development. However, all the tests have been pre-written for you, so you can focus on the code itself.
 
@@ -24,7 +26,21 @@ For each step, you will need to take the following actions:
 
 You may recognise these steps as the **red, green, refactor** workflow of TDD.
 
-## *0.*Set up your file
+## *1.* $5 bills
+
+Imagine an ATM that holds only $5 notes. Write a function that returns `true` if an amount can be returned, and `false` otherwise.
+
+**Examples:**
+
+* `withdraw(15)` should return `true`
+* `withdraw(18)` should return `false`, because $18 cannot be made up of $5 notes
+
+**Tips for getting tests green:**
+
+The modulus operator, `%` gets the remainder of a division. Eg, `9 % 4` results in `1` (nine divided by four has a remainder of 1).
+
+**Starting code:**
+
 Create a file called `atm.rb`. paste the following code into it. This contains the shell of your `withdraw()` function, along with tests.
 
 {% highlight ruby %}
@@ -34,7 +50,12 @@ def withdraw(amount)
   end
   # ToDo: figure out this bit
 end
+{% endhighlight %}
 
+
+### Tests for step 1:
+
+{% highlight ruby %}
 # import required testing libraries
 require 'minitest/spec'
 require 'minitest/autorun'
@@ -59,19 +80,6 @@ describe 'atm' do
   end
 end
 {% endhighlight %}
-
-## *1.* $5 bills
-
-Imagine an ATM that holds only $5 notes. Write a function that returns `true` if an amount can be returned, and `false` otherwise.
-
-**Examples:**
-
-* `withdraw(15)` should return `true`
-* `withdraw(18)` should return `false`, because $18 cannot be made up of $5 notes
-
-**Tips for getting tests green:**
-
-The modulus operator, `%` gets the remainder of a division. Eg, `9 % 4` results in `1` (nine divided by four has a remainder of 1).
 
 ## *2.* How many bills?
 Now, modify your function so that if the amount *can* be withdrawn, it will return the appropriate number of notes, rather than simply `true`
@@ -125,7 +133,7 @@ end
 
 In programming, an `array` is basically a collection of things. It's like a list.
 
-Rather than returning the number of notes, Code so that it returns an array of notes (in this case, all $5's).
+Rather than returning the number of notes, modify the code so that it returns an array of notes (in this case, all $5's).
 
 **Examples**
 
@@ -136,9 +144,9 @@ Rather than returning the number of notes, Code so that it returns an array of n
 
 `[]` defines an empty array. `[1, 2]` defines an array with two elements (1 and 2).
 
-The shovel operator (`<<`) adds an element to an array. Eg. `[10, 20] << 30` will add 30 to the array, resulting in `[10, 20, 30]`
+The shovel operator (`<<`) adds an element to an array. Eg. `[10, 20] << 30` will add 30 to the array, resulting in `[10, 20, 30]`.
 
-the `times` method executes a block of code several times - eg. `5.times { puts 'hello' }` will print 'hello' 5 times.
+The `times` method executes a block of code several times - eg. `5.times { puts 'hello' }` will print 'hello' 5 times.
 
 Bringing it all together:
 
@@ -276,7 +284,7 @@ To tell if an array is not empty: `!my_array.empty?`
 
 To remove the first element off an array: `my_array.shift`. Eg, `[1, 2, 3].shift` results in `[2, 3]`
 
-If your function calls a sub-function, keep in mind that Ruby has no concept of 'pass by value'. Variables are always a reference to an object.
+Variables are always a reference to an object.
 
 ### Refactor
 
@@ -311,13 +319,13 @@ end
 
 ## *7.* Final Discussion Points
 * Given a particular solution *works*, what makes it 'good' or 'bad' code?
-* Can you think of any take-home best practices or principals? Is code structure important? Why?
+* Can you think of any take-home best practices or principles? Is code structure important? Why?
 * Did you have any 'Aha!' moments? What were they?
-* Lets say you started a little ATM company, which quickly expanded to become a global success. How suitable is your code for dealing with all denominations of currency, in all nations of the world? Did it get more suitable with each step?
+* Let's say you started a little ATM company, which quickly expanded to become a global success. How suitable is your code for dealing with all denominations of currency, in all nations of the world? Did it get more suitable with each step?
 
 
 ## Challenge! $50 and $20 notes
 
-Up til now, we've intentionally avoided the case where a smaller note cannot fit evenly into each larger one. For example, we've avoided the case of having only $50s and $20s (where 20 does not divide evenly into 50). Can you see why this case will be harder? If your current code were to include only $50s and $20s, what would happen when you try to withdraw $60, or $110? In your head, or on paper, can you think of what logic would need to be in place to handle these cases correctly? If you're up for a challenge, try to handle this case in your code! (You'll need to write the tests yourself for this step).
+Up til now, we've intentionally avoided the case where a smaller note cannot fit evenly into each larger one. For example, we've avoided the case of having only $50s and $20s (where 20 does not divide evenly into 50). Can you see why this case will be harder? If your current code were to include only $50s and $20s, what would happen when you try to withdraw $60, or $110? In your head, or on paper, can you think of what logic would be needed to be in place to handle these cases correctly? If you're up for a challenge, try to handle this case in your code! (You'll need to write the tests yourself for this step).
 
 
