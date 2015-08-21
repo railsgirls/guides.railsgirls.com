@@ -52,6 +52,8 @@ also.
 - Pick somebody to start in the hot seat. That person should follow all the
   steps until swapping seats is mentioned.
 
+**Coach:** Explain how pair programming can be useful.
+
 ## *1.* Initial code
 
 Copy this code into a file called `roman.rb`:
@@ -73,8 +75,8 @@ end
 
 **Run your tests**
 
-If you use *Sublime Text* on Linux, OSX Mavericks (or better) or Windows, you
-can run the tests by pressing `Ctrl-B`. Otherwise you can type the follow into
+If you use *Sublime Text* on Linux, OSX Mavericks (or later) or Windows, you
+can run the tests by pressing `Ctrl-B`. Otherwise you can type the following into
 your terminal:
 
 {% highlight sh %}
@@ -101,6 +103,8 @@ assertions, 1 failures, 0 errors, 0 skips`.
 
 **Stand up** and give the hot seat to the next person.
 
+**Coach:** Explain how TDD can be useful.
+
 ## *2.* Make the tests pass
 
 It is time to make the test pass. Do this however you see fit. It's fine if the
@@ -126,19 +130,20 @@ Look over the code and decide if it's a good idea to **refactor** it (clean up
 the code and make it easier to read). If you decide to not to refactor, skip
 this step.
 
-**Hint**: It's a good time to refactor are when you notice *repetition*. If you
+**Hint**: It's a good time to refactor when you notice *repetition*. If you
 like, you can also refactor the tests.
 
 Run your tests after refactoring. If they fail, you accidentally broke
 something.
+
+**Coach:** Explain how focusing on something small enough to test can be useful.
 
 ## *4.* Write a new failing test
 
 If you all agree that the code should work in general, and you can't think of
 any more cases to test and everything passes, you can stop here. You win!
 
-Otherwise, your last job in the hot seat is to write a new test: one that fails.
-If you're stuck, there are some suggestions at the bottom of this page.
+Otherwise, your last job in the hot seat is to write a new test. We currently have a test that checks that the number one is turned into an `"I"`, but we need more tests to verify that all other numbers convert as expected. When you add a new test for another number, be sure to run the tests to find your test fail. If you're stuck, there are some suggestions at the bottom of this page.
 
 You can copy and paste the previous test and alter it. You can change it to be
 anything you like. Your tests should probably test the next trickiest
@@ -146,8 +151,7 @@ situation, but if you feel like going back and adding a simpler case, that's
 fine too as long as it fails.
 
 The other members of the group can chime in and ask questions or spot problems
-for you. It's their job to help you. If they're not being helpful, politely let
-them know.
+for you.
 
 Here is an example of an expanded test suite:
 
@@ -157,8 +161,8 @@ describe "roman" do
     roman(1).must_equal "I"
   end
 
-  it "converts the number 4 to the string IIII" do
-    roman(4).must_equal "IIII"
+  it "converts the number 2 to the string II" do
+    roman(2).must_equal "II"
   end
 end
 {% endhighlight %}
