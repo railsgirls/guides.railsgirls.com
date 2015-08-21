@@ -162,7 +162,7 @@ describe "roman" do
   end
 
   it "converts the number 2 to the string II" do
-    roman(4).must_equal "II"
+    roman(2).must_equal "II"
   end
 end
 {% endhighlight %}
