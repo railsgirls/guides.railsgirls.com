@@ -55,6 +55,7 @@ to take things to the next level:
 ### MOAR
 
 * [Thoughtbot Trail-Map](https://github.com/thoughtbot/trail-map) - Guides to different topics.
+* [Ruby on Rails Tutorial: Learn From Scratch](https://blog.udemy.com/ruby-on-rails-tutorial-learn-from-scratch/) - Explanations and definitions to different parts of Rails.
 
 > If you have any other good resources, [hit me](mailto:daniel@codegestalt.com) so I can put them into the list.
 
