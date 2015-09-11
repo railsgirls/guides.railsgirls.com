@@ -63,7 +63,7 @@ source ~/.bash_profile
 You can find the newest version of Ruby with the command "rbenv install -l".
 
 {% highlight sh %}
-rbenv install 2.2.0
+rbenv install 2.2.3
 {% endhighlight %}
 
 If you got "OpenSSL::SSL::SSLError: ... : certificate verify failed" error, try it this way.
@@ -76,7 +76,7 @@ cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts Op
 #### *3a5.* Set default Ruby:
 
 {% highlight sh %}
-rbenv global 2.2.0
+rbenv global 2.2.3
 {% endhighlight %}
 
 #### *3a6.* Install rails:
