@@ -39,7 +39,7 @@ You can actually call your Ruby file whatever you'd like. `vote.rb` for instance
 ### Run your app
 
 Go to the directory where you put your app and run `ruby suffragist.rb`.
-Now you can visit [localhost:4567](http://localhost:4567). You should
+Now you can visit <a href="localhost:4567" target="_blank">localhost:4567</a>. You should
 see a ‘Hello, voter!’ page, which means that the generation of your new
 app worked correctly. Hit `ctrl-c` in the terminal to quit the server.
 
