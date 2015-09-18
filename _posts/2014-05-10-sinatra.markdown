@@ -97,7 +97,7 @@ get "/page-name" do
  end
 {% endhighlight %}
 
-If you need to you can hit `ctrl-c` in your command prompt to stop your app. (Just like for your Rails app!), however you don't need to stop and start to see your changes. 
+If you need to you can hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in your command prompt to stop your app. (Just like for your Rails app!), however you don't need to stop and start to see your changes. 
 
 If you get stuck, make sure your app.rb looks like [this one](http://tjmcewan.github.io/coffeecalc/snippets/install_sinatra.rb.txt).
 

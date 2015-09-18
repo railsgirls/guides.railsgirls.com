@@ -41,7 +41,7 @@ You can actually call your Ruby file whatever you'd like. `vote.rb` for instance
 Go to the directory where you put your app and run `ruby suffragist.rb`.
 Now you can visit [localhost:4567](http://localhost:4567). You should
 see a ‘Hello, voter!’ page, which means that the generation of your new
-app worked correctly. Hit `ctrl-c` in the terminal to quit the server.
+app worked correctly. Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to quit the server.
 
 __COACH__: Explain POST and GET methods, and how to communicate with the browser.
 
@@ -101,7 +101,7 @@ end
 {% endhighlight %}
 
 Run `ruby suffragist.rb`, check your
-results and quit the server with `ctrl-c`.
+results and quit the server with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
 __COACH__: Talk a little about HTML and erb. Explain
 templates. Explain what global constants are.
@@ -224,7 +224,7 @@ Create a new file in the `views` directory, called `results.erb`.
 {% endhighlight %}
 
 Run `ruby suffragist.rb`, check
-your results and quit the server with `ctrl-c`.
+your results and quit the server with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
 __COACH__: Explain HTML tables and how how the
 missing values from the hash default to zero.

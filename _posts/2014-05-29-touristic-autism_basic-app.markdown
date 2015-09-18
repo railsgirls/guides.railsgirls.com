@@ -153,7 +153,7 @@ $
 
 When the command prompt is not visible you cannot execute new commands. If you try running `cd` or another command it will not work. To return to the normal command prompt:
 
-Hit `CTRL-C` in the terminal to quit the server.
+Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to quit the server.
 
 **Coach:** Explain what each command does. 
 [What is a web application and a server - Slides by @]()

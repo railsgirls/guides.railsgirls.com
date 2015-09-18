@@ -18,7 +18,7 @@ We'll start simple, but ramp the difficulty up pretty steeply toward the end!
 
 For each step, you will need to take the following actions:
 
-**1. Run the new tests:** Delete tests from the previous step, and paste in the pre-written tests for the current step. *(Tests for each step are show at the bottom of that step.)* Run the tests to see which ones fail. In sublime text, you can hit `Ctrl-B` to run the tests. Or, you can open a terminal, `cd` into your working directory, and run `ruby atm.rb`.
+**1. Run the new tests:** Delete tests from the previous step, and paste in the pre-written tests for the current step. *(Tests for each step are show at the bottom of that step.)* Run the tests to see which ones fail. In sublime text, you can hit <kbd>Ctrl</kbd>+<kbd>B</kbd> to run the tests. Or, you can open a terminal, `cd` into your working directory, and run `ruby atm.rb`.
 
 **2. Make the tests pass:** Edit your code to meet the functionality requirements of the current step. You'll know you've got it right when all your tests are green.
 

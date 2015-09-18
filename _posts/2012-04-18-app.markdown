@@ -151,7 +151,7 @@ $
 
 When the command prompt is not visible you cannot execute new commands. If you try running `cd` or another command it will not work. To return to the normal command prompt:
 
-Hit `CTRL-C` in the terminal to quit the server.
+Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to quit the server.
 
 **Coach:** Explain what each command does. What was generated? What does the server do?
 
@@ -188,7 +188,7 @@ Open <http://localhost:3000/ideas> in your browser. Cloud service (e.g. nitrous)
 
 Click around and test what you got by running these few command-line commands.
 
-Hit `CTRL-C` to quit the server again when you've clicked around a little.
+Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> to quit the server again when you've clicked around a little.
 
 
 ## *3.*Design
@@ -292,7 +292,7 @@ gem 'carrierwave'
 
 **Coach:** Explain what libraries are and why they are useful. Describe what open source software is.
 
-Hit `CTRL-C` in the terminal to quit the server.
+Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to quit the server.
 
 In the terminal run:
 
