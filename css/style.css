@@ -293,6 +293,6 @@ kbd {
     display: inline-block;
     margin: 0 .1em;
     text-shadow: 0 1px 0 #fff;
-    line-height: 1.4;
+    line-height: 1.5em;
     white-space: nowrap;
 }
