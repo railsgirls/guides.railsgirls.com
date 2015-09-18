@@ -63,7 +63,7 @@ We are going to refer to this tab in your browser as a console, you'll have to t
 
 #### Pasting text
 
-On Linux and Windows you won't be able to paste any copied code with the ordinary ctrl-v combination. Please use shift-insert instead, it should work.
+On Linux and Windows you won't be able to paste any copied code with the ordinary <kbd>Ctrl</kbd>+<kbd>V</kbd> combination. Please use shift-insert instead, it should work.
 
 ### Login
 

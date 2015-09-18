@@ -162,7 +162,7 @@ $
 
 When the command prompt is not visible you cannot execute new commands. If you try running `cd` or another command it will not work. To return to the normal command prompt:
 
-Hit `CTRL-C` in the terminal to quit the server.
+Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to quit the server.
 
 **Coach:** Explain what each command does. What was generated? What does the server do? You can find more details about the special template on [GitHub](https://github.com/Ben-M/simple_scaffold).
 
@@ -206,7 +206,7 @@ ruby bin\rails server
 
 Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in your browser. Click around and test what you got by running these few command-line commands.
 
-Hit `CTRL-C` to quit the server again when you've clicked around a little.
+Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> to quit the server again when you've clicked around a little.
 
 
 ## *3.*Design
@@ -322,7 +322,7 @@ rails generate uploader Picture
 
 At this point you need to **restart the Rails server process** in the terminal.
 
-Hit `CTRL-C` in the terminal to quit the server. Once it has stopped, you can press the up arrow to get to the last command entered, then hit enter to start the server again.
+Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to quit the server. Once it has stopped, you can press the up arrow to get to the last command entered, then hit enter to start the server again.
 
 This is needed for the app to load the added library.
 
