@@ -41,7 +41,7 @@ You can actually call your Ruby file whatever you'd like. `vote.rb` for instance
 Go to the directory where you put your app and run `ruby suffragist.rb`.
 Now you can visit <a href="localhost:4567" target="_blank">localhost:4567</a>. You should
 see a ‘Hello, voter!’ page, which means that the generation of your new
-app worked correctly. Hit `ctrl+c` in the terminal to shut down the server. If `ctrl+c` does not work for you it means you are probably Windows user and `ctrl+z`/ `ctrl+pause` / `ctrl+pause` will fix the issue)
+app worked correctly. Hit `ctrl+c` in the terminal to shut down the server. If `ctrl+c` does not work for you it means you are probably Windows user and `ctrl+z`/ `ctrl+pause` / `ctrl+break` will fix the issue)
 
 __COACH__: Explain POST and GET methods, and how to communicate with the browser.
 
