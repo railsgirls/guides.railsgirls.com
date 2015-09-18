@@ -203,7 +203,7 @@ Paste the following code into `suffragist.rb`:
 
 {% highlight ruby %}
 get '/results' do
-  @votes = { 'waw' => 7, 'krk' => 5 }
+  @votes = { 'HAM' => 7, 'PIZ' => 5 }
   erb :results
 end
 {% endhighlight %}
