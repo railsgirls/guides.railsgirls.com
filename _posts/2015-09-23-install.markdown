@@ -196,7 +196,7 @@ Después que hagas eso, por favor usa tu línea de comando de nuevo y escribe `b
 
 Para el taller, recomendamos usar el editor de texto Atom.
 
-* [Download Atom and install it](https://github.com/atom/atom/releases/latest)
+* [Descarga Atom e instálalo](https://github.com/atom/atom/releases/latest)
   * Descarga un archivo zipeado de atom para windows y descomprímelo.
   * Copia el folder en tu carpeta de "Archivos de Programa"
   * Ejecuta atom en el directorio.
