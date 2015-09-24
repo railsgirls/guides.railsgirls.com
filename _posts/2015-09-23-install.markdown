@@ -10,9 +10,9 @@ Antes de comenzar a construir tus aplicaciones con Ruby on Rails, tienes que ins
 
 Sigue las instrucciones para tu sistema operativo, si tienes problemas con la instalación, no entres en pánico. Infórmanos en el evento que podremos resolverlo juntas :)
 
-* [Instalacion en OS X](#instalacion_en_os_x)
-* [Instalacion en Windows](#instalacion_en_windows)
-* [Instalacion en Ubuntu](#instalacion_en_ubuntu)
+* [Instalacion en OS X](#instalacion-en-os-x)
+* [Instalacion en Windows](#instalacion-en-windows)
+* [Instalacion en Ubuntu](#instalacion-en-ubuntu)
 
 <hr />
 
