@@ -16,6 +16,21 @@ __COACH__: Hable acerca de los beneficios de Heroku vs servidores tradicionales 
 
 ### Preparando tu aplicación
 
+#### Version Control Systems
+
+We need to add our code to version control. You can do this by running the following in the terminal:
+
+{% highlight sh %}
+git init
+echo "public/uploads" >> .gitignore
+echo "tmp" >> .gitignore
+echo "logs" >> .gitignore
+git add .
+git commit -m "initial commit"
+{% endhighlight %}
+
+__COACH__: This would be a good time to talk about version control systems and git, also explain the `.gitignore` and why we don't want these files included.
+
 #### Actualizando nuestra base de datos
 
 Primero, necesitamos conseguir nuestra base de datos para trabajar en Heroku, el cual usa una base de datos diferente. Por favor cambiar lo siguiente en el Gemfile:
@@ -39,17 +54,37 @@ Ejecute `bundle install --without production` para configurar sus dependencias.
 
 __COACH__: Tu puedes hablar acerca de RDBMS y las diferencias con otros sistemas de almacenamiento.
 
-#### Sistema de Control de Versiones
 
-Necesitamos adicionar a nuestro código un control de versiones. Puedes hacer esto ejecutando en la terminal:
+#### Adding rails_12factor
 
-{% highlight sh %}
-git init
-git add .
-git commit -m "initial commit"
+Next, we need to add `rails_12factor` entry into our Gemfile to make our app available on Heroku.
+
+This gem modifies the way Rails works to suit Heroku, for example Logging is updated and the configuration for static assets (your images, stylesheets and javascript files) is tweaked to work properly within Heroku's systems.
+
+Please change the following in the Gemfile:
+
+{% highlight ruby %}
+group :production do
+  gem 'pg'
+end
 {% endhighlight %}
 
-__COACH__: Este es un buen momento para hablar acerca del control de versiones y git.
+to
+
+{% highlight ruby %}
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+{% endhighlight %}
+
+After this run `bundle`, then commit the changes to Gemfile.lock to your repository:
+
+{% highlight sh %}
+git commit -a -m "Added rails_12factor gem and updated Gemfile.lock"
+{% endhighlight %}
+
+__COACH__: Puede hablar de loggearse a Heroku, también como sus otras particularidades.
 
 
 ### Publicando tu aplicación
@@ -59,32 +94,34 @@ __COACH__: Este es un buen momento para hablar acerca del control de versiones y
 Necesitamos crear nuestra aplicación heroku digitando `heroku create` en la terminal y ver algo como esto:
 
 {% highlight sh %}
-Creating evening-sky-7498... done, stack is cedar
-http://evening-sky-7498.herokuapp.com/ | git@heroku.com:evening-sky-7498.git
+Creating sheltered-refuge-6377... done, stack is cedar
+http://sheltered-refuge-6377.herokuapp.com/ | git@heroku.com:sheltered-refuge-6377.git
 Git remote heroku added
 {% endhighlight %}
 
-En este caso "evening-sky-7498" es el nombre de la aplicación.
+En este caso "sheltered-refuge-6377" es el nombre de la aplicación.
 
 #### Pushing el código
 
 Lo siguiente que necesitamos para hacer "push" nuestro código a heroku es digitar `git push heroku master`. Verás la salida del push como lo siguiente:
 
 {% highlight sh %}
-Counting objects: 134, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (115/115), done.
-Writing objects: 100% (134/134), 35.29 KiB, done.
-Total 134 (delta 26), reused 0 (delta 0)
+Initializing repository, done.
+Counting objects: 101, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (91/91), done.
+Writing objects: 100% (101/101), 22.68 KiB | 0 bytes/s, done.
+Total 101 (delta 6), reused 0 (delta 0)
 
------> Heroku receiving push
------> Ruby/Rails app detected
------> Installing dependencies using Bundler version 1.1.2
-       Running: bundle install --without development:test --path vendor/bundle --binstubs bin/ --deployment
-       Fetching gem metadata from https://rubygems.org/.......
+-----> Ruby app detected
+-----> Compiling Ruby/Rails
+-----> Using Ruby version: ruby-2.0.0
+-----> Installing dependencies using 1.6.3
+       Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+       Fetching gem metadata from https://rubygems.org/..........
 ...
------> Launching... done, v4
-       http://evening-sky-7498.herokuapp.com deployed to Heroku
+-----> Launching... done, v6
+       http://sheltered-refuge-6377.herokuapp.com/ deployed to Heroku
 {% endhighlight %}
 
 El proceso se completa con éxito, cuando ves el texto "Launching ..." como arriba.
@@ -93,5 +130,31 @@ El proceso se completa con éxito, cuando ves el texto "Launching ..." como arri
 
 Necesitamos migrar nuestra base de datos tal como lo hicimos localmente durante el evento: `heroku run rake db:migrate`
 
-Cuando se termine de ejecutar el comando, puedes acceder a tu aplicación mediante su URL. Para esta aplicación de ejemplo, puedes ir a [http://evening-sky-7498.herokuapp.com/](http://evening-sky-7498.herokuapp.com). También puedes digitar `heroku open` en la terminal para visitar la página.
+Cuando se termine de ejecutar el comando, puedes acceder a tu aplicación mediante su URL. Para esta aplicación de ejemplo, puedes ir a [http://sheltered-refuge-6377.herokuapp.com/](http://evening-sky-7498.herokuapp.com). También puedes digitar `heroku open` en la terminal para visitar la página.
 
+#### Closing notes
+
+Heroku's platform is not without its quirks. Applications run on Heroku live within an ephermeral environment — this means that (except for information stored in your database) any files created by your application will disappear if it restarts (for example, when you push a new version).
+
+###### [Ephemeral filesystem](https://devcenter.heroku.com/articles/dynos#ephemeral-filesystem)
+> Each dyno gets its own ephemeral filesystem, with a fresh copy of the most recently deployed code. During the dyno’s lifetime its running processes can use the filesystem as a temporary scratchpad, but no files that are written are visible to processes in any other dyno and any files written will be discarded the moment the dyno is stopped or restarted.
+
+In the [App](/app) tutorial the ability to attach a file to the Idea record is added, which results in new files being written to your applications `public/uploads` folder. The ephemeral storage in Heroku can be seen with the following steps:
+
+1. Launch the app with `heroku open`
+2. Add a new Idea with an image
+3. Restart the application by running `heroku restart`
+4. Go back to your Idea and reload the page - the image should no longer be visible
+
+##### Working around Ephemeral Storage
+
+Obviously this doesn't seem to be useful if you were running a real life application, but there are ways to work around this which is commonly used by a lot of popular websites.
+
+The most common method is to use an external asset host such as Amazon S3 (Simple Storage Service) or Rackspace CloudFiles. These services provide (for a low cost - usually less then $0.10 per GB) storage 'in the cloud' (meaning the files could potentially be hosted anywhere) which your application can use as persistent storage.
+
+While this functionality is a bit out of scope for this tutorial there are some resources available which you can use to find your way:
+
+* [How to: Make Carrierwave work on Heroku](https://github.com/carrierwaveuploader/carrierwave/wiki/How-to%3A-Make-Carrierwave-work-on-Heroku)
+* [Amazon S3 - The Beginner' Guide](http://www.hongkiat.com/blog/amazon-s3-the-beginners-guide/)
+
+As always if you require any more information or assistance your coaches will be able to assist.

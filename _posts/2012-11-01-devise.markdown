@@ -24,6 +24,7 @@ y ejecute
 {% highlight sh %}
 bundle install
 {% endhighlight %}
+
 para instalar la gema
 
 ## Paso 1: Configure devise en tu aplicación
@@ -40,7 +41,7 @@ rails g devise:install
 Asegúrese de tener definido las opciones por defecto para url en tus archivos "environments". Abre `config/environments/development.rb` y adicione esta línea:
 
 {% highlight ruby %}
-   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 {% endhighlight %}
 
 Antes de la palabra clave `end`.
@@ -49,16 +50,17 @@ Abre `app/views/layouts/application.html.erb` y adicione:
 
 {% highlight erb %}
 <% if notice %>
-  <p class="alert alert-notice"><%= notice %></p>
+  <p class="alert alert-success"><%= notice %></p>
 <% end %>
 <% if alert %>
-  <p class="alert alert-error"><%= alert %></p>
+  <p class="alert alert-danger"><%= alert %></p>
 <% end %>
 {% endhighlight %}
 justo encima de
 {% highlight ruby %}
    <%= yield %>
 {% endhighlight %}
+
 
 Finalmente, si tu intención es [publicar en heroku](/heroku) debes abrir `config/application.rb` y adicionar esta línea:
 {% highlight ruby %}
@@ -68,13 +70,23 @@ como tercera línea desde la parte de abajo (antes de las dos ultimas palabras c
 
 ## Paso 3: Configurar el modelo User(usuario)
 
+Abrir el archivo `app/views/ideas/show.html.erb` y quita la línea que dice:
+
+{% highlight erb %}
+<p id="notice"><%= notice %></p>
+{% endhighlight %}
+
+Haz lo mismo para `app/views/comments/show.html.erb`. Estas líneas no son necesarias porque ya hemos colocado la notificación en el archivo `app/views/layouts/application.html.erb`.
+
+## *4.*Setup the User model
+
 Usaremos un script generador de paquetes para crear el modelo User(usuario)
 {% highlight sh %}
    rails g devise user
    rake db:migrate
 {% endhighlight %}
 
-**Coach:** Explique cual es el modelo que fue generado. Cuáles son sus campos?
+**Coach:** Explique cual es el modelo que fue generado. ¿Cuáles son sus campos?
 
 
 ## Paso 4: Crear tu primer usuario
@@ -107,12 +119,19 @@ Justo despúes de
 </ul>
 {% endhighlight %}
 
+Finalmente, fuerza al usuario a redirigirse a la página de login si es que no se encuentra loggeado. Abre `app/controllers/application_controller.rb` y agrega:
+
+{% highlight ruby %}
+  before_action :authenticate_user!
+{% endhighlight %}
+
+después `protect_from_forgery with: :exception`.
 
 Abre tu navegador y prueba iniciando y cerrando una sesión.
 
-**Coach:** Hable acerca del `user_signed_in?` y `current_user` helpers. Por qué son útiles?
+**Coach:** Hable acerca del `user_signed_in?` y `current_user` helpers. ¿Por qué son útiles?
 
-## Qué sigue?
+## ¿Qué sigue?
 
 * Agregar campos extra para el modelo User(usuario)
 * Agregar relación entre usuarios e ideas

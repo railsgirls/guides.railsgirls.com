@@ -6,20 +6,34 @@ function loadOs() {
   var osFromCookie = $.cookie("os");
   if(osFromCookie) {
     $(".os-specific").find("." + osFromCookie + "-link").click();
+  } else if(detectOs()) {
+    $(".os-specific").find("." + detectOs() + "-link").click();
   } else {
     $(".os-specific").find(".win-link").click();
   }
   return osFromCookie;
 }
 
+function detectOs() {
+  try {
+    if (navigator.appVersion.match(/Win/i)) {
+      return "win";
+    } else {
+      return "nix";
+    }
+  } catch(e) {
+    return false;
+  }
+}
+
 function addIcons() {
-  $("code.sh, code.bat").closest('.highlight').before('<i class="icon-small-prompt"></i>');
-  $("code.erb, code.html, code.ruby, code.css").closest('.highlight').before('<i class="icon-small-text-editor"></i>');
-  $("code.browser").closest('.highlight').before('<i class="icon-small-browser"></i>');
+  $("code.language-sh, code.language-bat").closest('.highlight').before('<i class="icon-small-prompt"></i>');
+  $("code.language-erb, code.language-html, code.language-ruby, code.language-css").closest('.highlight').before('<i class="icon-small-text-editor"></i>');
+  $("code.language-browser").closest('.highlight').before('<i class="icon-small-browser"></i>');
 }
 
 function initializeOsSwitchers() {
-  $(".os-specific").append("<span class='picker'>Choose your operating system: <a href='#' class='win-link'>Windows</a> <a href='#' class='nix-link'>Other</a></span>").find(".win-link").click(function(event) {
+  $(".os-specific").append("<span class='picker'>Choose your operating system: <a href='#' class='win-link'>Windows</a> | <a href='#' class='nix-link'>Other</a></span>").find(".win-link").click(function(event) {
     event.preventDefault();
     saveOs("win");
 
