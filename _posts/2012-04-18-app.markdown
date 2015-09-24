@@ -16,7 +16,6 @@ permalink: app
 <div class="indent" markdown="1">
 
 <h3><i class="icon-text-editor">&nbsp;</i></h3>
-<<<<<<< HEAD
 ### Editor de Texto
 
 [Sublime Text](http://www.sublimetext.com), [Komodo Edit](http://www.activestate.com/komodo-edit), Vim, Emacs, y Gedit son ejemplos de editors de textos que podrás usar para escribir código y editar archivos.
@@ -45,7 +44,6 @@ Es el lugar donde inicias el servidor Rails y ejecutas comandos.
 ### Web browser
 
 * (Firefox, Safari, Chrome) for viewing your application.
->>>>>>> 5d6cda4fa8e5afb4858c87bc42efc90277e81278
 
 </div>
 
@@ -59,16 +57,11 @@ Vamos a iniciar creando una nueva aplicación llamada *railsgirls*.
 
 Primero, abrimos una terminal:
 
-<<<<<<< HEAD
+
 * Mac OS X: Abre Spotlight, digite *Terminal* y click en la applicación *Terminal*.
 * Windows: Click en Inicio y busca *Comando Prompt*, luego click *Comando Prompt con Ruby on Rails*.
 * Linux (Ubuntu): Buscar por *Terminal* en el dash y click *Terminal*.
-=======
-* Mac OS X: Open Spotlight, type *Terminal* and click the *Terminal* application.
-* Windows: Click Start and look for *Command Prompt*, then click *Command Prompt with Ruby on Rails*.
-* Linux (Ubuntu/Fedora): Search for *Terminal* on the dash and click *Terminal*.
 * Cloud service (e.g. nitrous): Log in to your account, start your box and switch to its IDE (see [installation guide](/install#using-a-cloud-service) for details). The terminal is usually at the bottom of your browser window.
->>>>>>> 5d6cda4fa8e5afb4858c87bc42efc90277e81278
 
 Luego, digite estos comandos en el terminal:
 
@@ -122,11 +115,9 @@ mkdir projects
 
 {% highlight sh %}
 cd projects
-<<<<<<< HEAD
 rails new railsgirls
 cd railsgirls
 rails server
-=======
 {% endhighlight %}
 
     <div>
@@ -170,20 +161,17 @@ $
   <div class="win">
 {% highlight sh %}
 >
->>>>>>> 5d6cda4fa8e5afb4858c87bc42efc90277e81278
 {% endhighlight %}
   </div>
 </div>
 
-<<<<<<< HEAD
 Abre [http://localhost:3000](http://localhost:3000) en tu navegador. Debería verse una página "Welcome aboard", lo que significa que la generación de tu nueva aplicación esta funcionando correctamente.
 
 Presione `CTRL-C` en la terminal para salir del servidor.
-=======
+
 When the command prompt is not visible you cannot execute new commands. If you try running `cd` or another command it will not work. To return to the normal command prompt:
 
 Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to quit the server.
->>>>>>> 5d6cda4fa8e5afb4858c87bc42efc90277e81278
 
 **Coach:** Explique que hace cada comando. ¿Qué fue generado? ¿Quá hace el servidor?
 
@@ -210,29 +198,23 @@ rails server
 
   <div class="win">
 {% highlight sh %}
-<<<<<<< HEAD
 rails generate scaffold idea name:string description:text picture:string
 rake db:migrate
-=======
 ruby bin/rake db:migrate
->>>>>>> 5d6cda4fa8e5afb4858c87bc42efc90277e81278
 rails server
 {% endhighlight %}
   </div>
 </div>
 
-<<<<<<< HEAD
 Abre [http://localhost:3000/ideas](http://localhost:3000/ideas) en tu navegador. Prueba lo que tienes ejecutando, con estas pocas líneas de comando.
 
 Presione `CTRL-C` en la terminal para salir del servidor.
-=======
+
 Open <http://localhost:3000/ideas> in your browser. Cloud service (e.g. nitrous) users need to append '/ideas' to their preview url instead (see [installation guide](/install#using-a-cloud-service)).
 
 Click around and test what you got by running these few command-line commands.
 
 Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> to quit the server again when you've clicked around a little.
->>>>>>> 5d6cda4fa8e5afb4858c87bc42efc90277e81278
-
 
 ## *3.*Diseño
 
@@ -310,7 +292,6 @@ table, td, th { vertical-align: middle; border: none; }
 th { border-bottom: 1px solid #DDD; }
 {% endhighlight %}
 
-<<<<<<< HEAD
 No se olvide de iniciar el servidor nuevamente:
 
 {% highlight sh %}
@@ -318,20 +299,17 @@ rails server
 {% endhighlight %}
 
 Ahora refresque el navegador para ver qué fue cambiado. Además puedes cambiar el HTML & CSS libremente.
-=======
+
 Now make sure you saved your files and refresh the browser to see what was changed. You can also change the HTML & CSS further.
 
 In case your Terminal shows you an error message that *sort of* implies there is something wrong with your JavaScript or CoffeeScript, install [nodejs](http://nodejs.org/download/). This issue should not appear when you've used the RailsInstaller (but when you've installed Rails via ```gem install rails```).
->>>>>>> 5d6cda4fa8e5afb4858c87bc42efc90277e81278
 
 **Coach:** Hable un poco acerca de CSS y layouts.
 
 
-<<<<<<< HEAD
 ## Paso 4: Agregando subida de imagenes
-=======
+
 ## *4.*Adding picture uploads
->>>>>>> 5d6cda4fa8e5afb4858c87bc42efc90277e81278
 
 Necesitamos instalar una pieza de sotfware para nuestra subida de imagenes en Rails.
 
@@ -349,25 +327,18 @@ gem 'carrierwave'
 
 **Coach:** Explique qué son las librerias y por qué son muy útiles. Describe qué es el software open source.
 
-<<<<<<< HEAD
 En la terminal ejecute:
-=======
 Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to quit the server.
 
 In the terminal run:
->>>>>>> 5d6cda4fa8e5afb4858c87bc42efc90277e81278
 
 {% highlight sh %}
 bundle
 {% endhighlight %}
 
-<<<<<<< HEAD
 En este punto necesitamos **reiniciar el proceso del servidor Rails** en la terminal. Es necesario para que la aplicación cargue la libreria adicionada.
 
 Ahora podemos generar el código para el manejo de uploads. En la terminal ejecutar:
-=======
-Now we can generate the code for handling uploads. In the terminal run:
->>>>>>> 5d6cda4fa8e5afb4858c87bc42efc90277e81278
 
 {% highlight sh %}
 rails generate uploader Picture
