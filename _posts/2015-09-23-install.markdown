@@ -137,8 +137,9 @@ cd railsgirls
 rails server
 {% endhighlight %}
 
-**Último paso.** También es necesario un editor de textos para editar tus archivos de código. Para este evento recomendamos el editor de texto Sublime Text.
+**Último paso.** Instale un editor de texto para editar tus archivos de código. Para este evento recomendamos el editor de texto Atom o Sublime Text.
 
+* [Descarga e instala Atom](https://atom.io/), o
 * [Descarga e instala Sublime Text](http://www.sublimetext.com/2)
 
 ## Posibles Errores
@@ -194,7 +195,7 @@ Si tienes esta línea con `:x64_mingw`, entonces por favor, elimina la parte de 
 
 Después que hagas eso, por favor usa tu línea de comando de nuevo y escribe `bundle update`.
 
-### *2.* Install a text editor to edit code files
+### *2.* Instala un editor de texto para editar archivos de código
 
 Para el taller, recomendamos usar el editor de texto Atom.
 
@@ -218,8 +219,9 @@ Para instalar Ruby on Rails sólo necesita copiar y pegar esta linea en la termi
 bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
 {% endhighlight %}
 
-**Último paso.** También es necesario un editor de textos para editar tus archivos de código. Para este evento recomendamos el editor de texto Sublime Text.
+**Último paso.** Instale un editor de texto para editar tus archivos de código. Para este evento recomendamos el editor de texto Atom o Sublime Text.
 
+* [Descarga e instala Atom](https://atom.io/), o
 * [Descarga e instala Sublime Text](http://www.sublimetext.com/2)
 
 Listo. Ahora usted ya debería tener instalado Ruby on Rails. Felicidades!
