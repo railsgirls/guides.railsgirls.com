@@ -18,13 +18,14 @@ Sigue las instrucciones para tu sistema operativo, si tienes problemas con la in
 
 ## Instalacion en OS X
 
-**Paso 1.** Vamos a verificar la versión del sistema operativo.
+### *Paso 1.* Vamos a verificar la versión del sistema operativo.
 
 Click en el menú Apple y elija *Acerca de este Mac (About this Mac)*.
 
 ![Apple menu](/images/1.png "Apple menu")
 
-**Paso 2.** En la ventana encontrarás la version de tu sistema operativo. Si el número de version inicia con 10.6, 10.7, 10.8, 10.9 o 10.10 esta guía es para ti. Si no es así, entonces tienes que actualizar tu sistema operativo. O puedes utilizar una versión en la nube.
+### *Paso 2.* En la ventana encontrarás la version de tu sistema operativo. 
+Si el número de version inicia con 10.6, 10.7, 10.8, 10.9 o 10.10 esta guía es para ti. Si no es así, entonces tienes que actualizar tu sistema operativo. O puedes utilizar una versión en la nube.
 
 ![About this Mac dialog](/images/2.png "About this Mac dialog")
 
@@ -81,7 +82,7 @@ rbenv global 2.2.3
 gem i rails --no-ri --no-rdoc
 {% endhighlight %}
 
-**Paso 3b.** Si tu versión de OS X es 10.6, 10.7, o 10.8:
+### *Paso 3b.* Si tu versión de OS X es 10.6, 10.7, o 10.8:
 Descarga el RailsInstaller para la versión de tu sistema operativo (OS X):
 
 * [RailsInstaller para 10.7 y 10.8](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz) <span class="muted">(325MB)</span>
@@ -101,8 +102,9 @@ Asegúrate que todo funciona bien corriendo el siguiente comando generador de la
 rails new railsgirls
 {% endhighlight %}
 
-**Último paso.** Instale un editor de texto para editar tus archivos de código. Para este evento recomendamos el editor de texto Sublime Text.
+**Último paso.** Instale un editor de texto para editar tus archivos de código. Para este evento recomendamos el editor de texto Atom o Sublime Text.
 
+* [Descarga e instala Atom](https://atom.io/), o
 * [Descarga e instala Sublime Text](http://www.sublimetext.com/2)
 
 Listo. Ahora usted ya debería tener instalado Ruby on Rails. ¡Felicidades!
@@ -111,11 +113,11 @@ Listo. Ahora usted ya debería tener instalado Ruby on Rails. ¡Felicidades!
 
 ## Instalacion en Windows
 
-Descarga [RailsInstaller](http://rubyforge.org/frs/download.php/76855/railsinstaller-2.2.0.exe) y ejecutelo. Siga las instrucciones usando las opciones por defecto.
+Descarga [RailsInstaller](http://rubyforge.org/frs/download.php/76855/railsinstaller-2.2.0.exe) y ejecútelo. Siga las instrucciones usando las opciones por defecto.
 
 La instalación de Git y SSH-keys son requeridos si usted quiere [poner su aplicación en linea con Heroku](/heroku).
 
-Ejecute `Command Prompt with Ruby on Rails` y cora el siguiente comando:
+Ejecute el programa `Command Prompt with Ruby on Rails` y corra el siguiente comando:
 
 {% highlight sh %}
 rails -v
