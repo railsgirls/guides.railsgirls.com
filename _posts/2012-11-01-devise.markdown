@@ -10,10 +10,10 @@ permalink: devise
 
 *Updated by Ernesto Jimenez, [@ernesto_jimenez](https://twitter.com/ernesto_jimenez)*
 
-**Esta guía asume que ya tienes creado una aplicación RailsGirls ** [**siguiendo la guía desarrolla tu aplicación**](/app).
+**Esta guía asume que ya tienes creada una aplicación RailsGirls ** [**siguiendo la guía desarrolla tu aplicación**](/app).
 
 
-## Paso 0: Agrega gema devise
+## *0.*Agrega gema devise
 
 Abre tu `Gemfile` y agrega esta linea
 
@@ -27,7 +27,7 @@ bundle install
 
 para instalar la gema
 
-## Paso 1: Configure devise en tu aplicación
+## *1.*Configure devise en tu aplicación
 
 Ejecute el siguiente comando en la terminal.
 
@@ -36,7 +36,7 @@ rails g devise:install
 {% endhighlight %}
 
 
-## Paso 2: Configure Devise
+## *2.*Configure Devise
 
 Asegúrese de tener definido las opciones por defecto para url en tus archivos "environments". Abre `config/environments/development.rb` y adicione esta línea:
 
@@ -68,7 +68,7 @@ Finalmente, si tu intención es [publicar en heroku](/heroku) debes abrir `confi
 {% endhighlight %}
 como tercera línea desde la parte de abajo (antes de las dos ultimas palabras claves `end`)
 
-## Paso 3: Configurar el modelo User(usuario)
+## *3.*Configurar el modelo User (usuario)
 
 Abrir el archivo `app/views/ideas/show.html.erb` y quita la línea que dice:
 
@@ -77,8 +77,6 @@ Abrir el archivo `app/views/ideas/show.html.erb` y quita la línea que dice:
 {% endhighlight %}
 
 Haz lo mismo para `app/views/comments/show.html.erb`. Estas líneas no son necesarias porque ya hemos colocado la notificación en el archivo `app/views/layouts/application.html.erb`.
-
-## *4.*Setup the User model
 
 Usaremos un script generador de paquetes para crear el modelo User(usuario)
 {% highlight sh %}
@@ -89,18 +87,19 @@ Usaremos un script generador de paquetes para crear el modelo User(usuario)
 **Coach:** Explique cual es el modelo que fue generado. ¿Cuáles son sus campos?
 
 
-## Paso 4: Crear tu primer usuario
+## *4.*Crea tu primer usuario
 
 Ahora que tienes configurado todo puedes crear tu primer usuario. Devise crea todo el código y rutas requeridas para crear cuentas, inicio de sesión, cierre de sesión, etc.
 
-Asegúrese que su servidor rails se esta ejecutando, abre [http://localhost:3000/users/sign_up](http://localhost:3000/users/sign_up) y crea una cuenta de usuario.
+Asegúrese que su servidor rails se esta ejecutando, abre [http://localhost:3000/users/sign_up](http://localhost:3000/users/sign_up), o en el caso de un servicio en la nube, adicione `/users/signup` al url de la vista previa. 
 
+Cree una cuenta de usuario.
 
-## Paso 5: Agregar links de registro e inicio de sesión
+## *5.*Agregar links de registro e inicio de sesión
 
 Todo lo que necesitamos hacer ahora es adicionar apropiadamente links o avisos acerca del usuario que inicio sesión en la esquina superior derecha de la barra de navegación.
 
-En orden hacer esto, editar `app/views/layouts/application.html.erb` y agregar:
+Para lograr hacer esto, editar `app/views/layouts/application.html.erb` y agregar:
 {% highlight erb %}
 <p class="navbar-text pull-right">
 <% if user_signed_in? %>
@@ -112,7 +111,9 @@ En orden hacer esto, editar `app/views/layouts/application.html.erb` y agregar:
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
 <% end %>
 {% endhighlight %}
+
 Justo despúes de
+
 {% highlight erb %}
 <ul class="nav">
   <li class="active"><a href="/ideas">Ideas</a></li>
