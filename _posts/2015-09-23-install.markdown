@@ -13,6 +13,8 @@ Sigue las instrucciones para tu sistema operativo, si tienes problemas con la in
 * [Instalacion en OS X](#instalacion-en-os-x)
 * [Instalacion en Windows](#instalacion-en-windows)
 * [Instalacion en Ubuntu](#instalacion-en-ubuntu)
+* [Usando la Nube](#usando-la-nube)
+
 
 <hr />
 
@@ -102,12 +104,13 @@ Asegúrate que todo funciona bien corriendo el siguiente comando generador de la
 rails new railsgirls
 {% endhighlight %}
 
-**Último paso.** Instale un editor de texto para editar tus archivos de código. Para este evento recomendamos el editor de texto Atom o Sublime Text.
+### *Último paso.* Instala un editor de texto para editar tus archivos de código
+Para este evento recomendamos el editor de texto Atom o Sublime Text.
 
 * [Descarga e instala Atom](https://atom.io/), o
 * [Descarga e instala Sublime Text](http://www.sublimetext.com/2)
 
-Listo. Ahora usted ya debería tener instalado Ruby on Rails. ¡Felicidades!
+Listo. Ahora ya deberías tener instalado Ruby on Rails. ¡Felicidades!
 
 <hr />
 
@@ -137,10 +140,18 @@ cd railsgirls
 rails server
 {% endhighlight %}
 
-**Último paso.** Instale un editor de texto para editar tus archivos de código. Para este evento recomendamos el editor de texto Atom o Sublime Text.
+### *Último paso.* Instala un editor de texto para editar tus archivos de código
 
-* [Descarga e instala Atom](https://atom.io/), o
-* [Descarga e instala Sublime Text](http://www.sublimetext.com/2)
+Para el taller, recomendamos usar el editor de texto Atom.
+
+* [Descarga e Instala Atom](https://github.com/atom/atom/releases/latest)
+  * Descarga un archivo zipeado de atom para windows (atom-windows.zip) y descomprímelo.
+  * Copia el folder en tu carpeta de "Archivos de Programa"
+  * Ejecuta el archivo atom.exe en el directorio.
+
+* Si estás usando Windows Vista o una versión antigua, puedes usar nuestro otro editor de texto recomendado: [Sublime Text](http://www.sublimetext.com/2).
+
+Listo. Ahora ya deberías tener instalado Ruby on Rails. ¡Felicidades!
 
 ## Posibles Errores
 
@@ -195,20 +206,6 @@ Si tienes esta línea con `:x64_mingw`, entonces por favor, elimina la parte de 
 
 Después que hagas eso, por favor usa tu línea de comando de nuevo y escribe `bundle update`.
 
-### *2.* Instala un editor de texto para editar archivos de código
-
-Para el taller, recomendamos usar el editor de texto Atom.
-
-* [Descarga Atom e instálalo](https://github.com/atom/atom/releases/latest)
-  * Descarga un archivo zipeado de atom para windows y descomprímelo.
-  * Copia el folder en tu carpeta de "Archivos de Programa"
-  * Ejecuta atom en el directorio.
-
-Si estás usando Windows Vista o una versión antigua, puedes usar otro editor de texto [Sublime Text](http://www.sublimetext.com/2).
-
-
-Listo. Ahora usted ya debería tener instalado Ruby on Rails. ¡Felicidades!
-
 <hr />
 
 ## Instalacion en Ubuntu
@@ -219,11 +216,49 @@ Para instalar Ruby on Rails sólo necesita copiar y pegar esta linea en la termi
 bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
 {% endhighlight %}
 
-**Último paso.** Instale un editor de texto para editar tus archivos de código. Para este evento recomendamos el editor de texto Atom o Sublime Text.
+### *Último paso.* Instala un editor de texto para editar tus archivos de código
+Para este evento recomendamos el editor de texto Atom o Sublime Text.
 
 * [Descarga e instala Atom](https://atom.io/), o
 * [Descarga e instala Sublime Text](http://www.sublimetext.com/2)
 
-Listo. Ahora usted ya debería tener instalado Ruby on Rails. Felicidades!
+Listo. Ahora ya deberías tener instalado Ruby on Rails. ¡Felicidades!
+
+<hr />
+
+## Usando la nube
+
+Si todo lo anterior falla (y si cuentas con acceso a internet), tienes la opción de usar la nube. 
+En nuestro caso, usaremos [CodePicnic](https://codepicnic.com).
+
+Sigue los pasos a continuación:
+
+### *Paso 1.* Vamos a crear una cuenta en CodePicnic
+
+Ve a [CodePicnic](https://codepicnic.com) y crea una cuenta nueva. Puedes usar una cuenta
+ de Twitter, Facebook, Github o tu correo electrónico.
+
+![New Codepicnic Account](/images/codepicnic-new-account.png "New Codepicnic Account")
+
+### *Paso 2.* Nuestra primera consola
+
+Una vez dentro de tu cuenta, selecciona la opción **New Console** y Busca **Rails**. 
+Escoge la opción que se acaba de mostrar y selecciona **Create ->**. 
+
+![New Codepicnic Console](/images/codepicnic-new-console.png "New Codepicnic Console")
+
+### *Último paso.* ¡A usar nuestra consola!
+
+En la pantalla que resulte, navega hasta que veas los detalles de tu consola (*Console Details*) 
+y selecciona **Full Screen View**. En esta imagen, la opción está resaltada en un cuadro rojo.
+
+![Codepicnic Console Details](/images/codepicnic-console-details.png "Codepicnic Console Details")
+
+Verás tu consola en una nueva pestaña, puedes acceder a tus archivos en la parte izquierda y ejecutar 
+comandos desde cualquiera de las pestañas llamadas *Terminal*.
+
+![Codepicnic Full Screen Console](/images/codepicnic-full-screen-console.png "Codepicnic Full Screen Console")
+
+Listo. Ahora ya puedes comenzar a experimentar con Ruby on Rails. ¡Felicidades!
 
 <hr />
