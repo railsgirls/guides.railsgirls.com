@@ -102,12 +102,13 @@ Asegúrate que todo funciona bien corriendo el siguiente comando generador de la
 rails new railsgirls
 {% endhighlight %}
 
-**Último paso.** Instale un editor de texto para editar tus archivos de código. Para este evento recomendamos el editor de texto Atom o Sublime Text.
+### *Último paso.* Instala un editor de texto para editar tus archivos de código
+Para este evento recomendamos el editor de texto Atom o Sublime Text.
 
 * [Descarga e instala Atom](https://atom.io/), o
 * [Descarga e instala Sublime Text](http://www.sublimetext.com/2)
 
-Listo. Ahora usted ya debería tener instalado Ruby on Rails. ¡Felicidades!
+Listo. Ahora ya deberías tener instalado Ruby on Rails. ¡Felicidades!
 
 <hr />
 
@@ -137,10 +138,18 @@ cd railsgirls
 rails server
 {% endhighlight %}
 
-**Último paso.** Instale un editor de texto para editar tus archivos de código. Para este evento recomendamos el editor de texto Atom o Sublime Text.
+### *Último paso.* Instala un editor de texto para editar tus archivos de código
 
-* [Descarga e instala Atom](https://atom.io/), o
-* [Descarga e instala Sublime Text](http://www.sublimetext.com/2)
+Para el taller, recomendamos usar el editor de texto Atom.
+
+* [Descarga e Instala Atom](https://github.com/atom/atom/releases/latest)
+  * Descarga un archivo zipeado de atom para windows (atom-windows.zip) y descomprímelo.
+  * Copia el folder en tu carpeta de "Archivos de Programa"
+  * Ejecuta el archivo atom.exe en el directorio.
+
+* Si estás usando Windows Vista o una versión antigua, puedes usar nuestro otro editor de texto recomendado: [Sublime Text](http://www.sublimetext.com/2).
+
+Listo. Ahora ya deberías tener instalado Ruby on Rails. ¡Felicidades!
 
 ## Posibles Errores
 
@@ -195,20 +204,6 @@ Si tienes esta línea con `:x64_mingw`, entonces por favor, elimina la parte de 
 
 Después que hagas eso, por favor usa tu línea de comando de nuevo y escribe `bundle update`.
 
-### *2.* Instala un editor de texto para editar archivos de código
-
-Para el taller, recomendamos usar el editor de texto Atom.
-
-* [Descarga Atom e instálalo](https://github.com/atom/atom/releases/latest)
-  * Descarga un archivo zipeado de atom para windows y descomprímelo.
-  * Copia el folder en tu carpeta de "Archivos de Programa"
-  * Ejecuta atom en el directorio.
-
-Si estás usando Windows Vista o una versión antigua, puedes usar otro editor de texto [Sublime Text](http://www.sublimetext.com/2).
-
-
-Listo. Ahora usted ya debería tener instalado Ruby on Rails. ¡Felicidades!
-
 <hr />
 
 ## Instalacion en Ubuntu
@@ -219,11 +214,12 @@ Para instalar Ruby on Rails sólo necesita copiar y pegar esta linea en la termi
 bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
 {% endhighlight %}
 
-**Último paso.** Instale un editor de texto para editar tus archivos de código. Para este evento recomendamos el editor de texto Atom o Sublime Text.
+### *Último paso.* Instala un editor de texto para editar tus archivos de código
+Para este evento recomendamos el editor de texto Atom o Sublime Text.
 
 * [Descarga e instala Atom](https://atom.io/), o
 * [Descarga e instala Sublime Text](http://www.sublimetext.com/2)
 
-Listo. Ahora usted ya debería tener instalado Ruby on Rails. Felicidades!
+Listo. Ahora ya deberías tener instalado Ruby on Rails. ¡Felicidades!
 
 <hr />
