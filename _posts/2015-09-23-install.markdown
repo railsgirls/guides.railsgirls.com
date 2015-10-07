@@ -231,18 +231,32 @@ Listo. Ahora ya deberías tener instalado Ruby on Rails. ¡Felicidades!
 Si todo lo anterior falla (y si cuentas con acceso a internet), tienes la opción de usar la nube. 
 En nuestro caso, usaremos [CodePicnic](https://codepicnic.com).
 
-Ve a [CodePicnic](https://codepicnic.com) y crea una cuenta nueva.
+Sigue los pasos a continuación:
+
+### *Paso 1.* Vamos a crear una cuenta en CodePicnic
+
+Ve a [CodePicnic](https://codepicnic.com) y crea una cuenta nueva. Puedes usar una cuenta
+ de Twitter, Facebook, Github o tu correo electrónico.
+
 ![New Codepicnic Account](/images/codepicnic-new-account.png "New Codepicnic Account")
 
-Una vez dentro de tu cuenta, selecciona la opción New Console y Busca **Rails**.
+### *Paso 2.* Nuestra primera consola
+
+Una vez dentro de tu cuenta, selecciona la opción New Console y Busca **Rails**. 
+Escoge la opción que se acaba de mostrar y selecciona **Create ->**. 
+
 ![New Codepicnic Console](/images/codepicnic-new-console.png "New Codepicnic Console")
 
-Escoge la opción que se acaba de mostrar y selecciona **Create ->**. En la pantalla que resulte,
-navega hasta que veas los detalles de tu consola (**Console Details**) y selecciona **Full Screen**
+### *Último paso.* ¡A usar nuestra consola!
+
+En la pantalla que resulte, navega hasta que veas los detalles de tu consola (**Console Details**) 
+y selecciona **Full Screen**. En esta imagen, la opción está resaltada en un cuadro rojo.
+
 ![Codepicnic Console Details](/images/codepicnic-console-details.png "Codepicnic Console Details")
 
 Verás tu consola en una nueva pestaña, puedes acceder a tus archivos en la parte izquierda y ejecutar 
 comandos desde cualquiera de las pestañas llamadas **Terminal**
+
 ![Codepicnic Full Screen Console](/images/codepicnic-full-screen-console.png "Codepicnic Full Screen Console")
 
 Listo. Ahora ya puedes comenzar a experimentar con Ruby on Rails. ¡Felicidades!
