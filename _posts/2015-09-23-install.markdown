@@ -13,6 +13,8 @@ Sigue las instrucciones para tu sistema operativo, si tienes problemas con la in
 * [Instalacion en OS X](#instalacion-en-os-x)
 * [Instalacion en Windows](#instalacion-en-windows)
 * [Instalacion en Ubuntu](#instalacion-en-ubuntu)
+* [Usando la Nube](#usando-la-nube)
+
 
 <hr />
 
@@ -221,5 +223,28 @@ Para este evento recomendamos el editor de texto Atom o Sublime Text.
 * [Descarga e instala Sublime Text](http://www.sublimetext.com/2)
 
 Listo. Ahora ya deberías tener instalado Ruby on Rails. ¡Felicidades!
+
+<hr />
+
+## Usando la nube
+
+Si todo lo anterior falla (y si cuentas con acceso a internet), tienes la opción de usar la nube. 
+En nuestro caso, usaremos [CodePicnic](https://codepicnic.com).
+
+Ve a [CodePicnic](https://codepicnic.com) y crea una cuenta nueva.
+![New Codepicnic Account](/images/codepicnic-new-account.png "New Codepicnic Account")
+
+Una vez dentro de tu cuenta, selecciona la opción New Console y Busca **Rails**.
+![New Codepicnic Console](/images/codepicnic-new-console.png "New Codepicnic Console")
+
+Escoge la opción que se acaba de mostrar y selecciona **Create ->**. En la pantalla que resulte,
+navega hasta que veas los detalles de tu consola (**Console Details**) y selecciona **Full Screen**
+![Codepicnic Console Details](/images/codepicnic-console-details.png "Codepicnic Console Details")
+
+Verás tu consola en una nueva pestaña, puedes acceder a tus archivos en la parte izquierda y ejecutar 
+comandos desde cualquiera de las pestañas llamadas **Terminal**
+![Codepicnic Full Screen Console](/images/codepicnic-full-screen-console.png "Codepicnic Full Screen Console")
+
+Listo. Ahora ya puedes comenzar a experimentar con Ruby on Rails. ¡Felicidades!
 
 <hr />
