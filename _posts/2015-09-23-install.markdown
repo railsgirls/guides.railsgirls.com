@@ -213,7 +213,7 @@ Después que hagas eso, por favor usa tu línea de comando de nuevo y escribe `b
 Para instalar Ruby on Rails sólo necesita copiar y pegar esta linea en la terminal y presione "Enter". Disfrute los textos volando en su pantalla, esto tomará un poco de tiempo. Recomendamos una bebida refrescante antes de iniciar la instalación.
 
 {% highlight sh %}
-bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
+bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
 {% endhighlight %}
 
 ### *Último paso.* Instala un editor de texto para editar tus archivos de código
