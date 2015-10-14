@@ -26,10 +26,10 @@ Remote-pairing is so great because people who can benefit from people who would 
 
 ## How do I install Madeye?
 1. Install [Node.js](http://howtonode.org/how-to-install-nodejs)
-2. If you are installing to Linux or Mac, at the  terminal type: `sudo npm install -g madeye`.  Otherwise, if you are installing to a Windows machine, type:  `npm install -g madeye`.
+2. If you are installing to Linux or Mac, at the  terminal type: `curl https://madeye.io/install | sh`.  Otherwise, if you are installing to a Windows machine, type:  `npm install -g madeye`.
 3. Now Madeye is installed!
-3. Type `madeye` in the directory you want to share.
-4. Madeye will report in your terminal the URL to share with your teammates and all of you can go there and edit code.
+3. Again, at the terminal type `madeye` in the directory you want to share.
+4. Madeye will report in your terminal the URL to share with your teammates and all of you can go there in your browser and edit code.
 
 If
  you are coaching, you and the person you are coaching can look on the left side of their browsers screen and see your icon in a particular directory.  If the coachee clicks on that directory they will see your icon again on either a file or another directory.  You can follow those down to whatever file you want to edit and look in the code for their cursor.  Its **that** easy!
