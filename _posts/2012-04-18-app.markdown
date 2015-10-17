@@ -421,5 +421,5 @@ Now you can open the file `app/views/pages/info.html.erb` and add information ab
 * Guide 5: [Add Authentication (user accounts) with Devise by Piotr Steininger](/devise/)
 * Guide 6: [Adding profile pictures with Gravatar](/gravatar)
 * Guide 7: [Test your app with RSpec](/testing-rspec)
-* Guide 8: [Continuous Deployment with Travis-CI](/continuous-travis) / [Continuous Deployment with Codeship](/continuous)
+* Guide 8: [Continuous Deployment with Travis-CI](/continuous-travis) / [Continuous Deployment with Codeship](/continuous) / [Continuous Deployment with Snap CI](/continuous-snap-ci)
 * Guide 9: [Go through additional explanations for the App by Lucy Bain](https://github.com/lbain/railsgirls)
