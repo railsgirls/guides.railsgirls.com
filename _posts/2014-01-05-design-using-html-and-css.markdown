@@ -38,18 +38,14 @@ permalink: design-html-css
 2.Design your table
 
  + We simply use the twitter [Bootstrap](http://www.bootcss.com/) to
-   polish our table。find this line from
+   polish our table. Find this line from
    app/views/ideas/index.html.erb and replace:
 
-   ```
-   <table>
-   ```
+   `<table>`
 
    with
 
-   ```
-   <table class="table">
-   ```
+   `<table class="table">`
 
  + Modify size of the picture using the following lines
 
