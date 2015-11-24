@@ -1,9 +1,10 @@
 permalink: pretty
 markdown: kramdown
-include:
+keep_files:
   - "css"
   - "js"
   - "images"
+  - "favicon.png"
 exclude:
   - ".rvmrc"
   - ".rbenv-version"
