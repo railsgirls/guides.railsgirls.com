@@ -1,77 +1,46 @@
 # Rails Girls Guides
+Esse repositório é um fork do repositório oficial do [Rails Girls Guides](https://github.com/railsgirls/railsgirls.github.com) feito para o evento [Rails Girls Rio 2015](http://railsgirls.com/riodejaneiro)
 
-Our aim is to give tools for women to understand technology. The Rails Girls events do this by providing a great first experience on building the Internet.
+### Instalando as dependências do projeto
 
-Rails Girls was founded in end of 2010 in Helsinki. Originally intended as a onetime event, we never thought to see so many local chapters all around the world! This guide has been put together to help you get started.
-
-You can use our materials and instructions to roll out your own workshop in your city, workplace or kitchen! Read more about Rails Girls at http://railsgirls.com
-
-## Quick start
-
-View the guides at http://guides.railsgirls.com or clone this repo and install & run [jekyll](https://github.com/mojombo/jekyll)
-
-### Installing jekyll
+A única dependência do projeto é a gem [github-pages](https://github.com/github/pages-gem) que facilita a manutenção de um ambiente local usando [Jekyll] (https://github.com/mojombo/jekyll) e sincronizando-o com GitHub Pages.
 
 ```
-$ cd railsgirls.github.com
+$ cd rails-girls-guides
 ```
 
 ```
 $ bundle install
 ```
 
-### Pygments and Code Highlighting
+### Pygments e Code Highlighting
 
-The guides use the [pygments](http://pygments.org/) library to do syntax highlighting. If you don't have it installed you won't be able to see the highlight sections like the following:
+Esse guia utilizada a biblioteca [pygments](http://pygments.org/) para fazer syntax highlighting. Se você não a tem instalada, não será capaz de ver as seções destacadas como a seguinte:
 
 ```
 {% highlight %}
 {% endhighlight %}
 ```
 
-If you aren't editing the code blocks, you can safely ignore this. If you want pygments, you can follow the [install instructions](https://github.com/mojombo/jekyll/wiki/Install) in the "Pygments" section.
+Se você quiser usar pygments, siga o [tutorial de instalação](https://github.com/mojombo/jekyll/wiki/Install) na seção "Pygments".
 
-### Run jekyll
+### Execute o jekyll
 
 ```
-$ jekyll server --watch
+$ jekyll server --watch # a flag --watch observa mudanças no filesystem e reconstrói o site a cada mudança
 ```
 
 ### Styling
 
-Wrap keyboard shortcuts with [kbd](https://www.w3.org/wiki/HTML/Elements/kbd) HTML tag.
+Para incluir atalhos de teclado use a tag HTML [kbd](https://www.w3.org/wiki/HTML/Elements/kbd).
 
-To make posts consistent in style use `Ctrl+C` over `CTRL-c`/`ctrl+c`
+Para manter a consistência de estilo dos posts escolha `Ctrl+C` ao invés de `CTRL-c`/`ctrl+c`
 
 ```
-To shut down the server you can hit <kbd>Ctrl</kbd>+<kbd>C</kbd>
+Para matar o servidor, use <kbd>Ctrl</kbd>+<kbd>C</kbd>
 ```
-
-### Having trouble?
-
-You might find some useful hints in this jekyll issue if it's not working as expected: [Issue 503](https://github.com/mojombo/jekyll/issues/503)
-
-## Contributing a Guide
-
-To contribute a guide, view the instructions at http://guides.railsgirls.com/contributing
-
-## Twitter
-
-For updates and more follow [@railsgirls](https://twitter.com/railsgirls)
 
 ## Website & Blog
 
-Official website and blog for Rails Girls movement can be found at http://railsgirls.com
 
-## E-mail list
-
-Global mailing list for Rails Girls events at http://groups.google.com/group/rails-girls-team
-
-## Credits
-
-* Karri Saarinen / [@karrisaarinen](https://twitter.com/karrisaarinen) / [github](http://github.com/ksaa)
-* Linda Liukas / [@lindaliukas](https://twitter.com/lindaliukas) / [github](http://github.com/lindaliukas)
-* Vesa Vänskä / [@vesan](https://twitter.com/vesan) / [github](http://github.com/vesan)
-* Terence Lee / [@hone02](https://twitter.com/hone02) / [github](http://github.com/hone)
-
-..and all the other coaches and people making Rails Girls awesome. Please add yourself!
+Website oficial do Rails Girls Rio pode ser encontrado em: http://railsgirls.com/riodejaneiro
