@@ -28,13 +28,13 @@ entre em pânico. Nos informe no evento e nós poderemos solucioná-lo juntos.
 
 Clique no Apple menu e escolha *About this Mac*.
 
-![Apple menu](/images/1.png "Apple menu")
+![Apple menu](../images/1.png "Apple menu")
 
 ### *2.* Nessa janela você encontrará a versão do seu sistema operacional
 Se a sua versão começar com 10.6, 10.7, 10.8, 10.9 or 10.10 esse guia servirá para você.
 Caso contrário, nós poderemos ajudá-la a configurar a sua máquina no evento.
 
-![About this Mac dialog](/images/2.png "About this Mac dialog")
+![About this Mac dialog](../images/2.png "About this Mac dialog")
 
 ### *3a.* Se a versão do seu OS X é maior ou igual a 10.9:
 
