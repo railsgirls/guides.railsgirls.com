@@ -24,36 +24,36 @@ entre em pânico. Nos informe no evento e nós poderemos solucioná-lo juntos.
 
 ## Instalação para OS X
 
-### *1.* Verifica a versão do seu sistema operacional
+### *1* Verifica a versão do seu sistema operacional
 
 Clique no Apple menu e escolha *About this Mac*.
 
 ![Apple menu](../images/1.png "Apple menu")
 
-### *2.* Nessa janela você encontrará a versão do seu sistema operacional
+### *2* Nessa janela você encontrará a versão do seu sistema operacional
 Se a sua versão começar com 10.6, 10.7, 10.8, 10.9 or 10.10 esse guia servirá para você.
 Caso contrário, nós poderemos ajudá-la a configurar a sua máquina no evento.
 
 ![About this Mac dialog](../images/2.png "About this Mac dialog")
 
-### *3a.* Se a versão do seu OS X é maior ou igual a 10.9:
+### *3* Se a versão do seu OS X é maior ou igual a 10.9:
 
 Se a sua versão começar com 10.9 ou 10.10, siga esses passos. Nesse tutorial
 instalaremos homebrew e rbenv.
 
-#### *3a1.* Instalar ferramentas de linha de comando no terminal:
+#### *3.1* Instalar ferramentas de linha de comando no terminal:
 
 {% highlight sh %}
 xcode-select --install
 {% endhighlight %}
 
-#### *3a2.* Instalação [Homebrew](http://brew.sh/):
+#### *3.2* Instalação [Homebrew](http://brew.sh/):
 
 {% highlight sh %}
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 {% endhighlight %}
 
-#### *3a3.* Instalação [rbenv](https://github.com/sstephenson/rbenv):
+#### *3.3* Instalação [rbenv](https://github.com/sstephenson/rbenv):
 
 {% highlight sh %}
 brew update
@@ -63,7 +63,7 @@ echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
 source ~/.bash_profile
 {% endhighlight %}
 
-#### *3a4.* Instalação de Ruby com rbenv:
+#### *3.4* Instalação de Ruby com rbenv:
 
 
 {% highlight sh %}
@@ -81,13 +81,13 @@ brew install curl-ca-bundle
 cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
 {% endhighlight %}
 
-#### *3a5.* Configure a versão padrão de Ruby:
+#### *3.5* Configure a versão padrão de Ruby:
 
 {% highlight sh %}
 rbenv global 2.2.3
 {% endhighlight %}
 
-#### *3a6.* Instale o Rails:
+#### *3.6* Instale o Rails:
 
 {% highlight sh %}
 gem install rails --no-ri --no-rdoc
@@ -99,7 +99,7 @@ Para verificar se o Rails foi instalado com sucesso, execute o seguinte comando:
 rails new railsgirls #gera uma aplicação Rails cujo nome é railsgirls
 {% endhighlight %}
 
-### *4.* Instale um editor  a text editor to edit code files
+### *4* Instale um editor  a text editor to edit code files
 
 Para o workshop recomendamos o editor de texto Atom.
 
@@ -107,7 +107,7 @@ Para o workshop recomendamos o editor de texto Atom.
 
 Você pode usar outro editor [Sublime Text](http://www.sublimetext.com).
 
-### *5.* Atualize seu navegador
+### *5* Atualize seu navegador
 
 Entre em [whatbrowser.org](http://www.whatbrowser.org/intl/pt-BR/) e atualize
 seu navegador caso não possua a última versão instalada.
@@ -119,7 +119,7 @@ desenvolvimento Ruby on Rails no OS X.
 
 ## Instalação Windows
 
-### *1.* Instalação Rails
+### *1* Instalação Rails
 
 Baixe o [RailsInstaller](https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.1.0.exe)
 e o execute. Siga os passos do instalador usando as opções padrão.
@@ -190,7 +190,7 @@ Look at the bottom of the file. You will probably see something like this as one
 
 After you did that, please use your Command Prompt again and type `bundle update`.
 
-### *2.* Install a text editor to edit code files
+### *2* Install a text editor to edit code files
 
 For the workshop we recommend the text editor Atom.
 
@@ -203,13 +203,13 @@ If you are using Windows Vista or older versions, you can use another editor [Su
 
 Now you should have a working Ruby on Rails programming setup. Congrats!
 
-### *3.* Update your browser
+### *3* Update your browser
 
 If you use Internet Explorer, we recommend installing [Firefox](mozilla.org/firefox) or [Google Chrome](google.com/chrome).
 
 Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
 
-### *4.* Install node
+### *4* Install node
 
 This is not strictly necessary, but it avoids a problem with and ExecJS::RuntimeError that might
 occur later  ([see stackoverflow](https://stackoverflow.com/questions/12520456/execjsruntimeerror-on-windows-trying-to-follow-rubytutorial)).
@@ -228,7 +228,7 @@ Make sure it is higher than `0.12`.
 
 ## Setup for Linux
 
-### *1.* Install Rails
+### *1* Install Rails
 
 
 To install the Ruby on Rails development environment you just need to copy the line below for your Linux distribution (Ubuntu or Fedora), paste it in the Terminal and press Enter. Enjoy the text flying on the screen; it will take quite some time. Grabbing a refreshing drink before starting is encouraged.
@@ -258,14 +258,14 @@ rails server
 {% endhighlight %}
 
 
-### *2.* Install a text editor to edit code files
+### *2* Install a text editor to edit code files
 
 For the workshop we recommend the text editor Sublime Text.
 
 * [Download Sublime Text and install it](http://www.sublimetext.com/2)
 
 
-### *3.* Update your browser
+### *3* Update your browser
 
 Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
 
@@ -291,30 +291,30 @@ Instead of installing Ruby on Rails and an editor on your computer, you can use 
 - Starting from date/time
 - How long (days, weeks etc.) you need access
 
-### *1.* Update your browser
+### *1* Update your browser
 
 If you use Internet Explorer, we recommend installing [Firefox](mozilla.org/firefox) or [Google Chrome](google.com/chrome).
 
 Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
 
-### *2.* Create an account
+### *2* Create an account
 
 Go to [https://nitrous.io](https://nitrous.io/) and signup.
 
-### *3.* Setup a development box / workspace for ruby on rails
+### *3* Setup a development box / workspace for ruby on rails
 * Login to your nitrous account
 * Go to the dashboard by using the green 'Open dashboard' button
 * Create a nitrous box: pick Ruby/Rails from the templates - everything else can stay as is, but you can change the name of your box if you want to
 * It takes a moment until your box is ready
 
-### *4.* Find and restart your development box
+### *4* Find and restart your development box
 * If you've just created your box, you can probably skip these steps - they're good to know if you login to nitrous again later
 * You can always find your nitrous boxes by going to the dashboard or choosing 'Boxes' from the top menu
 * Pick your box from the list of boxes
 * If you haven't used a box in a while, it might have been shutdown due to inactivity. If you are informed that your box is not running, restart it using the respective button
 * When your box is up and running, choose 'IDE' in order to start coding
 
-### *5.* Coding with your development box
+### *5* Coding with your development box
 * On the left hand side, you find a file browser where you can navigate your directories and file
 * In the middle, you find the editor where you can modify your files
 * At the bottom, you find the terminal where you can run commands
