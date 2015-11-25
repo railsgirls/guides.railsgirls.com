@@ -181,16 +181,28 @@ Execute o comando novamente caso tenha ocorrido falhas.
 
 ### 'x64_mingw' is not a valid platform` Error
 
-Sometimes you get the following error when running `rails server`:
-`'x64_mingw' is not a valid platform` If you experience this error after using the RailsInstaller you have to do a small edit to the file `Gemfile`:
+Erro encontrado às vezes ao executar o comando `rails server`:
+`'x64_mingw' is not a valid platform` Se esse erro aconteceu com você, após executar o RailsInstaller você deve editar o seu `Gemfile`:
 
-Look at the bottom of the file. You will probably see something like this as one of the last lines in the file:
-`gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]`. If you have this line with `:x64_mingw`, then please delete the `:x64_mingw` part. In the end it should just say:
-`'tzinfo-data', platforms: [:mingw, :mswin]`
+Procure no arquivo por entradas no seguinte formato:
 
-After you did that, please use your Command Prompt again and type `bundle update`.
+{%highlight ruby %}
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]`
+{% endhighlight %}
 
-### *2* Install a text editor to edit code files
+Delete o parâmetro `:x64_mingw`. Após a deleção, a linha deve estar da seguinte
+forma:
+{%highlight ruby %}
+'tzinfo-data', platforms: [:mingw, :mswin]
+{% endhighlight %}
+
+Após salvar as alterações, use o Prompt de Comando novamente e execute:
+
+{%highlight sh %}
+ bundle update
+{% endhighlight %}
+
+### *2* Instale um editor de texto para editar o código fonte
 
 For the workshop we recommend the text editor Atom.
 
@@ -211,8 +223,7 @@ Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you do
 
 ### *4* Install node
 
-This is not strictly necessary, but it avoids a problem with and ExecJS::RuntimeError that might
-occur later  ([see stackoverflow](https://stackoverflow.com/questions/12520456/execjsruntimeerror-on-windows-trying-to-follow-rubytutorial)).
+This is not strictly necessary, but it avoids a problem with and ExecJS::RuntimeError that might occur later  ([see stackoverflow](https://stackoverflow.com/questions/12520456/execjsruntimeerror-on-windows-trying-to-follow-rubytutorial)).
 
 * Go to [https://nodejs.org/](https://nodejs.org/) and install node
 
