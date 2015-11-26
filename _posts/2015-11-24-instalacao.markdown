@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Setup recipe for Rails Girls
+title: Instalação do Ambiente de Desenvolvimento do Rails Girls
 permalink: instalacao
 ---
 
-# Instalação do Ambiente de desenvolvimento
-Adaptado de [Guide to Install Rails](http://guides.railsgirls.com/install):
+# Instalação do Rails
+
+Traduzido e adaptado de [Guide to Install Rails](http://guides.railsgirls.com/install):
 
 Para construir aplicações e outras coisas com Ruby on Rails é necessário
 instalar alguns programas e configurar um ambiente de desenvolvimento no seu
@@ -14,15 +15,12 @@ computador.
 Siga as instruções para o seu sistema operacional. Se tiver algum problema não
 entre em pânico. Nos informe no evento e nós poderemos solucioná-lo juntos.
 
-* [Instalação para OS X](#instalacao-para-os-x)
-* [Instalação para Windows](#instalacao-para-windows)
-* [Instalação para Linux](#instalacao-para-linux)
-* [Utilizando máquina virtual](#utilizando-máquina-virtual)
-* [Utilizando um serviço na nuvem - Nenhuma instalação é necessária](#using-a-cloud-service)
+* [Instalação para OS X](#os-x)
+* [Instalação para Windows](#windows)
+* [Instalação para Linux](#linux)
+* [Máquina virtual](#mquina-virtual)
 
-<hr />
-
-## Instalação para OS X
+## OS X
 
 ### *1* Verifica a versão do seu sistema operacional
 
@@ -94,30 +92,24 @@ gem install rails --no-ri --no-rdoc
 {% endhighlight %}
 
 
-Para verificar se o Rails foi instalado com sucesso, execute o seguinte comando:
+Para verificar se o Rails foi instalado com sucesso, execute os seguintes comandos:
 {% highlight sh %}
 rails new railsgirls #gera uma aplicação Rails cujo nome é railsgirls
+cd railsgirls #entra na pasta da aplicação gerada
+rails s #executa o servidor de aplicação, para acessá-la digite localhost:3000 no seu navegador
 {% endhighlight %}
 
-### *4* Instale um editor  a text editor to edit code files
+### *4.* Editor de Texto
 
-Para o workshop recomendamos o editor de texto Atom.
+Para o workshop recomendamos o editor de texto [Atom](https://atom.io/).
+Você também pode usar outro editor [Sublime Text](http://www.sublimetext.com).
 
-* [Atom](https://atom.io/)
+### *5.* Atualize seu navegador
 
-Você pode usar outro editor [Sublime Text](http://www.sublimetext.com).
+Entre em [whatbrowser.org](http://www.whatbrowser.org/intl/pt-BR/) e atualize seu navegador caso não possua a última versão instalada.
+Recomendamos o [Firefox](http://br.mozdev.org/) ou [Chrome](https://www.google.com.br/chrome/browser/desktop/).
 
-### *5* Atualize seu navegador
-
-Entre em [whatbrowser.org](http://www.whatbrowser.org/intl/pt-BR/) e atualize
-seu navegador caso não possua a última versão instalada.
-
-
-Parabéns!! Agora você provavelmente configurou com sucesso seu ambiente de
-desenvolvimento Ruby on Rails no OS X.
-<hr />
-
-## Instalação Windows
+## Windows
 
 ### *1* Instalação Rails
 
@@ -137,17 +129,15 @@ gem update rails --no-ri --no-rdoc
 {% endhighlight %}
 
 Para verificar se o Rails foi instalado com sucesso, execute os seguintes comandos:
-
 {% highlight sh %}
 rails new railsgirls #gera uma aplicação Rails cujo nome é railsgirls
-cd railsgirls #entra no diretório da aplicação recém gerada
-rails server #inicializa o servidor da aplicação na porta 3000,
-que pode ser acessado no seu navegador através do endereço localhost:3000
+cd railsgirls #entra na pasta da aplicação gerada
+rails s #executa o servidor de aplicação, para acessá-la digite localhost:3000 no seu navegador
 {% endhighlight %}
 
-## Possíveis erros
+#### Possíveis erros
 
-### Gem::RemoteFetcher error
+##### Gem::RemoteFetcher error
 
 Se você obteve esse erro executando o comando `rails new railsgirls` ou `gem update rails`:
 
@@ -179,7 +169,7 @@ gem -v #exibe a versão instalada do RubyGems, se for maior que 2.2.3 então a n
 
 Execute o comando novamente caso tenha ocorrido falhas.
 
-### 'x64_mingw' is not a valid platform` Error
+##### 'x64_mingw' is not a valid platform` Error
 
 Erro encontrado às vezes ao executar o comando `rails server`:
 `'x64_mingw' is not a valid platform` Se esse erro aconteceu com você, após executar o RailsInstaller você deve editar o seu `Gemfile`:
@@ -202,134 +192,62 @@ Após salvar as alterações, use o Prompt de Comando novamente e execute:
  bundle update
 {% endhighlight %}
 
-### *2* Instale um editor de texto para editar o código fonte
+### *1.1* Instale o NodeJS (Opcional)
 
-For the workshop we recommend the text editor Atom.
+Não é estritamente necessário, mas evita o error ExecJS::RuntimeError que pode ocorrer posteriormente.  ([veja stackoverflow](https://stackoverflow.com/questions/12520456/execjsruntimeerror-on-windows-trying-to-follow-rubytutorial)).
 
-* [Download Atom and install it](https://github.com/atom/atom/releases/latest)
-  * Download an atom zip file for windows and decompress it.
-  * Copy the folder into your Program Files.
-  * Launch atom in the folder.
+* Acesse [https://nodejs.org/](https://nodejs.org/) e instale o NodeJS
 
-If you are using Windows Vista or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2).
-
-Now you should have a working Ruby on Rails programming setup. Congrats!
-
-### *3* Update your browser
-
-If you use Internet Explorer, we recommend installing [Firefox](mozilla.org/firefox) or [Google Chrome](google.com/chrome).
-
-Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
-
-### *4* Install node
-
-This is not strictly necessary, but it avoids a problem with and ExecJS::RuntimeError that might occur later  ([see stackoverflow](https://stackoverflow.com/questions/12520456/execjsruntimeerror-on-windows-trying-to-follow-rubytutorial)).
-
-* Go to [https://nodejs.org/](https://nodejs.org/) and install node
-
-Check your version of node
+Verifique a versão instalada com o seguinte comando:
 
 {% highlight sh %}
 node --version
 {% endhighlight %}
 
-Make sure it is higher than `0.12`.
+Certifique-se que a versão instalada é maior igual a `0.12`.
 
-<hr />
+## Linux
 
-## Setup for Linux
+### *1.* Instale o RVM
 
-### *1* Install Rails
+Para instalar o ambiente de desenvolvimento Ruby on Rails, você apenas precisa copiar a linha abaixo no terminal de acordo com a distribuição Linux que esteja usando(Ubuntu e Fedora) e apertar <kdb>Enter</kdb>. A instalação demorará um certo tempo para ser terminada.
 
-
-To install the Ruby on Rails development environment you just need to copy the line below for your Linux distribution (Ubuntu or Fedora), paste it in the Terminal and press Enter. Enjoy the text flying on the screen; it will take quite some time. Grabbing a refreshing drink before starting is encouraged.
-
-#### For Ubuntu:
+#### Para Ubuntu:
 
 {% highlight sh %}
 bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
 {% endhighlight %}
 
-If you are going to use RVM installations with gnome-terminal, you'll probably need to change it's default options before you can see and use the right Ruby and Rails versions. Find out how: [RVM documentation](http://rvm.io/integration/gnome-terminal).
+Se você for utilizar o RVM com o gnome-terminal(padrão para a interface Unity), você precisará antes mudar algumas opções padrão. Para que o RVM funcione corretamente, abra o gnome-terminal, em Editar ▸ Preferências de perfil e marque na aba Comando a opção Executar o comando como shell de sessão e clique em Fechar.
+Para mais informações acesse [RVM - Integração com o gnome-terminal](http://rvm.io/integration/gnome-terminal).
 
-#### For Fedora:
+#### Para Fedora:
 
 {% highlight sh %}
 bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-fedora.sh)
 {% endhighlight %}
 
-Make sure that all works well by running the application generator command.
-
-Make sure that all works well by running the application generator command.
-
+Para verificar se o Rails foi instalado com sucesso, execute os seguintes comandos:
 {% highlight sh %}
-rails new railsgirls
-cd railsgirls
-rails server
+rails new railsgirls #gera uma aplicação Rails cujo nome é railsgirls
+cd railsgirls #entra na pasta da aplicação gerada
+rails s #executa o servidor de aplicação, para acessá-la digite localhost:3000 no seu navegador
 {% endhighlight %}
 
+### *2.* Editor de Texto
 
-### *2* Install a text editor to edit code files
+Para o workshop recomendamos o editor de texto [Atom](https://atom.io/).
+Você também pode usar outro editor [Sublime Text](http://www.sublimetext.com).
 
-For the workshop we recommend the text editor Sublime Text.
+### *3.* Atualize seu navegador
 
-* [Download Sublime Text and install it](http://www.sublimetext.com/2)
-
-
-### *3* Update your browser
-
-Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
-
-
-Now you should have a working Ruby on Rails programming setup. Congrats!
+Entre em [whatbrowser.org](http://www.whatbrowser.org/intl/pt-BR/) e atualize seu navegador caso não possua a última versão instalada.
+Recomendamos o [Firefox](http://br.mozdev.org/) ou [Chrome](https://www.google.com.br/chrome/browser/desktop/).
 
 <hr />
 
-## Virtual Machine
+##Máquina Virtual
 
-Instead of installing all tools on your machine, you can also set up a development environment in a Virtual Machine. Please find all the details [here]({% post_url 2014-03-24-alternative-dev-environment %}).
-
-<hr />
-
-## Using a Cloud Service
-
-Instead of installing Ruby on Rails and an editor on your computer, you can use a webservice for development. All you need is a browser and an internet connection. This guide explains how to get started with [nitrous.io](https://nitrous.io). If you're using a different service, they may use a different wording - e.g. 'workspace' instead of 'box', but the process is usually pretty similar.
-
-**Organizer:** Nitrous is a paid service, but free for community usage purpose. Please contact Nitrous <pro [at] nitrous.io> to request a community account with the following list/information.
-
-- Email address of the people you need workspaces for (= email list of members)
-- How long they would need to use Nitrous
-- Starting from date/time
-- How long (days, weeks etc.) you need access
-
-### *1* Update your browser
-
-If you use Internet Explorer, we recommend installing [Firefox](mozilla.org/firefox) or [Google Chrome](google.com/chrome).
-
-Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
-
-### *2* Create an account
-
-Go to [https://nitrous.io](https://nitrous.io/) and signup.
-
-### *3* Setup a development box / workspace for ruby on rails
-* Login to your nitrous account
-* Go to the dashboard by using the green 'Open dashboard' button
-* Create a nitrous box: pick Ruby/Rails from the templates - everything else can stay as is, but you can change the name of your box if you want to
-* It takes a moment until your box is ready
-
-### *4* Find and restart your development box
-* If you've just created your box, you can probably skip these steps - they're good to know if you login to nitrous again later
-* You can always find your nitrous boxes by going to the dashboard or choosing 'Boxes' from the top menu
-* Pick your box from the list of boxes
-* If you haven't used a box in a while, it might have been shutdown due to inactivity. If you are informed that your box is not running, restart it using the respective button
-* When your box is up and running, choose 'IDE' in order to start coding
-
-### *5* Coding with your development box
-* On the left hand side, you find a file browser where you can navigate your directories and file
-* In the middle, you find the editor where you can modify your files
-* At the bottom, you find the terminal where you can run commands
-* Everything you need is here in you browser window - you do not need to start an editor or terminal anywhere else
-* If your following a guide or tutorial, use the commands for Linux even if you are on a Windows computer - your operating system does not matter, since all commands are run on your development box, which is a Linux machine
-* If a guide or tutorial asks you to point your browser to something like http://localhost:3000, go to the 'Preview' menu and pick 'Port 3000'
-* If, for example, you're asked to open http://localhost:3000/posts, please append '/posts' manually to the URL that has been opened
+Ao invés de instalar todas as ferramentas na sua própria máquina, você pode configurar o mesmo ambiente de desenvolvimento usando uma máquina virtual.
+Leia mais [aqui]: ({% post_url 2014-03-24-alternative-dev-environment %}).
+<!-- TODO: Traduzir o post do link acima -->
