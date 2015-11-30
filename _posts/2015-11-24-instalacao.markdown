@@ -218,8 +218,9 @@ Para instalar o ambiente de desenvolvimento Ruby on Rails, você apenas precisa 
 bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
 {% endhighlight %}
 
-Se você for utilizar o RVM com o gnome-terminal(padrão para a interface Unity), você precisará antes mudar algumas opções padrão. Para que o RVM funcione corretamente, abra o gnome-terminal, em Editar ▸ Preferências de perfil e marque na aba Comando a opção Executar o comando como shell de sessão e clique em Fechar.
-Para mais informações acesse [RVM - Integração com o gnome-terminal](http://rvm.io/integration/gnome-terminal).
+Se você for utilizar o RVM com o `gnome-terminal` (padrão para a interface Unity), você precisará antes mudar algumas opções padrão.
+Para que o RVM funcione corretamente, abra o `gnome-terminal`, em `Editar ▸ Preferências de perfil` e marque na aba Comando a opção `Executar o comando como shell de sessão` e clique em `Fechar`.
+Para mais informações, acesse [RVM - Integração com o gnome-terminal](http://rvm.io/integration/gnome-terminal).
 
 #### Para Fedora:
 
