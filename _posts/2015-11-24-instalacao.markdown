@@ -18,7 +18,7 @@ entre em pânico. Nos informe no evento e nós poderemos solucioná-lo juntos.
 * [Instalação para OS X](#os-x)
 * [Instalação para Windows](#windows)
 * [Instalação para Linux](#linux)
-* [Máquina virtual](#maquina-virtual)
+* [Máquina virtual](#mquina-virtual)
 
 ## OS X
 
@@ -246,7 +246,7 @@ Recomendamos o [Firefox](http://br.mozdev.org/) ou [Chrome](https://www.google.c
 
 <hr />
 
-## Máquina Virtual
+##Máquina Virtual
 
 Ao invés de instalar todas as ferramentas na sua própria máquina, você pode configurar o mesmo ambiente de desenvolvimento usando uma máquina virtual.
 Leia mais [aqui]: ({% post_url 2014-03-24-alternative-dev-environment %}).
