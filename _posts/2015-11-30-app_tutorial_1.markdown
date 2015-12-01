@@ -395,37 +395,40 @@ root :to => redirect('/ideas')
 
 Verifique se houve mudanças abrindo a página raiz da aplicação, isto é, <http://localhost:3000/> no seu navegador.
 
-**Coach:** Talk about routes, and include details on the order of routes and their relation to static files.
+**Coach:**
+Fale sobre rotas e dê detalhes sobre a ordem das rotas e a sua relação com arquivos estáticos
 
-**Rails 3 users:** You will need to delete the index.html from the `/public/` folder for this to work.
+**Usuários do Rails 3:**
+Você precisará deletar o arquivo `index.html` da pasta `/public/` para que isso funcione.
 
-## Create static page in your app
+## Criação das página estáticas na sua aplicação
 
-Lets add a static page to our app that will hold information about the author of this application — you!
+Vamos adicionar uma página estática à nossa aplicação que exibirá informação sobre autora da aplicação - você !!!
 
 {% highlight sh %}
 rails generate controller pages info
 {% endhighlight %}
 
-This command will create you a new folder under `app/views` called `/pages` and under that a file called `info.html.erb` which will be your info page.
+Esse comando criará uma nova pasta dentro de `app/views` chamada `/pages` e dentro dele under um arquivo chamado `info.html.erb` que será a sua página de informações sobre autora da aplicação.
 
-It also adds a new simple route to your routes.rb.
+Ele também adiciona uma nova rota simples no seu arquivo `routes.rb`.
 
 {% highlight ruby %}
 get "pages/info"
 {% endhighlight %}
 
-Now you can open the file `app/views/pages/info.html.erb` and add information about you in HTML. To see your new info page, take your browser to <http://localhost:3000/pages/info> or, if you are a cloud service user, append '/pages/info' to your preview url.
+Agora você pode abir o arquivo `app/views/pages/info.html.erb` e adicione informações sobre você no HTML. Para visualizar a sua nova página, no seu navegador acesse <http://localhost:3000/pages/info>.
 
-## *6+.*What next?
 
+## *6+.*Próximos passos*
+
+<!--
 * Add design using HTML &amp; CSS
 * Add ratings
 * Use CoffeeScript (or JavaScript) to add interaction
 * Add picture resizing to make loading the pictures faster
 
-
-## Additional Guides
+## Guias adicionais
 
 * Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](https://github.com/PragTob/rails-beginner-cheatsheet)
 * Guide 1: [Add commenting by Janika Liiv](/commenting)
@@ -437,3 +440,4 @@ Now you can open the file `app/views/pages/info.html.erb` and add information ab
 * Guide 7: [Test your app with RSpec](/testing-rspec)
 * Guide 8: [Continuous Deployment with Travis-CI](/continuous-travis) / [Continuous Deployment with Codeship](/continuous) / [Continuous Deployment with Snap CI](/continuous-snap-ci)
 * Guide 9: [Go through additional explanations for the App by Lucy Bain](https://github.com/lbain/railsgirls)
+-->
