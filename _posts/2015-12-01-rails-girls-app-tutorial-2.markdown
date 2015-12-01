@@ -5,13 +5,13 @@ permalink: rails-girls-app-tutorial-2
 ---
 # Rails Girls App Tutorial 2
 
-*Criado por Janika Liiv, [@janikaliiv](https://twitter.com/janikaliiv)*
+*Criado por Janika Liiv, [@janikaliiv](https://twitter.com/janikaliiv){:target="_blank"}*
 
-*Traduzido e adaptado de [Commenting for Rails Girls App](http://guides.railsgirls.com/commenting/)*
+*Traduzido e adaptado de [Commenting for Rails Girls App](http://guides.railsgirls.com/commenting/){:target="_blank"}*
 
 Nós vamos adicionar uma área de comentários à nossa aplicação *railsgirls*.
 
-Instruções sobre como instalar o Rails e construir a aplicação podem ser encontradas [aqui](/rails-girls-app-tutorial-1).
+Instruções sobre como instalar o Rails e construir a aplicação podem ser encontradas [aqui]({% post_url 2015-11-30-rails-girls-app-tutorial-1 %}){:target="_blank"}.
 
 ## *1.* Criar o comment scaffold
 
@@ -52,9 +52,8 @@ belongs_to :idea
 
 ## *3.* Exibir o formulário de commentário e os comentários existentes
 
-Open app/views/ideas/show.html.erb and after the image_tag
 {% highlight erb %}
-<%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
+<%= image_tag(@idea.picture_url, width: 600) if @idea.picture.present? %>
 {% endhighlight %}
 
 Adicione:
