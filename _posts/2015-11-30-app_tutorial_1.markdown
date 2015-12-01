@@ -177,57 +177,60 @@ Nós utilizaremos a funcionalidade scaffold para gerar um ponto inicial para lis
 rails generate scaffold idea name:string description:text picture:string
 {% endhighlight %}
 
-The scaffold creates new files in your project directory, but to get it to work properly we need to run a couple of other commands to update our database and restart the server.
+O scaffold cria novos arquivos no diretório do seu projeto, o que é chamado de código *boilerplate*, isto é, código mínimo necessário para que a sua aplicação funcione.
+Para que a sua aplicação funcione corretamente com essas alterações é necessário atualizar o banco de dados e reiniciar o servidor:
 
 <div class="os-specific">
   <div class="nix">
-{% highlight sh %}
-bin/rake db:migrate
-rails server
-{% endhighlight %}
+    {% highlight sh %}
+      bin/rake db:migrate # executa as migrações, atualizando o banco de dados
+      rails server # inicializa o servidor da aplicação
+    {% endhighlight %}
   </div>
 
   <div class="win">
-{% highlight sh %}
-ruby bin/rake db:migrate
-rails server
-{% endhighlight %}
+    {% highlight sh %}
+      ruby bin/rake db:migrate # executa as migrações, atualizando o banco de dados
+      rails server # inicializa o servidor da aplicação
+    {% endhighlight %}
   </div>
 </div>
 
-Open <http://localhost:3000/ideas> in your browser. Cloud service (e.g. nitrous) users need to append '/ideas' to their preview url instead (see [installation guide](/install#using-a-cloud-service)).
+Agora abra <http://localhost:3000/ideas> no seu navegador.
 
-Click around and test what you got by running these few command-line commands.
+Navegue pela aplicação para descobrir o que foi gerado pelo scaffold.
 
-Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> to quit the server again when you've clicked around a little.
-
+<kbd>Ctrl</kbd>+<kbd>C</kbd> para interromper o servidor quando você tiver terminado de explorar a aplicação
 
 ## *3.*Design
 
-**Coach:** Talk about the relationship between HTML and Rails. What part of views is HTML and what is Embedded Ruby (ERB)? What is MVC and how does this relate to it? (Models and controllers are responsible for generating the HTML views.)
+**Coach:**
+Fale sobre o relacionamento entre o HTML e o Rails. Que parte das vuews são HTML e quais são Embedded Ruby (ERB)?
+O que é MVC e como isso se relaciona com isso? (Models e controllers são responsáveis por gerar as views HTML)
 
-The app doesn't look very nice yet. Let's do something about that. We'll use the Twitter Bootstrap project to give us nicer styling really easily.
+A nossa aplicação ainda não está muito bonita. Vamos tentar resolver esse problema. Para isso, usaremos o [Twitter Bootstrap](http://getbootstrap.com/) para melhorar a aparência da nossa aplicação de maneira fácil.
 
-Open `app/views/layouts/application.html.erb` in your text editor and above the line
+Abra o arquivo `app/views/layouts/application.html.erb` no seu editor de texto e edite o código acima da linha:
 
 {% highlight erb %}
 <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
 {% endhighlight %}
 
-add
+Adicionando o código abaixo:
+<!--TODO: Instalar a gem Twitter Bootstrap Rails??? -->
 
 {% highlight erb %}
 <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap.css">
 <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap-theme.css">
 {% endhighlight %}
 
-and replace
+Substitua:
 
 {% highlight erb %}
 <%= yield %>
 {% endhighlight %}
 
-with
+com:
 
 {% highlight erb %}
 <div class="container">
@@ -235,7 +238,7 @@ with
 </div>
 {% endhighlight %}
 
-Let's also add a navigation bar and footer to the layout. In the same file, under `<body>` add
+Vamos também adicionar uma barra de navegação e um rodapé no nosso layout. No mesmo arquivo, abaixo de `<body>`, adicione:
 
 {% highlight html %}
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -258,7 +261,7 @@ Let's also add a navigation bar and footer to the layout. In the same file, unde
 </nav>
 {% endhighlight %}
 
-and before `</body>` add
+E antes de `</body>` adicione:
 
 {% highlight html %}
 <footer>
@@ -269,7 +272,7 @@ and before `</body>` add
 <script src="//railsgirls.com/assets/bootstrap.js"></script>
 {% endhighlight %}
 
-Now let's also change the styling of the ideas table. Open `app/assets/stylesheets/application.css` and at the bottom add
+Agora vamos também adicionar estilo à tabela ideas. Abra `app/assets/stylesheets/application.css` e no final do arquivo adicione:
 
 {% highlight css %}
 body { padding-top: 100px; }
@@ -278,30 +281,32 @@ table, td, th { vertical-align: middle; border: none; }
 th { border-bottom: 1px solid #DDD; }
 {% endhighlight %}
 
-Now make sure you saved your files and refresh the browser to see what was changed. You can also change the HTML & CSS further.
+Agora verifique se você salvou os arquivos editados e dê refresh no seu navegador para verificar o que foi mudado. Você pode alterar ainda mais o HTML e CSS.
 
-In case your Terminal shows you an error message that *sort of* implies there is something wrong with your JavaScript or CoffeeScript, install [nodejs](http://nodejs.org/download/). This issue should not appear when you've used the RailsInstaller (but when you've installed Rails via ```gem install rails```).
+No caso do seu Terminal exibir algum erro que implique qye algo está errado com seu Javascript ou CoffeeScript, instale o [nodejs](http://nodejs.org/download/).
+Esse erro não deveria aparecer se você instalou o Rails com RailsInstaller, mas pode aparecer se você instalou o Rails com ```gem install rails```.
+<!-- TODO:  instale a gem *therubyracer* para resolver esses problemas??? -->
 
-**Coach:** Talk a little about CSS and layouts.
+**Coach:** Fale um pouco sobre CSS e layouts.
 
+## *4.*Adicionar upload de imagens
 
-## *4.*Adding picture uploads
+Nós precisamos instalar algumas bibliotecas, nesse casos *gems* para permitir que possamos fazer isso na nossa aplicação.
 
-We need to install a piece of software to let us upload files in Rails.
-
-Open `Gemfile` in the project directory using your text editor and under the line
+Abra o `Gemfile` no diretório do seu projeto usando o editor de texto e edite abaixo da linha:
 
 {% highlight ruby %}
 gem 'sqlite3'
 {% endhighlight %}
 
-add
+Adicione:
 
 {% highlight ruby %}
 gem 'carrierwave'
 {% endhighlight %}
 
-**Coach:** Explain what libraries are and why they are useful. Describe what open source software is.
+**Coach:**
+Explique o que são bibliotecas e porque elas são úteis. Descreve o que é software open source.   
 
 Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to quit the server.
 
