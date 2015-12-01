@@ -202,7 +202,6 @@ Navegue pela aplicação para descobrir o que foi gerado pelo scaffold.
 
 <kbd>Ctrl</kbd>+<kbd>C</kbd> para interromper o servidor quando você tiver terminado de explorar a aplicação
 
-
 ## *3.*Design
 
 **Coach:**
@@ -219,6 +218,7 @@ Abra o arquivo `app/views/layouts/application.html.erb` no seu editor de texto e
 
 Adicionando o código abaixo:
 <!--TODO: Instalar a gem Twitter Bootstrap Rails??? -->
+
 {% highlight erb %}
 <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap.css">
 <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap-theme.css">
@@ -272,7 +272,7 @@ E antes de `</body>` adicione:
 <script src="//railsgirls.com/assets/bootstrap.js"></script>
 {% endhighlight %}
 
-Agora vamos também adicionar estilo a tabela ideas. Abra `app/assets/stylesheets/application.css` e no final do arquivo adicione:
+Agora vamos também adicionar estilo à tabela ideas. Abra `app/assets/stylesheets/application.css` e no final do arquivo adicione:
 
 {% highlight css %}
 body { padding-top: 100px; }
@@ -283,7 +283,7 @@ th { border-bottom: 1px solid #DDD; }
 
 Agora verifique se você salvou os arquivos editados e dê refresh no seu navegador para verificar o que foi mudado. Você pode alterar ainda mais o HTML e CSS.
 
-No caso do seu Terminal exibir algum erro que implique qye algo está errado com seu Javascript ou CoffeeScript, instale o [nodejs](http://nodejs.org/download/).
+No caso do seu Terminal exibir algum erro que implique que algo está errado com seu Javascript ou CoffeeScript, instale o [nodejs](http://nodejs.org/download/).
 Esse erro não deveria aparecer se você instalou o Rails com RailsInstaller, mas pode aparecer se você instalou o Rails com ```gem install rails```.
 <!-- TODO:  instale a gem *therubyracer* para resolver esses problemas??? -->
 
@@ -308,94 +308,92 @@ gem 'carrierwave'
 **Coach:**
 Explique o que são bibliotecas e porque elas são úteis. Descreve o que é software open source.   
 
-Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to quit the server.
+<kbd>Ctrl</kbd>+<kbd>C</kbd> no terminal para interromper o servidor
 
-In the terminal run:
+No terminal execute:
 
 {% highlight sh %}
-bundle
+bundle #instala as gems definidas no Gemfile
 {% endhighlight %}
 
-Now we can generate the code for handling uploads. In the terminal run:
+Agora nós podemos adicionar o código responsável pelo upload de imagens. No terminal execute:  
 
 {% highlight sh %}
 rails generate uploader Picture
 {% endhighlight %}
 
-Please start the rails server now.
+Agora você pode iniciar o servidor novamente.
 
-Note: Some people might be using a second terminal to run the rails server continuously.
-If so you need to **restart the Rails server process** now.
-This is needed for the app to load the added library.
+Observação:
+Algumas pessoas gostam de usar uma segunda janela de terminal para executar o rails server ininterruptamente.
+No entanto, você precisa **reiniciar o processo do Rails server** novamente para carregar as novas bibliotecas instaladas.
 
-Open `app/models/idea.rb` and under the line
+Abra o arquivo `app/models/idea.rb` e abaixo da linha:
 
 {% highlight ruby %}
 class Idea < ActiveRecord::Base
 {% endhighlight %}
 
-add
+Adicione:
 
 {% highlight ruby %}
 mount_uploader :picture, PictureUploader
 {% endhighlight %}
 
-Open `app/views/ideas/_form.html.erb` and change
+Abra o arquivo `app/views/ideas/_form.html.erb` e modifique:
 
 {% highlight erb %}
 <%= f.text_field :picture %>
 {% endhighlight %}
 
-to
+Para:
 
 {% highlight erb %}
 <%= f.file_field :picture %>
 {% endhighlight %}
 
-Sometimes, you might get an *TypeError: can't cast ActionDispatch::Http::UploadedFile to string*.
+Algumas vezes você pode receber um erro *TypeError: can't cast ActionDispatch::Http::UploadedFile to string*.
 
-If this happens, in file `app/views/ideas/_form.html.erb` change the line
+Caso isso aconteça, no arquivo `app/views/ideas/_form.html.erb`, modifique a linha:
 
 {% highlight erb %}
 <%= form_for(@idea) do |f| %>
 {% endhighlight %}
 
-to
+Para:
 
 {% highlight erb %}
 <%= form_for @idea, :html => {:multipart => true} do |f| %>
 {% endhighlight %}
 
-In your browser, add new idea with a picture. When you upload a picture it doesn't look nice because it only shows a path to the file, so let's fix that.
-
-Open `app/views/ideas/show.html.erb` and change
+No seu navegador, adicione uma nova idea com foto. Quando você fizer upload de uma imagem, apenas vai aparecer o caminho da imagem na página, para consertar isso abra o arquivo `app/views/ideas/show.html.erb` e modifique:
 
 {% highlight erb %}
 <%= @idea.picture %>
 {% endhighlight %}
 
-to
+Para:
 
 {% highlight erb %}
 <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
 {% endhighlight %}
 
-Now refresh your browser to see what changed.
+Agora dê refresh no seu navegador para ver o que foi modificado.
 
-**Coach:** Talk a little about HTML.
+**Coach:** Fale um pouco sobre HTML.
 
 
-## *5.*Finetune the routes
+## *5.*Atualize as rotas
 
-Open <http://localhost:3000> (or your preview url, if you are using a cloud service). It still shows the "Welcome aboard" page. Let's make it redirect to the ideas page.
+Abra <http://localhost:3000>. Ainda é exibido o "Welcome aboard" na página. Vamos fazer um redirecionamento para a página de listagem de ideas.
 
-Open `config/routes.rb` and after the first line add
+Abra o arquivo `config/routes.rb` e antes da primeira linha adicione:
 
 {% highlight ruby %}
 root :to => redirect('/ideas')
 {% endhighlight %}
 
-Test the change by opening the root path (that is, <http://localhost:3000/> or your preview url) in your browser.
+Verifique se houve mudanças abrindo a página raiz da aplicação, isto é, <http://localhost:3000/> no seu navegador.
 
 **Coach:** Talk about routes, and include details on the order of routes and their relation to static files.
 
