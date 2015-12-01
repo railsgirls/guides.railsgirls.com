@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Rails Girls App Tutorial
-permalink: app_tutorial_1
+title: Rails Girls App Tutorial 1
+permalink: rails-girls-app-tutorial-1
 ---
 
 # Rails Girls App Tutorial 1
