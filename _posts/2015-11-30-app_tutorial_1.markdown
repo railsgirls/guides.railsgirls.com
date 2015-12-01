@@ -202,7 +202,6 @@ Navegue pela aplicação para descobrir o que foi gerado pelo scaffold.
 
 <kbd>Ctrl</kbd>+<kbd>C</kbd> para interromper o servidor quando você tiver terminado de explorar a aplicação
 
-
 ## *3.*Design
 
 **Coach:**
@@ -219,6 +218,7 @@ Abra o arquivo `app/views/layouts/application.html.erb` no seu editor de texto e
 
 Adicionando o código abaixo:
 <!--TODO: Instalar a gem Twitter Bootstrap Rails??? -->
+
 {% highlight erb %}
 <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap.css">
 <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap-theme.css">
@@ -272,7 +272,7 @@ E antes de `</body>` adicione:
 <script src="//railsgirls.com/assets/bootstrap.js"></script>
 {% endhighlight %}
 
-Agora vamos também adicionar estilo a tabela ideas. Abra `app/assets/stylesheets/application.css` e no final do arquivo adicione:
+Agora vamos também adicionar estilo à tabela ideas. Abra `app/assets/stylesheets/application.css` e no final do arquivo adicione:
 
 {% highlight css %}
 body { padding-top: 100px; }
