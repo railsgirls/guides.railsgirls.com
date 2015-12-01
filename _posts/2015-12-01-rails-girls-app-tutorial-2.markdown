@@ -22,12 +22,12 @@ rails g scaffold comment user_name:string body:text idea_id:integer #também cri
 rake db:migrate #executa as migrações no banco de dados
 {% endhighlight %}
 
-## *2.* Adicionar relacionamentos aos modelos
+## *2.* Adicionar relacionamentos aos models
 
 Você precisa ser certificar que o Rails conhece o relacionamento entre os objetos ideas e comments.
-Como uma idea pode ter vários comments nós precisamos de alguma forma dizer isso ao modelo idea.
-
+Como uma idéia pode ter vários comentários, nós precisamos de alguma forma dizer isso ao *model* **Idea**.
 Para isso, abrar o arquivo `app/models/idea.rb` e insira o código abaixo da seguinte linha:
+
 {% highlight ruby %}
 class Idea < ActiveRecord::Base
 {% endhighlight %}
@@ -38,7 +38,7 @@ Adicione:
 has_many :comments
 {% endhighlight %}
 
-Um comment também precisa saber a qual idéia ele se refere. Abra o arquivo `app/models/comment.rb` e após:
+Um comentário também precisa saber a qual idéia ele se refere. Abra o arquivo `app/models/comment.rb` e após:
 
 {% highlight ruby %}
 class Comment < ActiveRecord::Base
@@ -50,7 +50,9 @@ Insira a linha:
 belongs_to :idea
 {% endhighlight %}
 
-## *3.* Exibir o formulário de commentário e os comentários existentes
+## *3.* Exibir o formulário de comentário e os comentários existentes
+
+Abra o arquivo `app/views/ideas/show.html.erb` e após a **image_tag**:
 
 {% highlight erb %}
 <%= image_tag(@idea.picture_url, width: 600) if @idea.picture.present? %>
@@ -71,7 +73,7 @@ Adicione:
 <%= render 'comments/form' %>
 {% endhighlight %}
 
-Em `app/controllers/ideas_controller.rb` adicione a action show abaixo da linha seguinte:
+Em `app/controllers/ideas_controller.rb` adicione a *action* **show** abaixo da linha seguinte:
 
 {% highlight ruby %}
 @idea = Idea.find(params[:id])
@@ -108,4 +110,4 @@ Em seguida, remova:
 </div>
 {% endhighlight %}
 
-E é isso. Agora visualize uma idea que você inseriu na sua aplicação e se você conseguiu visualizar o formulário para inserir um comentário. Verifique se você também consegue remover comentários antigos.
+E é isso. Agora visualize uma idéia que você inseriu na sua aplicação e se você conseguiu visualizar o formulário para inserir um comentário. Verifique se você também consegue remover comentários antigos.

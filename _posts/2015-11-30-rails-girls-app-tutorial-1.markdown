@@ -205,7 +205,7 @@ Navegue pela aplicação para descobrir o que foi gerado pelo scaffold.
 
 **Coach:**
 Fale sobre o relacionamento entre o HTML e o Rails. Que parte das *views* são *HTML* e quais são *Embedded Ruby (ERB)*?
-O que é MVC e como isso se relaciona com isso? (Models e controllers são responsáveis por gerar as *views HTML*)
+O que é MVC e como isso se relaciona com isso? (*Models* e *controllers* são responsáveis por gerar as *views HTML*)
 
 A nossa aplicação ainda não está muito bonita. Vamos tentar resolver esse problema. Para isso, usaremos o [Twitter Bootstrap](http://getbootstrap.com/) para melhorar a aparência da nossa aplicação de maneira fácil.
 
