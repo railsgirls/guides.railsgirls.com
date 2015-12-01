@@ -419,10 +419,10 @@ get "pages/info"
 
 Agora você pode abir o arquivo `app/views/pages/info.html.erb` e adicione informações sobre você no HTML. Para visualizar a sua nova página, no seu navegador acesse <http://localhost:3000/pages/info>.
 
+<!--
 
 ## *6+.*Próximos passos*
 
-<!--
 * Add design using HTML &amp; CSS
 * Add ratings
 * Use CoffeeScript (or JavaScript) to add interaction
