@@ -10,7 +10,6 @@ permalink: rails-girls-app-tutorial-1
 
 *Traduzido e adaptado de [Rails Girls App Tutorial](http://guides.railsgirls.com/app)*
 
-
 ## Verifique se você possui o Rails instalado
 
 Antes de começar a desenvolver, siga o [Guia De Instalação](/instalacao)
@@ -169,7 +168,7 @@ Execute <kbd>Ctrl</kbd>+<kbd>C</kbd> no terminal para interromper o servidor.
 
 ## *2.*Crie Idea scaffold
 
-Nós utilizaremos a funcionalidade scaffold para gerar um ponto inicial para listar, adicionar, remover, editar e visualizar coisas; no nosso caso ideas.
+Nós utilizaremos a funcionalidade scaffold para gerar páginas para listar, adicionar, remover, editar e visualizar coisas; no nosso caso ideas.
 
 **Coach:** No que consiste o scaffolding do Rails? (Explique o comando, o nome do modelo name e a sua tabela de banco de dados relacionada, convenções de nomeação, atributos e tipos, etc). O que são migrações e para o quê servem?
 
@@ -205,8 +204,8 @@ Navegue pela aplicação para descobrir o que foi gerado pelo scaffold.
 ## *3.*Design
 
 **Coach:**
-Fale sobre o relacionamento entre o HTML e o Rails. Que parte das vuews são HTML e quais são Embedded Ruby (ERB)?
-O que é MVC e como isso se relaciona com isso? (Models e controllers são responsáveis por gerar as views HTML)
+Fale sobre o relacionamento entre o HTML e o Rails. Que parte das *views* são *HTML* e quais são *Embedded Ruby (ERB)*?
+O que é MVC e como isso se relaciona com isso? (*Models* e *controllers* são responsáveis por gerar as *views HTML*)
 
 A nossa aplicação ainda não está muito bonita. Vamos tentar resolver esse problema. Para isso, usaremos o [Twitter Bootstrap](http://getbootstrap.com/) para melhorar a aparência da nossa aplicação de maneira fácil.
 
@@ -230,7 +229,7 @@ Substitua:
 <%= yield %>
 {% endhighlight %}
 
-com:
+Por:
 
 {% highlight erb %}
 <div class="container">
@@ -272,7 +271,7 @@ E antes de `</body>` adicione:
 <script src="//railsgirls.com/assets/bootstrap.js"></script>
 {% endhighlight %}
 
-Agora vamos também adicionar estilo à tabela ideas. Abra `app/assets/stylesheets/application.css` e no final do arquivo adicione:
+Agora vamos também adicionar estilo à tabela de idéias. Abra `app/assets/stylesheets/application.css` e no final do arquivo adicione:
 
 {% highlight css %}
 body { padding-top: 100px; }
@@ -291,7 +290,7 @@ Esse erro não deveria aparecer se você instalou o Rails com RailsInstaller, ma
 
 ## *4.*Adicionar upload de imagens
 
-Nós precisamos instalar algumas bibliotecas, nesse casos *gems* para permitir que possamos fazer isso na nossa aplicação.
+Nós precisamos instalar algumas bibliotecas, nesse caso *gems* para permitir que possamos fazer isso na nossa aplicação.
 
 Abra o `Gemfile` no diretório do seu projeto usando o editor de texto e edite abaixo da linha:
 
@@ -366,7 +365,7 @@ Para:
 <%= form_for @idea, :html => {:multipart => true} do |f| %>
 {% endhighlight %}
 
-No seu navegador, adicione uma nova idea com foto. Quando você fizer upload de uma imagem, apenas vai aparecer o caminho da imagem na página, para consertar isso abra o arquivo `app/views/ideas/show.html.erb` e modifique:
+No seu navegador, adicione uma nova idéia com foto. Quando você fizer upload de uma imagem, apenas vai aparecer o caminho da imagem na página, para consertar isso abra o arquivo `app/views/ideas/show.html.erb` e modifique:
 
 {% highlight erb %}
 <%= @idea.picture %>
@@ -375,7 +374,7 @@ No seu navegador, adicione uma nova idea com foto. Quando você fizer upload de 
 Para:
 
 {% highlight erb %}
-<%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
+<%= image_tag(@idea.picture_url, width: 600) if @idea.picture.present? %>
 {% endhighlight %}
 
 Agora dê refresh no seu navegador para ver o que foi modificado.
@@ -383,9 +382,9 @@ Agora dê refresh no seu navegador para ver o que foi modificado.
 **Coach:** Fale um pouco sobre HTML.
 
 
-## *5.*Atualize as rotas
+## *5.* Atualize as rotas
 
-Abra <http://localhost:3000>. Ainda é exibido o "Welcome aboard" na página. Vamos fazer um redirecionamento para a página de listagem de ideas.
+Abra <http://localhost:3000>. Ainda é exibido o "Welcome aboard" na página. Vamos fazer um redirecionamento para a página de listagem de idéias.
 
 Abra o arquivo `config/routes.rb` e antes da primeira linha adicione:
 
