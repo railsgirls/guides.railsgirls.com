@@ -26,7 +26,7 @@ rake db:migrate #executa as migrações no banco de dados
 
 Você precisa ser certificar que o Rails conhece o relacionamento entre os objetos ideas e comments.
 Como uma idéia pode ter vários comentários, nós precisamos de alguma forma dizer isso ao *model* **Idea**.
-Para isso, abrar o arquivo `app/models/idea.rb` e insira o código abaixo da seguinte linha:
+Para isso, abra o arquivo `app/models/idea.rb` e insira o código abaixo da seguinte linha:
 
 {% highlight ruby %}
 class Idea < ActiveRecord::Base
