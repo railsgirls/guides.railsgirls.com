@@ -99,4 +99,3 @@ Abra o arquivo `app/views/ideas/show.html.erb` no seu editor de texto e substitu
 
 
 **Coach:** Explique o que o código acima faz linha a linha
-s
