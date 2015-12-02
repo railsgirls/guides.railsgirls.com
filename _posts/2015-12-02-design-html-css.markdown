@@ -44,16 +44,16 @@ Adicione:
 <li ><%= link_to 'Nova Idéia', new_idea_path %></li>
 {% endhighlight %}
 
-## *3.* Melhore a aparência da listagem de idéias
+## *3.* Melhore a aparência da lista de idéias
 
-Agora melhoraremos a aparência da nossa listagem de idéias para que ela se torne um pouco mais profissional. Para isso trocaremos o layout de *table* por um outro usando *div*
+Agora melhoraremos a aparência da nossa lista de idéias para que ela se torne um pouco mais profissional. Para isso trocaremos o layout de *table* por um outro usando *div*
 
 **Coach:** Explique a diferença de *table* e *div*.
 
 Abra o arquivo `app/views/ideas/index.html.erb` no seu editor de texto e substitua todas as linhas por:
 
 {% highlight erb %}
-<h1>Listing ideas</h1>
+<h1>lista de idéias</h1>
 <% @ideas.in_groups_of(3) do |group| %>
   <div class="row">
     <% group.compact.each do |idea| %>
@@ -69,7 +69,7 @@ Abra o arquivo `app/views/ideas/index.html.erb` no seu editor de texto e substit
 
 **Coach:**  Explique o novo código linha a linha e fale um pouco sobre o grid system do Twitter Bootstrap
 
-Agora atualize a página no seu navegador!! Temos um layout melhorado da nossa listagem de idéias. Clique no botão `Nova Idéia`, e crie mais idéias com descrição e fotos bonitas, a nossa página ficará ainda mais bonita com conteúdo.
+Agora atualize a página no seu navegador!! Temos um layout melhorado da nossa lista de idéias. Clique no botão `Nova Idéia`, e crie mais idéias com descrição e fotos bonitas, a nossa página ficará ainda mais bonita com conteúdo.
 
 ## *4.* Melhore a aparência da página de detalhes de idéias
 
