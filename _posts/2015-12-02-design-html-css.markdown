@@ -32,7 +32,7 @@ Agora atualize a página em [http://localhost:3000/ideas](http://localhost:3000/
 
 Considerando que uma *idéia* é o objeto mais importante na nossa aplicação, nós colocaremos o botão "Nova Idéia" na barra de navegação para torná-lo sempre disponível.
 
-Abra o arquivo `app/views/layouts/application.html.erb` e abaixo sa seguinte linha:
+Abra o arquivo `app/views/layouts/application.html.erb` e abaixo da seguinte linha:
 
 {% highlight erb %}
 <li class="active"><a href="/ideas">Ideas</a></li>
