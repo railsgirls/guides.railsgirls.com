@@ -11,7 +11,7 @@ permalink: rails-girls-app-tutorial-2
 
 Nós vamos adicionar uma área de comentários à nossa aplicação *railsgirls*.
 
-Instruções sobre como instalar o Rails e construir a aplicação podem ser encontradas [aqui]({% post_url 2015-11-30-rails-girls-app-tutorial-1 %}){:target="_blank"}.
+Instruções sobre como instalar o Rails e construir a aplicação podem ser encontradas [aqui]({{  site.baseurl | append: "/rails-girls-app-tutorial-1" }}){:target="_blank"}.
 
 ## *1.* Criar o comment scaffold
 

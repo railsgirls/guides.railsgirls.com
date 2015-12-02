@@ -12,7 +12,7 @@ permalink: rails-girls-app-tutorial-1
 
 ## Verifique se você possui o Rails instalado
 
-Antes de começar a desenvolver, siga o [Guia De Instalação](/instalacao)
+Antes de começar a desenvolver, siga o [Guia De Instalação]({{  site.baseurl | append: "/instalacao" }})
 
 ## Conheça as suas ferramentas
 
