@@ -5,8 +5,6 @@ permalink: rails-girls-app-tutorial-2
 ---
 # Rails Girls App Tutorial 2
 
-*Criado por Janika Liiv, [@janikaliiv](https://twitter.com/janikaliiv){:target="_blank"}*
-
 *Traduzido e adaptado de [Commenting for Rails Girls App](http://guides.railsgirls.com/commenting/){:target="_blank"}*
 
 Nós vamos adicionar uma área de comentários à nossa aplicação *railsgirls*.
