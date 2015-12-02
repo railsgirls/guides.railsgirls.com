@@ -6,7 +6,7 @@ permalink: instalacao
 
 # Instalação do Rails
 
-Traduzido e adaptado de [Guide to Install Rails](http://guides.railsgirls.com/install):
+Traduzido e adaptado de [Guide to Install Rails](http://guides.railsgirls.com/install){:target="_blank"}:
 
 Para construir aplicações e outras coisas com Ruby on Rails é necessário
 instalar alguns programas e configurar um ambiente de desenvolvimento no seu
@@ -219,7 +219,7 @@ bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/
 {% endhighlight %}
 
 Se você for utilizar o RVM com o `gnome-terminal` (padrão para a interface Unity), você precisará antes mudar algumas opções padrão.
-Para que o RVM funcione corretamente, abra o `gnome-terminal`, em `Editar ▸ Preferências de perfil` e marque na aba Comando a opção `Executar o comando como shell de sessão` e clique em `Fechar`.
+Para que o RVM funcione corretamente, abra o `gnome-terminal`, em `Editar ▸ Preferências de perfil` e marque na aba `Comando` a opção `Executar o comando como shell de sessão` e clique em `Fechar`.
 Para mais informações, acesse [RVM - Integração com o gnome-terminal](http://rvm.io/integration/gnome-terminal).
 
 #### Para Fedora:
