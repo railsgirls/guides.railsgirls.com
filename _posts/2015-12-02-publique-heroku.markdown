@@ -6,11 +6,16 @@ permalink: publique-heroku
 
 # Coloque a aplicação Rails Girls online no Heroku
 
-*Created by Terence Lee, [@hone02](https://twitter.com/hone02)*
+*Traduzido e adaptado de [Put Your App Online With Heroku](http://railsgirls.com/guides/heroku/)*
 
 ###  Heroku
 
-Siga os passos 1 a 3 do [quickstart guide](https://devcenter.heroku.com/articles/quickstart) para se inscrever, instalar o heroku toolbelt e fazer login.
+Siga os seguintes passos do [Quickstart Guide](https://devcenter.heroku.com/articles/getting-started-with-ruby){:target="_blank"}:
+
+*1* [Introduction](https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction){:target="_blank"}
+*2* [Set up](https://devcenter.heroku.com/articles/getting-started-with-ruby#set-up){:target="_blank"}
+*3* [Prepare the app](https://devcenter.heroku.com/articles/getting-started-with-ruby#prepare-the-app){:target="_blank"}
+*4* [Deploy the app](https://devcenter.heroku.com/articles/getting-started-with-ruby#deploy-the-app){:target="_blank"}
 
 **COACH**:
 Fale sobre os benefícios de fazer deploy para o Heroku versus os servidores tradicionais.
@@ -19,82 +24,103 @@ Fale sobre os benefícios de fazer deploy para o Heroku versus os servidores tra
 
 #### Sistemas de controle de versão
 
-A sua aplicação deve estar em um sistema de controle de versão.
+A sua aplicação deve estar sob um sistema de controle de versão como o Git, por exemplo.
 
 #### Atualizando o banco de dados
 
 Primeiramente, nós precisamos colocar o nosso banco de dados para funcionar no Heroku, que usa o PostgresSQL e não o SQLite como utilizamos na nossa aplicação.
-Please change the following in the Gemfile:
+Para isso será necessário a remoção da seguinte linha do nosso Gemfile:
 
 {% highlight ruby %}
 gem 'sqlite3'
 {% endhighlight %}
 
-to
+Que deve ser substituída por:
 
 {% highlight ruby %}
 group :development do
-  gem 'sqlite3'
+  gem 'sqlite3' #utilizada apenas em ambiente de desenvolvimento
 end
 group :production do
-  gem 'pg'
+  gem 'pg' #utilizada em ambiente de produção
 end
 {% endhighlight %}
 
-Run `bundle install --without production` to setup your dependencies.
-
-__COACH__: You can talk about RDBMS and the different ones out there, plus include some details on Heroku's dependency on PostgreSQL.
-
-
-#### Adding rails_12factor
-
-Next, we need to add `rails_12factor` entry into our Gemfile to make our app available on Heroku.
-
-This gem modifies the way Rails works to suit Heroku, for example Logging is updated and the configuration for static assets (your images, stylesheets and javascript files) is tweaked to work properly within Heroku's systems.
-
-Please change the following in the Gemfile:
+Agora execute:
 
 {% highlight ruby %}
-group :production do
-  gem 'pg'
-end
+  bundle install --without production
 {% endhighlight %}
 
-to
+**COACH**: Fale sobre RDBMS e inclua Heroku's dependency on PostgreSQL.
+
+
+#### Adicionando a gem rails_12factor
+
+Agora precisamos instalar a gem `rails_12factor` no nosso Gemfile para conserguirmos publicar a nossa aplicação no Heroku. Essa gem faz algumas modificações no comportamento padrão no nosso projeto, como por exemplo atualização de logs e configuração de assets estáticos( suas imagens, css e javascript) é adequada ao sistema do Heroku.
+
+Agora modifique a seguinte linha do seu Gemfile:
 
 {% highlight ruby %}
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-end
+  group :production do
+    gem 'pg'
+  end
 {% endhighlight %}
 
-After this run `bundle`, then commit the changes to Gemfile.lock to your repository:
+Para:
+
+{% highlight ruby %}
+  group :production do
+    gem 'pg'
+    gem 'rails_12factor'
+    end
+{% endhighlight %}
+
+Após isso, execute:
+
+{% highlight ruby %}
+  bundle #instale as novas dependências
+{% endhighlight %}
 
 {% highlight sh %}
-git commit -a -m "Added rails_12factor gem and updated Gemfile.lock"
+  git commit -a -m "Added rails_12factor gem and updated Gemfile.lock" # faz commit das últimas mudanças
 {% endhighlight %}
 
-__COACH__: You can talk about logging on Heroku, as well as its other quirks.
+**COACH**: Fale um pouco sobre logs no Heroku e outras particularidades.
 
+### Publicando sua aplicação
 
-### Deploying your app
+#### Criação do app no Heroku
 
-#### App creation
-
-We need to create our Heroku app by typing `heroku create` in the terminal and see something like this:
+Primeiro precisamos fazer o login no Heroku:
 
 {% highlight sh %}
-Creating sheltered-refuge-6377... done, stack is cedar
-http://sheltered-refuge-6377.herokuapp.com/ | git@heroku.com:sheltered-refuge-6377.git
-Git remote heroku added
+  heroku auth:login #faz login usando as credenciais do Heroku
 {% endhighlight %}
 
-In this case "sheltered-refuge-6377" is your app name.
+Agora nós vamos criar o nosso app no Heroku executando no terminal:
 
-#### Pushing the code
+{% highlight sh %}
+  heroku apps:create railsgirls #cria um app novo com o nome railsgirls
+{% endhighlight %}
 
-Next we need to push our code to heroku by typing `git push heroku master`. You'll see push output like the following:
+Que retorna algo parecido com:
+
+{% highlight sh %}
+  Creating sheltered-refuge-6377... done, stack is cedar
+  http://sheltered-refuge-6377.herokuapp.com/ | git@heroku.com:sheltered-refuge-6377.git
+  Git remote heroku added
+{% endhighlight %}
+
+Nesse caso o nome gerado automaticamente para o nosso app no Heroku foi "sheltered-refuge-6377".
+
+#### Enviando nosso código
+
+Para enviar nosso código para o Heroku, basta executar:
+
+{% highlight sh %}
+  git push heroku master #faz push no repositório remoto do Heroku  
+{% endhighlight %}
 
 {% highlight sh %}
 Initializing repository, done.
@@ -115,16 +141,29 @@ Total 101 (delta 6), reused 0 (delta 0)
        http://sheltered-refuge-6377.herokuapp.com/ deployed to Heroku
 {% endhighlight %}
 
-You'll know the app is done being pushed, when you see the "Launching..." text like above.
+Você saberá que seu código já foi enviado quando vir a seguinte mensagem no terminal:
 
-#### Migrate database
+{% highlight sh %}
+  Launching...  
+{% endhighlight %}
 
-Next we need to migrate our database like we did locally during the workshop: `heroku run rake db:migrate`.
+#### Execute as migrações do banco de dados
 
-When that command is finished being run, you can hit the app based on the url. For this example app, you can go to <http://sheltered-refuge-6377.herokuapp.com/>. You can also type `heroku open` in the terminal to visit the page.
+Em seguida precisamos migrar nosso banco de dados da mesma maneira que fizemos localmente durante os workshops anteriores:
 
+{% highlight sh %}
+  heroku run rake db:migrate
+{% endhighlight %}
 
-#### Closing notes
+Quando o comando terminar de executar você já pode acessar seu app. Para esse exemplo, a url gerada foi <http://sheltered-refuge-6377.herokuapp.com/>.
+
+Agora digite:
+
+{% highlight sh %}
+  heroku apps:open --app railsgirls #abre o app railsgirls no navegador
+{% endhighlight %}
+
+#### Notas finais
 
 Heroku's platform is not without its quirks. Applications run on Heroku live within an ephermeral environment — this means that (except for information stored in your database) any files created by your application will disappear if it restarts (for example, when you push a new version).
 
