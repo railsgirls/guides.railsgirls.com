@@ -1,0 +1,45 @@
+---
+layout: default
+title: Guides
+permalink: coach-rj
+---
+
+# Manual do Coach - Rails Girls RJ
+
+## Vou ser coach no Rails Girls RJ, e agora?
+
+Relaxa! Já olhou nossa [grade](http://railsgirls.com/riodejaneiro)? Sabe chegar? Procura também o grupo do Telegram (te mandamos por email!)
+
+## Dê uma olhada nos guias de instalação
+
+Acho que esse é o primeiro passo. Traduzimos tudo (ou quase tudo) dos [guias de instalação](https://github.com/railsgirlsrj/rails-girls-guides). É legal você dar uma olhada pra entender o ambiente que teremos na hora. Pode ser que alguém também não tenha instalado (estamos trabalhando para minimizar isso), então você pode precisar ajudar.
+
+## Faça o guia da aplicação demo
+
+Aconselhamos a seguir a aplicação demo, cujo [guia](http://railsgirlsrj.github.io/rails-girls-guides/rails-girls-app-tutorial-1/) já foi executado e testado. Para minimizar qualquer problema que vá deixar você desconfortável na hora, o ideal é dar uma passada por ele pra saber do que se trata. Caso você e seu time resolvam fazer outra aplicação, sigam em frente! Mas pra isso é preciso confiança pra nada dar errado. Em contrapartida, pode ser bem maneiro também brincar em cima da aplicação demo.
+
+## Beleza, posso ajudar em algo?
+
+Claro!
+Dá uma olhada no nosso [repositório](https://github.com/railsgirlsrj), forka ele, faz o que quiser e manda pra gente ver! Só de enxergar algo nos guias e criar issue pra gente arrumar já nos adianta :)
+
+## Coach x Participantes
+Temos 40 participantes para 14 coaches, então optamos por fazer 7 times com 5-6 participantes e 2 coaches. Isso incentiva a troca de conhecimento entre os coaches. Vocês também podem gritar ajuda pra galera da organização e ainda pedir ajuda a outros coaches! É totalmente normal não saber tudo.
+
+## Nível da galera
+
+Temos até o momento 15 meninas de 40 que não são de TI, não estudam TI nem nada.
+20 meninas marcaram que não trabalham com desenvolvimento de software.
+Dá pra sacar o desafio?
+
+## Código de Conduta
+
+Vocês são nossos olhos que tudo vêem! Pedimos que leiam o [Código de Conduta](http://railsgirls.com/images/rio-de-janeiro/CoC-RailsGirlsRJ2015.pdf) pra saber como pretendemos nos respaldar caso algo aconteça. É legal ler também pra saber exatamente o que chegar pra gente e falar, caso veja algo que não é aceito pelo Código de Conduta.
+
+## Objetivo
+
+Não é terminar a app! É fazer com que o processo seja maneiro, divertido e com que as meninas entendam o que estão fazendo e saiam aprendendo algo e possam seguir em frente sozinha.
+
+## Pós-evento
+
+Vai rolar um grupo de follow-up, também apresentaremos as comunidades pra galera e o importante é mostrar que desenvolvimento de software não é um bicho de sete cabeças.
