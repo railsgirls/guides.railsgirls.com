@@ -22,7 +22,7 @@ entre em pânico. Nos informe no evento e nós poderemos solucioná-lo juntos.
 
 ## OS X
 
-### *1* Verifica a versão do seu sistema operacional
+### *1* Verificar a versão do seu sistema operacional
 
 Clique no Apple menu e escolha *About this Mac*.
 
@@ -37,9 +37,9 @@ Caso contrário, nós poderemos ajudá-la a configurar a sua máquina no evento.
 ### *3* Se a versão do seu OS X é maior ou igual a 10.9:
 
 Se a sua versão começar com 10.9 ou 10.10, siga esses passos. Nesse tutorial
-instalaremos homebrew e rbenv.
+instalaremos as ferramentas de linha de comando do XCode, homebrew e rvm.
 
-#### *3.1* Instalar ferramentas de linha de comando no terminal:
+#### *3.1* Instalar ferramentas de linha de comando do XCode no terminal:
 
 {% highlight sh %}
 xcode-select --install
@@ -51,25 +51,24 @@ xcode-select --install
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 {% endhighlight %}
 
-#### *3.3* Instalação [rbenv](https://github.com/sstephenson/rbenv):
+#### *3.3* Instalação [rvm](http://rvm.io/):
 
 {% highlight sh %}
 brew update
-brew install rbenv rbenv-gem-rehash ruby-build
-echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
-source ~/.bash_profile
+brew install gpg
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+curl -sSL https://get.rvm.io | bash -s stable
 {% endhighlight %}
 
-#### *3.4* Instalação de Ruby com rbenv:
+#### *3.4* Instalação de Ruby com rvm:
 
 
 {% highlight sh %}
- rbenv install -l #instala a última versão disponível de Ruby
+rvm install ruby --latest #instala a última versão disponível de Ruby
  {% endhighlight %}
 
 {% highlight sh %}
-rbenv install 2.2.3 #instala a versão 2.2.3
+rvm install 2.1.4 #instala a versão 2.1.4
 {% endhighlight %}
 
 Se você teve o erro "OpenSSL::SSL::SSLError: ... : certificate verify failed" tente o seguinte comando:
@@ -79,10 +78,10 @@ brew install curl-ca-bundle
 cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
 {% endhighlight %}
 
-#### *3.5* Configure a versão padrão de Ruby:
+#### *3.5* Configure a versão padrão de Ruby (Opcional):
 
 {% highlight sh %}
-rbenv global 2.2.3
+rvm use 2.2.1 --default
 {% endhighlight %}
 
 #### *3.6* Instale o Rails:
@@ -108,6 +107,28 @@ Você também pode usar outro editor [Sublime Text](http://www.sublimetext.com).
 
 Entre em [whatbrowser.org](http://www.whatbrowser.org/intl/pt-BR/) e atualize seu navegador caso não possua a última versão instalada.
 Recomendamos o [Firefox](http://br.mozdev.org/) ou [Chrome](https://www.google.com.br/chrome/browser/desktop/).
+
+#### Possíveis erros
+
+##### libxml2 is missing
+
+Se você obteve esse erro executando o comando `rails new railsgirls` ou `gem install rails`:
+
+{% highlight sh %}
+libxml2 is missing.  Please locate mkmf.log to investigate how it is failing.
+-----
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+{% endhighlight %}
+
+Os seguintes comandos podem resolver o seu problema:
+
+{% highlight sh %}
+brew install libxml2
+gem install nokogiri -- --use-system-libraries --with-xml=/usr/local/Cellar/libxml2/
+{% endhighlight %}
 
 ## Windows
 
