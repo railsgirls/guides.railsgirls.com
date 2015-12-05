@@ -8,25 +8,24 @@ permalink: publique-heroku
 
 *Traduzido e adaptado de [Put Your App Online With Heroku](http://railsgirls.com/guides/heroku/)*
 
-###  Heroku
+##  Heroku
 
 Siga os seguintes passos do [Quickstart Guide](https://devcenter.heroku.com/articles/getting-started-with-ruby){:target="_blank"}:
 
-*1* [Introduction](https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction){:target="_blank"}
-*2* [Set up](https://devcenter.heroku.com/articles/getting-started-with-ruby#set-up){:target="_blank"}
-*3* [Prepare the app](https://devcenter.heroku.com/articles/getting-started-with-ruby#prepare-the-app){:target="_blank"}
-*4* [Deploy the app](https://devcenter.heroku.com/articles/getting-started-with-ruby#deploy-the-app){:target="_blank"}
+1. [Introduction](https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction){:target="_blank"}
+2. [Set up](https://devcenter.heroku.com/articles/getting-started-with-ruby#set-up){:target="_blank"}
+3. [Prepare the app](https://devcenter.heroku.com/articles/getting-started-with-ruby#prepare-the-app){:target="_blank"}
+4. [Deploy the app](https://devcenter.heroku.com/articles/getting-started-with-ruby#deploy-the-app){:target="_blank"}
 
-**COACH**:
-Fale sobre os benefícios de fazer deploy para o Heroku versus os servidores tradicionais.
+**COACH**: Fale sobre os benefícios de fazer deploy para o Heroku versus os servidores tradicionais.
 
-### Preparando sua aplicação
+## Preparando sua aplicação
 
-#### Sistemas de controle de versão
+### Sistemas de controle de versão
 
 A sua aplicação deve estar sob um sistema de controle de versão como o Git, por exemplo.
 
-#### Atualizando o banco de dados
+### Atualizando o banco de dados
 
 Primeiramente, nós precisamos colocar o nosso banco de dados para funcionar no Heroku, que usa o PostgresSQL e não o SQLite como utilizamos na nossa aplicação.
 Para isso será necessário a remoção da seguinte linha do nosso Gemfile:
@@ -39,10 +38,10 @@ Que deve ser substituída por:
 
 {% highlight ruby %}
 group :development do
-  gem 'sqlite3' #utilizada apenas em ambiente de desenvolvimento
+  gem 'sqlite3' # Utilizada apenas em ambiente de desenvolvimento
 end
 group :production do
-  gem 'pg' #utilizada em ambiente de produção
+  gem 'pg' # Utilizada em ambiente de produção
 end
 {% endhighlight %}
 
@@ -55,9 +54,9 @@ Agora execute:
 **COACH**: Fale sobre RDBMS e inclua Heroku's dependency on PostgreSQL.
 
 
-#### Adicionando a gem rails_12factor
+### Adicionando a gem rails_12factor
 
-Agora precisamos instalar a gem `rails_12factor` no nosso Gemfile para conserguirmos publicar a nossa aplicação no Heroku. Essa gem faz algumas modificações no comportamento padrão no nosso projeto, como por exemplo atualização de logs e configuração de assets estáticos( suas imagens, css e javascript) é adequada ao sistema do Heroku.
+Agora precisamos instalar a gem `rails_12factor` no nosso Gemfile para conserguirmos publicar a nossa aplicação no Heroku. Essa gem faz algumas modificações no comportamento padrão no nosso projeto, como por exemplo atualização de logs e configuração de assets estáticos (suas imagens, css e javascript) é adequada ao sistema do Heroku.
 
 Agora modifique a seguinte linha do seu Gemfile:
 
@@ -79,29 +78,29 @@ Para:
 Após isso, execute:
 
 {% highlight ruby %}
-  bundle #instale as novas dependências
+  bundle # Instale as novas dependências
 {% endhighlight %}
 
 {% highlight sh %}
-  git commit -a -m "Added rails_12factor gem and updated Gemfile.lock" # faz commit das últimas mudanças
+  git commit -a -m "Added rails_12factor gem and updated Gemfile.lock" # Faz o commit das últimas mudanças
 {% endhighlight %}
 
 **COACH**: Fale um pouco sobre logs no Heroku e outras particularidades.
 
-### Publicando sua aplicação
+## Publicando sua aplicação
 
-#### Criação do app no Heroku
+### Criação do app no Heroku
 
 Primeiro precisamos fazer o login no Heroku:
 
 {% highlight sh %}
-  heroku auth:login #faz login usando as credenciais do Heroku
+  heroku auth:login # Faz login usando as credenciais do Heroku
 {% endhighlight %}
 
 Agora nós vamos criar o nosso app no Heroku executando no terminal:
 
 {% highlight sh %}
-  heroku apps:create railsgirls #cria um app novo com o nome railsgirls
+  heroku apps:create railsgirls # Cria um app novo com o nome railsgirls
 {% endhighlight %}
 
 Que retorna algo parecido com:
@@ -114,7 +113,7 @@ Que retorna algo parecido com:
 
 Nesse caso o nome gerado automaticamente para o nosso app no Heroku foi "sheltered-refuge-6377".
 
-#### Enviando nosso código
+### Enviando nosso código
 
 Para enviar nosso código para o Heroku, basta executar:
 
@@ -147,7 +146,7 @@ Você saberá que seu código já foi enviado quando vir a seguinte mensagem no 
   Launching...  
 {% endhighlight %}
 
-#### Execute as migrações do banco de dados
+### Execute as migrações do banco de dados
 
 Em seguida precisamos migrar nosso banco de dados da mesma maneira que fizemos localmente durante os workshops anteriores:
 
