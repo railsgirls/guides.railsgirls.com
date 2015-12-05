@@ -13,17 +13,17 @@ Instruções sobre como instalar o Rails e construir a aplicação podem ser enc
 
 ## *1.* Criar o comment scaffold
 
-Os seguintes comandos criarão um comment scaffold, com o nome da pessoa que comentou, o corpo do comentário(seu conteúdo) e uma referência à tabela ideas(`idea_id`):
+Os seguintes comandos criarão um `comment` scaffold, com o nome da pessoa que comentou, o corpo do comentário (seu conteúdo) e uma referência à tabela ideas (`idea_id`):
 
 {% highlight sh %}
-rails g scaffold comment user_name:string body:text idea_id:integer #também criará um arquivo de migração que cria a tabela comments no banco de dados
-rake db:migrate #executa as migrações no banco de dados
+rails g scaffold comment user_name:string body:text idea_id:integer # Também criará um arquivo de migração que cria a tabela comments no banco de dados
+rake db:migrate # Executa as migrações no banco de dados
 {% endhighlight %}
 
 ## *2.* Adicionar relacionamentos aos models
 
-Você precisa ser certificar que o Rails conhece o relacionamento entre os objetos ideas e comments.
-Como uma idéia pode ter vários comentários, nós precisamos de alguma forma dizer isso ao *model* **Idea**.
+Você precisa ser certificar que o Rails conhece o relacionamento entre os objetos `ideas` e `comments`.
+Como uma idéia pode ter vários comentários, nós precisamos de alguma forma dizer isso ao *model* **`Idea`**.
 Para isso, abra o arquivo `app/models/idea.rb` e insira o código abaixo da seguinte linha:
 
 {% highlight ruby %}

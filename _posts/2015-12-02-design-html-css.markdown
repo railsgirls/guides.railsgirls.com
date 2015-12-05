@@ -35,13 +35,15 @@ Considerando que uma *idéia* é o objeto mais importante na nossa aplicação, 
 Abra o arquivo `app/views/layouts/application.html.erb` e abaixo da seguinte linha:
 
 {% highlight erb %}
-<li class="active"><a href="/ideas">Ideas</a></li>
+<li class="active">
+  <a href="/ideas">Ideas</a>
+</li>
 {% endhighlight %}
 
 Adicione:
 
 {% highlight erb %}
-<li ><%= link_to 'Nova Idéia', new_idea_path %></li>
+<li><%= link_to 'Nova Idéia', new_idea_path %></li>
 {% endhighlight %}
 
 ## *3.* Melhore a aparência da lista de idéias
@@ -67,9 +69,9 @@ Abra o arquivo `app/views/ideas/index.html.erb` no seu editor de texto e substit
 <% end %>
 {% endhighlight %}
 
-**Coach:**  Explique o novo código linha a linha e fale um pouco sobre o grid system do Twitter Bootstrap
+**Coach:**  Explique o novo código linha a linha e fale um pouco sobre o grid system do Twitter Bootstrap.
 
-Agora atualize a página no seu navegador!! Temos um layout melhorado da nossa lista de idéias. Clique no botão `Nova Idéia`, e crie mais idéias com descrição e fotos bonitas, a nossa página ficará ainda mais bonita com conteúdo.
+Agora atualize a página no seu navegador! Temos um layout melhorado da nossa lista de idéias. Clique no botão `Nova Idéia`, e crie mais idéias com descrição e fotos bonitas, a nossa página ficará ainda mais bonita com conteúdo.
 
 ## *4.* Melhore a aparência da página de detalhes de idéias
 

@@ -13,7 +13,7 @@ permalink: git-github
 Verifique se você tem o Git instalado na sua máquina. No terminal, digite:
 
 	{% highlight sh %}
-		git --version #1.8 ou maior é preferível
+		git --version # 1.8 ou maior é preferível
 	{% endhighlight %}
 
 Caso contrário, faça download do Git [aqui](http://git-scm.com/downloads){:target="_blank"}.
@@ -21,8 +21,8 @@ Caso contrário, faça download do Git [aqui](http://git-scm.com/downloads){:tar
 Depois da instalação, configure suas preferências no Git. No terminal digite:
 
 	{% highlight sh %}
-		git config --global user.name "Seu Nome" #configura o nome no Git
-		git config --global user.email "Seu email" #configura email no Git
+		git config --global user.name "Seu Nome" # Configura o nome no Git
+		git config --global user.email "Seu email" # Configura email no Git
 	{% endhighlight %}
 
 Para verificar as configurações do Git:
@@ -52,13 +52,13 @@ Em seguida dê um nome a ele, como por exemplo *rails-girls*, uma breve descriç
 No terminal, certifique-se que você está no diretório da aplicação *railsgirls*:
 
 {% highlight sh %}
-	cd /projects/railsgirls #entra no diretório do projeto
+	cd /projects/railsgirls # Entra no diretório do projeto
 {% endhighlight %}
 
 E depois digite:
 
 {% highlight sh %}
-	git init #inicializa um repositório git com seu projeto
+	git init # Inicializa um repositório git com seu projeto
 {% endhighlight %}
 
 Agora verifique se existe um arquivo chamado `README.md` no diretório do seu projeto *railsgirls*:
@@ -97,7 +97,7 @@ Fale um pouco sobre a importância do arquivo `README.md`
 No seu terminal, digite:
 
 {% highlight sh %}
-	git status # lista todos os arquivos no diretório do seu projeto
+	git status # Lista todos os arquivos no diretório do seu projeto
 {% endhighlight %}
 
 **COACH:** Fale um pouco sobre os comandos git mais importantes
@@ -105,13 +105,13 @@ No seu terminal, digite:
 Para adicionar arquivos ao controle de versão do git execute:
 
 {% highlight sh %}
-	git add . #adiciona todos os arquivos e mudanças até agora
+	git add . # Adiciona todos os arquivos e mudanças até agora
 {% endhighlight %}
 
 Para gravar mudanças no seu repositório, digite no seu terminal:
 
 {% highlight sh %}
-	git commit -m "first commit" #grava mudanças na área de trabalho passando uma mensagem
+	git commit -m "first commit" # Grava mudanças na área de trabalho passando uma mensagem
 {% endhighlight %}
 
 Para adicionar um repositório remoto para onde enviar e receber alterações da sua área de trabalho, digite:
@@ -133,15 +133,15 @@ Parabéns!!! Agora o código da sua aplicação está no Github!! Você pode vis
 Recapitulando, se você quer continuar fazendo mudanças e as enviando ao Github você só precisa usar os seguntes comandos:
 
 {% highlight sh %}
-	git add . #adiciona todos os arquivos e mudanças até agora
+	git add . # Adiciona todos os arquivos e mudanças até agora
 {% endhighlight %}
 
 {% highlight sh %}
-	git commit -m "first commit" #grava mudanças na área de trabalho passando uma mensagem
+	git commit -m "first commit" # Grava mudanças na área de trabalho passando uma mensagem
 {% endhighlight %}
 
 {% highlight sh %}
-	git push origin master # envia seus commits locais ao branch "master" no seu repositório no Github
+	git push origin master # Envia seus commits locais ao branch "master" no seu repositório no Github
 {% endhighlight %}
 
 ## Próximos passos
