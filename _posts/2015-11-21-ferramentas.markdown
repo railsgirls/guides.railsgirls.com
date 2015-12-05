@@ -3,7 +3,10 @@ layout: default
 title: Rails Girls App Tutorial
 permalink: ferramentas
 ---
-##RVM (Ruby Version Manager)
+
+# Ferramentas
+
+## RVM (Ruby Version Manager)
 Ferramenta que facilita a instalação e gerenciamento de múltiplas versões de Ruby e conjuntos de dependências de um projeto, chamadas **gems**. **Gemset** é o **conjunto de gems**.
 
 ### Instalação
@@ -23,35 +26,53 @@ source ~/.rvm/scripts/rvm
 #### Comandos úteis
 
 {% highlight sh %}
-rvm list #Lista as versões de ruby instaladas
+rvm list # Lista as versões de ruby instaladas
 {% endhighlight %}
 
 {% highlight sh %}
- rvm list known #Mostra as últimas versões de ruby lançadas
+rvm list known # Mostra as últimas versões de ruby lançadas
 {% endhighlight %}
 
 {% highlight sh %}
 rvm install versao_de_ruby # Instala um versão de ruby
+
+# Exemplo
+rvm install 2.2.1
 {% endhighlight %}
 
 {% highlight sh %}
-rvm use ao_de_ruby # Seleciona um versão de ruby
+rvm use versao_de_ruby # Seleciona um versão de ruby
+
+# Exemplo
+rvm use 2.2.1
 {% endhighlight %}
 
 {% highlight sh %}
-rvm use versao_de_ruby@nome_do_gemset --create # Seleciona versão de Ruby em determinado gemset(Cria se não existir)
+rvm use versao_de_ruby@nome_do_gemset --create # Seleciona versão de Ruby em determinado gemset (Cria se não existir)
+
+# Exemplo
+rvm use 2.2.1@rails-girls-sample-app
 {% endhighlight %}
 
 {% highlight sh %}
 rvm gemset create nome_do_gemset # Cria um gemset
+
+# Exemplo
+rvm gemset create rails-girls-sample-app
 {% endhighlight %}
 
 {% highlight sh %}
 rvm gemset delete nome_do_gemset # Remove um gemset
+
+# Exemplo
+rvm gemset delete rails-girls-sample-app
 {% endhighlight %}
 
 {% highlight sh %}
 rvm gemset empty nome_do_gemset # Esvazia um gemset
+
+# Exemplo
+rvm gemset empty rails-girls-sample-app
 {% endhighlight %}
 
 Leia mais em: [https://rvm.io](https://rvm.io)
@@ -76,19 +97,31 @@ Gerenciador de pacotes de Ruby que possibilita a distribuição de programas e b
 ####Comandos úteis
 
 {% highlight sh %}
-gem install nome_da_gem #Instala uma gem
+gem install nome_da_gem # Instala uma gem
+
+# Exemplo
+gem install rails
 {% endhighlight %}
 
 {% highlight sh %}
-gem install nome_da_gem -v versao_da_gem #Instala uma gem em uma versão específica
+gem install nome_da_gem -v versao_da_gem # Instala uma gem em uma versão específica
+
+# Exemplo
+gem install rails -v 4.2.5
 {% endhighlight %}
 
 {% highlight sh %}
-gem uninstall nome_da_gem #Desinstala uma gem
+gem uninstall nome_da_gem # Desinstala uma gem
+
+# Exemplo
+gem uninstall rails
 {% endhighlight %}
 
 {% highlight sh %}
-gem update nome_da_gem #Atualiza uma gem
+gem update nome_da_gem # Atualiza uma gem
+
+# Exemplo
+gem update rails
 {% endhighlight %}
 
 Leia mais em: [http://guides.rubygems.org](http://guides.rubygems.org)
@@ -139,15 +172,15 @@ end
 #### Comandos úteis
 
 {% highlight sh %}
-  bundle init # Gera um Gemfile no diretório corrente
+bundle init # Gera um Gemfile no diretório corrente
 {% endhighlight %}
 
 {% highlight sh %}
-  bundle install #Instala as gems definidas no Gemfile
+bundle install # Instala as gems definidas no Gemfile
 {% endhighlight %}
 
 {% highlight sh %}
-  bundle clean --force # Remove gems não utilizadas no projeto
+bundle clean --force # Remove gems não utilizadas no projeto
 {% endhighlight %}
 
 {% highlight sh %}

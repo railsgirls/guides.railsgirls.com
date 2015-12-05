@@ -32,13 +32,13 @@ Antes de começar a desenvolver, siga o [Guia De Instalação]({{  site.baseurl 
 
 ### Navegador
 
-* ([Firefox](http://br.mozdev.org/){:target="_blank"}, [Chrome](https://www.google.com.br/chrome/browser/desktop/)){:target="_blank"} para visualizar a sua aplicação
+* ([Firefox](http://br.mozdev.org/){:target="_blank"}, [Chrome](https://www.google.com.br/chrome/browser/desktop/){:target="_blank"} para visualizar a sua aplicação
 
 </div>
 
 ### Importante
 
-Siga as instruções específicas para o seu sistema operacional. Os comandos que devem ser executados em um computador Linux são ligeiramente diferentes dos do Mac ou Linux.
+Siga as instruções específicas para o seu sistema operacional. Os comandos que devem ser executados em um computador Linux são ligeiramente diferentes dos do Mac ou Windows.
 Se você tem dificuldades, marque a opção do Sistema Operacional no topo do bloco de comandos.
 
 ## *1.*Criando uma aplicação
@@ -310,7 +310,7 @@ Explique o que são bibliotecas e porque elas são úteis. Descreve o que é sof
 No terminal execute:
 
 {% highlight sh %}
-bundle #instala as gems definidas no Gemfile
+bundle # Instala as gems definidas no Gemfile
 {% endhighlight %}
 
 Agora nós podemos adicionar o código responsável pelo upload de imagens. No terminal execute:  
@@ -403,7 +403,7 @@ Vamos adicionar uma página estática à nossa aplicação que exibirá informa�
 rails generate controller pages info
 {% endhighlight %}
 
-Esse comando criará uma nova pasta dentro de `app/views` chamada `/pages` e dentro dele under um arquivo chamado `info.html.erb` que será a sua página de informações sobre autora da aplicação.
+Esse comando criará uma nova pasta dentro de `app/views` chamada `/pages` e dentro dele um arquivo chamado `info.html.erb` que será a sua página de informações sobre autora da aplicação.
 
 Ele também adiciona uma nova rota simples no seu arquivo `routes.rb`.
 
