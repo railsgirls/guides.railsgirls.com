@@ -64,11 +64,11 @@ curl -sSL https://get.rvm.io | bash -s stable
 
 
 {% highlight sh %}
-rvm install ruby --latest #instala a última versão disponível de Ruby
+rvm install ruby --latest # Instala a última versão disponível de Ruby
  {% endhighlight %}
 
 {% highlight sh %}
-rvm install 2.1.4 #instala a versão 2.1.4
+rvm install 2.1.4 # Instala a versão 2.1.4
 {% endhighlight %}
 
 Se você teve o erro "OpenSSL::SSL::SSLError: ... : certificate verify failed" tente o seguinte comando:
@@ -93,9 +93,9 @@ gem install rails --no-ri --no-rdoc
 
 Para verificar se o Rails foi instalado com sucesso, execute os seguintes comandos:
 {% highlight sh %}
-rails new railsgirls #gera uma aplicação Rails cujo nome é railsgirls
-cd railsgirls #entra na pasta da aplicação gerada
-rails s #executa o servidor de aplicação, para acessá-la digite localhost:3000 no seu navegador
+rails new railsgirls # Gera uma aplicação Rails cujo nome é railsgirls
+cd railsgirls # Entra na pasta da aplicação gerada
+rails s # Executa o servidor de aplicação, para acessá-la digite localhost:3000 no seu navegador
 {% endhighlight %}
 
 ### *4.* Editor de Texto
@@ -134,13 +134,13 @@ gem install nokogiri -- --use-system-libraries --with-xml=/usr/local/Cellar/libx
 
 ### *1* Instalação Rails
 
-Baixe o [RailsInstaller](https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.1.0.exe)
+Baixe o [RailsFTW](http://files.bryanbibat.net/rails-ftw-v0.21-2.1.6-4.2.3.exe)
 e o execute. Siga os passos do instalador usando as opções padrão.
 
 Abra `Command Prompt with Ruby on Rails` e execute o seguinte comando:
 
 {% highlight sh %}
-rails -v #exibe a versão de rails instalada
+rails -v # Exibe a versão de rails instalada
 {% endhighlight %}
 
 Se a sua versão de Rails for menor que 4, atualize-a usando o seguinte comando:
@@ -150,10 +150,11 @@ gem update rails --no-ri --no-rdoc
 {% endhighlight %}
 
 Para verificar se o Rails foi instalado com sucesso, execute os seguintes comandos:
+
 {% highlight sh %}
-rails new railsgirls #gera uma aplicação Rails cujo nome é railsgirls
-cd railsgirls #entra na pasta da aplicação gerada
-rails s #executa o servidor de aplicação, para acessá-la digite localhost:3000 no seu navegador
+rails new railsgirls # Gera uma aplicação Rails cujo nome é railsgirls
+cd railsgirls # Entra na pasta da aplicação gerada
+rails s # Executa o servidor de aplicação, para acessá-la digite localhost:3000 no seu navegador
 {% endhighlight %}
 
 #### Possíveis erros
@@ -171,7 +172,7 @@ server certificate B: certificate verify failed (https://rubygems.org/gems/i18n-
 Isso significa que você possui uma versão antiga do RubyGems e precisará atualizá-la manualmente.
 
 {% highlight sh %}
-gem -v #exibe a versão instalada do RubyGems
+gem -v # Exibe a versão instalada do RubyGems
 {% endhighlight %}
 
 Se essa versão for menor que `2.2.3` você precisará atualizá-la manualmente:
@@ -251,9 +252,9 @@ bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/
 
 Para verificar se o Rails foi instalado com sucesso, execute os seguintes comandos:
 {% highlight sh %}
-rails new railsgirls #gera uma aplicação Rails cujo nome é railsgirls
-cd railsgirls #entra na pasta da aplicação gerada
-rails s #executa o servidor de aplicação, para acessá-la digite localhost:3000 no seu navegador
+rails new railsgirls # Gera uma aplicação Rails cujo nome é railsgirls
+cd railsgirls # Entra na pasta da aplicação gerada
+rails s # Executa o servidor de aplicação, para acessá-la digite localhost:3000 no seu navegador
 {% endhighlight %}
 
 ### *2.* Editor de Texto
@@ -271,5 +272,5 @@ Recomendamos o [Firefox](http://br.mozdev.org/) ou [Chrome](https://www.google.c
 ##Máquina Virtual
 
 Ao invés de instalar todas as ferramentas na sua própria máquina, você pode configurar o mesmo ambiente de desenvolvimento usando uma máquina virtual.
-Leia mais [aqui]: ({% post_url 2014-03-24-alternative-dev-environment %}).
+Leia mais [aqui]({% post_url 2014-03-24-alternative-dev-environment %}).
 <!-- TODO: Traduzir o post do link acima -->
