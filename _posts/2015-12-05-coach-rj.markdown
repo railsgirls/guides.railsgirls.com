@@ -40,7 +40,7 @@ Vocês são nossos olhos que tudo vêem! Pedimos que leiam o [Código de Conduta
 
 Não é terminar a app! É fazer com que o processo seja maneiro, divertido e com que as meninas entendam o que estão fazendo e saiam aprendendo algo e possam seguir em frente sozinha.
 
-# Não sei como agir!
+## Não sei como agir!
 
 Não faz sentido reescrever o que as meninas do [Django Girls](https://djangogirls.org/) escreveram com tanto amor e carinho, então vou linkar o super-ultra-mega-power manual de dicas do Django Girls. [Dêem uma olhada!](https://github.com/pyladies-brazil/coach-manual/blob/develop/pt-br/tips/README.md). Também tem bastante material legal no mesmo repositório, se tiver com tempo pode fuçar!
 
