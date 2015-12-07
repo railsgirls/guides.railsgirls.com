@@ -237,20 +237,54 @@ Para instalar o ambiente de desenvolvimento Ruby on Rails, você apenas precisa 
 #### Para Ubuntu:
 
 {% highlight sh %}
-bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
+  sudo apt-get install curl
+  gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+  curl -sSL https://get.rvm.io | bash -s stable --ruby #Instala o rvm, com a versão mais recente de ruby
 {% endhighlight %}
 
-Se você for utilizar o RVM com o `gnome-terminal` (padrão para a interface Unity), você precisará antes mudar algumas opções padrão.
-Para que o RVM funcione corretamente, abra o `gnome-terminal`, em `Editar ▸ Preferências de perfil` e marque na aba `Comando` a opção `Executar o comando como shell de sessão` e clique em `Fechar`.
+Para que o RVM seja inicializado, é preciso fechar a janela do terminal, e abrir uma nova, ou executar o seguinte comando na janela de terminal corrente:
+
+{% highlight sh %}
+  source ~/.rvm/scripts/rvm  #carrega o script do rvm
+{% endhighlight %}
+
+Se você for utilizar o RVM com o `gnome-terminal`, você precisará antes mudar algumas opções padrão.
+Para que o RVM funcione corretamente, abra o `gnome-terminal`, em `Editar ▸ Preferências de perfil` e marque na aba `Comando` a opção `Executar o comando como shell de sessão` e clique em `Fechar`. Será preciso fechar e reabrir terminal para que as mudanças façam efeito.
 Para mais informações, acesse [RVM - Integração com o gnome-terminal](http://rvm.io/integration/gnome-terminal).
 
 #### Para Fedora:
 
 {% highlight sh %}
-bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-fedora.sh)
+  yum install curl gnupg which tar -y
+  gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+  curl -sSL https://get.rvm.io | bash -s stable #Instala o rvm
+{% endhighlight %}
+
+Para que o RVM seja inicializado, é preciso fechar a janela do terminal, e abrir uma nova, ou executar o seguinte comando na janela de terminal corrente:
+
+{% highlight sh %}
+  source ~/.rvm/scripts/rvm  #carrega o script do rvm
+{% endhighlight %}
+
+Se você for utilizar o RVM com o `gnome-terminal`, você precisará antes mudar algumas opções padrão.
+Para que o RVM funcione corretamente, abra o `gnome-terminal`, em `Editar ▸ Preferências de perfil` e marque na aba `Comando` a opção `Executar o comando como shell de sessão` e clique em `Fechar`. Será preciso fechar e reabrir terminal para que as mudanças façam efeito.
+Para mais informações, acesse [RVM - Integração com o gnome-terminal](http://rvm.io/integration/gnome-terminal).
+
+#### *1.2* Instalando o Ruby:
+
+{% highlight sh %}
+rvm install 2.2.3 #instala o ruby 2.2.3
+{% endhighlight %}
+
+#### *1.3* Instalando o Rails:
+
+{% highlight sh %}
+  rvm use 2.2.3@railsgirls --create #cria um gemset chamado railsgirls usando ruby 2.2.3
+  gem install rails #instala a gem rails no gemset railsgirls
 {% endhighlight %}
 
 Para verificar se o Rails foi instalado com sucesso, execute os seguintes comandos:
+
 {% highlight sh %}
 rails new railsgirls # Gera uma aplicação Rails cujo nome é railsgirls
 cd railsgirls # Entra na pasta da aplicação gerada
