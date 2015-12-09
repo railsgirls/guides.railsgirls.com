@@ -121,6 +121,8 @@ Para enviar nosso código para o Heroku, basta executar:
   git push heroku master #faz push no repositório remoto do Heroku  
 {% endhighlight %}
 
+Que retorna algo parecido com:
+
 {% highlight sh %}
 Initializing repository, done.
 Counting objects: 101, done.
@@ -164,12 +166,14 @@ Agora digite:
 
 #### Notas finais
 
-Heroku's platform is not without its quirks. Applications run on Heroku live within an ephermeral environment — this means that (except for information stored in your database) any files created by your application will disappear if it restarts (for example, when you push a new version).
+A plataforma do Heroku tem as suas particularidades. Aplicações que rodam lá estão em um ambiente efêmero, isto é, com exceção da informação armazenada no banco de dados, qualquer arquivo criado pela sua aplicação poderá desaparecer se o servidor for reiniciado(por exemplo se for publicada uma nova versão da sua aplicação)
 
-###### [Ephemeral filesystem](https://devcenter.heroku.com/articles/dynos#ephemeral-filesystem)
-> Each dyno gets its own ephemeral filesystem, with a fresh copy of the most recently deployed code. During the dyno’s lifetime its running processes can use the filesystem as a temporary scratchpad, but no files that are written are visible to processes in any other dyno and any files written will be discarded the moment the dyno is stopped or restarted.
+###### [Ephemeral Filesystem](https://devcenter.heroku.com/articles/dynos#ephemeral-filesystem)
 
-In the [App](/app) tutorial the ability to attach a file to the Idea record is added, which results in new files being written to your applications `public/uploads` folder. The ephemeral storage in Heroku can be seen with the following steps:
+> Cada unidade de execução do Heroku, chamada *dyno* possui seu sistema de arquivos efêmero, com a cópia mais recente do código publicado. Durante o tempo de vida de um *dyno*, seu processos podem usar o sistema de arquivos como uma área de memória temporária, no entanto, qualquer arquivo armazenado em um *dyno* invisível em outro *dyno* e será descartado
+no momento em que ele é parado ou reiniciado.
+
+No tutorial anterior, [](/app) tutorial the ability to attach a file to the Idea record is added, which results in new files being written to your applications `public/uploads` folder. The ephemeral storage in Heroku can be seen with the following steps:
 
 1. Launch the app with `heroku open`
 2. Add a new Idea with an image
