@@ -32,14 +32,14 @@ Antes de começar a desenvolver, siga o [Guia De Instalação]({{  site.baseurl 
 
 ### Navegador
 
-* ([Firefox](http://br.mozdev.org/){:target="_blank"}, [Chrome](https://www.google.com.br/chrome/browser/desktop/){:target="_blank"} para visualizar a sua aplicação
+* Aconselhamos o [Firefox](http://br.mozdev.org/){:target="_blank"} ou [Chrome](https://www.google.com.br/chrome/browser/desktop/){:target="_blank"} para visualizar a sua aplicação
 
 </div>
 
 ### Importante
 
-Siga as instruções específicas para o seu sistema operacional. Os comandos que devem ser executados em um computador Linux são ligeiramente diferentes dos do Mac ou Windows.
-Se você tem dificuldades, marque a opção do Sistema Operacional no topo do bloco de comandos.
+Siga as instruções específicas para o seu sistema operacional. Os comandos que devem ser executados em um computador Windows são ligeiramente diferentes dos do Mac ou Linux.
+Se você tiver alguma dificuldade, confira a opção do Sistema Operacional abaixo do bloco de comandos.
 
 ## *1.*Criando uma aplicação
 
@@ -122,7 +122,7 @@ Em seguida, digite os seguintes comandos no terminal:
 
     <div>
       <p>
-       Você pode verificar se está em um diretório vazio executando o comando <code>ls</code> novamente.
+       Você pode verificar se está em um diretório vazio executando o comando <code>dir</code> novamente.
        Agora queremos criar uma nova aplicação chamada <code>railsgirls</code>. Para isso, execute:
       </p>
     </div>
@@ -133,8 +133,7 @@ Em seguida, digite os seguintes comandos no terminal:
 
     <div>
       <p>
-       Você pode verificar se está em um diretório vazio executando o comando <code>dir</code> novamente.
-       Agora queremos criar uma nova aplicação chamada <code>railsgirls</code>. Para isso, execute:
+      Esse comando vai criar uma nova aplicação na pasta <code>railsgirls</code>. Para executá-la, entre no seu diretório executando:
       </p>
     </div>
 
@@ -164,9 +163,9 @@ Execute <kbd>Ctrl</kbd>+<kbd>C</kbd> no terminal para interromper o servidor.
 
 **Coach:** Explique o que cada comando faz. O que foi gerado? O que o servidor faz?
 
-## *2.*Crie Idea scaffold
+## *2.*Crie o scaffold
 
-Nós utilizaremos a funcionalidade scaffold para gerar páginas para listar, adicionar, remover, editar e visualizar coisas; no nosso caso ideas.
+Nós utilizaremos a funcionalidade scaffold para gerar páginas para listar, adicionar, remover, editar e visualizar coisas; no nosso caso ideias.
 
 **Coach:** No que consiste o scaffolding do Rails? (Explique o comando, o nome do *model* e a sua tabela de banco de dados relacionada, convenções de nomeação, atributos e tipos, etc). O que são *migrations* e para o quê servem?
 
@@ -303,7 +302,7 @@ gem 'carrierwave'
 {% endhighlight %}
 
 **Coach:**
-Explique o que são bibliotecas e porque elas são úteis. Descreve o que é software open source.   
+Explique o que são bibliotecas e porque elas são úteis. Descreva o que é software open source.
 
 <kbd>Ctrl</kbd>+<kbd>C</kbd> no terminal para interromper o servidor
 
@@ -384,7 +383,7 @@ Agora dê refresh no seu navegador para ver o que foi modificado.
 
 Abra <http://localhost:3000>{:target="_blank"}. Ainda é exibido o "Welcome aboard" na página. Vamos fazer um redirecionamento para a página de listagem de idéias.
 
-Abra o arquivo `config/routes.rb` e antes da primeira linha adicione:
+Abra o arquivo `config/routes.rb` e depois da primeira linha adicione:
 
 {% highlight ruby %}
 root :to => redirect('/ideas')
