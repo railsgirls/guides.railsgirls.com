@@ -173,22 +173,17 @@ A plataforma do Heroku tem as suas particularidades. Aplicações que rodam lá 
 > Cada unidade de execução do Heroku, chamada *dyno* possui seu sistema de arquivos efêmero, com a cópia mais recente do código publicado. Durante o tempo de vida de um *dyno*, seu processos podem usar o sistema de arquivos como uma área de memória temporária, no entanto, qualquer arquivo armazenado em um *dyno* invisível em outro *dyno* e será descartado
 no momento em que ele é parado ou reiniciado.
 
-No tutorial anterior, [](/app) tutorial the ability to attach a file to the Idea record is added, which results in new files being written to your applications `public/uploads` folder. The ephemeral storage in Heroku can be seen with the following steps:
+No tutorial []() implementamos a funcionalidade de anexar um arquivo ao registro Idea, resultando no upload de  novos arquivos na pasta `public/uploads` da sua aplicação. O armazenamento efêmero no Heroku pode ser observado nos seguintes passos:
 
-1. Launch the app with `heroku open`
-2. Add a new Idea with an image
-3. Restart the application by running `heroku restart`
-4. Go back to your Idea and reload the page - the image should no longer be visible
+1. Executar a aplicação com o comando `heroku open`
+2. Adicionar uma nova Idea com uma imagem
+3. Reiniciar a aplicação executando `heroku restart`
+4. Retorna a sua Idea, e recarregue a página, a imagem não estará mais disponível
 
-##### Working around Ephemeral Storage
+##### Como lidar com armazenamento efêmeto
 
-Obviously this doesn't seem to be useful if you were running a real life application, but there are ways to work around this which is commonly used by a lot of popular websites.
-
-The most common method is to use an external asset host such as Amazon S3 (Simple Storage Service) or Rackspace CloudFiles. These services provide (for a low cost - usually less then $0.10 per GB) storage 'in the cloud' (meaning the files could potentially be hosted anywhere) which your application can use as persistent storage.
-
-While this functionality is a bit out of scope for this tutorial there are some resources available which you can use to find your way:
-
-* [How to: Make Carrierwave work on Heroku](https://github.com/carrierwaveuploader/carrierwave/wiki/How-to%3A-Make-Carrierwave-work-on-Heroku)
-* [Amazon S3 - The Beginner' Guide](http://www.hongkiat.com/blog/amazon-s3-the-beginners-guide/)
-
-As always if you require any more information or assistance your coaches will be able to assist.
+Como solução que costuma ser usada em sites bastante populares, podemos usar um servidor de assets externo como o Amazon S3 (Simple Storage Service) ou Rackspace CloudFiles.
+Esses serviços fornecem, a um custo relativamente baixo, armazenamento de dados na nuvem, isto é, seu arquivo pode estar hospedado em qualquer lugar no mundo, permitindo armazenamento persistente da dados na sua aplicação.
+Leia mais a respeito em:
+* [Amazon S3](https://aws.amazon.com/pt/s3/){:target="_blank"}
+* [Carrierwave - Using Amazon S3](https://github.com/carrierwaveuploader/carrierwave#using-amazon-s3){:target="_blank"}
