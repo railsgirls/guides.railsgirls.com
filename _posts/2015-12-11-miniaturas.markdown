@@ -10,48 +10,60 @@ permalink: miniaturas
 
 No tutorial [anterior]({{  site.baseurl | append: "/rails-girls-app-tutorial-1" }}){:target="_blank"}, utilizamos a gem [Carrierwave](https://github.com/carrierwaveuploader/carrierwave){:target="_blank"} para fazer upload de imagens para nossa aplicação. Agora a utilizaremos para gerar miniaturas das imagens enviadas.
 
-__Coach__: Explique a diferença entre especificar a largura da imagem no HTML ao final do passo 4 e como isso difere de redimensionar as imagens no servidor.
-
+**Coach**: Explique a diferença entre especificar a largura da imagem no HTML ao final do [passo 4]({{  site.baseurl | append: "/rails-girls-app-tutorial-1#adicionar-upload-de-imagens" }}){:target="_blank"} e como isso difere de redimensionar as imagens no servidor.
 
 ## *1.*Instalando ImageMagick
 
-* OS X: Execute:
+### *1.1.* OS X
 
-<%= highlight sh %>
+ Execute:
+{% highlight sh %}
  brew install imagemagick
-<% endhighlight %>
-
-Caso não possua o comando ´brew´ você pode instalar o Homebrew [aqui][in-homebrew].
-* Windows: download and run the [ImageMagick installer][im-win] (use the first
-  *download* link).
-* Linux: On Ubuntu and Debian, run `sudo apt-get install imagemagick`. Use the
-  appropriate package manager instead of `apt-get` for other distributions.
-
-  [im-win]: http://www.imagemagick.org/script/binary-releases.php?ImageMagick=vkv0r0at8sjl5qo91788rtuvs3#windows
-  [in-homebrew]: http://mxcl.github.io/homebrew/
-
-__Coach__: What is ImageMagick and how is it different from libraries/gems we
-used before?
-
-Open `Gemfile` in the project and add
-
-{% highlight ruby %}
-gem 'mini_magick', '3.8.0'
 {% endhighlight %}
 
-under the line
+Caso não possua o comando `brew` instale o [Homebrew]({{  site.baseurl | append: "/instalacao#instalao-homebrewhttpbrewsh"}}){:target="_blank"}
+
+### *1.2.* Windows
+
+Baixe o [Instalador ImageMagick](http://www.imagemagick.org/script/binary-releases.php#windows){:target="_blank"} e o execute.
+
+### *1.3.* Linux
+
+#### *1.3.1.* No Ubuntu e Debian
+
+Execute:
+
+{% highlight sh %}
+sudo apt-get install imagemagick
+{% endhighlight %}
+
+#### *1.3.2.* No Fedora
+
+{% highlight sh %}
+yum install ImageMagick
+{% endhighlight %}
+
+**Coach**: Explique que é o ImageMagick e como ele difere das bibliotecas/gems que utilizamos anteriormente
+
+Abra o `Gemfile` do projeto e adicione:
+
+{% highlight ruby %}
+gem 'mini_magick'
+{% endhighlight %}
+
+Abaixo da linha:
 
 {% highlight ruby %}
 gem 'carrierwave'
 {% endhighlight %}
 
-In the Terminal run:
+No terminal execute:
 
 {% highlight sh %}
 bundle
 {% endhighlight %}
 
-## *2.*Telling our app to create thumbnails when an image is uploaded
+## *2.* Telling our app to create thumbnails when an image is uploaded
 
 Open `app/uploaders/picture_uploader.rb` and find the line that looks like
 this:
