@@ -6,9 +6,7 @@ permalink: publique-heroku
 
 # Coloque a aplicação Rails Girls online no Heroku
 
-*Traduzido e adaptado de [Put Your App Online With Heroku](http://railsgirls.com/guides/heroku/)*
-
-##  Heroku
+*Traduzido e adaptado de [Put Your App Online With Heroku](http://railsgirls.com/guides/heroku/){:target="_blank"}*
 
 Siga os seguintes passos do [Quickstart Guide](https://devcenter.heroku.com/articles/getting-started-with-ruby){:target="_blank"}:
 
@@ -17,18 +15,16 @@ Siga os seguintes passos do [Quickstart Guide](https://devcenter.heroku.com/arti
 3. [Prepare the app](https://devcenter.heroku.com/articles/getting-started-with-ruby#prepare-the-app){:target="_blank"}
 4. [Deploy the app](https://devcenter.heroku.com/articles/getting-started-with-ruby#deploy-the-app){:target="_blank"}
 
-**COACH**: Fale sobre os benefícios de fazer deploy para o Heroku versus os servidores tradicionais.
+## *1.* Preparando sua aplicação
 
-## Preparando sua aplicação
+### *1.1.* Sistemas de controle de versão
 
-### Sistemas de controle de versão
+A sua aplicação deve estar sob um sistema de controle de versão como o Git, por exemplo. Fizemos isso [aqui]({{  site.baseurl | append: "/git-github" }}){:target="_blank"}.
 
-A sua aplicação deve estar sob um sistema de controle de versão como o Git, por exemplo.
+### *1.2.* Atualizando o banco de dados
 
-### Atualizando o banco de dados
-
-Primeiramente, nós precisamos colocar o nosso banco de dados para funcionar no Heroku, que usa o PostgresSQL e não o SQLite como utilizamos na nossa aplicação.
-Para isso será necessário a remoção da seguinte linha do nosso Gemfile:
+Primeiramente, nós precisamos colocar o nosso banco de dados para funcionar no Heroku, que usa o [PostgresSQL](http://www.postgresql.org/){:target="_blank"} e não o [SQLite](https://www.sqlite.org/){:target="_blank"} como utilizamos na nossa aplicação.
+Para isso será necessário a remoção da seguinte linha do nosso `Gemfile`:
 
 {% highlight ruby %}
 gem 'sqlite3'
@@ -51,12 +47,9 @@ Agora execute:
   bundle install --without production
 {% endhighlight %}
 
-**COACH**: Fale sobre RDBMS e inclua Heroku's dependency on PostgreSQL.
+### *1.3.* Adicionando a gem rails_12factor
 
-
-### Adicionando a gem rails_12factor
-
-Agora precisamos instalar a gem `rails_12factor` no nosso Gemfile para conserguirmos publicar a nossa aplicação no Heroku. Essa gem faz algumas modificações no comportamento padrão no nosso projeto, como por exemplo atualização de logs e configuração de assets estáticos (suas imagens, css e javascript) é adequada ao sistema do Heroku.
+Agora precisamos adicionar a gem `rails_12factor` no nosso `Gemfile` para conserguirmos publicar a nossa aplicação no Heroku. Essa gem faz algumas modificações no comportamento padrão no nosso projeto, como por exemplo atualização de logs e configuração de assets estáticos (suas imagens, css e javascript) é adequada ao sistema do Heroku.
 
 Agora modifique a seguinte linha do seu Gemfile:
 
@@ -85,11 +78,10 @@ Após isso, execute:
   git commit -a -m "Added rails_12factor gem and updated Gemfile.lock" # Faz o commit das últimas mudanças
 {% endhighlight %}
 
-**COACH**: Fale um pouco sobre logs no Heroku e outras particularidades.
 
-## Publicando sua aplicação
+## *2.* Publicando sua aplicação
 
-### Criação do app no Heroku
+### *2.1.* Criação do app no Heroku
 
 Primeiro precisamos fazer o login no Heroku:
 
@@ -100,7 +92,7 @@ Primeiro precisamos fazer o login no Heroku:
 Agora nós vamos criar o nosso app no Heroku executando no terminal:
 
 {% highlight sh %}
-  heroku apps:create railsgirls # Cria um app novo com o nome railsgirls
+  heroku apps:create # Cria um app novo no Heroku
 {% endhighlight %}
 
 Que retorna algo parecido com:
@@ -113,7 +105,7 @@ Que retorna algo parecido com:
 
 Nesse caso o nome gerado automaticamente para o nosso app no Heroku foi "sheltered-refuge-6377".
 
-### Enviando nosso código
+### *2.2.* Enviando nosso código
 
 Para enviar nosso código para o Heroku, basta executar:
 
@@ -148,7 +140,7 @@ Você saberá que seu código já foi enviado quando vir a seguinte mensagem no 
   Launching...  
 {% endhighlight %}
 
-### Execute as migrações do banco de dados
+### *2.3.* Execute as migrações do banco de dados
 
 Em seguida precisamos migrar nosso banco de dados da mesma maneira que fizemos localmente durante os workshops anteriores:
 
@@ -164,26 +156,28 @@ Agora digite:
   heroku apps:open --app railsgirls #abre o app railsgirls no navegador
 {% endhighlight %}
 
-#### Notas finais
+## *3.* Notas finais
 
-A plataforma do Heroku tem as suas particularidades. Aplicações que rodam lá estão em um ambiente efêmero, isto é, com exceção da informação armazenada no banco de dados, qualquer arquivo criado pela sua aplicação poderá desaparecer se o servidor for reiniciado(por exemplo se for publicada uma nova versão da sua aplicação)
+A plataforma do Heroku tem as suas particularidades. Aplicações que rodam lá estão em um ambiente efêmero, isto é, com exceção da informação armazenada no banco de dados, qualquer arquivo criado pela sua aplicação poderá desaparecer se o servidor for reiniciado(por exemplo se for publicada uma nova versão da sua aplicação).
 
-###### [Ephemeral Filesystem](https://devcenter.heroku.com/articles/dynos#ephemeral-filesystem)
+### [Ephemeral Filesystem](https://devcenter.heroku.com/articles/dynos#ephemeral-filesystem){:target="_blank"}
 
 > Cada unidade de execução do Heroku, chamada *dyno* possui seu sistema de arquivos efêmero, com a cópia mais recente do código publicado. Durante o tempo de vida de um *dyno*, seu processos podem usar o sistema de arquivos como uma área de memória temporária, no entanto, qualquer arquivo armazenado em um *dyno* invisível em outro *dyno* e será descartado
 no momento em que ele é parado ou reiniciado.
 
-No tutorial []() implementamos a funcionalidade de anexar um arquivo ao registro Idea, resultando no upload de  novos arquivos na pasta `public/uploads` da sua aplicação. O armazenamento efêmero no Heroku pode ser observado nos seguintes passos:
+Em um tutorial [anterior]({{  site.baseurl | append: "/rails-girls-app-tutorial-1" }}){:target="_blank"} implementamos a funcionalidade de anexar um arquivo ao registro *Idea*, resultando no upload de  novos arquivos na pasta `public/uploads` da sua aplicação. O armazenamento efêmero no Heroku pode ser observado nos seguintes passos:
 
 1. Executar a aplicação com o comando `heroku open`
-2. Adicionar uma nova Idea com uma imagem
+2. Adicionar uma nova *Idea* com uma imagem
 3. Reiniciar a aplicação executando `heroku restart`
-4. Retorna a sua Idea, e recarregue a página, a imagem não estará mais disponível
+4. Retorna a sua *Idea*, e recarregue a página, a imagem não estará mais disponível
 
-##### Como lidar com armazenamento efêmeto
+### Como lidar com armazenamento efêmero
 
 Como solução que costuma ser usada em sites bastante populares, podemos usar um servidor de assets externo como o Amazon S3 (Simple Storage Service) ou Rackspace CloudFiles.
 Esses serviços fornecem, a um custo relativamente baixo, armazenamento de dados na nuvem, isto é, seu arquivo pode estar hospedado em qualquer lugar no mundo, permitindo armazenamento persistente da dados na sua aplicação.
-Leia mais a respeito em:
+
+### Leia mais em
+
 * [Amazon S3](https://aws.amazon.com/pt/s3/){:target="_blank"}
 * [Carrierwave - Using Amazon S3](https://github.com/carrierwaveuploader/carrierwave#using-amazon-s3){:target="_blank"}

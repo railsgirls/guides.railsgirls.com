@@ -8,7 +8,7 @@ permalink: miniaturas
 
 *Traduzido e adaptado de [Create thumbnails with Carrierwave](http://guides.railsgirls.com/thumbnails/){:target="_blank"}*
 
-No tutorial [anterior]({{  site.baseurl | append: "/rails-girls-app-tutorial-1" }}){:target="_blank"}, utilizamos a gem [Carrierwave](https://github.com/carrierwaveuploader/carrierwave){:target="_blank"} para fazer upload de imagens para nossa aplicação. Agora a utilizaremos para gerar miniaturas das imagens enviadas.
+Em um tutorial [anterior]({{  site.baseurl | append: "/rails-girls-app-tutorial-1" }}){:target="_blank"}, utilizamos a gem [Carrierwave](https://github.com/carrierwaveuploader/carrierwave){:target="_blank"} para fazer upload de imagens para nossa aplicação. Agora a utilizaremos para gerar miniaturas das imagens enviadas.
 
 **Coach**: Explique a diferença entre especificar a largura da imagem no HTML ao final do [passo 4]({{  site.baseurl | append: "/rails-girls-app-tutorial-1#adicionar-upload-de-imagens" }}){:target="_blank"} e como isso difere de redimensionar as imagens no servidor.
 
