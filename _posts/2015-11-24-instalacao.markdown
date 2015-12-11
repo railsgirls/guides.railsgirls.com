@@ -137,7 +137,7 @@ gem install nokogiri -- --use-system-libraries --with-xml=/usr/local/Cellar/libx
 Baixe o [RailsFTW](http://files.bryanbibat.net/rails-ftw-v0.21-2.1.6-4.2.3.exe)
 e o execute. Siga os passos do instalador usando as opções padrão.
 
-Abra `Command Prompt with Ruby on Rails` e execute o seguinte comando:
+Na barra de busca procure por `Start Command Prompt with Ruby`, ou pelo menu iniciar `Programas > RailsFTW > Start Command Prompt with Ruby` e execute o seguinte comando:
 
 {% highlight sh %}
 rails -v # Exibe a versão de rails instalada
