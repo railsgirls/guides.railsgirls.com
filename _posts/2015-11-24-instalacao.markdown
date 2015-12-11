@@ -20,38 +20,38 @@ entre em pânico. Nos informe no evento e nós poderemos solucioná-lo juntos.
 * [Instalação para Linux](#linux)
 * [Máquina virtual](#mquina-virtual)
 
-## OS X
+## *1.* OS X
 
-### *1* Verificar a versão do seu sistema operacional
+### *1.1.* Verificar a versão do seu sistema operacional
 
 Clique no Apple menu e escolha *About this Mac*.
 
 ![Apple menu](../images/1.png "Apple menu")
 
-### *2* Nessa janela você encontrará a versão do seu sistema operacional
+### *1.2.* Nessa janela você encontrará a versão do seu sistema operacional
 Se a sua versão começar com 10.6, 10.7, 10.8, 10.9 or 10.10 esse guia servirá para você.
 Caso contrário, nós poderemos ajudá-la a configurar a sua máquina no evento.
 
 ![About this Mac dialog](../images/2.png "About this Mac dialog")
 
-### *3* Se a versão do seu OS X é maior ou igual a 10.9:
+### *1.3.* Se a versão do seu OS X é maior ou igual a 10.9:
 
 Se a sua versão começar com 10.9 ou 10.10, siga esses passos. Nesse tutorial
 instalaremos as ferramentas de linha de comando do XCode, homebrew e rvm.
 
-#### *3.1* Instalar ferramentas de linha de comando do XCode no terminal:
+#### *1.3.1.* Instalar ferramentas de linha de comando do XCode no terminal:
 
 {% highlight sh %}
 xcode-select --install
 {% endhighlight %}
 
-#### *3.2* Instalação [Homebrew](http://brew.sh/):
+#### *1.3.2.* Instalação [Homebrew](http://brew.sh/):
 
 {% highlight sh %}
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 {% endhighlight %}
 
-#### *3.3* Instalação [rvm](http://rvm.io/):
+#### *1.3.3.* Instalação [rvm](http://rvm.io/):
 
 {% highlight sh %}
 brew update
@@ -60,8 +60,7 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 curl -sSL https://get.rvm.io | bash -s stable
 {% endhighlight %}
 
-#### *3.4* Instalação de Ruby com rvm:
-
+#### *1.3.4.* Instalação de Ruby com rvm:
 
 {% highlight sh %}
 rvm install ruby --latest # Instala a última versão disponível de Ruby
@@ -78,18 +77,17 @@ brew install curl-ca-bundle
 cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
 {% endhighlight %}
 
-#### *3.5* Configure a versão padrão de Ruby (Opcional):
+#### *1.3.5.* Configure a versão padrão de Ruby (Opcional):
 
 {% highlight sh %}
 rvm use 2.2.1 --default
 {% endhighlight %}
 
-#### *3.6* Instale o Rails:
+#### *1.3.6.* Instale o Rails:
 
 {% highlight sh %}
 gem install rails --no-ri --no-rdoc
 {% endhighlight %}
-
 
 Para verificar se o Rails foi instalado com sucesso, execute os seguintes comandos:
 {% highlight sh %}
@@ -98,12 +96,12 @@ cd railsgirls # Entra na pasta da aplicação gerada
 rails s # Executa o servidor de aplicação, para acessá-la digite localhost:3000 no seu navegador
 {% endhighlight %}
 
-### *4.* Editor de Texto
+### *1.4.* Editor de Texto
 
 Para o workshop recomendamos o editor de texto [Atom](https://atom.io/).
 Você também pode usar outro editor [Sublime Text](http://www.sublimetext.com).
 
-### *5.* Atualize seu navegador
+### *1.5.* Atualize seu navegador
 
 Entre em [whatbrowser.org](http://www.whatbrowser.org/intl/pt-BR/) e atualize seu navegador caso não possua a última versão instalada.
 Recomendamos o [Firefox](http://br.mozdev.org/) ou [Chrome](https://www.google.com.br/chrome/browser/desktop/).
@@ -130,14 +128,14 @@ brew install libxml2
 gem install nokogiri -- --use-system-libraries --with-xml=/usr/local/Cellar/libxml2/
 {% endhighlight %}
 
-## Windows
+## *2.* Windows
 
-### *1* Instalação Rails
+### *2.1.* Instalação Rails
 
 Baixe o [RailsFTW](http://files.bryanbibat.net/rails-ftw-v0.21-2.1.6-4.2.3.exe)
 e o execute. Siga os passos do instalador usando as opções padrão.
 
-Na barra de busca procure por `Start Command Prompt with Ruby`, ou pelo menu iniciar `Programas > RailsFTW > Start Command Prompt with Ruby` e execute o seguinte comando:
+Na barra de busca procure por `Start Command Prompt with Ruby`, ou pelo menu iniciar `Programas ▸ RailsFTW ▸ Start Command Prompt with Ruby` e execute o seguinte comando:
 
 {% highlight sh %}
 rails -v # Exibe a versão de rails instalada
@@ -214,7 +212,7 @@ Após salvar as alterações, use o Prompt de Comando novamente e execute:
  bundle update
 {% endhighlight %}
 
-### *1.1* Instale o NodeJS (Opcional)
+### *2.1.1.* Instale o NodeJS (Opcional)
 
 Não é estritamente necessário, mas evita o error ExecJS::RuntimeError que pode ocorrer posteriormente.  ([veja stackoverflow](https://stackoverflow.com/questions/12520456/execjsruntimeerror-on-windows-trying-to-follow-rubytutorial)).
 
@@ -228,18 +226,36 @@ node --version
 
 Certifique-se que a versão instalada é maior igual a `0.12`.
 
-## Linux
+## *3.* Linux
 
-### *1.* Instale o RVM
+### *3.1.* Instale o RVM
 
 Para instalar o ambiente de desenvolvimento Ruby on Rails, você apenas precisa copiar a linha abaixo no terminal de acordo com a distribuição Linux que esteja usando(Ubuntu e Fedora) e apertar <kdb>Enter</kdb>. A instalação demorará um certo tempo para ser terminada.
 
-#### Para Ubuntu:
+#### *3.1.1.* Para Ubuntu
 
 {% highlight sh %}
-  sudo apt-get install curl
-  gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-  curl -sSL https://get.rvm.io | bash -s stable --ruby #Instala o rvm, com a versão mais recente de ruby
+sudo apt-get install curl
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+curl -sSL https://get.rvm.io | bash -s stable --ruby #Instala o rvm, com a versão mais recente de ruby
+{% endhighlight %}
+
+Para que o RVM seja inicializado, é preciso fechar a janela do terminal, e abrir uma nova, ou executar o seguinte comando na janela de terminal corrente:
+
+{% highlight sh %}
+source ~/.rvm/scripts/rvm  #carrega o script do rvm
+{% endhighlight %}
+
+Se você for utilizar o RVM com o `gnome-terminal`, você precisará antes mudar algumas opções padrão.
+Para que o RVM funcione corretamente, abra o `gnome-terminal`, em `Editar ▸ Preferências de perfil` e marque na aba `Comando` a opção `Executar o comando como shell de sessão` e clique em `Fechar`. Será preciso fechar e reabrir terminal para que as mudanças façam efeito.
+Para mais informações, acesse [RVM - Integração com o gnome-terminal](http://rvm.io/integration/gnome-terminal).
+
+#### *3.1.2.* Para Fedora
+
+{% highlight sh %}
+yum install curl gnupg which tar -y
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+curl -sSL https://get.rvm.io | bash -s stable #Instala o rvm
 {% endhighlight %}
 
 Para que o RVM seja inicializado, é preciso fechar a janela do terminal, e abrir uma nova, ou executar o seguinte comando na janela de terminal corrente:
@@ -252,35 +268,17 @@ Se você for utilizar o RVM com o `gnome-terminal`, você precisará antes mudar
 Para que o RVM funcione corretamente, abra o `gnome-terminal`, em `Editar ▸ Preferências de perfil` e marque na aba `Comando` a opção `Executar o comando como shell de sessão` e clique em `Fechar`. Será preciso fechar e reabrir terminal para que as mudanças façam efeito.
 Para mais informações, acesse [RVM - Integração com o gnome-terminal](http://rvm.io/integration/gnome-terminal).
 
-#### Para Fedora:
-
-{% highlight sh %}
-  yum install curl gnupg which tar -y
-  gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-  curl -sSL https://get.rvm.io | bash -s stable #Instala o rvm
-{% endhighlight %}
-
-Para que o RVM seja inicializado, é preciso fechar a janela do terminal, e abrir uma nova, ou executar o seguinte comando na janela de terminal corrente:
-
-{% highlight sh %}
-  source ~/.rvm/scripts/rvm  #carrega o script do rvm
-{% endhighlight %}
-
-Se você for utilizar o RVM com o `gnome-terminal`, você precisará antes mudar algumas opções padrão.
-Para que o RVM funcione corretamente, abra o `gnome-terminal`, em `Editar ▸ Preferências de perfil` e marque na aba `Comando` a opção `Executar o comando como shell de sessão` e clique em `Fechar`. Será preciso fechar e reabrir terminal para que as mudanças façam efeito.
-Para mais informações, acesse [RVM - Integração com o gnome-terminal](http://rvm.io/integration/gnome-terminal).
-
-#### *1.2* Instalando o Ruby:
+#### *3.2.1.* Instalando o Ruby
 
 {% highlight sh %}
 rvm install 2.2.3 #instala o ruby 2.2.3
 {% endhighlight %}
 
-#### *1.3* Instalando o Rails:
+#### *3.2.2.* Instalando o Rails
 
 {% highlight sh %}
-  rvm use 2.2.3@railsgirls --create #cria um gemset chamado railsgirls usando ruby 2.2.3
-  gem install rails #instala a gem rails no gemset railsgirls
+rvm use 2.2.3@railsgirls --create #cria um gemset chamado railsgirls usando ruby 2.2.3
+gem install rails #instala a gem rails no gemset railsgirls
 {% endhighlight %}
 
 Para verificar se o Rails foi instalado com sucesso, execute os seguintes comandos:
@@ -291,12 +289,12 @@ cd railsgirls # Entra na pasta da aplicação gerada
 rails s # Executa o servidor de aplicação, para acessá-la digite localhost:3000 no seu navegador
 {% endhighlight %}
 
-### *2.* Editor de Texto
+### *3.3.* Editor de Texto
 
 Para o workshop recomendamos o editor de texto [Atom](https://atom.io/).
 Você também pode usar outro editor [Sublime Text](http://www.sublimetext.com).
 
-### *3.* Atualize seu navegador
+### *3.4.* Atualize seu navegador
 
 Entre em [whatbrowser.org](http://www.whatbrowser.org/intl/pt-BR/) e atualize seu navegador caso não possua a última versão instalada.
 Recomendamos o [Firefox](http://br.mozdev.org/) ou [Chrome](https://www.google.com.br/chrome/browser/desktop/).

@@ -8,11 +8,11 @@ permalink: rails-girls-app-tutorial-1
 
 *Traduzido e adaptado de [Rails Girls App Tutorial](http://guides.railsgirls.com/app){:target="_blank"}*
 
-## Verifique se você possui o Rails instalado
+### Verifique se você possui o Rails instalado
 
 Antes de começar a desenvolver, siga o [Guia De Instalação]({{  site.baseurl | append: "/instalacao" }}){:target="_blank"}
 
-## Conheça as suas ferramentas
+### Conheça as suas ferramentas
 
 <div class="indent" markdown="1">
 
@@ -41,15 +41,15 @@ Antes de começar a desenvolver, siga o [Guia De Instalação]({{  site.baseurl 
 Siga as instruções específicas para o seu sistema operacional. Os comandos que devem ser executados em um computador Windows são ligeiramente diferentes dos do Mac ou Linux.
 Se você tiver alguma dificuldade, confira a opção do Sistema Operacional abaixo do bloco de comandos.
 
-## *1.*Criando uma aplicação
+## *1.* Criando uma aplicação
 
 Nós vamos criar uma nova aplicação Rails chamada *railsgirls*.
 
 Vamos abrir o terminal:
 
 * Mac OS X: Abra Spotlight, digite *Terminal* e clique na aplicação *Terminal*.
-* Windows: Clique em Iniciar e procure por *Prompt de Comando* e clique em *Command Prompt with Ruby on Rails*.
-* Linux (Ubuntu/Fedora): Procure por *Terminal* na barra de busca e clique em *Terminal*.
+* Windows: Na barra de busca procure por `Start Command Prompt with Ruby`, ou pelo menu iniciar `Programas ▸ RailsFTW ▸ Start Command Prompt with Ruby`.
+* Linux (Ubuntu/Fedora): Procure por *Terminal* na barra de busca e clique em *Terminal* ou o atalho <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>T</kbd>.
 
 Em seguida, digite os seguintes comandos no terminal:
 
@@ -78,11 +78,10 @@ Em seguida, digite os seguintes comandos no terminal:
       </p>
     </div>
 
-    {% highlight sh %}
-      rails new railsgirls
-    {% endhighlight %}
+{% highlight sh %}
+rails new railsgirls
+{% endhighlight %}
 
-    <!-- TODO: Explicar a estrutura de diretórios do Rails -->
     <div>
       <p> Esse comando vai criar uma nova aplicação na pasta <code>railsgirls</code>. Para executá-la, entre no seu diretório executando:</p>
     </div>
@@ -163,9 +162,28 @@ Execute <kbd>Ctrl</kbd>+<kbd>C</kbd> no terminal para interromper o servidor.
 
 **Coach:** Explique o que cada comando faz. O que foi gerado? O que o servidor faz?
 
+### *1.1.* Estrutura de diretório do Rails
+
+Arquivo/Pasta           | Função
+------------------------|-----------------------------------------------------------------------------------------------------------------
+app/                    | Contém os *controllers*, *models*, *views*, *helpers*, *mailers* e *assets* da sua aplicação.
+bin/ 	                  | Contém o script que inicia a sua aplicação e outros scripts para configurar, publicar e executar a sua aplicação
+config/	                | Configuração das rotas da sua aplicação, banco de dados etc.
+config.ru               | Configuração do Rack usada para iniciar a aplicação
+db/	                    | Contém o schema de banco de dados assim como migração dos bancos de dados
+Gemfile e Gemfile.lock	| Arquivos que permitem especificar as bibliotecas necessárias para a sua aplicação Rails        
+lib/	                  | Contém módulos para estender a sua aplicação
+log/	                  | Armazena arquivos de log da sua aplicação
+public/	                | Contém arquivos estáticos e assets processados
+Rakefile                |	Esse arquivo procura e carrega tarefas que podem ser executadas por linha de comando
+README.rdoc             | Manual breve da sua aplicação, explica o que ela faz, como configurá-la etc.
+test/	                  | Contém os testes unitários da sua aplicação
+tmp/	                  | Contém arquivos temporários
+vendor/                 | Contém códigos de terceiros
+
 ## *2.*Crie o scaffold
 
-Nós utilizaremos a funcionalidade scaffold para gerar páginas para listar, adicionar, remover, editar e visualizar coisas; no nosso caso ideias.
+Nós utilizaremos a funcionalidade [scaffold](http://guides.rubyonrails.org/command_line.html#rails-generate){:target="_blank"} para gerar páginas para listar, adicionar, remover, editar e visualizar coisas; no nosso caso ideias.
 
 **Coach:** No que consiste o scaffolding do Rails? (Explique o comando, o nome do *model* e a sua tabela de banco de dados relacionada, convenções de nomeação, atributos e tipos, etc). O que são *migrations* e para o quê servem?
 
@@ -177,12 +195,12 @@ O scaffold cria novos arquivos no diretório do seu projeto, o que é chamado de
 Para que a sua aplicação funcione corretamente com essas alterações é necessário atualizar o banco de dados e reiniciar o servidor:
 
 <div class="os-specific">
-  <div class="nix">
-    {% highlight sh %}
-      bin/rake db:migrate # executa as migrações, atualizando o banco de dados
-      rails server # inicializa o servidor da aplicação
-    {% endhighlight %}
-  </div>
+<div class="nix">
+{% highlight sh %}
+bin/rake db:migrate # executa as migrações, atualizando o banco de dados
+rails server # inicializa o servidor da aplicação
+{% endhighlight %}
+</div>
 
   <div class="win">
     {% highlight sh %}
@@ -201,7 +219,7 @@ Navegue pela aplicação para descobrir o que foi gerado pelo scaffold.
 ## *3.*Design
 
 **Coach:**
-Fale sobre o relacionamento entre o HTML e o Rails. Que parte das *views* são *HTML* e quais são *Embedded Ruby (ERB)*?
+Fale sobre o relacionamento entre o HTML e o Rails. Que parte das *views* são *HTML* e quais são *[Embedded Ruby (ERB)](https://articles.startuprocket.com/a-quick-introduction-to-embedded-ruby-a-k-a-erb-eruby-7b6d26bf939d#.sd1nrrgiv){:target="_blank"}*?
 O que é MVC e como isso se relaciona com isso? (*Models* e *controllers* são responsáveis por gerar as *views HTML*)
 
 A nossa aplicação ainda não está muito bonita. Vamos tentar resolver esse problema. Para isso, usaremos o [Twitter Bootstrap](http://getbootstrap.com/){:target="_blank"} para melhorar a aparência da nossa aplicação de maneira fácil.
@@ -412,25 +430,10 @@ get "pages/info"
 
 Agora você pode abir o arquivo `app/views/pages/info.html.erb` e adicione informações sobre você no HTML. Para visualizar a sua nova página, no seu navegador acesse <http://localhost:3000/pages/info>{:target="_blank"}.
 
-<!--
+## *7.* Aprenda mais
 
-## *6+.*Próximos passos*
-
-* Add design using HTML &amp; CSS
-* Add ratings
-* Use CoffeeScript (or JavaScript) to add interaction
-* Add picture resizing to make loading the pictures faster
-
-## Guias adicionais
-
-* Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](https://github.com/PragTob/rails-beginner-cheatsheet)
-* Guide 1: [Add commenting by Janika Liiv](/commenting)
-* Guide 2: [Put your app online with Heroku by Terence Lee](/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift) / [Put your app online with Shelly Cloud](/shellycloud) / [Put your app online with anynines](/anynines) / [Put your app online with Trucker.io](/trucker)
-* Guide 3: [Create thumbnail images for the uploads by Miha Filej](/thumbnails)
-* Guide 4: [Add design using HTML &amp; CSS by Alex Liao](/design)
-* Guide 5: [Add Authentication (user accounts) with Devise by Piotr Steininger](/devise/)
-* Guide 6: [Adding profile pictures with Gravatar](/gravatar)
-* Guide 7: [Test your app with RSpec](/testing-rspec)
-* Guide 8: [Continuous Deployment with Travis-CI](/continuous-travis) / [Continuous Deployment with Codeship](/continuous) / [Continuous Deployment with Snap CI](/continuous-snap-ci)
-* Guide 9: [Go through additional explanations for the App by Lucy Bain](https://github.com/lbain/railsgirls)
--->
+* [Getting started with Ruby on Rails](http://guides.rubyonrails.org/getting_started.html)
+* [The Rails Command Line](http://guides.rubyonrails.org/command_line.html)
+* [ActiveRecord Basics](http://guides.rubyonrails.org/active_record_basics.html)
+* [Layouts and Rendering](http://guides.rubyonrails.org/layouts_and_rendering.html)
+* [Rails Routing from the Outside In](http://guides.rubyonrails.org/routing.html)
