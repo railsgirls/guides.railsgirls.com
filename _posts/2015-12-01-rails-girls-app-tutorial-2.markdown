@@ -109,3 +109,7 @@ Em seguida, remova:
 {% endhighlight %}
 
 E é isso. Agora visualize uma idéia que você inseriu na sua aplicação e se você conseguiu visualizar o formulário para inserir um comentário. Verifique se você também consegue remover comentários antigos.
+
+## *4.* Aprenda mais
+
+* [Active Record Associations](http://guides.rubyonrails.org/association_basics.html)
