@@ -31,8 +31,6 @@ Baixe o [Instalador ImageMagick](http://www.imagemagick.org/script/binary-releas
 
 #### *1.3.1.* No Ubuntu e Debian
 
-Execute:
-
 {% highlight sh %}
 sudo apt-get install imagemagick
 {% endhighlight %}
@@ -63,20 +61,19 @@ No terminal execute:
 bundle
 {% endhighlight %}
 
-## *2.* Telling our app to create thumbnails when an image is uploaded
+## *2.* Dizendo a nossa aplicação como criar miniaturas quando é feito upload de uma imagem
 
-Open `app/uploaders/picture_uploader.rb` and find the line that looks like
-this:
+Abra o arquivo `app/uploaders/picture_uploader.rb` e encontre a seguinte linha:
 
 {% highlight ruby %}
   # include CarrierWave::MiniMagick
 {% endhighlight %}
 
-Remove the `#` sign.
+Remova o `#`. O símbolo `#` indica comentários em Ruby, nesse caso estamos descomentando uma linha.  
 
-__Coach__: Explain the concept of comments in code.
+**Coach**: Explique o conceito de comentários em código.
 
-Below the line you just changed, add:
+Abaixo da linha que você acabou de editar, adicione:
 
 {% highlight ruby %}
 version :thumb do
@@ -84,23 +81,22 @@ version :thumb do
 end
 {% endhighlight %}
 
-The images uploaded from now on should be resized, but the ones we already
-have weren't affected. So edit one of the existing ideas and re-add a picture.
+No *Carrierwave* é possível definir múltiplas versões para uma mesma imagem, com resoluções diferentes, por exemplo.
 
-## *3.*Displaying the thumbnails
+Para os próximos uploads de imagens, elas serão redimensionadas, no entanto as já adicionadas não serão afetadas. Para corrigi-las basta readicionar imagens às idéias previamente criadas.
 
-To see if the uploaded picture was resized open
-`app/views/ideas/index.html.erb`. Change the line
+## *3.* Exibindo as minitaturas
+
+Para verificar se a imagem enviada foi redimensionada, abra o arquivo `app/views/ideas/index.html.erb` e modifique a linha:
 
 {% highlight erb %}
-<td><%= idea.picture %></td>
+<td><%= image_tag idea.picture if idea.picture? %></td>
 {% endhighlight %}
 
-to
+Para:
 
 {% highlight erb %}
 <td><%= image_tag idea.picture_url(:thumb) if idea.picture? %></td>
 {% endhighlight %}
 
-Take a look at the list of ideas in the browser to see if the thumbnail is
-there.
+Agora abra no navegador na página [http://localhost:3000/ideas](http://localhost:3000/ideas){:target="_blank"} e verifique se as miniaturas estão sendo exibidas.
