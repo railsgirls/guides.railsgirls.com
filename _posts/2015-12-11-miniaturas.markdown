@@ -148,3 +148,10 @@ Para:
 
 
 Agora abra no navegador na página [http://localhost:3000/ideas](http://localhost:3000/ideas){:target="_blank"} e verifique se as miniaturas estão sendo exibidas.
+
+> Nota: Caso várias ideias já tenham sido criadas, você precisará gerar suas miniaturas executando os seguintes comandos:
+
+{% highlight ruby %}
+rails console
+Idea.all.each { |idea| idea.picture.recreate_versions! }
+{% endhighlight %}
