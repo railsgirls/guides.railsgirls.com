@@ -14,6 +14,8 @@ No tutorial [anterior]({{  site.baseurl | append: "/rails-girls-app-tutorial-1" 
 
 ## *1.*Instalando ImageMagick
 
+Para conseguirmos realizar transformações na imagens enviadas, é necessário instalar o [ImageMagick](http://www.imagemagick.org/script/index.php){:target="_blank"}
+
 ### *1.1.* OS X
 
  Execute:
@@ -22,6 +24,21 @@ No tutorial [anterior]({{  site.baseurl | append: "/rails-girls-app-tutorial-1" 
 {% endhighlight %}
 
 Caso não possua o comando `brew` instale o [Homebrew]({{  site.baseurl | append: "/instalacao#instalao-homebrewhttpbrewsh"}}){:target="_blank"}
+
+Para verificar se a instalação foi executada com sucesso, basta executar:
+
+{% highlight sh %}
+ convert -version
+{% endhighlight %}
+
+Que deve exibir algo parecido com:
+
+{% highlight sh %}
+Version: ImageMagick 6.8.9-9 Q16 x86_64 2015-01-06 http://www.imagemagick.org
+Copyright: Copyright (C) 1999-2014 ImageMagick Studio LLC
+Features: DPC Modules OpenMP
+Delegates: bzlib djvu fftw fontconfig freetype jbig jng jpeg lcms lqr ltdl lzma openexr pangocairo png tiff wmf x xml zlib
+{% endhighlight %}
 
 ### *1.2.* Windows
 
@@ -35,15 +52,45 @@ Baixe o [Instalador ImageMagick](http://www.imagemagick.org/script/binary-releas
 sudo apt-get install imagemagick
 {% endhighlight %}
 
+Para verificar se a instalação foi executada com sucesso, basta executar:
+
+{% highlight sh %}
+ convert -version
+{% endhighlight %}
+
+Que deve exibir algo parecido com:
+
+{% highlight sh %}
+Version: ImageMagick 6.8.9-9 Q16 x86_64 2015-01-06 http://www.imagemagick.org
+Copyright: Copyright (C) 1999-2014 ImageMagick Studio LLC
+Features: DPC Modules OpenMP
+Delegates: bzlib djvu fftw fontconfig freetype jbig jng jpeg lcms lqr ltdl lzma openexr pangocairo png tiff wmf x xml zlib
+{% endhighlight %}
+
 #### *1.3.2.* No Fedora
 
 {% highlight sh %}
 yum install ImageMagick
 {% endhighlight %}
 
+Para verificar se a instalação foi executada com sucesso, basta executar:
+
+{% highlight sh %}
+ convert -version
+{% endhighlight %}
+
+Que deve exibir algo parecido com:
+
+{% highlight sh %}
+Version: ImageMagick 6.8.9-9 Q16 x86_64 2015-01-06 http://www.imagemagick.org
+Copyright: Copyright (C) 1999-2014 ImageMagick Studio LLC
+Features: DPC Modules OpenMP
+Delegates: bzlib djvu fftw fontconfig freetype jbig jng jpeg lcms lqr ltdl lzma openexr pangocairo png tiff wmf x xml zlib
+{% endhighlight %}
+
 **Coach**: Explique que é o ImageMagick e como ele difere das bibliotecas/gems que utilizamos anteriormente
 
-Abra o `Gemfile` do projeto e adicione:
+Abra o `Gemfile` do projeto e adicione a gem [MiniMagick](https://github.com/minimagick/minimagick){:target="_blank"}:
 
 {% highlight ruby %}
 gem 'mini_magick'
@@ -81,7 +128,7 @@ version :thumb do
 end
 {% endhighlight %}
 
-No *Carrierwave* é possível definir múltiplas versões para uma mesma imagem, com resoluções diferentes, por exemplo.
+No *Carrierwave* é possível [definir múltiplas versões para uma mesma imagem](https://github.com/carrierwaveuploader/carrierwave#adding-versions){:target="_blank"}, com resoluções diferentes, por exemplo.
 
 Para os próximos uploads de imagens, elas serão redimensionadas, no entanto as já adicionadas não serão afetadas. Para corrigi-las basta readicionar imagens às idéias previamente criadas.
 
@@ -98,5 +145,6 @@ Para:
 {% highlight erb %}
 <td><%= image_tag idea.picture_url(:thumb) if idea.picture? %></td>
 {% endhighlight %}
+
 
 Agora abra no navegador na página [http://localhost:3000/ideas](http://localhost:3000/ideas){:target="_blank"} e verifique se as miniaturas estão sendo exibidas.
