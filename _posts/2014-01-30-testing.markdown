@@ -1,134 +1,144 @@
 ---
 layout: default
-title: You better check you app, before you wreck your app
+title: Testando seu App com RSpec
 permalink: testing-rspec
 ---
 
 # Testando seu App com RSpec
 
-*Traduzido e adaptado de http://guides.railsgirls.com/testing-rspec/* 
+*Traduzido e adaptado de [Testing RSpec](http://guides.railsgirls.com/testing-rspec/){:target="_blank"}*
 
-RSpec é um framework de testes para Ruby, que descreve o comportamento da nossa aplicação com uma sintaxe que não parece muito com Ruby. Os resultados de teste aparecem no seu terminal.
+[RSpec](http://rspec.info/){:target="_blank"} é um framework de testes para Ruby, que descreve o comportamento da nossa aplicação com uma sintaxe que não parece muito com Ruby. Os resultados de teste aparecem no seu terminal.
 
-__COACH__: Fale sobre testes e BDD (Desenvolvimento Orientado a Comportamento).
+**COACH**: Fale sobre testes e BDD (Desenvolvimento Orientado a Comportamento).
 
-### Intalando rspec
+## *1.* Instalando Rspec-Rails
 
-Para começar, vamos instalar RSpec e todas as suas dependências.
+Para conseguir testar um projeto Rails vamos precisar instalar a gem [rspec-rails](https://github.com/rspec/rspec-rails){:target="_blank"}.
+
+Adicione a segunte linha ao seu ´Gemfile´:
+
 {% highlight sh %}
-gem install rspec
-{% endhighlight %}
-
-Então chamamos
-{% highlight sh %}
-rspec --init
-{% endhighlight %}
-
-no diretório do nosso projeto. Isso vai criar `spec_helper.rb` na pasta spec, e `.rspec`.
-
-Rubistas costumam usar as palavras "teste" e "especificação" como sinônimos, é por isso que você vai armazenar seus testes na pasta "specs". Salve o seu teste como `idea_spec.rb` (`<nome_do_spec>_spec.rb`).
-
-Dentro do novo arquivo, escreva:
-  
-{% highlight ruby %}
-require "spec_helper"
-require "idea"
-{% endhighlight %}
-
-Em seguida, vamos descrever uma de nossas especificações
-{% highlight ruby %}
-describe Idea do
-  it "tem um título" # seus exemplos (testes) vão aqui
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
 end
 {% endhighlight %}
 
-No seu terminal, execute
+Em seguida execute:
+
+{% highlight sh %}
+bundle install
+{% endhighlight %}
+
+Para criar o diretório ´spec´ com todo o código *boilerplate* necessário para criar e executar os testes, execute:
+
+{% highlight sh %}
+rails generate rspec:install
+{% endhighlight %}
+
+Esse comando criará os seguintes arquivos de configuração no projeto:
+
+* *.rspec* - inclui configuração para a execução dos testes
+* *spec/spec_helper.rb* - deve ser requerido nos testes de arquivos que usam apenas Ruby
+* *spec/rails_helper.rb* - deve ser requerido nos testes de arquivos que usam o Rails
+
+Rubistas costumam usar as palavras *teste* e *especificação* como sinônimos e é por isso que você vai armazenar seus testes na pasta `specs`. Salve o seu teste como `idea_spec.rb` (`<nome_do_spec>_spec.rb`).
+
+Inclua a seguinte linha no início do novo arquivo:
+
+{% highlight ruby %}
+require "spec_helper" #se o código testado for apenas Ruby
+{% endhighlight %}
+
+ Ou:  
+
+{% highlight ruby %}
+require "rails_helper" #se o código testado usar o Rails
+{% endhighlight %}
+
+## *2.* Escrevendo o teste
+
+Em seguida, vamos descrever uma de nossas especificações:
+
+{% highlight ruby %}
+require "spec_helper"
+RSpec.describe Idea :type => :model do
+  it "tem um título" do
+    pending
+  end
+end
+{% endhighlight %}
+
+No seu terminal, execute:
+
 {% highlight sh %}
 rspec spec/lib/idea_spec.rb
 {% endhighlight %}
 
-que irá mostrar que o teste está pendente, uma vez que ainda não foi implementado.
+Que irá mostrar que o teste está pendente, uma vez que ainda não foi implementado.
 
-__COACH__: Fale sobre pesquisar no Google as saídas do terminal.
+**COACH**: Fale sobre pesquisar na internet as saídas do terminal.
 
 Vamos fazer algo então!
+
 {% highlight ruby %}
 describe Idea do
-  it "tem um título" do 
-    idea = Idea.new # criando uma nova instância de idea
-    idea.title.should be_true # esse é o nosso resultado esperado
+  idea = Idea.new # criando uma nova instância de Idea
+  expect(idea).to respond_to(:title)
+end
+{% endhighlight %}
+
+**COACH**: Fale um pouco sobre refatoração.  
+
+## *3.* Marcando testes pendentes
+
+No RSpec, podemos dizer quais os testes que estão pendentes. Pra marcar um teste como pendente basta adicionar um `x` na frente do exemplo, assim:
+
+{% highlight ruby %}
+describe Idea do  
+  xit "tem um titulo" do
+   # ...
   end
 end
 {% endhighlight %}
 
-deveria nos dar uma saída de console melhor :)
+Ou utilizar a palavra `pending` dentro do bloco `it`.
 
-####Refatorando
+## *4.* BDD - Desenvolvimento Orientado a Comportamento
 
-Você também pode escrever:  
+Normalmente quando falamos de BDD, pensamos um pouco diferente. Pensando na aplicação que queremos construir, vamos escrever nossas expectativas e, em seguida, começar a construir passo a passo, tendo sempre as especificações em mente.
 
-{% highlight ruby %}
-describe Idea do
-  its(:title) { should be_true }
-end
-{% endhighlight %}
-
-que parece muito mais agradável, mas há um monte de magia envolvida. Por agora é importante saber que podemos 'refatorar' esses grandes pedaços de código em pedaços menores, com um pouco mais de experiência.  
-
-__COACH__: Fale um pouco sobre refatoração.  
-
-#### Marcando "to-dos" com os testes
-
-Sim! Listas de To-do. Incrícel. Com RSpec podemos marcar os testes que estão pendentes. 
-
-Deixando de fora o  `do` e o `end` no corpo do exemplo
-
-{% highlight ruby %}
-it "tem um titulo"
-{% endhighlight %}
-
-irá marcar o testes como pendente. Para grandes aplicações, onde você deseja "enfrentar" um teste de cada vez, você pode adicionar um `x` na frente do exemplo, assim 
-{% highlight ruby %}
-describe Idea do  
-  xit "tem um titulo" do
-end
-{% endhighlight %}
-
-ou utilizar a palavra `pending` no seu exemplo.
-
-### BDD - Desenvolvimento Orientado a Comportamento
-
-Normalmente quando falamos de BDD, pensamos um pouco diferente. Pensando na aplicação que queremos construir, vamos escrever nossas expectativas e, em seguida, começar a construir passo a passo, tendo sempre as especificações em mente. 
-
-Primeiro nós vamos escrever 
+Primeiro nós vamos escrever:
 
 {% highlight ruby %}
 describe Idea do
   it "tem um título"
-    idea = Idea.new 
-    idea.title.should be_true 
-    # ou, alternativamente: idea.title.should == true
+    idea = Idea.new
+    expect(idea).to respond_to(:title)
   end
 end
 {% endhighlight %}
 
-e só então criar um arquivo chamado `idea.rb` introduzindo a ideia da classe
+E só então criar um arquivo chamado `idea.rb` introduzindo a ideia da classe:
 
 {% highlight ruby %}
 class Idea
-attr_accessor  :title
+  attr_accessor :title
 end
 {% endhighlight %}
 
-rodando `rspec spec/lib/idea_spec.rb` no seu terminal antes de implementar essa classe, vai gerar um erro. Por sorte, erros não são nada a temer. Os erros do RSpec te akudarão a escrever o código necessário! 
+Executando `rspec spec/lib/idea_spec.rb` no seu terminal antes de implementar essa classe, vai gerar um erro. Por sorte, erros não são nada a temer. Os erros do RSpec te ajudarão a escrever o código necessário para implementar uma funcionalidade.
 
-Experimente escrever testes para os guias a fim de verificar que você está implementando tudo certo. 
+Experimente escrever testes para os guias a fim de verificar se você está implementando tudo certo.
 
 {% highlight ruby %}
 describe Attendee do
-  it "teste tudo"
+  it "teste tudo" do
+  pending
 end
 {% endhighlight %}
 
+## *5.* Aprenda mais
 
-Tenha ótimos Testes!
+* [RSpec](https://relishapp.com/rspec){:target="_blank"}
+* [RSpec Rails](https://github.com/rspec/rspec-rails){:target="_blank"}
