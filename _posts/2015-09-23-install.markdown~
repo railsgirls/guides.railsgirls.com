@@ -26,7 +26,7 @@ Click en el menú Apple y elija *Acerca de este Mac (About this Mac)*.
 
 ![Apple menu](/images/1.png "Apple menu")
 
-### *Paso 2.* En la ventana encontrarás la version de tu sistema operativo.
+### *Paso 2.* En la ventana encontrarás la version de tu sistema operativo. 
 Si el número de version inicia con 10.6, 10.7, 10.8, 10.9 o 10.10 esta guía es para ti. Si no es así, entonces tienes que actualizar tu sistema operativo. O puedes utilizar una versión en la nube.
 
 ![About this Mac dialog](/images/2.png "About this Mac dialog")
@@ -116,7 +116,7 @@ Listo. Ahora ya deberías tener instalado Ruby on Rails. ¡Felicidades!
 
 ## Instalacion en Windows
 
-Descarga [RailsInstaller](https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.0.0.exe) y ejecútelo. Siga las instrucciones usando las opciones por defecto.
+Descarga [RailsInstaller](http://rubyforge.org/frs/download.php/76855/railsinstaller-2.2.0.exe) y ejecútelo. Siga las instrucciones usando las opciones por defecto.
 
 La instalación de Git y SSH-keys son requeridos si usted quiere [poner su aplicación en linea con Heroku](/heroku).
 
@@ -193,12 +193,12 @@ Asegúrate que sea mayor a `2.2.3`. Vuelve a correr el comando que ha estado fal
 ### Error: 'x64_mingw' is not a valid platform`
 
 A veces obtienes este error cuando corres `rails server`:
-`'x64_mingw' is not a valid platform`
+`'x64_mingw' is not a valid platform` 
 
 Si estás experimentando este error después de usar RailsInstaller, debes hacer una pequeña edición al archivo `Gemfile`:
 
 Busca el final del archivo. Probablemente veas algo como esto en una de las últimas líneas del archivo:
-`gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]`.
+`gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]`. 
 
 Si tienes esta línea con `:x64_mingw`, entonces por favor, elimina la parte de `:x64_mingw`. Al final debería decir:
 
@@ -213,10 +213,8 @@ Después que hagas eso, por favor usa tu línea de comando de nuevo y escribe `b
 Para instalar Ruby on Rails sólo necesita copiar y pegar esta linea en la terminal y presione "Enter". Disfrute los textos volando en su pantalla, esto tomará un poco de tiempo. Recomendamos una bebida refrescante antes de iniciar la instalación.
 
 {% highlight sh %}
-bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
+bash < <(curl -s https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
 {% endhighlight %}
-
-Para que los cambios tomen efecto reinicia tu equipo.
 
 ### *Último paso.* Instala un editor de texto para editar tus archivos de código
 Para este evento recomendamos el editor de texto Atom o Sublime Text.
@@ -230,7 +228,7 @@ Listo. Ahora ya deberías tener instalado Ruby on Rails. ¡Felicidades!
 
 ## Usando la nube
 
-Si todo lo anterior falla (y si cuentas con acceso a internet), tienes la opción de usar la nube.
+Si todo lo anterior falla (y si cuentas con acceso a internet), tienes la opción de usar la nube. 
 En nuestro caso, usaremos [CodePicnic](https://codepicnic.com).
 
 Sigue los pasos a continuación:
@@ -244,19 +242,19 @@ Ve a [CodePicnic](https://codepicnic.com) y crea una cuenta nueva. Puedes usar u
 
 ### *Paso 2.* Nuestra primera consola
 
-Una vez dentro de tu cuenta, selecciona la opción **New Console** y Busca **Rails**.
-Escoge la opción que se acaba de mostrar y selecciona **Create ->**.
+Una vez dentro de tu cuenta, selecciona la opción **New Console** y Busca **Rails**. 
+Escoge la opción que se acaba de mostrar y selecciona **Create ->**. 
 
 ![New Codepicnic Console](/images/codepicnic-new-console.png "New Codepicnic Console")
 
 ### *Último paso.* ¡A usar nuestra consola!
 
-En la pantalla que resulte, navega hasta que veas los detalles de tu consola (*Console Details*)
+En la pantalla que resulte, navega hasta que veas los detalles de tu consola (*Console Details*) 
 y selecciona **Full Screen View**. En esta imagen, la opción está resaltada en un cuadro rojo.
 
 ![Codepicnic Console Details](/images/codepicnic-console-details.png "Codepicnic Console Details")
 
-Verás tu consola en una nueva pestaña, puedes acceder a tus archivos en la parte izquierda y ejecutar
+Verás tu consola en una nueva pestaña, puedes acceder a tus archivos en la parte izquierda y ejecutar 
 comandos desde cualquiera de las pestañas llamadas *Terminal*.
 
 ![Codepicnic Full Screen Console](/images/codepicnic-full-screen-console.png "Codepicnic Full Screen Console")
