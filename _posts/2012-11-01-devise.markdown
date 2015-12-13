@@ -4,49 +4,47 @@ title: Adding Authentication with Devise
 permalink: devise
 ---
 
-# Agregando Autentificación con Devise
+# Adding Authentication with Devise
 
 *Created by Piotr Steininger, [@polishprince](https://twitter.com/polishprince)*
 
 *Updated by Ernesto Jimenez, [@ernesto_jimenez](https://twitter.com/ernesto_jimenez)*
 
-**Esta guía asume que ya tienes creada una aplicación RailsGirls ** [**siguiendo la guía desarrolla tu aplicación**](/app).
+**This guide assumes that you have already built a Rails Girls app by** [**following the app development guide**](/app).
 
 
-## *0.*Agrega gema devise
+## *1.*Add devise gem
 
-Abre tu `Gemfile` y agrega esta linea
+Open up your `Gemfile` and add this line
 
 {% highlight ruby %}
 gem 'devise'
 {% endhighlight %}
-y ejecute
+and run
 {% highlight sh %}
 bundle install
 {% endhighlight %}
+to install the gem. **Also remember to restart the Rails server**.
 
-para instalar la gema
+## *2.*Set up devise in your app
 
-## *1.*Configure devise en tu aplicación
-
-Ejecute el siguiente comando en la terminal.
+Run the following command in the terminal.
 
 {% highlight sh %}
 rails g devise:install
 {% endhighlight %}
 
 
-## *2.*Configure Devise
+## *3.*Configure Devise
 
-Asegúrese de tener definido las opciones por defecto para url en tus archivos "environments". Abre `config/environments/development.rb` y adicione esta línea:
-
+Ensure you have defined default url options in your environments files. Open up `config/environments/development.rb` and add this line:
 {% highlight ruby %}
    config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 {% endhighlight %}
 
-Antes de la palabra clave `end`.
+before the `end` keyword.
 
-Abre `app/views/layouts/application.html.erb` y adicione:
+Open up `app/views/layouts/application.html.erb` and add:
 
 {% highlight erb %}
 <% if notice %>
@@ -56,50 +54,41 @@ Abre `app/views/layouts/application.html.erb` y adicione:
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
 {% endhighlight %}
-justo encima de
+right above
 {% highlight ruby %}
    <%= yield %>
 {% endhighlight %}
 
-
-Finalmente, si tu intención es [publicar en heroku](/heroku) debes abrir `config/application.rb` y adicionar esta línea:
-{% highlight ruby %}
-  config.assets.initialize_on_precompile = false
-{% endhighlight %}
-como tercera línea desde la parte de abajo (antes de las dos ultimas palabras claves `end`)
-
-## *3.*Configurar el modelo User (usuario)
-
-Abrir el archivo `app/views/ideas/show.html.erb` y quita la línea que dice:
+Open up `app/views/ideas/show.html.erb` and remove the line that says:
 
 {% highlight erb %}
 <p id="notice"><%= notice %></p>
 {% endhighlight %}
 
-Haz lo mismo para `app/views/comments/show.html.erb`. Estas líneas no son necesarias porque ya hemos colocado la notificación en el archivo `app/views/layouts/application.html.erb`.
+Do the same for `app/views/comments/show.html.erb`. These lines are not necessary as we've put the notice in the `app/views/layouts/application.html.erb` file.
 
-Usaremos un script generador de paquetes para crear el modelo User(usuario)
+## *4.*Setup the User model
+
+We'll use a bundled generator script to create the User model.
 {% highlight sh %}
    rails g devise user
    rake db:migrate
 {% endhighlight %}
 
-**Coach:** Explique cual es el modelo que fue generado. ¿Cuáles son sus campos?
+**Coach:** Explain what user model has been generated. What are the
+fields?
 
+## *5.*Create your first user
 
-## *4.*Crea tu primer usuario
+Now that you have set everything up you can create your first user. Devise creates all the code and routes required to create accounts, log in, log out, etc.
 
-Ahora que tienes configurado todo puedes crear tu primer usuario. Devise crea todo el código y rutas requeridas para crear cuentas, inicio de sesión, cierre de sesión, etc.
+Make sure your rails server is running, open [http://localhost:3000/users/sign_up](http://localhost:3000/users/sign_up) and create your user account.
 
-Asegúrese que su servidor rails se esta ejecutando, abre [http://localhost:3000/users/sign_up](http://localhost:3000/users/sign_up), o en el caso de un servicio en la nube, adicione `/users/signup` al url de la vista previa. 
+## *6.*Add sign-up and login links
 
-Cree una cuenta de usuario.
+All we need to do now is to add appropriate links or notice about the user being logged in in the top right corner of the navigation bar.
 
-## *5.*Agregar links de registro e inicio de sesión
-
-Todo lo que necesitamos hacer ahora es adicionar apropiadamente links o avisos acerca del usuario que inicio sesión en la esquina superior derecha de la barra de navegación.
-
-Para lograr hacer esto, editar `app/views/layouts/application.html.erb` y agregar:
+In order to do that, edit `app/views/layouts/application.html.erb` add:
 {% highlight erb %}
 <p class="navbar-text pull-right">
 <% if user_signed_in? %>
@@ -111,30 +100,30 @@ Para lograr hacer esto, editar `app/views/layouts/application.html.erb` y agrega
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
 <% end %>
 {% endhighlight %}
-
-Justo despúes de
-
+right after
 {% highlight erb %}
 <ul class="nav">
   <li class="active"><a href="/ideas">Ideas</a></li>
 </ul>
 {% endhighlight %}
 
-Finalmente, fuerza al usuario a redirigirse a la página de login si es que no se encuentra loggeado. Abre `app/controllers/application_controller.rb` y agrega:
+Finally, force the user to redirect to the login page if the user was not logged in. Open up `app/controllers/application_controller.rb` and add:
 
 {% highlight ruby %}
   before_action :authenticate_user!
 {% endhighlight %}
 
-después `protect_from_forgery with: :exception`.
+after `protect_from_forgery with: :exception`.
 
-Abre tu navegador y prueba iniciando y cerrando una sesión.
+Open your browser and try logging in and out from.
 
-**Coach:** Hable acerca del `user_signed_in?` y `current_user` helpers. ¿Por qué son útiles?
+**Coach:** Talk about the `user_signed_in?` and `current_user` helpers. Why are they useful?
 
-## ¿Qué sigue?
+## What next?
 
-* Agregar campos extra para el modelo User(usuario)
-* Agregar relación entre usuarios e ideas
-* Restringir que los usuarios solo puedan editar sus propias ideas
-* Expandir para crear roles o permisos (use una de las más populares gemas de autorización como CanCan)
+* Add extra fields to the User model
+* Add relationships between users and ideas
+* Restrict users to only be able to edit their own ideas and delete their own comments
+* Expand to use roles or permissions (use one of the popular authorization gem like CanCan)
+
+
