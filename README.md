@@ -34,7 +34,7 @@ If you aren't editing the code blocks, you can safely ignore this. If you want p
 ### Run jekyll
 
 ```
-$ jekyll server --watch
+$ bundle exec jekyll server --watch
 ```
 
 ### Styling
