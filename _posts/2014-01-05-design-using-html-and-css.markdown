@@ -37,7 +37,7 @@ permalink: design-html-css
 
 2.Design your table
 
- + We simply use the twitter [Bootstrap](http://www.bootcss.com/) to
+ + We simply use the twitter [Bootstrap](http://getbootstrap.com/) to
    polish our table. Find this line from
    app/views/ideas/index.html.erb and replace:
 
