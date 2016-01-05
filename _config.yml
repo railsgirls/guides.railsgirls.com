@@ -1,5 +1,5 @@
 permalink: pretty
-markdown: kramdown
+#markdown: kramdown
 exclude:
   - ".rvmrc"
   - ".rbenv-version"
