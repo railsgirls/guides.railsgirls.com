@@ -256,8 +256,6 @@ bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/
 
 Make sure that all works well by running the application generator command.
 
-Make sure that all works well by running the application generator command.
-
 {% highlight sh %}
 rails new railsgirls
 cd railsgirls
