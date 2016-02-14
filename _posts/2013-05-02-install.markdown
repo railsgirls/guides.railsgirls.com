@@ -289,13 +289,6 @@ Instead of installing all tools on your machine, you can also set up a developme
 
 Instead of installing Ruby on Rails and an editor on your computer, you can use a webservice for development. All you need is a browser and an internet connection. This guide explains how to get started with [nitrous.io](https://nitrous.io). If you're using a different service, they may use a different wording - e.g. 'workspace' instead of 'box', but the process is usually pretty similar.
 
-**Organizer:** Nitrous is a paid service, but free for community usage purpose. Please contact Nitrous <pro [at] nitrous.io> to request a community account with the following list/information.
-
-- Email address of the people you need workspaces for (= email list of members)
-- How long they would need to use Nitrous
-- Starting from date/time
-- How long (days, weeks etc.) you need access
-
 ### *1.* Update your browser
 
 If you use Internet Explorer, we recommend installing [Firefox](mozilla.org/firefox) or [Google Chrome](google.com/chrome).
