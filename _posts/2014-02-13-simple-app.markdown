@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Simpler Rails Girls App Tutorial
-permalink: simpleapp
+permalink: simpleapp/
 ---
 
 # Rails Girls App Tutorial

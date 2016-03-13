@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Guides
-permalink: coach
+permalink: coach/
 ---
 
 # Being a Rails Girls coach

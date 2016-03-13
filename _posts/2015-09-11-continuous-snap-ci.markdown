@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Continuous Deployment - cuz less hassle
-permalink: continuous-snap-ci
+permalink: continuous-snap-ci/
 ---
 
 # Continuous Deployment with the Snap CI

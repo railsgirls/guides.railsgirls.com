@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Touristic Autism-friendly Spots App 
-permalink: touristic-autism_resource-rating
+title: Touristic Autism-friendly Spots App
+permalink: touristic-autism_resource-rating/
 ---
 
 # Resource Rating

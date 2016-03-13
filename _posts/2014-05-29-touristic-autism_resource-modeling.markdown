@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Touristic Autism-friendly Spots App 
-permalink: touristic-autism_resource-modeling
+title: Touristic Autism-friendly Spots App
+permalink: touristic-autism_resource-modeling/
 ---
 
 # Resource Modeling

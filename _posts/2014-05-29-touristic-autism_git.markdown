@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Touristic Autism-friendly Spots App 
-permalink: touristic-autism_git
+title: Touristic Autism-friendly Spots App
+permalink: touristic-autism_git/
 ---
 
 # Version Control with Git

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Rails Girls on Trucker
-permalink: trucker
+permalink: trucker/
 ---
 
 # Put Your App Online With Trucker.io

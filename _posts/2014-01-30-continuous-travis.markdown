@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Continuous Deployment - cuz less hassle
-permalink: continuous-travis
+permalink: continuous-travis/
 ---
 
 # Continuous Deployment with Travis

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Test Driven Development
-permalink: test-driven-development
+permalink: test-driven-development/
 ---
 
 # Test Driven Development

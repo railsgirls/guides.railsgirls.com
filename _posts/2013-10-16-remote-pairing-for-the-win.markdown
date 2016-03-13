@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Remote Pairing For the Win!
-permalink: remote
+permalink: remote/
 ---
 
 # Rails Girls Remote Pairing Tutorial

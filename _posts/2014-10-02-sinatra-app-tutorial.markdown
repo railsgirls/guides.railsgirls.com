@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Rails Girls Sinatra tutorial
-permalink: sinatra-app
+permalink: sinatra-app/
 ---
 
 # Create your first voting app with Sinatra

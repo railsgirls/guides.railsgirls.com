@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Rails Girls приложение със Sinatra
-permalink: sinatra-app-bg
+permalink: sinatra-app-bg/
 ---
 
 # Създайте сайт за гласуване със Sinatra

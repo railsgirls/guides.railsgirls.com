@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Coffee List Display
-permalink: sinatra-html
+permalink: sinatra-html/
 ---
 
 *Created by Tim McEwan, [@tjmcewan](https://twitter.com/tjmcewan)*

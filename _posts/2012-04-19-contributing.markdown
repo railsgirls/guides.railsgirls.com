@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Contributing a Guide
-permalink: contributing
+permalink: contributing/
 ---
 
 # Contributing a Guide

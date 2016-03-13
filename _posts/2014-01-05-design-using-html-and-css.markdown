@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Add design to your App with HTML and CSS
-permalink: design-html-css
+permalink: design-html-css/
 ---
 
 1.Design your header

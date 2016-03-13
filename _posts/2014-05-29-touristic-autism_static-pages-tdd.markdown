@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Touristic Autism-friendly Spots App 
-permalink: touristic-autism_static-pages-tdd
+title: Touristic Autism-friendly Spots App
+permalink: touristic-autism_static-pages-tdd/
 ---
 
 # Test-Driven Development

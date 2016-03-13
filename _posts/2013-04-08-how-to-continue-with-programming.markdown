@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "After The Event: How To Continue With Programming"
-permalink: how-to-continue-with-programming
+permalink: how-to-continue-with-programming/
 ---
 
 # After The Event: How To Continue With Programming

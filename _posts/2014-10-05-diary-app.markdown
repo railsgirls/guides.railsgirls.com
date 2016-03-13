@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Rails Girls Diary tutorial
-permalink: diary-app
+permalink: diary-app/
 ---
 
 # Create your first diary app with Ruby on Rails

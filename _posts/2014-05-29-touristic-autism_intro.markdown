@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Touristic Autism-friendly Spots App
-permalink: touristic-autism_intro
+permalink: touristic-autism_intro/
 ---
 
 # Rails Girls Touristic Autism-friendly Spots App Tutorial
