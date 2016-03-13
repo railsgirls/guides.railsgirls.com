@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Continuous Deployment - cuz less hassle
-permalink: continuous/
+permalink: continuous
 ---
 
 # Continuous Deployment with the Codeship

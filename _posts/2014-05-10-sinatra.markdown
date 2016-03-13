@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Web Fundamentals Tutorial
-permalink: sinatra/
+permalink: sinatra
 ---
 
 *Created by Tim McEwan, [@tjmcewan](https://twitter.com/tjmcewan)*

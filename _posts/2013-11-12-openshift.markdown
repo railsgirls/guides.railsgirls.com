@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Rails Girls on OpenShift
-permalink: openshift/
+permalink: openshift
 ---
 
 # Put Your App Online With OpenShift

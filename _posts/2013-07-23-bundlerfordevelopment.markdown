@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Bundler for development
-permalink: bundlerfordevelopment/
+permalink: bundlerfordevelopment
 ---
 
 # How to Set Up Bundler for Development

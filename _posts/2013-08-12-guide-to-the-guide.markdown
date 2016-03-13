@@ -1,7 +1,7 @@
 ---
 layout: default
 title: The Guide to the Guide
-permalink: guide-to-the-guide/
+permalink: guide-to-the-guide
 ---
 
 # Your guide to the Rails Girls Guide!

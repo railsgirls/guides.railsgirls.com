@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Write a little game in Ruby!
-permalink: ruby-game/
+permalink: ruby-game
 ---
 
 # Write a little game in Ruby!

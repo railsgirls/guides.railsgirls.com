@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Show thumbnails when listing ideas
-permalink: thumbnails/
+permalink: thumbnails
 ---
 
 # Create thumbnails with Carrierwave

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Commenting functionality for the Rails Girls app
-permalink: commenting/
+permalink: commenting
 ---
 # Commenting for Rails Girls App
 *Created by Janika Liiv, [@janikaliiv](https://twitter.com/janikaliiv)*

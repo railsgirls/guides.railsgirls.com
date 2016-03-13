@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Touristic Autism-friendly Spots App
-permalink: touristic-autism_continuous-deployment/
+title: Touristic Autism-friendly Spots App 
+permalink: touristic-autism_continuous-deployment
 ---
 
 # Continuous Deployment

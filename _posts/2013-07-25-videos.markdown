@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Rails Girls on video
-permalink: videos/
+permalink: videos
 ---
 
 # Rails Girls Happiness All Around the World

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Touristic Autism-friendly Spots App
-permalink: touristic-autism_google-map/
+title: Touristic Autism-friendly Spots App 
+permalink: touristic-autism_google-map
 ---
 
 # Show All Places in a Google Map

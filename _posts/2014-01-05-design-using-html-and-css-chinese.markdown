@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 使用HTML和CSS美化你的应用
-permalink: design-html-css-chinese/
+permalink: design-html-css-chinese
 ---
 
 1.美化header样式

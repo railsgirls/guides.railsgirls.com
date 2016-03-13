@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Touristic Autism-friendly Spots App
-permalink: touristic-autism_image-upload/
+title: Touristic Autism-friendly Spots App 
+permalink: touristic-autism_image-upload
 ---
 
 # Image Upload and Thumbnails

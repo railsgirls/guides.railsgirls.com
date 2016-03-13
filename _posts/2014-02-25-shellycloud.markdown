@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Put your app online with Shelly Cloud
-permalink: shellycloud/
+permalink: shellycloud
 ---
 
 # Put your app online with Shelly Cloud

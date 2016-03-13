@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Add design using HTML & CSS
-permalink: design/
+permalink: design
 ---
 
 # Add design using HTML & CSS
