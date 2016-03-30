@@ -183,7 +183,7 @@ Check your version of rubygems
 gem -v
 {% endhighlight %}
 
-Make sure it is higher than `2.2.3`. Re-run the command that was failing previously.
+Make sure it is equal or higher than `2.2.3`. Re-run the command that was failing previously.
 
 
 ### 'x64_mingw' is not a valid platform` Error
