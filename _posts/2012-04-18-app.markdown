@@ -418,7 +418,7 @@ Now you can open the file `app/views/pages/info.html.erb` and add information ab
 * Guide 2: [Put your app online with Heroku by Terence Lee](/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift) / [Put your app online with Shelly Cloud](/shellycloud) / [Put your app online with anynines](/anynines) / [Put your app online with Trucker.io](/trucker)
 * Guide 3: [Create thumbnail images for the uploads by Miha Filej](/thumbnails)
 * Guide 4: [Add design using HTML &amp; CSS by Alex Liao](/design)
-* Guide 5: [Add Authentication (user accounts) with Devise by Piotr Steininger](/devise/)
+* Guide 5: [Add Authentication (user accounts) with Devise by Piotr Steininger](/devise)
 * Guide 6: [Adding profile pictures with Gravatar](/gravatar)
 * Guide 7: [Test your app with RSpec](/testing-rspec)
 * Guide 8: [Continuous Deployment with Travis-CI](/continuous-travis) / [Continuous Deployment with Codeship](/continuous) / [Continuous Deployment with Snap CI](/continuous-snap-ci)
