@@ -25,16 +25,14 @@ The basic guides that have been merged and adapted are the [Ruby on Rails Tutori
 ### [*0.*Installation](/install)
 
 **Make sure you have Rails and Git installed.** [**Follow the installation guide**](/install), the [**Installing Git section of Pro Git**](http://www.git-scm.com/book/en/Getting-Started-Installing-Git) to get set up. Then configure GitHub by typing the following in your terminal:
-<div class="os-specific">
-  <div class="nix">
+
 {% highlight sh %}
 $ git config --global user.name "Your Name"
 $ git config --global user.email your.email@example.com
 {% endhighlight %}
 
-    <div>
 <p>one-time setup steps for GitHub.</p>
-    </div>
+
 Sign up for a [free GitHub account](https://github.com/signup/free) if you don’t have one already.
 
 
