@@ -244,6 +244,7 @@ To install the Ruby on Rails development environment you just need to copy the l
 #### For Ubuntu:
 
 {% highlight sh %}
+sudo apt-get install curl
 bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
 {% endhighlight %}
 
