@@ -59,7 +59,7 @@ Sign up for a [free GitHub account](https://github.com/signup/free) if you donâ€
 
 ## Additional Guides
 
-* Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](https://github.com/PragTob/rails-beginner-cheatsheet)
+* Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
 * Guide 1: [Put your app online with Heroku by Terence Lee](/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift) / [Put your app online with anynines](/anynines) / [Put your app online with Trucker.io](/trucker)
 * Guide 2: [Adding profile pictures with Gravatar](/gravatar)
 * Guide 3: [Go through additional explanations for the App by Lucy Bain](https://github.com/lbain/railsgirls)
