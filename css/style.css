@@ -205,10 +205,7 @@ footer a {
   padding: 20px 320px 20px 0;
   background: url(../images/guides-hero.png) right 80px no-repeat;
 }
-.highlight {
-  margin-left: 40px;
-}
-/* Icons for the guide */
+
 i.icon-text-editor, i.icon-prompt, i.icon-browser {
   background-position: 0 0;
   display: inline-block;
@@ -229,11 +226,24 @@ i.icon-prompt{
 i.icon-browser {
   background-image: url("/images/icon-browser.png");
 }
+/* The code lines are quite long.
+   Mobilize a lot of horizontal space for small screens: */
+@media (max-width: 1200px) {
+  figure.highlight {
+    margin: 0pt 0pt 15pt 0pt;
+  }
+}
+@media(min-width: 1200px) {
+  figure.highlight {
+    margin: 0pt 40pt 25pt 0pt;
+  }
+}
+
 i.icon-small-text-editor, i.icon-small-prompt, i.icon-small-browser {
   background-position: 0 0;
-  display: inline-block;
   margin-left: 0px;
-  float: left;
+  margin-top: 15px;
+  display: block;
   width: 50px;
   height: 20px;
   line-height: 20px;
