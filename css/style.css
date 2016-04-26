@@ -226,17 +226,17 @@ i.icon-prompt{
 i.icon-browser {
   background-image: url("/images/icon-browser.png");
 }
-/* The code lines are quite long.
-   Mobilize a lot of horizontal space for small screens: */
-@media (max-width: 1200px) {
-  figure.highlight {
-    margin: 0pt 0pt 15pt 0pt;
-  }
+
+.highlight {
+  margin-left: 30px;
 }
-@media(min-width: 1200px) {
-  figure.highlight {
-    margin: 0pt 40pt 25pt 0pt;
-  }
+
+.highlight pre {
+  overflow-x: auto;
+}
+
+.highlight pre code {
+  white-space: pre;
 }
 
 i.icon-small-text-editor, i.icon-small-prompt, i.icon-small-browser {
@@ -247,6 +247,7 @@ i.icon-small-text-editor, i.icon-small-prompt, i.icon-small-browser {
   width: 50px;
   height: 20px;
   line-height: 20px;
+  float: left;
 }
 i.icon-small-text-editor {
   background-image: url("/images/icon-small-text-editor.png");
