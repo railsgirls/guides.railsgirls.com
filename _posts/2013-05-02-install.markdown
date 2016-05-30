@@ -82,7 +82,7 @@ rbenv global 2.2.3
 #### *3a6.* Install rails:
 
 {% highlight sh %}
-gem i rails --no-ri --no-rdoc
+gem i rails --no-document
 {% endhighlight %}
 
 ### *3b.* If your OS X version is 10.6, 10.7, or 10.8:
@@ -96,7 +96,7 @@ Double click the downloaded file and it will unpack it into the current director
 If the Rails version wasn't the latest, you could update it using a following command on terminal.
 
 {% highlight sh %}
-gem update rails --no-ri --no-rdoc
+gem update rails --no-document
 {% endhighlight %}
 
 Make sure that all works well by running the application generator command.
@@ -137,7 +137,7 @@ rails -v
 If the Rails version is less than 4, update it using a following command:
 
 {% highlight sh %}
-gem update rails --no-ri --no-rdoc
+gem update rails --no-document
 {% endhighlight %}
 
 Make sure that all works well by running the application generator command.
@@ -173,7 +173,7 @@ First download the [ruby-gems-update gem](https://github.com/rubygems/rubygems/r
 
 {% highlight sh %}
 gem install --local c:\\rubygems-update-2.2.3.gem
-update_rubygems --no-ri --no-rdoc
+update_rubygems --no-document
 gem uninstall rubygems-update -x
 {% endhighlight %}
 
