@@ -28,7 +28,7 @@ Click the Apple menu and choose *About this Mac*.
 ![Apple menu](/images/1.png "Apple menu")
 
 ### *2.* In the window you will find the version of your operating system.
-If your version number starts with 10.6, 10.7, 10.8, 10.9 or 10.10 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
+If your version number starts with 10.6, 10.7, 10.8, 10.9, 10.10 or 10.11 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
 
 ![About this Mac dialog](/images/2.png "About this Mac dialog")
 
