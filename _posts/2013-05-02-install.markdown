@@ -105,6 +105,38 @@ Make sure that all works well by running the application generator command.
 rails new myapp
 {% endhighlight %}
 
+### *3c.* If your OS X version is 10.10:
+
+Mac OS X comes with a “system Ruby” pre-installed. Mac OS X Yosemite includes Ruby 2.0.0p481 which is not the newest version. You should update to Ruby 2.1.3 by using [RVM](https://rvm.io/), the Ruby Version Manager. First install RVM:
+
+{% highlight sh %}
+\curl -L https://get.rvm.io | bash -s stable --ruby
+{% endhighlight %}
+
+The ```--ruby``` flag will install the newest version of Ruby.
+
+Check for [the current version of Rails](http://rubygems.org/gems/rails).
+
+Now normally, you'd install Rails into what's called *the global gemset*. Instead, we'll make a gemset just for the current stable release:
+
+{% highlight sh %}
+rvm use ruby-2.1.3@rails4.1 --create
+{% endhighlight %}
+
+And then, if you want the most recent stable release for your project:
+
+{% highlight sh %}
+gem install rails
+{% endhighlight %}
+
+Run
+
+{% highlight sh %}
+$ rails -v
+{% endhighlight %}
+
+... to check if you are actually using the most current Rails version.
+
 ### *4.* Install a text editor to edit code files
 
 For the workshop we recommend the text editor Atom.
