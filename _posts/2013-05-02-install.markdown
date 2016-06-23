@@ -82,7 +82,7 @@ rbenv global 2.2.5
 #### *3a6.* Install rails:
 
 {% highlight sh %}
-gem i rails --no-document
+gem install rails --no-document
 {% endhighlight %}
 
 ### *3b.* If your OS X version is 10.6, 10.7, or 10.8:
