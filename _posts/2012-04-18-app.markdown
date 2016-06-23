@@ -188,9 +188,6 @@ Open <http://localhost:3000/ideas> in your browser. Cloud service (e.g. nitrous)
 
 Click around and test what you got by running these few command-line commands.
 
-Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> to quit the server again when you've clicked around a little.
-
-
 ## *3.*Design
 
 **Coach:** Talk about the relationship between HTML and Rails. What part of views is HTML and what is Embedded Ruby (ERB)? What is MVC and how does this relate to it? (Models and controllers are responsible for generating the HTML views.)
