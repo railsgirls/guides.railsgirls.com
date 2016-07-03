@@ -34,7 +34,7 @@ If your version number starts with 10.6, 10.7, 10.8, 10.9, 10.10 or 10.11 this g
 
 ### *3a.* If your OS X version is 10.9 or higher:
 
-If your version number starts with 10.9 or 10.10, follow these steps. We are installing homebrew and rbenv.
+If your version number starts with 10.9, 10.10 or 10.11, follow these steps. We are installing homebrew and rbenv.
 
 #### *3a1.* Install Command line tools on terminal:
 
@@ -134,7 +134,7 @@ Open `Command Prompt with Ruby on Rails` and run the following command:
 rails -v
 {% endhighlight %}
 
-If the Rails version is less than 4, update it using a following command:
+If the Rails version is less than 5, update it using a following command:
 
 {% highlight sh %}
 gem update rails --no-document
