@@ -168,21 +168,10 @@ rails generate scaffold idea name:string description:text picture:string
 
 The scaffold creates new files in your project directory, but to get it to work properly we need to run a couple of other commands to update our database and restart the server.
 
-<div class="os-specific">
-  <div class="nix">
 {% highlight sh %}
-bin/rake db:migrate
+rails db:migrate
 rails server
 {% endhighlight %}
-  </div>
-
-  <div class="win">
-{% highlight sh %}
-ruby bin/rake db:migrate
-rails server
-{% endhighlight %}
-  </div>
-</div>
 
 Open <http://localhost:3000/ideas> in your browser. Cloud service (e.g. nitrous) users need to append '/ideas' to their preview url instead (see [installation guide](/install#using-a-cloud-service)).
 
@@ -312,7 +301,7 @@ This is needed for the app to load the added library.
 Open `app/models/idea.rb` and under the line
 
 {% highlight ruby %}
-class Idea < ActiveRecord::Base
+class Idea < ApplicationRecord
 {% endhighlight %}
 
 add
@@ -338,13 +327,13 @@ Sometimes, you might get an *TypeError: can't cast ActionDispatch::Http::Uploade
 If this happens, in file `app/views/ideas/_form.html.erb` change the line
 
 {% highlight erb %}
-<%= form_for(@idea) do |f| %>
+<%= form_for(idea) do |f| %>
 {% endhighlight %}
 
 to
 
 {% highlight erb %}
-<%= form_for @idea, :html => {:multipart => true} do |f| %>
+<%= form_for(idea, html: {multipart: true}) do |f| %>
 {% endhighlight %}
 
 In your browser, add new idea with a picture. When you upload a picture it doesn't look nice because it only shows a path to the file, so let's fix that.
@@ -358,7 +347,7 @@ Open `app/views/ideas/show.html.erb` and change
 to
 
 {% highlight erb %}
-<%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
+<%= image_tag(@idea.picture_url, width: 600) if @idea.picture.present? %>
 {% endhighlight %}
 
 Now refresh your browser to see what changed.
@@ -373,7 +362,7 @@ Open <http://localhost:3000> (or your preview url, if you are using a cloud serv
 Open `config/routes.rb` and after the first line add
 
 {% highlight ruby %}
-root :to => redirect('/ideas')
+root to: redirect('/ideas')
 {% endhighlight %}
 
 Test the change by opening the root path (that is, <http://localhost:3000/> or your preview url) in your browser.
