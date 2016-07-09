@@ -197,7 +197,7 @@ The app doesn't look very nice yet. Let's do something about that. We'll use the
 Open `app/views/layouts/application.html.erb` in your text editor and above the line
 
 {% highlight erb %}
-<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 {% endhighlight %}
 
 add
