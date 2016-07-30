@@ -229,8 +229,8 @@ Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you do
 This is not strictly necessary, but it avoids a problem with and `ExecJS::RuntimeError` that might
 occur later  ([see stackoverflow](https://stackoverflow.com/questions/12520456/execjsruntimeerror-on-windows-trying-to-follow-rubytutorial)).
 
-* Go to [https://nodejs.org/](https://nodejs.org/) and install node
-* For windows users: reopen your Rails Command Shell
+* Go to [https://nodejs.org/](https://nodejs.org/) and install node LTS package
+* Reopen your Rails Command Shell
 
 Check your version of node
 
@@ -238,7 +238,7 @@ Check your version of node
 node --version
 {% endhighlight %}
 
-Make sure it is higher than `0.12`.
+Make sure it is displaying version number.
 
 <hr />
 
