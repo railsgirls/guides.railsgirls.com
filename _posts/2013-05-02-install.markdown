@@ -126,7 +126,17 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 ### *1.* Install Rails
 
-Download [RailsInstaller](https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.1.0.exe) and run it. Click through the installer using the default options.
+Download [RailsInstaller](https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.2.0.exe) and run it. Click through the installer using the default options.
+
+Open `Command Prompt with Ruby on Rails` and run the following commands to solve a problem in RailsInstaller3.2.0.
+
+**Coach:** There is a bug that occurs "No such file or directory" error when use the `rails` command in RailsInstaller3.2.0. This is occured by incorrect pathes problems in rails.bat and bundle.bat. We can fix the problem copying rake.bat to rails.bat and bundle.bat. ([github issue page](https://github.com/railsinstaller/railsinstaller-windows/issues/76))
+
+{% highlight sh %}
+cd C:\RailsInstaller\Ruby2.2.0\bin
+copy rake.bat rails.bat
+copy rake.bat bundle.bat
+{% endhighlight %}
 
 Open `Command Prompt with Ruby on Rails` and run the following command:
 
