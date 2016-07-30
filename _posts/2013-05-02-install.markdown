@@ -150,12 +150,6 @@ If the Rails version is less than 5, update it using a following command:
 gem update rails --no-document
 {% endhighlight %}
 
-Make sure that all works well by running the application generator command.
-
-{% highlight sh %}
-rails new myapp
-{% endhighlight %}
-
 ## Possible errors
 
 ### Gem::RemoteFetcher error
@@ -216,8 +210,6 @@ For the workshop we recommend the text editor Atom.
 
 If you are using Windows Vista or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2).
 
-Now you should have a working Ruby on Rails programming setup. Congrats!
-
 ### *3.* Update your browser
 
 If you use Internet Explorer, we recommend installing [Firefox](mozilla.org/firefox) or [Google Chrome](google.com/chrome).
@@ -239,6 +231,22 @@ node --version
 {% endhighlight %}
 
 Make sure it is displaying version number.
+
+### *5.* Check the environment
+
+Make sure that all works well by running the application generator command.
+
+{% highlight sh %}
+rails new myapp
+cd myapp
+rails server
+{% endhighlight %}
+
+Access to `http://localhost:3000` on browser, and you can see the 'Yay! You're on Rails!' page.
+
+Now you should have a working Ruby on Rails programming setup. Congrats!
+
+**Coach:** We recommend to check using a scaffold command and registing data in generated page by coaches, because we would get `ExecJS::RuntimeError` sometimes.
 
 <hr />
 
