@@ -130,7 +130,7 @@ Download [RailsInstaller](https://s3.amazonaws.com/railsinstaller/Windows/railsi
 
 Open `Command Prompt with Ruby on Rails` and run the following commands to solve a problem in RailsInstaller3.2.0.
 
-**Coach:** There is a bug that occurs "No such file or directory" error when use the `rails` command in RailsInstaller3.2.0. This is occured by incorrect pathes problems in rails.bat and bundle.bat. We can fix the problem copying rake.bat to rails.bat and bundle.bat. ([github issue page](https://github.com/railsinstaller/railsinstaller-windows/issues/76))
+**Coach:** There is a bug that occurs "No such file or directory" error when using the `rails` command in RailsInstaller3.2.0. This is occured by problem with incorrect paths in `rails.bat` and `bundle.bat`. We can fix the problem copying `rake.bat` to `rails.bat` and `bundle.bat`. ([github issue page](https://github.com/railsinstaller/railsinstaller-windows/issues/76))
 
 {% highlight sh %}
 cd C:\RailsInstaller\Ruby2.2.0\bin
@@ -234,7 +234,7 @@ Make sure it is displaying version number.
 
 ### *5.* Check the environment
 
-Make sure that all works well by running the application generator command.
+Check that everything is working by running the application generator command.
 
 {% highlight sh %}
 rails new myapp
@@ -242,11 +242,11 @@ cd myapp
 rails server
 {% endhighlight %}
 
-Access to `http://localhost:3000` on browser, and you can see the 'Yay! You're on Rails!' page.
+Go to `http://localhost:3000` in your browser, and you should see the 'Yay! You're on Rails!' page.
 
 Now you should have a working Ruby on Rails programming setup. Congrats!
 
-**Coach:** We recommend to check using a scaffold command and registing data in generated page by coaches, because we would get `ExecJS::RuntimeError` sometimes.
+**Coach:** We recommend to verify by using the scaffold command and inputting data with the generated page with coaches to avoid ensure everything is working.
 
 <hr />
 
