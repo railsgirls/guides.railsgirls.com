@@ -169,7 +169,7 @@ rails generate scaffold idea name:string description:text picture:string
 The scaffold creates new files in your project directory, but to get it to work properly we need to run a couple of other commands to update our database and restart the server.
 
 {% highlight sh %}
-rails db:migrate
+rake db:migrate
 rails server
 {% endhighlight %}
 
