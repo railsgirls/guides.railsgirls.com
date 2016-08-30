@@ -407,3 +407,4 @@ Now you can open the file `app/views/pages/info.html.erb` and add information ab
 * Guide 7: [Test your app with RSpec](/testing-rspec)
 * Guide 8: [Continuous Deployment with Travis-CI](/continuous-travis) / [Continuous Deployment with Codeship](/continuous) / [Continuous Deployment with Snap CI](/continuous-snap-ci)
 * Guide 9: [Go through additional explanations for the App by Lucy Bain](https://github.com/lbain/railsgirls)
+* Guide 10: [Adding a back-end with Active Admin](/backend-with-active-admin)
