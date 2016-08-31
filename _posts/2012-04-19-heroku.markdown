@@ -12,7 +12,7 @@ permalink: heroku
 
 Follow steps "Introduction" and "Set up" of the
 [Getting Started on Heroku with Ruby][heroku-guide] to sign up, install the
-Heroku toolbelt, and login.
+Heroku CLI, and login.
 
 __COACH__: Talk about the benefits of deploying to Heroku vs traditional servers.
 
