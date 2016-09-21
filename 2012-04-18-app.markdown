@@ -353,7 +353,7 @@ Dê um "refresh" no navegador e constate a renderização da imagem.
 **Coach:** Fale um pouco sobre marcação HTML.
 
 
-## *5.*Acertos finais nos caminhos
+## *5.*Acertos finais nas rotas
 
 Abra <http://localhost:3000> (ou o preview da url, caso você esteja usando um serviço na nuvem). Ainda é mostrada a página "Welcome aboard". Vamos fazer o redirecionamento para a página ideas da app.
 
@@ -365,7 +365,7 @@ root to: redirect('/ideas')
 
 Teste as alterações feitas abrindo o caminho para a raiz da app (ou seja, <http://localhost:3000/> ou o preview da url) no seu navegador.
 
-**Coach:** Fale sobre caminhos e os detalhes na ordenação dos caminhos e seus relacionamentos com arquivos estáticos.
+**Coach:** Fale sobre rotas e os detalhes na ordenação das rotas e seus relacionamentos com arquivos estáticos.
 
 ## Criando uma página estática na sua app
 

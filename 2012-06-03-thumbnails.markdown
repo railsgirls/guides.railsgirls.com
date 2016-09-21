@@ -8,8 +8,7 @@ permalink: thumbnails
 
 *Criado por Miha Filej, [@mfilej](https://twitter.com/mfilej)*
 
-__Coach__:Explicar qual o efeito de se definir a largura de uma imagem na marcação HTML como explicado no passo 4
- e qual a diferença para o redimensionamento de imagem no servidor.
+__Coach__: Explicar qual o efeito de se definir a largura de uma imagem na marcação HTML como explicado no final do passo 4, constante do tutorial *Tutorial para criação da app Rails Girls*.
 
 ## *1.*Instalando ImageMagick
 
