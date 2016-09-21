@@ -1,56 +1,54 @@
 ---
 layout: default
-title: Rails Girls App Tutorial
+title: Tutorial para criação da app Rails Girls
 permalink: app
 ---
 
-# Rails Girls App Tutorial
+# Tutorial para criação da app Rails Girls 
 
-*Created by Vesa Vänskä, [@vesan](https://twitter.com/vesan)*
+*Criado por Vesa Vänskä, [@vesan](https://twitter.com/vesan)*
 
-**Make sure you have Rails installed.** [**Follow the installation guide**](/install) to get set up.
+**Você deverá ter Rails instalado. ** [** Consulte o guia de instalação se você ainda não instalou.**](/install).
 
 
-## Get to know the tools
+## Conhecendo as ferramentas
 
 <div class="indent" markdown="1">
 
 <h3><i class="icon-text-editor">&nbsp;</i></h3>
 
-### Text Editor
+### Editor de texto
 
-* [Atom](https://atom.io/), [Sublime Text](http://www.sublimetext.com),  Vim and Emacs are examples of text editors your can use for writing code and editing files.
+* [Atom](https://atom.io/), [Sublime Text](http://www.sublimetext.com),  Vim e Emacs são alguns dos editores de texto que você poderá usar para escrever códigos e editar arquivos.
 
 <h3><i class="icon-prompt">&nbsp;</i></h3>
 
-### Terminal (known as Command Prompt on Windows)
-
-* Where you start the rails server and run commands.
+### Terminal (conhecido como Command Prompt em Windows): é a interface * onde você vai iniciar o servidor rails e executar comandos.
 
 <h3><i class="icon-browser">&nbsp;</i></h3>
 
-### Web browser
+### Navegador web
 
-* (Firefox, Safari, Chrome) for viewing your application.
+* (Firefox, Safari, Chrome) usados para visualizar sua aplicação.
 
 </div>
 
-### Important
+### Importante
 
-It is important that you select the instructions specific to your operating system - the commands you need to run on a Windows computer are slightly different to Mac or Linux. If you're having trouble check the Operating System switcher at the bottom of the commands. In case you're using a cloud service (e.g. nitrous), you need to run the Linux commands even if you are on a Windows computer.
+É importante que você conheça a sintaxe de comandos específica para seu Sistema Operacional - os comandos a executar em computadores rodando Windows podem apresentar pequenas diferenças sintáticas em relação àqueles usados em ambientes Mac ou Linux.  Se você não estiver seguro com a sintaxe dos comandos use o link para o sistema operacional, link este localizado  após os comandos mostrados neste tutorial. Se você estiver usando um serviço na nuvem  (por exemplo: nitrous), você deverá executar os comandos conforme a sintaxe Linux ainda que esteja em ambiente Windows.
 
-## *1.*Creating the application
+## *1.*Criando a aplicação
 
-We're going to create a new Rails app called *railsgirls*.
+Vamos criar uma app Rails a partir do zero denominada *railsgirls*.
 
-First, let's open a terminal:
+Comecemos abrindo o Terminal:
 
-* Mac OS X: Open Spotlight, type *Terminal* and click the *Terminal* application.
-* Windows: Click Start and look for *Command Prompt*, then click *Command Prompt with Ruby on Rails*.
-* Linux (Ubuntu/Fedora): Search for *Terminal* on the dash and click *Terminal*.
-* Cloud service (e.g. nitrous): Log in to your account, start your box and switch to its IDE (see [installation guide](/install#using-a-cloud-service) for details). The terminal is usually at the bottom of your browser window.
+* Mac OS X: Abra Spotlight, digite *Terminal* e clique na aplicação *Terminal*.
+* Windows: Clique Start e procure *Command Prompt*, clique em *Command Prompt with Ruby on Rails*.
+* Linux (Ubuntu/Fedora): Procure por *Terminal* no dash e clique *Terminal*.
+* Serviço na nuvem (por exemplo: nitrous): Faça login na sua conta, inicie sua interface e vá para a IDE (ver [installation guide](/install#using-a-cloud-service) para detalhes). Em geral o terminal está localizado na parte inferior da janela do navegador.
 
-Next, type these commands in the terminal:
+Em seguida digite no terminal os comandos mostrados a seguir :
 
 <div class="os-specific">
   <div class="nix">
@@ -59,7 +57,7 @@ mkdir projects
 {% endhighlight %}
 
     <div>
-<p>You can verify that a directory named <code>projects</code> was created by running the list command: <code>ls</code>. You should see the <code>projects</code> directory in the output. Now you want to change the directory you are currently in to the <code>projects</code> folder by running:</p>
+<p>Rodando o comando  <code>ls</code> no terminal você poderá constatar que um diretório denominado  <code>projects</code> foi criado. Você verá o diretório <code>projects</code> na saida do terminal. A seguir você deverá ir para o diretório  <code>projects</code> executando o seguinte comando:</p>
     </div>
 
 {% highlight sh %}
@@ -67,7 +65,7 @@ cd projects
 {% endhighlight %}
 
     <div>
-<p>You can verify you are now in an empty directory or folder by again running the <code>ls</code> command. Now you want to create a new app called <code>railsgirls</code> by running:</p>
+<p>Verifique se você está em um diretório vazio executando novamente o comando  <code>ls</code>. Vamos criar nossa nova app denominada  <code>railsgirls</code> executando o seguinte comando:</p>
     </div>
 
 {% highlight sh %}
@@ -75,7 +73,7 @@ rails new railsgirls
 {% endhighlight %}
 
     <div>
-<p>This will create a new app in the folder <code>railsgirls</code>, so we again want to change the directory to be inside of our rails app by running:</p>
+<p>Este comando criará a nova app no diretório <code>railsgirls</code>. Vamos novamente entrar no diretório recém criado executando o seguinte comando:</p>
     </div>
 
 {% highlight sh %}
@@ -83,7 +81,7 @@ cd railsgirls
 {% endhighlight %}
 
     <div>
-<p>If you run <code>ls</code> inside of the directory you should see folders such as <code>app</code> and <code>config</code>. You can then start the rails server by running:</p>
+<p>Se você executar o comando <code>ls</code> neste diretório verá que foram criadas pastas, tais como, <code>app</code> e <code>config</code>. Agora podermos iniciar o servidor  rails executando o seguinte comando:</p>
     </div>
 
 {% highlight sh %}
@@ -97,7 +95,7 @@ mkdir projects
 {% endhighlight %}
 
     <div>
-<p>You can verify that a directory named <code>projects</code> was created by running the list command: <code>dir</code>. You should see the <code>projects</code> directory in the output. Now you want to change the directory you are currently in to the <code>projects</code> folder by running:</p>
+<p>Execute o camando <code>dir</code> para listar diretórios e verifique que um diretório chamado <code>projects</code> foi criado. Você verá o diretório <code>projects</code> na saída do terminal. Vamos novamente entrar no diretório <code>projects</code> recém criado executando o seguinte comando:</p>
     </div>
 
 {% highlight sh %}
@@ -105,7 +103,7 @@ cd projects
 {% endhighlight %}
 
     <div>
-<p>You can verify you are now in an empty directory or folder by again running the <code>dir</code> command. Now you want to create a new app called <code>railsgirls</code> by running:</p>
+<p>Verifique que você está em um diretório vazio executando novamente o comando <code>dir</code>. Vamos criar nossa nova app denominada  <code>railsgirls</code> executando o seguinte comando:</p>
     </div>
 
 {% highlight sh %}
@@ -113,7 +111,7 @@ rails new railsgirls
 {% endhighlight %}
 
     <div>
-<p>This will create a new app in the folder <code>railsgirls</code>, so we again want to change the directory to be inside of our rails app by running:</p>
+<p>Este comando criará a nova app no diretório <code>railsgirls</code>. Vamos novamente entrar no diretório recém criado executando o seguinte comando:</p>
     </div>
 
 {% highlight sh %}
@@ -121,7 +119,7 @@ cd railsgirls
 {% endhighlight %}
 
     <div>
-<p>If you run <code>dir</code> inside of the directory you should see folders such as <code>app</code> and <code>config</code>. You can then start the rails server by running:</p>
+<p>Se você executar o comando <code>dir</code> neste diretório verá que foram criadas pastas, tais como, <code>app</code> e <code>config</code>. Agora podermos iniciar o servidor  rails executando o seguinte comando:</p>
     </div>
 
 {% highlight sh %}
@@ -130,11 +128,11 @@ rails server
   </div>
 </div>
 
-Open <http://localhost:3000> in your browser. If you are using a cloud service (e.g. nitrous), use its preview functionality instead (see [installation guide](/install#using-a-cloud-service) for details).
+Abra <http://localhost:3000> no navegador. Se você estiver usando um serviço na nuvem (por exemplo: nitrous), use a funcionalidade preview do serviço (ver [installation guide](/install#using-a-cloud-service) para detalhes).
 
-You should see "Welcome aboard" page, which means that the generation of your new app worked correctly.
+Se você ver a página denominada  "Welcome aboard" é porque tudo deu certo e sua nova app está funcionando corretamente.
 
-Notice in this window the command prompt is not visible because you are now in the Rails server, the command prompt looks like this:
+Notar que nesta nova janela o prompt de comando não é visível, pois você se encontra no servidor Rails e o prompt de comando tem o seguinte aspecto:
 
 <div class="os-specific">
   <div class="nix">
@@ -149,60 +147,61 @@ $
   </div>
 </div>
 
-When the command prompt is not visible you cannot execute new commands. If you try running `cd` or another command it will not work. To return to the normal command prompt:
+Quando o prompt de comando não é visível você não poderá executar comandos. Se você tentar executar o comando `cd` ou qualquer outro comando eles não terão efeito algum. Para parar o servidor e retornar ao prompt de comando normal:
 
-Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to quit the server.
+Pressione as teclas <kbd>Ctrl</kbd>+<kbd>C</kbd> no terminal para parar o servidor.
 
-**Coach:** Explain what each command does. What was generated? What does the server do?
+**Coach:**  Explicar a finalidade de cada comando. O que foi criado? O que o servidor fez?
 
 
-## *2.*Create Idea scaffold
+## *2.*Criar o Scaffold para Idea
 
-We're going to use Rails' scaffold functionality to generate a starting point that allows us to list, add, remove, edit, and view things; in our case ideas.
+Vamos usar uma funcionalidade do Rails denominada scaffold para criar um ponto de partida que nos permitirá listar, adicionar, remover, editar e ver as "coisas"; no nosso caso ideas.
 
-**Coach:** What is Rails scaffolding? (Explain the command, the model name and related database table, naming conventions, attributes and types, etc.) What are migrations and why do you need them?
+
+**Coach:** O que é Rails scaffolding? (Explicar o comando, o nome do modelo, as tabelas de banco de dados relacionadas, as convenções de nomes, atributos, tipos, etc.) O que é migração e porquê são necessárias?
 
 {% highlight sh %}
 rails generate scaffold idea name:string description:text picture:string
 {% endhighlight %}
 
-The scaffold creates new files in your project directory, but to get it to work properly we need to run a couple of other commands to update our database and restart the server.
+A funcionalidade scaffold cria novos arquivos no diretório do projeto, mas para que tudo funcione apropriadamente é necessário executar alguns comandos com a finalidade de atualizar o banco de dados e reiniciar o servidor.
 
 {% highlight sh %}
 rake db:migrate
 rails server
 {% endhighlight %}
 
-Open <http://localhost:3000/ideas> in your browser. Cloud service (e.g. nitrous) users need to append '/ideas' to their preview url instead (see [installation guide](/install#using-a-cloud-service)).
+Abra <http://localhost:3000/ideas> no navegador. Para serviços na nuvem (por exemplo: nitrous) acrescente '/ideas' na url do preview (ver [installation guide](/install#using-a-cloud-service)).
 
-Click around and test what you got by running these few command-line commands.
+Click around and test what you got by running these few command-line commands. (**precisa ser traduzido**)
 
 ## *3.*Design
 
-**Coach:** Talk about the relationship between HTML and Rails. What part of views is HTML and what is Embedded Ruby (ERB)? What is MVC and how does this relate to it? (Models and controllers are responsible for generating the HTML views.)
+**Coach:** Fale sobre o relacionamento entre HTML e Rails. Quais são as visualizações geradas por HTML e quais são as geradas por Embedded Ruby (ERB)? O que é MVC é como ele se relaciona no contexto? (Modelos e controllers são responsáveis por gerar visualizações com HTML.)
 
-The app doesn't look very nice yet. Let's do something about that. We'll use the Twitter Bootstrap project to give us nicer styling really easily.
+Nossa app apresenta um design bem pobre por enquanto. Vamos providenciar melhorias nesse visual. Vamos usar o projeto Twitter Bootstrap para estilizar de uma maneira fácil nossa app.
 
-Open `app/views/layouts/application.html.erb` in your text editor and above the line
+Abra `app/views/layouts/application.html.erb` no seu editor de texto e acima da linha:
 
 {% highlight erb %}
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 {% endhighlight %}
 
-add
+acrescente o seguinte:
 
 {% highlight erb %}
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.css">
 {% endhighlight %}
 
-and replace
+agora substitua
 
 {% highlight erb %}
 <%= yield %>
 {% endhighlight %}
 
-with
+por
 
 {% highlight erb %}
 <div class="container">
@@ -210,7 +209,7 @@ with
 </div>
 {% endhighlight %}
 
-Let's also add a navigation bar and footer to the layout. In the same file, under `<body>` add
+Vamos criar uma barra de navegação e um rodapé para nosso layout. No mesmo arquivo, logo após a tag de abertura `<body>` acrescente:
 
 {% highlight html %}
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -233,7 +232,7 @@ Let's also add a navigation bar and footer to the layout. In the same file, unde
 </nav>
 {% endhighlight %}
 
-and before `</body>` add
+antes da tag de fechamento `</body>` acrescente
 
 {% highlight html %}
 <footer>
@@ -244,7 +243,7 @@ and before `</body>` add
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.js"></script>
 {% endhighlight %}
 
-Now let's also change the styling of the ideas table. Open `app/assets/stylesheets/application.css` and at the bottom add
+Agora vamos alterar a estilização da tabela ideas. Abra `app/assets/stylesheets/application.css` e no final acrescente:
 
 {% highlight css %}
 body { padding-top: 100px; }
@@ -253,158 +252,156 @@ table, td, th { vertical-align: middle; border: none; }
 th { border-bottom: 1px solid #DDD; }
 {% endhighlight %}
 
-Now make sure you saved your files and refresh the browser to see what was changed. You can also change the HTML & CSS further.
+A seguir, após salvar os arquivos e dar um "refresh" no navegador observe as alterações no layout. Você poderá fazer outras modificações na marcação HTML e criar novas regras de estilização.   
 
-In case your Terminal shows you an error message that *sort of* implies there is something wrong with your JavaScript or CoffeeScript, install [nodejs](http://nodejs.org/download/). This issue should not appear when you've used the RailsInstaller (but when you've installed Rails via ```gem install rails```).
+Se o Terminal mostrar uma mensagem de erro informando que há algo errado com a JavaScript ou com CoffeeScript, instale [nodejs](http://nodejs.org/download/). Isto não deverá acontecer se você usou RailsInstaller (mas sim, quando você instalou Rails via ```gem install rails```).
 
-**Coach:** Talk a little about CSS and layouts.
+**Coach:** Fale um pouco sobre CSS e layouts.
 
+## *4.*Criando mecanismo para upload de imagens
 
-## *4.*Adding picture uploads
+Vamos instalar um software que nos permita fazer upload de imagens com Rails.
 
-We need to install a piece of software to let us upload files in Rails.
-
-Open `Gemfile` in the project directory using your text editor and under the line
+Abra `Gemfile` localizado no diretório do projeto e depois da linha:
 
 {% highlight ruby %}
 gem 'sqlite3'
 {% endhighlight %}
 
-add
+acrescente o seguinte:
 
 {% highlight ruby %}
 gem 'carrierwave'
 {% endhighlight %}
 
-**Coach:** Explain what libraries are and why they are useful. Describe what open source software is.
+**Coach:**Explique o que são bibliotecas e qual a sua utilidade. Fale um pouco sobre softwares de código aberto.
 
-Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to quit the server.
+Pressione as teclas <kbd>Ctrl</kbd>+<kbd>C</kbd> no terminal para parar o servidor.
 
-In the terminal run:
+Execute o seguinte comando no terminal:
 
 {% highlight sh %}
 bundle
 {% endhighlight %}
 
-Now we can generate the code for handling uploads. In the terminal run:
+Agora estamos em condições de gerar o código para gerenciar uploads. Execute o seguinte comando no terminal:
 
 {% highlight sh %}
 rails generate uploader Picture
 {% endhighlight %}
 
-Please start the rails server now.
+Inicie o servidor.
 
-Note: Some people might be using a second terminal to run the rails server continuously.
-If so you need to **restart the Rails server process** now.
-This is needed for the app to load the added library.
+Nota: Alguns preferem usar uma segunda instância do terminal para manter o servidor rails rodando continuamente.
+Se este for o seu caso é necessário **restartar o servidor Rails** agora.
+Isto é necessário para que a app carregue a biblioteca adicionada.
 
-Open `app/models/idea.rb` and under the line
+Abra `app/models/idea.rb` e depois da linha:
 
 {% highlight ruby %}
 class Idea < ApplicationRecord
 {% endhighlight %}
 
-add
+acrescente a seguinte linha:
 
 {% highlight ruby %}
 mount_uploader :picture, PictureUploader
 {% endhighlight %}
 
-Open `app/views/ideas/_form.html.erb` and change
+Abra `app/views/ideas/_form.html.erb` e substitua:
 
 {% highlight erb %}
 <%= f.text_field :picture %>
 {% endhighlight %}
 
-to
+por
 
 {% highlight erb %}
 <%= f.file_field :picture %>
 {% endhighlight %}
 
-Sometimes, you might get an *TypeError: can't cast ActionDispatch::Http::UploadedFile to string*.
+Em alguns casos poderá ocorrer o erro *TypeError: can't cast ActionDispatch::Http::UploadedFile to string*.
 
-If this happens, in file `app/views/ideas/_form.html.erb` change the line
+Se isso acontecer, abra `app/views/ideas/_form.html.erb` e substitua a linha:
 
 {% highlight erb %}
 <%= form_for(idea) do |f| %>
 {% endhighlight %}
 
-to
+por
 
 {% highlight erb %}
 <%= form_for(idea, html: {multipart: true}) do |f| %>
 {% endhighlight %}
 
-In your browser, add new idea with a picture. When you upload a picture it doesn't look nice because it only shows a path to the file, so let's fix that.
+No seu navegador adicione uma nova idea e nela uma imagem. Esta ação fará com que seja mostrada não a imagrm, mas o caminho para a imagem. Vamos corrigir isto.
 
-Open `app/views/ideas/show.html.erb` and change
+Abra `app/views/ideas/show.html.erb` e substitua:
 
 {% highlight erb %}
 <%= @idea.picture %>
 {% endhighlight %}
 
-to
+por
 
 {% highlight erb %}
 <%= image_tag(@idea.picture_url, width: 600) if @idea.picture.present? %>
 {% endhighlight %}
 
-Now refresh your browser to see what changed.
+Dê um "refresh" no navegador e constate a renderização da imagem.
 
-**Coach:** Talk a little about HTML.
+**Coach:** Fale um pouco sobre marcação HTML.
 
 
-## *5.*Finetune the routes
+## *5.*Acertos finais nas rotas
 
-Open <http://localhost:3000> (or your preview url, if you are using a cloud service). It still shows the "Welcome aboard" page. Let's make it redirect to the ideas page.
+Abra <http://localhost:3000> (ou o preview da url, caso você esteja usando um serviço na nuvem). Ainda é mostrada a página "Welcome aboard". Vamos fazer o redirecionamento para a página ideas da app.
 
-Open `config/routes.rb` and after the first line add
+Abra `config/routes.rb` e logo após a primeira linha acrescente:
 
 {% highlight ruby %}
 root to: redirect('/ideas')
 {% endhighlight %}
 
-Test the change by opening the root path (that is, <http://localhost:3000/> or your preview url) in your browser.
+Teste as alterações feitas abrindo o caminho para a raiz da app (ou seja, <http://localhost:3000/> ou o preview da url) no seu navegador.
 
-**Coach:** Talk about routes, and include details on the order of routes and their relation to static files.
+**Coach:** Fale sobre rotas e os detalhes na ordenação das rotas e seus relacionamentos com arquivos estáticos.
 
-## Create static page in your app
+## Criando uma página estática na sua app
 
-Lets add a static page to our app that will hold information about the author of this application — you!
+Vamos criar uma página estática na nossa app com a finalidade de fornecer informações sobre o autor da aplicação — você!
 
 {% highlight sh %}
 rails generate controller pages info
 {% endhighlight %}
 
-This command will create you a new folder under `app/views` called `/pages` and under that a file called `info.html.erb` which will be your info page.
+Este comando criará um novo diretório em `app/views` denominado `/pages` e dentro deste diretório um arquivo denominado `info.html.erb` que será a página de informações sobre você, o autor da aplicação.
 
-It also adds a new simple route to your routes.rb.
+É também adicionado um  novo caminho em routes.rb.
 
 {% highlight ruby %}
 get "pages/info"
 {% endhighlight %}
 
-Now you can open the file `app/views/pages/info.html.erb` and add information about you in HTML. To see your new info page, take your browser to <http://localhost:3000/pages/info> or, if you are a cloud service user, append '/pages/info' to your preview url.
+Abra  `app/views/pages/info.html.erb` e acrescente informações sobre você na marcação HTML. Para visualizar a nova página de informações sobre o autor digite <http://localhost:3000/pages/info> na barra de endereços do navegador ou se você usa um serviço na nuvem acrescente '/pages/info' na URL do preview.
 
-## *6+.*What next?
+## *6+.*O que vem a seguir?
 
-* Add design using HTML &amp; CSS
-* Add ratings
-* Use CoffeeScript (or JavaScript) to add interaction
-* Add picture resizing to make loading the pictures faster
+* Incrementando o design com HTML &amp; CSS
+* Adicionando sistema de avaliação
+* Usando CoffeeScript (ou JavaScript) para interação
+* Usando técnicas de redimensionamento de imagens para carregamento rápido.
 
+## Outros Guias
 
-## Additional Guides
-
-* Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
-* Guide 1: [Add commenting by Janika Liiv](/commenting)
-* Guide 2: [Put your app online with Heroku by Terence Lee](/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift) / [Put your app online with anynines](/anynines) / [Put your app online with Trucker.io](/trucker)
-* Guide 3: [Create thumbnail images for the uploads by Miha Filej](/thumbnails)
-* Guide 4: [Add design using HTML &amp; CSS by Alex Liao](/design)
-* Guide 5: [Add Authentication (user accounts) with Devise by Piotr Steininger](/devise)
-* Guide 6: [Adding profile pictures with Gravatar](/gravatar)
-* Guide 7: [Test your app with RSpec](/testing-rspec)
-* Guide 8: [Continuous Deployment with Travis-CI](/continuous-travis) / [Continuous Deployment with Codeship](/continuous) / [Continuous Deployment with Snap CI](/continuous-snap-ci)
-* Guide 9: [Go through additional explanations for the App by Lucy Bain](https://github.com/lbain/railsgirls)
-* Guide 10: [Adding a back-end with Active Admin](/backend-with-active-admin)
+* Guia 0: [Handy cheatsheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
+* Guia 1: [Área de comentários para a app Rails Girls por Janika Liiv](/commenting)
+* Guia 2: [Put your app online with Heroku by Terence Lee](/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift) / [Put your app online with anynines](/anynines) / [Put your app online with Trucker.io](/trucker)
+* Guia 3: [Criando thumbnails com Carrierwave por Miha Filej](/thumbnails)
+* Guia 4: [Add design using HTML &amp; CSS by Alex Liao](/design)
+* Guia 5: [Add Authentication (user accounts) with Devise by Piotr Steininger](/devise)
+* Guia 6: [Adding profile pictures with Gravatar](/gravatar)
+* Guia 7: [Test your app with RSpec](/testing-rspec)
+* Guia 8: [Continuous Deployment with Travis-CI](/continuous-travis) / [Continuous Deployment with Codeship](/continuous) / [Continuous Deployment with Snap CI](/continuous-snap-ci)
+* Guia 9: [Go through additional explanations for the App by Lucy Bain](https://github.com/lbain/railsgirls)
+* Guia 10: [Adding a back-end with Active Admin](/backend-with-active-admin)

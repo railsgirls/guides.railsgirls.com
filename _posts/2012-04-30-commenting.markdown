@@ -1,77 +1,74 @@
 ---
 layout: default
-title: Commenting functionality for the Rails Girls app
+title: Funcionalidades de uma área de comentários para a app Rails Girls
 permalink: commenting
 ---
-# Commenting for Rails Girls App
-*Created by Janika Liiv, [@janikaliiv](https://twitter.com/janikaliiv)*
+# Área de comentários para a app Rails Girls
+*Criado por Janika Liiv, [@janikaliiv](https://twitter.com/janikaliiv)*
 
-We are going to add the possibility to comment on ideas in your *railsgirls* application.
+Vamos aprender como criar uma área de comentários para nossa app *railsgirls* ideas.
 
-The instructions for installing rails and building the ideas app can be found [here](/app).
+As instruções para criar a app foram descritas [neste documento](/app).
 
-## *1.*Create comment scaffold
+## *1.*Criando o scaffold para a área de comentários
 
-Create a comment scaffold, with the commentator name, the comment body (contents of the comment) and with the reference to the ideas table (`idea_id`).
+Crie o scaffold para a área de comentários fazendo nele constar o nome de quem comenta, o corpo do comentário (conteúdo do comentário) e uma referência para a tabela ideas (`idea_id`).
 {% highlight sh %}
 rails g scaffold comment user_name:string body:text idea_id:integer
 {% endhighlight %}
-This will create a migration file that lets your database know about the new comments table. Run the migrations using
+Esta ação criará um arquivo de migração que permitirá ao banco de dados conhecer a nova tabela de comentários.  A seguir migre as alterações feitas no banco de dados digitando no terminal o seguinte:
 {% highlight sh %}
 rake db:migrate
 {% endhighlight %}
 
-## *2.*Add relations to models
+## *2.*Adicione relacionamentos aos modelos
 
-You need to make sure that Rails knows the relation between objects (ideas and comments).
-As one idea can have many comments we need to make sure the idea model knows that.
-Open app/models/idea.rb and after the row
-{% highlight ruby %}
-class Idea < ActiveRecord::Base
+Você precisa assegurar que Rails seja capaz de identificar a conexão entre objetos (ideas e comentários). De vez que uma idea pode ter vários comentários precisamos assegurar que o modelo ideas sabe disso. Abra app/models/idea.rb e logo após a linha:
+class Idea &lt; ActiveRecord::Base
 {% endhighlight %}
-add
+acrescente o seguinte:
 {% highlight ruby %}
 has_many :comments
 {% endhighlight %}
 
-The comment also has to know that it belongs to an idea. So open `app/models/comment.rb` and after
+ Um comentário precisa saber que ele pertence a uma idea. Assim, abra `app/models/comment.rb` e logo após a linha:
 {% highlight ruby %}
 class Comment < ActiveRecord::Base
 {% endhighlight %}
 
-add the row
+acrescente a seguinte linha:
 {% highlight ruby %}
 belongs_to :idea
 {% endhighlight %}
 
-## *3.*Render the comment form and existing comments
+## *3.*Mostrar o formulário de comentários e os comentários existentes
 
-Open app/views/ideas/show.html.erb and after the image_tag
+Abra app/views/ideas/show.html.erb é depois da tag de imagem (image_tag) 
 {% highlight erb %}
 <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
 {% endhighlight %}
 
-add
+acrescente a seguinte linha:
 {% highlight erb %}
-<h3>Comments</h3>
+<h3>Comentários</h3>
 <% @comments.each do |comment| %>
   <div>
     <strong><%= comment.user_name %></strong>
     <br />
     <p><%= comment.body %></p>
-    <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+    <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Tem certeza?' } %></p>
   </div>
 <% end %>
 <%= render 'comments/form' %>
 {% endhighlight %}
 
-In `app/controllers/ideas_controller.rb` add to the show action
+Em `app/controllers/ideas_controller.rb` acrescente a ação mostrar logo após a linha:  
 {% highlight ruby %}
 @comments = @idea.comments.all
 @comment = @idea.comments.build
 {% endhighlight %}
 
-Open `app/views/comments/_form.html.erb` and after
+Abra `app/views/comments/_form.html.erb` e logo após a linha:
 {% highlight erb %}
   <div class="field">
     <%= f.label :body %><br />
@@ -79,12 +76,12 @@ Open `app/views/comments/_form.html.erb` and after
   </div>
 {% endhighlight %}
 
-add the row
+acrescente a seguinte linha:
 {% highlight erb %}
 <%= f.hidden_field :idea_id %>
 {% endhighlight %}
 
-next, remove
+a seguir remova
 {% highlight erb %}
 <div class="field">
   <%= f.label :idea_id %><br>
@@ -92,4 +89,4 @@ next, remove
 </div>
 {% endhighlight %}
 
-That's it. Now view an idea you have inserted to your application and there you should see the form for inserting a comment as well as deleting older comments.
+Pronto! Visualize uma idea que você tenha acrescentado à sua aplicação e você verá ali o formulário para inserir um comentário bem como a funcionalidade para deletar comentários.

@@ -1,62 +1,57 @@
 ---
 layout: default
-title: Show thumbnails when listing ideas
+title: Thumbnails em listas de ideas
 permalink: thumbnails
 ---
 
-# Create thumbnails with Carrierwave
+# Criando thumbnails com Carrierwave
 
-*Created by Miha Filej, [@mfilej](https://twitter.com/mfilej)*
+*Criado por Miha Filej, [@mfilej](https://twitter.com/mfilej)*
 
-__Coach__: Explain what specifying the image width in HTML at the end of Step
-4 does and how it differs from resizing images on the server.
+__Coach__: Explicar qual o efeito de se definir a largura de uma imagem na marcação HTML como explicado no final do passo 4, constante do tutorial *Tutorial para criação da app Rails Girls*.
 
-## *1.*Installing ImageMagick
+## *1.*Instalando ImageMagick
 
-* OS X: run `brew install imagemagick`. If you don't have the brew command, you can [install Homebrew here][in-homebrew].
-* Windows: download and run the [ImageMagick installer][im-win] (use the first
-  *download* link).
-* Linux: On Ubuntu and Debian, run `sudo apt-get install imagemagick`. Use the
-  appropriate package manager instead of `apt-get` for other distributions.
+* OS X: rode `brew install imagemagick`. Se o comando brew não estiver disponível no seu terminal, instale [install Homebrew here][in-homebrew].
+* Windows: faça o download e rode o [ImageMagick installer][im-win] (use o primeiro link do  *download* ).
+* Linux: em Ubuntu e Debian, rode `sudo apt-get install imagemagick`. Use o gerenciador de package apropriado em lugar de `apt-get` para as demais distribuições Linux.
 
   [im-win]: http://www.imagemagick.org/script/binary-releases.php?ImageMagick=vkv0r0at8sjl5qo91788rtuvs3#windows
   [in-homebrew]: http://mxcl.github.io/homebrew/
 
-__Coach__: What is ImageMagick and how is it different from libraries/gems we
-used before?
+__Coach__: O que é ImageMagick e qual a diferença para outras bibliotecas/gems que já usamos anteriormente?
 
-Open `Gemfile` in the project and add
+Abra `Gemfile` no seu projeto e acrescente o seguinte:
 
 {% highlight ruby %}
 gem 'mini_magick', '3.8.0'
 {% endhighlight %}
 
-under the line
+logo após a linha
 
 {% highlight ruby %}
 gem 'carrierwave'
 {% endhighlight %}
 
-In the Terminal run:
+No Terminal rode:
 
 {% highlight sh %}
 bundle
 {% endhighlight %}
 
-## *2.*Telling our app to create thumbnails when an image is uploaded
+## *2.*Dizendo para a app criar um thumbnail quando uma imagem for enviada ao servidor
 
-Open `app/uploaders/picture_uploader.rb` and find the line that looks like
-this:
+Abra `app/uploaders/picture_uploader.rb` e encontre a linha conforme mostrada a seguir:
 
 {% highlight ruby %}
   # include CarrierWave::MiniMagick
 {% endhighlight %}
 
-Remove the `#` sign.
+Remova o sinal `#`.
 
-__Coach__: Explain the concept of comments in code.
+__Coach__: Explicar o uso e finalidades da inserção de comentários nos códigos.
 
-Below the line you just changed, add:
+Logo após a linha que você acabou de descomentar acrescente o seguinte:
 
 {% highlight ruby %}
 version :thumb do
@@ -64,23 +59,24 @@ version :thumb do
 end
 {% endhighlight %}
 
-The images uploaded from now on should be resized, but the ones we already
-have weren't affected. So edit one of the existing ideas and re-add a picture.
+A partir de agora as imagens enviadas ao servidor serão redimensionadas para criar thumbnails, contudo aquelas já existentes no servidor não serão afetadas. Edite uma das ideas já existentes e reenvie a imagem para o servidor.
 
-## *3.*Displaying the thumbnails
+## *3.*Mostrando thumbnails
 
-To see if the uploaded picture was resized open
-`app/views/ideas/index.html.erb`. Change the line
+Para verificar se uma imagem enviada ao servidor foi redimensionada abra 
+`app/views/ideas/index.html.erb`. Altere a linha
 
 {% highlight erb %}
 <td><%= idea.picture %></td>
 {% endhighlight %}
 
-to
+para
 
 {% highlight erb %}
 <td><%= image_tag idea.picture_url(:thumb) if idea.picture? %></td>
 {% endhighlight %}
 
-Take a look at the list of ideas in the browser to see if the thumbnail is
-there.
+Dê uma olhada na lista das ideas, no navegador, para verificar se o thumbnail está ali.
+
+
+
