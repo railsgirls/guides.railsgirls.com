@@ -8,7 +8,7 @@ permalink: app
 
 *Criado por Vesa Vänskä, [@vesan](https://twitter.com/vesan)*
 
-**Você deverá ter Rails instalado. ** [** Consulte o guia de instalação se você ainda não instalou.**](/install).
+**Você deverá ter Rails instalado.** [**Consulte o guia de instalação se você ainda não instalou.**](/install)
 
 
 ## Conhecendo as ferramentas
@@ -23,7 +23,7 @@ permalink: app
 
 <h3><i class="icon-prompt">&nbsp;</i></h3>
 
-### Terminal (conhecido como Command Prompt em Windows): é a interface * onde você vai iniciar o servidor rails e executar comandos.
+### Terminal (conhecido como Command Prompt no Windows): é a interface * onde você vai iniciar o servidor rails e executar comandos.
 
 <h3><i class="icon-browser">&nbsp;</i></h3>
 
@@ -46,22 +46,22 @@ Comecemos abrindo o Terminal:
 * Mac OS X: Abra Spotlight, digite *Terminal* e clique na aplicação *Terminal*.
 * Windows: Clique Start e procure *Command Prompt*, clique em *Command Prompt with Ruby on Rails*.
 * Linux (Ubuntu/Fedora): Procure por *Terminal* no dash e clique *Terminal*.
-* Serviço na nuvem (por exemplo: nitrous): Faça login na sua conta, inicie sua interface e vá para a IDE (ver [installation guide](/install#using-a-cloud-service) para detalhes). Em geral o terminal está localizado na parte inferior da janela do navegador.
+* Serviço na nuvem (por exemplo: nitrous): Faça login na sua conta, inicie sua interface e vá para a IDE (ver [guia de instalação](/install#using-a-cloud-service) para detalhes). Em geral o terminal está localizado na parte inferior da janela do navegador.
 
 Em seguida digite no terminal os comandos mostrados a seguir :
 
 <div class="os-specific">
   <div class="nix">
 {% highlight sh %}
-mkdir projects
+mkdir projetos
 {% endhighlight %}
 
     <div>
-<p>Rodando o comando  <code>ls</code> no terminal você poderá constatar que um diretório denominado  <code>projects</code> foi criado. Você verá o diretório <code>projects</code> na saida do terminal. A seguir você deverá ir para o diretório  <code>projects</code> executando o seguinte comando:</p>
+<p>Rodando o comando  <code>ls</code> no terminal você poderá constatar que um diretório denominado  <code>projetos</code> foi criado. Você verá o diretório <code>projetos</code> na saida do terminal. A seguir você deverá ir para o diretório  <code>projetos</code> executando o seguinte comando:</p>
     </div>
 
 {% highlight sh %}
-cd projects
+cd projetos
 {% endhighlight %}
 
     <div>
@@ -132,7 +132,7 @@ Abra <http://localhost:3000> no navegador. Se você estiver usando um serviço n
 
 Se você ver a página denominada  "Welcome aboard" é porque tudo deu certo e sua nova app está funcionando corretamente.
 
-Notar que nesta nova janela o prompt de comando não é visível, pois você se encontra no servidor Rails e o prompt de comando tem o seguinte aspecto:
+Note que nesta nova janela o prompt de comando não é visível, pois você se encontra no servidor Rails e o prompt de comando tem o seguinte aspecto:
 
 <div class="os-specific">
   <div class="nix">
@@ -172,7 +172,7 @@ rake db:migrate
 rails server
 {% endhighlight %}
 
-Abra <http://localhost:3000/ideas> no navegador. Para serviços na nuvem (por exemplo: nitrous) acrescente '/ideas' na url do preview (ver [installation guide](/install#using-a-cloud-service)).
+Abra <http://localhost:3000/ideas> no navegador. Para serviços na nuvem (por exemplo: nitrous) acrescente '/ideas' na url do preview (ver [guia de instalação](/install#using-a-cloud-service)).
 
 Click around and test what you got by running these few command-line commands. (**precisa ser traduzido**)
 
@@ -191,8 +191,8 @@ Abra `app/views/layouts/application.html.erb` no seu editor de texto e acima da 
 acrescente o seguinte:
 
 {% highlight erb %}
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.css">
 {% endhighlight %}
 
 agora substitua
@@ -274,7 +274,7 @@ acrescente o seguinte:
 gem 'carrierwave'
 {% endhighlight %}
 
-**Coach:**Explique o que são bibliotecas e qual a sua utilidade. Fale um pouco sobre softwares de código aberto.
+**Coach:** Explique o que são bibliotecas e qual a sua utilidade. Fale um pouco sobre softwares de código aberto.
 
 Pressione as teclas <kbd>Ctrl</kbd>+<kbd>C</kbd> no terminal para parar o servidor.
 
@@ -385,7 +385,7 @@ get "pages/info"
 
 Abra  `app/views/pages/info.html.erb` e acrescente informações sobre você na marcação HTML. Para visualizar a nova página de informações sobre o autor digite <http://localhost:3000/pages/info> na barra de endereços do navegador ou se você usa um serviço na nuvem acrescente '/pages/info' na URL do preview.
 
-## *6+.*O que vem a seguir?
+## *6.*O que vem a seguir?
 
 * Incrementando o design com HTML &amp; CSS
 * Adicionando sistema de avaliação

@@ -24,6 +24,7 @@ rake db:migrate
 ## *2.*Adicione relacionamentos aos modelos
 
 Você precisa assegurar que Rails seja capaz de identificar a conexão entre objetos (ideas e comentários). De vez que uma idea pode ter vários comentários precisamos assegurar que o modelo ideas sabe disso. Abra app/models/idea.rb e logo após a linha:
+{% highlight ruby %}
 class Idea &lt; ActiveRecord::Base
 {% endhighlight %}
 acrescente o seguinte:
