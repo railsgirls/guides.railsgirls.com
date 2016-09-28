@@ -4,6 +4,7 @@ title: Rails Girls em vídeos
 permalink: videos
 ---
 
+# Rails Girls é felicidade no mundo inteiro
 
 Aqui você encontra uma seleção de vídeos da Rails Girls produzidos no mundo todo. Você tem um vídeo para compartilhar? Publique ele aqui.
 
