@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Adicionar design Usando HTML & CSS
+title: Adicione design Usando HTML & CSS
 permalink: design
 ---
 
-# Adicionar design Usando HTML &amp; CSS
+# Adicione design Usando HTML &amp; CSS
 
 *Created by Alex Liao, [@alexliao](http://bannka.com/alex)*
 
@@ -12,7 +12,7 @@ Agora o aplicativo está funcionando bem, mas ainda se parece com scaffold. Vamo
 
 ## *1.*Ajuste o layout da aplicação
 
-Abra `app/assets/stylesheets/application.css`, substituir a linha
+Abra `app/assets/stylesheets/application.css`, e substitua a linha
 
 {% highlight html %}
 body { padding-top: 100px; }
@@ -30,9 +30,9 @@ Agora vamos atualizar a página na url [http://localhost:3000/ideas](http://loca
 
 ## *2.*Refinar a navegação
 
-Considerando que "idéia" é o objeto mais importante na sua aplicação, nós vamos colocar o botão "New Idea" na barra de navegação para torná-lo sempre disponível.
+Considerando que "ideia" é o objeto mais importante na sua aplicação, nós vamos colocar o botão "New Idea" na barra de navegação para torná-lo sempre disponível.
 
-Abra `app/views/layouts/application.html.erb`, abaixo da linha
+Abra `app/views/layouts/application.html.erb`, e abaixo da linha
 
 {% highlight erb %}
 <li class="active"><a href="/ideas">Ideas</a></li>
@@ -43,11 +43,11 @@ adicione
 <li ><%= link_to 'New Idea', new_idea_path %></li>
 {% endhighlight %}
 
-## *3.*Design para a lista de idéias
+## *3.*Design para a lista de ideias
 
-Agora é hora de fazer a página de listar ideias de um jeito mais profissional. Para isso, vamos substituir o layout da tabela com um layout div.
+Agora é hora de fazer a página de listar ideias parecer mais profissional. Para isso, vamos substituir o layout da tabela com um layout div.
 
-**Treinador:** Fale um pouco sobre a tabela vs div.
+**Coach:** Fale um pouco sobre a tabela vs div.
 
 Abra `app/views/ideas/index.html.erb` em seu editor de texto e substitua todas as linhas com
 
@@ -67,11 +67,11 @@ Abra `app/views/ideas/index.html.erb` em seu editor de texto e substitua todas a
 <% end %>
 {% endhighlight %}
 
-**Treinador:** Explique o que o novo código significa linha por linha, e falar um pouco sobre o grid do Bootstrap
+**Coach:** Explique o que o novo código significa linha por linha, e fale um pouco sobre o grid do Bootstrap
 
-Atualize, ficamos com uma boa lista de idéias com design bonito. Clique no botão "New Idea", e crie mais idéias com o texto real e imagens bonitas, a página ficará muito melhor com o conteúdo. Há um princípio de web design contemporâneo: o conteúdo é a melhor decoração.
+Atualize! Nós ficamos com uma boa lista de ideias com design bonito. Clique no botão "New Idea", e crie mais idéias com o texto real e imagens bonitas, a página ficará muito melhor com o conteúdo. Há um princípio de web design contemporâneo: o conteúdo é a melhor decoração.
 
-## *4.*Design para a página de detalhes da idéia
+## *4.*Design para a página de detalhes da ideia
 
 Clique no título de uma idéia, e você será levado para a página de detalhes da idéia. Agora ainda  é scaffold gerado pelo Rails, então vamos melhorar a página.
 
@@ -98,11 +98,11 @@ Abra `app/views/ideas/show.html.erb` em seu editor de texto e substitua todas as
 {% endhighlight %}
 
 
-**Treinador:** Explique o que o novo código significa linha por linha.
+**Coach:** Explique o que o novo código significa linha por linha.
 
-## Qual o próximo?
+## E agora?
 
-* Use o seu novo conhecimento para projetar um novo form para idéia
+* Use o seu novo conhecimento para projetar um novo formulário para ideia
 * Adicione mais design para as páginas como você deseja
 * Siga os outros guias para aprender mais sobre Rails
 
