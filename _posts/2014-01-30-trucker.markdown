@@ -4,22 +4,23 @@ title: Rails Girls on Trucker
 permalink: trucker
 ---
 
-# Put Your App Online With Trucker.io
+# Publique sua aplicação com Trucker.io
 
 *Created by Floor Drees, [@floordrees](https://twitter.com/floordrees) for [Rails Girls Leiden](http://railsgirls.com/leiden)* 
 
-### Get Trucker
+### Instale o Trucker
 
-Follow steps 1 through 3 of the [Getting Started guide](http://developers.trucker.io/Getting-Started) to create an account, install the command line tool and login.
+Siga os passos 1 a 3 do [Getting Started guide](http://developers.trucker.io/Getting-Started) para criar uma conta, instalar a ferramenta de linha de comando e login.
 
-To install `trucker-cli` (the command line tool), type:
+Para instalar o `trucker-cli` (linha de comandos da ferramenta), execute:
 {% highlight sh %}
 $ gem install trucker-cli
 {% endhighlight %}
 
-#### Log in Trucker
+#### Fazendo login no Trucker
 
-You can create and manage applications using the Trucker control panel. However you will need to also log in using the Trucker command line client:
+Você pode criar e gerenciar aplicativos usando o painel de controle do Trucker. No entanto, você também precisará fazer login usando o cliente de linha de comando.
+
 {% highlight sh %}
 $ truck target https://api.ie.trucker.io  
 Setting target to https://api.ie.trucker.io... OK  
@@ -29,7 +30,7 @@ email>
 password>  
 {% endhighlight %}
 
-At this point, the Trucker client will require that you choose a space to work in. Spaces are environments whose purpose is to organize your applications based on their life-cycle stage. Your Trucker account comes equipped with the following spaces:
+Neste ponto, o cliente Trucker vai exigir que você escolha um espaço para trabalhar. Os espaços são ambientes cuja finalidade é organizar as suas aplicações baseadas em seu estágio do ciclo de vida. A sua conta Trucker vem equipada com os seguintes espaços:
 
 {% highlight sh %}
 1: development
@@ -38,11 +39,11 @@ At this point, the Trucker client will require that you choose a space to work i
 Space>
 {% endhighlight %}
 
-__COACH__: Talk about the benefits of deploying to Trucker.io (and having datacenters in Europe, rather than the US).
+__COACH__: Fale sobre os benefícios da implantação de Trucker.io (e ter datacenters na Europa, em vez de os EUA).
 
-### Version Control
+### Controle de Versão
 
-We need to add our code to version control. You can do this by running the following in the terminal:
+Nós precisamos adicionar em nosso código o controle de versão. Você pode fazer isso executando os  seguintes comandos no terminal:
 
 {% highlight sh %}
 git init
@@ -50,13 +51,13 @@ git add .
 git commit -m "initial commit"
 {% endhighlight %}
 
-__COACH__: This would be a great time to talk about version control systems and git.
+__COACH__: Este seria um grande momento para falar sobre os sistemas de controle de versão e git.
 
-### Deploy your application to Trucker
+### Publicando sua aplicação para o Trucker
 
-#### Push the application to Trucker.io
+#### Fazendo pushing de sua aplicação para o Trucker.io
 
-First perform a `push` command and enter the name you want your application to sport (we used 'railsgirls').
+Primeiro vamos executar o comando `push` e depois digite o nome que você quer que sua aplicação tenha (nós usaremos `railsgirls`).
 {% highlight sh %}
 $ truck push
 Name> railsgirls
@@ -86,7 +87,7 @@ Creating route railsgirls.ie.trucker.io... OK
 Binding railsgirls.trucker.io to railsgirls... OK
 {% endhighlight %}
 
-Next, add MySQL as your database:
+Em seguida, adicione o MySQL como seu banco de dados:
 
 {% highlight sh %}
 Create services for application?> y
@@ -105,17 +106,17 @@ Creating service rds-mysql-aa0d6... OK
 Binding rds-mysql-aa0d6 to trucker-rails... OK
 {% endhighlight %}
 
-__COACH__: Talk about MySQL.
+__COACH__: Fale sobre MySQL.
 
 
-We don't want to add other services, so you can answer the following questions with `n`: 
+Nós não queremos adicionar outros serviços, você pode responder às seguintes perguntas com `n`:
 {% highlight sh %}
 Create another service?> n
 
 Bind other services to application?> n
 {% endhighlight %}
 
-After saving your application
+Depois salve sua aplicação
 {% highlight sh %}
 Save configuration?> y
 
@@ -123,7 +124,7 @@ Saving to manifest.yml... OK
 Uploading trucker-rails
 {% endhighlight %}
 
-your app will be deployed. The output in your terminal should look something like this:
+e seu aplicativo estará publicado. A saída no seu terminal deve ser algo como isto:
 
 {% highlight sh %}
 Uploading railsgirls... OK
@@ -137,4 +138,4 @@ Checking status of app 'railsgirls'...
 Push successful! App 'railsgirls' available at http://railsgirls.ie.trucker.io
 {% endhighlight %}
 
-Your application is now available at http://railsgirls.ie.trucker.io!
+Sua aplicação agora está disponível em http://railsgirls.ie.trucker.io!
