@@ -4,9 +4,10 @@ title: Tutorial para criação da app Rails Girls
 permalink: app
 ---
 
-# Tutorial para criação da app Rails Girls 
+# Tutorial para criação da app Rails Girls
 
 *Criado por Vesa Vänskä, [@vesan](https://twitter.com/vesan)*
+*Traduzido por Maujor, [site do Maujor](http://www.maujor.com)*
 
 **Você deverá ter Rails instalado.** [**Consulte o guia de instalação se você ainda não instalou.**](install)
 
@@ -252,7 +253,7 @@ table, td, th { vertical-align: middle; border: none; }
 th { border-bottom: 1px solid #DDD; }
 {% endhighlight %}
 
-A seguir, após salvar os arquivos e dar um "refresh" no navegador observe as alterações no layout. Você poderá fazer outras modificações na marcação HTML e criar novas regras de estilização.   
+A seguir, após salvar os arquivos e dar um "refresh" no navegador observe as alterações no layout. Você poderá fazer outras modificações na marcação HTML e criar novas regras de estilização.
 
 Se o Terminal mostrar uma mensagem de erro informando que há algo errado com a JavaScript ou com CoffeeScript, instale [nodejs](http://nodejs.org/download/). Isto não deverá acontecer se você usou RailsInstaller (mas sim, quando você instalou Rails via ```gem install rails```).
 

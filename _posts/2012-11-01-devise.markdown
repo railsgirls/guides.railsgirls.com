@@ -7,9 +7,9 @@ permalink: devise
 # Autenticação com Devise
 
 *Criado por Piotr Steininger, [@polishprince](https://twitter.com/polishprince)*
-
 *Atualizado por Ernesto Jimenez, [@ernesto_jimenez](https://twitter.com/ernesto_jimenez)*
- com o nosso guia 
+*Traduzido por Maujor, [site do Maujor](http://www.maujor.com)*
+
 **Esse guia assume que você já criou a app RailsGirls como mostrado no** [**tutorial para criação da app Rails Girls**](/app).
 
 

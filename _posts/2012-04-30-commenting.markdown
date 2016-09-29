@@ -4,7 +4,9 @@ title: Funcionalidades de uma área de comentários para a app Rails Girls
 permalink: commenting
 ---
 # Área de comentários para a app Rails Girls
+
 *Criado por Janika Liiv, [@janikaliiv](https://twitter.com/janikaliiv)*
+*Traduzido por Maujor, [site do Maujor](http://www.maujor.com)*
 
 Vamos aprender como criar uma área de comentários para nossa app *railsgirls* ideas.
 
