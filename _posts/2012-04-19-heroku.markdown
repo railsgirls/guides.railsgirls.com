@@ -1,29 +1,27 @@
 ---
 layout: default
-title: Rails Girls on Heroku
+title: Rails Girls &#8212; Heroku
 permalink: heroku
 ---
 
-# Put Your App Online With Heroku
+# Publique sua aplicação com Heroku
 
-*Created by Terence Lee, [@hone02](https://twitter.com/hone02)*
+*Criado por Terence Lee, [@hone02](https://twitter.com/hone02)*
 
-### Get Heroku
+### Instale Heroku
 
-Follow steps "Introduction" and "Set up" of the
-[Getting Started on Heroku with Ruby][heroku-guide] to sign up, install the
-Heroku CLI, and login.
+Siga os passos intitulados "Introduction" e "Set up" constantes na página
+[Getting Started on Heroku with Ruby][heroku-guide] para se cadastrar, instalar Heroku CLI e fazer login.
 
-__COACH__: Talk about the benefits of deploying to Heroku vs traditional servers.
+__COACH__: Fale sobre os benefícios do uso da plataforma Heroku para publicação vs uso de servidores tradicionais.
 
-[heroku-guide]: https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction
+[Guia heroku]: https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction
 
-### Preparing your app
+### Preparando sua app
 
-#### Version Control Systems
+#### Sistema de controle de versão
 
-We need to add our code to version control. You can do this by running the
-following in the terminal:
+Para começar vamos adicionar nosso código em um sistema de controle de versão. Você pode fazer isso executando os seguintes comandos no terminal: 
 
 {% highlight sh %}
 git init
@@ -31,18 +29,17 @@ git add .
 git commit -m "initial commit"
 {% endhighlight %}
 
-__COACH__: This would be a good time to talk about version control systems and git.
+__COACH__: Agora é uma ótima oportunidade para falar sobre sistemas de controle de versão e git.
 
-#### Updating our database
+#### Atualizando o banco de dados
 
-First, we need to get our database to work on Heroku, which uses a different
-database. Please change the following in the Gemfile:
+Em primeiro lugar precisamos fazer com que nosso banco de dados funcione na plataforma Heroku, que usa um banco de dados diferente. Altere o seguinte em Gemfile:
 
 {% highlight ruby %}
 gem 'sqlite3'
 {% endhighlight %}
 
-to
+para
 
 {% highlight ruby %}
 group :development do
@@ -53,29 +50,27 @@ group :production do
 end
 {% endhighlight %}
 
-Run `bundle install --without production` to setup your dependencies.
+Rode `bundle install --without production` para configurar suas dependências.
 
-__COACH__: You can talk about RDBMS and the different ones out there, plus
-include some details on Heroku's dependency on PostgreSQL.
+__COACH__: Você pode falar sobre RDBMS e as diferenças para outros sistemas de gerenciamento bem como  apresentar alguns detalhes das dependências em Heroku no PostgreSQL.
 
-### Deploying your app
+### Publicando sua app
 
-#### App creation
+#### Criando a app
 
-We need to create our Heroku app by typing `heroku create` in the terminal and
-see something like this:
+Precisamos criar nossa aplicação heroku executando `heroku create` no terminal.
+Esta ação mostrará no terminal o seguinte:
 
 {% highlight sh %}
 Creating app... done, ⬢ young-reaches-87845
 https://young-reaches-87845.herokuapp.com/ | https://git.heroku.com/young-reaches-87845.git
 {% endhighlight %}
 
-In this case "young-reaches-87845" is your app name.
+Neste caso  "young-reaches-87845" é o nome da sua aplicação
 
-#### Pushing the code
+#### Fazendo o pushing do código
 
-Next we need to push our code to heroku by typing `git push heroku master`.
-You'll see push output like the following:
+A seguir precisamos fazer o push do código para o heroku excutando `git push heroku master`. Você verá a saída do push como mostrado a seguir:
 
 {% highlight sh %}
 Counting objects: 115, done.
@@ -105,64 +100,51 @@ To https://git.heroku.com/young-reaches-87845.git
  * [new branch]      master -> master
 {% endhighlight %}
 
-You'll know the app is done being pushed, when you see the "Launching..." text like above.
+O pushing estará terminado com êxito quando aparecer o texto “Launching…” como mostrado anteriomente.
 
-#### Migrate database
+#### Migrando o banco de dados
 
-Next we need to migrate our database like we did locally during the workshop:
+Precisamos migrar nosso banco de dados tal como fizemos localmente durante o workshop:
 
 {% highlight sh %}
 heroku run rake db:migrate
 {% endhighlight %}
 
-When that command is finished being run, you can hit the app based on the url.
-For this example app, you can go to <https://young-reaches-87845.herokuapp.com/>.
-You can also type `heroku open` in the terminal to visit the page.
+Depois que esse comando for executado você poderá acessar a app na sua URL. Para a plicação que desenvolvemos nesse exemplo abra: <https://young-reaches-87845.herokuapp.com/>.
+Opcionalmente, para visitar a página, você pode executar `heroku open` no terminal.
 
-#### Closing notes
+#### Notas finais
 
-Heroku's platform is not without its quirks. Applications run on Heroku live
-within an ephermeral environment — this means that (except for information
-stored in your database) any files created by your application will disappear
-if it restarts (for example, when you push a new version).
+A plataforma Heroku tem suas peculiaridades. Nela os aplicativos são executados em tempo real dentro de um ambiente efêmero - isso significa que (exceto para informações armazenadas em seu banco de dados) quaisquer arquivos criados por seu aplicativo irá desaparecer quando ele for reiniciado (por exemplo, quando você atualiza para uma nova versão).
 
-###### [Ephemeral filesystem][ephemeral-filesystem]
+###### [Sistema de arquivos efêmero][ephemeral-filesystem]
 
-> Each dyno gets its own ephemeral filesystem, with a fresh copy of the most
-> recently deployed code. During the dyno’s lifetime its running processes can
-> use the filesystem as a temporary scratchpad, but no files that are written
-> are visible to processes in any other dyno and any files written will be
-> discarded the moment the dyno is stopped or restarted. For example, this
-> occurs any time a dyno is replaced due to application deployment and
-> approximately once a day as part of normal dyno management.
+> Cada container dyno cria seu próprio sistema de arquivos efêmero contendo uma cópia 
+> do mais recente código publicado. Durante o período de vida do dyno os processos nele rodando
+> usam um sistema de arquivos que são escritos em um rascunho temporário, contudo nenhum destes arquivos
+> são visíveis para processamento em qualquer outro dyno, tais arquivos serão
+> descartados no momento em que o dyno for parado ou restartado. Por exemplo, isso
+> acontece sempre que o dyno é substituido em decorrência uma implantação de aplicativos e, também,
+> em média uma vez por dia, pois assim está previsto pelo mecanismo de gestão nativo do dyno.
 
-In the [App](/app) tutorial the ability to attach a file to the Idea record is
-added, which results in new files being written to your applications
-`public/uploads` folder. The ephemeral storage in Heroku can be seen with the
-following steps:
+No tutorial [App](/app)  a funcionalidade que prevê a gravação de arquivos em uma Idea, permite escrever arquivos no diretório  `public/uploads` das suas aplicações . Você pode constatar o armazenamento efêmero em Heroku seguindo os seguintes passos:
 
-1. Launch the app with `heroku open`
-2. Add a new Idea with an image
-3. Restart the application by running `heroku restart`
-4. Go back to your Idea and reload the page - the image should no longer be visible
+1. Inicie a aplicação executando o comando `heroku open`
+2. Adicione uma nova Idea e nela uma imagem
+3. Reinicie a aplicação executando o comando `heroku restart`
+4. Volte para a página da Idea e recarregue - a imagem não será mais visível
 
-[ephemeral-filesystem]: https://devcenter.heroku.com/articles/dynos#ephemeral-filesystem
+[sistema de arquivos efêmero]: https://devcenter.heroku.com/articles/dynos#ephemeral-filesystem
 
-##### Working around Ephemeral Storage
+##### Contornando o armazenamento efêmero
 
-Obviously this doesn't seem to be useful if you were running a real life
-application, but there are ways to work around this which is commonly used by
-a lot of popular websites.
+É óbvio que armazenamento efêmero não é conveniente quando se trata de uma aplicação real, mas existem métodos para contornar o problema que são usados em muitos websites populares.
 
-The most common method is to use an external asset host such as Amazon S3 (Simple
-Storage Service) or Rackspace CloudFiles. These services provide (for a low cost
-- usually less then $0.10 per GB) storage 'in the cloud' (meaning the files
-could potentially be hosted anywhere) which your application can use as persistent storage.
+O método mais comum consiste em se usar um serviço de hospedagem externo, tais como,  Amazon S3 (Simple Storage Service) ou Rackspace CloudFiles para hospedar os *assets* da aplicação. Tais serviços disponibilizam  (por um custo baixo - em geral $0.10 por GB) armazenamento 'na nuvem'  (os arquivos podem ser hospedados em qualquer lugar) proporcionando um armazenamento persistente para sua aplicação.
 
-While this functionality is a bit out of scope for this tutorial there are some
-resources available which you can use to find your way:
+Não é do escopo deste tutorial detalhar a hospedagem 'na nuvem', mas se você estiver interessado em mais informações à respeito seguem alguns links úteis:
 
 * [How to: Make Carrierwave work on Heroku](https://github.com/carrierwaveuploader/carrierwave/wiki/How-to%3A-Make-Carrierwave-work-on-Heroku)
 * [Amazon S3 – The Beginner’s Guide](http://www.hongkiat.com/blog/amazon-s3-the-beginners-guide/)
 
-As always if you require any more information or assistance your coaches will be able to assist.
+Como sempre, se você precisar de mais informações ou assistência pergunte aos seus coaches.

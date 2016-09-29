@@ -1,16 +1,52 @@
-# Rails Girls Guides
+# PARTE 1
 
-Our aim is to give tools for women to understand technology. The Rails Girls events do this by providing a great first experience on building the Internet.
+#  Instruções para tradução da documentação do Rails Girls
 
-Rails Girls was founded in end of 2010 in Helsinki. Originally intended as a onetime event, we never thought to see so many local chapters all around the world! This guide has been put together to help you get started.
+## Como fazer para colaborar?
 
-You can use our materials and instructions to roll out your own workshop in your city, workplace or kitchen! Read more about Rails Girls at http://railsgirls.com
+Primeiramente, você deve dar um [fork](http://help.github.com/fork-a-repo/) no projeto para a sua conta. Com isso, você estará livre para fazer as traduções para o português.
 
-## Quick start
+Quando finalizar algo, você deve dar um [pull request](http://help.github.com/pull-requests/) neste repositório para o seu conteúdo ser revisado e aprovado. Com isso, a sua tradução estará no repositório principal e com os seus devidos créditos.
 
-View the guides at http://guides.railsgirls.com or clone this repo and install & run [jekyll](https://github.com/mojombo/jekyll)
+No final do projeto, será lançado oficialmente o site Rails Gilrs Brasil e divulgado. Todos os colaboradores serão citados e terão seus créditos mantidos.
 
-### Installing jekyll
+## Como saber se o que eu estou traduzindo não está sendo traduzido por alguém?
+
+A planilha com as traduções em aberto e aquelas sendo traduzidas, bem como os responsáveis está disponível no link a seguir:
+
+https://docs.google.com/spreadsheets/d/1Gn1BHxwdX3nHyiIDnY1L8ZdNuRJuNhPKli-uG9XWo9c/edit?usp=sharing
+
+## Como posso me candidatar a realizar uma tradução?
+
+Basta enviar um e-mail para marinaflessa@gmail.com com cópia para maujor@maujor.com constando o seu nome, qual a página que você pretende traduzir, entre aquelas listadas na planilha citada anteriormente, e a previsão de término. 
+
+Aguarde a resposta ao seu e-mail informando que a tradução está liberada (ou não em raríssimos casos).
+
+**Contamos com a colaboração de todos pois o sucesso deste projeto depende de todos nós que gostamos de compartilhar conhecimentos**
+
+## Como atualizar meu fork com as novas atualizações deste repositório?
+
+    git remote add upstream https://github.com/jquery-br/jqapi-br.git (url origem do fork)
+    git pull upstream pt-br (nome do branch)
+    git push
+
+_____
+
+# PARTE 2
+
+# Rails Girls &#8212; Tutoriais
+
+Nosso objetivo é fornecer ferramentas para que mulheres estudem e entendam a tecnologia Rails. Os eventos Rails Girls foram criados com a finalidade de proporcionar uma primeira experiência com as técnicas Rails de criação para a Internet.
+
+Rails Girls foi criado na cidade de Helsinki no final do ano 2010. A intenção inicial foi a de criar um único evento local e nós jamais imaginamos que a ideia atingisse a proporção atual com a proliferação de vários eventos pelo mundo inteiro.  Estes tutoriais foram criados para ajudá-lo a iniciar seus estudos de Rails.
+
+Você pode usar nosso material para criar seu próprio workshop na sua cidade, no seu ambiente de trabalho ou mesmo na sua cozinha! Saiba mais sobre Rails Girls em http://railsgirls.com
+
+## Mãos à obra
+
+Leia os tutoriais em http://guides.railsgirls.com ou clone este repositório, instale e rode [jekyll](https://github.com/mojombo/jekyll)
+
+### Instalando jekyll
 
 ```
 $ cd railsgirls.github.com
@@ -20,58 +56,58 @@ $ cd railsgirls.github.com
 $ bundle install
 ```
 
-### Pygments and Code Highlighting
+### Pygments e Code Highlighting
 
-The guides use the [pygments](http://pygments.org/) library to do syntax highlighting. If you don't have it installed you won't be able to see the highlight sections like the following:
+Os tutoriais foram criados com uso da biblioteca [pygments](http://pygments.org/) para destacar a sintaxe dos códigos. Se você não instalar a biblioteca não será possível visualizar o destaque nos blocos de código inseridos nos tutoriais, tais como o mostrado a seguir:
 
 ```
 {% highlight %}
 {% endhighlight %}
 ```
 
-If you aren't editing the code blocks, you can safely ignore this. If you want pygments, you can follow the [install instructions](http://jekyllrb.com/docs/installation/) in the "Pygments" section.
+Se você não pretende editar blocos de código, pode ignorar a biblioteca, mas se pretende instalá-la consulte as [instruções de instalação](http://jekyllrb.com/docs/installation/) na seção "Pygments" 
 
-### Run jekyll
+### Rodando jekyll
 
 ```
 $ bundle exec jekyll server --watch
 ```
 
-### Styling
+### Estilizando
 
-Wrap keyboard shortcuts with [kbd](https://www.w3.org/wiki/HTML/Elements/kbd) HTML tag.
+Atalhos de teclado devem ser marcados com o elemento HTML [kbd](https://www.w3.org/wiki/HTML/Elements/kbd) .
 
-To make posts consistent in style use `Ctrl+C` over `CTRL-c`/`ctrl+c`
+Por questões de consistência de estilização use `Ctrl+C` e não `CTRL-c`/`ctrl+c`
 
 ```
-To shut down the server you can hit <kbd>Ctrl</kbd>+<kbd>C</kbd>
+Para  parar o servidor pressione as teclas <kbd>Ctrl</kbd>+<kbd>C</kbd>
 ```
 
-### Having trouble?
+### Encontrou um problema?
 
-You might find some useful hints in this jekyll issue if it's not working as expected: [Issue 503](https://github.com/mojombo/jekyll/issues/503)
+Caso jekyll não esteja funcionando como esperado consulte [Issue 503](https://github.com/mojombo/jekyll/issues/503)
 
-## Contributing a Guide
+## Contribuindo com um tutorial
 
-To contribute a guide, view the instructions at http://guides.railsgirls.com/contributing
+Para contribuir com um tutorial consulte as instruções em http://guides.railsgirls.com/contributing
 
 ## Twitter
 
-For updates and more follow [@railsgirls](https://twitter.com/railsgirls)
+Para acompanhar atualizações e informações em geral siga [@railsgirls](https://twitter.com/railsgirls)
 
-## Website & Blog
+## Website e Blog
 
-Official website and blog for Rails Girls movement can be found at http://railsgirls.com
+O website e o blog de Rails Girls encontra-se hospedado em  http://railsgirls.com
 
-## E-mail list
+## Lista de e-mail
 
-Global mailing list for Rails Girls events at http://groups.google.com/group/rails-girls-team
+A lista de e-mails de caráter global para os eventos de Rails Girls encontra-se em http://groups.google.com/group/rails-girls-team
 
-## Credits
+## Créditos
 
 * Karri Saarinen / [@karrisaarinen](https://twitter.com/karrisaarinen) / [github](http://github.com/ksaa)
 * Linda Liukas / [@lindaliukas](https://twitter.com/lindaliukas) / [github](http://github.com/lindaliukas)
 * Vesa Vänskä / [@vesan](https://twitter.com/vesan) / [github](http://github.com/vesan)
 * Terence Lee / [@hone02](https://twitter.com/hone02) / [github](http://github.com/hone)
 
-..and all the other coaches and people making Rails Girls awesome. Please add yourself!
+..e todos os coaches e pessoas envolvidas com o maravilhoso universo de Rails Girls. Seja mais um de nós!
