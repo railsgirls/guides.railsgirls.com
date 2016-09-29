@@ -6,7 +6,7 @@ permalink: thumbnails
 
 # Criando thumbnails com Carrierwave
 
-*Criado por Miha Filej, [@mfilej](https://twitter.com/mfilej)*
+*Criado por Miha Filej, [@mfilej](https://twitter.com/mfilej)*  
 *Traduzido por Maujor, [site do Maujor](http://www.maujor.com)*
 
 __Coach__: Explicar qual o efeito de se definir a largura de uma imagem na marcação HTML como explicado no final do passo 4, constante do tutorial *Tutorial para criação da app Rails Girls*.
