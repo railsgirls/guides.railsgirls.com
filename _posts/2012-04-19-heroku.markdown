@@ -6,7 +6,7 @@ permalink: heroku
 
 # Publique sua aplicação com Heroku
 
-*Criado por Terence Lee, [@hone02](https://twitter.com/hone02)*
+*Criado por Terence Lee, [@hone02](https://twitter.com/hone02)*  
 *Traduzido por Maujor, [site do Maujor](http://www.maujor.com)*
 
 ### Instale Heroku
