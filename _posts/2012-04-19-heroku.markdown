@@ -7,6 +7,7 @@ permalink: heroku
 # Publique sua aplicação com Heroku
 
 *Criado por Terence Lee, [@hone02](https://twitter.com/hone02)*
+*Traduzido por Maujor, [site do Maujor](http://www.maujor.com)*
 
 ### Instale Heroku
 
@@ -15,21 +16,9 @@ Siga os passos intitulados "Introduction" e "Set up" constantes na página
 
 __COACH__: Fale sobre os benefícios do uso da plataforma Heroku para publicação vs uso de servidores tradicionais.
 
-[Guia heroku]: https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction
+[heroku-guide]: https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction
 
 ### Preparando sua app
-
-#### Sistema de controle de versão
-
-Para começar vamos adicionar nosso código em um sistema de controle de versão. Você pode fazer isso executando os seguintes comandos no terminal: 
-
-{% highlight sh %}
-git init
-git add .
-git commit -m "initial commit"
-{% endhighlight %}
-
-__COACH__: Agora é uma ótima oportunidade para falar sobre sistemas de controle de versão e git.
 
 #### Atualizando o banco de dados
 
@@ -53,6 +42,18 @@ end
 Rode `bundle install --without production` para configurar suas dependências.
 
 __COACH__: Você pode falar sobre RDBMS e as diferenças para outros sistemas de gerenciamento bem como  apresentar alguns detalhes das dependências em Heroku no PostgreSQL.
+
+#### Sistema de controle de versão
+
+Para começar vamos adicionar nosso código em um sistema de controle de versão. Você pode fazer isso executando os seguintes comandos no terminal:
+
+{% highlight sh %}
+git init
+git add .
+git commit -m "initial commit"
+{% endhighlight %}
+
+__COACH__: Agora é uma ótima oportunidade para falar sobre sistemas de controle de versão e git.
 
 ### Publicando sua app
 
@@ -100,7 +101,7 @@ To https://git.heroku.com/young-reaches-87845.git
  * [new branch]      master -> master
 {% endhighlight %}
 
-O pushing estará terminado com êxito quando aparecer o texto “Launching…” como mostrado anteriomente.
+O envio estará terminado com êxito quando aparecer o texto “Launching…” como mostrado anteriomente.
 
 #### Migrando o banco de dados
 
@@ -110,7 +111,7 @@ Precisamos migrar nosso banco de dados tal como fizemos localmente durante o wor
 heroku run rake db:migrate
 {% endhighlight %}
 
-Depois que esse comando for executado você poderá acessar a app na sua URL. Para a plicação que desenvolvemos nesse exemplo abra: <https://young-reaches-87845.herokuapp.com/>.
+Depois que esse comando for executado você poderá acessar a app na sua URL. Para a aplicação que desenvolvemos nesse exemplo abra: <https://young-reaches-87845.herokuapp.com/>.
 Opcionalmente, para visitar a página, você pode executar `heroku open` no terminal.
 
 #### Notas finais
@@ -119,7 +120,7 @@ A plataforma Heroku tem suas peculiaridades. Nela os aplicativos são executados
 
 ###### [Sistema de arquivos efêmero][ephemeral-filesystem]
 
-> Cada container dyno cria seu próprio sistema de arquivos efêmero contendo uma cópia 
+> Cada container dyno cria seu próprio sistema de arquivos efêmero contendo uma cópia
 > do mais recente código publicado. Durante o período de vida do dyno os processos nele rodando
 > usam um sistema de arquivos que são escritos em um rascunho temporário, contudo nenhum destes arquivos
 > são visíveis para processamento em qualquer outro dyno, tais arquivos serão
@@ -127,14 +128,14 @@ A plataforma Heroku tem suas peculiaridades. Nela os aplicativos são executados
 > acontece sempre que o dyno é substituido em decorrência uma implantação de aplicativos e, também,
 > em média uma vez por dia, pois assim está previsto pelo mecanismo de gestão nativo do dyno.
 
-No tutorial [App](/app)  a funcionalidade que prevê a gravação de arquivos em uma Idea, permite escrever arquivos no diretório  `public/uploads` das suas aplicações . Você pode constatar o armazenamento efêmero em Heroku seguindo os seguintes passos:
+No [tutorial para criação do App](app) a funcionalidade que prevê a gravação de arquivos em uma Idea, permite escrever arquivos no diretório  `public/uploads` das suas aplicações . Você pode constatar o armazenamento efêmero em Heroku seguindo os seguintes passos:
 
 1. Inicie a aplicação executando o comando `heroku open`
 2. Adicione uma nova Idea e nela uma imagem
 3. Reinicie a aplicação executando o comando `heroku restart`
 4. Volte para a página da Idea e recarregue - a imagem não será mais visível
 
-[sistema de arquivos efêmero]: https://devcenter.heroku.com/articles/dynos#ephemeral-filesystem
+[ephemeral-filesystem]: https://devcenter.heroku.com/articles/dynos#ephemeral-filesystem
 
 ##### Contornando o armazenamento efêmero
 

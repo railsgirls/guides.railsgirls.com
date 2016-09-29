@@ -8,7 +8,7 @@ permalink: app
 
 *Criado por Vesa Vänskä, [@vesan](https://twitter.com/vesan)*
 
-**Você deverá ter Rails instalado.** [**Consulte o guia de instalação se você ainda não instalou.**](/install)
+**Você deverá ter Rails instalado.** [**Consulte o guia de instalação se você ainda não instalou.**](install)
 
 
 ## Conhecendo as ferramentas

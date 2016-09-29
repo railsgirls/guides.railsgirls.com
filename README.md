@@ -18,7 +18,7 @@ https://docs.google.com/spreadsheets/d/1Gn1BHxwdX3nHyiIDnY1L8ZdNuRJuNhPKli-uG9XW
 
 ## Como posso me candidatar a realizar uma tradução?
 
-Basta enviar um e-mail para marinaflessa@gmail.com com cópia para maujor@maujor.com constando o seu nome, qual a página que você pretende traduzir, entre aquelas listadas na planilha citada anteriormente, e a previsão de término. 
+Basta enviar um e-mail para marinaflessa@gmail.com com cópia para maujor@maujor.com constando o seu nome, qual a página que você pretende traduzir, entre aquelas listadas na planilha citada anteriormente, e a previsão de término.
 
 Aguarde a resposta ao seu e-mail informando que a tradução está liberada (ou não em raríssimos casos).
 
@@ -26,8 +26,8 @@ Aguarde a resposta ao seu e-mail informando que a tradução está liberada (ou 
 
 ## Como atualizar meu fork com as novas atualizações deste repositório?
 
-    git remote add upstream https://github.com/jquery-br/jqapi-br.git (url origem do fork)
-    git pull upstream pt-br (nome do branch)
+    git remote add upstream https://github.com/railsgirlsmaceio/railsgirlsguides.git (url origem do fork)
+    git pull upstream gh-pages (nome do branch)
     git push
 
 _____
@@ -65,7 +65,7 @@ Os tutoriais foram criados com uso da biblioteca [pygments](http://pygments.org/
 {% endhighlight %}
 ```
 
-Se você não pretende editar blocos de código, pode ignorar a biblioteca, mas se pretende instalá-la consulte as [instruções de instalação](http://jekyllrb.com/docs/installation/) na seção "Pygments" 
+Se você não pretende editar blocos de código, pode ignorar a biblioteca, mas se pretende instalá-la consulte as [instruções de instalação](http://jekyllrb.com/docs/installation/) na seção "Pygments"
 
 ### Rodando jekyll
 
