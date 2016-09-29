@@ -6,6 +6,8 @@ permalink: contributing
 
 # Instruções para contribuir com um tutorial
 
+*Traduzido por Maujor, [site do Maujor](http://www.maujor.com)* 
+
 O site de tutoriais usa a tecnologia [jekyll](https://github.com/mojombo/jekyll) para renderizar suas páginas e todos os documentos do site são escritos com uso da sintaxe [markdown](http://daringfireball.net/projects/markdown/). Para contribuir com um ou mais  ( ;-) ) tutoriais siga os seguinte passos: 
 
 1. Dê um fork no [repositório do github](https://github.com/railsgirlsmaceio/railsgirlsguides) clicando no botão "Fork".
