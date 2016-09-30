@@ -6,6 +6,8 @@ permalink: videos
 
 # Rails Girls é felicidade no mundo inteiro
 
+*Traduzido por Maujor, [site do Maujor](http://www.maujor.com)*
+
 Aqui você encontra uma seleção de vídeos da Rails Girls produzidos no mundo todo. Você tem um vídeo para compartilhar? Publique ele aqui.
 
 ### Rails Girls em Ljubljana 2014
