@@ -72,14 +72,14 @@ table {
 }
 
 header {
-  height: 70px;
+  height: 95px;
   color: #fff;
-  padding-top: 50px;
+  padding-top: 25px;
   background: #d3360b;
 }
 
 header #logo {
-  width: 240px;
+  width: 410px;
   float: left;
 }
 
