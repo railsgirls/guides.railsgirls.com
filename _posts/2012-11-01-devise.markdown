@@ -6,8 +6,10 @@ permalink: devise
 
 # Autenticação com Devise
 
-*Criado por Piotr Steininger, [@polishprince](https://twitter.com/polishprince)*  
-*Atualizado por Ernesto Jimenez, [@ernesto_jimenez](https://twitter.com/ernesto_jimenez)*  
+*Criado por Piotr Steininger, [@polishprince](https://twitter.com/polishprince)*
+
+*Atualizado por Ernesto Jimenez, [@ernesto_jimenez](https://twitter.com/ernesto_jimenez)*
+
 *Traduzido por Maujor, [site do Maujor](http://www.maujor.com)*
 
 **Esse guia assume que você já criou a app RailsGirls como mostrado no** [**tutorial para criação da app Rails Girls**](/app).
@@ -85,9 +87,9 @@ Certifique-se de que o servidor rails está rodando, abra [http://localhost:3000
 
 ## *6.*Crie links para cadastramento e login
 
-Agora só nos resta criar links e notificação de usuário logado no canto superior direito da barra de navegação. 
+Agora só nos resta criar links e notificação de usuário logado no canto superior direito da barra de navegação.
 
-Para fazer isso edite `app/views/layouts/application.html.erb` e acrescente as seguintes linhas: 
+Para fazer isso edite `app/views/layouts/application.html.erb` e acrescente as seguintes linhas:
 {% highlight erb %}
 <p class="navbar-text pull-right">
 <% if user_signed_in? %>
@@ -122,7 +124,7 @@ Abra seu navegador e execute as ações de login e logout.
 
 * Acrescente campos extras no modelo de usuários
 * Adicione relacionamentos entre usuários e ideas
-* Crie restrições de modo a permitir que usuários editem somente suas próprias ideas e apague seus próprios comentários 
+* Crie restrições de modo a permitir que usuários editem somente suas próprias ideas e apague seus próprios comentários
 * Permita expandir roles ou permissões para usuários (use uma das gem populares, tal como like CanCan)
 
 

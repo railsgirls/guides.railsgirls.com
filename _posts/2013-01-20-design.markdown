@@ -7,7 +7,8 @@ permalink: design
 # Adicione design Usando HTML &amp; CSS
 
 *Criado por Alex Liao, [@alexliao](http://bannka.com/alex)*
-*, traduzido por José Viera [@NetoDevel](https://github.com/NetoDevel)*
+
+*Traduzido por José Viera [@NetoDevel](https://github.com/NetoDevel)*
 
 Agora o aplicativo está funcionando bem, mas ainda se parece com scaffold. Vamos adicionar algum design para torná-lo parecido com um site profissional. Quando terminar este tutorial, o aplicativo será parecido com [esse](http://railsgirlsapp.herokuapp.com/ideas).
 

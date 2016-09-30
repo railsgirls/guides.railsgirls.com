@@ -6,7 +6,8 @@ permalink: thumbnails
 
 # Criando thumbnails com Carrierwave
 
-*Criado por Miha Filej, [@mfilej](https://twitter.com/mfilej)*  
+*Criado por Miha Filej, [@mfilej](https://twitter.com/mfilej)*
+
 *Traduzido por Maujor, [site do Maujor](http://www.maujor.com)*
 
 __Coach__: Explicar qual o efeito de se definir a largura de uma imagem na marcação HTML como explicado no final do passo 4, constante do tutorial *Tutorial para criação da app Rails Girls*.
@@ -64,7 +65,7 @@ A partir de agora as imagens enviadas ao servidor serão redimensionadas para cr
 
 ## *3.*Mostrando thumbnails
 
-Para verificar se uma imagem enviada ao servidor foi redimensionada abra 
+Para verificar se uma imagem enviada ao servidor foi redimensionada abra
 `app/views/ideas/index.html.erb`. Altere a linha
 
 {% highlight erb %}

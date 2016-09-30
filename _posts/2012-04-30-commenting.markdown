@@ -5,7 +5,8 @@ permalink: commenting
 ---
 # Área de comentários para a app Rails Girls
 
-*Criado por Janika Liiv, [@janikaliiv](https://twitter.com/janikaliiv)*  
+*Criado por Janika Liiv, [@janikaliiv](https://twitter.com/janikaliiv)*
+
 *Traduzido por Maujor, [site do Maujor](http://www.maujor.com)*
 
 Vamos aprender como criar uma área de comentários para nossa app *railsgirls* ideas.
@@ -46,7 +47,7 @@ belongs_to :idea
 
 ## *3.*Mostrar o formulário de comentários e os comentários existentes
 
-Abra app/views/ideas/show.html.erb é depois da tag de imagem (image_tag) 
+Abra app/views/ideas/show.html.erb é depois da tag de imagem (image_tag)
 {% highlight erb %}
 <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
 {% endhighlight %}
@@ -65,7 +66,7 @@ acrescente a seguinte linha:
 <%= render 'comments/form' %>
 {% endhighlight %}
 
-Em `app/controllers/ideas_controller.rb` acrescente a ação mostrar logo após a linha:  
+Em `app/controllers/ideas_controller.rb` acrescente a ação mostrar logo após a linha:
 {% highlight ruby %}
 @comments = @idea.comments.all
 @comment = @idea.comments.build
