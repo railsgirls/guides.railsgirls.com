@@ -6,8 +6,7 @@ permalink: testing-rspec
 
 # Teste sua aplicação com RSpec
 
-*Criado por Clemens Helm, [@clemenshelm](https://twitter.com/clemenshelm) e Floor Drees, [@floordrees](https://twitter.com/floordrees)*
-
+*Criado por Clemens Helm, [@clemenshelm](https://twitter.com/clemenshelm) e Floor Drees, [@floordrees](https://twitter.com/floordrees)*  
 *Traduzido por Marina Limeira, [@marinalimeira_](https://www.twitter.com/marinalimeira_)*
 
 RSpec é um framework para testes em Ruby, que descreve o comportamento da nossa aplicação em uma sintaxe que não se parece muito com Ruby. Ele irá mostrar o resultado dos testes no seu terminal.
