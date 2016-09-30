@@ -9,6 +9,7 @@ permalink: app
 *Criado por Vesa Vänskä, [@vesan](https://twitter.com/vesan)*  
 *Traduzido por Maujor, [site do Maujor](http://www.maujor.com)*
 
+
 **Você deverá ter Rails instalado.** [**Consulte o guia de instalação se você ainda não instalou.**](install)
 
 
