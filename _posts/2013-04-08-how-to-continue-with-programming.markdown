@@ -4,134 +4,133 @@ title: "After The Event: How To Continue With Programming"
 permalink: how-to-continue-with-programming
 ---
 
-# After The Event: How To Continue With Programming
+# Pós-evento: Como prosseguir com Programação
 
-*Created and edited for general use by Daniel Puglisi, [@danielpuglisi](http://twitter.com/danielpuglisi).*
+*Criado por Daniel Puglisi, [@danielpuglisi](http://twitter.com/danielpuglisi)*
+*Traduzido por Joana Souza, [@sspjoana](https://www.twitter.com/sspjoana)*
 
-*This guide was originally written for the [Rails Girls Basel](http://railsgirls.com/basel) event
-and was published on
-[Daniel Puglisi's personal blog](http://danielpuglisi.com/articles/2013/04/rails-girls-after-the-event-how-to-continue-with-programming).*
+*Este guia foi escrito originalmente para o evento [Rails Girls Basel](http://railsgirls.com/basel) e publicado no
+ [Daniel Puglisi's personal blog](http://danielpuglisi.com/articles/2013/04/rails-girls-after-the-event-how-to-continue-with-programming).*
 
-Unfortunately (!) the event is already over and I've written this
-blog post to help you find the best way to keep going with learning on
-how to program!
+Infelizmente (!) o evento já terminou e eu escrevi esse post para ajudar a encontrar a melhor maneira
+para continuar a aprendizagem de como aprender a programar!
 
-There are 4 steps which I've come up with and I encourage you to
-really take them to your heart and do them.
+Há 4 passos os quais eu sugiro e encorajo você 
+à realmente levá-los ao seu coração e colocá-los em prática.
 
-Originally this article was planned as a talk for the end of the Rails Girls Basel event but the girls
-were so focused on coding that we just didn't wanted to interrupt them. :)
+Originalmente esse artigo foi planejado como uma palestra para o encerramento do evento Rails Girls Basel,
+porém as garotas estavam tão focadas no código que nós não queríamos interrompê-las. :) 
 
-So here it goes:
+Então aqui vai:
 
-## 1. Keep on Coding
+## 1. Continue Programando
 
-Mastering a craft requires constant repeating and perseverance.
-This also applies to programming. I encourage you to repeat the Rails
-Girls tutorial which we did at the event and try to play around with
-it some more.
+Dominar uma habilidade requer constante repetição e perserverança.
+Isso também se aplica à programação. Eu encorajo você a repetir o tutorial Rails
+Girls, o qual nós utilizamos no evento e tente explorá-lo um pouco mais.
 
-After that here are some free and paid resources which will help you
-to take things to the next level:
+Após isso, aqui está alguns materiais gratuitos e pagos os quais irá ajudá-la 
+a levar as coisas para o próximo nível:
 
-### Courses
+### Cursos
 
-* [Rails for Zombies](http://railsforzombies.org/) - A Rails Screencast which was created by [Codeschool](http://codeschool.com). Its free and Codeschool provides also a series of paid [Ruby and Rails](http://www.codeschool.com/paths/ruby#starting-rails) courses which are awesome. You should really try them!
-* [Codecademy](http://www.codecademy.com/) - The world isn't just created with rubiez. There are also plenty of other languages like HTML/CSS, JavaScript, Python and so on. Try them out.
+* [Rails for Zombies](http://railsforzombies.org/) - Um Screencast de Rails criado pela [Codeschool](http://codeschool.com). É gratuito e a Codeschool fornece uma sére de cursos pagos [Ruby and Rails](http://www.codeschool.com/paths/ruby#starting-rails) os quais são ótimos. Você realmente deveria experimentá-los! 
+* [Codecademy](http://www.codecademy.com/) - O mundo não é apenas criados com rubis. Há várias outras linguagens como HTML/CSS, JavaScript, Python em diante. Conheça-as.
 
-### Books
+### Livros
 
-* [Rails Tutorial](http://ruby.railstutorial.org/) - A awesome book which has a free HTML version and a paid print version. The book provides you with a lot of great material which we couldn't cover at the Rails Girls workshop.
+* [Rails Tutorial](http://ruby.railstutorial.org/) - Um ótimo livro o qual possui uma versão HTML gratuita, e uma versão impressa paga.O livro fornece-lhe um ótimo material que não cobririamos em um workshop Rails Girls. 
 
 ### Screencasts & Videos
 
-* [Railscasts](http://railscasts.com/) - Short and simple screencasts about Rails by Ryan Bates.
-  **Note**: *Ryan is giving away 3 month RailsCasts pro subscription coupons to all Rails Girls attendees for free.
-  If you haven't received one at the Rails Girls event you attended, ask your event organizer to [send an email to Ed Drain](mailto:geekprogrammer.ed@gmail.com). He will send the coupons to your event organizer.*
-* [Confreaks](http://www.confreaks.com/) - Talks from conferences all over the world.
-* [Peepcode](https://peepcode.com/) - Paid Screencasts by Geoffrey Grosenbach.
+* [Railscasts](http://railscasts.com/) - Curto e simples screencasts sobre Rails by Ryan Bates.
+  **Nota**: *Ryan está dando 3 meses de conta pro no RailsCasts cupons gratuitos para todos os participantes do Rails Girls.
+ Se você não recebeu um no evento Rails Girls o qual participou, peça ao organizador(a) para [mandar um email ao Ed Drain](mailto:geekprogrammer.ed@gmail.com). Ele mandará os cupons para o seu organizador.*
+* [Confreaks](http://www.confreaks.com/) - Palestras de conferências no mundo todo.
+* [Peepcode](https://peepcode.com/) - Screencasts pagos produzidos pelo Geoffrey Grosenbach.
 * [Richard Schneems Screencast](http://www.youtube.com/user/schneems/videos)
 
 ### MOAR
 
-* [Thoughtbot Trail-Map](https://github.com/thoughtbot/trail-map) - Guides to different topics.
-* [Ruby on Rails Tutorial: Learn From Scratch](https://blog.udemy.com/ruby-on-rails-tutorial-learn-from-scratch/) - Explanations and definitions to different parts of Rails.
+* [Thoughtbot Trail-Map](https://github.com/thoughtbot/trail-map) - Guias de diferentes tópicos.
+* [Ruby on Rails Tutorial: Aprenda do 0](https://blog.udemy.com/ruby-on-rails-tutorial-learn-from-scratch/) - Explicações e definições de diferentes partes do Rails. 
 
-> If you have any other good resources, [hit me](mailto:daniel@codegestalt.com) so I can put them into the list.
+> Se você tiver quaisquer outros bons materiais, [diga-me](mailto:daniel@codegestalt.com) para que eu possa adicioná-los na lista.
 
-## 2. Build something real
+## 2. Construa algo real
 
-Build something real means you should try to create something which is actually needed in the end.
-The hardest part will be to find a real project.
-If you have no idea, try to think of something that really upsets you.
-Do you have to use something in your daily life that pisses you off?
-Write an application for it and try to solve that pain.
-This way you will be more motivated than by just following tutorials.
+Construir algo real significa que você deve tentar criar algo que será útil no final.
+A parte mais difícil será achar um projeto real.
+Se você não tiver ideias, tente pensar em algo que realmente lhe chateia.
+Você tem que usar alguma coisa no seu dia-dia que lhe irrita?
+Escreva uma aplicação para isso e tente resolver essa dor.
+Desse jeito você irá se motivar mais do que apenas seguir tutoriais.
 
-And don't forget to show your application to your friends and the world.
-Ask for feedback and keep on learning.
+E não se esqueça de mostrar a sua aplicação para os seus amigos e o mundo.
+Peça por feedback e continue aprendendo.
 
-If you still have trouble finding something you can work on I have an idea for you:
-Build a Rails Girls website for your country or city. In Switzerland we encourage the girls to work
-on our swiss wide Rails Girls website: [railsgirls.ch](http://railsgirls.ch/).
+Se você ainda tiver problemas em achar algo em que possa trabalhar, eu tenho uma ideia para você:
+Contrua um site do Rails Girls para a sua cidade ou país. Na Suíça nós incentivamos as garotas para trabalhar 
+no nosso site suíço do Rails Girls: [railsgirls.ch](http://railsgirls.ch/).
 
-## 3. Get in touch
+## 3. Entre em contato
 
-Its always easier when you have someone you can ask.
-With this in mind, go out and find someone who you can talk to.
-Now is the best time for it,
-because you just got to know a lot of like minded people which have more or less the same level as you.
-There are a lot of ways to communicate nowadays,
-e.g. host a local meetup group, use Google Talk, create Facebook Groups or write a good ol' letter :)
+É sempre mais fácil quando você tem alguém para perguntar.
+Com isso em mente, saia e ache alguém com quem possa conversar.
+Agora é a melhor hora para isso,
+porque você acabou de conhecer um monte de pessoas com o mesmo espírito mais ou menos no mesmo nível que você.
+Há várias formas de se comunicar hoje em dia,
+e.g. sediar um meetup local, usar Google Talk, criar um grupo no Facebook ou escrever uma boa e velha carta :)
 
-From my experience, knowing some people who have the same interests as you is one of the most important parts.
-Try to convince people, that programming is fun.
-If you have a brother or a sister, show them what you've learned.
-Or show it to your parents, children or friends.
-Just try to build a circle of people with the same interest in programming and technology.
+Da minha experência, conhecer algumas pessoas as quais possuem os mesmos interesses que você é uma das partes mais importantes.
+Tente convencer algumas pessoas de que programação é divertido.
+Se você tiver um irmão ou irmã, mostre a eles o que você aprendeu.
+Ou mostre aos seus pais, crianças ou amigos.
+Apenas tente criar um círculo de pessoas com os mesmos interesses em programação e tecnologia.
 
-Also try to find something like a mentor.
-Programming can be really intimidating sometimes,
-so it can help to know someone which has more experience and can help you with your problems.
-For example: ask someone of the Coaches who attended at the Event.
+Tente também encontrar alguém como mentor.
+Programar pode ser bem intimidador em alguns momentos,
+conhecer alguém que tenha mais experiência e possa lhe ajudar nos seus problemas pode se tornar algo útil.
+Por exemplo: perguntar a alguns dos treinadores que participaram do evento.
 
-If you don't have the time to host your own meetup group, thats ok.
-There are already a few groups which you can join:
+Se você não tiver tempo de sediar um meetup, tudo bem.
+Há alguns grupos que você pode participar:
 
-* [Ruvetia](http://ruvetia.org/) - Ruvetia is a meetup (or drinkup) where we will come together every now and then and just socialize. This meetup is not about content, its about getting to know the people in the community. Every meetup is in a different city so check out the Ruvetia website from time to time where the next meetup will take place.
-* [Railshöck](http://www.meetup.com/rubyonrails-ch/events/80098992/) - A Rails meetup in Zurich
-* [Geneva Ruby Brigade](http://genevarb.com/) - Ruby group based in Geneva
-* [RoRganize.it](http://rorganize.it/) - Ruby groups app to find existing groups, especially in Germany
+* [Ruvetia](http://ruvetia.org/) - Ruvetia é um meetup (or drinkup) onde nós iremos se reunir e, em seguida, apenas socializar. Esse meetup não é sobre conteúdo, e sim sobre conhecer as pessoas da comunidade. Cada meetup acontece em uma cidade diferente, então cheque o site da Ruvetia de tempos em tempos para acompanhar onde o próximo meetup irá acontecer.
+* [Railshöck](http://www.meetup.com/rubyonrails-ch/events/80098992/) - Meetup de Rails em Zurique
+* [Geneva Ruby Brigade](http://genevarb.com/) - Grupo de RUby baseado em Geneva
+* [RoRganize.it](http://rorganize.it/) - App para encontrar grupos existentes de Ruby, especificamente na Alemanha 
 
-> This list is Switzerland related and only used as an example, ask the organizers and coaches of your event for a list of local groups and meetups.
+> Essa lista é relacionada a Suíça e foi apenas utilizada como um exemplo, peça os organizadores e treinadores do seu evento uma lista com os grupos locais e meetups.  
 
-One of the girls at the Rails Girls Basel event (thanks [Helena](https://twitter.com/HBobbiRo)!) had the great idea
-that we could put up a list with all the attendees, coaches and organizers of the event.
-We created this list and its on [Github](https://github.com/RailsGirlsSwitzerland/attendees) now, check it out [here](http://railsgirlsswitzerland.github.io/attendees/site/2013_04_basel.html).
-Feel free to fork the repository and adjust it to the needs of your Rails Girls event.
+Uma das garotas no evento Rails Girls Basel (obrigada) [Helena](https://twitter.com/HBobbiRo)!) teve a ótima ideia de
+que poderíamos criar uma lista com todos os participantes, tutores e organizadores do evento.
+Nós criamos essa lista e está no [Github](https://github.com/RailsGirlsSwitzerland/attendees) agora, confira [aqui](http://railsgirlsswitzerland.github.io/attendees/site/2013_04_basel.html).
+Sinta-se a vontade de forkar o repositório e ajustá-lo para as necessidades do seu evento Rails Girls.
 
-Try to setup such a list for your event too, this way its a lot easier to stay in contact with everyone than just
-with the people who sat around the same table as you did.
-If you don't know how, ask someone of the organizers of the event if she or he could do it.
+Tente configurar essa lista para o seu evento também, desse jeito fica mais fácil de manter o contato com todos, do que
+apenas as pessoas que dividiram a mesma mesa que você. 
+Se você não sabe como, peça a algum organizador do evento se ela/ele poderia fazê-lo.
 
-## 4. Have fun
 
-Last but not least, have fun.
-If you don't enjoy programming it is probably not the right thing for you.
-But thats the same story for every profession or hobby.
-Not only for technology related topics.
-But if you just read this I think you are perfectly made for programming,
-otherwise you wouldn't be here in the first place ;)
+## 4. Divirta-se
 
-So, if you liked the workshop and the event - you're in the right spot.
+Por último mas não menos importante, divirta-se.
+Se você não se diverte programando, então é bem provável que essa não seja a coisa certa para você.
+Mas essa é a mesma história para toda profissão ou hobby.
+Não é apenas para tópicos relacionados a tecnologia.
+Mas se você leu esse tutorial todo, acho que você é perfeita para programar,
+caso contrário você não estaria aqui, em primeiro lugar ;)
 
-If you have any further questions, don't hesitate to ask.
-You can do this via [Twitter](https://twitter.com/railsgirls) or email.
-Ask the organizers and coaches of your event for their email addresses and if they would like to help you.
+Então, se você gostou do workshop e do evento - você está no lugar certo.
 
-Thats it, keep on coding and let's build the future!
+Se você tiver mais perguntas, não hesite em fazê-las.
+Você pode mandar via [Twitter](https://twitter.com/railsgirls) ou email.
+Pergunte aos organizadores e tutores do seu evento pelo email deles e se eles gostariam de lhe ajudar.
 
-## 5. More resources
+É isso, continue programando e vamos construir o futuro! 
 
-- [8 ways to enable workshop attendess to keep learning](http://pragtob.wordpress.com/2013/06/14/8-ways-to-enable-workshop-attendess-to-keep-learning/)
+## 5. Mais materiais
+
+- [8 maneiras de permitir que os participantes do workshop continuem aprendendo](http://pragtob.wordpress.com/2013/06/14/8-ways-to-enable-workshop-attendess-to-keep-learning/)
 
