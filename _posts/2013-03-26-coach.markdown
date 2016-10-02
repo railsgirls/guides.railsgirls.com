@@ -15,7 +15,7 @@ Então, você já ouviu falar sobre [Rails Girls](http://railsgirls.com) e está
 - Paciência, vontade de ajudar, e uma atitude amigável :)
 - Ser capaz de responder a todos os tipos de perguntas de uma forma iniciante e amigável (mesmo que a explicação não seja *tecnicamente* totalmente exata) durante toda a duração do workshop.
 - Experiência com programação web (você sabe o que significa MVC, certo?), não necessariamente em Rails.
-- Algum tempo para visitar o [tutorial app básico][app] antes do evento.
+- Algum tempo para visitar o [tutorial app básico](app) antes do evento.
 
 ### Por que eu deveria ser um Rails Girls coach?
 
@@ -41,7 +41,7 @@ Acredite ou não, para a maioria, é realmente importante. Isso torna o ambiente
 Rails Girls é uma experiência inclusiva, segura e acolhedora para todos. Os workshops são destinados principalmente para mulheres iniciantes e trabalha para este grupo de usuários específico, mas sempre fomos abertos a incluir outros de habilidades níveis e gêneros. Rails Girls coaches são do sexo masculino e feminino. O objetivo final do Rails Girls é enriquecer toda a comunidade Rails, incentivando mais diversas pessoas para participar. Se você quiser fazer um currículo ou grupo diferente, todo o material está online e você está convidado a usá-lo com outro nome e marca.
 
 ### E se eu nunca fiz nada no Rails?
-Por que não fez ainda? Só brincando. Isso não é um problema, nós tivemos um monte de coaches como você e eles foram *incríveis*. Contanto que você esteja confortável com qualquer outra estrutura similar, você vai ficar bem. Dê uma olhada no [tutorial app básico] [app] e você provavelmente vai ser capaz de descobrir o que está acontecendo em breve. Preste atenção às "** Coach **" que te informam o que você deve ser capaz de explicar.
+Por que não fez ainda? Só brincando. Isso não é um problema, nós tivemos um monte de coaches como você e eles foram *incríveis*. Contanto que você esteja confortável com qualquer outra estrutura similar, você vai ficar bem. Dê uma olhada no [tutorial app básico](app) e você provavelmente vai ser capaz de descobrir o que está acontecendo em breve. Preste atenção às "** Coach **" que te informam o que você deve ser capaz de explicar.
 
 Normalmente, haverá pelo menos alguém no evento que trabalha com Rails regularmente, por isso não tenha medo de pedir ajuda quando `bundle install` parecer estranho pra você. Além disso, se você se deparar com algo incomum, apenas pesquise no Google com o seu grupo! É ok para admitir que você não sabe tudo e mostrar as meninas como você usa o Google para resolver seus dilemas de programação diárias.
 
@@ -54,11 +54,11 @@ Muitas vezes, os coaches que estão apenas um passo à frente das participantes 
 
 #### Festa de instalação
 
-De um modo geral, os workshops Rails Girls começam com uma festa de instalação durante o qual você será solicitado para ajudar as meninas a [instalar o software necessário](/install) (Rails e um editor de texto). Você não tem que ser um especialista em todos os sistemas operacionais, mas você pode ajudar a aqueles que você está familiarizado.
+De um modo geral, os workshops Rails Girls começam com uma festa de instalação durante o qual você será solicitado para ajudar as meninas a [instalar o software necessário](install) (Rails e um editor de texto). Você não tem que ser um especialista em todos os sistemas operacionais, mas você pode ajudar a aqueles que você está familiarizado.
 
 #### Ajudando as meninas á construir seu primeiro aplicativo
 
-Durante o dia seguinte, você vai ser a estrela do show e ajudar o seu grupo de qualquer lugar de 2 a 5 meninas construir a sua primeira [aplicação web](/app) no Rails com a ajuda do tutorial. Normalmente, isso acontece logo após o lote inicial de palestras em algum momento após 11h00 (não esqueça que vai servir café primeiro).
+Durante o dia seguinte, você vai ser a estrela do show e ajudar o seu grupo de qualquer lugar de 2 a 5 meninas construir a sua primeira [aplicação web](app) no Rails com a ajuda do tutorial. Normalmente, isso acontece logo após o lote inicial de palestras em algum momento após 11h00 (não esqueça que vai servir café primeiro).
 
 Fazer o tutorial em casa provavelmente será toda a preparação que você precisa. As meninas terão o tutorial aberto em suas telas, então apenas guie através do processo, dando explicações sobre o que está acontecendo em cada etapa. As explicações não devem ser altamente técnica; tente simplificar a resposta, fornecendo metáforas fáceis de lembrar. E lembre-se de que não há coisa como uma pergunta estúpida em um workshop Rails Girls! Deixe as meninas saberem que podem perguntar-lhe sobre qualquer coisa ao longo do caminho; você pode gastar mais tempo em partes que elas acham mais interessante.
 
