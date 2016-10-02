@@ -6,6 +6,8 @@ permalink: coach
 
 # Como ser um Rails Girls coach
 
+*Traduzido por Daniel Lopes, [@dannyeuu](https://www.twitter.com/dannyeuu)*
+
 *Todas as suas perguntas básicas respondidas em um só lugar*
 
 ### O que eu preciso ser para ser uma Rails Girls coach?
