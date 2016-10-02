@@ -6,7 +6,7 @@ permalink: how-to-continue-with-programming
 
 # Pós-evento: Como Continuar Programando
 
-*Criado por Daniel Puglisi, [@danielpuglisi](http://twitter.com/danielpuglisi)*
+*Criado por Daniel Puglisi, [@danielpuglisi](http://twitter.com/danielpuglisi)*  
 *Traduzido por Joana Souza, [@sspjoana](https://www.twitter.com/sspjoana)*
 
 *Este guia foi escrito originalmente para o evento [Rails Girls Basel](http://railsgirls.com/basel) e publicado no
