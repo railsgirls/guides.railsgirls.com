@@ -8,7 +8,7 @@ Primeiramente, você deve dar um [fork](http://help.github.com/fork-a-repo/) no 
 
 Quando finalizar algo, você deve dar um [pull request](http://help.github.com/pull-requests/) neste repositório para o seu conteúdo ser revisado e aprovado. Com isso, a sua tradução estará no repositório principal e com os seus devidos créditos.
 
-No final do projeto, será lançado oficialmente o site Rails Gilrs Brasil e divulgado. Todos os colaboradores serão citados e terão seus créditos mantidos.
+No final do projeto, será lançado oficialmente o site Rails Girls Brasil e divulgado. Todos os colaboradores serão citados e terão seus créditos mantidos.
 
 ## Como saber se o que eu estou traduzindo não está sendo traduzido por alguém?
 
