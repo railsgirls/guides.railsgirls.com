@@ -6,8 +6,7 @@ permalink: ruby-game
 
 # Crie um jogo simples com Ruby!
 
-*Criado por Patrick Huesler, [@phuesler](https://twitter.com/phuesler) & Floor Drees, [@floordrees](https://twitter.com/floordrees) para o [Rails Girls The Hague](http://railsgirls.com/thehague)*
-
+*Criado por Patrick Huesler, [@phuesler](https://twitter.com/phuesler) & Floor Drees, [@floordrees](https://twitter.com/floordrees) para o [Rails Girls The Hague](http://railsgirls.com/thehague)*  
 *Traduzido por Daniel Barreto, [@danielfsbarreto](https://github.com/danielfsbarreto)*
 
 [gosu](http://www.libgosu.org/) é uma biblioteca de desenvolvimento de jogos 2D. Gosu provê interfaces amigáveis e fáceis de usar para jogos com gráficos 2D e texto (acelerado por hardware 3D), amostras de áudio e música, bem como suporte a entrada de comandos através de teclado, mouse e gamepad/joystick. Também inclui demos para integração com RMagick, Chipmunk e OpenGL.
