@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Pós-evento: Como Continuar Programando
+title: Pós-evento&#x3a; Como Continuar Programando
 permalink: how-to-continue-with-programming
 ---
 
