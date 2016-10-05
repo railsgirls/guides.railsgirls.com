@@ -39,7 +39,7 @@ permalink: app
 
 ## *1.*Criando a aplicação
 
-Vamos criar uma app Rails a partir do zero denominada *railsgirls*.
+Vamos criar uma app Rails a partir do zero denominada *railsgirls* destinada a compartilhar ideias.
 
 Comecemos abrindo o Terminal:
 
@@ -154,9 +154,9 @@ Pressione as teclas <kbd>Ctrl</kbd>+<kbd>C</kbd> no terminal para parar o servid
 **Coach:**  Explicar a finalidade de cada comando. O que foi criado? O que o servidor fez?
 
 
-## *2.*Criar o Scaffold para Idea
+## *2.*Criar o Scaffold para as ideias
 
-Vamos usar uma funcionalidade do Rails denominada scaffold para criar um ponto de partida que nos permitirá listar, adicionar, remover, editar e ver as "coisas"; no nosso caso ideas.
+Vamos usar uma funcionalidade do Rails denominada scaffold para criar um ponto de partida que nos permitirá listar, adicionar, remover, editar e ver as "coisas"; no nosso caso as "coisas" serão as ideias.
 
 
 **Coach:** O que é Rails scaffolding? (Explicar o comando, o nome do modelo, as tabelas de banco de dados relacionadas, as convenções de nomes, atributos, tipos, etc.) O que é migração e porquê são necessárias?
@@ -225,7 +225,7 @@ Vamos criar uma barra de navegação e um rodapé para nosso layout. No mesmo ar
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/ideas">Ideas</a></li>
+        <li class="active"><a href="/ideas">Ideias</a></li>
       </ul>
     </div>
   </div>
@@ -243,7 +243,7 @@ antes da tag de fechamento `</body>` acrescente
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.js"></script>
 {% endhighlight %}
 
-Agora vamos alterar a estilização da tabela ideas. Abra `app/assets/stylesheets/application.css` e no final acrescente:
+Agora vamos alterar a estilização da tabela que contém as ideias. Abra `app/assets/stylesheets/application.css` e no final acrescente:
 
 {% highlight css %}
 body { padding-top: 100px; }
