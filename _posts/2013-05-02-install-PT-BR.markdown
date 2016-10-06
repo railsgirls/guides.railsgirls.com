@@ -110,9 +110,9 @@ Para ter certeza que tudo funciona bem crie uma aplicação através do comando:
 rails new myapp
 {% endhighlight %}
 
-### *4.* Instalar um editor de texto para editar os arquivos
+### *4.* Instalar editor de texto para editar os arquivos
 
-Para esse workshop nós recomendamos o editor de texto Atom.
+Para esse workshop recomendamos o editor de texto Atom.
 * [Baixar e instalar Atom](https://atom.io/)
 
 Se você estiver usando Mac OS X 10.7 ou versões anteriores, você pode utilizar outro editor [Sublime Text 2](http://www.sublimetext.com/2).
@@ -122,5 +122,137 @@ Se você estiver usando Mac OS X 10.7 ou versões anteriores, você pode utiliza
 Clique em [whatbrowser.org](http://whatbrowser.org) e atualize seu navegador, se você não possuir a versão mais recente.
 
 Agora você tem um ambiente de desenvolvimento para Ruby on Rails. Parabéns!
+
+<hr />
+
+## Instalação para Windows
+
+### *1.* Instalar Rails
+
+Baixar o [RailsInstaller](https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.2.0.exe) e executá-lo. Utilize as configurações padrões durante a instalação.
+
+Abra o 'Command Prompt with Ruby on Rails' e execute os seguintes comandos para resolver problemas com o RailsInstaller3.2.0.
+
+**Coach:** Há um bug "No such file or directory" que ocorre quando o comando 'rails' é utilizado no RailsInstaller3.2.0. Esse problema ocorre devido a um erro no caminho do arquivo 'rails.bat' e 'bundle.bat'. Nós podemos resolvê-lo copiando o arquivo 'rake.bat' para 'rails.bat' e 'bundle.bat'. ([github issue page](https://github.com/railsinstaller/railsinstaller-windows/issues/76))
+
+{% highlight sh %}
+cd C:\RailsInstaller\Ruby2.2.0\bin
+copy rake.bat rails.bat
+copy rake.bat bundle.bat
+{% endhighlight %}
+
+Abra o 'Command Prompt with Ruby on Rails' e execute o seguinte comando:
+
+{% highlight sh %}
+rails -v
+{% endhighlight %}
+
+Se a versão do Rails for menor que 5, atualize ele utilizando o seguinte comando:
+
+{% highlight sh %}
+gem update rails --no-document
+{% endhighlight %}
+
+## Possíveis erros
+
+### Erro 'Gem::RemoteFetcher'
+
+Se você se deparar com o erro abaixo quando executar 'rails new railsgirls' ou 'gem update rails':
+
+{% highlight sh %}
+Gem::RemoteFetcher::FetchError: SSL_connect returned=1 errno=0 state=SSLv3 read
+server certificate B: certificate verify failed (https://rubygems.org/gems/i18n-
+0.6.11.gem)
+{% endhighlight %}
+
+Significa que você possui uma versão antiga do Rubygems e será necessário atualizá-la manualmente. Primeiro, verifique a sua versão do Rubygems:
+
+{% highlight sh %}
+gem -v
+{% endhighlight %}
+
+Se for menor que '2.2.3' você precisa atualizá-la manualmente através dos seguintes passos:
+
+Primeiro baixe o [ruby-gems-update gem](https://github.com/rubygems/rubygems/releases/download/v2.2.3/rubygems-update-2.2.3.gem). Mova o arquivo para 'c:\\rubygems-update-2.2.3.gem' e execute:
+
+{% highlight sh %}
+gem install --local c:\\rubygems-update-2.2.3.gem
+update_rubygems --no-document
+gem uninstall rubygems-update -x
+{% endhighlight %}
+
+Verifique sua versão do Rubygems
+
+{% highlight sh %}
+gem -v
+{% endhighlight %}
+
+Tenha certeza que seja igual ou maior que '2.2.3'. Caso não, execute o procedimento acima novamente.
+
+### Erro 'x64_mingw' is not a valid platform'
+
+Algumas vezes você pode se deparar com o seguinte erro quando executar 'rails server':
+
+''x64_mingw' is not a valid platform'
+
+Se você encontrar esse erro após utilizar o RailsInstaller, você terá que editar o arquivo 'Gemfile'. Para isso, siga os passo:
+
+No final do arquivo verifique se as últimas linhas possuem as seguintes informações:
+
+'gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]'.
+
+Se a linha possui ':x64_mingw', então apague a parte ':x64_mingw'.
+
+O final deverá ser da seguinte maneira:
+'gem 'tzinfo-data', platforms: [:mingw, :mswin]'.
+
+Após fazer o procedimento, favor usar seu prompt de comando novamente e executar 'bundle update'.
+
+### *2.* Instalar editor de texto para editar os arquivos
+
+Para esse workshop recomendamos o editor de texto Atom.
+* [Baixar e instalar Atom](https://github.com/atom/atom/releases/latest)
+  * Baixar um arquivo .zip do Atom para Windows e descompactá-lo.
+  * Copiar o diretório para seus Arquivos de Programas (Program Files).
+  * Abrir o Atom no diretório.
+
+Se você estiver usando Windows Vista ou versões antigas, você pode utilizar outro editor [Sublime Text 2](http://www.sublimetext.com/2).
+
+### *3.* Atualizar seu navegador (browser)
+
+Se você utilza Internet Explorer, recomendamos instalar o [Firefox](mozilla.org/firefox) ou [Google Chrome](google.com/chrome).
+
+Abra o [whatbrowser.org](http://whatbrowser.org) e atualize seu navegador, se você não tem a versão mais recente.
+
+### *4.* Instalar Node
+
+O procedimento não é estritamente necessário, mas pode evitar problemas e 'ExecJS::RuntimeError' que pode ocorrer posteriormente ([see stackoverflow](https://stackoverflow.com/questions/12520456/execjsruntimeerror-on-windows-trying-to-follow-rubytutorial)).
+
+* Acesse [https://nodejs.org/](https://nodejs.org/) e instale o pacote node LTS
+* Reabra seu 'Rails Command Shell'
+
+Verifique sua versão do Node:
+
+{% highlight sh %}
+node --version
+{% endhighlight %}
+
+Tenha certeza que está mostrando uma versão qualquer do Node.
+
+### *5.* Verificar o ambiente
+
+Verifique que tudo está funcionando executando o seguinte comando para gerar uma aplicação:
+
+{% highlight sh %}
+rails new myapp
+cd myapp
+rails server
+{% endhighlight %}
+
+Acesse '[http://localhost:3000](http://localhost:3000)' em seu navegador. Você deverá ver 'Yay! You're on Rails!' page.
+
+Agora você tem um ambiente de desenvolvimento para Ruby on Rails. Parabéns!
+
+**Coach:** Recomendamos verificar o procedimento executando o comando scaffold e adicionando dados com a página gerada pelos coaches para assegurar que tudo está funcionando bem.
 
 <hr />
