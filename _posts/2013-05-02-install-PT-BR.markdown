@@ -5,6 +5,7 @@ permalink: install
 ---
 
 Criado por Katie Ots, [site da Katie](http://www.katieots.com/)
+
 Traduzido por Marcela Oliveira, [@magaeu](https://twitter.com/magaeu)
 
 # Guia de Instalação para Rails Gils
@@ -17,7 +18,7 @@ Siga as instruições para seu sistema operacional (SO). Se você tiver algum pr
 * [Instalação para OS X](#setup-for-os-x)
 * [Instalação para Windows](#setup-for-windows)
 * [Instalação para Linux](#setup-for-linux)
-* [Instação alternativa para todos os tipos de SO](#virtual-machine)
+* [Instalação alternativa para todos os tipos de SO](#virtual-machine)
 * [Utilizando Serviço em Nuvem - Não é necessária qualquer instalação](#using-a-cloud-service)
 
 <hr />
@@ -61,66 +62,65 @@ echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
 source ~/.bash_profile
 {% endhighlight %}
 
-#### *3a4.* Build Ruby with rbenv:
+#### *3a4.* Construir Ruby com rbenv:
 
-You can find the newest version of Ruby with the command "rbenv install -l".
+Você pode encontrar a versão mais recente do Ruby pelo comando "rbenv install -l".
 
 {% highlight sh %}
 rbenv install 2.3.1
 {% endhighlight %}
 
-If you got "OpenSSL::SSL::SSLError: ... : certificate verify failed" error, try it this way.
+Se aparece o erro "OpenSSL::SSL::SSLError: ... : certificate verify failed", tente dessa maneira:
 
 {% highlight sh %}
 brew install curl-ca-bundle
 cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
 {% endhighlight %}
 
-#### *3a5.* Set default Ruby:
+#### *3a5.* Configurar versão padrão do Ruby:
 
 {% highlight sh %}
 rbenv global 2.3.1
 {% endhighlight %}
 
-#### *3a6.* Install rails:
+#### *3a6.* Instalar rails:
 
 {% highlight sh %}
 gem install rails --no-document
 {% endhighlight %}
 
-### *3b.* If your OS X version is 10.6, 10.7, or 10.8:
-Download the RailsInstaller for your version of OS X:
+### *3b.* Se sua versão OS X é 10.6, 10.7, ou 10.8:
 
-* [RailsInstaller for 10.7 and 10.8](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz) <span class="muted">(325MB)</span>
-* [RailsInstaller for 10.6](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.6.app.tgz) <span class="muted">(224MB)</span>
+Faça download do RailsInstaller para a versão do seu OS X:
 
-Double click the downloaded file and it will unpack it into the current directory. Double click the the newly unpacked 'RailsInstaller-1.0.4-osx-10.7.app' or 'RailsInstaller-1.0.4-osx-10.6.app' and follow the instructions. It will open a README file with 'Rails Installer OS X' at the top. Please **ignore** the instructions in this file.
+* [RailsInstaller para 10.7 e 10.8](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz) <span class="muted">(325MB)</span>
+* [RailsInstaller para 10.6](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.6.app.tgz) <span class="muted">(224MB)</span>
 
-If the Rails version wasn't the latest, you could update it using a following command on terminal.
+Duplo clique no arquivo baixado e ele será descompactado no diretório atual. Duplo clique no arquivo descompactado 'RailsInstaller-1.0.4-osx-10.7.app' ou 'RailsInstaller-1.0.4-osx-10.6.app' e siga as instruções. O arquivo README será aberto com 'Rails Installer OS X' no topo. Favor **ignorar** as instruções desse arquivo.
+
+Se a versão do Rails não for a mais recente, você pode atualizá-la seguindo o seguinte comando no terminal:
 
 {% highlight sh %}
 gem update rails --no-document
 {% endhighlight %}
 
-Make sure that all works well by running the application generator command.
+Para ter certeza que tudo funciona bem crie uma aplicação através do comando:
 
 {% highlight sh %}
 rails new myapp
 {% endhighlight %}
 
-### *4.* Install a text editor to edit code files
+### *4.* Instalar um editor de texto para editar os arquivos
 
-For the workshop we recommend the text editor Atom.
+Para esse workshop nós recomendamos o editor de texto Atom.
+* [Baixar e instalar Atom](https://atom.io/)
 
-* [Download Atom and install it](https://atom.io/)
+Se você estiver usando Mac OS X 10.7 ou versões anteriores, você pode utilizar outro editor [Sublime Text 2](http://www.sublimetext.com/2).
 
-If you are using Mac OS X 10.7 or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2).
+### *5.* Atualizar seu navegador(browser)
 
-### *5.* Update your browser
+Clique em [whatbrowser.org](http://whatbrowser.org) e atualize seu navegador, se você não possuir a versão mais recente.
 
-Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
-
-
-Now you should have a working Ruby on Rails programming setup. Congrats!
+Agora você tem um ambiente de desenvolvimento para Ruby on Rails. Parabéns!
 
 <hr />
