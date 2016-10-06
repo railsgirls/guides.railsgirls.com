@@ -119,7 +119,7 @@ Se você estiver usando Mac OS X 10.7 ou versões anteriores, você pode utiliza
 
 ### *5.* Atualizar seu navegador(browser)
 
-Clique em [whatbrowser.org](http://whatbrowser.org) e atualize seu navegador, se você não possuir a versão mais recente.
+Acesse o [whatbrowser.org](http://whatbrowser.org) e atualize seu navegador, se você não tem a versão mais recente.
 
 Agora você tem um ambiente de desenvolvimento para Ruby on Rails. Parabéns!
 
@@ -222,7 +222,7 @@ Se você estiver usando Windows Vista ou versões antigas, você pode utilizar o
 
 Se você utilza Internet Explorer, recomendamos instalar o [Firefox](mozilla.org/firefox) ou [Google Chrome](google.com/chrome).
 
-Abra o [whatbrowser.org](http://whatbrowser.org) e atualize seu navegador, se você não tem a versão mais recente.
+Acesse o [whatbrowser.org](http://whatbrowser.org) e atualize seu navegador, se você não tem a versão mais recente.
 
 ### *4.* Instalar Node
 
@@ -241,7 +241,7 @@ Tenha certeza que está mostrando uma versão qualquer do Node.
 
 ### *5.* Verificar o ambiente
 
-Verifique que tudo está funcionando executando o seguinte comando para gerar uma aplicação:
+Para ter certeza que tudo funciona bem crie uma aplicação através do comando:
 
 {% highlight sh %}
 rails new myapp
@@ -256,3 +256,81 @@ Agora você tem um ambiente de desenvolvimento para Ruby on Rails. Parabéns!
 **Coach:** Recomendamos verificar o procedimento executando o comando scaffold e adicionando dados com a página gerada pelos coaches para assegurar que tudo está funcionando bem.
 
 <hr />
+
+## Instalação para Linux
+
+### *1.* Instalar Rails
+
+Para instalar o ambiente de Ruby on Rails você deve apenas copiar a linha abaixo para sua distribuição Linux (Ubuntu ou Fedora), e colar no Terminal e pressionar Enter. Aproveite o texto que aparece na tela; irá levar algum tempo para o processo acabar. Nesse meio tempo, encorajamos você a pegar uma bebida refrescante antes de comecar.
+
+#### Para Ubuntu:
+
+{% highlight sh %}
+sudo apt-get install curl
+bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
+{% endhighlight %}
+
+Se você for usar a instalação do RVM com gnome-terminal, você provavelmente vai precisar mudar suas configurações padrões antes de começar a usar a versão correta do Ruby on Rails. Descubra como: [Documentação do RVM](http://rvm.io/integration/gnome-terminal).
+
+#### Para Fedora:
+
+{% highlight sh %}
+bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-fedora.sh)
+{% endhighlight %}
+
+Para ter certeza que tudo funciona bem crie uma aplicação através do comando:
+
+{% highlight sh %}
+rails new myapp
+{% endhighlight %}
+
+
+### *2.* Instalar editor de texto para editar os arquivos
+
+Para esse workshop recomendamos o editor de texto Sublime Text
+
+* [Baixar e instalar Sublime Text](http://www.sublimetext.com/2)
+
+### *3.* Atualizar seu navegador (browser)
+
+Acesse o [whatbrowser.org](http://whatbrowser.org) e atualize seu navegador, se você não tem a versão mais recente.
+
+Agora você tem um ambiente de desenvolvimento para Ruby on Rails. Parabéns!
+
+<hr />
+
+## Utilizando Serviço em Nuvem
+
+Ao invés de instalar Ruby on Rails e o editor em seu computador, você pode utilizar um webservice para desenvolvimento. Tudo que precisa é um navegador e conexão com a internet. Esse guia explica como utilizar o [nitrous.io](https://nitrous.io). Se você utilizar outro serviço, talvez eles utilizem outra nomeclatura, como por exemplo: 'workspace' ao invés de 'box', mas o processo é geralmente bem parecido.
+
+### *1.* Atualizar seu navegador (browser)
+
+Se você utilza Internet Explorer, recomendamos instalar o [Firefox](mozilla.org/firefox) ou [Google Chrome](google.com/chrome).
+
+Acesse o [whatbrowser.org](http://whatbrowser.org) e atualize seu navegador, se você não tem a versão mais recente.
+
+### *2.* Criar uma conta
+
+Acesse [https://nitrous.io](https://nitrous.io/) e realize o cadastro.
+
+### *3.* Configurar o box/workspace de desenvolvimento para Ruby on Rails
+* Logue na sua conta
+* Acesse o dashboard utilizando o botão verde 'Open dashboard'
+* Crie uma nitrous box: escolha Ruby/Rails a partir dos modelos - deixe as outras informações como estão, mas você pode mudar o nome do seu box para o que você desejar
+* Aguarde enquanto sua box é montada
+
+### *4.* Encontrar e reiniciar sua box de desenvolvimento
+* Se você acabou de criar sua boa, você provavelmente pode pular esses passos - porém, eles são importantes quando você logar na nitrous novamente
+* Você sempre pode encontrar suas nitrous boxes indo na dashboard ou escolhendo 'Boxes' no menu principal
+* Escolha sua box a partir da lista de boxes
+* Se faz tempo que você não utilza sua box, ela pode ter sido desligada devido a inatividade. Se sua box não estiver executando, reinicie sua box com o respectivo botão
+* Quando sua box está executando, escolha 'IDE' para começar a codificar
+
+### *5.* Codificar com sua box de desenvolvimento
+* Ao lado esquerdo você encontra o navegador de arquivos onde você pode navegar entre seus diretórios e arquivos
+* No meio você encontra o editor para modificar seus arquivos
+* Na parte de baixo você encontra o terminal onde executa os comandos
+* Tudo que você precisa está aí na sua janela do navegador - você não precisa iniciar o editor ou o terminal
+* Se você seguir está seguindo o guia, use os comandos para Linux, mesmo que esteja utilizando o Windows - seu sistema operacional não faz diferença, desde que todos os comandos são executados na sua box de desenvolvimento que é uma máquina Linux
+* Se o guia pedir para acessar algo como http://localhost:3000, acesse o menu 'Preview' e escolha a 'Port 3000'
+* Se, por exemplo, for solicitado acessar http://localhost:3000/posts, favor adicionar '/posts' manualmente a URL que está aberta
