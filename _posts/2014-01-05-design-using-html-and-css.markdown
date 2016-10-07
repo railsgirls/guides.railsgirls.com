@@ -17,8 +17,6 @@ put the following code to the bottom of `app/assets/stylesheets/application.css`
 
 Now refresh the page and check the changes. You can try change the color or font of the header. You can check the color reference from [http://color.uisdc.com/](http://color.uisdc.com/).
 
-**Coach:** talk about the property `display`, inline and block element.
-
 Then put these lines at the bottom：
 
 {% highlight css %}
