@@ -19,7 +19,7 @@ permalink: design-html-css
     color or font of the header. You can check the color reference
     from [http://color.uisdc.com/](http://color.uisdc.com/).
 
-    **Coach: ** talk about the property `display`, inline and block element.
+**Coach:** talk about the property `display`, inline and block element.
 
 + Then put these lines at the bottom：
 
@@ -32,7 +32,7 @@ permalink: design-html-css
 }
 {% endhighlight %}
 
-    **Coach: ** explain the 4 states of a link
+**Coach:** explain the 4 states of a link
 
 
 2.Design your table
@@ -107,5 +107,4 @@ footer {
 }
 {% endhighlight %}
 
-   **Coach** explain how to use `border` in css, try modify the style
-     of button like round the corner, add shadow or color etc.
+**Coach:** explain how to use `border` in css, try modify the style of button like round the corner, add shadow or color etc.
