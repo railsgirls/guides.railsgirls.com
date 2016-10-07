@@ -73,41 +73,57 @@ Rails has some facilities to help you recover from mistakes.
 
 For instance, you may decide to change the name of a controller. Since, when generating a controller, Rails creates many more files than the controller file itself, undoing the generation means removing a whole set of files. In Rails, this can be accomplished with rails destroy. In particular, these two commands cancel each other out:
 
-  $ rails generate controller FooBars baz quux
-  $ rails destroy  controller FooBars baz quux
+{% highlight sh %}
+rails generate controller FooBars baz quux
+rails destroy  controller FooBars baz quux
+{% endhighlight %}
 
 Similarly, after we generate a model as follows:
 
-  $ rails generate model Foo bar:string baz:integer
+{% highlight sh %}
+rails generate model Foo bar:string baz:integer
+{% endhighlight %}
 
 This can be undone using
 
-  $ rails destroy model Foo
-
+{% highlight sh %}
+rails destroy model Foo
+{% endhighlight %}
 
 Migrations change the state of the database using
 
-  $ rake db:migrate
+{% highlight sh %}
+rake db:migrate
+{% endhighlight %}
 
 We can undo a single migration step using
 
-  $ rake db:rollback
+{% highlight sh %}
+rake db:rollback
+{% endhighlight %}
 
 To go all the way back to the beginning, we can use
 
-  $ rake db:migrate VERSION=0
+{% highlight sh %}
+rake db:migrate VERSION=0
+{% endhighlight %}
 
 As you might guess, substituting any other number for 0 migrates to that version number, where the version numbers come from listing the migrations sequentially.
 
 To drop a table from the db enter
 
-  $ rails console
+{% highlight sh %}
+rails console
+{% endhighlight %}
 
 Then just type:
 
-  >> ActiveRecord::Migration.drop_table(:<table-name>)
+{% highlight ruby %}
+ActiveRecord::Migration.drop_table(:<table-name>)
+{% endhighlight %}
 
 You can browse directly the database (if sqlite3 type ".quit" to exit afterwards) by typing
 
-  $ rails db
-
+{% highlight sh %}
+rails db
+{% endhighlight %}

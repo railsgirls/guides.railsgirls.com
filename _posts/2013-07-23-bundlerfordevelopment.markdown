@@ -21,28 +21,37 @@ permalink: bundlerfordevelopment
 
 2. Download a copy of your fork of Bundler
 
-    `$ git clone https://github.com/user_name/bundler.git`
-
+{% highlight sh %}
+git clone https://github.com/user_name/bundler.git
+{% endhighlight %}
 
 3. Change into the Bundler directory
 
-    `$ cd bundler`
+{% highlight sh %}
+cd bundler
+{% endhighlight %}
 
 4. Configure the remote
 
-    `$ git remote add upstream https://github.com/bundler/bundler.git`
+{% highlight sh %}
+git remote add upstream https://github.com/bundler/bundler.git
+{% endhighlight %}
 
     This connects your local repo to the upstream repo at Github.
 
 
 5. Install Bundler development dependencies
 
-    `$ rake spec:deps`
+{% highlight sh %}
+rake spec:deps
+{% endhighlight %}
 
     What is rake? [http://rake.rubyforge.org/](http://rake.rubyforge.org/)
 
 6. Run the Bundler test suite
 
-    `$ rake spec`
+{% highlight sh %}
+rake spec
+{% endhighlight %}
 
     This could take about 15 minutes.
