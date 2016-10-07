@@ -4,7 +4,7 @@ title: Add design to your App with HTML and CSS
 permalink: design-html-css
 ---
 
-1.Design your header
+## *1.*Design your header
 
 + put the following code to the bottom of `app/assets/stylesheets/application.css`:
 
@@ -35,7 +35,7 @@ permalink: design-html-css
 **Coach:** explain the 4 states of a link
 
 
-2.Design your table
+## *2.*Design your table
 
  + We simply use the twitter [Bootstrap](http://getbootstrap.com/) to
    polish our table. Find this line from
@@ -76,7 +76,7 @@ permalink: design-html-css
    [http://subtlepatterns.com/](http://subtlepatterns.com/) for some patterns.
 
 
-3.add style to footer
+## *3.*add style to footer
 
 + add the lines to bottom of  app/assets/stylesheets/application.css:
 
@@ -89,7 +89,7 @@ footer {
 
     try put more things into `footer`, then adjust it's position.
 
-4.add style to button
+## *4.*add style to button
 
   + open
     [http://localhost:3000/ideas/new](http://localhost:3000/ideas/new)
