@@ -48,7 +48,7 @@ First, let's open a terminal:
 * Mac OS X: Open Spotlight, type *Terminal* and click the *Terminal* application.
 * Windows: Click Start and look for *Command Prompt*, then click *Command Prompt with Ruby on Rails*.
 * Linux (Ubuntu/Fedora): Search for *Terminal* on the dash and click *Terminal*.
-* Cloud service (e.g. nitrous): Log in to your account, start your box and switch to its IDE (see [installation guide](/install#using-a-cloud-service) for details). The terminal is usually at the bottom of your browser window.
+* Cloud service (e.g. nitrous): Log in to your account, start your project and switch to its IDE (see [installation guide](/install#using-a-cloud-service) for details). The terminal is usually at the bottom of your browser window.
 
 Next, type these commands in the terminal:
 
