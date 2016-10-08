@@ -189,6 +189,12 @@ Make sure it is equal or higher than `2.6.7`. Re-run the command that was failin
 
 If you are still running into problems you can always find the latest version of rubygems online at [rubygems.org](https://rubygems.org/pages/download). If you click on **GEM** you will get the latest version.
 
+### During bundle install
+
+The `Gem::RemoteFetcher::FetchError: SSL_connect` can also occur during the `bundle install` stage when creating a new rails app.
+
+The error will make mention of [bit.ly/ruby-ssl](http://bit.ly/ruby-ssl). What is relevant for Windows users at this point is [this GitHub gist](https://gist.github.com/867550). The described manual way has proven to be succesful to solve the `bundle install` eror.
+
 ### 'x64_mingw' is not a valid platform` Error
 
 Sometimes you get the following error when running `rails server`:
