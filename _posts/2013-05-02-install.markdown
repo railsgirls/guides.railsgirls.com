@@ -171,10 +171,10 @@ gem -v
 If it is lower than `2.2.3` you will need to manually update it:
 
 
-First download the [ruby-gems-update gem](https://github.com/rubygems/rubygems/releases/download/v2.2.3/rubygems-update-2.2.3.gem). Move the file to `c:\\rubygems-update-2.2.3.gem` then run:
+First download the [ruby-gems-update gem](https://rubygems.org/gems/rubygems-update-2.6.7.gem). Move the file to `c:\\rubygems-update-2.6.7.gem` then run:
 
 {% highlight sh %}
-gem install --local c:\\rubygems-update-2.2.3.gem
+gem install --local c:\\rubygems-update-2.6.7.gem
 update_rubygems --no-document
 gem uninstall rubygems-update -x
 {% endhighlight %}
@@ -185,8 +185,9 @@ Check your version of rubygems
 gem -v
 {% endhighlight %}
 
-Make sure it is equal or higher than `2.2.3`. Re-run the command that was failing previously.
+Make sure it is equal or higher than `2.6.7`. Re-run the command that was failing previously.
 
+If you are still running into problems you can always find the latest version of rubygems online at [rubygems.org](https://rubygems.org/pages/download). If you click on **GEM** you will get the latest version.
 
 ### 'x64_mingw' is not a valid platform` Error
 
