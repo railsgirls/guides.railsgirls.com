@@ -55,6 +55,9 @@ end
 
 Run `bundle install --without production` to setup your dependencies.
 
+Don't forget to do `git add .` and `git commit -m "Use postgres as production database"`
+in order to add this change to your master branch before pushing to heroku later.
+
 __COACH__: You can talk about RDBMS and the different ones out there, plus
 include some details on Heroku's dependency on PostgreSQL.
 
