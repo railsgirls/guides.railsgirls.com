@@ -15,24 +15,34 @@ permalink: continuous-snap-ci
         "Continuous Delivery" e "Continuous Deployment" http://stackoverflow.com/questions/28608015/continuous-integration-vs-continuous-delivery-vs-continuous-deployment
         Creio que tende a ser interessante essa tradução ser revisada
         por pessoa que trabalhe focada na área, para ter certeza de que
-        é tecnicamente precisa.
+        é tecnicamente precisa. (@fititnt, 2016-10-08 23:01)
+  N.T.: Vou assumir, com ajuda da tradução da documentação oficial da AWS
+        de https://aws.amazon.com/devops/continuous-delivery/?nc1=h_ls e
+        https://aws.amazon.com/pt/devops/continuous-delivery/ que:
+            Continuous Integration = Integração Contínua
+            Continuous Delivery = Entrega Contínua
+            Continuous Deployment = Implantação Contínua
+        Se estas afirmações estiverem erradas, o texto deverá ser revisto
+        (@fititnt, 2016-10-08 23:13)
+  N.T.: Vou usar o neologismo "commitado" por "committed", tal qual usaria
+        "commit" em inglês" (@fititnt, 2016-10-08 23:23)
+  N.T.: Todos os termos que deveriam ser lidos em inglês, recomendo adição
+        do atributo lang="en", conforme especificação de como lidar com
+        internacionalização de documentos HTML. Recomendo a leitura em
+        http://i18n-html-tech-lang.pt.webiwg.org/ (@fititnt, 2016-10-08 23:36)
 -->
 
+### O que é essa coisa de Implantação Contínua?
 
-### O que é essa coisa de Entrega Contínua?
+Implantação contínua, do inglês <em lang="en">continuous deployment</em>, é parte do 'movimento' de entrega contínua, do inglês <em lang="en">continuous delivery</em>. A ideia por trás da entrega contínua é de automatizar o processo de entrega de software tanto quanto possível.
 
-Entrega contínua é parte do 'movimento' de entrega contínua. A idéia por trás da entrega contínua é de automatizar o processo de entrega de software, tanto quanto possível.
+Com uma cadeia de implantação contínua funcionando direito você garantirá que que implementações usando Git (tudo que for <em>commitado</em> deve ser testado, e tudo precisa ser testado para poder ser implantado), tornando mais fácil a colaboração e implantação mais rápida. Assim, você pode se concentrar em fazer o seu aplicativo ainda mais impressionante!
 
-With a working continuous deployment chain in place you'll enforce Git deployments (everything must be committed to be tested and everything must be tested to be deployed), making collaboration easier and deployment faster. So you can focus on making your app even more awesome!
+Há algumas grandes empresas que estão navegando nessa onda contínua, e neste tutorial vamos configurar implantação contínua para para nossa aplicação em <em lang="en">Ruby on Rails</em>do GitHub para Heroku, usando o <a href="https://snap-ci.com" lang="en">Snap CI</em>
 
+__COACH__: Fale sobre os benefícios da implantação contínua.
 
-With a working continuous deployment chain in place you'll enforce Git deployments (everything must be committed to be tested and everything must be tested to be deployed), making collaboration easier and deployment faster. So you can focus on making your app even more awesome!
-
-There are a few great companies sailing the continuous wave, in this guide we'll set up continuous deployment for our Ruby on Rails app from GitHub to Heroku, using the [Snap CI](https://snap-ci.com).
-
-__COACH__: Talk about the benefits of continuous deployment.
-
-### Sign up for Snap CI
+### Assine o <em land="en">Snap CI</em>
 
 First, you need [a Snap CI account](https://snap-ci.com/). Sign in to the Snap CI with GitHub. Snap CI needs access to your GitHub repositories to be able to set them up, so make sure you allow access.
 
