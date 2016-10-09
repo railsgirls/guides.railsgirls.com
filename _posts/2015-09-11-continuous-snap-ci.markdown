@@ -6,8 +6,7 @@ permalink: continuous-snap-ci
 
 # Integração Contínua com o <em lang="en">Snap CI</em>
 
-*Criado por Akshay Karle, [@akshay_karle](https://twitter.com/akshay_karle)*
-
+*Criado por Akshay Karle, [@akshay_karle](https://twitter.com/akshay_karle)*  
 *Traduzido por Emerson Rocha Luiz, [@fititnt](https://github.com/fititnt)*
 
 <!--
