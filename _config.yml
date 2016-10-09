@@ -1,11 +1,5 @@
 permalink: pretty
 markdown: kramdown
-baseurl: "/rails-girls-guides"
-keep_files:
-  - "css"
-  - "js"
-  - "images"
-  - "favicon.png"
 exclude:
   - ".rvmrc"
   - ".rbenv-version"

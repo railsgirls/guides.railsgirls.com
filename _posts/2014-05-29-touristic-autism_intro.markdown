@@ -25,16 +25,14 @@ The basic guides that have been merged and adapted are the [Ruby on Rails Tutori
 ### [*0.*Installation](/install)
 
 **Make sure you have Rails and Git installed.** [**Follow the installation guide**](/install), the [**Installing Git section of Pro Git**](http://www.git-scm.com/book/en/Getting-Started-Installing-Git) to get set up. Then configure GitHub by typing the following in your terminal:
-<div class="os-specific">
-  <div class="nix">
+
 {% highlight sh %}
 $ git config --global user.name "Your Name"
 $ git config --global user.email your.email@example.com
 {% endhighlight %}
 
-    <div>
 <p>one-time setup steps for GitHub.</p>
-    </div>
+
 Sign up for a [free GitHub account](https://github.com/signup/free) if you donâ€™t have one already.
 
 
@@ -61,8 +59,8 @@ Sign up for a [free GitHub account](https://github.com/signup/free) if you donâ€
 
 ## Additional Guides
 
-* Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](https://github.com/PragTob/rails-beginner-cheatsheet)
-* Guide 1: [Put your app online with Heroku by Terence Lee](/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift) / [Put your app online with Shelly Cloud](/shellycloud) / [Put your app online with anynines](/anynines) / [Put your app online with Trucker.io](/trucker)
+* Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
+* Guide 1: [Put your app online with Heroku by Terence Lee](/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift) / [Put your app online with anynines](/anynines) / [Put your app online with Trucker.io](/trucker)
 * Guide 2: [Adding profile pictures with Gravatar](/gravatar)
 * Guide 3: [Go through additional explanations for the App by Lucy Bain](https://github.com/lbain/railsgirls)
 

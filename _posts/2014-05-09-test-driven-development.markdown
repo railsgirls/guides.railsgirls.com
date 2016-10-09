@@ -20,23 +20,71 @@ on [how Roman numerals work][Roman numerals] before continuing.
 
 In summary, here are some examples of how Roman people wrote numbers:
 
--------:     | -----------:
-Hindu-Arabic | Roman
--------:     | -----------:
-    1        | I
-    4        | IV
-    5        | V
-    6        | VI
-    7        | VII
-    9        | IX
-    10       | X
-    50       | L
-    100      | C
-    500      | D
-    1000     | M
+<style>
+.roman-table th,
+.roman-table td { padding: 0 1rem; }
+.roman-table thead tr { border-bottom: 1px solid black; }
+.roman-table tr:nth-child(even) td { background-color: #eee; }
+</style>
+
+<table class="roman-table">
+  <thead>
+    <tr>
+      <th>Hindu-Arabic</th>
+      <th>Roman</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><tt>I</tt></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><tt>IIII</tt> (or <tt>IV</tt>)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><tt>V</tt></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><tt>VI</tt></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><tt>VII</tt></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><tt>VIIII</tt> (or <tt>IX</tt>)</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><tt>X</tt></td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td><tt>L</tt></td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td><tt>C</tt></td>
+    </tr>
+    <tr>
+      <td>500</td>
+      <td><tt>D</tt></td>
+    </tr>
+    <tr>
+      <td>1000</td>
+      <td><tt>M</tt></td>
+    </tr>
+  </tbody>
+</table>
 
 We are going to write a program that takes an integer value in the left column
-and calculates the equivalent string value in the right column.
+and calculates the equivalent string value in the right column. If we finish
+that, we will then make it work with the *subtractive digits* like *IV*.
 
 **Guide for working in a group**
 

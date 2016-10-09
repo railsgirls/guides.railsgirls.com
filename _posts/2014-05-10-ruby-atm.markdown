@@ -186,6 +186,26 @@ Now imagine the ATM returns only $10 notes. Modify your function to accommodate 
 * `withdraw(20)` should return an array, `[10, 10]`
 * `withdraw(15)` should return `false`, because $15 cannot be made up of $10 notes
 
+### Tests for step 4:
+
+{% highlight ruby %}
+# Replace your existing tests with the ones below.
+describe 'atm' do
+  [
+    [-1, false],
+    [0, false],
+    [7, false],
+    [45, false],
+    [20, [10, 10]],
+    [40, [10, 10, 10, 10]],
+  ].each do |input, expected|
+    it "should return #{expected} when $#{input} is withdrawn" do
+      withdraw(input).must_equal expected
+    end
+  end
+end
+{% endhighlight %}
+
 ### Refactor
 Once you have your tests passing, it's time to refactor.
 
@@ -214,25 +234,6 @@ Magic numbers are particularly troublesome when the same hard-coded value appear
 
 Did you use magic numbers? Can you refactor your code to eliminate them?
 
-### Tests for step 4:
-
-{% highlight ruby %}
-# Replace your existing tests with the ones below.
-describe 'atm' do
-  [
-    [-1, false],
-    [0, false],
-    [7, false],
-    [45, false],
-    [20, [10, 10]],
-    [40, [10, 10, 10, 10]],
-  ].each do |input, expected|
-    it "should return #{expected} when $#{input} is withdrawn" do
-      withdraw(input).must_equal expected
-    end
-  end
-end
-{% endhighlight %}
 
 ## *5.* $5 and $10 notes
 
@@ -243,7 +244,7 @@ Imagine your ATM now holds $5 and $10. People want as few notes as possible.
 * `withdraw(25)` should return `[10, 10, 5]`
 * `withdraw(11)` should return `false`, because $11 cannot be made up of $5 and $10 notes
 
-### Tests for step 5
+### Tests for step 5:
 
 {% highlight ruby %}
 # Replace your existing tests with the ones below.
@@ -284,15 +285,6 @@ To tell if an array is not empty: `!my_array.empty?`
 
 To remove the first element off an array: `my_array.shift`. Eg, `[1, 2, 3].shift` results in `[2, 3]`
 
-Variables are always a reference to an object.
-
-### Refactor
-
-* How many lines did you have to change, going from step 5 to step 6?
-* What if we made $100 notes available, as well? Could you do this in a single line?
-* Refactor your code so that you could change to $100, $20 and $10 notes, by changing a single line.
-* What is the most future-proof solution?
-
 ### Tests for step 6:
 
 {% highlight ruby %}
@@ -315,6 +307,14 @@ describe 'atm' do
   end
 end
 {% endhighlight %}
+
+
+### Refactor
+
+* How many lines did you have to change, going from step 5 to step 6?
+* What if we made $100 notes available, as well? Could you do this in a single line?
+* Refactor your code so that you could change to $100, $20 and $10 notes, by changing a single line.
+* What is the most future-proof solution?
 
 
 ## *7.* Final Discussion Points
