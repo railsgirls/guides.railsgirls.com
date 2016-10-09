@@ -1,5 +1,6 @@
 permalink: pretty
 markdown: kramdown
+baseurl: "/rails-girls-guides"
 exclude:
   - ".rvmrc"
   - ".rbenv-version"
