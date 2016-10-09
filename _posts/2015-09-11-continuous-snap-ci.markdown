@@ -38,27 +38,28 @@ Implantação contínua, do inglês <em lang="en">continuous deployment</em>, é
 
 Com uma cadeia de implantação contínua funcionando direito você garantirá que que implementações usando Git (tudo que for <em>commitado</em> deve ser testado, e tudo precisa ser testado para poder ser implantado), tornando mais fácil a colaboração e implantação mais rápida. Assim, você pode se concentrar em fazer o seu aplicativo ainda mais impressionante!
 
-Há algumas grandes empresas que estão navegando nessa onda contínua, e neste tutorial vamos configurar implantação contínua para para nossa aplicação em <em lang="en">Ruby on Rails</em>do GitHub para Heroku, usando o <a href="https://snap-ci.com" lang="en">Snap CI</em>
+Há algumas grandes empresas que estão navegando nessa onda contínua, e neste tutorial vamos configurar implantação contínua para para nossa aplicação em <em lang="en">Ruby on Rails</em>do GitHub para Heroku, usando o <a href="https://snap-ci.com" lang="en">Snap CI</a>.
 
 __COACH__: Fale sobre os benefícios da implantação contínua.
 
 ### Assine o <em land="en">Snap CI</em>
 
-First, you need [a Snap CI account](https://snap-ci.com/). Sign in to the Snap CI with GitHub. Snap CI needs access to your GitHub repositories to be able to set them up, so make sure you allow access.
+Em primeiro lugar você precisa de uma conta do <a href="https://snap-ci.com" lang="en">Snap CI</a>. Assine a conta do <em land="en">Snap CI</em> com Github. <em land="en">Snap CI</em> precisa acessar seus repositórios no Github para ser capaz de configurá-los, por isso certifique-se de permitir o acesso.
 
-Back at the Snap CI, let’s create your first pipeline. The first step is to select GitHub as your repository provider. In the list of your GitHub repositories, search for the repository you want to set up and select it. In our case, that's the one called something like “railsgirls”.
+De volta ao snap CI, vamos criar o seu primeiro <em lang="en">pipeline</em>. O primeiro passo é selecionar GitHub como seu provedor de repositório. Na lista de seus repositórios GitHub, procure o repositório que deseja configurar e selecione-o. No nosso caso, é o com nome semelhante a "railsgirls".
 
-Once you select the repository you wish to build, Snap CI will perform detections on your repository and makes a best attempt to automatically setup your [deployment pipeline](http://martinfowler.com/bliki/DeploymentPipeline.html) for you which will allow you to run your tests and deployments.
+Assim que você selecionar o repositório que deseja contruir, <em land="en">Snap CI</em> irá realizar detecções de seu repositório e fará melhor tentativa de configurar automaticamente o seu <em lang="en">pipeline</em> de implantação para você que vai permitir que você executar os testes e implementações.
 
-After a few seconds, Snap CI will automatically start building your repository, at this point you can click through the stages setup by Snap to see what they commands they run.
+Depois de alguns segundos, o <em land="en">Snap CI</em> iniciará automaticamente a construção de seu repositório, e neste momento você pode clicar através da configuração estágios pelo <em land="en">Snap</em> para ver quais comandos são executados.
 
-Sometimes, however, Snap CI may not be able to detect the right commands to build and test your repository. In such cases you can edit your pipeline configuration by visiting the Configuration page from the Builds page of your newly created pipeline and clicking 'Edit' to edit the pipeline. Now you can add or edit an existing stage which will build and run all the tests for your application.
+Às vezes, porém, o <em land="en">Snap</em> pode não ser capaz de detectar os comandos corretos para construir e testar seu repositório. Nesses casos, você pode editar sua configuração de <em lang="en">pipeline</em> ao visitar a página de configuração a partir da página de contrução do seu recém criadodo em <lang="en">pipeline</em> ao clicar em <em lang="en">"Edit"</em> para editar seu em <lang="en">pipeline</em>. Agora você pode adicionar ou editar uma etapa de contrução existente e executar todos os testes para a sua aplicação.
 
-If you feel unsure what stages you should be adding, you can have a look at the different Build recipes provided under the Ruby sub-category when adding a stage to figure out what commands should be run to correctly build and test your application. You can also take a look at the [getting started guide](https://docs.snap-ci.com/getting-started/) in the Snap CI documentation.
 
-Once you've finished editing your pipeline configuration click 'Save'. This will save your configuration and automatically trigger a new build. You should now have a green build if all your tests pass of course :)
+Se você se sentir inseguro de estágios que você deve adicionar, você pode olhar nas as diferentes receitas de construção previstas na sub-categoria de Ruby quando for adicionar de uma etapa para descobrir qual comandos devem ser executados para construir corretamente e testar a sua aplicação. Você também pode dar uma olhada no [manual de introdução na documentação](https://docs.snap-ci.com/getting-started/) do <em land="en">Snap CI</em>.
 
-In case you have any test failures however, you can fix those and push the changes to GitHub:
+Assim que você tiver terminado de editar a configuração do <em lang="en">pipeline</em> clique em <em lang="en">'Save'</em>. Isto irá salvar sua configuração e automaticamente disparar uma nova contrução. Agora você deve ter uma contrução verde se todos os seus testes passarem :)
+
+Caso você tenha qualquer falhas em testes, porém, você pode resolver isto e enviar as alterações para o Github:
 
 {% highlight sh %}
 git add .
@@ -66,7 +67,7 @@ git commit -m "fix tests"
 git push origin master
 {% endhighlight %}
 
-Snap CI will automatically detect the changes from GitHub and run a new instance of the pipeline. At this point you've already started testing your code.
+<em land="en">Snap CI</em> irá automaticamente detectar alterações no Github e executar uma nova instância do seu <em lang="en">pipeline</em>. Neste ponto você já estará testando seu código
 
 ### Setup Continuous Deployment
 
