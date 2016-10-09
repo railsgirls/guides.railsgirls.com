@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Continuous Deployment - cuz less hassle
+title: Implantação Contínua - para ter menos problemas
 permalink: continuous-snap-ci
 ---
 
@@ -69,14 +69,14 @@ git push origin master
 
 <em land="en">Snap CI</em> irá automaticamente detectar alterações no Github e executar uma nova instância do seu <em lang="en">pipeline</em>. Neste ponto você já estará testando seu código
 
-### Setup Continuous Deployment
+### Configuração de Implantação Contínua
 
-The next step is to deploy your application. There are various platforms to deploy to, for now, let's look at how you can deploy to [Heroku](https://www.heroku.com/) as it is the easiest.
+O próximo passo é distribuir a sua aplicação. Existem várias plataformas para implantar, porém por agora, vamos olhar como você pode implantar a [Heroku](https://www.heroku.com/), já que é a mais fácil.
 
-Go to your pipeline configuration edit page again and add a new Stage. This time Select the 'Deploy' category from the recipes on the left. The select 'Basic' recipe in the Heroku sub-category.
+Vá novamente para a sua página de edição de configuração de <em lang="en">pipeline</em> e adicione uma nova etapa. Desta vez, selecione a categoria "Deploy" das receitas na esquerda. Selecione a receita <em lang="en">"Basic"</em> na subcategoria do Heroku.
 
-Enter a stage name of your choice (eg: deploy, go-live, etc.), keep the trigger automatic and then click 'Run as' dropdown to Sign into Heroku. Perform the sign in and authorise Snap CI. You should automatically comeback to Snap CI after the authorization. You can now select the Heroku application where you wish to deploy or create a new application from Snap CI itself. Check the 'Perform DB migrate' checkbox and save your configuration.
+Envie o nome de etapa de sua preferência (i.e. <em lang="en">deploy</em>, <em lang="en">go-live</em>, etc.), mantenha o gatilho automatico e então clique em <em lang="en">"Run as"</em> no menu para entrar no Heroku. Execute uma etapa de cadastro ao autorizar o <em land="en">Snap CI</em>. Você deverá retornar automaticamente para o <em land="en">Snap CI</em> após a autorização. Você poderá agora selecionar a aplicação Heroku onde você deseja fazer a entrega ou criar uma nova aplicação dentro do próprio <em land="en">Snap CI</em>. Selecione a caixa de seleção <em land="en">'Perform DB migrate'</em> e salve sua configuração.
 
-This should trigger another new build in Snap CI, but this time it runs the stage you just created which deploys to Heroku. Once the pipeline goes green, visit the Heroku application page where you deployed from Snap CI and your rails application should be online in a few minutes.
+Isto deverá disparar uma nova contrução no <em land="en">Snap CI</em>, mas desta vez ele executará uma nova etapa que você acabou de criar criar que rá enviar ao Heroku. Assim que esse <em land="en">pipeline</em> ficar verde, visite a página da aplicação Heroku onde você enviou do <em land="en">Snap CI</em> e sua aplicação em <em land="en">rails</em> deverá estar online em alguns minutos.
 
-From here on, any new changes you make and push to your GitHub will be tested and deployed automatically by Snap CI.
+A partir daqui, qualquer nova alteração que você fizer e enviar para seu Github será testada e entregue automaticamente pelo <em land="en">Snap CI</em>.
