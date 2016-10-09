@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Touristic Autism-friendly Spots App 
+title: Touristic Autism-friendly Spots App
 permalink: touristic-autism_design
 ---
 
@@ -124,7 +124,7 @@ In case your Terminal shows you an error message that *sort of* implies there is
 
 2.Design your table
 
- + We simply use the twitter [Bootstrap](http://www.bootcss.com/) to
+ + We simply use the twitter [Bootstrap](http://getbootstrap.com/) to
    polish our table。find this line from
    app/views/places/index.html.erb and replace:
 
@@ -271,10 +271,10 @@ Open `app/views/places/index.html.erb` in your text editor and replace the table
  <% if user_signed_in? %>
 	  <% if current_user.id == place.user_id %></strong>.
 
-<%= link_to 'Edit', edit_place_path(place) %> | 
+<%= link_to 'Edit', edit_place_path(place) %> |
 <%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %>
 
-	   
+
 	    <% end %>
 	<% end %>
 
@@ -343,5 +343,3 @@ Open `app/views/places/show.html.erb` in your text editor and replace all lines 
 {% endhighlight %}
 
 Continue experimenting with Design changes! ;)
-
-

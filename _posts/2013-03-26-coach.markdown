@@ -4,38 +4,41 @@ title: Guides
 permalink: coach
 ---
 
-# Sendo um coach do Rails Girls
+# Being a Rails Girls coach
 
-*Todas as suas perguntas mais básicas respondidas em um lugar só*
+*All your basic questions answered in one place*
 
-### O que eu preciso para ser um coach do Rails Girls RJ?
+### What do I need to be a Rails Girls coach?
 
-Então você ouviu falar do [Rails Girls](http://railsgirls.com) e está se perguntando se você tem o que é necessário para ser um coach em dos workshops? Isso é ótimo! Seu interesse em ajudar os iniciantes a mergulhar no mundo da programação web é um ótimo pré-requisito! O que mais você precisa?
+So, you've heard about [Rails Girls](http://railsgirls.com) and are wondering if you've got what it takes to be a coach at one of the workshops? That's awesome! Your interest in helping beginners dip their toes into web programming is already a great prerequisite! What else do you need?
 
-- Paciência, vontade de ajudar e uma atitude amigável :)
-- Ser capaz de responder todos os tipos de perguntas um iniciante pode ter de forma amigável (mesmo se a explicação não for *tecnicamente* exata) durante a duração do workshop.
-- Experiência em programação web (você sabe o que é MVC, certo?), não necessariamente em Rails.
-- Algum tempo pra passar pelo [tutorial básico][rails-girls-app-tutorial-1] antes do evento.
+- Patience, willingness to help, and a friendly attitude :)
+- Being able to answer all sorts of questions in a beginner friendly way (even if the explanation isn't *technically* completely exact) throughout the duration of the workshop.
+- Experience with web programming (you know what MVC means, right?), not necessarily in Rails.
+- Some time to go through the [basic app tutorial][app] before the event.
 
-### Porque eu deveria ser um coach no Rails Girls?
+### Why should I be a Rails Girls coach?
 
-Você diz, além de um ótimo karma? Aqui vão algumas coisas que você ganha em troca:
+You mean besides incredibly good karma? Here are some very likely outcomes:
 
-- Você vai conhecer gente interessante fora do seu atual grupo de desenvolvedores.
-- Você provavelmente vai aprender algo novo respondendo a questões que você nunca se perguntou antes.
-- Gratidão eterna do grupo de meninas e das comunidade do Rails Girls.
-- Um épico [\#FridayHug](http://fridayhug.com) como você nunca viu antes.
-- Você vai ajudar a quebrar estereótipos sobre mulheres não serem interessadas em tecnologia e programação, ajudar suas irmãs, amigas e parentes, (futuras) filhas a terem mais escolhas no seu futuro. E você pode adicionar tudo isso no seu CV!
+- You'll meet interesting new people outside your usual developer group.
+- You'll probably learn something new by answering questions you never thought of asking yourself.
+- Eternal gratitude from your group of girls and the Rails Girls community.
+- An epic [\#FridayHug](http://fridayhug.com) like you've never seen before.
+- You'll help break down stereotypes about women not being interested in technology and programming and thus help your sisters, female friends and relatives, (future) daughters have more choices in their future. And you can add all that on your CV!
 
-### Escolha de tecnologia
-Os workshops do Rails Girls dão a primeira experiencia em desenvolvimento de software introduzindo as participantes a Ruby, Rails e HTML/CSS. O currículo foi feito em volta dessas tecnologias. Se o workshop fosse muito difícil ou muito profundo, ele não encorajaria iniciantes a continuarem, já que é muito difícil. Os workshops do Rails Girls não são sobre aprender a programar rápido e eficientemente. É sobre o ambiente aberto, empolgação e aprender as ferramentas que elas podem usar, e ter um dia ótimo aprendendo a programar, conhecendo a comunidades, aplicações web e mais. Adoraríamos ver, por exemplo, meetups de follow-up. Se você quer fazer um evento amigável para iniciantes, inicial para mulheres em outras tecnologias ou frameworks, encorajamos você a fazê-lo e usar materiais existentes. Todo o conteúdo do Rails Girls é licenciado sob a licença creative commons.
+### Choice of technology
+Rails Girls workshops give the first experience in software craftsmanship through introducing the participants to Ruby, Rails and HTML/CSS. The curriculum has been built around these technologies. If the workshop is too difficult or deep, it will not encourage the beginners to continue as it's perceived too hard. Rails Girls workshops are not about learning programming fast and efficiently. It's about the open environment, excitement and getting to know the tools they can use, and having a great day learning about programming, the community, web apps and more. We would love to see other additions to e.g.follow up meetups. If you'd like to host a beginner-friendly, welcome event for women in other technologies or frameworks, we strongly encourage you to do so and use the existing materials. All Rails Girls content is licensed under creative commons.
 
-### Tempo para completar a aplicação
-Tem bastaten tempo para completer a aplicação, então é mais importante explicar devagar o que está acontecendo em cada passo, já que é muito sobre copiar e colar e se as meninas correrem pelo guia, vai ficar tudo pronto muito rápido mas elas não vão entender nada.
-Tem bastante tempo (4-5) h reservadas para o app, melhorá-lo e colocá-lo online para os outros verem então não tem pressa :)
+
+### Time to complete app
+There's loads of time to complete the app, and so it is more important to slowly explain what is happening in each step, as it is a lot of copy pasting and if attendees rush through the guide, they will be done soon but not understand at all what happened.
+<br> There's a LOT (4-5) h reserved for the app, tweaking it and putting it online for others to see so there is no hurry :)
+
 
 ### Swag
-Acredite ou não, mas pra muitos é realmente importante. Faz o ambiente ser different. Você decide como, mas pequenas mudanças como adesivos, cupcakes, balões, posteres, ou qualquer coisa que você possa fazer para diferenciar faz toda a diferença.
+Believe it or not, for most, it is really important. It makes the environment different. You decide how, but little crafts (making buttons), stickers, cupcakes, balloons, posters, or anything you can come up with makes all the difference.
+
 
 ### Inclusivity
 Rails Girls is a an inclusive, safe and welcoming experience to everyone. The workshops are primarily intended for beginner women and crafted for this specific user group, but we've always been open to including other skill-levels and genders. Rails Girls coaches are male and female. The end goal of Rails Girls is to enriched the entire Rails community by encouraging more diverse people to join it. If you want to make a different curriculum or group, all the material is online and you are welcome to use it under another name and brand.
@@ -87,3 +90,4 @@ Some other great first-hand tips from Rails Girls coaches:
 
 [app]: http://guides.railsgirls.com/app
 [install]: http://guides.railsgirls.com/install/
+

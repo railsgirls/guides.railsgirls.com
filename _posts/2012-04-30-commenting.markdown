@@ -65,12 +65,7 @@ add
 <%= render 'comments/form' %>
 {% endhighlight %}
 
-In `app/controllers/ideas_controller.rb` add to show action after the row
-{% highlight ruby %}
-@idea = Idea.find(params[:id])
-{% endhighlight %}
-
-this
+In `app/controllers/ideas_controller.rb` add to the show action
 {% highlight ruby %}
 @comments = @idea.comments.all
 @comment = @idea.comments.build

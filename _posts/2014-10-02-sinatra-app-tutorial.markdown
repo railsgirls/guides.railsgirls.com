@@ -226,7 +226,7 @@ Create a new file in the `views` directory, called `results.erb`.
 Run `ruby suffragist.rb`, check
 your results and shut down the server with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
-__COACH__: Explain HTML tables and how how the
+__COACH__: Explain HTML tables and how the
 missing values from the hash default to zero.
 
 
