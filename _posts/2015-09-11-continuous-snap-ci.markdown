@@ -4,13 +4,27 @@ title: Continuous Deployment - cuz less hassle
 permalink: continuous-snap-ci
 ---
 
-# Continuous Deployment with the Snap CI
+# Integração Contínua com o <em lang="en">Snap CI</em>
 
-*Created by Akshay Karle, [@akshay_karle](https://twitter.com/akshay_karle)*
+*Criado por Akshay Karle, [@akshay_karle](https://twitter.com/akshay_karle)*
 
-### What is this Continuous Deployment thing?
+*Traduzido por Emerson Rocha Luiz, [@fititnt](https://github.com/fititnt)*
 
-Continuous deployment is part of the continuous delivery 'movement'. The idea behind continuous delivery is to automate the software delivery process as far as possible.
+<!--
+  N.T.: Existe diferença entre, conforme "Continuous Integration",
+        "Continuous Delivery" e "Continuous Deployment" http://stackoverflow.com/questions/28608015/continuous-integration-vs-continuous-delivery-vs-continuous-deployment
+        Creio que tende a ser interessante essa tradução ser revisada
+        por pessoa que trabalhe focada na área, para ter certeza de que
+        é tecnicamente precisa.
+-->
+
+
+### O que é essa coisa de Entrega Contínua?
+
+Entrega contínua é parte do 'movimento' de entrega contínua. A idéia por trás da entrega contínua é de automatizar o processo de entrega de software, tanto quanto possível.
+
+With a working continuous deployment chain in place you'll enforce Git deployments (everything must be committed to be tested and everything must be tested to be deployed), making collaboration easier and deployment faster. So you can focus on making your app even more awesome!
+
 
 With a working continuous deployment chain in place you'll enforce Git deployments (everything must be committed to be tested and everything must be tested to be deployed), making collaboration easier and deployment faster. So you can focus on making your app even more awesome!
 
