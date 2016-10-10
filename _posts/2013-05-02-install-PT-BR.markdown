@@ -8,14 +8,14 @@ Criado por Katie Ots, [site da Katie](http://www.katieots.com/)
 
 Traduzido por Marcela Oliveira, [@magaeu](https://twitter.com/magaeu)
 
-# Guia de Instalação para Rails Gils
+# Guia de Instalação para Rails Girls
 <span class="muted">Tempo previsto: 5min ativo / 15-30min passivo</span>
 
-Para construir apps ou outras coisas com Ruby on Rails, nós precisamos configurar alguns softwares e o ambiente de desenvolvimento em seu computador.
+Para construir apps ou outras coisas com Ruby on Rails, precisamos configurar alguns softwares e o ambiente de desenvolvimento em seu computador.
 
-Siga as instruições para seu sistema operacional (SO). Se você tiver algum problema, não entre em pânico. Nos avise e podemos resolver juntos.
+Siga as instruições para seu sistema operacional (SO). Se você tiver algum problema, não entre em pânico. Avise-nos e vamos resolver juntos.
 
-* [Instalação para OS X](#setup-for-os-x)
+* [Instalação para OS X](#instalação-para-os-x)
 * [Instalação para Windows](#setup-for-windows)
 * [Instalação para Linux](#setup-for-linux)
 * [Instalação alternativa para todos os tipos de SO](#virtual-machine)
