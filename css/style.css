@@ -220,11 +220,11 @@ i.icon-text-editor {
 }
 
 i.icon-prompt{
-  background-image: url("/images/icon-prompt.png");
+  background-image: url("../images/icon-prompt.png");
 }
 
 i.icon-browser {
-  background-image: url("/images/icon-browser.png");
+  background-image: url("../images/icon-browser.png");
 }
 
 .highlight {
@@ -250,13 +250,13 @@ i.icon-small-text-editor, i.icon-small-prompt, i.icon-small-browser {
   float: left;
 }
 i.icon-small-text-editor {
-  background-image: url("/images/icon-small-text-editor.png");
+  background-image: url("../images/icon-small-text-editor.png");
 }
 i.icon-small-prompt{
-  background-image: url("/images/icon-small-prompt.png");
+  background-image: url("../images/icon-small-prompt.png");
 }
 i.icon-small-browser {
-  background-image: url("/images/icon-small-browser.png");
+  background-image: url("../images/icon-small-browser.png");
 }
 
 .os-specific {
@@ -279,11 +279,11 @@ i.icon-small-browser {
    margin-right:-20px;
    padding-left:20px;
    padding-right:20px;
- } 
+ }
 }
 
 /* Don't show the homepage image on mobile */
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
   .hero {
     padding: 20px 0;
     background:none;
