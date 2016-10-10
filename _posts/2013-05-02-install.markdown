@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Guia de Instalação para Rails Girls
+title: tutorial de Instalação para Rails Girls
 permalink: install
 ---
 
@@ -8,7 +8,7 @@ Criado por Katie Ots, [site da Katie](http://www.katieots.com/)
 
 Traduzido por Marcela Oliveira, [@magaeu](https://twitter.com/magaeu)
 
-# Guia de Instalação para Rails Girls
+# Tutotial de Instalação para Rails Girls
 <span class="muted">Tempo previsto: 5min ativo / 15-30min passivo</span>
 
 Para construir apps ou outras coisas com Ruby on Rails, precisamos configurar alguns softwares e o ambiente de desenvolvimento em seu computador.
@@ -31,7 +31,7 @@ Clique no menu Apple e escolha *About this Mac*.
 ![Apple menu](/images/1.png "Apple menu")
 
 ### *2.* Na janela você irá encontrar a versão do seu sistema operacional.
-Se a versão do seu sistema começa com 10.6, 10.7, 10.8, 10.9, 10.10 ou 10.11, esse é o guia exato para você. Caso seja outra versão, podemos configurar sua máquina durante o evento.
+Se a versão do seu sistema começa com 10.6, 10.7, 10.8, 10.9, 10.10 ou 10.11, esse é o tutorial exato para você. Caso seja outra versão, podemos configurar sua máquina durante o evento.
 
 ![About this Mac dialog](/images/2.png "About this Mac dialog")
 
@@ -397,7 +397,7 @@ Acesse [whatbrowser.org](http://whatbrowser.org) e atualize seu navegador, caso 
 
 ## Utilização de Serviço em Nuvem
 
-Ao invés de instalar **Ruby on Rails** e o editor em seu computador, você pode utilizar um webservice para desenvolvimento. Tudo que precisa é um navegador e conexão com a internet. Esse guia explica como utilizar o [nitrous.io](https://nitrous.io). Se você utilizar outro serviço, talvez eles utilizem outra nomeclatura, como por exemplo 'workspace' ao invés de 'box', mas o processo é geralmente bem parecido.
+Ao invés de instalar **Ruby on Rails** e o editor em seu computador, você pode utilizar um webservice para desenvolvimento. Tudo que precisa é um navegador e conexão com a internet. Esse tutorial explica como utilizar o [nitrous.io](https://nitrous.io). Se você utilizar outro serviço, talvez eles utilizem outra nomeclatura, como por exemplo 'workspace' ao invés de 'box', mas o processo é geralmente bem parecido.
 
 ### *1.* Atualizar seu navegador (browser)
 
@@ -429,6 +429,6 @@ Acesse [https://nitrous.io](https://nitrous.io/) e realize o cadastro.
 * No meio você encontra o editor para modificar seus arquivos
 * Na parte de baixo você encontra o terminal onde executa os comandos
 * Tudo que você precisa está aí na sua janela do navegador - você não precisa iniciar o editor ou o terminal
-* Se você seguir estiver seguindo o guia, use os comandos para **Linux**, mesmo que esteja utilizando o Windows - seu sistema operacional não faz diferença, desde que todos os comandos são executados na sua box de desenvolvimento que é uma máquina Linux
-* Se o guia pedir para acessar algo como `http://localhost:3000`, acesse o menu 'Preview' e escolha 'Port 3000'
+* Se você seguir estiver seguindo o tutorial, use os comandos para **Linux**, mesmo que esteja utilizando o Windows - seu sistema operacional não faz diferença, desde que todos os comandos são executados na sua box de desenvolvimento que é uma máquina Linux
+* Se o tutorial pedir para acessar algo como `http://localhost:3000`, acesse o menu 'Preview' e escolha 'Port 3000'
 * Se, por exemplo, for solicitado acessar `http://localhost:3000/posts`, favor adicionar '/posts' manualmente a URL que está aberta
