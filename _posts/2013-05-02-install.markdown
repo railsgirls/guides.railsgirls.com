@@ -18,6 +18,7 @@ Siga as instruições para seu sistema operacional (SO). Se você tiver algum pr
 * [Instalação para OS X](#instalação-para-os-x)
 * [Instalação para Windows](#instalação-para-windows)
 * [Instalação para Linux](#instalação-para-linux)
+* [Utilização da Máquina Virtual](#utilização-da-máquina-virtual)
 * [Utilização de Serviço em Nuvem - Não é necessária qualquer instalação](#utilização-de-serviço-em-nuvem)
 
 <hr />
@@ -41,87 +42,52 @@ Se o número da sua versão começa com 10.9, 10.10 ou 10.11, siga os passos aba
 
 #### *3a1.* Instalação via terminal por linha de comando:
 
-```
-xcode-select --install
-```
-
-<!--
 {% highlight sh %}
 xcode-select --install
 {% endhighlight %}
--->
 
 #### *3a2.* Instalar [Homebrew](http://brew.sh/):
 
-```
+{% highlight sh %}
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-<!-- {% highlight sh %}
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-{% endhighlight %} -->
+{% endhighlight %}
 
 #### *3a3.* Instalar [rbenv](https://github.com/sstephenson/rbenv):
 
-```
+{% highlight sh %}
 brew update
 brew install rbenv ruby-build
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
 source ~/.bash_profile
-```
-
-<!-- {% highlight sh %}
-brew update
-brew install rbenv ruby-build
-echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
-source ~/.bash_profile
-{% endhighlight %} -->
+{% endhighlight %}
 
 #### *3a4.* Instalar Ruby com rbenv:
 
 Você pode encontrar a versão mais recente do Ruby pelo comando "rbenv install -l".
 
-```
+{% highlight sh %}
 rbenv install 2.3.1
-```
-
-<!-- {% highlight sh %}
-rbenv install 2.3.1
-{% endhighlight %} -->
+{% endhighlight %}
 
 Se aparecer o erro **OpenSSL::SSL::SSLError: ... : certificate verify failed**, tente dessa maneira:
 
-```
+{% highlight sh %}
 brew install curl-ca-bundle
 cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
-```
-
-<!-- {% highlight sh %}
-brew install curl-ca-bundle
-cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
-{% endhighlight %} -->
+{% endhighlight %}
 
 #### *3a5.* Configurar versão padrão do Ruby:
 
-```
+{% highlight sh %}
 rbenv global 2.3.1
-```
-
-<!-- {% highlight sh %}
-rbenv global 2.3.1
-{% endhighlight %} -->
+{% endhighlight %}
 
 #### *3a6.* Instalar Rails:
 
-```
+{% highlight sh %}
 gem install rails --no-document
-```
-
-<!-- {% highlight sh %}
-gem install rails --no-document
-{% endhighlight %} -->
+{% endhighlight %}
 
 ### *3b.* Se a versão do seu OS X é 10.6, 10.7, ou 10.8:
 
@@ -134,23 +100,15 @@ Dê um duplo clique no arquivo baixado e ele será descompactado no diretório a
 
 Se a versão do Rails não for a mais recente, você pode atualizá-la via terminal:
 
-```
+{% highlight sh %}
 gem update rails --no-document
-```
-
-<!-- {% highlight sh %}
-gem update rails --no-document
-{% endhighlight %} -->
+{% endhighlight %}
 
 Para ter certeza que tudo funciona bem crie uma aplicação via terminal:
 
-```
+{% highlight sh %}
 rails new myapp
-```
-
-<!-- {% highlight sh %}
-rails new myapp
-{% endhighlight %} -->
+{% endhighlight %}
 
 ### *4.* Instalar editor de texto
 
@@ -177,37 +135,23 @@ Abra o `Command Prompt with Ruby on Rails` e execute os comandos abaixo para res
 
 **Coach:** O erro **No such file or directory** ocorre quando o comando `rails` é utilizado no RailsInstaller3.2.0. Esse problema acontece devido a um erro no caminho do arquivo `rails.bat` e `bundle.bat`. Podemos resolvê-lo copiando o arquivo `rake.bat` para `rails.bat` e `bundle.bat`. ([github issue page](https://github.com/railsinstaller/railsinstaller-windows/issues/76))
 
-```
+{% highlight sh %}
 cd C:\RailsInstaller\Ruby2.2.0\bin
 copy rake.bat rails.bat
 copy rake.bat bundle.bat
-```
-
-<!-- {% highlight sh %}
-cd C:\RailsInstaller\Ruby2.2.0\bin
-copy rake.bat rails.bat
-copy rake.bat bundle.bat
-{% endhighlight %} -->
+{% endhighlight %}
 
 Abra o `Command Prompt with Ruby on Rails` e execute o seguinte comando:
 
-```
+{% highlight sh %}
 rails -v
-```
-
-<!-- {% highlight sh %}
-rails -v
-{% endhighlight %} -->
+{% endhighlight %}
 
 Se a versão do Rails for menor que 5, atualize-o utilizando o seguinte comando:
 
-```
+{% highlight sh %}
 gem update rails --no-document
-```
-
-<!-- {% highlight sh %}
-gem update rails --no-document
-{% endhighlight %} -->
+{% endhighlight %}
 
 ## Possíveis erros
 
@@ -215,51 +159,31 @@ gem update rails --no-document
 
 Se você se deparar com o erro abaixo quando executar `rails new railsgirls` ou `gem update rails`:
 
-```
-Gem::RemoteFetcher::FetchError: SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed (https://rubygems.org/gems/i18n-
-0.6.11.gem)
-```
-
-<!-- {% highlight sh %}
-Gem::RemoteFetcher::FetchError: SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed (https://rubygems.org/gems/i18n-
-0.6.11.gem)
-{% endhighlight %} -->
+{% highlight sh %}
+Gem::RemoteFetcher::FetchError: SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed (https://rubygems.org/gems/i18n-0.6.11.gem)
+{% endhighlight %}
 
 Significa que você possui uma versão antiga do **Rubygems** e será necessário atualizá-lo manualmente. Primeiro, verifique a sua versão do Rubygems (via terminal):
 
-```
+{% highlight sh %}
 gem -v
-```
-
-<!-- {% highlight sh %}
-gem -v
-{% endhighlight %} -->
+{% endhighlight %}
 
 Se a versão for menor que `2.2.3` você precisa atualizá-la manualmente através dos seguintes passos:
 
 Primeiro baixe o [ruby-gems-update gem](https://github.com/rubygems/rubygems/releases/download/v2.2.3/rubygems-update-2.2.3.gem). Mova o arquivo para `c:\\rubygems-update-2.2.3.gem` e execute (via terminal):
 
-```
+{% highlight sh %}
 gem install --local c:\\rubygems-update-2.2.3.gem
 update_rubygems --no-document
 gem uninstall rubygems-update -x
-```
-
-<!-- {% highlight sh %}
-gem install --local c:\\rubygems-update-2.2.3.gem
-update_rubygems --no-document
-gem uninstall rubygems-update -x
-{% endhighlight %} -->
+{% endhighlight %}
 
 Verifique novamente sua versão do Rubygems:
 
-```
+{% highlight sh %}
 gem -v
-```
-
-<!-- {% highlight sh %}
-gem -v
-{% endhighlight %} -->
+{% endhighlight %}
 
 Tenha certeza que seja igual ou maior que `2.2.3`. Caso não, execute o procedimento acima novamente.
 
@@ -307,13 +231,9 @@ O procedimento não é estritamente necessário, mas pode evitar problemas com e
 
 Verifique sua versão do Node:
 
-```
+{% highlight sh %}
 node --version
-```
-
-<!-- {% highlight sh %}
-node --version
-{% endhighlight %} -->
+{% endhighlight %}
 
 Tenha certeza que está mostrando uma versão qualquer do Node.
 
@@ -321,17 +241,11 @@ Tenha certeza que está mostrando uma versão qualquer do Node.
 
 Para ter certeza que tudo funciona bem crie uma aplicação via terminal:
 
-```
+{% highlight sh %}
 rails new myapp
 cd myapp
 rails server
-```
-
-<!-- {% highlight sh %}
-rails new myapp
-cd myapp
-rails server
-{% endhighlight %} -->
+{% endhighlight %}
 
 Acesse [http://localhost:3000](http://localhost:3000) em seu navegador. Você deverá ver a página 'Yay! You're on Rails!'.
 
@@ -349,37 +263,24 @@ Para instalar o ambiente de Ruby on Rails você deve apenas copiar a linha abaix
 
 #### Para Ubuntu:
 
-```
+{% highlight sh %}
 sudo apt-get install curl
 bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
-```
-
-<!-- {% highlight sh %}
-sudo apt-get install curl
-bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
-{% endhighlight %} -->
+{% endhighlight %}
 
 Se você for usar a instalação do **RVM** com gnome-terminal, você provavelmente vai precisar mudar suas configurações padrões antes de começar a usar a versão correta do Ruby on Rails. Descubra como: [Documentação do RVM](http://rvm.io/integration/gnome-terminal).
 
 #### Para Fedora:
 
-```
+{% highlight sh %}
 bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-fedora.sh)
-```
-
-<!-- {% highlight sh %}
-bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-fedora.sh)
-{% endhighlight %} -->
+{% endhighlight %}
 
 Para ter certeza que tudo funciona bem crie uma aplicação via terminal:
 
-```
+{% highlight sh %}
 rails new myapp
-```
-
-<!-- {% highlight sh %}
-rails new myapp
-{% endhighlight %} -->
+{% endhighlight %}
 
 ### *2.* Instalar editor de texto
 
@@ -392,6 +293,13 @@ Para esse workshop recomendamos o editor de texto Sublime Text
 Acesse [whatbrowser.org](http://whatbrowser.org) e atualize seu navegador, caso não tenha a versão mais recente.
 
 **Parabéns, seu ambiente de desenvolvimento Ruby on Rail está pronto!**
+
+<hr />
+
+
+## Utilização da Máquina Virtual
+
+Ao invés de instalar todas as ferramentas em seu computador, você pode configurar um ambiente de desenvolvimento em uma Máquina Virtual. Favor, verifique os deltalhes [aqui]({% post_url 2014-03-24-alternative-dev-environment %}).
 
 <hr />
 
