@@ -18,7 +18,6 @@ Siga as instruições para seu sistema operacional (SO). Se você tiver algum pr
 * [Instalação para OS X](#instalação-para-os-x)
 * [Instalação para Windows](#instalação-para-windows)
 * [Instalação para Linux](#instalação-para-linux)
-* [Instalação alternativa para todos os tipos de SO](#instalação-alternativa-para-todos-os-tipos-de-so)
 * [Utilização de Serviço em Nuvem - Não é necessária qualquer instalação](#utilização-de-serviço-em-nuvem)
 
 <hr />
@@ -46,9 +45,11 @@ Se o número da sua versão começa com 10.9, 10.10 ou 10.11, siga os passos aba
 xcode-select --install
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # xcode-select --install
-[comment]: # {% endhighlight %}
+<!--
+{% highlight sh %}
+xcode-select --install
+{% endhighlight %}
+-->
 
 #### *3a2.* Instalar [Homebrew](http://brew.sh/):
 
@@ -56,9 +57,9 @@ xcode-select --install
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-[comment]: # {% endhighlight %}
+<!-- {% highlight sh %}
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+{% endhighlight %} -->
 
 #### *3a3.* Instalar [rbenv](https://github.com/sstephenson/rbenv):
 
@@ -70,13 +71,13 @@ echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
 source ~/.bash_profile
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # brew update
-[comment]: # brew install rbenv ruby-build
-[comment]: # echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-[comment]: # echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
-[comment]: # source ~/.bash_profile
-[comment]: # {% endhighlight %}
+<!-- {% highlight sh %}
+brew update
+brew install rbenv ruby-build
+echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
+source ~/.bash_profile
+{% endhighlight %} -->
 
 #### *3a4.* Instalar Ruby com rbenv:
 
@@ -86,9 +87,9 @@ Você pode encontrar a versão mais recente do Ruby pelo comando "rbenv install 
 rbenv install 2.3.1
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # rbenv install 2.3.1
-[comment]: # {% endhighlight %}
+<!-- {% highlight sh %}
+rbenv install 2.3.1
+{% endhighlight %} -->
 
 Se aparecer o erro **OpenSSL::SSL::SSLError: ... : certificate verify failed**, tente dessa maneira:
 
@@ -97,10 +98,10 @@ brew install curl-ca-bundle
 cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # brew install curl-ca-bundle
-[comment]: # cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
-[comment]: # {% endhighlight %}
+<!-- {% highlight sh %}
+brew install curl-ca-bundle
+cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
+{% endhighlight %} -->
 
 #### *3a5.* Configurar versão padrão do Ruby:
 
@@ -108,9 +109,9 @@ cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts Op
 rbenv global 2.3.1
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # rbenv global 2.3.1
-[comment]: # {% endhighlight %}
+<!-- {% highlight sh %}
+rbenv global 2.3.1
+{% endhighlight %} -->
 
 #### *3a6.* Instalar Rails:
 
@@ -118,9 +119,9 @@ rbenv global 2.3.1
 gem install rails --no-document
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # gem install rails --no-document
-[comment]: # {% endhighlight %}
+<!-- {% highlight sh %}
+gem install rails --no-document
+{% endhighlight %} -->
 
 ### *3b.* Se a versão do seu OS X é 10.6, 10.7, ou 10.8:
 
@@ -137,9 +138,9 @@ Se a versão do Rails não for a mais recente, você pode atualizá-la via termi
 gem update rails --no-document
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # gem update rails --no-document
-[comment]: # {% endhighlight %}
+<!-- {% highlight sh %}
+gem update rails --no-document
+{% endhighlight %} -->
 
 Para ter certeza que tudo funciona bem crie uma aplicação via terminal:
 
@@ -147,9 +148,9 @@ Para ter certeza que tudo funciona bem crie uma aplicação via terminal:
 rails new myapp
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # rails new myapp
-[comment]: # {% endhighlight %}
+<!-- {% highlight sh %}
+rails new myapp
+{% endhighlight %} -->
 
 ### *4.* Instalar editor de texto
 
@@ -162,7 +163,7 @@ Se você estiver usando Mac OS X 10.7 ou versões anteriores, você pode utiliza
 
 Acesse [whatbrowser.org](http://whatbrowser.org) e atualize seu navegador, caso não tenha a versão mais recente.
 
-Parabéns, seu ambiente de desenvolvimento Ruby on Rail está pronto!
+**Parabéns, seu ambiente de desenvolvimento Ruby on Rail está pronto!**
 
 <hr />
 
@@ -182,11 +183,11 @@ copy rake.bat rails.bat
 copy rake.bat bundle.bat
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # cd C:\RailsInstaller\Ruby2.2.0\bin
-[comment]: # copy rake.bat rails.bat
-[comment]: # copy rake.bat bundle.bat
-[comment]: # {% endhighlight %}
+<!-- {% highlight sh %}
+cd C:\RailsInstaller\Ruby2.2.0\bin
+copy rake.bat rails.bat
+copy rake.bat bundle.bat
+{% endhighlight %} -->
 
 Abra o `Command Prompt with Ruby on Rails` e execute o seguinte comando:
 
@@ -194,9 +195,9 @@ Abra o `Command Prompt with Ruby on Rails` e execute o seguinte comando:
 rails -v
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # rails -v
-[comment]: # {% endhighlight %}
+<!-- {% highlight sh %}
+rails -v
+{% endhighlight %} -->
 
 Se a versão do Rails for menor que 5, atualize-o utilizando o seguinte comando:
 
@@ -204,9 +205,9 @@ Se a versão do Rails for menor que 5, atualize-o utilizando o seguinte comando:
 gem update rails --no-document
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # gem update rails --no-document
-[comment]: # {% endhighlight %}
+<!-- {% highlight sh %}
+gem update rails --no-document
+{% endhighlight %} -->
 
 ## Possíveis erros
 
@@ -219,10 +220,10 @@ Gem::RemoteFetcher::FetchError: SSL_connect returned=1 errno=0 state=SSLv3 read 
 0.6.11.gem)
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # Gem::RemoteFetcher::FetchError: SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed (https://rubygems.org/gems/i18n-
+<!-- {% highlight sh %}
+Gem::RemoteFetcher::FetchError: SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed (https://rubygems.org/gems/i18n-
 0.6.11.gem)
-[comment]: # {% endhighlight %}
+{% endhighlight %} -->
 
 Significa que você possui uma versão antiga do **Rubygems** e será necessário atualizá-lo manualmente. Primeiro, verifique a sua versão do Rubygems (via terminal):
 
@@ -230,9 +231,9 @@ Significa que você possui uma versão antiga do **Rubygems** e será necessári
 gem -v
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # gem -v
-[comment]: # {% endhighlight %}
+<!-- {% highlight sh %}
+gem -v
+{% endhighlight %} -->
 
 Se a versão for menor que `2.2.3` você precisa atualizá-la manualmente através dos seguintes passos:
 
@@ -244,11 +245,11 @@ update_rubygems --no-document
 gem uninstall rubygems-update -x
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # gem install --local c:\\rubygems-update-2.2.3.gem
-[comment]: # update_rubygems --no-document
-[comment]: # gem uninstall rubygems-update -x
-[comment]: # {% endhighlight %}
+<!-- {% highlight sh %}
+gem install --local c:\\rubygems-update-2.2.3.gem
+update_rubygems --no-document
+gem uninstall rubygems-update -x
+{% endhighlight %} -->
 
 Verifique novamente sua versão do Rubygems:
 
@@ -256,13 +257,13 @@ Verifique novamente sua versão do Rubygems:
 gem -v
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # gem -v
-[comment]: # {% endhighlight %}
+<!-- {% highlight sh %}
+gem -v
+{% endhighlight %} -->
 
 Tenha certeza que seja igual ou maior que `2.2.3`. Caso não, execute o procedimento acima novamente.
 
-### `'x64_mingw' is not a valid platform` error
+### 'x64_mingw' is not a valid platform error
 
 Algumas vezes você pode se deparar com o seguinte erro quando executar `rails server`:
 
@@ -310,9 +311,9 @@ Verifique sua versão do Node:
 node --version
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # node --version
-[comment]: # {% endhighlight %}
+<!-- {% highlight sh %}
+node --version
+{% endhighlight %} -->
 
 Tenha certeza que está mostrando uma versão qualquer do Node.
 
@@ -326,15 +327,15 @@ cd myapp
 rails server
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # rails new myapp
-[comment]: # cd myapp
-[comment]: # rails server
-[comment]: # {% endhighlight %}
+<!-- {% highlight sh %}
+rails new myapp
+cd myapp
+rails server
+{% endhighlight %} -->
 
 Acesse [http://localhost:3000](http://localhost:3000) em seu navegador. Você deverá ver a página 'Yay! You're on Rails!'.
 
-Parabéns, seu ambiente de desenvolvimento Ruby on Rail está pronto!
+**Parabéns, seu ambiente de desenvolvimento Ruby on Rail está pronto!**
 
 **Coach:** Recomendamos verificar o procedimento executando o comando scaffold e adicionando dados com a página gerada pelos coaches para assegurar que tudo está funcionando bem.
 
@@ -353,10 +354,10 @@ sudo apt-get install curl
 bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # sudo apt-get install curl
-[comment]: # bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
-[comment]: # {% endhighlight %}
+<!-- {% highlight sh %}
+sudo apt-get install curl
+bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
+{% endhighlight %} -->
 
 Se você for usar a instalação do **RVM** com gnome-terminal, você provavelmente vai precisar mudar suas configurações padrões antes de começar a usar a versão correta do Ruby on Rails. Descubra como: [Documentação do RVM](http://rvm.io/integration/gnome-terminal).
 
@@ -366,9 +367,9 @@ Se você for usar a instalação do **RVM** com gnome-terminal, você provavelme
 bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-fedora.sh)
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-fedora.sh)
-[comment]: # {% endhighlight %}
+<!-- {% highlight sh %}
+bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-fedora.sh)
+{% endhighlight %} -->
 
 Para ter certeza que tudo funciona bem crie uma aplicação via terminal:
 
@@ -376,9 +377,9 @@ Para ter certeza que tudo funciona bem crie uma aplicação via terminal:
 rails new myapp
 ```
 
-[comment]: # {% highlight sh %}
-[comment]: # rails new myapp
-[comment]: # {% endhighlight %}
+<!-- {% highlight sh %}
+rails new myapp
+{% endhighlight %} -->
 
 ### *2.* Instalar editor de texto
 
@@ -390,7 +391,7 @@ Para esse workshop recomendamos o editor de texto Sublime Text
 
 Acesse [whatbrowser.org](http://whatbrowser.org) e atualize seu navegador, caso não tenha a versão mais recente.
 
-Parabéns, seu ambiente de desenvolvimento Ruby on Rail está pronto!
+**Parabéns, seu ambiente de desenvolvimento Ruby on Rail está pronto!**
 
 <hr />
 
@@ -429,5 +430,5 @@ Acesse [https://nitrous.io](https://nitrous.io/) e realize o cadastro.
 * Na parte de baixo você encontra o terminal onde executa os comandos
 * Tudo que você precisa está aí na sua janela do navegador - você não precisa iniciar o editor ou o terminal
 * Se você seguir estiver seguindo o guia, use os comandos para **Linux**, mesmo que esteja utilizando o Windows - seu sistema operacional não faz diferença, desde que todos os comandos são executados na sua box de desenvolvimento que é uma máquina Linux
-* Se o guia pedir para acessar algo como http://localhost:3000, acesse o menu 'Preview' e escolha 'Port 3000'
-* Se, por exemplo, for solicitado acessar http://localhost:3000/posts, favor adicionar '/posts' manualmente a URL que está aberta
+* Se o guia pedir para acessar algo como `http://localhost:3000`, acesse o menu 'Preview' e escolha 'Port 3000'
+* Se, por exemplo, for solicitado acessar `http://localhost:3000/posts`, favor adicionar '/posts' manualmente a URL que está aberta
