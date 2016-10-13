@@ -4,10 +4,11 @@ title: tutorial de Instalação para Rails Girls
 permalink: install
 ---
 
+# Tutorial de Instalação para Rails Girls
+
 Criado por Katie Ots, [site da Katie](http://www.katieots.com/)  
 Traduzido por Marcela Oliveira, [@magaeu](https://twitter.com/magaeu)
 
-# Tutotial de Instalação para Rails Girls
 <span class="muted">Tempo previsto: 5min ativo / 15-30min passivo</span>
 
 Para construir apps ou outras coisas com Ruby on Rails, precisamos configurar alguns softwares e o ambiente de desenvolvimento em seu computador.
