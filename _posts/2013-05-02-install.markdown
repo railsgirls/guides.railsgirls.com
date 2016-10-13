@@ -1,54 +1,58 @@
 ---
 layout: default
-title: Setup recipe for Rails Girls
+title: tutorial de Instalação para Rails Girls
 permalink: install
 ---
 
-# Setup recipe for Rails Girls
-<span class="muted">Cooking time: 5min active / 15-30min passive</span>
+Criado por Katie Ots, [site da Katie](http://www.katieots.com/)
 
-To build apps and other things with Ruby on Rails, we need to setup some software and the developer environment for your computer.
+Traduzido por Marcela Oliveira, [@magaeu](https://twitter.com/magaeu)
 
-Follow the instructions for your operating system. If you run into any problems, don&#8217;t panic. Inform us at the event and we can solve it together.
+# Tutotial de Instalação para Rails Girls
+<span class="muted">Tempo previsto: 5min ativo / 15-30min passivo</span>
 
-* [Setup for OS X](#setup-for-os-x)
-* [Setup for Windows](#setup-for-windows)
-* [Setup for Linux](#setup-for-linux)
-* [Alternative Installment for all OS](#virtual-machine)
-* [Using a Cloud Service - No Installation Required](#using-a-cloud-service)
+Para construir apps ou outras coisas com Ruby on Rails, precisamos configurar alguns softwares e o ambiente de desenvolvimento em seu computador.
+
+Siga as instruições para seu sistema operacional (SO). Se você tiver algum problema, não entre em pânico. Avise-nos e vamos resolver juntos.
+
+* [Instalação para OS X](#instalação-para-os-x)
+* [Instalação para Windows](#instalação-para-windows)
+* [Instalação para Linux](#instalação-para-linux)
+* [Utilização da Máquina Virtual](#utilização-da-máquina-virtual)
+* [Utilização de Serviço em Nuvem - Não é necessária qualquer instalação](#utilização-de-serviço-em-nuvem)
 
 <hr />
 
-## Setup for OS X
+## Instalação para OS X
 
-### *1.* Let&#8217;s check the version of the operating system.
+### *1.* Vamos checar a versão do seu sistema operacional.
 
-Click the Apple menu and choose *About this Mac*.
+Clique no menu Apple e escolha *About this Mac*.
 
 ![Apple menu](/images/1.png "Apple menu")
 
-### *2.* In the window you will find the version of your operating system.
-If your version number starts with 10.6, 10.7, 10.8, 10.9, 10.10 or 10.11 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
+### *2.* Na janela você irá encontrar a versão do seu sistema operacional.
+Se a versão do seu sistema começa com 10.6, 10.7, 10.8, 10.9, 10.10 ou 10.11, esse é o tutorial exato para você. Caso seja outra versão, podemos configurar sua máquina durante o evento.
 
 ![About this Mac dialog](/images/2.png "About this Mac dialog")
 
-### *3a.* If your OS X version is 10.9 or higher:
+### *3a.* Se a versão do seu OS X é igual ou maior que 10.9:
 
-If your version number starts with 10.9, 10.10 or 10.11, follow these steps. We are installing homebrew and rbenv.
+Se o número da sua versão começa com 10.9, 10.10 ou 10.11, siga os passos abaixo. Vamos instalar o *homebrew* e *rbenv*.
 
-#### *3a1.* Install Command line tools on terminal:
+#### *3a1.* Instalação via terminal por linha de comando:
 
 {% highlight sh %}
 xcode-select --install
 {% endhighlight %}
 
-#### *3a2.* Install [Homebrew](http://brew.sh/):
+#### *3a2.* Instalar [Homebrew](http://brew.sh/):
 
 {% highlight sh %}
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 {% endhighlight %}
 
-#### *3a3.* Install [rbenv](https://github.com/sstephenson/rbenv):
+#### *3a3.* Instalar [rbenv](https://github.com/sstephenson/rbenv):
 
 {% highlight sh %}
 brew update
@@ -58,79 +62,78 @@ echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
 source ~/.bash_profile
 {% endhighlight %}
 
-#### *3a4.* Build Ruby with rbenv:
+#### *3a4.* Instalar Ruby com rbenv:
 
-You can find the newest version of Ruby with the command "rbenv install -l".
+Você pode encontrar a versão mais recente do Ruby pelo comando "rbenv install -l".
 
 {% highlight sh %}
 rbenv install 2.3.1
 {% endhighlight %}
 
-If you got "OpenSSL::SSL::SSLError: ... : certificate verify failed" error, try it this way.
+Se aparecer o erro **OpenSSL::SSL::SSLError: ... : certificate verify failed**, tente dessa maneira:
 
 {% highlight sh %}
 brew install curl-ca-bundle
 cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
 {% endhighlight %}
 
-#### *3a5.* Set default Ruby:
+#### *3a5.* Configurar versão padrão do Ruby:
 
 {% highlight sh %}
 rbenv global 2.3.1
 {% endhighlight %}
 
-#### *3a6.* Install rails:
+#### *3a6.* Instalar Rails:
 
 {% highlight sh %}
 gem install rails --no-document
 {% endhighlight %}
 
-### *3b.* If your OS X version is 10.6, 10.7, or 10.8:
-Download the RailsInstaller for your version of OS X:
+### *3b.* Se a versão do seu OS X é 10.6, 10.7, ou 10.8:
 
-* [RailsInstaller for 10.7 and 10.8](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz) <span class="muted">(325MB)</span>
-* [RailsInstaller for 10.6](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.6.app.tgz) <span class="muted">(224MB)</span>
+Faça download do **RailsInstaller** para a versão do seu OS X:
 
-Double click the downloaded file and it will unpack it into the current directory. Double click the the newly unpacked 'RailsInstaller-1.0.4-osx-10.7.app' or 'RailsInstaller-1.0.4-osx-10.6.app' and follow the instructions. It will open a README file with 'Rails Installer OS X' at the top. Please **ignore** the instructions in this file.
+* [RailsInstaller para 10.7 e 10.8](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz) <span class="muted">(325MB)</span>
+* [RailsInstaller para 10.6](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.6.app.tgz) <span class="muted">(224MB)</span>
 
-If the Rails version wasn't the latest, you could update it using a following command on terminal.
+Dê um duplo clique no arquivo baixado e ele será descompactado no diretório atual. Dê um duplo clique no arquivo descompactado **RailsInstaller-1.0.4-osx-10.7.app** ou **RailsInstaller-1.0.4-osx-10.6.app** e siga as instruções. O arquivo README será aberto com **Rails Installer OS X** no topo. Favor **IGNORAR** as instruções desse arquivo.
+
+Se a versão do Rails não for a mais recente, você pode atualizá-la via terminal:
 
 {% highlight sh %}
 gem update rails --no-document
 {% endhighlight %}
 
-Make sure that all works well by running the application generator command.
+Para ter certeza que tudo funciona bem crie uma aplicação via terminal:
 
 {% highlight sh %}
 rails new myapp
 {% endhighlight %}
 
-### *4.* Install a text editor to edit code files
+### *4.* Instalar editor de texto
 
-For the workshop we recommend the text editor Atom.
+Para esse workshop recomendamos o editor de texto Atom.
+* [Baixar e instalar Atom](https://atom.io/)
 
-* [Download Atom and install it](https://atom.io/)
+Se você estiver usando Mac OS X 10.7 ou versões anteriores, você pode utilizar outro editor [Sublime Text 2](http://www.sublimetext.com/2).
 
-If you are using Mac OS X 10.7 or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2).
+### *5.* Atualizar seu navegador (browser)
 
-### *5.* Update your browser
+Acesse [whatbrowser.org](http://whatbrowser.org) e atualize seu navegador, caso não tenha a versão mais recente.
 
-Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
-
-
-Now you should have a working Ruby on Rails programming setup. Congrats!
+**Parabéns, seu ambiente de desenvolvimento Ruby on Rail está pronto!**
 
 <hr />
 
-## Setup for Windows
+## Instalação para Windows
 
-### *1.* Install Rails
+### *1.* Instalar Rails
 
-Download [RailsInstaller](https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.2.0.exe) and run it. Click through the installer using the default options.
+Baixar o [RailsInstaller](https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.2.0.exe) e executá-lo. Utilize as configurações padrões durante a instalação.
 
-Open `Command Prompt with Ruby on Rails` and run the following commands to solve a problem in RailsInstaller3.2.0.
+Abra o `Command Prompt with Ruby on Rails` e execute os comandos abaixo para resolver problemas com o RailsInstaller3.2.0.
 
-**Coach:** There is a bug that occurs "No such file or directory" error when using the `rails` command in RailsInstaller3.2.0. This is occured by problem with incorrect paths in `rails.bat` and `bundle.bat`. We can fix the problem copying `rake.bat` to `rails.bat` and `bundle.bat`. ([github issue page](https://github.com/railsinstaller/railsinstaller-windows/issues/76))
+**Coach:** O erro **No such file or directory** ocorre quando o comando `rails` é utilizado no RailsInstaller3.2.0. Esse problema acontece devido a um erro no caminho do arquivo `rails.bat` e `bundle.bat`. Podemos resolvê-lo copiando o arquivo `rake.bat` para `rails.bat` e `bundle.bat`. ([github issue page](https://github.com/railsinstaller/railsinstaller-windows/issues/76))
 
 {% highlight sh %}
 cd C:\RailsInstaller\Ruby2.2.0\bin
@@ -138,40 +141,37 @@ copy rake.bat rails.bat
 copy rake.bat bundle.bat
 {% endhighlight %}
 
-Open `Command Prompt with Ruby on Rails` and run the following command:
+Abra o `Command Prompt with Ruby on Rails` e execute o seguinte comando:
 
 {% highlight sh %}
 rails -v
 {% endhighlight %}
 
-If the Rails version is less than 5, update it using a following command:
+Se a versão do Rails for menor que 5, atualize-o utilizando o seguinte comando:
 
 {% highlight sh %}
 gem update rails --no-document
 {% endhighlight %}
 
-## Possible errors
+## Possíveis erros
 
 ### Gem::RemoteFetcher error
 
-If you get this error when running `rails new railsgirls` or `gem update rails`:
+Se você se deparar com o erro abaixo quando executar `rails new railsgirls` ou `gem update rails`:
 
 {% highlight sh %}
-Gem::RemoteFetcher::FetchError: SSL_connect returned=1 errno=0 state=SSLv3 read
-server certificate B: certificate verify failed (https://rubygems.org/gems/i18n-
-0.6.11.gem)
+Gem::RemoteFetcher::FetchError: SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed (https://rubygems.org/gems/i18n-0.6.11.gem)
 {% endhighlight %}
 
-This means you have an older version of Rubygems and will need to update it manually first verify your Rubygems version
+Significa que você possui uma versão antiga do **Rubygems** e será necessário atualizá-lo manualmente. Primeiro, verifique a sua versão do Rubygems (via terminal):
 
 {% highlight sh %}
 gem -v
 {% endhighlight %}
 
-If it is lower than `2.2.3` you will need to manually update it:
+Se a versão for menor que `2.2.3` você precisa atualizá-la manualmente através dos seguintes passos:
 
-
-First download the [ruby-gems-update gem](https://github.com/rubygems/rubygems/releases/download/v2.2.3/rubygems-update-2.2.3.gem). Move the file to `c:\\rubygems-update-2.2.3.gem` then run:
+Primeiro baixe o [ruby-gems-update gem](https://github.com/rubygems/rubygems/releases/download/v2.2.3/rubygems-update-2.2.3.gem). Mova o arquivo para `c:\\rubygems-update-2.2.3.gem` e execute (via terminal):
 
 {% highlight sh %}
 gem install --local c:\\rubygems-update-2.2.3.gem
@@ -179,62 +179,67 @@ update_rubygems --no-document
 gem uninstall rubygems-update -x
 {% endhighlight %}
 
-Check your version of rubygems
+Verifique novamente sua versão do Rubygems:
 
 {% highlight sh %}
 gem -v
 {% endhighlight %}
 
-Make sure it is equal or higher than `2.2.3`. Re-run the command that was failing previously.
+Tenha certeza que seja igual ou maior que `2.2.3`. Caso não, execute o procedimento acima novamente.
 
+### 'x64_mingw' is not a valid platform error
 
-### 'x64_mingw' is not a valid platform` Error
+Algumas vezes você pode se deparar com o seguinte erro quando executar `rails server`:
 
-Sometimes you get the following error when running `rails server`:
-`'x64_mingw' is not a valid platform` If you experience this error after using the RailsInstaller you have to do a small edit to the file `Gemfile`:
+`'x64_mingw' is not a valid platform`
 
-Look at the bottom of the file. You will probably see something like this as one of the last lines in the file:
-`gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]`. If you have this line with `:x64_mingw`, then please delete the `:x64_mingw` part. In the end it should just say:
-`'tzinfo-data', platforms: [:mingw, :mswin]`
+Se você encontrar esse erro após utilizar o **RailsInstaller**, você terá que editar o arquivo `Gemfile`. Para isso, siga os passos abaixo:
 
-After you did that, please use your Command Prompt again and type `bundle update`.
+No final do arquivo verifique se as últimas linhas possuem as seguintes informações:
 
-### *2.* Install a text editor to edit code files
+`gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]`.
 
-For the workshop we recommend the text editor Atom.
+Se a linha possui `:x64_mingw`, então apague a parte `:x64_mingw`.
 
-* [Download Atom and install it](https://github.com/atom/atom/releases/latest)
-  * Download an atom zip file for windows and decompress it.
-  * Copy the folder into your Program Files.
-  * Launch atom in the folder.
+O final deverá ser da seguinte maneira:
+`gem 'tzinfo-data', platforms: [:mingw, :mswin]`.
 
-If you are using Windows Vista or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2).
+Após fazer o procedimento, favor usar seu prompt de comando novamente e executar `bundle update`.
 
-### *3.* Update your browser
+### *2.* Instalar editor de texto
 
-If you use Internet Explorer, we recommend installing [Firefox](mozilla.org/firefox) or [Google Chrome](google.com/chrome).
+Para esse workshop recomendamos o editor de texto Atom.
+* [Baixar e instalar Atom](https://github.com/atom/atom/releases/latest)
+  * Baixar um arquivo .zip do Atom para Windows e descompactá-lo.
+  * Copiar o diretório para seus Arquivos de Programas (Program Files).
+  * Abrir o Atom no diretório.
 
-Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
+Se você estiver usando Windows Vista ou versões anteriores, você pode utilizar outro editor [Sublime Text 2](http://www.sublimetext.com/2).
 
-### *4.* Install node
+### *3.* Atualizar seu navegador (browser)
 
-This is not strictly necessary, but it avoids a problem with and `ExecJS::RuntimeError` that might
-occur later  ([see stackoverflow](https://stackoverflow.com/questions/12520456/execjsruntimeerror-on-windows-trying-to-follow-rubytutorial)).
+Se você utiliza **Internet Explorer**, recomendamos instalar o [Firefox](mozilla.org/firefox) ou [Google Chrome](google.com/chrome).
 
-* Go to [https://nodejs.org/](https://nodejs.org/) and install node LTS package
-* Reopen your Rails Command Shell
+Acesse [whatbrowser.org](http://whatbrowser.org) e atualize seu navegador, caso não tenha a versão mais recente.
 
-Check your version of node
+### *4.* Instalar Node
+
+O procedimento não é estritamente necessário, mas pode evitar problemas com e `ExecJS::RuntimeError` que podem ocorrer posteriormente ([ver stackoverflow](https://stackoverflow.com/questions/12520456/execjsruntimeerror-on-windows-trying-to-follow-rubytutorial)).
+
+* Acesse [https://nodejs.org/](https://nodejs.org/) e instale o pacote node LTS
+* Reabra seu `Rails Command Shell`
+
+Verifique sua versão do Node:
 
 {% highlight sh %}
 node --version
 {% endhighlight %}
 
-Make sure it is displaying version number.
+Tenha certeza que está mostrando uma versão qualquer do Node.
 
-### *5.* Check the environment
+### *5.* Verificar o ambiente
 
-Check that everything is working by running the application generator command.
+Para ter certeza que tudo funciona bem crie uma aplicação via terminal:
 
 {% highlight sh %}
 rails new myapp
@@ -242,97 +247,96 @@ cd myapp
 rails server
 {% endhighlight %}
 
-Go to `http://localhost:3000` in your browser, and you should see the 'Yay! You're on Rails!' page.
+Acesse [http://localhost:3000](http://localhost:3000) em seu navegador. Você deverá ver a página 'Yay! You're on Rails!'.
 
-Now you should have a working Ruby on Rails programming setup. Congrats!
+**Parabéns, seu ambiente de desenvolvimento Ruby on Rail está pronto!**
 
-**Coach:** We recommend to verify by using the scaffold command and inputting data with the generated page with coaches to avoid ensure everything is working.
+**Coach:** Recomendamos verificar o procedimento executando o comando scaffold e adicionando dados com a página gerada pelos coaches para assegurar que tudo está funcionando bem.
 
 <hr />
 
-## Setup for Linux
+## Instalação para Linux
 
-### *1.* Install Rails
+### *1.* Instalar Rails
 
+Para instalar o ambiente de Ruby on Rails você deve apenas copiar a linha abaixo para sua distribuição Linux (Ubuntu ou Fedora), e colar no **Terminal** e pressionar Enter. Aproveite o texto que aparece na tela; irá levar algum tempo para o processo acabar. Nesse meio tempo, encorajamos você a pegar uma bebida refrescante antes de comecar.
 
-To install the Ruby on Rails development environment you just need to copy the line below for your Linux distribution (Ubuntu or Fedora), paste it in the Terminal and press Enter. Enjoy the text flying on the screen; it will take quite some time. Grabbing a refreshing drink before starting is encouraged.
-
-#### For Ubuntu:
+#### Para Ubuntu:
 
 {% highlight sh %}
 sudo apt-get install curl
 bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
 {% endhighlight %}
 
-If you are going to use RVM installations with gnome-terminal, you'll probably need to change it's default options before you can see and use the right Ruby and Rails versions. Find out how: [RVM documentation](http://rvm.io/integration/gnome-terminal).
+Se você for usar a instalação do **RVM** com gnome-terminal, você provavelmente vai precisar mudar suas configurações padrões antes de começar a usar a versão correta do Ruby on Rails. Descubra como: [Documentação do RVM](http://rvm.io/integration/gnome-terminal).
 
-#### For Fedora:
+#### Para Fedora:
 
 {% highlight sh %}
 bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-fedora.sh)
 {% endhighlight %}
 
-Make sure that all works well by running the application generator command.
+Para ter certeza que tudo funciona bem crie uma aplicação via terminal:
 
 {% highlight sh %}
 rails new myapp
 {% endhighlight %}
 
+### *2.* Instalar editor de texto
 
-### *2.* Install a text editor to edit code files
+Para esse workshop recomendamos o editor de texto Sublime Text
 
-For the workshop we recommend the text editor Sublime Text.
+* [Baixar e instalar Sublime Text](http://www.sublimetext.com/2)
 
-* [Download Sublime Text and install it](http://www.sublimetext.com/2)
+### *3.* Atualizar seu navegador (browser)
 
+Acesse [whatbrowser.org](http://whatbrowser.org) e atualize seu navegador, caso não tenha a versão mais recente.
 
-### *3.* Update your browser
-
-Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
-
-
-Now you should have a working Ruby on Rails programming setup. Congrats!
+**Parabéns, seu ambiente de desenvolvimento Ruby on Rail está pronto!**
 
 <hr />
 
-## Virtual Machine
 
-Instead of installing all tools on your machine, you can also set up a development environment in a Virtual Machine. Please find all the details [here]({% post_url 2014-03-24-alternative-dev-environment %}).
+## Utilização da Máquina Virtual
+
+Ao invés de instalar todas as ferramentas em seu computador, você pode configurar um ambiente de desenvolvimento em uma Máquina Virtual. Favor, verifique os deltalhes [aqui]({% post_url 2014-03-24-alternative-dev-environment %}).
 
 <hr />
 
-## Using a Cloud Service
+## Utilização de Serviço em Nuvem
 
-Instead of installing Ruby on Rails and an editor on your computer, you can use a webservice for development. All you need is a browser and an internet connection. This guide explains how to get started with [nitrous.io](https://nitrous.io). If you're using a different service, they may use a different wording - e.g. 'workspace' instead of 'box', but the process is usually pretty similar.
+Ao invés de instalar **Ruby on Rails** e o editor em seu computador, você pode utilizar um webservice para desenvolvimento. Tudo que precisa é um navegador e conexão com a internet. Esse tutorial explica como utilizar o [nitrous.io](https://nitrous.io). Se você utilizar outro serviço, talvez eles utilizem outra nomeclatura, como por exemplo 'workspace' ao invés de 'box', mas o processo é geralmente bem parecido.
 
-### *1.* Update your browser
+### *1.* Atualizar seu navegador (browser)
 
-If you use Internet Explorer, we recommend installing [Firefox](mozilla.org/firefox) or [Google Chrome](google.com/chrome).
+Se você utilza **Internet Explorer**, recomendamos instalar o [Firefox](mozilla.org/firefox) ou [Google Chrome](google.com/chrome).
 
-Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
+Acesse [whatbrowser.org](http://whatbrowser.org) e atualize seu navegador, caso não tenha a versão mais recente.
 
-### *2.* Create an account
+### *2.* Criar uma conta
 
-Go to [https://nitrous.io](https://nitrous.io/) and signup.
+Acesse [https://nitrous.io](https://nitrous.io/) e realize o cadastro.
 
-### *3.* Setup a development box / workspace for ruby on rails
-* Login to your nitrous account
-* Go to the dashboard by using the green 'Open dashboard' button
-* Create a nitrous box: pick Ruby/Rails from the templates - everything else can stay as is, but you can change the name of your box if you want to
-* It takes a moment until your box is ready
+### *3.* Configurar o box/workspace de desenvolvimento para Ruby on Rails
 
-### *4.* Find and restart your development box
-* If you've just created your box, you can probably skip these steps - they're good to know if you login to nitrous again later
-* You can always find your nitrous boxes by going to the dashboard or choosing 'Boxes' from the top menu
-* Pick your box from the list of boxes
-* If you haven't used a box in a while, it might have been shutdown due to inactivity. If you are informed that your box is not running, restart it using the respective button
-* When your box is up and running, choose 'IDE' in order to start coding
+* Logue na sua conta
+* Acesse o dashboard utilizando o botão verde 'Open dashboard'
+* Crie uma nitrous box: escolha Ruby/Rails a partir dos modelos - deixe as outras informações como estão, mas você pode mudar o nome do seu box para o que você desejar
+* Aguarde enquanto sua box é montada
 
-### *5.* Coding with your development box
-* On the left hand side, you find a file browser where you can navigate your directories and file
-* In the middle, you find the editor where you can modify your files
-* At the bottom, you find the terminal where you can run commands
-* Everything you need is here in you browser window - you do not need to start an editor or terminal anywhere else
-* If your following a guide or tutorial, use the commands for Linux even if you are on a Windows computer - your operating system does not matter, since all commands are run on your development box, which is a Linux machine
-* If a guide or tutorial asks you to point your browser to something like http://localhost:3000, go to the 'Preview' menu and pick 'Port 3000'
-* If, for example, you're asked to open http://localhost:3000/posts, please append '/posts' manually to the URL that has been opened
+### *4.* Encontrar e reiniciar sua box de desenvolvimento
+* Se você acabou de criar sua box, você provavelmente pode pular esses passos - porém, eles são importantes quando você logar na nitrous novamente
+* Você sempre pode encontrar suas nitrous boxes indo na dashboard ou escolhendo 'Boxes' no menu principal
+* Escolha sua box a partir da lista de boxes
+* Se faz tempo que você não utilza sua box, ela pode ter sido desligada devido a inatividade. Se sua box não estiver executando, reinicie sua box com o botão restart
+* Quando sua box estiver executando, escolha 'IDE' para começar a codificar
+
+### *5.* Codificar com sua box de desenvolvimento
+
+* Ao lado esquerdo você encontra o navegador de arquivos onde você pode navegar entre seus diretórios e arquivos
+* No meio você encontra o editor para modificar seus arquivos
+* Na parte de baixo você encontra o terminal onde executa os comandos
+* Tudo que você precisa está aí na sua janela do navegador - você não precisa iniciar o editor ou o terminal
+* Se você seguir estiver seguindo o tutorial, use os comandos para **Linux**, mesmo que esteja utilizando o Windows - seu sistema operacional não faz diferença, desde que todos os comandos são executados na sua box de desenvolvimento que é uma máquina Linux
+* Se o tutorial pedir para acessar algo como `http://localhost:3000`, acesse o menu 'Preview' e escolha 'Port 3000'
+* Se, por exemplo, for solicitado acessar `http://localhost:3000/posts`, favor adicionar '/posts' manualmente a URL que está aberta
