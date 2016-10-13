@@ -1,64 +1,65 @@
 ---
 layout: default
-title: Adding Graviatar to you app
+title: Adicionando Gravatar para a aplicação
 permalink: gravatar
 ---
 
-# Adding Gravatar to your App
+# Adicionando Gravatar para a aplicação
 
-*Created by Catherine Jones*
+*Criado por Catherine Jones*  
+*Traduzido por Anderson Fernandes, [@andersonfernandes](https://github.com/andersonfernandes)*
 
-This guide assumes that you have already built a Rails Girls app by following this [app development guide](http://guides.railsgirls.com/app/) and added authentication using [Devise](http://guides.railsgirls.com/devise/).
+Este tutorial assume que você já construiu uma aplicação do Rails Girls seguindo este [tutorial](http://guides.railsgirls.com/app) e adicionou autenticação usando o [Devise](http://guides.railsgirls.com/devise/).
 
-### Important
+### Importante
 
-You need to have an e-mail address registered with Gravatar for this to work. If you do not already have one you can go to [gravatar.com](http://en.gravatar.com/).
+Você precisa ter um endereço de e-mail cadastrado com o Gravatar para isso funcionar. Se ainda não tem, você pode ir em [gravatar.com](http://br.gravatar.com/).
 
-## *1.* Add the Gravtastic gem
+## *1.* Adicione a gem Gravtastic
 
-Open up your gemfile and under your `devise` gem add
+Abra seu gemfile e abaixo da gem `devise` adicione
 
 {% highlight ruby %}
 gem 'gravtastic'
 {% endhighlight %}
 
-In the terminal run
+No terminal rode
 
 {% highlight sh %}
 bundle install
 {% endhighlight %}
 
-This will install the gravtastic gem. Then remember to restart your rails server.
+Isto irá instalar a gem gravtastic. Então lembre de reiniciar seu servidor do rails.
 
-## *2.* Set up Gravatar in your app
+## *2.* Configurando o Gravatar na sua aplicação
 
-Open `app/models/user.rb`, and add these lines
+Abra `app/models/user.rb`, e adicione essas linhas
 
 {% highlight ruby %}
 include Gravtastic
 gravtastic
 {% endhighlight %}
 
-right after the first line.
+logo após a primeira linha.
 
-## *3.* Configure Gravatar
+## *3.* Configure o Gravatar
 
-Open `app/views/layouts/application.html.erb` and in the
+Abra `app/views/layouts/application.html.erb` e na seção
 
 {% highlight erb %}
 <% if user_signed_in? %>
 {% endhighlight %}
 
-section but before the
+antes do
 
 {% highlight erb %}
 <% else %>
 {% endhighlight %}
 
-add
+adicione
 
 {% highlight erb %}
 <%= image_tag current_user.gravatar_url %>
 {% endhighlight %}
 
-Now open you app in your browser and login with an e-mail address that is associated with a Gravatar. You should be able to see your Gravatar.
+Agora abra sua aplicação no navegador e faça login com um endereço de e-mail associado com um Gravatar. Você será capaz de ver seu Gravatar.
