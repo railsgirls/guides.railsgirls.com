@@ -1,75 +1,76 @@
 ---
 layout: default
-title: Write a little game in Ruby!
+title: Crie um jogo simples com Ruby!
 permalink: ruby-game
 ---
 
-# Write a little game in Ruby!
+# Crie um jogo simples com Ruby!
 
-*Created by Patrick Huesler, [@phuesler](https://twitter.com/phuesler) & Floor Drees, [@floordrees](https://twitter.com/floordrees) for [Rails Girls The Hague](http://railsgirls.com/thehague)* 
+*Criado por Patrick Huesler, [@phuesler](https://twitter.com/phuesler) & Floor Drees, [@floordrees](https://twitter.com/floordrees) para o [Rails Girls The Hague](http://railsgirls.com/thehague)*  
+*Traduzido por Daniel Barreto, [@danielfsbarreto](https://github.com/danielfsbarreto)*
 
-[gosu](http://www.libgosu.org/) is a 2D game development library. Gosu features easy to use and game-friendly interfaces to 2D graphics and text (accelerated by 3D hardware), sound samples and music as well as keyboard, mouse and gamepad/joystick input. Also includes demos for integration with RMagick, Chipmunk and OpenGL.
+[gosu](http://www.libgosu.org/) é uma biblioteca de desenvolvimento de jogos 2D. Gosu provê interfaces amigáveis e fáceis de usar para jogos com gráficos 2D e texto (acelerado por hardware 3D), amostras de áudio e música, bem como suporte a entrada de comandos através de teclado, mouse e gamepad/joystick. Também inclui demos para integração com RMagick, Chipmunk e OpenGL.
 
-The actual source code, wiki, issue tracker etc. are all [hosted on GitHub](http://github.com/jlnr/gosu/). The best entry point into Gosu's documentation is the [wiki home page](http://github.com/jlnr/gosu/wiki).
-Install:
+Seus códigos-fonte, wiki, rastreadores de defeitos, etc. estão todos [disponíveis no GitHub](http://github.com/jlnr/gosu/). O melhor ponto de entrada para a documentação do Gosu é a [página principal da wiki](http://github.com/jlnr/gosu/wiki).
+Instale:
 {% highlight sh %}
 gem install gosu
 {% endhighlight %}
 
-or add `gem "gosu", "~> 0.7.48"` to your Gemfile and run `bundle`.
-Play around with the example games:
+ou adicione `gem "gosu", "~> 0.7.48"` ao seu Gemfile e execute `bundle`.
+Brinque com os jogos de exemplo:
 {% highlight sh %}
 cd $GEM_HOME/gems/gosu-0.7.48/examples
 {% endhighlight %}
 
-and then: `ruby CptnRuby.rb`
+e então: `ruby CptnRuby.rb`
 
-or: `ruby RMagickIntegration.rb`
+ou: `ruby RMagickIntegration.rb`
 
-or: `ruby Tutorial.rb`
+ou: `ruby Tutorial.rb`
 
-### Enough with those examples already!
+### Já tive o suficiente desses exemplos!
 
-Copy the repository by opening (a new tab in your) terminal. If you were working on the Rails Girls app in the mean time, make sure you're in your home directory by running ```cd```.
+Copie o repositório através de uma nova aba do seu terminal. Se você esteve trabalhando no aplicativo do Rails Girls nesse meio tempo, tenha certeza que você está no seu diretório home rodando ```cd```.
 
-Now run
+Agora execute
 {% highlight sh %}
 git clone https://github.com/FloorD/gosu_tutorial_RG_TH.git
 {% endhighlight %}
 
-aaand change into the proper directory using
-{% highlight sh %} 
+e vá para o diretório apropriado através do comando
+{% highlight sh %}
 cd gosu_tutorial_RG_TH/jumpingem
 {% endhighlight %}
 
-### Run!
+### Rode!
 
-To play our little game, open it using the terminal:
-{% highlight sh %} 
+Para jogar nosso joguinho, abra-o usando o terminal:
+{% highlight sh %}
 ruby game.rb
 {% endhighlight %}
 
-### So how does this work?
+### Então, como ele funciona?
 
-Let's inspect some code, shall we? Open `game.rb` in your texteditor. See the
+Que tal inspecionarmos um pouco de código? Abra `game.rb` no seu editor de texto. Consegue ver o trecho
 
-{% highlight ruby %} 
+{% highlight ruby %}
 !/usr/bin/env ruby -w
-require 'rubygems' 
+require 'rubygems'
 require 'gosu'
 include Gosu
 {% endhighlight %}
 
-... right at the top of your file? Here we make sure we 'call' the necessary gem, so we can move on to our `class` (or multiple classes).
-So we have our
+... logo no começo do arquivo? Aqui nós garantimos que 'chamamos' as gems necessárias, daí então podemos mover para nossa `class` (ou múltiplas classes).
+Mais adiante temos nossa
 
-{% highlight ruby %} 
-class Game < Window 
+{% highlight ruby %}
+class Game < Window
 end
 {% endhighlight %}
 
-... thing going on. The `def`'s you see within this Game class, are  methods. Here we **def**ine which instructions the program should follow. Just take a look at the following snippet:
-{% highlight ruby %} 
+... rolando. Os `def`'s que você vê dentro da classe Game são métodos. Neles nós **def**inimos quais instruções o programa deve seguir. Apenas dê uma olhada no seguinte trecho de código:
+{% highlight ruby %}
 def draw
   draw_quad 0, 400, Color::WHITE, 640, 400, Color::WHITE, 640, 500, Color::WHITE, 0, 500, Color::WHITE
     if @dir == :left then
@@ -83,11 +84,11 @@ def draw
 end
 {% endhighlight %}
 
-Want to play around a bit? Copy the contents of `game.rb` in a new `.rb` file. Save it and name it as you'd like. Now try and change some stuff in the game and run it in your terminal to see the changes.
+Quer brincar um pouco? Copie o conteúdo de `game.rb` em um novo arquivo `.rb`. Salve-o e nomeie-o como preferir. Agora tente mudar algumas coisas no jogo e rode-o no seu terminal para ver as mudanças na prática.
 
-Think you have more graphic skills than Patrick (you probably do)? Then you can try and create a new `sprites.png`! Don't forget to call it here:
+Acha que tem mais habilidades gráficas que Patrick (você provavelmente tem)? Então você pode tentar criar um novo `sprites.png`! Não esqueça de chamá-lo aqui:
 
-{% highlight ruby %} 
+{% highlight ruby %}
 def initialize
     super(640, 480, false)
     self.caption = "Jump 'n Run"
@@ -99,10 +100,10 @@ def initialize
   end
 {% endhighlight %}
 
-And see the `Game.new.show`? That creates a new instance. It has no memory, so when you get stuck in the game, you can just start a new game. Have fun!
+Está vendo o código `Game.new.show`? Ele cria uma nova instância do jogo. Ela não tem memória, então quando você ficar preso em um jogo, apenas comece um novo. Divirta-se!
 
-#### Credits
+#### Créditos
 
-The assets used in vim adventures, you can find them [here](http://www.lostgarden.com/2007/05/dancs-miraculously-flexible-game.html)
+Os assets utilizados em vim adventures podem ser encontrados [aqui](http://www.lostgarden.com/2007/05/dancs-miraculously-flexible-game.html)
 
-The sounds usedm you'll find over at [Matthew Klingensmith (www.matthewklingensmith.com)](http://opengameart.org/content/matts-creative-commons-music)
+Os sons utilizados você vai encontrar em [Matthew Klingensmith (www.matthewklingensmith.com)](http://opengameart.org/content/matts-creative-commons-music)

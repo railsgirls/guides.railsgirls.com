@@ -6,40 +6,40 @@ permalink: twitter-widget
 
 # Twitter widget
 
-*Written by Asta Bevainyte, [@astux7](https://twitter.com/astux7)*
+*Criado por Asta Bevainyte, [@astux7](https://twitter.com/astux7)*  
+*Traduzido por Vilmar Neto, [@Dkmister](https://github.com/Dkmister)*
+
+Esta prática se destina a ensinar como usar o widget do Twitter e como para [http://localhost:3000/pages/info](http://localhost:3000/pages/info)
+
+Há duas maneiras de fazer isto, se você quiser fazer rápido para já ir adicionando um código preparado, vá para o 2º parágrafo.
+
+**Coach** Explique o que é widget.
 
 
-This exercise is intended to teach how to use twitter widget and how to add it to the [http://localhost:3000/pages/info](http://localhost:3000/pages/info)
+1. Configuração do widget do Twitter 
 
-Where is 2 ways to do it, if you want to do it quick just adding a prepared code, go to paragraph 2.
++ Logue-se no [Twitter](https://twitter.com/)
 
-**Coach** explain what is widget.
++ Vá para [https://publish.twitter.com/#](https://publish.twitter.com/#) 
 
++ Selecione o que você gostaria de embutir, .i.e seu *perfil* então o link deve parecer como o seguinte (https://twitter.com/_seu_username_no_twitter)
 
-1. Twitter widget configuration
++ Selecione display options entre 'Embedded Timeline' ou 'Twitter Buttons' 
 
-+ Login to [Twitter](https://twitter.com/)
-
-+ Go to [https://publish.twitter.com/#](https://publish.twitter.com/#) 
-
-+ Select what you would like to embed, .i.e your *profile* then the link should look like (https://twitter.com/_your_twitter_username)
-
-+ Select display options between 'Embedded Timeline' or 'Twitter Buttons' 
-
-+ Copy code
++ Copie o código
 
 
-2. Add Twitter generated code to your info page
+2. Adicione o código gerado pelo Twitter a sua página de informação
 
- + You have Twitter coppied code which looks like this if you selected ```profile``` and ```embedded timeline``` options (*_your_twitter_username* - you need to change to your twitter name)
+ + Você deve ter o código do Twitter copiado que deve parecer como este se você selecionou opções de```perfil``` e ```embedded timeline``` (*_seu_username_no_twitter* - você precisa mudar para seu nome no Twitter)
 
   ```
-    <a class="twitter-timeline" href="https://twitter.com/_your_twitter_username">Tweets by _your_twitter_username</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a class="twitter-timeline" href="https://twitter.com/_seu_username_no_twitter">Tweets de _seu_username_no_twitter</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   ```
 
- + Add this code to app/views/pages/info.html.erb at the end of the file
+ + Adicione este código para app/views/pages/info.html.erb no fim do arquivo
 
- + Save and run ```rails server```
+ + Salve e execute ```rails server```
 
- + Open your browser and go to [http://localhost:3000/pages/info](http://localhost:3000/pages/info) and check your Twitter profile
+ + Abra seu browser e vá para [http://localhost:3000/pages/info](http://localhost:3000/pages/info) e cheque seu perfil no Twitter 
   
