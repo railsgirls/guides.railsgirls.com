@@ -4,8 +4,7 @@ title: tutorial de Instalação para Rails Girls
 permalink: install
 ---
 
-Criado por Katie Ots, [site da Katie](http://www.katieots.com/)
-
+Criado por Katie Ots, [site da Katie](http://www.katieots.com/)  
 Traduzido por Marcela Oliveira, [@magaeu](https://twitter.com/magaeu)
 
 # Tutotial de Instalação para Rails Girls
