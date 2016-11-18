@@ -253,7 +253,7 @@ Go to `http://localhost:3000` in your browser, and you should see the 'Yay! You'
 
 Now you should have a working Ruby on Rails programming setup. Congrats!
 
-**Coach:** We recommend to verify by using the scaffold command and inputting data with the generated page with coaches to avoid ensure everything is working.
+**Coach:** We recommend to verify by using the scaffold command and inputting data with the generated page with coaches to ensure everything is working.
 
 <hr />
 
