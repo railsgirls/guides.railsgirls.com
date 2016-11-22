@@ -173,7 +173,7 @@ rake db:migrate
 rails server
 {% endhighlight %}
 
-Open <http://localhost:3000/ideas> in your browser. Cloud service (e.g. ) users need to append '/ideas' to their preview url instead (see [installation guide](/install#using-a-cloud-service)).
+Open <http://localhost:3000/ideas> in your browser. Cloud service (e.g. Codenvy) users need to append '/ideas' to their preview url instead (see [installation guide](/install#using-a-cloud-service)).
 
 Click around and test what you got by running these few command-line commands.
 

@@ -324,7 +324,7 @@ Go to [codenvy.io](https://codenvy.io) and signup for free.
 
 ![](/images/codenvy/create-account.jpg)
 
-### *3.* Setup a 'workspace for Ruby on Rails
+### *3.* Setup a workspace for Ruby on Rails
 
 The Ruby on Rails Workspace has all the software we need for the workshop already preinstalled. To create a workspace, log into [codenvy.io](https://codenvy.io) and click on 'Dashboard'. If no workspace has been created yet, the 'New Workspace' view is displayed.
 
@@ -359,7 +359,7 @@ In the 'New Workspace' view, a few settings have to be made.
 * At the bottom, you find the terminal where you can run commands
 * Everything you need is right here in you browser window - you do not need to start an editor or terminal anywhere else
 * If you are following a guide or tutorial, use the commands for Linux even if you are on a Windows computer - your operating system does not matter, since all commands are run on your project's machine in the cloud, which is running Linux
-* If a guide or tutorial asks you to start the rails server with 'rails server' or 'rails s', append '-b 0.0.0.0' to this command so that you run 'rails server -b 0.0.0.0'
+* If a guide or tutorial asks you to start the rails server with `rails server` or `rails s`, append `-b 0.0.0.0` to this command so that you run `rails server -b 0.0.0.0`
 * If a guide or tutorial asks you to run a rails command that contains `rails` or `rake`, prepend `bundle exec` to this command, e. g. `bundle exec rake db:migrate`.
 * If a guide or tutorial asks you to point your browser to something like http://localhost:3000, follow these instructions instead:
   * Open the 'Operations perspective' (1) in Codenvy, go to the 'Servers' tab (2) and pick the URL entry in the line starting with 'rails' (see screenshot). Instead of http://localhost:3000, call this URL in your browser.
