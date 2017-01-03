@@ -13,7 +13,7 @@ View the guides at http://guides.railsgirls.com or clone this repo and install &
 ### Installing jekyll
 
 ```
-$ cd railsgirls.github.com
+$ cd railsgirls.github.io
 ```
 
 ```
