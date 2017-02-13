@@ -16,7 +16,7 @@ We will use Guard and RSpec to monitor some of our files and run tests over them
 
 If any error is found, then we are going to dig into it so to understand the cause and fix it, by using Pry.
 
-Finally, since we are assuming to be developing in collaboration with other via GitHub, we will also make sure that each contribution does not conflit when integrating with the others' ones. For this very reason, we will also commit, push and test the integration often, in a process called "Continuous Integration". We will use Travis-CI to support us.
+Finally, since we are assuming to be developing in collaboration with other via GitHub, we will also make sure that each contribution does not conflict when integrating with the others' ones. For this very reason, we will also commit, push and test the integration often, in a process called "Continuous Integration". We will use Travis-CI to support us.
 
 ##Continuous testing with Guard
 
@@ -73,7 +73,7 @@ Now, as in proper Test-Driven Development(TDD), let's create a test for our stat
 
 We're going to create a file titled home_spec.rb and place it in the spec/feature folder (as this is what we told Guard to expect). The purpose of this file is to become our specification file (in other words, this is going to be our test code and will represent the expected functionality).
 
-Note: in Ruby the words "test" and "specification" are often considered interchangable.
+Note: in Ruby the words "test" and "specification" are often considered interchangeable.
 
 ###TDD: Writing Test Code Before Application Code
 
