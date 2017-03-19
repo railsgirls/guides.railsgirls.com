@@ -57,7 +57,7 @@ add
 <% @comments.each do |comment| %>
   <div>
     <strong><%= comment.user_name %></strong>
-    <br />
+    <br>
     <p><%= comment.body %></p>
     <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
   </div>
@@ -74,7 +74,7 @@ In `app/controllers/ideas_controller.rb` add to the show action
 Open `app/views/comments/_form.html.erb` and after
 {% highlight erb %}
   <div class="field">
-    <%= f.label :body %><br />
+    <%= f.label :body %><br>
     <%= f.text_area :body %>
   </div>
 {% endhighlight %}
