@@ -62,7 +62,7 @@ add
     <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
   </div>
 <% end %>
-<%= render 'comments/form' %>
+<%= render partial: 'comments/form', locals: { comment: @comment } %>
 {% endhighlight %}
 
 In `app/controllers/ideas_controller.rb` add to the show action
