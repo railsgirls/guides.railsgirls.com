@@ -74,13 +74,13 @@ To see if the uploaded picture was resized open
 `app/views/ideas/index.html.erb`. Change the line
 
 {% highlight erb %}
-<td><%= idea.picture %></td>
+<%= image_tag idea.picture_url, width: '100%' if idea.picture.present? %>
 {% endhighlight %}
 
 to
 
 {% highlight erb %}
-<td><%= image_tag idea.picture_url(:thumb) if idea.picture? %></td>
+<%= image_tag idea.picture_url(:thumb) if idea.picture.present? %>
 {% endhighlight %}
 
 Take a look at the list of ideas in the browser to see if the thumbnail is
