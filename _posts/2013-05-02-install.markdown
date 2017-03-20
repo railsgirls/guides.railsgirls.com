@@ -361,7 +361,16 @@ In the 'New Workspace' view, a few settings have to be made.
 * If you are following a guide or tutorial, use the commands for Linux even if you are on a Windows computer - your operating system does not matter, since all commands are run on your project's machine in the cloud, which is running Linux
 * If a guide or tutorial asks you to run a rails command that contains `rails` or `rake`, prepend `bundle exec` to this command, e. g. `bundle exec rake db:migrate`. Exception: the `rails new` command is not prefixed.
 * If a guide or tutorial asks you to start the rails server with `rails server` or `rails s`, append `-b 0.0.0.0` to this command so that you run `rails server -b 0.0.0.0`
-* If a guide or tutorial asks you to point your browser to something like http://localhost:3000, follow these instructions instead:
-  * Open the 'Operations perspective' (1) in Codenvy, go to the 'Servers' tab (2) and pick the 'Server Address' entry in the line starting with 'Server-3000-tcp' (3). Instead of http://localhost:3000, call this URL in your browser.
-  ![](/images/codenvy/get-workspace-ip.jpg)
-  * If, for example, you're asked to open http://localhost:3000/posts, open the preview URL in your browser and append '/posts' to the URL.
+* If a guide or tutorial asks you to point your browser to something like `http://localhost:3000`, follow these instructions instead:
+
+  * Go to ‘[Workspaces](https://codenvy.io/dashboard/#/workspaces)’ and click your running workspace  
+    ![](/images/codenvy/workspace-settings.jpg)
+    
+  * Click ‘Runtime’, then ‘dev-machine’ to view the details  
+    ![](/images/codenvy/runtime.jpg)
+    
+  * Scroll down to 'Servers', and copy the Address entry in the line starting
+    with 'server-3000-tcp'  
+    ![](/images/codenvy/get-workspace-ip.jpg)  
+    
+    For example, if the tutorial wants you to visit `http://localhost:3000/posts`, you would open the URL `http://node3.codenvy.io:33079/posts` instead.
