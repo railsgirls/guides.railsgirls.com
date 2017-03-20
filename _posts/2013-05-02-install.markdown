@@ -130,7 +130,8 @@ Download [RailsInstaller](https://s3.amazonaws.com/railsinstaller/Windows/railsi
 
 Open `Command Prompt with Ruby and Rails` and run the following commands to solve a problem in RailsInstaller3.2.0.
 
-**Coach:** There is a bug that occurs "No such file or directory" error when using the `rails` command in RailsInstaller3.2.0. This is occurred by problem with incorrect paths in `rails.bat` and `bundle.bat`. We can fix the problem copying `rake.bat` to `rails.bat` and `bundle.bat`. ([github issue page](https://github.com/railsinstaller/railsinstaller-windows/issues/76))
+**Coach:** There is a bug in RailsInstaller3.2.0 that results in a "No such file or directory" error when using the `rails` command. This is caused by incorrect paths in `rails.bat` and `bundle.bat` (see [github issue](https://github.com/railsinstaller/railsinstaller-windows/issues/76) for details).  
+We can fix the problem by copying `rake.bat` to `rails.bat` and `bundle.bat`.
 
 {% highlight sh %}
 cd C:\RailsInstaller\Ruby2.2.0\bin
