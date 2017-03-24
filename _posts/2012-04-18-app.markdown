@@ -132,7 +132,7 @@ rails server
 
 Open <http://localhost:3000> in your browser. If you are using a cloud service (e.g. Codenvy), use its preview functionality instead (see [installation guide](/install#using-a-cloud-service) for details).
 
-You should see "Welcome aboard" page, which means that the generation of your new app worked correctly.
+You should see a page with the Rails logo and the heading "Yay! You’re on Rails!", which means that your Rails app is up and running.
 
 Notice in this window the command prompt is not visible because you are now in the Rails server, the command prompt looks like this:
 
@@ -357,7 +357,7 @@ Now refresh your browser to see what changed.
 
 ## *5.*Finetune the routes
 
-Open <http://localhost:3000> (or your preview url, if you are using a cloud service). It still shows the "Welcome aboard" page. Let's make it redirect to the ideas page.
+Open <http://localhost:3000> (or your preview url, if you are using a cloud service). It still shows the "Yay! You’re on Rails!" page. Let's make it redirect to the ideas page.
 
 Open `config/routes.rb` and after the first line add
 
