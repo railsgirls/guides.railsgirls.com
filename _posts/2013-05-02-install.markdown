@@ -224,12 +224,9 @@ If you use Internet Explorer, we recommend installing [Firefox](mozilla.org/fire
 
 Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
 
-### *4.* Install node
+### *4.* Install Node.js
 
-This is not strictly necessary, but it avoids a problem with and `ExecJS::RuntimeError` that might
-occur later  ([see stackoverflow](https://stackoverflow.com/questions/12520456/execjsruntimeerror-on-windows-trying-to-follow-rubytutorial)).
-
-* Go to [https://nodejs.org/](https://nodejs.org/) and install node LTS package
+* Go to [https://nodejs.org/](https://nodejs.org/) and install Node.js LTS package
 * Reopen your Rails Command Shell
 
 Check your version of node
