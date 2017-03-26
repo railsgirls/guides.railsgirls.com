@@ -99,12 +99,6 @@ If the Rails version wasn't the latest, you could update it using a following co
 gem update rails --no-document
 {% endhighlight %}
 
-Make sure that all works well by running the application generator command.
-
-{% highlight sh %}
-rails new myapp
-{% endhighlight %}
-
 ### *4.* Install a text editor to edit code files
 
 For the workshop we recommend the text editor Atom.
@@ -117,8 +111,21 @@ If you are using Mac OS X 10.7 or older versions, you can use another editor [Su
 
 Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
 
+### *6.* Check the environment
+
+Check that everything is working by running the application generator command.
+
+{% highlight sh %}
+rails new myapp
+cd myapp
+rails server
+{% endhighlight %}
+
+Go to `http://localhost:3000` in your browser, and you should see the 'Yay! You're on Rails!' page.
 
 Now you should have a working Ruby on Rails programming setup. Congrats!
+
+**Coach:** We recommend to verify by using the scaffold command and inputting data with the generated page with coaches to ensure everything is working.
 
 <hr />
 
@@ -298,8 +305,21 @@ For the workshop we recommend the text editor Sublime Text.
 
 Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
 
+### *4.* Check the environment
+
+Check that everything is working by running the application generator command.
+
+{% highlight sh %}
+rails new myapp
+cd myapp
+rails server
+{% endhighlight %}
+
+Go to `http://localhost:3000` in your browser, and you should see the 'Yay! You're on Rails!' page.
 
 Now you should have a working Ruby on Rails programming setup. Congrats!
+
+**Coach:** We recommend to verify by using the scaffold command and inputting data with the generated page with coaches to ensure everything is working.
 
 <hr />
 
