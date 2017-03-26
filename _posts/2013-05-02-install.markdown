@@ -139,40 +139,7 @@ copy rake.bat rails.bat
 copy rake.bat bundle.bat
 {% endhighlight %}
 
-Open `Command Prompt with Ruby and Rails` and run the following command:
-
-{% highlight sh %}
-rails -v
-{% endhighlight %}
-
-If the Rails version is less than 5, update it using a following command:
-
-{% highlight sh %}
-gem update rails --no-document
-{% endhighlight %}
-
-## Possible errors
-
-### Gem::RemoteFetcher error
-
-If you get this error when running `rails new railsgirls` or `gem update rails`:
-
-{% highlight sh %}
-Gem::RemoteFetcher::FetchError: SSL_connect returned=1 errno=0 state=SSLv3 read
-server certificate B: certificate verify failed (https://rubygems.org/gems/i18n-
-0.6.11.gem)
-{% endhighlight %}
-
-This means you have an older version of Rubygems and will need to update it manually first verify your Rubygems version
-
-{% highlight sh %}
-gem -v
-{% endhighlight %}
-
-If it is lower than `2.2.3` you will need to manually update it:
-
-
-First download the [ruby-gems-update gem](https://rubygems.org/gems/rubygems-update-2.6.7.gem). Move the file to `c:\\rubygems-update-2.6.7.gem` then run:
+Download the [ruby-gems-update gem](https://rubygems.org/gems/rubygems-update-2.6.7.gem). Move the file to `c:\\rubygems-update-2.6.7.gem` then run:
 
 {% highlight sh %}
 gem install --local c:\\rubygems-update-2.6.7.gem
@@ -186,26 +153,27 @@ Check your version of rubygems
 gem -v
 {% endhighlight %}
 
-Make sure it is equal or higher than `2.6.7`. Re-run the command that was failing previously.
+Make sure it is equal or higher than `2.6.7`.
 
-If you are still running into problems you can always find the latest version of rubygems online at [rubygems.org](https://rubygems.org/pages/download). If you click on **GEM** you will get the latest version.
+Download the `cacert.pem` file from
+[http://curl.haxx.se/ca/cacert.pem](http://curl.haxx.se/ca/cacert.pem).
+Save this file to `C:\RailsInstaller\cacert.pem`.
 
-### During bundle install
+[Create an environment variable](https://kb.wisc.edu/cae/page.php?id=24500):
+- Variable name: `SSL_CERT_FILE`
+- Variable value: `C:\RailsInstaller\cacert.pem`
 
-The `Gem::RemoteFetcher::FetchError: SSL_connect` can also occur during the `bundle install` stage when creating a new rails app.
+Open `Command Prompt with Ruby and Rails` and run the following command:
 
-The error will make mention of [bit.ly/ruby-ssl](http://bit.ly/ruby-ssl). What is relevant for Windows users at this point is [this GitHub gist](https://gist.github.com/867550). The described manual way has proven to be successful to solve the `bundle install` error.
+{% highlight sh %}
+rails -v
+{% endhighlight %}
 
-### 'x64_mingw' is not a valid platform` Error
+If the Rails version is less than 5, update it using a following command:
 
-Sometimes you get the following error when running `rails server`:
-`'x64_mingw' is not a valid platform` If you experience this error after using the RailsInstaller you have to do a small edit to the file `Gemfile`:
-
-Look at the bottom of the file. You will probably see something like this as one of the last lines in the file:
-`gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]`. If you have this line with `:x64_mingw`, then please delete the `:x64_mingw` part. In the end it should just say:
-`'tzinfo-data', platforms: [:mingw, :mswin]`
-
-After you did that, please use your Command Prompt again and type `bundle update`.
+{% highlight sh %}
+gem update rails --no-document
+{% endhighlight %}
 
 ### *2.* Install a text editor to edit code files
 
@@ -255,6 +223,19 @@ Go to `http://localhost:3000` in your browser, and you should see the 'Yay! You'
 Now you should have a working Ruby on Rails programming setup. Congrats!
 
 **Coach:** We recommend to verify by using the scaffold command and inputting data with the generated page with coaches to ensure everything is working.
+
+## Possible errors
+
+### 'x64_mingw' is not a valid platform` Error
+
+Sometimes you get the following error when running `rails server`:
+`'x64_mingw' is not a valid platform` If you experience this error after using the RailsInstaller you have to do a small edit to the file `Gemfile`:
+
+Look at the bottom of the file. You will probably see something like this as one of the last lines in the file:
+`gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]`. If you have this line with `:x64_mingw`, then please delete the `:x64_mingw` part. In the end it should just say:
+`'tzinfo-data', platforms: [:mingw, :mswin]`
+
+After you did that, please use your Command Prompt again and type `bundle update`.
 
 <hr />
 
