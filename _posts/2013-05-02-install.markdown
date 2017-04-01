@@ -28,13 +28,13 @@ Click the Apple menu and choose *About this Mac*.
 ![Apple menu](/images/1.png "Apple menu")
 
 ### *2.* In the window you will find the version of your operating system.
-If your version number starts with 10.6, 10.7, 10.8, 10.9, 10.10 or 10.11 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
+If your version number starts with 10.6, 10.7, 10.8, 10.9, 10.10, 10.11 or 10.12 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
 
 ![About this Mac dialog](/images/2.png "About this Mac dialog")
 
 ### *3a.* If your OS X version is 10.9 or higher:
 
-If your version number starts with 10.9, 10.10 or 10.11, follow these steps. We are installing homebrew and rbenv.
+If your version number starts with 10.9, 10.10, 10.11 or 10.12, follow these steps. We are installing homebrew and rbenv.
 
 #### *3a1.* Install Command line tools on terminal:
 
@@ -52,9 +52,8 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 {% highlight sh %}
 brew update
-brew install rbenv ruby-build
+brew install rbenv
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-echo 'export PATH="$HOME/.rbenv/shims:$PATH"' >> ~/.bash_profile
 source ~/.bash_profile
 {% endhighlight %}
 
@@ -63,7 +62,7 @@ source ~/.bash_profile
 You can find the newest version of Ruby with the command "rbenv install -l".
 
 {% highlight sh %}
-rbenv install 2.3.1
+rbenv install 2.4.1
 {% endhighlight %}
 
 If you got "OpenSSL::SSL::SSLError: ... : certificate verify failed" error, try it this way.
@@ -76,7 +75,7 @@ cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts Op
 #### *3a5.* Set default Ruby:
 
 {% highlight sh %}
-rbenv global 2.3.1
+rbenv global 2.4.1
 {% endhighlight %}
 
 #### *3a6.* Install rails:
@@ -137,7 +136,7 @@ Download [RailsInstaller](https://s3.amazonaws.com/railsinstaller/Windows/railsi
 
 Open `Command Prompt with Ruby and Rails` and run the following commands to solve a problem in RailsInstaller3.2.0.
 
-**Coach:** There is a bug in RailsInstaller3.2.0 that results in a "No such file or directory" error when using the `rails` command. This is caused by incorrect paths in `rails.bat` and `bundle.bat` (see [github issue](https://github.com/railsinstaller/railsinstaller-windows/issues/76) for details).  
+**Coach:** There is a bug in RailsInstaller3.2.0 that results in a "No such file or directory" error when using the `rails` command. This is caused by incorrect paths in `rails.bat` and `bundle.bat` (see [github issue](https://github.com/railsinstaller/railsinstaller-windows/issues/76) for details).
 We can fix the problem by copying `rake.bat` to `rails.bat` and `bundle.bat`.
 
 {% highlight sh %}
@@ -380,14 +379,14 @@ In the 'New Workspace' view, a few settings have to be made.
 * If a guide or tutorial asks you to start the rails server with `rails server` or `rails s`, append `-b 0.0.0.0` to this command so that you run `rails server -b 0.0.0.0`
 * If a guide or tutorial asks you to point your browser to something like `http://localhost:3000`, follow these instructions instead:
 
-  * Go to ‘[Workspaces](https://codenvy.io/dashboard/#/workspaces)’ and click your running workspace  
+  * Go to ‘[Workspaces](https://codenvy.io/dashboard/#/workspaces)’ and click your running workspace
     ![](/images/codenvy/workspace-settings.jpg)
-    
-  * Click ‘Runtime’, then ‘dev-machine’ to view the details  
+
+  * Click ‘Runtime’, then ‘dev-machine’ to view the details
     ![](/images/codenvy/runtime.jpg)
-    
+
   * Scroll down to 'Servers', and copy the Address entry in the line starting
-    with 'server-3000-tcp'  
-    ![](/images/codenvy/get-workspace-ip.jpg)  
-    
+    with 'server-3000-tcp'
+    ![](/images/codenvy/get-workspace-ip.jpg)
+
     For example, if the tutorial wants you to visit `http://localhost:3000/posts`, you would open the URL `http://node3.codenvy.io:33079/posts` instead.
