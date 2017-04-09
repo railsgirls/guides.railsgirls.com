@@ -147,7 +147,7 @@ the system cannot find the path specified
 {% endhighlight %}
 
 This can happen when the installer cannot correctly setup the paths required to run rails.
-It's nothing serious, we can fix this in different ways but the easiest is by manuaully installing the rails gem with the following command:
+It's nothing serious, we can fix this in different ways but the easiest is by manually installing the rails gem with the following command:
 
 {% highlight sh %}
 gem install rails --no-document
