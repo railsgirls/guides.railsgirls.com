@@ -132,23 +132,37 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 ### *1.* Install Rails
 
-Download [RailsInstaller](https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.2.0.exe) and run it. Click through the installer using the default options.
-
-Open `Command Prompt with Ruby and Rails` and run the following commands to solve a problem in RailsInstaller3.2.0.
-
-**Coach:** There is a bug in RailsInstaller3.2.0 that results in a "No such file or directory" error when using the `rails` command. This is caused by incorrect paths in `rails.bat` and `bundle.bat` (see [github issue](https://github.com/railsinstaller/railsinstaller-windows/issues/76) for details).
-We can fix the problem by copying `rake.bat` to `rails.bat` and `bundle.bat`.
-
-{% highlight sh %}
-cd C:\RailsInstaller\Ruby2.2.0\bin
-copy rake.bat rails.bat
-copy rake.bat bundle.bat
-{% endhighlight %}
+Download [RailsInstaller](https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.3.0.exe) and run it. Click through the installer using the default options.
 
 Open `Command Prompt with Ruby and Rails` and run the following command:
 
 {% highlight sh %}
 rails -v
+{% endhighlight %}
+
+If you see the following message:
+
+{% highlight sh %}
+the system cannot find the path specified
+{% endhighlight %}
+
+This can happen when the installer cannot correctly setup the paths required to run rails.
+It's nothing serious, we can fix this in different ways but the easiest is by manuaully installing the rails gem with the following command:
+
+{% highlight sh %}
+gem install rails --no-document
+{% endhighlight %}
+
+This will (re)install rails correctly and running:
+
+{% highlight sh %}
+rails -v
+{% endhighlight %}
+
+Should print the currently installed rails version number (your version may differ):
+
+{% highlight sh %}
+Rails 5.0.2
 {% endhighlight %}
 
 If the Rails version is less than 5, update it using a following command:
@@ -177,11 +191,10 @@ gem -v
 
 If it is lower than `2.2.3` you will need to manually update it:
 
-
-First download the [ruby-gems-update gem](https://rubygems.org/gems/rubygems-update-2.6.7.gem). Move the file to `c:\\rubygems-update-2.6.7.gem` then run:
+First download the [ruby-gems-update gem](https://rubygems.org/gems/rubygems-update-2.6.11.gem). Move the file to `c:\\rubygems-update-2.6.11.gem` then run:
 
 {% highlight sh %}
-gem install --local c:\\rubygems-update-2.6.7.gem
+gem install --local c:\\rubygems-update-2.6.11.gem
 update_rubygems --no-document
 gem uninstall rubygems-update -x
 {% endhighlight %}
@@ -192,7 +205,7 @@ Check your version of rubygems
 gem -v
 {% endhighlight %}
 
-Make sure it is equal or higher than `2.6.7`. Re-run the command that was failing previously.
+Make sure it is equal or higher than `2.6.11`. Re-run the command that was failing previously.
 
 If you are still running into problems you can always find the latest version of rubygems online at [rubygems.org](https://rubygems.org/pages/download). If you click on **GEM** you will get the latest version.
 
