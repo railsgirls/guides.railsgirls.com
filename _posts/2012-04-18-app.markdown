@@ -298,6 +298,11 @@ Note: Some people might be using a second terminal to run the rails server conti
 If so you need to **restart the Rails server process** now.
 This is needed for the app to load the added library.
 
+If an error is shown that the uploader cannot be found also add the following line:
+{% highlight ruby %}
+gem 'net-ssh'
+{% endhighlight %}
+
 Open `app/models/idea.rb` and under the line
 
 {% highlight ruby %}
