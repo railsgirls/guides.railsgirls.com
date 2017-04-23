@@ -134,7 +134,21 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 Download [RailsInstaller](https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.3.0.exe) and run it. Click through the installer using the default options.
 
-Open `Command Prompt with Ruby and Rails` and run the following command:
+#### *1a.* Enable copy and paste in Windows Command Prompt
+
+For Windows 10 users:
+
+Open `Command Prompt with Ruby and Rails`.
+Right-click on the command prompt’s title bar, and choose "Properties".
+Navigate to the "experimental" tab, and check the "Enable new Ctrl key shortcuts" option (you may need to check the "Enable experimental console features" option first).
+
+For other Windows versions:
+
+To paste a text in the command prompt window you'll need to use the mouse (right-click on the window --> paste).
+
+#### *1b.* Install Rails
+
+In the `Command Prompt with Ruby and Rails`, run the following command:
 
 {% highlight sh %}
 rails -v
