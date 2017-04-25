@@ -16,7 +16,7 @@ permalink: bundlerfordevelopment
 
 <p>
 <img src="../images/fork1.jpg" />
-<br />
+<br>
 </p>
 
 2. Download a copy of your fork of Bundler

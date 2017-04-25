@@ -65,13 +65,13 @@ Open app/views/places/show.html.erb and add
 
 {% highlight sh %}
 <p>
-<strong>Votes:</strong><br />
-Autism_friendly : <%= rating_for @place, "autism_friendly" %> <br />
+<strong>Votes:</strong><br>
+Autism_friendly : <%= rating_for @place, "autism_friendly" %> <br>
 Overall : <%= rating_for @place, "overall" %>
 </p>
 <hr />
 <p>
-<strong>Your votes:</strong><br />
+<strong>Your votes:</strong><br>
 Autism_friendly : <%= rating_for_user @place, current_user, "autism_friendly", :star => 7 %>
 Overall : <%= rating_for_user @place, current_user, "autism_friendly", :star => 7 %>
 </p>

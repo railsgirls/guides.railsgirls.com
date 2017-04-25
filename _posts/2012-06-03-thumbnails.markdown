@@ -15,7 +15,8 @@ __Coach__: Explain what specifying the image width in HTML at the end of Step
 
 * OS X: run `brew install imagemagick`. If you don't have the brew command, you can [install Homebrew here][in-homebrew].
 * Windows: download and run the [ImageMagick installer][im-win] (use the first
-  *download* link).
+  *download* link). In the installation wizard, make sure you check the checkbox
+  to install legacy binaries.
 * Linux: On Ubuntu and Debian, run `sudo apt-get install imagemagick`. Use the
   appropriate package manager instead of `apt-get` for other distributions.
 
@@ -73,13 +74,13 @@ To see if the uploaded picture was resized open
 `app/views/ideas/index.html.erb`. Change the line
 
 {% highlight erb %}
-<td><%= idea.picture %></td>
+<%= image_tag idea.picture_url, width: '100%' if idea.picture.present? %>
 {% endhighlight %}
 
 to
 
 {% highlight erb %}
-<td><%= image_tag idea.picture_url(:thumb) if idea.picture? %></td>
+<%= image_tag idea.picture_url(:thumb) if idea.picture.present? %>
 {% endhighlight %}
 
 Take a look at the list of ideas in the browser to see if the thumbnail is
