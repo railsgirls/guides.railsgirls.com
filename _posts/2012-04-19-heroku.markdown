@@ -115,7 +115,7 @@ You'll know the app is done being pushed, when you see the "Launching..." text l
 Next we need to migrate our database like we did locally during the workshop:
 
 {% highlight sh %}
-heroku run rake db:migrate
+heroku run rails db:migrate
 {% endhighlight %}
 
 When that command is finished being run, you can hit the app based on the url.
