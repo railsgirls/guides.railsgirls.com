@@ -169,7 +169,7 @@ rails generate scaffold idea name:string description:text picture:string
 The scaffold creates new files in your project directory, but to get it to work properly we need to run a couple of other commands to update our database and restart the server.
 
 {% highlight sh %}
-rake db:migrate
+rails db:migrate
 rails server
 {% endhighlight %}
 
@@ -238,7 +238,7 @@ and before `</body>` add
 {% highlight html %}
 <footer>
   <div class="container">
-    Rails Girls 2016
+    Rails Girls 2017
   </div>
 </footer>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.js"></script>
@@ -318,13 +318,13 @@ mount_uploader :picture, PictureUploader
 Open `app/views/ideas/_form.html.erb` and change
 
 {% highlight erb %}
-<%= form.text_field :picture %>
+<%= form.text_field :picture, id: :entry_picture %>
 {% endhighlight %}
 
 to
 
 {% highlight erb %}
-<%= form.file_field :picture %>
+<%= form.file_field :picture, id: :entry_picture %>
 {% endhighlight %}
 
 In your browser, add new idea with a picture. When you upload a picture it doesn't look nice because it only shows a path to the file, so let's fix that.
