@@ -18,7 +18,7 @@ There are a few great companies sailing the continuous wave, in this guide we'll
 
 __COACH__: Talk about the benefits of continuous deployment.
 
-###Github, Travis CI and anynines
+### Github, Travis CI and anynines
 
 The first thing we need is an app in a Github repository. And we have just that! Next you'll need to make sure you followed the guide on how to deploy your app via anynines until the very last step.
 
