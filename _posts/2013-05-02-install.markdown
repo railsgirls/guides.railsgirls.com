@@ -134,6 +134,30 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 Download [RailsInstaller](https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.3.0.exe) and run it. Click through the installer using the default options.
 
+After installing, fix some problems related railsinstaller-3.3.0.exe. Follow descriptions are in case of installing to `C:\RailsInstaller` folder.
+
+Open `C:\RailsInstaller\Ruby2.3.0\bin\bundle.bat` file with editor and remove all of `C:\Users\emachnic\GitRepos\railsinstaller-windows\stage\Ruby2.3.0\bin\` words. The fixed file is follow.
+
+{% highlight sh %}
+@ECHO OFF
+IF NOT "%~f0" == "~f0" GOTO :WinNT
+@"ruby.exe" "bundle" %1 %2 %3 %4 %5 %6 %7 %8 %9
+GOTO :EOF
+:WinNT
+@"ruby.exe" "%~dpn0" %*
+{% endhighlight %}
+
+Next, open `C:\RailsInstaller\Ruby2.3.0\bin\rails.bat` file and fix same as above. The fixed file is follow.
+
+{% highlight sh %}
+@ECHO OFF
+IF NOT "%~f0" == "~f0" GOTO :WinNT
+@"ruby.exe" "rails" %1 %2 %3 %4 %5 %6 %7 %8 %9
+GOTO :EOF
+:WinNT
+@"ruby.exe" "%~dpn0" %*
+{% endhighlight %}
+
 #### *1a.* Enable copy and paste in Windows Command Prompt
 
 For Windows 10 users:
