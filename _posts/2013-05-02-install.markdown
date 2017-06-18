@@ -164,7 +164,7 @@ This can happen when the installer cannot correctly setup the paths required to 
 It's nothing serious, we can fix this in different ways but the easiest is by manually installing the rails gem with the following command:
 
 {% highlight sh %}
-gem install rails --no-document
+gem install rails bundler --no-document
 {% endhighlight %}
 
 This will (re)install rails correctly and running:
@@ -176,10 +176,10 @@ rails -v
 Should print the currently installed rails version number (your version may differ):
 
 {% highlight sh %}
-Rails 5.0.2
+Rails 5.1.1
 {% endhighlight %}
 
-If the Rails version is less than 5, update it using a following command:
+If the Rails version is less than 5.1, update it using a following command:
 
 {% highlight sh %}
 gem update rails --no-document
