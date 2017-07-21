@@ -235,10 +235,10 @@ Let's also add a navigation bar and footer to the layout. In the same file, unde
 
 and before `</body>` add
 
-{% highlight html %}
+{% highlight erb %}
 <footer>
   <div class="container">
-    Rails Girls 2017
+    Rails Girls <%= Time.now.year %>
   </div>
 </footer>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.js"></script>
