@@ -449,7 +449,7 @@ This is a small checklist for your event. Rails Girls can be thrown together in 
   2. Application deadlines.
   3. Short introductory text, around 200 characters. Check out the past events for inspiration!
   4. Speakers of the day
-  5. Partners - a two parapgraph sentence and a logo (100 x 100px or 250 x 90px and in png format)
+  5. Partners - a two-paragraph sentence and a logo (100 x 100px or 250 x 90px and in png format)
   6. Coaches with twitter-handle
 
 * Start marketing the event, you can use materials from [here](http://www.speakerdeck.com/u/railsgirls)
