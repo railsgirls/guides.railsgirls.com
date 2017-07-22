@@ -25,16 +25,14 @@ The basic guides that have been merged and adapted are the [Ruby on Rails Tutori
 ### [*0.*Installation](/install)
 
 **Make sure you have Rails and Git installed.** [**Follow the installation guide**](/install), the [**Installing Git section of Pro Git**](http://www.git-scm.com/book/en/Getting-Started-Installing-Git) to get set up. Then configure GitHub by typing the following in your terminal:
-<div class="os-specific">
-  <div class="nix">
+
 {% highlight sh %}
-$ git config --global user.name "Your Name"
-$ git config --global user.email your.email@example.com
+git config --global user.name "Your Name"
+git config --global user.email your.email@example.com
 {% endhighlight %}
 
-    <div>
 <p>one-time setup steps for GitHub.</p>
-    </div>
+
 Sign up for a [free GitHub account](https://github.com/signup/free) if you donâ€™t have one already.
 
 
@@ -61,8 +59,8 @@ Sign up for a [free GitHub account](https://github.com/signup/free) if you donâ€
 
 ## Additional Guides
 
-* Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](https://github.com/PragTob/rails-beginner-cheatsheet)
-* Guide 1: [Put your app online with Heroku by Terence Lee](/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift) / [Put your app online with Shelly Cloud](/shellycloud) / [Put your app online with anynines](/anynines) / [Put your app online with Trucker.io](/trucker)
+* Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
+* Guide 1: [Put your app online with Heroku by Terence Lee](/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift) / [Put your app online with anynines](/anynines) / [Put your app online with Trucker.io](/trucker)
 * Guide 2: [Adding profile pictures with Gravatar](/gravatar)
 * Guide 3: [Go through additional explanations for the App by Lucy Bain](https://github.com/lbain/railsgirls)
 
@@ -75,41 +73,57 @@ Rails has some facilities to help you recover from mistakes.
 
 For instance, you may decide to change the name of a controller. Since, when generating a controller, Rails creates many more files than the controller file itself, undoing the generation means removing a whole set of files. In Rails, this can be accomplished with rails destroy. In particular, these two commands cancel each other out:
 
-  $ rails generate controller FooBars baz quux
-  $ rails destroy  controller FooBars baz quux
+{% highlight sh %}
+rails generate controller FooBars baz quux
+rails destroy  controller FooBars baz quux
+{% endhighlight %}
 
 Similarly, after we generate a model as follows:
 
-  $ rails generate model Foo bar:string baz:integer
+{% highlight sh %}
+rails generate model Foo bar:string baz:integer
+{% endhighlight %}
 
 This can be undone using
 
-  $ rails destroy model Foo
-
+{% highlight sh %}
+rails destroy model Foo
+{% endhighlight %}
 
 Migrations change the state of the database using
 
-  $ rake db:migrate
+{% highlight sh %}
+rake db:migrate
+{% endhighlight %}
 
 We can undo a single migration step using
 
-  $ rake db:rollback
+{% highlight sh %}
+rake db:rollback
+{% endhighlight %}
 
 To go all the way back to the beginning, we can use
 
-  $ rake db:migrate VERSION=0
+{% highlight sh %}
+rake db:migrate VERSION=0
+{% endhighlight %}
 
 As you might guess, substituting any other number for 0 migrates to that version number, where the version numbers come from listing the migrations sequentially.
 
 To drop a table from the db enter
 
-  $ rails console
+{% highlight sh %}
+rails console
+{% endhighlight %}
 
 Then just type:
 
-  >> ActiveRecord::Migration.drop_table(:<table-name>)
+{% highlight ruby %}
+ActiveRecord::Migration.drop_table(:<table-name>)
+{% endhighlight %}
 
 You can browse directly the database (if sqlite3 type ".quit" to exit afterwards) by typing
 
-  $ rails db
-
+{% highlight sh %}
+rails db
+{% endhighlight %}

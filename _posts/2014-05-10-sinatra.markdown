@@ -15,7 +15,7 @@ We're going to use [**Sinatra**](http://www.sinatrarb.com/) as a tool to demonst
 Sinatra is different from Rails. They're both frameworks for helping you to write web apps, but Sinatra contains fewer features and less magic.
 
 ## Introduction
- 
+
 HTTP is used to send information between an application (like your Rails Girls app) and a browser.
 The basis of communication with HTTP is a request/response pair. Requests are sent by the browser to the server (e.g. your app) and the response is sent back from the server to your browser for a user to view.
 
@@ -25,7 +25,7 @@ A URL will contain;
 
 * The protocol you will communicate with
 * The domain that has the information you want
-* The path to the resource on that server 
+* The path to the resource on that server
 * Optionally there might be parameters on the end of the url, as key/value pairs, containing extra information about the request
 * The // towards the beginning of the URL specifies that this request wants to make contact with a server.
 * The ? towards the end of the url signals the end of the file path, and the beginning of any optional parameters.
@@ -51,7 +51,7 @@ Your app will look something like this in the browser:
 
 <img src="../images/coffee-app.png" alt="Sinatra Coffee App" />
 
-## *0.*Install Sinatra >> "Hello World"
+## *0.*Install Sinatra - "Hello World"
 
 Let's start off by getting Sinatra running.
 
@@ -88,20 +88,20 @@ What you see in the browser is the response from your Sinatra server.
 
 Where you've written "/", you are just specifying the root url, but you can create any path name you want.
 
-In the same file, try creating more pages to visit, using the same syntax as the block above. You can add as many pages as you like, and have them say whatever you want. 
+In the same file, try creating more pages to visit, using the same syntax as the block above. You can add as many pages as you like, and have them say whatever you want.
 
 e.g.
 {% highlight sh %}
-get "/page-name" do 
+get "/page-name" do
  "This is text on the page"
  end
 {% endhighlight %}
 
-If you need to you can hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in your command prompt to stop your app. (Just like for your Rails app!), however you don't need to stop and start to see your changes. 
+If you need to you can hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in your command prompt to stop your app. (Just like for your Rails app!), however you don't need to stop and start to see your changes.
 
 If you get stuck, make sure your app.rb looks like [this one](http://tjmcewan.github.io/coffeecalc/snippets/install_sinatra.rb.txt).
 
-## *3.* HTML Form >> Get Parameters
+## *3.* HTML Form - Get Parameters
 
 To start listing coffees in our app, we'll need an HTML form to send through which coffee we want and how much it costs.
 
@@ -130,7 +130,7 @@ end
 
 {% endhighlight %}
 
-For simplicity, this form sends the information to the same URL ("/"). 
+For simplicity, this form sends the information to the same URL ("/").
 
 Refresh your browser and you should see the form you just created.
 
@@ -144,7 +144,7 @@ GET /?what=flat+white&cost=3.50 HTTP/1.1
 
 If it's not quite working, make sure your code looks like [this code](http://tjmcewan.github.io/coffeecalc/snippets/html_form.rb.txt).
 
-## *4.*Web Inspector >> Request Headers
+## *4.*Web Inspector - Request Headers
 
 In your browser, open up your web console. (For most browsers, this can be accessed by *right clicking something on the page and choosing "Inspect Element"*.) I recommend you use Chrome for this; if you are using Chrome, you're looking for the 'Network' tab.
 
@@ -183,17 +183,17 @@ This creates an empty array when your app first starts up.
 
 **Hint:** This global variable won't be around for very long - it will be reset to the empty array each time the server restarts.  Because we're using Sinatra's reloader, this will be every time you save your `app.rb` file.  Don't worry though, it will suit our purposes nicely.
 
-## *6.* Receiving information >> Storing Coffees
+## *6.* Receiving information - Storing Coffees
 
 Now you'll need to get the information into that `$coffees` array when the request is received. When you fill in your form and click the submit button, remember that your information is put on the end of the URL, after the ?, to be sent back to the server.
 
  Sinatra grabs that information from the end of the URL and makes it available as a Hash called `params`. For example:
- 
+
  {% highlight ruby %}
  params = {coffee = 'flat white', value ='2'}
 {% endhighlight %}
 
-You will need to write some code to take them from the params hash and add them to your  $coffees variable. 
+You will need to write some code to take them from the params hash and add them to your  $coffees variable.
 
 Before you start, first replace `<!-- coffees go here -->` in your form with:
 
@@ -203,7 +203,7 @@ Before you start, first replace `<!-- coffees go here -->` in your form with:
 
 This will display the `$coffees` variable in the HTML in your browser so we can tell if coffees are being added to your $coffees variable (i.e. that your code is working).
 
-**Hint:** 
+**Hint:**
 Your global variable is an array, so if you get stuck, try [Ruby's Array documentation ](http://www.ruby-doc.org/core-2.1.0/Array.html#method-i-3C-3C) to find out how you can add information to an array.  
 
 If you're still stuck, [check here](http://tjmcewan.github.io/coffeecalc/snippets/store_coffees.rb.txt).
@@ -212,7 +212,7 @@ If you're storing your params correctly, you should be able to refresh the brows
 
 ## *6.* Tidy Up
 
-That big chunk of HTML in our `get` code is making it a bit hard to see what our app does. Let's move it to its own method. 
+That big chunk of HTML in our `get` code is making it a bit hard to see what our app does. Let's move it to its own method.
 
 Cut the HTML form out of your `get` code and paste it into a method called `template` (keep all your code in the same file). Like so:
 

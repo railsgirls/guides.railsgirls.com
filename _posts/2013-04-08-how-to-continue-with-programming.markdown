@@ -101,6 +101,7 @@ There are already a few groups which you can join:
 * [Ruvetia](http://ruvetia.org/) - Ruvetia is a meetup (or drinkup) where we will come together every now and then and just socialize. This meetup is not about content, its about getting to know the people in the community. Every meetup is in a different city so check out the Ruvetia website from time to time where the next meetup will take place.
 * [Railshöck](http://www.meetup.com/rubyonrails-ch/events/80098992/) - A Rails meetup in Zurich
 * [Geneva Ruby Brigade](http://genevarb.com/) - Ruby group based in Geneva
+* [RoRganize.it](http://rorganize.it/) - Ruby groups app to find existing groups, especially in Germany
 
 > This list is Switzerland related and only used as an example, ask the organizers and coaches of your event for a list of local groups and meetups.
 

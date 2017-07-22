@@ -325,7 +325,7 @@ Open `app/views/places/show.html.erb` in your text editor and replace all lines 
 <% @comments.each do |comment| %>
   <div>
     <strong><%= comment.user_id %></strong>
-    <br />
+    <br>
     <p><%= comment.body %></p>
 
  <% if user_signed_in? %>

@@ -1,9 +1,9 @@
 function saveOs(os) {
-  $.cookie("os", os, { expires: 1825, path: '/' }); // expires in 5 years
+  Cookies.get("os", os, { expires: 1825, path: '/' }); // expires in 5 years
 }
 
 function loadOs() {
-  var osFromCookie = $.cookie("os");
+  var osFromCookie = Cookies.get("os");
   if(osFromCookie) {
     $(".os-specific").find("." + osFromCookie + "-link").click();
   } else if(detectOs()) {

@@ -345,7 +345,7 @@ Open app/views/places/show.html.erb and just before the bottom links add
 <% @comments.each do |comment| %>
   <div>
     <strong><%= comment.user_id %></strong>
-    <br />
+    <br>
     <p><%= comment.body %></p>
     <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
   </div>

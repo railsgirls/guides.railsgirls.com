@@ -13,7 +13,7 @@ View the guides at http://guides.railsgirls.com or clone this repo and install &
 ### Installing jekyll
 
 ```
-$ cd railsgirls.github.com
+$ cd railsgirls.github.io
 ```
 
 ```
@@ -29,7 +29,7 @@ The guides use the [pygments](http://pygments.org/) library to do syntax highlig
 {% endhighlight %}
 ```
 
-If you aren't editing the code blocks, you can safely ignore this. If you want pygments, you can follow the [install instructions](https://github.com/mojombo/jekyll/wiki/Install) in the "Pygments" section.
+If you aren't editing the code blocks, you can safely ignore this. If you want pygments, you can follow the [install instructions](http://jekyllrb.com/docs/installation/) in the "Pygments" section.
 
 ### Run jekyll
 
