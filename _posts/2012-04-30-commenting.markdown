@@ -25,7 +25,7 @@ rake db:migrate
 
 You need to make sure that Rails knows the relation between objects (ideas and comments).
 As one idea can have many comments we need to make sure the idea model knows that.
-Open app/models/idea.rb and below the row
+Open app/models/idea.rb and after the row
 {% highlight ruby %}
 class Idea < ActiveRecord::Base
 {% endhighlight %}
@@ -34,7 +34,7 @@ add
 has_many :comments
 {% endhighlight %}
 
-The comment also has to know that it belongs to an idea. So open `app/models/comment.rb` and below
+The comment also has to know that it belongs to an idea. So open `app/models/comment.rb` and after
 {% highlight ruby %}
 class Comment < ActiveRecord::Base
 {% endhighlight %}
