@@ -78,7 +78,7 @@ right above
 We'll use a bundled generator script to create the User model.
 {% highlight sh %}
    rails g devise user
-   rake db:migrate
+   rails db:migrate
 {% endhighlight %}
 
 **Coach:** Explain what user model has been generated. What are the fields? Note that a model inherits abilities to interact with the DB from its ApplicationRecord super-class (ref. MVC). 
@@ -140,13 +140,13 @@ We are already using a database (see `gem 'sqlite'` in your Gemfile). Let's add 
 <div class="os-specific">
   <div class="nix">
 {% highlight sh %}
-bin/rake db:migrate
+bin/rails db:migrate
 {% endhighlight %}
   </div>
 
   <div class="win">
 {% highlight sh %}
-ruby bin/rake db:migrate
+ruby bin/rails db:migrate
 {% endhighlight %}
   </div>
 
@@ -273,7 +273,7 @@ Just as well as we created a "place" resource and associated it with users, we c
   <div class="nix">
 {% highlight sh %}
 rails generate scaffold comment body:text user_id:integer place_id:integer
-bin/rake db:migrate
+bin/rails db:migrate
 {% endhighlight %}
   </div>
 Start the server, check out the new service in your browser. Then, add-commit-push to github.

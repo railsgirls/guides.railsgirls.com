@@ -35,7 +35,7 @@ The installer creates an initializer used for configuring defaults used by Activ
 
 Migrate your db and start the server:
 {% highlight sh %}
-$ rake db:migrate
+$ rails db:migrate
 $ rails server
 {% endhighlight %}
 

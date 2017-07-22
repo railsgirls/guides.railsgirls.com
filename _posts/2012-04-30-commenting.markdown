@@ -18,7 +18,7 @@ rails g scaffold comment user_name:string body:text idea_id:integer
 {% endhighlight %}
 This will create a migration file that lets your database know about the new comments table. Run the migrations using
 {% highlight sh %}
-rake db:migrate
+rails db:migrate
 {% endhighlight %}
 
 ## *2.*Add relations to models
