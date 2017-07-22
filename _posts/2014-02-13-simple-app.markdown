@@ -329,7 +329,7 @@ This is needed for the app to load the added library.
 Open `app/models/idea.rb` and under the line
 
 {% highlight ruby %}
-class Idea < ActiveRecord::Base
+class Idea < ApplicationRecord
 {% endhighlight %}
 
 add

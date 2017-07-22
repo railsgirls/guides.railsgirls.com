@@ -27,7 +27,7 @@ You need to make sure that Rails knows the relation between objects (ideas and c
 As one idea can have many comments we need to make sure the idea model knows that.
 Open app/models/idea.rb and below the row
 {% highlight ruby %}
-class Idea < ActiveRecord::Base
+class Idea < ApplicationRecord
 {% endhighlight %}
 add
 {% highlight ruby %}
@@ -36,7 +36,7 @@ has_many :comments
 
 The comment also has to know that it belongs to an idea. So open `app/models/comment.rb` and below
 {% highlight ruby %}
-class Comment < ActiveRecord::Base
+class Comment < ApplicationRecord
 {% endhighlight %}
 
 add the row
