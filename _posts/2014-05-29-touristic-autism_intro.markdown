@@ -93,7 +93,7 @@ rails destroy model Foo
 Migrations change the state of the database using
 
 {% highlight sh %}
-rake db:migrate
+rails db:migrate
 {% endhighlight %}
 
 We can undo a single migration step using
@@ -105,7 +105,7 @@ rake db:rollback
 To go all the way back to the beginning, we can use
 
 {% highlight sh %}
-rake db:migrate VERSION=0
+rails db:migrate VERSION=0
 {% endhighlight %}
 
 As you might guess, substituting any other number for 0 migrates to that version number, where the version numbers come from listing the migrations sequentially.

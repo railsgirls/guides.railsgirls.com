@@ -191,14 +191,14 @@ The scaffold creates new files in your project directory, but to get it to work 
 <div class="os-specific">
   <div class="nix">
 {% highlight sh %}
-rake db:migrate
+rails db:migrate
 rails server
 {% endhighlight %}
   </div>
 
   <div class="win">
 {% highlight sh %}
-rake db:migrate
+rails db:migrate
 ruby bin\rails server
 {% endhighlight %}
   </div>
@@ -329,7 +329,7 @@ This is needed for the app to load the added library.
 Open `app/models/idea.rb` and under the line
 
 {% highlight ruby %}
-class Idea < ActiveRecord::Base
+class Idea < ApplicationRecord
 {% endhighlight %}
 
 add

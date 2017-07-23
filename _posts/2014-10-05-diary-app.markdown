@@ -207,7 +207,7 @@ __COACH__: Explain what models are and the `field:type` notation for generating 
 
 ### Migrate the database
 
-Run `rake db:migrate` to migrate the database so that its structure contains a table for entries.
+Run `rails db:migrate` to migrate the database so that its structure contains a table for entries.
 
 __COACH__: Explain what databases are (in abstract terms, as vessels for storing our application’s data and providing model structures) and why they are needed. Explain that things which are in memory won’t get persisted by default and they need to be persisted explicitly to be available on the next request.
 

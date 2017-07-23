@@ -72,7 +72,7 @@ Do the same for `app/views/comments/show.html.erb`. These lines are not necessar
 We'll use a bundled generator script to create the User model.
 {% highlight sh %}
    rails g devise user
-   rake db:migrate
+   rails db:migrate
 {% endhighlight %}
 
 **Coach:** Explain what user model has been generated. What are the
