@@ -22,28 +22,32 @@ gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 {% endhighlight %}
 and run
 {% highlight sh %}
-$ bundle install
+bundle install
 {% endhighlight %}
 to install the gems.
 
 After updating your bundle, run the installer
 {% highlight sh %}
-$ rails generate active_admin:install
+rails generate active_admin:install
 {% endhighlight %}
 
 The installer creates an initializer used for configuring defaults used by Active Admin as well as a new folder at app/admin to put all your admin configurations.
 
 Migrate your db and start the server:
 {% highlight sh %}
-$ rails db:migrate
-$ rails server
+rails db:migrate
+rails server
 {% endhighlight %}
 
 ## Creating your first admin account
 Open up the Rails console and create your new user via the `AdminUser` model:
 {% highlight sh %}
-$ rails console
-irb(main):001:0> AdminUser.create(:email => 'admin@railsgirls.com', :password => 'password123', :password_confirmation => 'password123')
+rails console
+{% endhighlight %}
+
+Once booted (the terminal shows `irb(main):001:0>`), you can run this command:
+{% highlight sh %}
+AdminUser.create(:email => 'admin@railsgirls.com', :password => 'password123', :password_confirmation => 'password123')
 {% endhighlight %}
 
 You should see something like:
@@ -66,7 +70,7 @@ Voila! You're on your brand new Active Admin dashboard.
 ## Add "Ideas" to back-end
 To register your `Idea` model with Active Admin, run:
 {% highlight sh %}
-$ rails generate active_admin:resource Idea
+rails generate active_admin:resource Idea
 {% endhighlight %}
 Refresh your admin page and you will find [Ideas](http://localhost:3000/admin/ideas) in the navigation.
 
