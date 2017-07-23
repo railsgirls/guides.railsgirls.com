@@ -78,10 +78,10 @@ right above
 We'll use a bundled generator script to create the User model.
 {% highlight sh %}
    rails g devise user
-   rake db:migrate
+   rails db:migrate
 {% endhighlight %}
 
-**Coach:** Explain what user model has been generated. What are the fields? Note that a model inherits abilities to interact with the DB from its ActiveRecord::Base super-class (ref. MVC). 
+**Coach:** Explain what user model has been generated. What are the fields? Note that a model inherits abilities to interact with the DB from its ApplicationRecord super-class (ref. MVC). 
 
 ## Step 4: Create your first user
 
@@ -140,13 +140,13 @@ We are already using a database (see `gem 'sqlite'` in your Gemfile). Let's add 
 <div class="os-specific">
   <div class="nix">
 {% highlight sh %}
-bin/rake db:migrate
+bin/rails db:migrate
 {% endhighlight %}
   </div>
 
   <div class="win">
 {% highlight sh %}
-ruby bin/rake db:migrate
+ruby bin/rails db:migrate
 {% endhighlight %}
   </div>
 
@@ -195,7 +195,7 @@ You need to make sure that Rails knows the relation between the User and Place r
 As one user can create many places we need to make sure the user model knows that. 
 Open app/models/user.rb and after the row
 {% highlight ruby %}
-class User < ActiveRecord::Base
+class User < ApplicationRecord
 {% endhighlight %}
 add
 {% highlight ruby %}
@@ -204,7 +204,7 @@ has_many :places
 
 The place also has to know that it belongs to a user. So open app/models/place.rb and after
 {% highlight ruby %}
-class Place < ActiveRecord::Base
+class Place < ApplicationRecord
 {% endhighlight %}
 
 add the row
@@ -273,7 +273,7 @@ Just as well as we created a "place" resource and associated it with users, we c
   <div class="nix">
 {% highlight sh %}
 rails generate scaffold comment body:text user_id:integer place_id:integer
-bin/rake db:migrate
+bin/rails db:migrate
 {% endhighlight %}
   </div>
 Start the server, check out the new service in your browser. Then, add-commit-push to github.
@@ -298,7 +298,7 @@ has_many :comments
 
 Open app/models/comment.rb and after
 {% highlight ruby %}
-class Comment < ActiveRecord::Base
+class Comment < ApplicationRecord
 {% endhighlight %}
 
 add the rows

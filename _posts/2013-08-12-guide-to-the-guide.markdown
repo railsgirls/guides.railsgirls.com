@@ -139,7 +139,7 @@ As we’ve already discussed, a model can have attributes (properties) represent
 
 Migrations change the state of the database. When you run the `scaffold` command, a migration file containing instructions for the database table relevant to your command is added to the `db/migrate` folder of your application. For example, when you ran the `rails generate scaffold` command, a migration containing instructions for our ideas table was created. There are other commands that create migrations such as the `rails generate model` command and the `rails generate migration` command.
 
-The `rake db:migrate` command updates the database according to the specifications in the migration file. This command, known as “migrating up”, ensures that your idea model is added to the database. Migrations can also be undone (“migrating down”) using the command `rake db:rollback`.
+The `rails db:migrate` command updates the database according to the specifications in the migration file. This command, known as “migrating up”, ensures that your idea model is added to the database. Migrations can also be undone (“migrating down”) using the command `rails db:rollback`.
 
 ## <a id="3_design">*3.* Design</a>
 In a Ruby on Rails application, the user interface (what someone visiting the website will see), is often written in HTML with Embedded Ruby (ERB) code. This code is contained in a specific directory called ‘views’, located in the `app` folder of your Rails application directory.
