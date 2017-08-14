@@ -9,7 +9,8 @@ permalink: testing-shoulda-matchers
 *Created by Ana Schwendler, [@anaschwendler](https://twitter.com/anaschwendler)*
 
 **This guide assumes that you have already built a Rails Girls app by** [**following the app development guide**](/app)
-**and the RSpec tutorial by** [**this guide**](/testing-rspec)
+**the RSpec tutorial by** [**this guide**](/testing-rspec)
+**and the Commenting tutorial by** [**this guide**](/commenting)
 
 [Shoulda Matchers](https://github.com/thoughtbot/shoulda-matchers) is a Ruby testing gem, that provides RSpec- and Minitest-compatible one-liners that test common Rails functionality. These tests would otherwise be much longer, more complex, and error-prone.
 
