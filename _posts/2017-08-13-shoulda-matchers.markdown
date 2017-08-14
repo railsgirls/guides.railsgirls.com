@@ -121,4 +121,11 @@ rspec spec/models/idea_spec.rb
 
 It should give the positive result.
 
+## *5.* Do it by yourself!
+Can you continue this tutorial by doing a test to validate the presence of a description?
+
+Can you imagine another tests to make?
+
+Happy testing!
+
 
