@@ -76,7 +76,7 @@ For our first test we already stated that an Idea has many comments, in the [**C
 To test if that is working properly, we can add the lines below to our `spec/lib/idea_spec.rb`, above the first test that we've created:
 
 {% highlight ruby %}
-  describe "asociations" do
+  describe "associations" do
     it{ is_expected.to have_many(:comments) }
   end
 {% endhighlight %}
@@ -88,8 +88,7 @@ __COACH__: Talk about association tests.
 
 __COACH__: Talk about TDD, and how we start adding features to our app by testing it first.
 
-Another feature that we can create to our app, is that we can say to our app to always have a name to ideas. How we could do that?
-Let's say that we want our idea to always have a name.
+Another feature we can add to our app is to make ideas always named. How could we do that? Lets get started saying ideas should always have a name.
 
 Let's begin by creating a test for it. We can do that by adding the following lines to our `spec/lib/idea_spec.rb`:
 
@@ -106,8 +105,7 @@ After that, in your terminal run
 rspec spec/models/idea_spec.rb
 {% endhighlight %}
 
-It should gives us that we are not properly validating it (and we really are not).
-So to validate that, we need to add the following lines to our model, so we can validate the presence of name in our Idea.
+It should gives us that we are not properly validating it (and we really are not). So to validate that, we need to add the following lines to our model, so we can validate the presence of name in our Idea.
 
 {% highlight ruby %}
   validates :name, presence: true
@@ -115,21 +113,11 @@ So to validate that, we need to add the following lines to our model, so we can 
 
 add it below our has_many statement.
 
-Now, back in your terminal run
+now, back in your terminal run
 {% highlight sh %}
 rspec spec/models/idea_spec.rb
 {% endhighlight %}
 
 It should give the positive result.
-
-
-
-
-
-
-
-
-
-
 
 
