@@ -49,7 +49,7 @@ __COACH__: Talk about googling terminal output.
 ## *2.*Adjust your `rails_helper.rb`
 
 In our case, we will be using RSpec to test our project, so we need to say to our `rails_helper.rb` that we are using Shoulda Matchers:
-Place above the end tag (check the identation):
+Place above the end tag (check the indentation):
 {% highlight ruby %}
   Shoulda::Matchers.configure do |config|
     config.integrate do |with|
@@ -67,7 +67,7 @@ In your terminal run
 rspec spec/models/idea_spec.rb
 {% endhighlight %}
 
-it should show that our test is running ok.
+It should show that our test is running ok.
 
 ## *3.*Testing!
 
@@ -89,7 +89,7 @@ __COACH__: Talk about association tests.
 
 __COACH__: Talk about TDD, and how we start adding features to our app by testing it first.
 
-Another feature we can add to our app is to make ideas always named. How could we do that? Lets get started saying ideas should always have a name.
+Another feature we can add to our app is to make ideas always named. How could we do that? Let's get started saying ideas should always have a name.
 
 Let's begin by creating a test for it. We can do that by adding the following lines to our `spec/lib/idea_spec.rb`:
 
