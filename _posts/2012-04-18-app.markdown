@@ -323,13 +323,13 @@ mount_uploader :picture, PictureUploader
 Open `app/views/ideas/_form.html.erb` and change
 
 {% highlight erb %}
-<%= form.text_field :picture, id: :idea_picture %>
+<%= f.text_field :picture %>
 {% endhighlight %}
 
 to
 
 {% highlight erb %}
-<%= form.file_field :picture, id: :idea_picture %>
+<%= f.file_field :picture, id: :idea_picture %>
 {% endhighlight %}
 
 In your browser, add new idea with a picture. When you upload a picture it doesn't look nice because it only shows a path to the file, so let's fix that.
