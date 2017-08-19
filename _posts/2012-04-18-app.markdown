@@ -302,6 +302,12 @@ If an error is shown that the uploader cannot be found also add the following li
 gem 'net-ssh'
 {% endhighlight %}
 
+If you added this gem, please run in your terminal again:
+
+{% highlight sh %}
+bundle
+{% endhighlight %}
+
 Open `app/models/idea.rb` and under the line
 
 {% highlight ruby %}
