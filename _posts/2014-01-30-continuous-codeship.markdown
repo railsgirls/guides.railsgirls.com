@@ -6,7 +6,9 @@ permalink: continuous
 
 # Continuous Deployment with the Codeship
 
-*Created by Floor Drees, [@floordrees](https://twitter.com/floordrees)* 
+*Created by Floor Drees, [@floordrees](https://twitter.com/floordrees)*
+
+*Updated by Ely Flores, [@mignonnesaurus](https://twitter.com/mignonnesaurus)*
 
 ### What is this Continuous Deployment thing?
 
