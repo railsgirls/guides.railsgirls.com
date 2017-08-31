@@ -6,7 +6,9 @@ permalink: continuous
 
 # Continuous Deployment with the Codeship
 
-*Created by Floor Drees, [@floordrees](https://twitter.com/floordrees)* 
+*Created by Floor Drees, [@floordrees](https://twitter.com/floordrees)*
+
+*Updated by Ely Flores, [@mignonnesaurus](https://twitter.com/mignonnesaurus)*
 
 ### What is this Continuous Deployment thing?
 
@@ -45,7 +47,7 @@ Now let's deploy your application to Heroku. Go to your project settings by clic
 
 You are asked to enter the name of your Heroku application and your API key. I sure hope you wrote that down somewhere! Enter your application's name and API key (to retrieve your Heroku API key, go to your Heroku account and click "Show API key") and save your deployment configuration.
 
-From now on the Codeship will deploy your application to Heroku, everytime you push to your GitHub repository. Neat! 
+From now on the Codeship will deploy your application to Heroku, every time you push to your GitHub repository. Neat!
 
 ### Give it a try
 Now let's push a change and see if it gets deployed. Change something in your application first, then commit and push the change.
@@ -57,3 +59,26 @@ git push
 {% endhighlight %}
 
 And immediately another build will start running on the Codeship. Go back to your project overview and you'll see the commands we already know from your first build. Plus: your application gets deployed to Heroku now and should be online after a minute or two.
+
+#### Notes
+If the "build fails" and you see an error like the following when pushing to heroku:
+{% highlight sh %}
+Warning: Permanently added 'heroku.com,<some-ip>' (RSA) to the list of known hosts.
+ !  Your account funalinot@someemail.com does not have access to app-name.
+ !
+ !  SSH Key Fingerprint: <some-ssh-key-fingerprint>
+ fatal: Could not read from remote repository.
+
+ Please make sure you have the correct access rights
+ and the repository exists.
+{% endhighlight %}
+
+This means that the codeship SSH key needs to be added to heroku as well.
+To fix this issue:
+> 1. In Codeship, get your `SSH public key` from your project -> _General_ Tab.
+> 2. Go to your [Heroku account settings](https://dashboard.heroku.com/account)
+> 3. Go to the _SSH Keys_ section
+> 4. Click on _Add SSH Key_
+> 5. Enter the `SSH public key` from step 1.
+> 6. To make sure this works, go back to Codeship. In the build that failed, click on the arrow next to the _Failed_ button and then click _Restart Build_.
+> 7. Celebrate when you see the Green _Success_ button meaning that the _Build Passed_ !
