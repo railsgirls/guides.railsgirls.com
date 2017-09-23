@@ -74,21 +74,21 @@ In `app/controllers/ideas_controller.rb` add to the show action
 Open `app/views/comments/_form.html.erb` and after
 {% highlight erb %}
   <div class="field">
-    <%= f.label :body %><br>
-    <%= f.text_area :body %>
+    <%= form.label :body %><br>
+    <%= form.text_area :body %>
   </div>
 {% endhighlight %}
 
 add the row
 {% highlight erb %}
-<%= f.hidden_field :idea_id %>
+<%= form.hidden_field :idea_id %>
 {% endhighlight %}
 
 next, remove
 {% highlight erb %}
 <div class="field">
-  <%= f.label :idea_id %><br>
-  <%= f.number_field :idea_id %>
+  <%= form.label :idea_id %><br>
+  <%= form.number_field :idea_id %>
 </div>
 {% endhighlight %}
 
