@@ -4,6 +4,8 @@ title: Web Fundamentals Tutorial
 permalink: sinatra
 ---
 
+# Web Fundamentals Tutorial
+
 *Created by Tim McEwan, [@tjmcewan](https://twitter.com/tjmcewan)*
 
 ##Goal
@@ -204,7 +206,7 @@ Before you start, first replace `<!-- coffees go here -->` in your form with:
 This will display the `$coffees` variable in the HTML in your browser so we can tell if coffees are being added to your $coffees variable (i.e. that your code is working).
 
 **Hint:**
-Your global variable is an array, so if you get stuck, try [Ruby's Array documentation ](http://www.ruby-doc.org/core-2.1.0/Array.html#method-i-3C-3C) to find out how you can add information to an array.  
+Your global variable is an array, so if you get stuck, try [Ruby's Array documentation ](http://www.ruby-doc.org/core-2.1.0/Array.html#method-i-3C-3C) to find out how you can add information to an array.
 
 If you're still stuck, [check here](http://tjmcewan.github.io/coffeecalc/snippets/store_coffees.rb.txt).
 
