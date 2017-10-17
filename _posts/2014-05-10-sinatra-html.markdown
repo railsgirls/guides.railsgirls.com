@@ -4,6 +4,8 @@ title: Coffee List Display
 permalink: sinatra-html
 ---
 
+# Coffee List Display
+
 *Created by Tim McEwan, [@tjmcewan](https://twitter.com/tjmcewan)*
 
 Using `.inspect` works for debugging, but we don’t want to use it in production. For one thing, it’s really hard to style the output. Let’s wrap our coffee list in proper HTML.
