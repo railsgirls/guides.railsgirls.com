@@ -48,7 +48,7 @@ xcode-select --install
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 {% endhighlight %}
 
-#### *3a3.* Install [rbenv](https://github.com/sstephenson/rbenv):
+#### *3a3.* Install [rbenv](https://github.com/rbenv/rbenv):
 
 {% highlight sh %}
 brew update
@@ -62,7 +62,7 @@ source ~/.bash_profile
 You can find the newest version of Ruby with the command "rbenv install -l".
 
 {% highlight sh %}
-rbenv install 2.4.1
+rbenv install 2.4.2
 {% endhighlight %}
 
 If you got "OpenSSL::SSL::SSLError: ... : certificate verify failed" error, try it this way.
@@ -75,7 +75,7 @@ cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts Op
 #### *3a5.* Set default Ruby:
 
 {% highlight sh %}
-rbenv global 2.4.1
+rbenv global 2.4.2
 {% endhighlight %}
 
 #### *3a6.* Install rails:
@@ -193,8 +193,7 @@ If you get this error when running `rails new railsgirls` or `gem update rails`:
 
 {% highlight sh %}
 Gem::RemoteFetcher::FetchError: SSL_connect returned=1 errno=0 state=SSLv3 read
-server certificate B: certificate verify failed (https://rubygems.org/gems/i18n-
-0.6.11.gem)
+server certificate B: certificate verify failed (https://rubygems.org/gems/i18n-0.6.11.gem)
 {% endhighlight %}
 
 This means you have an older version of Rubygems and will need to update it manually first verify your Rubygems version
@@ -203,7 +202,7 @@ This means you have an older version of Rubygems and will need to update it manu
 gem -v
 {% endhighlight %}
 
-If it is lower than `2.2.3` you will need to manually update it:
+If it is lower than `2.6.5` you will need to manually update it:
 
 First download the [ruby-gems-update gem](https://rubygems.org/gems/rubygems-update-2.6.11.gem). Move the file to `c:\\rubygems-update-2.6.11.gem` then run:
 
