@@ -25,7 +25,7 @@ rails db:migrate
 
 You need to make sure that Rails knows the relation between objects (ideas and comments).
 As one idea can have many comments we need to make sure the idea model knows that.
-Open app/models/idea.rb and below the row
+Open `app/models/idea.rb` and below the row
 {% highlight ruby %}
 class Idea < ApplicationRecord
 {% endhighlight %}
@@ -46,7 +46,7 @@ belongs_to :idea
 
 ## *3.*Render the comment form and existing comments
 
-Open app/views/ideas/show.html.erb and after the image_tag
+Open `app/views/ideas/show.html.erb` and after the image_tag
 {% highlight erb %}
 <%= image_tag(@idea.picture_url, :width => 600) if @idea.picture.present? %>
 {% endhighlight %}
@@ -75,7 +75,7 @@ Open `app/views/comments/_form.html.erb` and after
 {% highlight erb %}
   <div class="field">
     <%= form.label :body %><br>
-    <%= form.text_area :body %>
+    <%= form.text_area :body, id: :comment_body %>
   </div>
 {% endhighlight %}
 
@@ -88,7 +88,7 @@ next, remove
 {% highlight erb %}
 <div class="field">
   <%= form.label :idea_id %><br>
-  <%= form.number_field :idea_id %>
+  <%= form.number_field :idea_id, id: :comment_idea_id %>
 </div>
 {% endhighlight %}
 
