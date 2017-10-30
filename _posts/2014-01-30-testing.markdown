@@ -33,7 +33,14 @@ bundle install
 {% endhighlight %}
 to install the gem.
 
-Finally create the `/spec` directory, where your tests will reside:
+Next create the `spec/` directory inside your application:
+
+{% highlight sh %}
+mkdir spec/
+{% endhighlight %}
+
+The `spec/` directory is where your tests will reside. Finally run the following command:
+
 {% highlight sh %}
 rails generate rspec:install
 {% endhighlight %}
@@ -54,7 +61,7 @@ We will be creating a test for ou `idea` model, to do that in the elegant way in
 
 * Create a `models` folder in your `spec` folder, by running in the terminal:
 {% highlight sh %}
-mkdir /spec/models
+mkdir spec/models
 {% endhighlight %}
 
 * Save your test as `idea_spec.rb` (`<model_name>_spec.rb`).
@@ -64,9 +71,9 @@ Inside that new file, in our first test we will want to guarantee that an idea h
 {% highlight ruby %}
 require "rails_helper"
 
-RSpec.describe Idea, :type => :model do
+RSpec.describe Idea, type: :model do
   it "has a name" do
-    pending
+    skip
   end
 end
 {% endhighlight %}
@@ -82,7 +89,9 @@ __COACH__: Talk about googling terminal output.
 
 Let's do something about that!
 {% highlight ruby %}
-describe Idea do
+require "rails_helper"
+
+RSpec.describe Idea, type: :model do
   it "has a name" do # yep, you can totally use 'it'
     idea = Idea.create!(name: "My Awesome Idea Name") # creating a new idea 'instance'
     expect(idea.name).to eq("My Awesome Idea Name") # this is our expectation
@@ -97,7 +106,9 @@ should give you a more satisfying output.
 You could actually also create two ideas, to be sure that our project is creating ideas in the right way:
 
 {% highlight ruby %}
-describe Idea do
+require "rails_helper"
+
+RSpec.describe Idea, type: :model do
   it "has a name" do # yep, you can totally use 'it'
     idea = Idea.create!(name: "My Awesome Idea Name") # creating a new idea 'instance'
     second_idea = Idea.create!(name: "My Second Idea Name") # creating another new idea 'instance'
