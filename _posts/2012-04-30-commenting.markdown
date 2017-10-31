@@ -65,7 +65,7 @@ add
 <%= render partial: 'comments/form', locals: { comment: @comment } %>
 {% endhighlight %}
 
-In `app/controllers/ideas_controller.rb` add to the show action
+In `app/controllers/ideas_controller.rb` add to the show method
 {% highlight ruby %}
 @comments = @idea.comments.all
 @comment = @idea.comments.build
