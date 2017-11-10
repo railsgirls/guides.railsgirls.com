@@ -20,8 +20,8 @@ __Coach__: Explain what specifying the image width in HTML at the end of Step
 * Linux: On Ubuntu and Debian, run `sudo apt-get install imagemagick`. Use the
   appropriate package manager instead of `apt-get` for other distributions.
 
-  [im-win]: http://www.imagemagick.org/script/binary-releases.php?ImageMagick=vkv0r0at8sjl5qo91788rtuvs3#windows
-  [in-homebrew]: http://mxcl.github.io/homebrew/
+  [im-win]: http://www.imagemagick.org/script/download.php#windows
+  [in-homebrew]: https://brew.sh/
 
 __Coach__: What is ImageMagick and how is it different from libraries/gems we
 used before?
