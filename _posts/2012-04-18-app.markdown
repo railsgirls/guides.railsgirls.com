@@ -306,12 +306,6 @@ Now we can generate the code for handling uploads. In the terminal run:
 rails generate uploader Picture
 {% endhighlight %}
 
-Please start the rails server now.
-
-Note: Some people might be using a second terminal to run the rails server continuously.
-If so you need to **restart the Rails server process** now.
-This is needed for the app to load the added library.
-
 If an error is shown that the uploader cannot be found also add the following line:
 {% highlight ruby %}
 gem 'net-ssh'
@@ -347,7 +341,7 @@ to
 <%= form.file_field :picture, id: :idea_picture %>
 {% endhighlight %}
 
-In your file it might actually say `<%= f.text_field :picture, id: :idea_picture %>`, just roll with it. 
+In your file it might actually say `<%= f.text_field :picture, id: :idea_picture %>`, just roll with it.
 In your browser, add new idea with a picture. When you upload a picture it doesn't look nice because it only shows a path to the file, so let's fix that.
 
 Open `app/views/ideas/show.html.erb` and change
@@ -363,6 +357,7 @@ to
 {% endhighlight %}
 
 Now refresh your browser to see what changed.
+Note: Some people might be using a second terminal to run the rails server continuously.
 
 **Coach:** Talk a little about HTML.
 
@@ -409,9 +404,9 @@ Now you can open the file `app/views/pages/info.html.erb` and add information ab
 
 ## Additional Guides
 
-* Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
+* Guide 0: [Save your project on GitHub and share it with others](http://guides.railsgirls.com/github)
 * Guide 1: [Add commenting by Janika Liiv](/commenting)
-* Guide 2: [Put your app online with Heroku by Terence Lee](/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift) / [Put your app online with anynines](/anynines) / [Put your app online with Trucker.io](/trucker)
+* Guide 2: [Put your app online with Heroku by Terence Lee](/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift) / [Put your app online with anynines by Floor](/anynines)
 * Guide 3: [Create thumbnail images for the uploads by Miha Filej](/thumbnails)
 * Guide 4: [Add design using HTML &amp; CSS by Alex Liao](/design)
 * Guide 5: [Add Authentication (user accounts) with Devise by Piotr Steininger](/devise)
@@ -420,3 +415,5 @@ Now you can open the file `app/views/pages/info.html.erb` and add information ab
 * Guide 8: [Continuous Deployment with Travis-CI](/continuous-travis) / [Continuous Deployment with Codeship](/continuous) / [Continuous Deployment with Snap CI](/continuous-snap-ci)
 * Guide 9: [Go through additional explanations for the App by Lucy Bain](https://github.com/lbain/railsgirls)
 * Guide 10: [Adding a back-end with Active Admin](/backend-with-active-admin)
+
+Check out this [nifty Rails Beginners Cheat Sheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
