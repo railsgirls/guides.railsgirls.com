@@ -407,16 +407,23 @@ Now you can open the file `app/views/pages/info.html.erb` and add information ab
 * Add picture resizing to make loading the pictures faster
 
 
-## Additional Guides
+## Other Guides
 
-* Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
-* Guide 1: [Add commenting by Janika Liiv](/commenting)
-* Guide 2: [Put your app online with Heroku by Terence Lee](/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift) / [Put your app online with anynines](/anynines) / [Put your app online with Trucker.io](/trucker)
-* Guide 3: [Create thumbnail images for the uploads by Miha Filej](/thumbnails)
-* Guide 4: [Add design using HTML &amp; CSS by Alex Liao](/design)
-* Guide 5: [Add Authentication (user accounts) with Devise by Piotr Steininger](/devise)
-* Guide 6: [Adding profile pictures with Gravatar](/gravatar)
-* Guide 7: [Test your app with RSpec](/testing-rspec)
-* Guide 8: [Continuous Deployment with Travis-CI](/continuous-travis) / [Continuous Deployment with Codeship](/continuous) / [Continuous Deployment with Snap CI](/continuous-snap-ci)
-* Guide 9: [Go through additional explanations for the App by Lucy Bain](https://github.com/lbain/railsgirls)
-* Guide 10: [Adding a back-end with Active Admin](/backend-with-active-admin)
+* [Handy cheatsheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
+* Guide 1: [Guide to install Rails](/install) (You probably already did this one!)
+* Guide 2: [Build Your First App](/app) (This current page!)
+* Guide 3: [Push Your App to GitHub](/github)
+* Guide 4: Put your app online with...
+    * [Heroku](/heroku) / [OpenShift](/openshift) / [anynines](/anynines) / [Engine Yard](/engineyard) / [prepare for deployment with Phusion Passenger](/passenger)
+* Guide 5: [Allow Comments on Your App](/commenting)
+* Guide 6: [Add design using HTML &amp; CSS](/design)
+* Guide 7: [Create thumbnails with Carrierwave](/thumbnails)
+* Guide 8: [Add Authentication (user accounts) with Devise](/devise)
+* Guide 9: [Add Profile Pics with Gravatar](/gravatar)
+* Guide 10: [Improve your design with HTML and CSS](/dexign-html-css)
+* Guide 11: Continuous Deployment
+    * [Test your app with RSpec](testing-rspec) / [Ease up development with Phusion Passenger](/passenger) / [Simplifying your tests with Shoulda Matchers](testing-shoulda-matchers) / [CD with Travis-CI](/continuous-travis) / [CD with Codeship](/continuous) / [CD with Snap CI](/continuous-snap-ci)
+* Guide 12: [Build a voting app in Sinatra](/sinatra-app)
+* Guide 13: [Build a diary app in Ruby on Rails](diary-app)
+* Guide 14: [Add a back-end to your app (admin pages)](/backend-with-active-admin)
+* Guide 15: [Go through additional explanations for the App](https://github.com/lbain/railsgirls)
