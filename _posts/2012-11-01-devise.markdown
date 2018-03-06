@@ -13,7 +13,7 @@ permalink: devise
 **This guide assumes that you have already built a Rails Girls app by** [**following the app development guide**](/app).
 
 
-## *1.*Add devise gem
+## *1.* Add devise gem
 
 Open up your `Gemfile` and add this line
 
@@ -26,7 +26,7 @@ bundle install
 {% endhighlight %}
 to install the gem. **Also remember to restart the Rails server**.
 
-## *2.*Set up devise in your app
+## *2.* Set up devise in your app
 
 Run the following command in the terminal.
 
@@ -35,7 +35,7 @@ rails g devise:install
 {% endhighlight %}
 
 
-## *3.*Configure Devise
+## *3.* Configure Devise
 
 Ensure you have defined default url options in your environments files. Open up `config/environments/development.rb` and add this line:
 {% highlight ruby %}
@@ -67,7 +67,7 @@ Open up `app/views/ideas/show.html.erb` and remove the line that says:
 
 Do the same for `app/views/comments/show.html.erb`. These lines are not necessary as we've put the notice in the `app/views/layouts/application.html.erb` file.
 
-## *4.*Setup the User model
+## *4.* Setup the User model
 
 We'll use a bundled generator script to create the User model.
 {% highlight sh %}
@@ -78,13 +78,13 @@ We'll use a bundled generator script to create the User model.
 **Coach:** Explain what user model has been generated. What are the
 fields?
 
-## *5.*Create your first user
+## *5.* Create your first user
 
 Now that you have set everything up you can create your first user. Devise creates all the code and routes required to create accounts, log in, log out, etc.
 
 Make sure your rails server is running, open [http://localhost:3000/users/sign_up](http://localhost:3000/users/sign_up) and create your user account.
 
-## *6.*Add sign-up and login links
+## *6.* Add sign-up and login links
 
 All we need to do now is to add appropriate links or notice about the user being logged in in the top right corner of the navigation bar.
 

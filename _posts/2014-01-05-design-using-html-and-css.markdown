@@ -4,7 +4,7 @@ title: Add design to your App with HTML and CSS
 permalink: design-html-css
 ---
 
-## *1.*Design your header
+## *1.* Design your header
 
 put the following code to the bottom of `app/assets/stylesheets/application.css`:
 
@@ -31,7 +31,7 @@ Then put these lines at the bottom：
 **Coach:** explain the 4 states of a link
 
 
-## *2.*Design your table
+## *2.* Design your table
 
 We simply use the twitter [Bootstrap](http://getbootstrap.com/) to polish our table. Find this line from app/views/ideas/index.html.erb and replace:
 
@@ -65,7 +65,7 @@ add the following lines to the bottom of file app/assets/stylesheets/ideas.css.s
 
 try add some background style with property `background-image`, reference to [http://subtlepatterns.com/](http://subtlepatterns.com/) for some patterns.
 
-## *3.*add style to footer
+## *3.* add style to footer
 
 add the lines to bottom of  app/assets/stylesheets/application.css:
 
@@ -78,7 +78,7 @@ footer {
 
 try put more things into `footer`, then adjust it's position.
 
-## *4.*add style to button
+## *4.* add style to button
 
 open [http://localhost:3000/ideas/new](http://localhost:3000/ideas/new) and find the `Create Idea` button.
 

@@ -16,7 +16,7 @@ permalink: testing-shoulda-matchers
 
 __COACH__: Talk about testing and Behavior-Driven Development.
 
-## *1.*Add Shoulda Matchers gem
+## *1.* Add Shoulda Matchers gem
 
 Open up your `Gemfile` and add this line to the `:test` group, above the end tag:
 
@@ -46,7 +46,7 @@ to install the gem.
 
 __COACH__: Talk about googling terminal output.
 
-## *2.*Adjust your `rails_helper.rb`
+## *2.* Adjust your `rails_helper.rb`
 
 In our case, we will be using RSpec to test our project, so we need to say to our `rails_helper.rb` that we are using Shoulda Matchers:
 Place above the end tag (check the indentation):
@@ -69,7 +69,7 @@ rspec spec/models/idea_spec.rb
 
 It should show that our test is running ok.
 
-## *3.*Testing!
+## *3.* Testing!
 
 It is pretty simple to test using Shoulda Matchers.
 For our first test we already stated that an Idea has many comments, in the [**Comments for Rails Girls App tutorial**](/commenting)
@@ -127,5 +127,3 @@ Can you continue this tutorial by doing a test to validate the presence of a des
 Can you imagine another tests to make?
 
 Happy testing!
-
-

@@ -10,7 +10,7 @@ permalink: sinatra-html
 
 Using `.inspect` works for debugging, but we don’t want to use it in production. For one thing, it’s really hard to style the output. Let’s wrap our coffee list in proper HTML.
 
-## *1.*Setup
+## *1.* Setup
 
 First let’s make a method that will return our coffees wrapped in HTML tags. We’ll name the method `coffees_html`, so that what it does is reasonably obvious. Define it like so:
 
@@ -26,7 +26,7 @@ And in your template method change your `#{ $coffees.inspect }` line to call our
 #{ coffees_html }
 {% endhighlight %}
 
-## *2.*Add some HTML
+## *2.* Add some HTML
 
 Write something to turn the `$coffees` global variable into HTML that looks like this:
 

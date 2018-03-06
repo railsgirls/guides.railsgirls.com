@@ -22,7 +22,7 @@ The basic guides that have been merged and adapted are the [Ruby on Rails Tutori
 
 
 
-### [*0.*Installation](/install)
+### [*0.* Installation](/install)
 
 **Make sure you have Rails and Git installed.** [**Follow the installation guide**](/install), the [**Installing Git section of Pro Git**](http://www.git-scm.com/book/en/Getting-Started-Installing-Git) to get set up. Then configure GitHub by typing the following in your terminal:
 
@@ -36,23 +36,23 @@ git config --global user.email your.email@example.com
 Sign up for a [free GitHub account](https://github.com/signup/free) if you don’t have one already.
 
 
-### [*1.*Basic Web Application](/touristic-autism_basic-app)
+### [*1.* Basic Web Application](/touristic-autism_basic-app)
 
-### [*2.*Version control with Git](/touristic-autism_git)
+### [*2.* Version control with Git](/touristic-autism_git)
 
-### [*3.*Resource Modeling](/touristic-autism_resource-modeling)
+### [*3.* Resource Modeling](/touristic-autism_resource-modeling)
 
-### [*4.*Resource Rating](/touristic-autism_resource-rating)
+### [*4.* Resource Rating](/touristic-autism_resource-rating)
 
-### [*5.*Design](/touristic-autism_design)
+### [*5.* Design](/touristic-autism_design)
 
-### [*6.*Image upload and Thumbnails](/touristic-autism_image-upload)
+### [*6.* Image upload and Thumbnails](/touristic-autism_image-upload)
 
 **Optional - for advanced Rails Girls:**
 
-### [*7.*Continuous Deployment](/touristic-autism_continuous-deployment)
+### [*7.* Continuous Deployment](/touristic-autism_continuous-deployment)
 
-### [*8.*Continuous Testing and Integration](/touristic-autism_static-pages-tdd)
+### [*8.* Continuous Testing and Integration](/touristic-autism_static-pages-tdd)
 
 
 

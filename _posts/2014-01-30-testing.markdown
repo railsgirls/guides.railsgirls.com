@@ -16,7 +16,7 @@ permalink: testing-rspec
 
 __COACH__: Talk about testing and Behavior-Driven Development.
 
-## *1.*Add RSpec gem
+## *1.* Add RSpec gem
 
 Open up your `Gemfile` and add this line to the `:development` and `:test` groups, above the end tag:
 
@@ -52,7 +52,7 @@ This adds the following files which are used for configuration:
 - `spec/spec_helper.rb`
 - `spec/rails_helper.rb`
 
-## *2.*Create your first test!
+## *2.* Create your first test!
 
 Rubyists often use the words 'test' and 'specification' interchangeably, that's why you'll store your tests in the 'specs' folder.
 To do that, do the following steps:
@@ -101,7 +101,7 @@ end
 
 should give you a more satisfying output.
 
-## *3.*Refactoring
+## *3.* Refactoring
 
 You could actually also create two ideas, to be sure that our project is creating ideas in the right way:
 
@@ -121,7 +121,7 @@ which test more things.
 
 __COACH__: Talk a bit about refactoring.
 
-## *4.*Marking to-do's with tests
+## *4.* Marking to-do's with tests
 
 Yeah! To-do lists. Awesome.
 A nifty RSpec feature is the functionality to mark certain tests as pending. In other words, your first thinking about what the implementation should accomplish then write in a test to verify if it is working.
@@ -136,7 +136,7 @@ will mark a test as pending.
 
 Can you finish this test? Can you think about other tests?
 
-## *5.*Behavior-Driven Development
+## *5.* Behavior-Driven Development
 __COACH__: Talk a bit about Behavior-Driven Development.
 
 By now you can create more tests alone. Feel free to talk to your coach to do that, or ways to create more tests.
