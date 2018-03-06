@@ -306,12 +306,6 @@ Now we can generate the code for handling uploads. In the terminal run:
 rails generate uploader Picture
 {% endhighlight %}
 
-Please start the rails server now.
-
-Note: Some people might be using a second terminal to run the rails server continuously.
-If so you need to **restart the Rails server process** now.
-This is needed for the app to load the added library.
-
 If an error is shown that the uploader cannot be found also add the following line:
 {% highlight ruby %}
 gem 'net-ssh'
@@ -347,7 +341,7 @@ to
 <%= form.file_field :picture, id: :idea_picture %>
 {% endhighlight %}
 
-In your file it might actually say `<%= f.text_field :picture, id: :idea_picture %>`, just roll with it. 
+In your file it might actually say `<%= f.text_field :picture, id: :idea_picture %>`, just roll with it.
 In your browser, add new idea with a picture. When you upload a picture it doesn't look nice because it only shows a path to the file, so let's fix that.
 
 Open `app/views/ideas/show.html.erb` and change
@@ -363,6 +357,7 @@ to
 {% endhighlight %}
 
 Now refresh your browser to see what changed.
+Note: Some people might be using a second terminal to run the rails server continuously.
 
 **Coach:** Talk a little about HTML.
 
@@ -405,7 +400,6 @@ Now you can open the file `app/views/pages/info.html.erb` and add information ab
 * Add ratings
 * Use CoffeeScript (or JavaScript) to add interaction
 * Add picture resizing to make loading the pictures faster
-
 
 ## Other Guides
 
