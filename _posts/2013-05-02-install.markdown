@@ -104,7 +104,7 @@ For the workshop we recommend the text editor Atom.
 
 * [Download Atom and install it](https://atom.io/)
 
-If you are using Mac OS X 10.7 or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2).
+If you are using Mac OS X 10.7 or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2). Just to make sure that you're not mixing up using your terminal or text-editor: change the theme of your Sublime text-editor, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
 
 ### *5.* Update your browser
 
@@ -248,7 +248,7 @@ For the workshop we recommend the text editor Atom.
   * Copy the folder into your Program Files.
   * Launch atom in the folder.
 
-If you are using Windows Vista or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2).
+If you are using Windows Vista or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2). Just to make sure that you're not mixing up using your command prompt or text-editor: change the theme of your Sublime text-editor, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
 
 ### *3.* Update your browser
 
@@ -320,7 +320,7 @@ rails new myapp
 
 For the workshop we recommend the text editor Sublime Text.
 
-* [Download Sublime Text and install it](http://www.sublimetext.com/2)
+* [Download Sublime Text and install it](http://www.sublimetext.com/2). Just to make sure that you're not mixing up using your terminal or text-editor: change the theme of your Sublime text-editor, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
 
 
 ### *3.* Update your browser
