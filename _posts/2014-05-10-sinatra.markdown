@@ -53,7 +53,7 @@ Your app will look something like this in the browser:
 
 <img src="../images/coffee-app.png" alt="Sinatra Coffee App" />
 
-## *0.*Install Sinatra - "Hello World"
+## *0.* Install Sinatra - "Hello World"
 
 Let's start off by getting Sinatra running.
 
@@ -63,7 +63,7 @@ gem install sinatra
 gem install sinatra-contrib
 {% endhighlight %}
 
-## *1.*"Hello World"
+## *1.* "Hello World"
 Create a file called `app.rb` and paste the following into Sublime Text:
 
 {% highlight ruby %}
@@ -146,7 +146,7 @@ GET /?what=flat+white&cost=3.50 HTTP/1.1
 
 If it's not quite working, make sure your code looks like [this code](http://tjmcewan.github.io/coffeecalc/snippets/html_form.rb.txt).
 
-## *4.*Web Inspector - Request Headers
+## *4.* Web Inspector - Request Headers
 
 In your browser, open up your web console. (For most browsers, this can be accessed by *right clicking something on the page and choosing "Inspect Element"*.) I recommend you use Chrome for this; if you are using Chrome, you're looking for the 'Network' tab.
 

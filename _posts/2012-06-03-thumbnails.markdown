@@ -11,7 +11,7 @@ permalink: thumbnails
 __Coach__: Explain what specifying the image width in HTML at the end of Step
 4 does and how it differs from resizing images on the server.
 
-## *1.*Installing ImageMagick
+## *1.* Installing ImageMagick
 
 * OS X: run `brew install imagemagick`. If you don't have the brew command, you can [install Homebrew here][in-homebrew].
 * Windows: download and run the [ImageMagick installer][im-win] (use the first
@@ -44,7 +44,7 @@ In the Terminal run:
 bundle
 {% endhighlight %}
 
-## *2.*Telling our app to create thumbnails when an image is uploaded
+## *2.* Telling our app to create thumbnails when an image is uploaded
 
 Open `app/uploaders/picture_uploader.rb` and find the line that looks like
 this:
@@ -68,7 +68,7 @@ end
 The images uploaded from now on should be resized, but the ones we already
 have weren't affected. So edit one of the existing ideas and re-add a picture.
 
-## *3.*Displaying the thumbnails
+## *3.* Displaying the thumbnails
 
 To see if the uploaded picture was resized open
 `app/views/ideas/index.html.erb`. Change the line

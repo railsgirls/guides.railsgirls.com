@@ -42,7 +42,7 @@ Where you start the rails server and run commands.
 It is important that you select the instructions specific to your operating system - the commands you need to run on a Windows computer are slightly different to Mac or Linux. If you're having trouble check the Operating System switcher at the bottom of the commands.
 
 
-## *1.*Creating the application
+## *1.* Creating the application
 
 We're going to create a new Rails app called *railsgirls-galway-2014*.
 

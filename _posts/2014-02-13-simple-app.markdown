@@ -39,7 +39,7 @@ Where you start the rails server and run commands.
 
 It is important that you select the instructions specific to your operating system - the commands you need to run on a Windows computer are slightly different to Mac or Linux. If you're having trouble check the Operating System switcher at the bottom of the commands.
 
-## *1.*Creating the application
+## *1.* Creating the application
 
 We're going to create a new Rails app called *railsgirls*.
 
@@ -166,7 +166,7 @@ Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to quit the server.
 
 **Coach:** Explain what each command does. What was generated? What does the server do? You can find more details about the special template on [GitHub](https://github.com/Ben-M/simple_scaffold).
 
-## *2.*Create Idea scaffold
+## *2.* Create Idea scaffold
 
 We're going to use Rails' scaffold functionality to generate a starting point that allows us to list, add, remove, edit, and view things; in our case ideas.
 
@@ -209,7 +209,7 @@ Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in your browser.
 Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> to quit the server again when you've clicked around a little.
 
 
-## *3.*Design
+## *3.* Design
 
 **Coach:** Talk about the relationship between HTML and Rails. What part of views is HTML and what is Embedded Ruby (ERB)? What is MVC and how does this relate to it? (Models and controllers are responsible for generating the HTML views.)
 
@@ -290,7 +290,7 @@ Now make sure you saved your files and refresh the browser to see what was chang
 **Coach:** Talk a little about CSS and layouts.
 
 
-## *4.*Adding picture uploads
+## *4.* Adding picture uploads
 
 We need to install a piece of software to let us upload files in Rails.
 
@@ -383,7 +383,7 @@ Now refresh your browser to see what changed.
 **Coach:** Talk a little about HTML.
 
 
-## *5.*Finetune the routes
+## *5.* Finetune the routes
 
 If you try to open [http://localhost:3000](http://localhost:3000) it still shows the "Welcome aboard" page. Let's make it redirect to the ideas page.
 
