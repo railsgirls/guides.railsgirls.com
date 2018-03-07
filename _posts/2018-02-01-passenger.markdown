@@ -25,25 +25,30 @@ __COACH__: Passenger is an open source web application server. It handles HTTP r
 
 Open your app's Gemfile and add "passenger":
 
-{gem "passenger"}
+{% highlight ruby %}
+gem "passenger"
+{% endhighlight %}
 
 By adding Passenger to your Gemfile, `rails server` will launch Passenger instead of Puma.
 You get virtual bonus points from the Phusion Passenger team for deleting the following lines (if present at all in your Gemfile):
 
-{gem "unicorn"
+{% highlight ruby %}
+gem "unicorn"
 gem "thin"
 gem "puma"
-}
+{% endhighlight %}
 
 Run `bundle install` to update your gem bundle.
 
 The text in your terminal should say something like this:
 
-{bundle install
+{% highlight sh %}
+bundle install
 ...
 Installing passenger x.x.x
 ...
-Your bundle is complete!}
+Your bundle is complete!
+{% endhighlight %}
 
 Nginx and Apache are web servers. They provide HTTP transaction handling and serve static files. Application servers make it possible for Ruby apps to speak HTTP. Ruby apps (and frameworks like Rails) can't do that by themselves. In a typical production stack, one would use Nginx or Apache as the web server, Passenger as application server, and Capistrano as release automation tool. Passenger integrates with Nginx or Apache and manages the application and its resources.
 
@@ -53,15 +58,19 @@ __COACH__: Sometimes you will need to specify the gem's version: `gem "passenger
 
 Run the Passenger server with the following command:
 
-{bundle exec passenger start}
+{% highlight sh %}
+bundle exec passenger start
+{% endhighlight %}
 
 Passenger is serving your app on http://0.0.0.0:3000/.
 Try and use your app a bit and then run `bundle exec passenger-status` to check your activity. Big (friendly, promised!) brother is watching you.
 
 There are two ways to stop the server. The first is by pressing Ctrl-C in the terminal. The second way is by running `passenger stop` in a new terminal window:
 
-{cd /path-to-your-app
-bundle exec passenger stop}
+{% highlight sh %}
+cd /path-to-your-app
+bundle exec passenger stop
+{% endhighlight %}
 
 When you switch back to the first terminal, you should see that Passenger has indeed stopped.
 
@@ -75,12 +84,16 @@ Passenger also supports the magic file `tmp/always_restart.txt`. With this file,
 
 Activate this mechanism by creating the file:
 
-{mkdir -p tmp
+{% highlight sh %}
+mkdir -p tmp
 touch tmp/always_restart.txt}
+{% endhighlight %}
 
 Deactivate this mechanism by removing the file:
 
-{rm tmp/always_restart.txt}
+{% highlight sh %}
+rm tmp/always_restart.txt
+{% endhighlight %}
 
 __COACH__: Sometimes the carrierwave gem causes trouble. Adding `require 'carrierwave/orm/activerecord'` to the `environment.rb` file will often do the trick.
 
@@ -91,9 +104,11 @@ __COACH__: Sometimes the carrierwave gem causes trouble. Adding `require 'carrie
 
 Before you select your host(ing infrastructure) and [follow the guide to put your app online][passenger-guide], let's commit the changes we've made:
 
-{git add .
+{% highlight sh %}
+git add .
 git commit -m "add passenger"
-git push}
+git push
+{% endhighlight %}
 
 You can also choose to follow the [Heroku guide][heroku-guide] from here on.
 
