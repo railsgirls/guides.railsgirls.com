@@ -416,7 +416,7 @@ Now you can open the file `app/views/pages/info.html.erb` and add information ab
 * Guide 9: [Add Profile Pics with Gravatar](/gravatar)
 * Guide 10: [Improve your design with HTML and CSS](/dexign-html-css)
 * Guide 11: Continuous Deployment
-    * [Test your app with RSpec](testing-rspec) / [Ease up development with Phusion Passenger](/passenger) / [Simplifying your tests with Shoulda Matchers](testing-shoulda-matchers) / [CD with Travis-CI](/continuous-travis) / [CD with Codeship](/continuous) / [CD with Snap CI](/continuous-snap-ci)
+    * [Test your app with RSpec](testing-rspec) / [Ease up development with Phusion Passenger](/passenger) / [Simplifying your tests with Shoulda Matchers](testing-shoulda-matchers) / [CD with Travis-CI](/continuous-travis) / [CD with Codeship](/continuous)
 * Guide 12: [Build a voting app in Sinatra](/sinatra-app)
 * Guide 13: [Build a diary app in Ruby on Rails](diary-app)
 * Guide 14: [Add a back-end to your app (admin pages)](/backend-with-active-admin)
