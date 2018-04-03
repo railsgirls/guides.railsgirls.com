@@ -28,6 +28,16 @@ is being accessed by it's internal ID without having any type of access control.
 
 ## *2.* Cross-Site Scripting (XSS)
 
+_TODO: add this part_
+
 ## *3.* SQL Injection (SQLI)
 
+_TODO: add this part_
+
 ## Final words
+
+_TODO: add this part_
+
+## References
+
+_TODO: add this part_
