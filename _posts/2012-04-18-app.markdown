@@ -47,6 +47,8 @@ some code
 <p>For example, if you see a terminal icon next to the highlight, like in the example above, you will need to copy the code and paste it into your Terminal (Mac) / Command Prompt (Windows).</p>
 </div>
 
+Need some reminders along the way? Check out this [handy cheatsheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
+
 ### Important
 
 It is important that you select the instructions specific to your operating system - the commands you need to run on a Windows computer are slightly different to Mac or Linux. If you're having trouble check the Operating System switcher at the bottom of the commands. In case you're using a cloud service (e.g. Codenvy), you need to run the Linux commands even if you are on a Windows computer.
@@ -241,7 +243,7 @@ Let's also add a navigation bar and footer to the layout. In the same file, unde
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/ideas">Ideas</a></li>
+        <li><a href="/ideas">Ideas</a></li>
       </ul>
     </div>
   </div>
@@ -344,7 +346,7 @@ to
 In your file it might actually say `<%= f.text_field :picture, id: :idea_picture %>`, just roll with it.
 In your browser, add new idea with a picture. When you upload a picture it doesn't look nice because it only shows a path to the file, so let's fix that.
 
-Open `app/views/ideas/show.html.erb` and change
+To show the picture in the page of the idea itself, open `app/views/ideas/show.html.erb` and change
 
 {% highlight erb %}
 <%= @idea.picture %>
@@ -354,6 +356,18 @@ to
 
 {% highlight erb %}
 <%= image_tag(@idea.picture_url, width: 600) if @idea.picture.present? %>
+{% endhighlight %}
+
+To make sure that the picture is also shown in the overview of ideas, open `app/views/ideas/index.html.erb`. Change the line
+
+{% highlight erb %}
+<%= idea.picture %>
+{% endhighlight %}
+
+to
+
+{% highlight erb %}
+<%= image_tag idea.picture_url, width: '100%' if idea.picture.present? %>
 {% endhighlight %}
 
 Now refresh your browser to see what changed.
@@ -376,7 +390,7 @@ Test the change by opening the root path (that is, <http://localhost:3000/> or y
 
 **Coach:** Talk about routes, and include details on the order of routes and their relation to static files.
 
-## Create static page in your app
+## *6.* Create static page in your app
 
 Lets add a static page to our app that will hold information about the author of this application — you!
 
@@ -392,9 +406,27 @@ It also adds a new simple route to your routes.rb.
 get "pages/info"
 {% endhighlight %}
 
-Now you can open the file `app/views/pages/info.html.erb` and add information about you in HTML. To see your new info page, take your browser to <http://localhost:3000/pages/info> or, if you are a cloud service user, append '/pages/info' to your preview url.
+Now you can open the file `app/views/pages/info.html.erb` and add information about you in HTML. To see your new info page, take your browser to <http://localhost:3000/pages/info> or, if you are a cloud service user, append '/pages/info' to your preview url. 
 
-## *6+.*What next?
+## *7.* Add a button to your navigation bar
+
+Now that we know your new static page works, let's make sure people can visit it by creating a button for it in the navigation bar. 
+
+Open `app/views/layouts/application.html.erb` in your text editor and under the line
+
+{% highlight html %}
+<li><a href="/ideas">Ideas</a></li>
+{% endhighlight %}
+
+add
+
+{% highlight html %}
+<li><a href="/pages/info">Info</a></li>
+{% endhighlight %}
+
+Refresh the page in your browser and click the newly created link to see if it works!
+
+## *8+.*What's next?
 
 * Add design using HTML &amp; CSS
 * Add ratings
