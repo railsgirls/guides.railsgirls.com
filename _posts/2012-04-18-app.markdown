@@ -346,7 +346,7 @@ to
 In your file it might actually say `<%= f.text_field :picture, id: :idea_picture %>`, just roll with it.
 In your browser, add new idea with a picture. When you upload a picture it doesn't look nice because it only shows a path to the file, so let's fix that.
 
-Open `app/views/ideas/show.html.erb` and change
+To show the picture in the page of the idea itself, open `app/views/ideas/show.html.erb` and change
 
 {% highlight erb %}
 <%= @idea.picture %>
@@ -356,6 +356,18 @@ to
 
 {% highlight erb %}
 <%= image_tag(@idea.picture_url, width: 600) if @idea.picture.present? %>
+{% endhighlight %}
+
+To make sure that the picture is also shown in the overview of ideas, open `app/views/ideas/index.html.erb`. Change the line
+
+{% highlight erb %}
+<%= idea.picture %>
+{% endhighlight %}
+
+to
+
+{% highlight erb %}
+<%= image_tag idea.picture_url, width: '100%' if idea.picture.present? %>
 {% endhighlight %}
 
 Now refresh your browser to see what changed.
