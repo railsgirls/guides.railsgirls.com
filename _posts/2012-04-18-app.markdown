@@ -271,7 +271,8 @@ table, td, th { vertical-align: middle; border: none; }
 th { border-bottom: 1px solid #DDD; }
 {% endhighlight %}
 
-Now make sure you saved your files and refresh the browser to see what was changed. You can also change the HTML & CSS further.
+Now make sure you saved your files and refresh the browser to see what was changed. Nothing changed? It might be that you're not connected to the wifi anymore. 
+You can change the HTML & CSS further, adding to `app/assets/stylesheets/application.css`.
 
 **Coach:** Talk a little about CSS and layouts.
 
