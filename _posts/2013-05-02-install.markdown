@@ -364,31 +364,36 @@ Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you do
 ### *2.* Create an account
 
 Go to [codenvy.io](https://codenvy.io) and signup for free.
+You will need to confirm your email and then fill in your details.
 
-![](/images/codenvy/create-account.jpg)
+![](/images/codenvy/codenvy-create-one.png)
 
 ### *3.* Setup a workspace for Ruby on Rails
 
-The Ruby on Rails Workspace has all the software we need for the workshop already preinstalled. To create a workspace, log into [codenvy.io](https://codenvy.io) and click on 'Dashboard'. If no workspace has been created yet, the 'New Workspace' view is displayed.
+The Ruby on Rails Workspace has all the software we need for the workshop already preinstalled.
+To create a workspace, log into [codenvy.io](https://codenvy.io) and click on 'Dashboard'.
+If no workspace has been created yet, the 'New Workspace' view is displayed.
 
-![](/images/codenvy/create-workspace-dashboard.jpg)
+![](/images/codenvy/codenvy-dashboard-create-workspace.png)
 
 In the 'New Workspace' view, a few settings have to be made.
 
-* 'New from blank, template, or sample project' should already be selected
-* Select 'Create new workspace from stack'
-* Select 'Ready to go Stacks'
-* Select 'Rails' Stack
-* Give the workspace a name of your choice. In the example this is 'railsgirls'.
+* Give the workspace a name of your choice. In the example this is "railsgirls".
+* From "Select Stack", select "Quick Start", scroll down and select "Rails"
 * Now click on 'Create' to create the workspace (it takes a moment for the process to finish)
 
-![](/images/codenvy/create-workspace.jpg)
+![](/images/codenvy/codenvy-rails-stack.png)
 
-* Codeenvy creates a folder '/projects' during initialization, in which you can later put your code. It also creates a folder 'console-ruby-simple' that we do not need. You can see it in the Project Explorer. Ignore it or delete it by right-clicking on the folder.
+* Codenvy creates a folder '/projects' during initialization,
+in which you can later put your code.
+
+![](/images/codenvy/codenvy-workspace-layout.png)
 
 ### *4.* Find and restart your workspace
+
 * If you've just created your project, you can probably skip these steps - they're good to know if you login to Codenvy again later
-* If you haven't used your workspace or projects in a while, they might have been shutdown due to inactivity. You will notice an empty circle displayed next to the workspace name.
+* If you haven't used your workspace or projects in a while, they might have been shutdown due to inactivity.
+  You will notice an empty circle displayed next to the workspace name.
 
 ![](/images/codenvy/start-workspace.jpg)
 
@@ -396,6 +401,9 @@ In the 'New Workspace' view, a few settings have to be made.
 * If you have restarted a workspace, you need to run the `bundle` command again in the directory of your Rails project (you will learn more about the command in the app tutorial)
 
 ### *5.* Coding with your project
+
+![](/images/codenvy/codenvy-layout-with-project.png)
+
 * On the left hand side, you find a file browser where you can navigate your directories and file
 * In the middle, you find the editor where you can modify your files
 * At the bottom, you find the terminal where you can run commands
@@ -416,3 +424,5 @@ In the 'New Workspace' view, a few settings have to be made.
     ![](/images/codenvy/get-workspace-ip.jpg)
 
     For example, if the tutorial wants you to visit `http://localhost:3000/posts`, you would open the URL `http://node3.codenvy.io:33079/posts` instead.
+
+![](/images/codenvy/codenvy-app-url.png)
