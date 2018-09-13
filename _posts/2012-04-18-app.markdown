@@ -51,7 +51,7 @@ Need some reminders along the way? Check out this [handy cheatsheet for Ruby, Ra
 
 ### Important
 
-It is important that you select the instructions specific to your operating system - the commands you need to run on a Windows computer are slightly different to Mac or Linux. If you're having trouble check the Operating System switcher at the bottom of the commands. In case you're using a cloud service (e.g. Codenvy), you need to run the Linux commands even if you are on a Windows computer.
+It is important that you select the instructions specific to your operating system - the commands you need to run on a Windows computer are slightly different to Mac or Linux. If you're having trouble check the Operating System switcher at the bottom of the commands. In case you're using a cloud service (e.g. PaizaCloud, Codenvy), you need to run the Linux commands even if you are on a Windows computer.
 
 ## *1.* Creating the application
 
@@ -62,7 +62,7 @@ First, let's open a terminal:
 * Mac OS X: Open Spotlight, type *Terminal* and click the *Terminal* application.
 * Windows: Click Start and look for *Command Prompt*, then click *Command Prompt with Ruby and Rails*.
 * Linux (Ubuntu/Fedora): Search for *Terminal* on the dash and click *Terminal*.
-* Cloud service (e.g. Codenvy): Log in to your account, start your project and switch to its IDE (see [installation guide](/install#using-a-cloud-service) for details). The terminal is usually at the bottom of your browser window.
+* Cloud service (e.g. PaizaCloud, Codenvy): Log in to your account, start your project and switch to its IDE (see [installation guide](/install#using-a-cloud-service) for details). The terminal is usually at the bottom of your browser window.
 
 Next, type these commands in the terminal:
 
@@ -144,7 +144,7 @@ rails server
   </div>
 </div>
 
-Open <http://localhost:3000> in your browser. If you are using a cloud service (e.g. Codenvy), use its preview functionality instead (see [installation guide](/install#using-a-cloud-service) for details).
+Open <http://localhost:3000> in your browser. If you are using a cloud service (e.g. PaizaCloud, Codenvy), use its preview functionality instead (see [installation guide](/install#using-a-cloud-service) for details).
 
 You should see a page with the Rails logo and the heading "Yay! You’re on Rails!", which means that your Rails app is up and running.
 
@@ -190,7 +190,7 @@ rails db:migrate
 rails server
 {% endhighlight %}
 
-Open <http://localhost:3000/ideas> in your browser. Cloud service (e.g. Codenvy) users need to append '/ideas' to their preview url instead (see [installation guide](/install#using-a-cloud-service)).
+Open <http://localhost:3000/ideas> in your browser. Cloud service (e.g. PaizaCloud, Codenvy) users need to append '/ideas' to their preview url instead (see [installation guide](/install#using-a-cloud-service)).
 
 Click around and test what you got by running these few command-line commands.
 

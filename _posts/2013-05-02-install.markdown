@@ -353,7 +353,59 @@ Instead of installing all tools on your machine, you can also set up a developme
 
 ## Using a Cloud Service
 
-Instead of installing Ruby on Rails and an editor on your computer, you can use a webservice for development. All you need is a browser and an internet connection. This guide explains how to get started with [codenvy.io](https://codenvy.io). If you're using a different service, they may use a different wording, but the process is usually pretty similar.
+Instead of installing Ruby on Rails and an editor on your computer, you can use a webservice for development. All you need is a browser and an internet connection. This guide explains how to get started with [PaizaCloud Cloud IDE](https://paiza.cloud/) or [codenvy.io](https://codenvy.io). If you're using a different service, they may use a different wording, but the process is usually pretty similar.
+
+## With PaizaCloud Cloud IDE
+
+### *1.* Update your browser
+
+If you use Internet Explorer, we recommend installing [Google Chrome](google.com/chrome).
+
+Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
+
+### *2.* Create an account
+
+Go to [PaizaCloud Cloud IDE](https://paiza.cloud) and signup for free.
+You will need to confirm your email and then fill in your details.
+
+![](/images/paizacloud/paizacloud-create-one.png)
+
+### *3.* Setup a workspace for Ruby on Rails
+
+The server workspace has all the software we need for the workshop already preinstalled.
+To create a server workspace, log into [PaizaCloud Cloud IDE](https://paiza.cloud).
+If no server has been created yet, the 'New Server' button is displayed.
+
+![](/images/paizacloud/paizacloud-create-server.png)
+
+In the 'Server Settings' view, a few settings have to be made.
+
+* Give the server a name of your choice. In the example this is "railsgirls".
+* From "Web application development", select "Ruby on Rails"
+* From "Database", select "MySQL" and "phpMyAdmin"
+* Now click on 'New Server' to create the workspace (it takes a moment for the process to finish)
+
+![](/images/paizacloud/paizacloud-server-settings.png)
+
+
+### *5.* Coding with your project
+
+![](/images/paizacloud/paizacloud-layout-with-project.png)
+
+* On the left hand side, you find a file browser where you can navigate your directories and file
+* Everything you need is right here in you browser window, you can edit or manage files, run terminal, or run browsers in the browser window.
+* If you are following a guide or tutorial, use the commands for Linux even if you are on a Windows computer - your operating system does not matter, since all commands are run on your project's machine in the cloud, which is running Linux
+* If a guide or tutorial asks you to point your browser to something like `http://localhost:3000`, follow these instructions instead:
+
+  * When you run "rails server" command, you will see a browser button with text 3000 on the left side of the window.
+    ![](/images/paizacloud/paizacloud-browser-icon.png)
+
+  * Click the browser button, and you will see browser view.
+
+  * If you want to open as other window, click the "Open New Window" icon on the right of URL bar.
+
+
+## With Codeenvy
 
 ### *1.* Update your browser
 
