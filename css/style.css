@@ -279,11 +279,11 @@ i.icon-small-browser {
    margin-right:-20px;
    padding-left:20px;
    padding-right:20px;
- } 
+ }
 }
 
 /* Don't show the homepage image on mobile */
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
   .hero {
     padding: 20px 0;
     background:none;
@@ -306,4 +306,28 @@ kbd {
     text-shadow: 0 1px 0 #fff;
     line-height: 1.5em;
     white-space: nowrap;
+}
+
+.github-corner:hover .octo-arm {
+  animation:octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+  0%, 100% {
+    transform:rotate(0)
+  }
+  20%,60% {
+    transform:rotate(-25deg)
+  }
+  40%,80% {
+    transform:rotate(10deg)
+  }
+}
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation:none
+  }
+  .github-corner .octo-arm {
+    animation:octocat-wave 560ms ease-in-out
+  }
 }
