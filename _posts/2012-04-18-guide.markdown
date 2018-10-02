@@ -15,7 +15,7 @@ Rails Girls was founded in end of 2010 in Helsinki. Originally intended as a one
 
 If you want to organize an event, start by filling out [http://railsgirls.com/inyourcity](http://railsgirls.com/inyourcity) and you'll receive more instructions. 
 
-The roadmap for future events can be seen at [www.railsgirls.com](http://railsgirls.com).
+A list of upcoming events can be viewed at [www.railsgirls.com](http://railsgirls.com).
 
 You are also welcome to join our [organizers' Slack discussion forum](https://rails-girls-slack.herokuapp.com/).
 
@@ -26,7 +26,7 @@ The two-day event includes a lot of small group working and short focused talks 
 
 #### Rails Girls philosophy
 
-* Show sparks, personality and keep in mind the big picture. Explain, repeat and always tie what you're telling into a larger context.
+* Show spark, personality and keep in mind the big picture. Explain, repeat and always tie what you're telling into a larger context.
 * Internet was made by people and it doesn’t break by a little tinkering. Continuously show the human side: encourage coaches to talk about open source communities, their programming idols and their aspirations.
 * Copy-pasting rules. Programming per se isn’t central - you can't really learn to speak Chinese in one day, in a similar manner you can only learn the basic vocabulary and expressions in coding. The goal of every event is to make something visible!
 * Girls run this world! But also women, ladies, even boys are allowed in. More than semantics we're interested in a mindset. Both founders were born in the Spice Girls era, they don't see the word girl as condescending or cutesy-cute.
@@ -65,7 +65,7 @@ Come up with activities to break the ice: ask the girls to write why they are at
 
 Remember to do a [FridayHug](http://fridayhug.com)!
 
-21 -> Coach dinner
+21:00 -> Coach dinner (optional)
 Go through the application with the coaches during dinner.
 
 
@@ -199,6 +199,8 @@ Also non-traditional technology companies can be approached: kids stores, univer
 
 Rails Girls should always be kept non-profit: if there's money left, it should be used to support the future activities of the attendees. Don’t forget that you don’t need that much funding and even a two-person startup could be very willing to chip in.
 
+We advice against having only one sponsor (cannabilize the event) or having a SPONSOR NAME edition of the Rails Girls workshop. The Rails Girls brand is not meant for the commercial advancement of a single company. 
+
 ### Example letter for sponsors
 
 Dear xxx,
@@ -209,7 +211,7 @@ Rails Girls is a two-day non-profit event for women of all ages to give them a g
 
 Rails Girls is not just about programming, it’s about building things. During the workshop, we’ll build an application and also have inspiring lightning talks and exercises.
 
-For a closer look, please see www.railsgirls.com for past events and coverage.Here’s also a short video on the Berlin event held in April 2012: [http://vimeo.com/40852182](http://vimeo.com/40852182)
+For a closer look, please see www.railsgirls.com for past events and coverage. Here’s also a short video on the Berlin event held in April 2012: [http://vimeo.com/40852182](http://vimeo.com/40852182)
 
 We are now looking for sponsors to help us realize this all.
 We’d love to have your support!
