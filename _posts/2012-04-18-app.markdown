@@ -209,8 +209,8 @@ Open `app/views/layouts/application.html.erb` in your text editor and above the 
 add
 
 {% highlight erb %}
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.css">
 {% endhighlight %}
 
 and replace
@@ -259,7 +259,7 @@ and before `</body>` add
   </div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.js"></script>
 {% endhighlight %}
 
 Now let's also change the styling of the ideas table. Open `app/assets/stylesheets/application.css` and at the bottom add
@@ -271,7 +271,7 @@ table, td, th { vertical-align: middle; border: none; }
 th { border-bottom: 1px solid #DDD; }
 {% endhighlight %}
 
-Now make sure you saved your files and refresh the browser to see what was changed. Nothing changed? It might be that you're not connected to the wifi anymore. 
+Now make sure you saved your files and refresh the browser to see what was changed. Nothing changed? It might be that you're not connected to the wifi anymore.
 You can change the HTML & CSS further, adding to `app/assets/stylesheets/application.css`.
 
 **Coach:** Talk a little about CSS and layouts.
@@ -407,11 +407,11 @@ It also adds a new simple route to your routes.rb.
 get "pages/info"
 {% endhighlight %}
 
-Now you can open the file `app/views/pages/info.html.erb` and add information about you in HTML. To see your new info page, take your browser to <http://localhost:3000/pages/info> or, if you are a cloud service user, append '/pages/info' to your preview url. 
+Now you can open the file `app/views/pages/info.html.erb` and add information about you in HTML. To see your new info page, take your browser to <http://localhost:3000/pages/info> or, if you are a cloud service user, append '/pages/info' to your preview url.
 
 ## *7.* Add a button to your navigation bar
 
-Now that we know your new static page works, let's make sure people can visit it by creating a button for it in the navigation bar. 
+Now that we know your new static page works, let's make sure people can visit it by creating a button for it in the navigation bar.
 
 Open `app/views/layouts/application.html.erb` in your text editor and under the line
 
