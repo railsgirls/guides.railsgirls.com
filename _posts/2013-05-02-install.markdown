@@ -140,7 +140,11 @@ For Windows 10 users:
 
 Open `Command Prompt with Ruby and Rails`.
 Right-click on the command prompt’s title bar, and choose "Properties".
-Navigate to the "experimental" tab, and check the "Enable new Ctrl key shortcuts" option (you may need to check the "Enable experimental console features" option first).
+Navigate to the "options" tab, and check "Enable Ctrl key shortcuts".
+(If you don't find it, but have an "experimental" tab,
+navigate there and check "Enable new Ctrl key shortcuts" option.
+In this case, you may need to check the "Enable experimental console
+features" option first.)
 
 For other Windows versions:
 
