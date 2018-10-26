@@ -52,8 +52,17 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 {% highlight sh %}
 brew update
+{% endhighlight %}
+
+{% highlight sh %}
 brew install rbenv
+{% endhighlight %}
+
+{% highlight sh %}
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+{% endhighlight %}
+
+{% highlight sh %}
 source ~/.bash_profile
 {% endhighlight %}
 
@@ -69,6 +78,9 @@ If you got "OpenSSL::SSL::SSLError: ... : certificate verify failed" error, try 
 
 {% highlight sh %}
 brew install curl-ca-bundle
+{% endhighlight %}
+
+{% highlight sh %}
 cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
 {% endhighlight %}
 
@@ -116,7 +128,13 @@ Check that everything is working by running the application generator command.
 
 {% highlight sh %}
 rails new myapp
+{% endhighlight %}
+
+{% highlight sh %}
 cd myapp
+{% endhighlight %}
+
+{% highlight sh %}
 rails server
 {% endhighlight %}
 
@@ -208,7 +226,13 @@ First download the [ruby-gems-update gem](https://rubygems.org/gems/rubygems-upd
 
 {% highlight sh %}
 gem install --local c:\\rubygems-update-2.6.11.gem
+{% endhighlight %}
+
+{% highlight sh %}
 update_rubygems --no-document
+{% endhighlight %}
+
+{% highlight sh %}
 gem uninstall rubygems-update -x
 {% endhighlight %}
 
@@ -275,7 +299,13 @@ Check that everything is working by running the application generator command.
 
 {% highlight sh %}
 rails new myapp
+{% endhighlight %}
+
+{% highlight sh %}
 cd myapp
+{% endhighlight %}
+
+{% highlight sh %}
 rails server
 {% endhighlight %}
 
@@ -298,6 +328,9 @@ To install the Ruby on Rails development environment you just need to copy the l
 
 {% highlight sh %}
 sudo apt-get install curl
+{% endhighlight %}
+
+{% highlight sh %}
 bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
 {% endhighlight %}
 
@@ -333,7 +366,13 @@ Check that everything is working by running the application generator command.
 
 {% highlight sh %}
 rails new myapp
+{% endhighlight %}
+
+{% highlight sh %}
 cd myapp
+{% endhighlight %}
+
+{% highlight sh %}
 rails server
 {% endhighlight %}
 
