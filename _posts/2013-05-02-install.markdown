@@ -28,13 +28,13 @@ Click the Apple menu and choose *About this Mac*.
 ![Apple menu](/images/1.png "Apple menu")
 
 ### *2.* In the window you will find the version of your operating system.
-If your version number starts with 10.6, 10.7, 10.8, 10.9, 10.10, 10.11 or 10.12 this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
+If your version number starts with 10.6, 10.7, 10.8, 10.9, 10.10, 10.11 or higher this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
 
 ![About this Mac dialog](/images/2.png "About this Mac dialog")
 
 ### *3a.* If your OS X version is 10.9 or higher:
 
-If your version number starts with 10.9, 10.10, 10.11 or 10.12, follow these steps. We are installing homebrew and rbenv.
+If your version number starts with 10.9, 10.10, 10.11 or higher, follow these steps. We are installing homebrew and rbenv.
 
 #### *3a1.* Install Command line tools on terminal:
 
@@ -52,8 +52,17 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 {% highlight sh %}
 brew update
+{% endhighlight %}
+
+{% highlight sh %}
 brew install rbenv
+{% endhighlight %}
+
+{% highlight sh %}
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+{% endhighlight %}
+
+{% highlight sh %}
 source ~/.bash_profile
 {% endhighlight %}
 
@@ -69,6 +78,9 @@ If you got "OpenSSL::SSL::SSLError: ... : certificate verify failed" error, try 
 
 {% highlight sh %}
 brew install curl-ca-bundle
+{% endhighlight %}
+
+{% highlight sh %}
 cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
 {% endhighlight %}
 
@@ -116,7 +128,13 @@ Check that everything is working by running the application generator command.
 
 {% highlight sh %}
 rails new myapp
+{% endhighlight %}
+
+{% highlight sh %}
 cd myapp
+{% endhighlight %}
+
+{% highlight sh %}
 rails server
 {% endhighlight %}
 
@@ -212,7 +230,13 @@ First download the [ruby-gems-update gem](https://rubygems.org/gems/rubygems-upd
 
 {% highlight sh %}
 gem install --local c:\\rubygems-update-2.6.11.gem
+{% endhighlight %}
+
+{% highlight sh %}
 update_rubygems --no-document
+{% endhighlight %}
+
+{% highlight sh %}
 gem uninstall rubygems-update -x
 {% endhighlight %}
 
@@ -279,7 +303,13 @@ Check that everything is working by running the application generator command.
 
 {% highlight sh %}
 rails new myapp
+{% endhighlight %}
+
+{% highlight sh %}
 cd myapp
+{% endhighlight %}
+
+{% highlight sh %}
 rails server
 {% endhighlight %}
 
@@ -302,6 +332,9 @@ To install the Ruby on Rails development environment you just need to copy the l
 
 {% highlight sh %}
 sudo apt-get install curl
+{% endhighlight %}
+
+{% highlight sh %}
 bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
 {% endhighlight %}
 
@@ -337,7 +370,13 @@ Check that everything is working by running the application generator command.
 
 {% highlight sh %}
 rails new myapp
+{% endhighlight %}
+
+{% highlight sh %}
 cd myapp
+{% endhighlight %}
+
+{% highlight sh %}
 rails server
 {% endhighlight %}
 
