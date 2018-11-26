@@ -20,6 +20,25 @@ $ cd railsgirls.github.io
 $ bundle install
 ```
 
+## Quick start with Docker
+
+Alternatively, you can run the app using [Docker](https://docs.docker.com/install/):
+
+```
+$ docker build . -t railsgirls_dev
+$ docker run -p 80:4000 -v $(pwd):/site railsgirls_dev
+```
+
+Or, if you also have [Docker Compose](https://docs.docker.com/compose/install/), simply launch this command:
+
+```
+$ docker-compose up
+```
+
+The app will then be accessible on [127.0.0.1](http://127.0.0.1/)!
+
+Note: Thanks to the volume we created via the `-v` option or the `volumes` key in the `docker-compose.yml` file, the changes you make in the source code will directly be reflected in the container and you won't need to rebuild/restart every time to apply them.
+
 ### Pygments and Code Highlighting
 
 The guides use the [pygments](http://pygments.org/) library to do syntax highlighting. If you don't have it installed you won't be able to see the highlight sections like the following:
