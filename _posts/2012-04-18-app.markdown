@@ -447,7 +447,7 @@ Refresh the page in your browser and click the newly created link to see if it w
 * Guide 7: [Create thumbnails with Carrierwave](/thumbnails)
 * Guide 8: [Add Authentication (user accounts) with Devise](/devise)
 * Guide 9: [Add Profile Pics with Gravatar](/gravatar)
-* Guide 10: [Improve your design with HTML and CSS](/dexign-html-css)
+* Guide 10: [Improve your design with HTML and CSS](/design-html-css)
 * Guide 11: Continuous Deployment
     * [Test your app with RSpec](testing-rspec) / [Ease up development with Phusion Passenger](/passenger) / [Simplifying your tests with Shoulda Matchers](testing-shoulda-matchers) / [CD with Travis-CI](/continuous-travis) / [CD with Codeship](/continuous)
 * Guide 12: [Build a voting app in Sinatra](/sinatra-app)
