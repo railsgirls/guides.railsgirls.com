@@ -13,7 +13,7 @@ Our aim is to give tools for women to understand technology. The Rails Girls eve
 
 Rails Girls was founded in end of 2010 in Helsinki. Originally intended as a onetime event, we never thought we'd see so many local chapters all around the world! This guide has been put together to help you get started.
 
-If you want to organize an event, start by filling out [http://railsgirls.com/inyourcity](http://railsgirls.com/inyourcity) and you'll receive more instructions. 
+If you want to organize an event, start by filling out [http://railsgirls.com/inyourcity](http://railsgirls.com/inyourcity) and you'll receive more instructions.
 
 A list of upcoming events can be viewed at [www.railsgirls.com](http://railsgirls.com).
 
@@ -88,7 +88,7 @@ Themes to cover:
 + What are programming languages? What is Rails?
 + The tools we’ll be using: browser, terminal, code editor, folder structure
 
-Show & tell with <a href="http://tryruby.org">tryruby.org</a>, first three-four exercises all together.
+Show & tell with <a href="https://ruby.github.io/TryRuby/">TryRuby</a>, first three-four exercises all together.
 
 11:30 - 13:00 Workshop time
 Going (slowly!) through the curriculum at <a href="http://guides.railsgirls.com/app">guides.railsgirls.com/app</a>. Stop to explain what you’re doing and what the different concepts mean.
@@ -199,7 +199,7 @@ Also non-traditional technology companies can be approached: kids stores, univer
 
 Rails Girls should always be kept non-profit: if there's money left, it should be used to support the future activities of the attendees. Don’t forget that you don’t need that much funding and even a two-person startup could be very willing to chip in.
 
-We advice against having only one sponsor (cannabilize the event) or having a SPONSOR NAME edition of the Rails Girls workshop. The Rails Girls brand is not meant for the commercial advancement of a single company. 
+We advice against having only one sponsor (cannabilize the event) or having a SPONSOR NAME edition of the Rails Girls workshop. The Rails Girls brand is not meant for the commercial advancement of a single company.
 
 ### Example letter for sponsors
 
