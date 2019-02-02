@@ -118,11 +118,7 @@ For the workshop we recommend the text editor Atom.
 
 If you are using Mac OS X 10.7 or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2). Just to make sure that you're not mixing up using your terminal or text-editor: change the theme of your Sublime text-editor, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
 
-### *5.* Update your browser
-
-Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
-
-### *6.* Check the environment
+### *5.* Check the environment
 
 Check that everything is working by running the application generator command.
 
@@ -278,13 +274,7 @@ For the workshop we recommend the text editor Atom.
 
 If you are using Windows Vista or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2). Just to make sure that you're not mixing up using your command prompt or text-editor: change the theme of your Sublime text-editor, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
 
-### *3.* Update your browser
-
-If you use Internet Explorer, we recommend installing [Firefox](mozilla.org/firefox) or [Google Chrome](google.com/chrome).
-
-Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
-
-### *4.* Install Node.js
+### *3.* Install Node.js
 
 * Go to [https://nodejs.org/](https://nodejs.org/) and install Node.js LTS package
 * Reopen your Rails Command Shell
@@ -297,7 +287,7 @@ node --version
 
 Make sure it is displaying version number.
 
-### *5.* Check the environment
+### *4.* Check the environment
 
 Check that everything is working by running the application generator command.
 
@@ -359,12 +349,7 @@ For the workshop we recommend the text editor Sublime Text.
 
 * [Download Sublime Text and install it](http://www.sublimetext.com/2). Just to make sure that you're not mixing up using your terminal or text-editor: change the theme of your Sublime text-editor, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
 
-
-### *3.* Update your browser
-
-Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
-
-### *4.* Check the environment
+### *3.* Check the environment
 
 Check that everything is working by running the application generator command.
 
@@ -398,20 +383,14 @@ Instead of installing all tools on your machine, you can also set up a developme
 
 Instead of installing Ruby on Rails and an editor on your computer, you can use a webservice for development. All you need is a browser and an internet connection. This guide explains how to get started with [codenvy.io](https://codenvy.io). If you're using a different service, they may use a different wording, but the process is usually pretty similar.
 
-### *1.* Update your browser
-
-If you use Internet Explorer, we recommend installing [Firefox](mozilla.org/firefox) or [Google Chrome](google.com/chrome).
-
-Open [whatbrowser.org](http://whatbrowser.org) and update your browser if you don't have the latest version.
-
-### *2.* Create an account
+### *1.* Create an account
 
 Go to [codenvy.io](https://codenvy.io) and signup for free.
 You will need to confirm your email and then fill in your details.
 
 ![](/images/codenvy/codenvy-create-one.png)
 
-### *3.* Setup a workspace for Ruby on Rails
+### *2.* Setup a workspace for Ruby on Rails
 
 The Ruby on Rails Workspace has all the software we need for the workshop already preinstalled.
 To create a workspace, log into [codenvy.io](https://codenvy.io) and click on 'Dashboard'.
@@ -432,7 +411,7 @@ in which you can later put your code.
 
 ![](/images/codenvy/codenvy-workspace-layout.png)
 
-### *4.* Find and restart your workspace
+### *3.* Find and restart your workspace
 
 * If you've just created your project, you can probably skip these steps - they're good to know if you login to Codenvy again later
 * If you haven't used your workspace or projects in a while, they might have been shutdown due to inactivity.
@@ -443,7 +422,7 @@ in which you can later put your code.
 * In this case simply click on the name of the workspace. It will then be restarted (which can take a while) and afterwards opened.
 * If you have restarted a workspace, you need to run the `bundle` command again in the directory of your Rails project (you will learn more about the command in the app tutorial)
 
-### *5.* Coding with your project
+### *4.* Coding with your project
 
 ![](/images/codenvy/codenvy-layout-with-project.png)
 
