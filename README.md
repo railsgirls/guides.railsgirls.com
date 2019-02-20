@@ -74,4 +74,7 @@ Global mailing list for Rails Girls events at http://groups.google.com/group/rai
 * Vesa Vänskä / [@vesan](https://twitter.com/vesan) / [github](http://github.com/vesan)
 * Terence Lee / [@hone02](https://twitter.com/hone02) / [github](http://github.com/hone)
 
-..and all the other coaches and people making Rails Girls awesome. Please add yourself!
+..and all the other coaches and people making Rails Girls awesome. Please add yourself!  
+
+## LISENCE
+![License: CC BY-SA 3.0](https://licensebuttons.net/l/by-sa/3.0/80x15.png)
