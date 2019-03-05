@@ -2,7 +2,7 @@
 
 Our aim is to give tools for women to understand technology. The Rails Girls events do this by providing a great first experience on building the Internet.
 
-Rails Girls was founded in end of 2010 in Helsinki. Originally intended as a onetime event, we never thought to see so many local chapters all around the world! This guide has been put together to help you get started.
+Rails Girls was founded at the end of 2010 in Helsinki. Originally intended as a one-time event, we never thought to see so many local chapters from all around the world! This guide will help you get started.
 
 You can use our materials and instructions to roll out your own workshop in your city, workplace or kitchen! Read more about Rails Girls at http://railsgirls.com
 
@@ -76,5 +76,5 @@ Global mailing list for Rails Girls events at http://groups.google.com/group/rai
 
 ..and all the other coaches and people making Rails Girls awesome. Please add yourself!  
 
-## LISENCE
+## LICENSE
 ![License: CC BY-SA 3.0](https://licensebuttons.net/l/by-sa/3.0/80x15.png)
