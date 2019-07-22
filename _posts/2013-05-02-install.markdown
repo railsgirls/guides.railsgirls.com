@@ -411,6 +411,8 @@ in which you can later put your code.
 
 ![](/images/codenvy/codenvy-workspace-layout.png)
 
+* Observation: Even thought there is a Create Project button in the Explorer, it is better to use the console to create the app project (see next step #3).
+
 ### *3.* Find and restart your workspace
 
 * If you've just created your project, you can probably skip these steps - they're good to know if you login to Codenvy again later
