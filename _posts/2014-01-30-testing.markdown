@@ -23,23 +23,12 @@ Open up your `Gemfile` and add this line to the `:development` and `:test` group
 {% highlight ruby %}
 group :development, :test do
   ...
-  gem 'rspec-rails', '~> 3.5'
+  gem 'rspec-rails', '~> 3.8'
 end
 {% endhighlight %}
 
-and run
-{% highlight sh %}
-bundle install
-{% endhighlight %}
-to install the gem.
 
-Next create the `spec/` directory inside your application:
-
-{% highlight sh %}
-mkdir spec/
-{% endhighlight %}
-
-The `spec/` directory is where your tests will reside. Finally run the following command:
+After that run the following command, in order to generate the folders for rspec:
 
 {% highlight sh %}
 rails generate rspec:install
