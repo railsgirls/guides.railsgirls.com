@@ -87,8 +87,8 @@ add the row
 next, remove
 {% highlight erb %}
 <div class="field">
-  <%= form.label :idea_id %><br>
-  <%= form.number_field :idea_id, id: :comment_idea_id %>
+  <%= form.label :idea_id %>
+  <%= form.number_field :idea_id %>
 </div>
 {% endhighlight %}
 
