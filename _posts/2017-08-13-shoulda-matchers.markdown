@@ -20,21 +20,10 @@ __COACH__: Talk about testing and Behavior-Driven Development.
 
 Open up your `Gemfile` and add this line to the `:test` group, above the end tag:
 
-For Rails 4.x:
-
 {% highlight ruby %}
 group :test do
   ...
-  gem 'shoulda-matchers', '~> 3.1'
-end
-{% endhighlight %}
-
-For Rails 5.0:
-
-{% highlight ruby %}
-group :test do
-  ...
-  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
+  gem 'shoulda-matchers'
 end
 {% endhighlight %}
 
@@ -49,7 +38,9 @@ __COACH__: Talk about googling terminal output.
 ## *2.* Adjust your `rails_helper.rb`
 
 In our case, we will be using RSpec to test our project, so we need to say to our `rails_helper.rb` that we are using Shoulda Matchers:
-Place above the end tag (check the indentation):
+
+Place above the last end tag (check the indentation):
+
 {% highlight ruby %}
   Shoulda::Matchers.configure do |config|
     config.integrate do |with|
