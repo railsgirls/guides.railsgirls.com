@@ -85,3 +85,5 @@ to
 
 Take a look at the list of ideas in the browser to see if the thumbnail is
 there.
+
+{% include other-guides.md page="thumbnails" %}

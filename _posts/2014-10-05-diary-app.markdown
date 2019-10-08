@@ -466,3 +466,5 @@ Play with your application! Here are some further ideas you might want to add:
 - support for different entry authors,
 - support for different categories of entries,
 - upload and display of images.
+
+{% include other-guides.md page="diary-app" %}

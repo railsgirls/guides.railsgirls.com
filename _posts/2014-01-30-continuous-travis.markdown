@@ -160,3 +160,5 @@ Logging out... OK
 {% endhighlight %}
 
 This means your are done and good to go! 
+
+{% include other-guides.md page="travis" %}

@@ -106,3 +106,4 @@ Open `app/views/ideas/show.html.erb` in your text editor and replace all lines w
 * Add more design to the pages as you wish
 * Follow the other guides to learn more about Rails
 
+{% include other-guides.md page="design" %}

@@ -450,3 +450,5 @@ in which you can later put your code.
     For example, if the tutorial wants you to visit `http://localhost:3000/posts`, you would open the URL `http://node3.codenvy.io:33079/posts` instead.
 
 ![](/images/codenvy/codenvy-app-url.png)
+
+{% include other-guides.md page="install" %}

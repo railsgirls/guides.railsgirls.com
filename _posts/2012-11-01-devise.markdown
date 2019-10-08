@@ -127,4 +127,4 @@ Open your browser and try logging in and out from.
 * Restrict users to only be able to edit their own ideas and delete their own comments
 * Expand to use roles or permissions (use one of the popular authorization gem like CanCan)
 
-
+{% include other-guides.md page="devise" %}
