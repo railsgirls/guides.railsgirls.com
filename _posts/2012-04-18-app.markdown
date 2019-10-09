@@ -434,23 +434,4 @@ Refresh the page in your browser and click the newly created link to see if it w
 * Use CoffeeScript (or JavaScript) to add interaction
 * Add picture resizing to make loading the pictures faster
 
-## Other Guides
-
-* [Handy cheatsheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
-* Guide 1: [Guide to install Rails](/install) (You probably already did this one!)
-* Guide 2: [Build Your First App](/app) (This current page!)
-* Guide 3: [Push Your App to GitHub](/github)
-* Guide 4: Put your app online with...
-    * [Heroku](/heroku) / [OpenShift](/openshift) / [anynines](/anynines) / [Engine Yard](/engineyard) / [prepare for deployment with Phusion Passenger](/passenger)
-* Guide 5: [Allow Comments on Your App](/commenting)
-* Guide 6: [Add design using HTML &amp; CSS](/design)
-* Guide 7: [Create thumbnails with Carrierwave](/thumbnails)
-* Guide 8: [Add Authentication (user accounts) with Devise](/devise)
-* Guide 9: [Add Profile Pics with Gravatar](/gravatar)
-* Guide 10: [Improve your design with HTML and CSS](/design-html-css)
-* Guide 11: Continuous Deployment
-    * [Test your app with RSpec](testing-rspec) / [Ease up development with Phusion Passenger](/passenger) / [Simplifying your tests with Shoulda Matchers](testing-shoulda-matchers) / [CD with Travis-CI](/continuous-travis) / [CD with Codeship](/continuous)
-* Guide 12: [Build a voting app in Sinatra](/sinatra-app)
-* Guide 13: [Build a diary app in Ruby on Rails](diary-app)
-* Guide 14: [Add a back-end to your app (admin pages)](/backend-with-active-admin)
-* Guide 15: [Go through additional explanations for the App](https://github.com/lbain/railsgirls)
+{% include other-guides.md page="app" %}

@@ -118,3 +118,5 @@ Can you continue this tutorial by doing a test to validate the presence of a des
 Can you imagine another tests to make?
 
 Happy testing!
+
+{% include other-guides.md page="shoulda" %}

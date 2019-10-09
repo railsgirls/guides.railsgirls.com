@@ -227,4 +227,5 @@ __COACH__: Talk about Git branches and the benefits of open source code.
 
 Your Rails app is now running in the cloud on [OpenShift](https://www.openshift.com/developers). You can push whatever other changes you like and share the URL to show off your app to your friends.
 
+{% include other-guides.md page="openshift" %}
 

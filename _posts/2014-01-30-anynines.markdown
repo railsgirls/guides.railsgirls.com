@@ -83,3 +83,5 @@ You can check all available cf sub-commands by typing `cf help`.
 In case your terminal does not have all the answers, the anynines team probably does. Just shoot them a mail at support@anynines.com.
 
 Happy deploying!
+
+{% include other-guides.md page="anynines" %}

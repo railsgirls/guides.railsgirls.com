@@ -125,3 +125,5 @@ Knee-deep? Crawl through [Passenger's Troubleshooting guide][troubleshooting-gui
 
 [passenger-documentation]: https://www.phusionpassenger.com/library/
 [troubleshooting-guide]: https://www.phusionpassenger.com/library/admin/nginx/troubleshooting/ruby/
+
+{% include other-guides.md page="passenger" %}
