@@ -58,7 +58,16 @@ section but before the
 add
 
 {% highlight erb %}
-<%= image_tag current_user.gravatar_url %>
+<%= image_tag current_user.gravatar_url, :class => "gravatar" %>
+{% endhighlight %}
+
+And, put the following code to the bottom of `app/assets/stylesheets/application.css`:
+
+{% highlight css %}
+.gravatar {
+  height: 30px;
+  width: auto;
+}
 {% endhighlight %}
 
 Now open you app in your browser and login with an e-mail address that is associated with a Gravatar. You should be able to see your Gravatar.

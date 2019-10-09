@@ -23,13 +23,13 @@ __Coach__: Explain what specifying the image width in HTML at the end of Step
   [im-win]: http://www.imagemagick.org/script/download.php#windows
   [in-homebrew]: https://brew.sh/
 
-__Coach__: What is ImageMagick and how is it different from libraries/gems we
+__Coach__: Explain what is ImageMagick and how is it different from libraries/gems we
 used before?
 
 Open `Gemfile` in the project and add
 
 {% highlight ruby %}
-gem 'mini_magick', '4.8.0'
+gem 'mini_magick'
 {% endhighlight %}
 
 under the line
@@ -61,7 +61,7 @@ Below the line you just changed, add:
 
 {% highlight ruby %}
 version :thumb do
-  process :resize_to_fill => [50, 50]
+  process :resize_to_fit => [50, 50]
 end
 {% endhighlight %}
 

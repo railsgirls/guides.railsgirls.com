@@ -90,7 +90,7 @@ All we need to do now is to add appropriate links or notice about the user being
 
 In order to do that, edit `app/views/layouts/application.html.erb` add:
 {% highlight erb %}
-<p class="navbar-text pull-right">
+<p class="navbar-text float-right">
 <% if user_signed_in? %>
   Logged in as <strong><%= current_user.email %></strong>.
   <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
@@ -103,9 +103,12 @@ In order to do that, edit `app/views/layouts/application.html.erb` add:
 {% endhighlight %}
 right after
 {% highlight erb %}
-<ul class="nav">
-  <li class="active"><a href="/ideas">Ideas</a></li>
-</ul>
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="/ideas">Ideas</a>
+    </li>
+    ...
+  </ul>
 {% endhighlight %}
 
 Finally, force the user to redirect to the login page if the user was not logged in. Open up `app/controllers/application_controller.rb` and add:
