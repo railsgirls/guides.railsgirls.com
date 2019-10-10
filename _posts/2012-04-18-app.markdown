@@ -421,7 +421,7 @@ add
 
 {% highlight html %}
 <li class="nav-item">
-  <a class="nav-link" href="/info">Info</a>
+  <a class="nav-link" href="/pages/info">Info</a>
 </li>
 {% endhighlight %}
 
