@@ -46,7 +46,7 @@ This adds the following files which are used for configuration:
 Rubyists often use the words 'test' and 'specification' interchangeably, that's why you'll store your tests in the 'specs' folder.
 To do that, do the following steps:
 
-We will be creating a test for ou `idea` model, to do that in the elegant way in Rails:
+We will be creating a test for our `idea` model, to do that in the elegant way in Rails:
 
 * Create a `models` folder in your `spec` folder, by running in the terminal:
 {% highlight sh %}
