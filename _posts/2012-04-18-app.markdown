@@ -340,7 +340,7 @@ to
 <%= form.file_field :picture %>
 {% endhighlight %}
 
-In your file it might actually say `<%= f.text_field :picture %>`, just roll with it.
+In your file it might actually say `<%= form.text_field :picture %>`, just roll with it.
 In your browser, add new idea with a picture. When you upload a picture it doesn't look nice because it only shows a path to the file, so let's fix that.
 
 To show the picture in the page of the idea itself, open `app/views/ideas/show.html.erb` and change
