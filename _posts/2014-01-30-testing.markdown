@@ -27,6 +27,11 @@ group :development, :test do
 end
 {% endhighlight %}
 
+and run
+{% highlight sh %}
+bundle install
+{% endhighlight %}
+to install the gem.
 
 After that run the following command, in order to generate the folders for rspec:
 
