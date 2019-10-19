@@ -29,7 +29,7 @@ We created a virtual machine for you, with all the needed programs/tools preinst
 
 ### VirtualBox
 
-VirtualBox is Oracle's virtualization platform, which can be downloaded on all the supported operating system (Win, OS X, Linux). Let's download the installer from [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads), and install it after.
+VirtualBox is Oracle's virtualization platform, which can be downloaded on all the supported operating system (Win, macOS, Linux). Let's download the installer from [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads), and install it after.
 
 ### Rails Girls virtual machine
 
@@ -49,7 +49,7 @@ If you don't need the VM any more, you can shut it down. To achieve this, close 
 
 #### Disappearing mouse
 
-If we click into this VirtualBox window, it catches our mouse, and it disappears without notice. You can get your mouse back: in the window's bottom right corner you can see the key combination what you have to press (on OS X it's left-cmd, on any other platforms is right-ctrl).
+If we click into this VirtualBox window, it catches our mouse, and it disappears without notice. You can get your mouse back: in the window's bottom right corner you can see the key combination what you have to press (on macOS it's left-cmd, on any other platforms is right-ctrl).
 
 ### Usage
 

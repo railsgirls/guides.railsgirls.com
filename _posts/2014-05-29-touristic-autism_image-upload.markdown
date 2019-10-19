@@ -93,7 +93,7 @@ __Coach__: Explain what specifying the image width in HTML at the end of Step
 
 ## Installing ImageMagick
 
-* OS X: run `brew install imagemagick`. If you don't have the brew command, you can [install Homebrew here][in-homebrew].
+* macOS: run `brew install imagemagick`. If you don't have the brew command, you can [install Homebrew here][in-homebrew].
 * Windows: download and run the [ImageMagick installer][im-win] (use the first
   *download* link). Reopen your Rails Command Shell afterwards.
 * Linux: On Ubuntu and Debian, run `sudo apt-get install imagemagick`. Use the

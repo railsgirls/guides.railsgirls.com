@@ -48,7 +48,7 @@ We're going to create a new Rails app called *railsgirls-galway-2014*.
 
 First, let's open a terminal:
 
-* Mac OS X: Open Spotlight, type *Terminal* and click the *Terminal* application.
+* macOS: Open Spotlight, type *Terminal* and click the *Terminal* application.
 * Windows: Click Start and look for *Command Prompt*, then click *Command Prompt with Ruby and Rails*.
 * Linux (Ubuntu/Fedora): Search for *Terminal* on the dash and click *Terminal*.
 
