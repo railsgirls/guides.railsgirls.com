@@ -11,7 +11,7 @@ To build apps and other things with Ruby on Rails, we need to setup some softwar
 
 Follow the instructions for your operating system. If you run into any problems, don&#8217;t panic. Inform us at the event and we can solve it together.
 
-* [Setup for OS X](#setup-for-os-x)
+* [Setup for macOS](#setup-for-os-x)
 * [Setup for Windows](#setup-for-windows)
 * [Setup for Linux](#setup-for-linux)
 * [Alternative Installment for all OS](#virtual-machine)
@@ -19,7 +19,7 @@ Follow the instructions for your operating system. If you run into any problems,
 
 <hr />
 
-## Setup for OS X
+## Setup for macOS
 
 ### *1.* Let&#8217;s check the version of the operating system.
 
@@ -32,7 +32,7 @@ If your version number starts with 10.6, 10.7, 10.8, 10.9, 10.10, 10.11 or highe
 
 ![About this Mac dialog](/images/2.png "About this Mac dialog")
 
-### *3a.* If your OS X version is 10.9 or higher:
+### *3a.* If your OS X / macOS version is 10.9 or higher:
 
 If your version number starts with 10.9, 10.10, 10.11 or higher, follow these steps. We are installing homebrew and rbenv.
 
