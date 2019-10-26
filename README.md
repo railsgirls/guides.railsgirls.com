@@ -1,6 +1,6 @@
 # Rails Girls Guides
 
-Our aim is to give tools for women to understand technology. The Rails Girls events do this by providing a great first experience on building the Internet.
+We aim is to give tools for women to understand technology. The Rails Girls events do this by providing a great first experience in building the Internet.
 
 Rails Girls was founded at the end of 2010 in Helsinki. Originally intended as a one-time event, we never thought to see so many local chapters from all around the world! This guide will help you get started.
 
