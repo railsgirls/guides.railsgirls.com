@@ -110,7 +110,15 @@ If the Rails version wasn't the latest, you could update it using a following co
 gem update rails --no-document
 {% endhighlight %}
 
-### *4.* Install a text editor to edit code files
+### _4._ Install yarn:
+
+{% highlight sh %}
+brew install yarn
+{% endhighlight %}
+
+If you need more information than the following to install yarn, please check [yarn's installation docs](https://yarnpkg.com/lang/en/docs/install/).
+
+### _5._ Install a text editor to edit code files
 
 For the workshop we recommend the text editor Atom.
 
@@ -121,6 +129,12 @@ If you are using Mac OS X 10.7 or older versions, you can use another editor [Su
 ### *5.* Check the environment
 
 Check that everything is working by running the application generator command.
+
+{% highlight sh %}
+rails -v
+{% endhighlight %}
+
+Should output `Rails 6.0.0` (or a higher version).
 
 {% highlight sh %}
 rails new myapp
@@ -287,7 +301,11 @@ node --version
 
 Make sure it is displaying version number.
 
-### *4.* Check the environment
+### *4.* Install yarn
+
+Download [yarn](https://yarnpkg.com/lang/en/docs/install/#windows-stable) and install it. Click through the installer using the default options.
+
+### *5.* Check the environment
 
 Check that everything is working by running the application generator command.
 
@@ -313,16 +331,41 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 ## Setup for Linux
 
-### *1.* Install Rails
+To install the Ruby on Rails development environment you just need to copy the lines below for your Linux distribution (Ubuntu or Fedora), paste it in the Terminal and press Enter. Enjoy the text flying on the screen; it will take quite some time. Grabbing a refreshing drink before starting is encouraged.
 
+### *1.* Install yarn 
 
-To install the Ruby on Rails development environment you just need to copy the line below for your Linux distribution (Ubuntu or Fedora), paste it in the Terminal and press Enter. Enjoy the text flying on the screen; it will take quite some time. Grabbing a refreshing drink before starting is encouraged.
+If you need more information than the following to install yarn, please check [yarn's installation docs](https://yarnpkg.com/lang/en/docs/install/).
 
 #### For Ubuntu:
 
 {% highlight sh %}
 sudo apt-get install curl
 {% endhighlight %}
+
+{% highlight sh %}
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+{% endhighlight %}
+
+{% highlight sh %}
+sudo apt update && sudo apt install yarn
+{% endhighlight %}
+
+#### For Fedora:
+
+{% highlight sh %}
+curl -sL https://rpm.nodesource.com/setup_12.x | bash -
+curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
+{% endhighlight %}
+
+{% highlight sh %}
+sudo yum install yarn
+{% endhighlight %}
+
+### *2.* Install Rails
+
+#### For Ubuntu:
 
 {% highlight sh %}
 bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/rails-install-ubuntu.sh)
@@ -342,14 +385,13 @@ Make sure that all works well by running the application generator command.
 rails new myapp
 {% endhighlight %}
 
-
-### *2.* Install a text editor to edit code files
+### *4.* Install a text editor to edit code files
 
 For the workshop we recommend the text editor Sublime Text.
 
 * [Download Sublime Text and install it](http://www.sublimetext.com/2). Just to make sure that you're not mixing up using your terminal or text-editor: change the theme of your Sublime text-editor, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
 
-### *3.* Check the environment
+### *5.* Check the environment
 
 Check that everything is working by running the application generator command.
 
