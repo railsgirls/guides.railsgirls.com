@@ -1,8 +1,8 @@
 # Rails Girls Guides
 
-Our aim is to give tools for women to understand technology. The Rails Girls events do this by providing a great first experience on building the Internet.
+The purpose of Rails Girls is to give tools for women to understand technology. The Rails Girls events do this by providing a great first experience on building the Internet.
 
-Rails Girls was founded at the end of 2010 in Helsinki. Originally intended as a one-time event, we never thought to see so many local chapters from all around the world! This guide will help you get started.
+Rails Girls was founded at the end of 2010 in Helsinki. Originally intended as a one-time event, we never thought to see so many chapters from all around the world! This guide will help you get started.
 
 You can use our materials and instructions to roll out your own workshop in your city, workplace or kitchen! Read more about Rails Girls at http://railsgirls.com
 
@@ -57,7 +57,7 @@ To contribute a guide, view the instructions at http://guides.railsgirls.com/con
 
 ## Twitter
 
-For updates and more follow [@railsgirls](https://twitter.com/railsgirls)
+For updates and more, follow [@railsgirls](https://twitter.com/railsgirls)
 
 ## Website & Blog
 
@@ -65,7 +65,7 @@ Official website and blog for Rails Girls movement can be found at http://railsg
 
 ## E-mail list
 
-Global mailing list for Rails Girls events at http://groups.google.com/group/rails-girls-team
+Global mailing list for Rails Girls events can be found at http://groups.google.com/group/rails-girls-team
 
 ## Credits
 
