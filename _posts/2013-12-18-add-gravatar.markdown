@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Adding Graviatar to you app
+title: Adding Gravatar to you app
 permalink: gravatar
 ---
 
