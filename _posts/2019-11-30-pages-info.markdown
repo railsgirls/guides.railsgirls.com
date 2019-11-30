@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Rails Girls App Tutorial
-permalink: app
+title: Contributing a Guide
+permalink: contributing
 ---
 
 # Rails Girls App Tutorial
