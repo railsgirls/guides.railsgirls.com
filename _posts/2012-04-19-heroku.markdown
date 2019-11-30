@@ -55,6 +55,25 @@ end
 
 Run `bundle install --without production` to setup your dependencies.
 
+Next, update the `config/database.yml` file.
+Change the following in the file:
+
+{% highlight yaml %}
+production:
+  <<: *default
+  database: db/production.sqlite3
+{% endhighlight %}
+
+to
+
+{% highlight yaml %}
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: railsgirls_production
+  pool: 5
+{% endhighlight %}
+
 Don't forget to do `git add .` and `git commit -m "Use postgres as production database"`
 in order to add this change to your master branch before pushing to heroku later.
 
