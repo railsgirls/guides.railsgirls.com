@@ -148,7 +148,9 @@ Open <http://localhost:3000> in your browser. If you are using a cloud service (
 
 You should see a page with the Rails logo and the heading "Yay! You’re on Rails!", which means that your Rails app is up and running.
 
-Notice in this window the command prompt is not visible because you are now in the Rails server, the command prompt looks like this:
+Notice in this window the command prompt is not visible because you are now in the Rails server. 
+
+The command prompt looks like this:
 
 <div class="os-specific">
   <div class="nix">
