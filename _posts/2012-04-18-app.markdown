@@ -267,6 +267,7 @@ Now let's also change the styling of the ideas table. Open `app/assets/styleshee
 footer { margin-top: 100px; }
 table, td, th { vertical-align: middle; border: none; }
 th { border-bottom: 1px solid #DDD; }
+body { margin: 0; }
 {% endhighlight %}
 
 Now make sure you saved your files and refresh the browser to see what was changed. Nothing changed? It might be that you're not connected to the wifi anymore.
