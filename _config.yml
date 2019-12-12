@@ -12,3 +12,4 @@ exclude:
   - "vendor/cache/"
   - "vendor/gems/"
   - "vendor/ruby/"
+source_url: https://github.com/railsgirls/railsgirls.github.io/blob/master/
