@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Touristic Autism-friendly Spots App 
+title: Touristic Autism-friendly Spots App
 permalink: touristic-autism_resource-modeling
 ---
 
@@ -10,7 +10,7 @@ permalink: touristic-autism_resource-modeling
 *for [Rails Girls Galway](https://github.com/RailsGirlsGalway)*
 The basic guides that have been merged and adapted are the [Ruby on Rails Tutorial](http://www.railstutorial.org/book), the [basic RailsGirls app](http://guides.railsgirls.com/app/) and the tutorials for [creating thumbnails](http://guides.railsgirls.com/thumbnails), [authenticating users](http://guides.railsgirls.com/devise/), [adding design](http://guides.railsgirls.com/design), [deploying to OpenShift](http://guides.railsgirls.com/openshift/) and [adding comments](http://guides.railsgirls.com/commenting).
 
-What do we want our app to do? As a first thing, we would like to 
+What do we want our app to do? As a first thing, we would like to
 * authenticate **users**
 * allow authenticated users to create a new touristic **place** description
 * allow authenticated users to **comment** those places
@@ -81,7 +81,7 @@ We'll use a bundled generator script to create the User model.
    rails db:migrate
 {% endhighlight %}
 
-**Coach:** Explain what user model has been generated. What are the fields? Note that a model inherits abilities to interact with the DB from its ApplicationRecord super-class (ref. MVC). 
+**Coach:** Explain what user model has been generated. What are the fields? Note that a model inherits abilities to interact with the DB from its ApplicationRecord super-class (ref. MVC).
 
 ## Step 4: Create your first user
 
@@ -113,7 +113,7 @@ Finally, force the user to redirect to the login page if the user was not logged
   before_action :authenticate_user!
 {% endhighlight %}
 
-after `protect_from_forgery with: :exception`.
+after `class ApplicationController < ActionController::Base`.
 
 Open your browser and try logging in and out from.
 
@@ -134,7 +134,7 @@ rails generate scaffold place name:string address:string latitude:decimal longit
 Note the column user:references that is created to support the 1-to-many association with Users.
 </div>
 
-The scaffold creates new files in your project directory. However, we have defined (modeled) a "structure" for our "place" resource and we want all the future instances of this resource to stick to this structure and get stored somewhere, i.e., in a database. 
+The scaffold creates new files in your project directory. However, we have defined (modeled) a "structure" for our "place" resource and we want all the future instances of this resource to stick to this structure and get stored somewhere, i.e., in a database.
 We are already using a database (see `gem 'sqlite'` in your Gemfile). Let's add the structure of "place" as a table to our database with the following.
 
 <div class="os-specific">
@@ -181,18 +181,18 @@ Open up `app/views/places/show.html.erb` and remove the line that says:
 This line is not necessary as we've already put the authenticated user notice in the `app/views/layouts/application.html.erb` file.
 
 
-Let's add-commit-push to your GitHub repo! 
+Let's add-commit-push to your GitHub repo!
 
 ### Resource Associations
 
-Note that places aren't yet properly associated with users. For instance, when creating a new place the field "User" is expected to be filled by ourselves and when viewing a user profile there isn't any list of places created by him/her and viceversa. Also, when deleting a user account all the places he/she created do not get deleted automatically. 
+Note that places aren't yet properly associated with users. For instance, when creating a new place the field "User" is expected to be filled by ourselves and when viewing a user profile there isn't any list of places created by him/her and viceversa. Also, when deleting a user account all the places he/she created do not get deleted automatically.
 
 Let's properly create the 1-to-many association between User and Places.
 
-#### Step 1. Add 1-to-many association 
+#### Step 1. Add 1-to-many association
 
-You need to make sure that Rails knows the relation between the User and Place resources. 
-As one user can create many places we need to make sure the user model knows that. 
+You need to make sure that Rails knows the relation between the User and Place resources.
+As one user can create many places we need to make sure the user model knows that.
 Open app/models/user.rb and after the row
 {% highlight ruby %}
 class User < ApplicationRecord
@@ -285,7 +285,7 @@ Start the server, check out the new service in your browser. Then, add-commit-pu
 
 ##Resource Association
 
-#### Step 1. Add 1-to-many association 
+#### Step 1. Add 1-to-many association
 
 Open app/models/place.rb and after the row
 {% highlight ruby %}
@@ -428,6 +428,3 @@ Test the change by opening the root path (that is, http://localhost:3000/) in yo
 **Coach:** Talk about routes, and include details on the order of routes and their relation to static files.
 
 **Rails 3 users:** You will need to delete the index.html from the `/public/` folder for this to work.
-
-
-
