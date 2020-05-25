@@ -270,7 +270,7 @@ Now refresh the browser – we no longer have an ‘unknown action’ problem, w
 
 __COACH__: Explain how actions render the related views by default.
 
-Now go to the `app/controllers/welcome_controller.rb` file and find the `WelcomeController#index` method (the one that starts with `def index`). Find the line that sets the `@entries` variable (it should start with `@entries =`) and copy it to `EntriesController#index` (so to the `index` method of the `EntriesController`, which can be found in `app/controllers/welcome_controller.rb`). Similarly, go to the `app/views/welcome/index.html.erb` view and copy the `@entries.each` block (all of the indented lines up to and including the matching `end`) to the `app/views/entries/index.html.erb` view. Refresh the browser: it should now show the list of all your diary entries.
+Now go to the `app/controllers/welcome_controller.rb` file and find the `WelcomeController#index` method (the one that starts with `def index`). Find the line that sets the `@entries` variable (it should start with `@entries =`) and copy it to `EntriesController#index` (so to the `index` method of the `EntriesController`, which can be found in `app/controllers/entries_controller.rb`). Similarly, go to the `app/views/welcome/index.html.erb` view and copy the `@entries.each` block (all of the indented lines up to and including the matching `end`) to the `app/views/entries/index.html.erb` view. Refresh the browser: it should now show the list of all your diary entries.
 
 __COACH__: Explain that even though this might look like little to no progress, there is a significant change: we’re no longer operating in the context of the main page of our app, but rather a list of diary entries only (without the links to other websites, for example).
 
