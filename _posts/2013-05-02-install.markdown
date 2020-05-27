@@ -156,7 +156,7 @@ gem -v
 Make sure it is equal or higher than `2.6.7`.
 
 Download the `cacert.pem` file from
-[http://curl.haxx.se/ca/cacert.pem](http://curl.haxx.se/ca/cacert.pem).
+[https://curl.haxx.se/ca/cacert.pem](https://curl.haxx.se/ca/cacert.pem).
 Save this file to `C:\RailsInstaller\cacert.pem`.
 
 [Create an environment variable](https://kb.wisc.edu/cae/page.php?id=24500):
