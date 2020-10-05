@@ -86,7 +86,7 @@ Activate this mechanism by creating the file:
 
 {% highlight sh %}
 mkdir -p tmp
-touch tmp/always_restart.txt}
+touch tmp/always_restart.txt
 {% endhighlight %}
 
 Deactivate this mechanism by removing the file:

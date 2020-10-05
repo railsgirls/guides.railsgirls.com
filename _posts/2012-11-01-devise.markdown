@@ -117,7 +117,7 @@ Finally, force the user to redirect to the login page if the user was not logged
   before_action :authenticate_user!
 {% endhighlight %}
 
-after `protect_from_forgery with: :exception`.
+after `class ApplicationController < ActionController::Base`.
 
 Open your browser and try logging in and out from.
 

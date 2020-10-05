@@ -1,0 +1,40 @@
+<header>
+  {% include github-corner.html %}
+  <div class="container">
+    <div class="visible-desktop">
+      <a class="span3" href="/" id="logo">
+        <img alt="Rails Girls Guides" src="/images/railsgirls-guides.png" />
+      </a>
+      <nav class="nav pull-right">
+        <a href="http://railsgirls.com/">Home</a>
+        <a href="http://railsgirls.com/events.html">Events</a>
+        <a href="https://blog.railsgirls.com/">Blog</a>
+        <a href="/guide">Organizers</a>
+        <a href="/">Guides</a>
+      </nav>
+    </div>
+
+    <!-- Phone/Tablet -->
+    <div class="visible-tablet visible-phone">
+      <div class="nav navbar nav-pills">
+        <a class="btn btn-link btn-navbar collapsed" onclick="toggleMobileMenu()">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+
+        <a class="brand" href="/">Rails Girls Guides</a>
+
+        <div class="nav-collapse navbar-responsive-collapse navbar-collapse" id='navbar-list' style='height: 0;'>
+          <ul class="nav">
+            <li><a href="http://railsgirls.com/">Home</a></li>
+            <li><a href="http://railsgirls.com/events.html">Events</a></li>
+            <li><a href="https://blog.railsgirls.com/">Blog</a></li>
+            <li><a href="/guide">Organizers</a></li>
+            <li><a href="/">Guides</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

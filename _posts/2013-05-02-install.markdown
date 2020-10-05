@@ -158,154 +158,101 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 ## Setup for Windows
 
-### *1.* Install Rails
+To install Rails for Windows we'll need to install Ruby and several supporting tools such as Git, Node.js and SQLite. Follow the steps below in order to install these tools on your computer. When you're done with these steps you will have a Rails app running on your computer.
 
-Download [RailsInstaller](https://s3.amazonaws.com/railsinstaller/Windows/railsinstaller-3.3.0.exe) and run it. Click through the installer using the default options.
+_During these steps we'll ask you to open and close the Windows Command Prompt every now and then. This can be either the "Command Prompt" or "Powershell" app. We ask you to close and re-open it, because when the Command Prompt starts it loads in the environment. When we install a new app, the environment does not get automatically updated in the Command Prompt. To test if the installation was successful we need to restart the Command Prompt and load the new environment._
 
-#### *1a.* Enable copy and paste in Windows Command Prompt
+### *1.* Install Ruby
 
-For Windows 10 users:
+- Download the [RubyInstaller](https://rubyinstaller.org/downloads/) for Windows.
+  - [Direct link to Ruby 2.6.5 installer with Devkit](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.6.5-1/rubyinstaller-devkit-2.6.5-1-x86.exe) for 32-bit architecture.
+- Run the installer. Click through the installer using all the default options.
+  - When prompted with the "MSYS2" installer, enter `1` and press Enter.
+  - When prompted with the same "MSYS2" installer again, only press Enter.
 
-Open `Command Prompt with Ruby and Rails`.
-Right-click on the command prompt’s title bar, and choose "Properties".
-Navigate to the "options" tab, and check "Enable Ctrl key shortcuts".
-(If you don't find it, but have an "experimental" tab,
-navigate there and check "Enable new Ctrl key shortcuts" option.
-In this case, you may need to check the "Enable experimental console
-features" option first.)
+### *2.* Install Git
 
-For other Windows versions:
-
-To paste a text in the command prompt window you'll need to use the mouse (right-click on the window --> paste).
-
-#### *1b.* Install Rails
-
-In the `Command Prompt with Ruby and Rails`, run the following command:
-
-{% highlight sh %}
-rails -v
-{% endhighlight %}
-
-If you see the following message:
-
-{% highlight sh %}
-the system cannot find the path specified
-{% endhighlight %}
-
-This can happen when the installer cannot correctly setup the paths required to run rails.
-It's nothing serious, we can fix this in different ways but the easiest is by manually installing the rails gem with the following command:
-
-{% highlight sh %}
-gem install rails bundler --no-document
-{% endhighlight %}
-
-This will (re)install rails correctly and running:
-
-{% highlight sh %}
-rails -v
-{% endhighlight %}
-
-Should print the currently installed rails version number (your version may differ):
-
-{% highlight sh %}
-Rails 5.1.1
-{% endhighlight %}
-
-If the Rails version is less than 5.1, update it using a following command:
-
-{% highlight sh %}
-gem update rails --no-document
-{% endhighlight %}
-
-## Possible errors
-
-### Gem::RemoteFetcher error
-
-If you get this error when running `rails new railsgirls` or `gem update rails`:
-
-{% highlight sh %}
-Gem::RemoteFetcher::FetchError: SSL_connect returned=1 errno=0 state=SSLv3 read
-server certificate B: certificate verify failed (https://rubygems.org/gems/i18n-0.6.11.gem)
-{% endhighlight %}
-
-This means you have an older version of Rubygems and will need to update it manually first verify your Rubygems version
-
-{% highlight sh %}
-gem -v
-{% endhighlight %}
-
-If it is lower than `2.6.5` you will need to manually update it:
-
-First download the [ruby-gems-update gem](https://rubygems.org/gems/rubygems-update-2.6.11.gem). Move the file to `c:\\rubygems-update-2.6.11.gem` then run:
-
-{% highlight sh %}
-gem install --local c:\\rubygems-update-2.6.11.gem
-{% endhighlight %}
-
-{% highlight sh %}
-update_rubygems --no-document
-{% endhighlight %}
-
-{% highlight sh %}
-gem uninstall rubygems-update -x
-{% endhighlight %}
-
-Check your version of rubygems
-
-{% highlight sh %}
-gem -v
-{% endhighlight %}
-
-Make sure it is equal or higher than `2.6.11`. Re-run the command that was failing previously.
-
-If you are still running into problems you can always find the latest version of rubygems online at [rubygems.org](https://rubygems.org/pages/download). If you click on **GEM** you will get the latest version.
-
-### During bundle install
-
-The `Gem::RemoteFetcher::FetchError: SSL_connect` can also occur during the `bundle install` stage when creating a new rails app.
-
-The error will make mention of [bit.ly/ruby-ssl](http://bit.ly/ruby-ssl). What is relevant for Windows users at this point is [this GitHub gist](https://gist.github.com/867550). The described manual way has proven to be successful to solve the `bundle install` error.
-
-### 'x64_mingw' is not a valid platform` Error
-
-Sometimes you get the following error when running `rails server`:
-`'x64_mingw' is not a valid platform` If you experience this error after using the RailsInstaller you have to do a small edit to the file `Gemfile`:
-
-Look at the bottom of the file. You will probably see something like this as one of the last lines in the file:
-`gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]`. If you have this line with `:x64_mingw`, then please delete the `:x64_mingw` part. In the end it should just say:
-`'tzinfo-data', platforms: [:mingw, :mswin]`
-
-After you did that, please use your Command Prompt again and type `bundle update`.
-
-### *2.* Install a text editor to edit code files
-
-For the workshop we recommend the text editor Atom.
-
-* [Download Atom and install it](https://github.com/atom/atom/releases/latest)
-  * Download an atom zip file for windows and decompress it.
-  * Copy the folder into your Program Files.
-  * Launch atom in the folder.
-
-If you are using Windows Vista or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2). Just to make sure that you're not mixing up using your command prompt or text-editor: change the theme of your Sublime text-editor, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
+- Visit the [Git installer for Windows](https://git-scm.com/download/win) download page.
+  - Click the link for the "32-bit Git for Windows Setup" installer to download it.
+- Run the installer. Click through the installer using all the default options.
 
 ### *3.* Install Node.js
 
-* Go to [https://nodejs.org/](https://nodejs.org/) and install Node.js LTS package
-* Reopen your Rails Command Shell
-
-Check your version of node
+- Visit [nodejs.org/en/download](https://nodejs.org/en/download/).
+  - Select the "LTS" version tab, selected by default.
+  - From the "Windows Installer (.msi)" row, click the link for the 32-bit architecture to download it.
+- Run the installer. Click through the installer using all the default options.
+- Open the Windows Command Prompt and run the following command to check if the installation was successful. It should output a version number like `v12.16.0` (your version may differ).
 
 {% highlight sh %}
 node --version
 {% endhighlight %}
 
-Make sure it is displaying version number.
+- Close the Windows Command Prompt app.
 
-### *4.* Install yarn
+#### *3a.* Install yarn
 
-Download [yarn](https://yarnpkg.com/lang/en/docs/install/#windows-stable) and install it. Click through the installer using the default options.
+- Visit the [yarn download page](https://yarnpkg.com/lang/en/docs/install/#windows-stable).
+- Download the installer by clicking the "Download installer" button.
+- Run the installer. Click through the installer using all the default options.
+- Open the Windows Command Prompt and run the following command to check if the installation was successful. It should output a version number like `1.22.0` (your version may differ).
 
-### *5.* Check the environment
+{% highlight sh %}
+yarn --version
+{% endhighlight %}
+
+- Close the Windows Command Prompt app.
+
+### *4.* Install SQLite
+
+- Visit [sqlite.org/download.html](https://sqlite.org/download.html)
+- Scroll down to the "Precompiled Binaries for Windows" section.
+- Download the `sqlite-dll-win32-x86-xxxxxxx.zip` package (where `xxxxxxx` is the most recent version number).
+- Download the `sqlite-tools-win32-x86-xxxxxxx.zip` package (where `xxxxxxx` is the most recent version number).
+- Extract the packages.
+- In Windows Explorer, open "This Computer" in the sidebar and open the `C:` local disk.
+- Create a directory called `sqlite3`.
+- Copy the files from the extracted packages into the `C:\sqlite3` directory. As a result you will have the following files in that directory: `sqldiff`, `sqlite3.def`, `sqlite3.dll`, `sqlite3` and `sqlite3_analyzer`.
+- Open the Windows Command Prompt and run the following command to add the `c:\sqlite3` directory to the system PATH.
+  - For Command Prompt users:
+    - `setx path "%path%;c:\sqlite3"`
+  - For Powershell users:
+    - `setx path "c:\sqlite3"`
+- Close the Windows Command Prompt app.
+- Re-open the Windows Command Prompt and run the following command to check if the installation was successful. It should output a version number like `3.31.1` (your version may differ).
+{% highlight sh %}
+sqlite3 --version
+{% endhighlight %}
+
+- Close the Windows Command Prompt app.
+
+### *5.* Install Rails
+
+- Open the Windows Command Prompt run the following command. This will install the Rails and bundler gems on your computer.
+
+{% highlight sh %}
+gem install rails bundler --no-document
+{% endhighlight %}
+
+- Open the Windows Command Prompt and run the following command to check if the installation was successful. It should output a version number like `Rails 6.0.2.1` (your version may differ).
+
+{% highlight sh %}
+rails --version
+{% endhighlight %}
+
+_If you run into any problems during this step, check the [Possible errors](#possible-errors-during-installation) section for possible solutions._
+
+### *6.* Install a text editor to edit code files
+
+For the workshop we recommend the text editor Atom.
+
+- Visit the [Atom download page](https://github.com/atom/atom/releases/latest).
+  - Click the `AtomSetup.exe` link to download Atom.
+  - Run the installer. Click through the installer using all the default options.
+
+If you are using Windows Vista or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2). Just to make sure that you're not mixing up using your command prompt or text-editor: change the theme of your Sublime text-editor, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
+
+### *7.* Check the environment
 
 Check that everything is working by running the application generator command.
 
@@ -321,9 +268,11 @@ cd myapp
 rails server
 {% endhighlight %}
 
-Go to `http://localhost:3000` in your browser, and you should see the 'Yay! You're on Rails!' page.
+Go to [`http://localhost:3000`](http://localhost:3000) in your browser, and you should see the "Yay! You're on Rails!" page.
 
 Now you should have a working Ruby on Rails programming setup. Congrats!
+
+_If you run into any problems during this step, check the [Possible errors](#possible-errors-during-installation) section for solutions._
 
 **Coach:** We recommend to verify by using the scaffold command and inputting data with the generated page with coaches to ensure everything is working. Also: remove the test app `myapp` to make super sure no-one is working in the wrong folder, following the steps of the workshop.
 
@@ -492,5 +441,77 @@ in which you can later put your code.
     For example, if the tutorial wants you to visit `http://localhost:3000/posts`, you would open the URL `http://node3.codenvy.io:33079/posts` instead.
 
 ![](/images/codenvy/codenvy-app-url.png)
+
+## Possible errors during installation
+
+### Gem::RemoteFetcher error
+
+If you get this error when running `rails new railsgirls` or `gem update rails`:
+
+{% highlight sh %}
+Gem::RemoteFetcher::FetchError: SSL_connect returned=1 errno=0 state=SSLv3 read
+server certificate B: certificate verify failed (https://rubygems.org/gems/i18n-0.6.11.gem)
+{% endhighlight %}
+
+This means you have an older version of Rubygems and will need to update it manually first verify your Rubygems version
+
+{% highlight sh %}
+gem -v
+{% endhighlight %}
+
+If it is lower than `2.6.5` you will need to manually update it:
+
+First download the [ruby-gems-update gem](https://rubygems.org/gems/rubygems-update-2.6.11.gem). Move the file to `c:\\rubygems-update-2.6.11.gem` then run:
+
+{% highlight sh %}
+gem install --local c:\\rubygems-update-2.6.11.gem
+{% endhighlight %}
+
+{% highlight sh %}
+update_rubygems --no-document
+{% endhighlight %}
+
+{% highlight sh %}
+gem uninstall rubygems-update -x
+{% endhighlight %}
+
+Check your version of rubygems
+
+{% highlight sh %}
+gem -v
+{% endhighlight %}
+
+Make sure it is equal or higher than `2.6.11`. Re-run the command that was failing previously.
+
+If you are still running into problems you can always find the latest version of rubygems online at [rubygems.org](https://rubygems.org/pages/download). If you click on **GEM** you will get the latest version.
+
+### During bundle install
+
+The `Gem::RemoteFetcher::FetchError: SSL_connect` can also occur during the `bundle install` stage when creating a new rails app.
+
+The error will make mention of [bit.ly/ruby-ssl](http://bit.ly/ruby-ssl). What is relevant for Windows users at this point is [this GitHub gist](https://gist.github.com/867550). The described manual way has proven to be successful to solve the `bundle install` error.
+
+### 'x64_mingw' is not a valid platform Error
+
+Sometimes you get the following error when running `rails server`:
+`'x64_mingw' is not a valid platform` If you experience this error after using the RailsInstaller you have to do a small edit to the file `Gemfile`:
+
+Look at the bottom of the file. You will probably see something like this as one of the last lines in the file:
+`gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]`. If you have this line with `:x64_mingw`, then please delete the `:x64_mingw` part. In the end it should just say:
+`'tzinfo-data', platforms: [:mingw, :mswin]`
+
+After you did that, please use your Command Prompt again and type `bundle update`.
+
+### The sqlite3 gem failed to install
+
+When running `rails new myapp` the `sqlite3` gem may fail to install. When this happens, first close the Windows Command Prompt app. Then re-open the Windows Command Prompt.
+
+Next, install the `sqlite3` gem separately from the `rails` gem by running the following command:
+
+{% highlight sh %}
+gem install sqlite3
+{% endhighlight %}
+
+If this succeeds, remove the `myapp` directory the rails installer created and return to the installation instructions, to run `rails new myapp` again.
 
 {% include other-guides.md page="install" %}

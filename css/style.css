@@ -1,5 +1,5 @@
 html {
-  background: #F4F4F4;
+  background: #f4f4f4;
 }
 
 body {
@@ -22,13 +22,14 @@ h2 {
   font-size: 2em;
   margin: 1em 0 0.5em;
 }
+
 h2 em {
   position: absolute;
   display: inline-block;
   margin-left: -1.5em;
   font-style: normal;
   font-weight: bold;
-  color: #CCC;
+  color: #ccc;
 }
 
 h3 {
@@ -54,11 +55,11 @@ ul li {
 }
 
 a {
-  color: #E0330C;
+  color: #e0330c;
 }
 
 a:hover {
-  color: #E0330C;
+  color: #e0330c;
   text-decoration: underline;
 }
 
@@ -72,7 +73,7 @@ table {
 }
 
 header {
-  height: 70px;
+  min-height: 70px;
   color: #fff;
   padding-top: 50px;
   background: #d3360b;
@@ -85,7 +86,6 @@ header #logo {
 
 nav {
   margin: 0 0 0 250px;
-  padding-top: 12px;
 }
 
 nav a {
@@ -102,11 +102,11 @@ nav a:after {
   content: url(../images/star.png);
 }
 
-nav a:last-child: after {
+nav a:last-child:after {
   content: none;
 }
 
-nav a:hover{
+nav a:hover {
   text-decoration: underline;
 }
 
@@ -115,11 +115,10 @@ footer {
   overflow: hidden;
   width: 100%;
   padding: 40px 0;
-  background: #F4F4F4;
+  background: #f4f4f4;
   line-height: 1.5;
   text-align: center;
 }
-
 
 footer a {
   color: #111;
@@ -146,7 +145,6 @@ footer a {
 }
 
 .home li i {
-  display: inline-block;
   width: 70px;
   height: 70px;
   background-color: #d0d0d0;
@@ -159,16 +157,16 @@ footer a {
   font-style: normal;
   font-weight: bold;
   border-radius: 70px;
-  transition: 0.10s background-color ease-in;
-  -webkit-transition: 0.10s background-color ease-in;
-  -moz-transition: 0.10s background-color ease-in;
+  transition: 0.1s background-color ease-in;
+  -webkit-transition: 0.1s background-color ease-in;
+  -moz-transition: 0.1s background-color ease-in;
 }
 
 .home li:hover i {
   background-color: #d3360b;
-  transition: 0.10s background-color ease-in;
-  -webkit-transition: 0.10s background-color ease-in;
-  -moz-transition: 0.10s background-color ease-in;
+  transition: 0.1s background-color ease-in;
+  -webkit-transition: 0.1s background-color ease-in;
+  -moz-transition: 0.1s background-color ease-in;
 }
 
 .home li > a,
@@ -180,7 +178,7 @@ footer a {
 .home h3 {
   margin: 0 0 0.5em;
   margin-left: 90px;
-  color: #E0330C;
+  color: #e0330c;
 }
 
 .home li:hover h3 {
@@ -206,9 +204,10 @@ footer a {
   background: url(../images/guides-hero.png) right 80px no-repeat;
 }
 
-i.icon-text-editor, i.icon-prompt, i.icon-browser {
+i.icon-text-editor,
+i.icon-prompt,
+i.icon-browser {
   background-position: 0 0;
-  display: inline-block;
   margin-left: -70px;
   float: left;
   width: 50px;
@@ -216,15 +215,15 @@ i.icon-text-editor, i.icon-prompt, i.icon-browser {
   line-height: 50px;
 }
 i.icon-text-editor {
-  background-image: url("/images/icon-text-editor.png");
+  background-image: url('/images/icon-text-editor.png');
 }
 
-i.icon-prompt{
-  background-image: url("/images/icon-prompt.png");
+i.icon-prompt {
+  background-image: url('/images/icon-prompt.png');
 }
 
 i.icon-browser {
-  background-image: url("/images/icon-browser.png");
+  background-image: url('/images/icon-browser.png');
 }
 
 .highlight {
@@ -239,7 +238,9 @@ i.icon-browser {
   white-space: pre;
 }
 
-i.icon-small-text-editor, i.icon-small-prompt, i.icon-small-browser {
+i.icon-small-text-editor,
+i.icon-small-prompt,
+i.icon-small-browser {
   background-position: 0 0;
   margin-left: 0px;
   margin-top: 15px;
@@ -250,13 +251,13 @@ i.icon-small-text-editor, i.icon-small-prompt, i.icon-small-browser {
   float: left;
 }
 i.icon-small-text-editor {
-  background-image: url("/images/icon-small-text-editor.png");
+  background-image: url('/images/icon-small-text-editor.png');
 }
-i.icon-small-prompt{
-  background-image: url("/images/icon-small-prompt.png");
+i.icon-small-prompt {
+  background-image: url('/images/icon-small-prompt.png');
 }
 i.icon-small-browser {
-  background-image: url("/images/icon-small-browser.png");
+  background-image: url('/images/icon-small-browser.png');
 }
 
 .os-specific {
@@ -274,60 +275,124 @@ i.icon-small-browser {
 
 /* Correct padding on smaller screens */
 @media (max-width: 767px) {
- header, footer{
-   margin-left:-20px;
-   margin-right:-20px;
-   padding-left:20px;
-   padding-right:20px;
- }
+  header,
+  footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 /* Don't show the homepage image on mobile */
 @media (max-width: 480px) {
   .hero {
     padding: 20px 0;
-    background:none;
+    background: none;
   }
 }
 
 kbd {
-    padding: .1em .6em;
-    border: 1px solid #ccc;
-    font-size: 11px;
-    font-family: Arial,Helvetica,sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
-    -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
-    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
-    border-radius: 3px;
-    display: inline-block;
-    margin: 0 .1em;
-    text-shadow: 0 1px 0 #fff;
-    line-height: 1.5em;
-    white-space: nowrap;
+  padding: 0.1em 0.6em;
+  border: 1px solid #ccc;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 0 0.1em;
+  text-shadow: 0 1px 0 #fff;
+  line-height: 1.5em;
+  white-space: nowrap;
 }
 
 .github-corner:hover .octo-arm {
-  animation:octocat-wave 560ms ease-in-out
+  animation: octocat-wave 560ms ease-in-out;
 }
 
 @keyframes octocat-wave {
-  0%, 100% {
-    transform:rotate(0)
+  0%,
+  100% {
+    transform: rotate(0);
   }
-  20%,60% {
-    transform:rotate(-25deg)
+  20%,
+  60% {
+    transform: rotate(-25deg);
   }
-  40%,80% {
-    transform:rotate(10deg)
+  40%,
+  80% {
+    transform: rotate(10deg);
   }
 }
-@media (max-width:500px) {
+
+@media (max-width: 500px) {
   .github-corner:hover .octo-arm {
-    animation:none
+    animation: none;
   }
   .github-corner .octo-arm {
-    animation:octocat-wave 560ms ease-in-out
+    animation: octocat-wave 560ms ease-in-out;
   }
+}
+
+
+.navbar .brand {
+  height: 24px;
+  line-height: 24px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: none;
+}
+
+.navbar .btn-navbar {
+  display: block;
+  float: left;
+  height: 24px;
+  padding: 7px 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #ffffff;
+  text-shadow: none;
+  background-color: inherit;
+  border: none;
+  box-shadow: none;
+  background-image: none;
+}
+
+.navbar .btn-navbar:hover,
+.navbar .btn-navbar:focus,
+.navbar .btn-navbar:active,
+.navbar .btn-navbar.active,
+.navbar .btn-navbar.disabled,
+.navbar .btn-navbar[disabled] {
+  color: #ffffff;
+  background-color: inherit;
+  *background-color: inherit;
+}
+
+.navbar .btn-navbar .icon-bar {
+  display: block;
+  width: 18px;
+  height: 4px;
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.navbar .nav > li > a {
+  float: none;
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: #f6e58d;
+  text-decoration: none;
+  background-color: transparent;
 }
