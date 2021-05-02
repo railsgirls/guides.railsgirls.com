@@ -391,7 +391,8 @@ kbd {
 }
 
 .navbar .nav > li > a:focus,
-.navbar .nav > li > a:hover {
+.navbar .nav > li > a:hover,
+nav a:hover {
   color: #f6e58d;
   text-decoration: none;
   background-color: transparent;
