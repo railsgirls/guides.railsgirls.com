@@ -1,10 +1,10 @@
 html {
-  background: #f4f4f4;
+  background-color: #f4f4f4;
 }
 
 body {
-  margin: 0px;
-  background: #fff;
+  margin: 0;
+  background-color: #fff;
   color: #333;
   text-rendering: optimizeLegibility;
   font-size: 15px;
@@ -88,7 +88,7 @@ nav {
   margin: 0 0 0 250px;
 }
 
-nav a {
+nav a:link, nav a:active {
   color: #fff;
   text-decoration: none;
   font-weight: 300;
@@ -97,12 +97,12 @@ nav a {
   margin-left: 15px;
 }
 
-nav a:after {
+nav a::after {
   margin-left: 15px;
-  content: url(../images/star.png);
+  content: url("../images/star.png");
 }
 
-nav a:last-child:after {
+nav a:last-child::after {
   content: none;
 }
 
@@ -130,7 +130,7 @@ footer a {
 }
 
 .home {
-  list-style: none;
+  list-style-type: none;
   margin: 0;
 }
 
