@@ -63,7 +63,7 @@ For updates and more, follow [@railsgirls](https://twitter.com/railsgirls)
 
 ## Website & Blog
 
-Official website and blog for Rails Girls movement can be found at https://railsgirls.com
+Official website and blog for Rails Girls movement can be found at http://railsgirls.com
 
 ## E-mail list
 
