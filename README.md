@@ -1,6 +1,6 @@
 # Rails Girls Guides
 
-<a href="https://railsgirls.com" target="_blank"><img alt="Rails Girls" src="/images/rails-girls-logo.png" width="15%" align="right"></a>
+<a href="http://railsgirls.com" target="_blank"><img alt="Rails Girls" src="/images/rails-girls-logo.png" width="15%" align="right"></a>
 
 The purpose of Rails Girls is to give tools for women to understand technology. The Rails Girls events do this by providing a great first experience on building the Internet.
 
