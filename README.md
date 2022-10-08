@@ -10,7 +10,7 @@ You can use our materials and instructions to roll out your own workshop in your
 
 ## Quick start
 
-View the guides at http://guides.railsgirls.com or clone this repo and install & run [jekyll](https://github.com/mojombo/jekyll)
+View the guides at https://guides.railsgirls.com or clone this repo and install & run [jekyll](https://github.com/mojombo/jekyll)
 
 ### Installing jekyll
 
@@ -55,7 +55,7 @@ You might find some useful hints in this jekyll issue if it's not working as exp
 
 ## Contributing a Guide
 
-To contribute a guide, view the instructions at http://guides.railsgirls.com/contributing
+To contribute a guide, view the instructions at https://guides.railsgirls.com/contributing
 
 ## Twitter
 
