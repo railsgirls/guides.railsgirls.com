@@ -6,7 +6,7 @@ The purpose of Rails Girls is to give tools for women to understand technology. 
 
 Rails Girls was founded at the end of 2010 in Helsinki. Originally intended as a one-time event, we never thought to see so many chapters from all around the world! This guide will help you get started.
 
-You can use our materials and instructions to roll out your own workshop in your city, workplace or kitchen! Read more about Rails Girls at https://railsgirls.com
+You can use our materials and instructions to roll out your own workshop in your city, workplace or kitchen! Read more about Rails Girls at http://railsgirls.com
 
 ## Quick start
 
