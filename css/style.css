@@ -7,7 +7,7 @@ body {
   background: #fff;
   color: #333;
   text-rendering: optimizeLegibility;
-  font-size: 15px;
+  font-size: 0.93em;
   line-height: 1.6;
 }
 
@@ -44,7 +44,7 @@ h4 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 1em;
   margin-bottom: 1em;
   line-height: 1.5;
 }
@@ -73,7 +73,7 @@ table {
 }
 
 header {
-  min-height: 70px;
+  min-height: 4.375rem;
   color: #fff;
   padding-top: 50px;
   background: #d3360b;
@@ -92,7 +92,7 @@ nav a {
   color: #fff;
   text-decoration: none;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.25rem;
   letter-spacing: 1px;
   margin-left: 15px;
 }
