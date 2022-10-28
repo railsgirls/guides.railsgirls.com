@@ -2,15 +2,16 @@
 
 <a href="http://railsgirls.com" target="_blank"><img alt="Rails Girls" src="/images/rails-girls-logo.png" width="15%" align="right"></a>
 
-The purpose of Rails Girls is to give tools for women to understand technology. The Rails Girls events do this by providing a great first experience on building the Internet.
+The purpose of Rails Girls is to provide tools for women to understand technology. The Rails Girls conduct events and do this by providing a great begineer experience on building the Internet.
 
-Rails Girls was founded at the end of 2010 in Helsinki. Originally intended as a one-time event, we never thought to see so many chapters from all around the world! This guide will help you get started.
+Rails Girls was found by the end of 2010 in Helsinki. Originally intended as a one-time event, Rails Girls never thought to see so many chapters from all around the world! This guide will help you get started.
 
-You can use our materials and instructions to roll out your own workshop in your city, workplace or kitchen! Read more about Rails Girls at http://railsgirls.com
+You can use our materials and instructions to roll out your own workshop in your city, workplace or kitchen! 
+Read more on Rails Girls at http://railsgirls.com
 
 ## Quick start
 
-View the guides at https://guides.railsgirls.com or clone this repo and install & run [jekyll](https://github.com/mojombo/jekyll)
+View the guidelines at https://guides.railsgirls.com or clone this repo and install & run [jekyll](https://github.com/mojombo/jekyll)
 
 ### Installing jekyll
 
@@ -24,7 +25,7 @@ $ bundle install
 
 ### Pygments and Code Highlighting
 
-The guides use the [pygments](https://pygments.org/) library to do syntax highlighting. If you don't have it installed you won't be able to see the highlight sections like the following:
+The guidelines use the [pygments](https://pygments.org/) library to do syntax highlighting. If you don't have it installed you won't be able to see the highlight sections like the following:
 
 ```
 {% highlight %}
@@ -43,7 +44,7 @@ $ bundle exec jekyll server --watch
 
 Wrap keyboard shortcuts with [kbd](https://www.w3.org/wiki/HTML/Elements/kbd) HTML tag.
 
-To make posts consistent in style use `Ctrl+C` over `CTRL-c`/`ctrl+c`
+To make posts be consistent in style use `Ctrl+C` over `CTRL-c`/`ctrl+c`
 
 ```
 To shut down the server you can hit <kbd>Ctrl</kbd>+<kbd>C</kbd>
