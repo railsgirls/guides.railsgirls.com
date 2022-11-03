@@ -79,4 +79,4 @@ Global mailing list for Rails Girls events can be found at https://groups.google
 ..and all the other coaches and people making Rails Girls awesome. Please add yourself!  
 
 ## LICENSE
-![License: CC BY-SA 3.0](https://licensebuttons.net/l/by-sa/3.0/80x15.png)
+[![License: CC BY-SA 3.0](https://licensebuttons.net/l/by-sa/3.0/80x15.png)](https://creativecommons.org/licenses/by-sa/2.0/)
