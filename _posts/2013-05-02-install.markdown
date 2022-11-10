@@ -386,6 +386,8 @@ You will need to confirm your email and then fill in your details.
 
 The Ruby on Rails Repl has all the software we need for the workshop already preinstalled.
 
+https://user-images.githubusercontent.com/424772/201210908-aadc65bf-0574-4970-b60d-5bd7f0939d62.mov
+
 To create one, log into [replit.com] and click on 'Create'.
 
 ![Dashboard with the Create button pointed to by arrows](/images/replit/create-app.png)
