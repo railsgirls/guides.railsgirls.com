@@ -120,9 +120,9 @@ If you need more information than the following to install yarn, please check [y
 
 ### _5._ Install a text editor to edit code files
 
-For the workshop we recommend the text editor Atom.
+For the workshop we recommend the text editor Visual Studio Code.
 
-* [Download Atom and install it](https://atom.io/)
+* [Download VS Code and install it](https://code.visualstudio.com).
 
 If you are using Mac OS X 10.7 or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2). Just to make sure that you're not mixing up using your terminal or text-editor: change the theme of your Sublime text-editor, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
 
