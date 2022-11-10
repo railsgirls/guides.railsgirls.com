@@ -42,10 +42,10 @@ If your version number starts with 10.9, 10.10, 10.11 or higher, follow these st
 xcode-select --install
 {% endhighlight %}
 
-#### *3a2.* Install [Homebrew](http://brew.sh/):
+#### *3a2.* Install [Homebrew](https://brew.sh/):
 
 {% highlight sh %}
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 {% endhighlight %}
 
 #### *3a3.* Install [rbenv](https://github.com/rbenv/rbenv):
