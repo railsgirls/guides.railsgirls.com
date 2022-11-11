@@ -372,76 +372,58 @@ Instead of installing all tools on your machine, you can also set up a developme
 
 ## Using a Cloud Service
 
-Instead of installing Ruby on Rails and an editor on your computer, you can use a webservice for development. All you need is a browser and an internet connection. This guide explains how to get started with [codenvy.io](https://codenvy.io). If you're using a different service, they may use a different wording, but the process is usually pretty similar.
+Instead of installing Ruby on Rails and an editor on your computer, you can use a webservice for development. All you need is a browser and an internet connection. This guide explains how to get started with [replit.com]. If you're using a different service, they may use a different wording, but the process is usually pretty similar.
 
 ### *1.* Create an account
 
-Go to [codenvy.io](https://codenvy.io) and signup for free.
+Go to [replit.com] and sign up for free.
+
 You will need to confirm your email and then fill in your details.
 
-![](/images/codenvy/codenvy-create-one.png)
+![Log in screen](/images/replit/create-account.png)
 
-### *2.* Setup a workspace for Ruby on Rails
+### *2.* Create a Ruby on Rails Repl
 
-The Ruby on Rails Workspace has all the software we need for the workshop already preinstalled.
-To create a workspace, log into [codenvy.io](https://codenvy.io) and click on 'Dashboard'.
-If no workspace has been created yet, the 'New Workspace' view is displayed.
+The Ruby on Rails Repl has all the software we need for the workshop already preinstalled.
 
-![](/images/codenvy/codenvy-dashboard-create-workspace.png)
+https://user-images.githubusercontent.com/424772/201210908-aadc65bf-0574-4970-b60d-5bd7f0939d62.mov
 
-In the 'New Workspace' view, a few settings have to be made.
+To create one, log into [replit.com] and click on 'Create'.
 
-* Give the workspace a name of your choice. In the example this is "railsgirls".
-* From "Select Stack", select "Quick Start", scroll down and select "Rails"
-* Now click on 'Create' to create the workspace (it takes a moment for the process to finish)
+![Dashboard with the Create button pointed to by arrows](/images/replit/create-app.png)
 
-![](/images/codenvy/codenvy-rails-stack.png)
+In the field under Template, type in `rails`.
 
-* Codenvy creates a folder '/projects' during initialization,
-in which you can later put your code.
+![Search dialog for Repl templates](/images/replit/search-rails.png)
 
-![](/images/codenvy/codenvy-workspace-layout.png)
+1. Select the `Rails` option from Templates.
+2. It generates a name for your Ruby on Rails app but you can change it in the Title field (maybe to "RailsGirls").
+3. Click the `+ Create Repl` button
 
-* Observation: Even thought there is a Create Project button in the Explorer, it is better to use the console to create the app project (see next step #3).
+![Create the Rails Repl dialog](/images/replit/create-rails-repl.png)
 
-### *3.* Find and restart your workspace
+### 3. Coding with your project
 
-* If you've just created your project, you can probably skip these steps - they're good to know if you login to Codenvy again later
-* If you haven't used your workspace or projects in a while, they might have been shutdown due to inactivity.
-  You will notice an empty circle displayed next to the workspace name.
+* On the left hand side, you find a file browser where you can navigate your directories and file.
+* In the middle, you find the editor where you can modify your files.
+* Click the `Run` bottom at the top to start up the freshly installed Ruby on Rails app.
 
-![](/images/codenvy/start-workspace.jpg)
+![Run button highlighted to start the Rails app](images/replit/run.png)
 
-* In this case simply click on the name of the workspace. It will then be restarted (which can take a while) and afterwards opened.
-* If you have restarted a workspace, you need to run the `bundle` command again in the directory of your Rails project (you will learn more about the command in the app tutorial)
+* You'll see a mini web browser to the top right showing you your fresh Rails app running the default homepage with the Rails logo.
 
-### *4.* Coding with your project
+![Rails app running](/images/replit/rails-running.png)
 
-![](/images/codenvy/codenvy-layout-with-project.png)
+* At the bottom right, when you click the `Shell` button you'll find the terminal where you can run commands.
 
-* On the left hand side, you find a file browser where you can navigate your directories and file
-* In the middle, you find the editor where you can modify your files
-* At the bottom, you find the terminal where you can run commands
-* Everything you need is right here in you browser window - you do not need to start an editor or terminal anywhere else
-* If you are following a guide or tutorial, use the commands for Linux even if you are on a Windows computer - your operating system does not matter, since all commands are run on your project's machine in the cloud, which is running Linux
-* If a guide or tutorial asks you to run a rails command that contains `rails` or `rake`, prepend `bundle exec` to this command, e. g. `bundle exec rails db:migrate`. Exception: the `rails new` command is not prefixed.
-* If a guide or tutorial asks you to start the rails server with `rails server` or `rails s`, append `-b 0.0.0.0` to this command so that you run `rails server -b 0.0.0.0`
-* If a guide or tutorial asks you to point your browser to something like `http://localhost:3000`, follow these instructions instead:
+![Shell](/images/replit/shell.png)
 
-  * Go to ‘[Workspaces](https://codenvy.io/dashboard/#/workspaces)’ and click your running workspace
-    ![](/images/codenvy/workspace-settings.jpg)
+### 4. Returning to your project
 
-  * Click ‘Runtime’, then ‘dev-machine’ to view the details
-    ![](/images/codenvy/runtime.jpg)
+When you log out and log back in to [replit.com], you can find your RailsGirls app in the middle of the dashboard. Just click it to go back into the project.
 
-  * Scroll down to 'Servers', and copy the Address entry in the line starting
-    with 'server-3000-tcp'
-    ![](/images/codenvy/get-workspace-ip.jpg)
-
-    For example, if the tutorial wants you to visit `http://localhost:3000/posts`, you would open the URL `http://node3.codenvy.io:33079/posts` instead.
-
-![](/images/codenvy/codenvy-app-url.png)
-
+![Dashboard showing button to return to Rails project](/images/replit/re-open.png)
+ 
 ## Possible errors during installation
 
 ### Gem::RemoteFetcher error
@@ -515,3 +497,5 @@ gem install sqlite3
 If this succeeds, remove the `myapp` directory the rails installer created and return to the installation instructions, to run `rails new myapp` again.
 
 {% include other-guides.md page="install" %}
+
+[replit.com]: https://replit.com
