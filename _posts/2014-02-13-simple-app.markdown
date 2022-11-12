@@ -366,7 +366,7 @@ to
 
 In your browser, add new idea with a picture. When you upload a picture it doesn't look nice because it only shows a path to the file, so let's fix that.
 
-Open `app/views/ideas/show.html.erb` and change
+Open `app/views/ideas/_idea.html.erb` and change
 
 {% highlight erb %}
 <%= @idea.picture %>
