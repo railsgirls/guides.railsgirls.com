@@ -5,50 +5,52 @@ permalink: install
 ---
 
 # Setup recipe for Rails Girls
+
 <span class="muted">Cooking time: 5min active / 15-30min passive</span>
 
 To build apps and other things with Ruby on Rails, we need to setup some software and the developer environment for your computer.
 
 Follow the instructions for your operating system. If you run into any problems, don&#8217;t panic. Inform us at the event and we can solve it together.
 
-* [Setup for macOS](#setup-for-os-x)
-* [Setup for Windows](#setup-for-windows)
-* [Setup for Linux](#setup-for-linux)
-* [Alternative Installment for all OS](#virtual-machine)
-* [Using a Cloud Service - No Installation Required](#using-a-cloud-service)
+- [Setup for macOS](#setup-for-os-x)
+- [Setup for Windows](#setup-for-windows)
+- [Setup for Linux](#setup-for-linux)
+- [Alternative Installment for all OS](#virtual-machine)
+- [Using a Cloud Service - No Installation Required](#using-a-cloud-service)
 
 <hr />
 
 ## Setup for macOS
 
-### *1.* Let&#8217;s check the version of the operating system.
+### _1._ Let&#8217;s check the version of the operating system.
 
-Click the Apple menu and choose *About this Mac*.
+Click the Apple menu and choose _About this Mac_.
 
 ![Apple menu](/images/1.png "Apple menu")
 
-### *2.* In the window you will find the version of your operating system.
+### _2._ In the window you will find the version of your operating system.
+
 If your version number starts with 10.6, 10.7, 10.8, 10.9, 10.10, 10.11 or higher this guide is for you. If it&#8217;s something else, we can setup your machine at the event.
 
 ![About this Mac dialog](/images/2.png "About this Mac dialog")
 
-### *3a.* If your OS X / macOS version is 10.9 or higher:
+### _3a._ If your OS X / macOS version is 10.9 or higher:
 
 If your version number starts with 10.9, 10.10, 10.11 or higher, follow these steps. We are installing homebrew and rbenv.
 
-#### *3a1.* Install Command line tools on terminal:
+#### _3a1._ Install Command line tools on terminal:
 
 {% highlight sh %}
 xcode-select --install
 {% endhighlight %}
 
-#### *3a2.* Install [Homebrew](https://brew.sh/):
+#### _3a2._ Install [Homebrew](https://brew.sh/):
 
 {% highlight sh %}
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 {% endhighlight %}
 
-#### *3a3.* Install [rbenv](https://github.com/rbenv/rbenv):
+#### _3a3._ Install [rbenv](https://github.com/rbenv/rbenv):
 
 {% highlight sh %}
 brew update
@@ -58,6 +60,14 @@ brew update
 brew install rbenv
 {% endhighlight %}
 
+Find out what your `shell` is:
+
+{% highlight sh %}
+basename -a "$SHELL"
+{% endhighlight %}
+
+If the output is `bash`:
+
 {% highlight sh %}
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 {% endhighlight %}
@@ -66,12 +76,22 @@ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 source ~/.bash_profile
 {% endhighlight %}
 
-#### *3a4.* Build Ruby with rbenv:
+If the output is `zsh`:
+
+{% highlight sh %}
+echo 'eval "$(rbenv init -)"' >> ~/.zshrc
+{% endhighlight %}
+
+{% highlight sh %}
+source ~/.zshrc
+{% endhighlight %}
+
+#### _3a4._ Build Ruby with rbenv:
 
 You can find the newest version of Ruby with the command "rbenv install -l".
 
 {% highlight sh %}
-rbenv install 2.7.0
+rbenv install 3.0.4
 {% endhighlight %}
 
 If you got "OpenSSL::SSL::SSLError: ... : certificate verify failed" error, try it this way.
@@ -84,23 +104,43 @@ brew install curl-ca-bundle
 cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
 {% endhighlight %}
 
-#### *3a5.* Set default Ruby:
+#### _3a5._ Set default Ruby:
 
 {% highlight sh %}
-rbenv global 2.7.0
+rbenv global 3.0.4
 {% endhighlight %}
 
-#### *3a6.* Install rails:
+{% highlight sh %}
+rbenv local 3.0.4
+{% endhighlight %}
+
+{% highlight sh %}
+rbenv shell 3.0.4
+{% endhighlight %}
+
+Check that your `ruby` version matches what you installed:
+
+{% highlight sh %}
+ruby --version
+ruby 3.0.4p208 (2022-04-12 revision 3fa771dded) [arm64-darwin20]
+{% endhighlight %}
+
+#### _3a6._ Install rails:
 
 {% highlight sh %}
 gem install rails --no-document
 {% endhighlight %}
 
-### *3b.* If your OS X version is 10.6, 10.7, or 10.8:
+{% highlight sh %}
+rbenv rehash
+{% endhighlight %}
+
+### _3b._ If your OS X version is 10.6, 10.7, or 10.8:
+
 Download the RailsInstaller for your version of OS X:
 
-* [RailsInstaller for 10.7 and 10.8](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz) <span class="muted">(325MB)</span>
-* [RailsInstaller for 10.6](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.6.app.tgz) <span class="muted">(224MB)</span>
+- [RailsInstaller for 10.7 and 10.8](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz) <span class="muted">(325MB)</span>
+- [RailsInstaller for 10.6](http://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.6.app.tgz) <span class="muted">(224MB)</span>
 
 Double click the downloaded file and it will unpack it into the current directory. Double click the the newly unpacked 'RailsInstaller-1.0.4-osx-10.7.app' or 'RailsInstaller-1.0.4-osx-10.6.app' and follow the instructions. It will open a README file with 'Rails Installer OS X' at the top. Please **ignore** the instructions in this file.
 
@@ -122,11 +162,11 @@ If you need more information than the following to install yarn, please check [y
 
 For the workshop we recommend the text editor Visual Studio Code.
 
-* [Download VS Code and install it](https://code.visualstudio.com).
+- [Download VS Code and install it](https://code.visualstudio.com).
 
 If you are using Mac OS X 10.7 or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2). Just to make sure that you're not mixing up using your terminal or text-editor: change the theme of your Sublime text-editor, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
 
-### *5.* Check the environment
+### _5._ Check the environment
 
 Check that everything is working by running the application generator command.
 
@@ -162,21 +202,21 @@ To install Rails for Windows we'll need to install Ruby and several supporting t
 
 _During these steps we'll ask you to open and close the Windows Command Prompt every now and then. This can be either the "Command Prompt" or "Powershell" app. We ask you to close and re-open it, because when the Command Prompt starts it loads in the environment. When we install a new app, the environment does not get automatically updated in the Command Prompt. To test if the installation was successful we need to restart the Command Prompt and load the new environment._
 
-### *1.* Install Ruby
+### _1._ Install Ruby
 
 - Download the [RubyInstaller](https://rubyinstaller.org/downloads/) for Windows.
-  - [Direct link to Ruby 2.6.5 installer with Devkit](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.6.5-1/rubyinstaller-devkit-2.6.5-1-x86.exe) for 32-bit architecture.
+  - [Direct link to Ruby 3.0.4 installer with Devkit](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.0.4-1/rubyinstaller-devkit-3.0.4-1-x86.exe) for 32-bit architecture.
 - Run the installer. Click through the installer using all the default options.
   - When prompted with the "MSYS2" installer, enter `1` and press Enter.
   - When prompted with the same "MSYS2" installer again, only press Enter.
 
-### *2.* Install Git
+### _2._ Install Git
 
 - Visit the [Git installer for Windows](https://git-scm.com/download/win) download page.
   - Click the link for the "32-bit Git for Windows Setup" installer to download it.
 - Run the installer. Click through the installer using all the default options.
 
-### *3.* Install Node.js
+### _3._ Install Node.js
 
 - Visit [nodejs.org/en/download](https://nodejs.org/en/download/).
   - Select the "LTS" version tab, selected by default.
@@ -190,7 +230,7 @@ node --version
 
 - Close the Windows Command Prompt app.
 
-#### *3a.* Install yarn
+#### _3a._ Install yarn
 
 - Visit the [yarn download page](https://yarnpkg.com/lang/en/docs/install/#windows-stable).
 - Download the installer by clicking the "Download installer" button.
@@ -203,7 +243,7 @@ yarn --version
 
 - Close the Windows Command Prompt app.
 
-### *4.* Install SQLite
+### _4._ Install SQLite
 
 - Visit [sqlite.org/download.html](https://sqlite.org/download.html)
 - Scroll down to the "Precompiled Binaries for Windows" section.
@@ -220,13 +260,13 @@ yarn --version
     - `setx path "c:\sqlite3"`
 - Close the Windows Command Prompt app.
 - Re-open the Windows Command Prompt and run the following command to check if the installation was successful. It should output a version number like `3.31.1` (your version may differ).
-{% highlight sh %}
-sqlite3 --version
-{% endhighlight %}
+  {% highlight sh %}
+  sqlite3 --version
+  {% endhighlight %}
 
 - Close the Windows Command Prompt app.
 
-### *5.* Install Rails
+### _5._ Install Rails
 
 - Open the Windows Command Prompt run the following command. This will install the Rails and bundler gems on your computer.
 
@@ -242,17 +282,15 @@ rails --version
 
 _If you run into any problems during this step, check the [Possible errors](#possible-errors-during-installation) section for possible solutions._
 
-### *6.* Install a text editor to edit code files
+### _6._ Install a text editor to edit code files
 
-For the workshop we recommend the text editor Atom.
+For the workshop we recommend the text editor Visual Studio Code.
 
-- Visit the [Atom download page](https://github.com/atom/atom/releases/latest).
-  - Click the `AtomSetup.exe` link to download Atom.
-  - Run the installer. Click through the installer using all the default options.
+- Visit the [VS Code download page](https://code.visualstudio.com) and follow the instructions.
 
 If you are using Windows Vista or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2). Just to make sure that you're not mixing up using your command prompt or text-editor: change the theme of your Sublime text-editor, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
 
-### *7.* Check the environment
+### _7._ Check the environment
 
 Check that everything is working by running the application generator command.
 
@@ -282,7 +320,7 @@ _If you run into any problems during this step, check the [Possible errors](#pos
 
 To install the Ruby on Rails development environment you just need to copy the lines below for your Linux distribution (Ubuntu or Fedora), paste it in the Terminal and press Enter. Enjoy the text flying on the screen; it will take quite some time. Grabbing a refreshing drink before starting is encouraged.
 
-### *1.* Install yarn 
+### _1._ Install yarn
 
 If you need more information than the following to install yarn, please check [yarn's installation docs](https://yarnpkg.com/lang/en/docs/install/).
 
@@ -312,7 +350,7 @@ curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yu
 sudo yum install yarn
 {% endhighlight %}
 
-### *2.* Install Rails
+### _2._ Install Rails
 
 #### For Ubuntu:
 
@@ -334,13 +372,13 @@ Make sure that all works well by running the application generator command.
 rails new myapp
 {% endhighlight %}
 
-### *4.* Install a text editor to edit code files
+### _4._ Install a text editor to edit code files
 
 For the workshop we recommend the text editor Sublime Text.
 
-* [Download Sublime Text and install it](http://www.sublimetext.com/2). Just to make sure that you're not mixing up using your terminal or text-editor: change the theme of your Sublime text-editor, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
+- [Download Sublime Text and install it](http://www.sublimetext.com/2). Just to make sure that you're not mixing up using your terminal or text-editor: change the theme of your Sublime text-editor, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
 
-### *5.* Check the environment
+### _5._ Check the environment
 
 Check that everything is working by running the application generator command.
 
@@ -374,7 +412,7 @@ Instead of installing all tools on your machine, you can also set up a developme
 
 Instead of installing Ruby on Rails and an editor on your computer, you can use a webservice for development. All you need is a browser and an internet connection. This guide explains how to get started with [replit.com]. If you're using a different service, they may use a different wording, but the process is usually pretty similar.
 
-### *1.* Create an account
+### _1._ Create an account
 
 Go to [replit.com] and sign up for free.
 
@@ -382,7 +420,7 @@ You will need to confirm your email and then fill in your details.
 
 ![Log in screen](/images/replit/create-account.png)
 
-### *2.* Create a Ruby on Rails Repl
+### _2._ Create a Ruby on Rails Repl
 
 The Ruby on Rails Repl has all the software we need for the workshop already preinstalled.
 
@@ -406,17 +444,17 @@ In the field under Template, type in `rails`.
 
 ### 3. Coding with your project
 
-* On the left hand side, you find a file browser where you can navigate your directories and file.
-* In the middle, you find the editor where you can modify your files.
-* Click the `Run` bottom at the top to start up the freshly installed Ruby on Rails app.
+- On the left hand side, you find a file browser where you can navigate your directories and file.
+- In the middle, you find the editor where you can modify your files.
+- Click the `Run` bottom at the top to start up the freshly installed Ruby on Rails app.
 
 ![Run button highlighted to start the Rails app](images/replit/run.png)
 
-* You'll see a mini web browser to the top right showing you your fresh Rails app running the default homepage with the Rails logo.
+- You'll see a mini web browser to the top right showing you your fresh Rails app running the default homepage with the Rails logo.
 
 ![Rails app running](/images/replit/rails-running.png)
 
-* At the bottom right, when you click the `Shell` button you'll find the terminal where you can run commands.
+- At the bottom right, when you click the `Shell` button you'll find the terminal where you can run commands.
 
 ![Shell](/images/replit/shell.png)
 
@@ -425,7 +463,7 @@ In the field under Template, type in `rails`.
 When you log out and log back in to [replit.com], you can find your RailsGirls app in the middle of the dashboard. Just click it to go back into the project.
 
 ![Dashboard showing button to return to Rails project](/images/replit/re-open.png)
- 
+
 ## Possible errors during installation
 
 ### Gem::RemoteFetcher error
