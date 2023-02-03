@@ -24,7 +24,7 @@ __COACH__: For the rationale behind this slightly different beginners tutorial, 
 
 ### Text Editor
 
-* [Atom](https://atom.io/), [Sublime Text](http://www.sublimetext.com),  Vim and Emacs are examples of text editors your can use for writing code and editing files.
+* [Visual Studio Code](https://code.visualstudio.com/), [Sublime Text](http://www.sublimetext.com), Vim and Emacs are examples of text editors your can use for writing code and editing files.
 
 <h3><i class="icon-prompt">&nbsp;</i></h3>
 
