@@ -123,9 +123,7 @@ end
 
 **Run your tests**
 
-If you use *Sublime Text* on Linux, OSX Mavericks (or later) or Windows, you
-can run the tests by pressing <kbd>Ctrl</kbd>+<kbd>B</kbd>. Otherwise you can type the following into
-your terminal:
+Run the command following into the terminal:
 
 {% highlight sh %}
 ruby roman.rb

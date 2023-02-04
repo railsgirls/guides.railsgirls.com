@@ -10,28 +10,6 @@ permalink: touristic-autism_basic-app
 *for [Rails Girls Galway](https://github.com/RailsGirlsGalway)*
 The basic guides that have been merged and adapted are the [Ruby on Rails Tutorial](http://www.railstutorial.org/book), the [basic RailsGirls app](http://guides.railsgirls.com/app/) and the tutorials for [creating thumbnails](http://guides.railsgirls.com/thumbnails), [authenticating users](http://guides.railsgirls.com/devise/), [adding design](http://guides.railsgirls.com/design), [deploying to OpenShift](http://guides.railsgirls.com/openshift/) and [adding comments](http://guides.railsgirls.com/commenting).
 
-
-
-## Get to know the tools
-
-<div class="indent" markdown="1">
-
-<h3><i class="icon-text-editor">&nbsp;</i></h3>
-
-<h3>Text Editor</h3>
-
-<p><a href="http://www.sublimetext.com">Sublime Text</a>, <a href="http://www.activestate.com/komodo-edit">Komodo Edit</a>, Vim, Emacs, and Gedit are examples of text editors your can use for writing code and editing files.</p>
-
-<h3><i class="icon-prompt">&nbsp;</i></h3>
-
-<h3>Terminal (known as Command Prompt on Windows)</h3>
-Where you start the rails server and run commands.
-
-<h3><i class="icon-browser">&nbsp;</i></h3>
-
-<h3>Web browser</h3>
-(Firefox, Safari, Chrome) for viewing your application.
-
 <h3>GitHub</h3>
 [Slides - by Kevin Lyda @]()
 

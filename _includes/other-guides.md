@@ -3,6 +3,7 @@
 ## Other Guides
 
 * [Handy cheatsheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
+* Guide 0: [Get to know the tools](/tools) {% if include.page == 'tools' %}(Current page!){% endif %}
 * Guide 1: [Guide to install Rails](/install) {% if include.page == 'install' %}(Current page!){% endif %}
 * Guide 2: [Build Your First App](/app) {% if include.page == 'app' %}(Current page!){% endif %}
 * Guide 3: [Push Your App to GitHub](/github) {% if include.page == 'github' %}(Current page!){% endif %}
