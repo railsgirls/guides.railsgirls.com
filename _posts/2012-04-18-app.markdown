@@ -121,15 +121,9 @@ $
   </div>
 </div>
 
-**Tip:** Sometimes, both in this guide and other guides online, you will see commands written with the `$` symbol at the start. This is a convention that signifies the beginning of a line that needs to be entered into your Terminal / Command Prompt.
-You do not need to type this symbol at the start of your commands. Your particular prompt may not have a `$` symbol at the start of it.
-
-When the command prompt is not visible you cannot execute new commands. If you try running `cd` or another command it will not work. To return to the normal command prompt:
-
-Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to quit the server.
+When the command prompt is not visible you cannot execute new commands. If you try running `cd` or another command it will not work. To stop the Rails server and return to the normal command prompt in the same Terminal window, press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the Terminal to quit the Rails server.
 
 **Coach:** Explain what each command does. What was generated? What does the server do?
-
 
 ## *2.* Create Idea scaffold
 

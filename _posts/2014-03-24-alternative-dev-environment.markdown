@@ -99,13 +99,13 @@ Start the VM again, and log into it with the known process:
 The shared folder can be found at the path */media/sf_railsgirls*. Let's check if everything works as expected. Please enter to this directory:
 
 {% highlight sh %}
-$ cd /media/sf_railsgirls
+cd /media/sf_railsgirls
 {% endhighlight %}
 
 Let's create an empty file:
 
 {% highlight sh %}
-$ touch test.txt
+touch test.txt
 {% endhighlight %}
 
 Now let's check in our own operation system, if the shared folder contains a file called *test.txt. If so, we are ready with our virtual environment.
