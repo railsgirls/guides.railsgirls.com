@@ -47,6 +47,8 @@ Open the Terminal like so for your Operating System:
 - Type in "PowerShell" or "Command Prompt", whichever is available.
 - Press <kbd>Enter</kbd> to open the Terminal app.
 
+If the options above are not available, press the <kbd>Window flag key + R</kbd>, type in `cmd` and press <kbd>Enter</kbd> to open the Command Prompt Terminal app.
+
 ## Code examples
 
 Throughout this guide you will see bits of text formatted like the block below. The icon next to the text will let you know which tool to use.
