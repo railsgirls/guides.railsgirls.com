@@ -12,7 +12,7 @@ To build apps and other things with Ruby on Rails, we need to setup some softwar
 
 Follow the instructions for your operating system. If you run into any problems, don&#8217;t panic. Inform us at the event and we can solve it together.
 
-- [Setup for macOS](#setup-for-os-x)
+- [Setup for macOS](#setup-for-macos)
 - [Setup for Windows](#setup-for-windows)
 - [Setup for Linux](#setup-for-linux)
 - [Alternative Installment for all OS](#virtual-machine)
