@@ -8,6 +8,7 @@
 * Guide 3: [Push Your App to GitHub](/github) {% if include.page == 'github' %}(Current page!){% endif %}
 * Guide 4: Put your app online with...
   - [Heroku](/heroku) {% if include.page == 'heroku' %}(Current page!){% endif %}
+  - [DigitalOcean](/digitalocean) {% if include.page == 'digitalocean' %}(Current page!){% endif %}
   - [OpenShift](/openshift) {% if include.page == 'openshift' %}(Current page!){% endif %}
   - [Anynines](/anynines) {% if include.page == 'anynines' %}(Current page!){% endif %}
   - [Engine Yard](/engineyard) {% if include.page == 'engineyard' %}(Current page!){% endif %}
