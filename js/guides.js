@@ -1,5 +1,5 @@
 function saveOs(os) {
-  Cookies.get("os", os, { expires: 1825, path: '/' }); // expires in 5 years
+  Cookies.set("os", os, { expires: 1825, path: '/' }); // expires in 5 years
 }
 
 function loadOs() {
