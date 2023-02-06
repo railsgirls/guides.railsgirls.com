@@ -266,7 +266,7 @@ i.icon-small-browser {
 
 .os-specific .picker {
   display: block;
-  float: right;
+  text-align: right;
 }
 
 .os-specific .active {

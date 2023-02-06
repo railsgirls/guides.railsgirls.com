@@ -1,5 +1,5 @@
 function saveOs(os) {
-  Cookies.get("os", os, { expires: 1825, path: '/' }); // expires in 5 years
+  Cookies.set("os", os, { expires: 1825, path: '/' }); // expires in 5 years
 }
 
 function loadOs() {
@@ -33,7 +33,7 @@ function addIcons() {
 }
 
 function initializeOsSwitchers() {
-  $(".os-specific").append("<span class='picker'>Choose your operating system: <a href='#' class='win-link'>Windows</a> | <a href='#' class='nix-link'>Other</a></span>").find(".win-link").click(function(event) {
+  $(".os-specific").prepend("<span class='picker'>Choose your operating system: <a href='#' class='win-link'>Windows</a> | <a href='#' class='nix-link'>Mac/Linux</a></span>").find(".win-link").click(function(event) {
     event.preventDefault();
     saveOs("win");
 
