@@ -260,10 +260,6 @@ i.icon-small-browser {
   background-image: url('/images/icon-small-browser.png');
 }
 
-.os-specific {
-  margin-bottom: 4em;
-}
-
 .os-specific .picker {
   display: block;
   text-align: right;
