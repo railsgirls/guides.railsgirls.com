@@ -64,7 +64,7 @@ gem install sinatra-contrib
 {% endhighlight %}
 
 ## *1.* "Hello World"
-Create a file called `app.rb` and paste the following into Sublime Text:
+Create a file called `app.rb` and paste the following into your Text Editor:
 
 {% highlight ruby %}
 require "sinatra"

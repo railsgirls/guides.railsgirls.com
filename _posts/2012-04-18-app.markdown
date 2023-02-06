@@ -10,43 +10,6 @@ permalink: app
 
 **Make sure you have Rails installed.** [**Follow the installation guide**](/install) to get set up.
 
-
-## Get to know the tools
-
-<div class="indent" markdown="1">
-
-<h3><i class="icon-text-editor">&nbsp;</i></h3>
-
-### Text Editor
-
-* [Visual Studio Code](https://code.visualstudio.com/), [Sublime Text](http://www.sublimetext.com), Vim and Emacs are examples of text editors your can use for writing code and editing files.
-
-<h3><i class="icon-prompt">&nbsp;</i></h3>
-
-### Terminal (known as Command Prompt on Windows)
-
-* Where you start the rails server and run commands.
-* This is a program on your computer that you can get to through your Spotlight search on Mac (search for "Terminal"), or by searching for the "Command Prompt" in your programs on Windows.
-
-<h3><i class="icon-browser">&nbsp;</i></h3>
-
-### Web browser
-
-* (Firefox, Safari, Chrome) for viewing your application.
-
-</div>
-
-Throughout this guide you will see bits of code formatted like so:
-
-{% highlight sh %}
-some code
-{% endhighlight %}
-
-<div>
-<p>This means that the highlighted text is code and it probably needs to be either executed or inserted into one of your project files. The icon next to the highlighted text will let you know which tool to use.</p>
-<p>For example, if you see a terminal icon next to the highlight, like in the example above, you will need to copy the code and paste it into your Terminal (Mac) / Command Prompt (Windows).</p>
-</div>
-
 Need some reminders along the way? Check out this [handy cheatsheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
 
 ### Important
@@ -57,14 +20,7 @@ It is important that you select the instructions specific to your operating syst
 
 We're going to create a new Rails app called *railsgirls*.
 
-First, let's open a terminal:
-
-* macOS: Open Spotlight, type *Terminal* and click the *Terminal* application.
-* Windows: Click Start and look for *Command Prompt*, then click *Command Prompt with Ruby and Rails*.
-* Linux (Ubuntu/Fedora): Search for *Terminal* on the dash and click *Terminal*.
-* Cloud service (e.g. Codenvy): Log in to your account, start your project and switch to its IDE (see [installation guide](/install#using-a-cloud-service) for details). The terminal is usually at the bottom of your browser window.
-
-Next, type these commands in the terminal:
+First, open the Terminal app and type in these commands:
 
 <div class="os-specific">
   <div class="nix">

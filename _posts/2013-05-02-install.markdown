@@ -158,14 +158,6 @@ brew install yarn
 
 If you need more information than the following to install yarn, please check [yarn's installation docs](https://yarnpkg.com/lang/en/docs/install/).
 
-### _5._ Install a text editor to edit code files
-
-For the workshop we recommend the text editor Visual Studio Code.
-
-- [Download VS Code and install it](https://code.visualstudio.com).
-
-If you are using Mac OS X 10.7 or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2). Just to make sure that you're not mixing up using your terminal or text-editor: change the theme of your Sublime text-editor, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
-
 ### _5._ Check the environment
 
 Check that everything is working by running the application generator command.
@@ -282,15 +274,7 @@ rails --version
 
 _If you run into any problems during this step, check the [Possible errors](#possible-errors-during-installation) section for possible solutions._
 
-### _6._ Install a text editor to edit code files
-
-For the workshop we recommend the text editor Visual Studio Code.
-
-- Visit the [VS Code download page](https://code.visualstudio.com) and follow the instructions.
-
-If you are using Windows Vista or older versions, you can use another editor [Sublime Text 2](http://www.sublimetext.com/2). Just to make sure that you're not mixing up using your command prompt or text-editor: change the theme of your Sublime text-editor, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
-
-### _7._ Check the environment
+### _6._ Check the environment
 
 Check that everything is working by running the application generator command.
 
@@ -372,13 +356,7 @@ Make sure that all works well by running the application generator command.
 rails new myapp
 {% endhighlight %}
 
-### _4._ Install a text editor to edit code files
-
-For the workshop we recommend the text editor Sublime Text.
-
-- [Download Sublime Text and install it](http://www.sublimetext.com/2). Just to make sure that you're not mixing up using your terminal or text-editor: change the theme of your Sublime text-editor, choosing one of the following: "iPlastic", "Slush &amp; Poppies", or "Zenburnesque".
-
-### _5._ Check the environment
+### _4._ Check the environment
 
 Check that everything is working by running the application generator command.
 

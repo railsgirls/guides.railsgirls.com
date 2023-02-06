@@ -15,33 +15,6 @@ __COACH__: For the rationale behind this slightly different beginners tutorial, 
 
 **Make sure you have Rails installed.** [**Follow the installation guide**](/install) to get set up.
 
-
-## Get to know the tools
-
-<div class="indent" markdown="1">
-
-<h3><i class="icon-text-editor">&nbsp;</i></h3>
-
-### Text Editor
-
-* [Visual Studio Code](https://code.visualstudio.com/), [Sublime Text](http://www.sublimetext.com), Vim and Emacs are examples of text editors your can use for writing code and editing files.
-
-<h3><i class="icon-prompt">&nbsp;</i></h3>
-
-### Terminal (known as Command Prompt on Windows)
-
-* Where you start the rails server and run commands.
-
-<h3><i class="icon-browser">&nbsp;</i></h3>
-
-### Web browser
-
-* (Firefox, Safari, Chrome) for viewing your application.
-
-__COACH__: Assist with the installation; make sure the text editor is set up properly (e.g., check whether the encoding is UTF-8).
-
-</div>
-
 ### Important
 
 It is important that you select the instructions specific to your operating system - the commands you need to run on a Windows computer are slightly different to Mac or Linux. If you're having trouble check the Operating System switcher at the bottom of the commands. In case you're using a cloud service, you need to run the Linux commands even if you are on a Windows computer.

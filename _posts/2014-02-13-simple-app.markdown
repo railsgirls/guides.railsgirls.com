@@ -12,29 +12,6 @@ permalink: simpleapp
 
 **Make sure you have Rails installed.** [**Follow the installation guide**](/install) to get set up.
 
-
-## Get to know the tools
-
-<div class="indent" markdown="1">
-
-<h3><i class="icon-text-editor">&nbsp;</i></h3>
-
-<h3>Text Editor</h3>
-
-<p><a href="http://www.sublimetext.com">Sublime Text</a>, <a href="http://www.activestate.com/komodo-edit">Komodo Edit</a>, Vim, Emacs, and Gedit are examples of text editors your can use for writing code and editing files.</p>
-
-<h3><i class="icon-prompt">&nbsp;</i></h3>
-
-<h3>Terminal (known as Command Prompt on Windows)</h3>
-Where you start the rails server and run commands.
-
-<h3><i class="icon-browser">&nbsp;</i></h3>
-
-<h3>Web browser</h3>
-(Firefox, Safari, Chrome) for viewing your application.
-
-</div>
-
 ### Important
 
 It is important that you select the instructions specific to your operating system - the commands you need to run on a Windows computer are slightly different to Mac or Linux. If you're having trouble check the Operating System switcher at the bottom of the commands.

@@ -1,5 +1,7 @@
 permalink: pretty
 markdown: kramdown
+include:
+  - _pages
 exclude:
   - ".rvmrc"
   - ".rbenv-version"
