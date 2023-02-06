@@ -228,6 +228,7 @@ i.icon-browser {
 
 .highlight {
   margin-left: 30px;
+  margin-right: 0;
 }
 
 .highlight pre {
