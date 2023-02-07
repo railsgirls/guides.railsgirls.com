@@ -1,17 +1,16 @@
 ---
 layout: default
-title: Alternative development environment with VirtualBox
-permalink: virtual-machine
+title: Setup on a Virtual Machine
+permalink: install/virtual-machine
 ---
 
-# Introduction
+# Setup on a Virtual Machine
 
 A development environment is the sum of all applications and tools with which a developer can do her daily work. Beyond an internet browser and a code editor all programs are included which are necessary for running and serving our application. For Ruby on Rails development, we certainly need Ruby, and the Rails framework and we also need a database, a web application server, etc.
+
 By default an experienced developer would install all of these tools to her environment, but it's an advanced task. Moreover you are working on different operating systems, most of you are working on Windows, where installing a proper Ruby development environment is a huge problem.
 
 Considering the things above, we created a virtual development environment for the first Rails Girls Budapest event, hoping that we can ease every participant's job.
-
-<!-- more -->
 
 ## Virtual Machine
 
@@ -110,6 +109,4 @@ touch test.txt
 
 Now let's check in our own operation system, if the shared folder contains a file called *test.txt. If so, we are ready with our virtual environment.
 
-## Editor
-
-The code editor is a really clever text editor, in which we are going to write our application's codebase. We really love Sublime Text Editor, you can download if from [http://www.sublimetext.com/3](http://www.sublimetext.com/3).
+{% include other-guides.md page="install/virtual-machine" %}
