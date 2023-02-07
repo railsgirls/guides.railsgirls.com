@@ -5,6 +5,11 @@
 * [Handy cheatsheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
 * Guide 0: [Get to know the tools](/tools) {% if include.page == 'tools' %}(Current page!){% endif %}
 * Guide 1: [Guide to install Rails](/install) {% if include.page == 'install' %}(Current page!){% endif %}
+  - [Installation guide for macOS](/install/macos) {% if include.page == 'install/macos' %}(Current page!){% endif %}
+  - [Installation guide for Windows](/install/windows) {% if include.page == 'install/windows' %}(Current page!){% endif %}
+  - [Installation guide for Linux](/install/linux) {% if include.page == 'install/linux' %}(Current page!){% endif %}
+  - [Installation guide for a Virtual Machine](/install/virtual-machine) {% if include.page == 'install/virtual-machine' %}(Current page!){% endif %}
+  - [Installation guide for a Cloud service](/install/replit) {% if include.page == 'install/replit' %}(Current page!){% endif %}
 * Guide 2: [Build Your First App](/app) {% if include.page == 'app' %}(Current page!){% endif %}
 * Guide 3: [Push Your App to GitHub](/github) {% if include.page == 'github' %}(Current page!){% endif %}
 * Guide 4: Put your app online with...
