@@ -13,7 +13,7 @@ The guides site uses [jekyll](https://github.com/mojombo/jekyll) to power the si
 
 ## If you want to add a new guide:
 
-- Create a file named `YYYY-MM-DD-guide_name.markdown` inside the `_posts` directory of your fork.
+- Create a file named `guide_name.markdown` inside the `_pages` directory of your fork.
 - In this file, you'll need to add some YAML front matter at the top of the file so it looks like the following example, taken from this guide that you are currently viewing:
 
     <pre>
