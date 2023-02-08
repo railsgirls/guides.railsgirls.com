@@ -106,7 +106,7 @@ You should see a page with the Rails logo and the heading "Yay! You’re on Rail
 
 Notice in this window the command prompt is not visible because you are now in the Rails server.
 
-The command prompt will look something like this, but it may be different on your laptop:
+Notice in the Terminal window the command prompt is not visible because you are now in the Rails server. The command prompt will look something like this, but it may be different on your laptop:
 
 <div class="os-specific">
   <div class="nix">
@@ -148,7 +148,7 @@ Click around and test what you got by running these few command-line commands.
 
 ## *3.* Design
 
-**Coach:** Talk about the relationship between HTML and Rails. What part of views is HTML and what is Embedded Ruby (ERB)? What is MVC and how does this relate to it? (Models and controllers are responsible for generating the HTML views.)
+**Coach:** Talk about the relationship between HTML and Rails. What part of views is HTML and what is Embedded Ruby (ERB)? What is Model View Controller and how does this relate to it? (Models and controllers are responsible for generating the HTML views.)
 
 The app doesn't look very nice yet. Let's do something about that. We'll use the Twitter Bootstrap project to give us nicer styling really easily.
 
@@ -224,7 +224,6 @@ Now make sure you saved your files and refresh the browser to see what was chang
 You can change the HTML & CSS further, adding to `app/assets/stylesheets/application.css`.
 
 **Coach:** Talk a little about CSS and layouts.
-
 
 ## *4.* Adding picture uploads
 
@@ -328,7 +327,7 @@ Note: Some people might be using a second terminal to run the rails server conti
 
 ## *5.* Finetune the routes
 
-Open <http://localhost:3000> (or your preview url, if you are using a cloud service). It still shows the "Yay! You’re on Rails!" page. Let's make it redirect to the ideas page.
+Open <http://localhost:3000> (or your preview URL, if you are using a cloud service). It still shows the "Yay! You’re on Rails!" page. Let's make it redirect to the ideas page.
 
 Open `config/routes.rb` and after the first line add
 
@@ -336,7 +335,7 @@ Open `config/routes.rb` and after the first line add
 root to: redirect('/ideas')
 {% endhighlight %}
 
-Test the change by opening the root path (that is, <http://localhost:3000/> or your preview url) in your browser.
+Test the change by opening the root path (that is, <http://localhost:3000/> or your preview URL) in your browser.
 
 **Coach:** Talk about routes, and include details on the order of routes and their relation to static files.
 
@@ -356,7 +355,7 @@ It also adds a new simple route to your `config/routes.rb`.
 get "pages/info"
 {% endhighlight %}
 
-Now you can open the file `app/views/pages/info.html.erb` and add information about you in HTML. To see your new info page, take your browser to <http://localhost:3000/pages/info> or, if you are a cloud service user, append '/pages/info' to your preview url.
+Now you can open the file `app/views/pages/info.html.erb` and add information about you in HTML. To see your new info page, take your browser to <http://localhost:3000/pages/info> or, if you are a cloud service user, append '/pages/info' to your preview URL.
 
 ## *7.* Add a button to your navigation bar
 
