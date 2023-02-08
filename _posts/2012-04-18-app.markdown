@@ -102,9 +102,7 @@ rails server
 
 Open <http://localhost:3000> in your browser. If you are using a cloud service (e.g. Replit), use its preview functionality instead (see [installation guide](/install/replit) for details).
 
-You should see a page with the Rails logo and the heading "Yay! You’re on Rails!", which means that your Rails app is up and running.
-
-Notice in this window the command prompt is not visible because you are now in the Rails server.
+You should see a page with the Rails logo, which means that your Rails app is up and running.
 
 Notice in the Terminal window the command prompt is not visible because you are now in the Rails server. The command prompt will look something like this, but it may be different on your laptop:
 
@@ -144,7 +142,7 @@ rails server
 
 Open <http://localhost:3000/ideas> in your browser. Cloud service (e.g. Replit) users need to append `/ideas` to their preview URL instead (see [installation guide](/install/replit)).
 
-Click around and test what you got by running these few command-line commands.
+Click around and test what you got by running these few command-line commands. You should be able to make new ideas, view, edit and delete (destroy) them.
 
 ## *3.* Design
 
@@ -155,7 +153,7 @@ The app doesn't look very nice yet. Let's do something about that. We'll use the
 Open `app/views/layouts/application.html.erb` in your text editor and above the line
 
 {% highlight erb %}
-<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
 {% endhighlight %}
 
 add
