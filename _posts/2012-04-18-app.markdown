@@ -184,7 +184,7 @@ Already the app looks a bit better and has the app content front and center. You
 
 Let's add a navigation bar and footer to the layout to give it more the appearance of an app. In the same file, under the `<body>` tag add these lines of code. This will add a navigation bar to the app.
 
-{% highlight html %}
+{% highlight erb %}
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
     <a class="navbar-brand" href="/ideas">The idea app</a>
@@ -365,7 +365,7 @@ Now that we know the new page works, let's make sure people can visit it by crea
 
 Open `app/views/layouts/application.html.erb` in your Text Editor and under these lines:
 
-{% highlight html %}
+{% highlight erb %}
 <li class="nav-item">
   <a class="nav-link <%= 'active' if current_page?(controller: 'ideas') %>" href="/ideas">Ideas</a>
 </li>
@@ -373,7 +373,7 @@ Open `app/views/layouts/application.html.erb` in your Text Editor and under thes
 
 add the following lines to link to the new page:
 
-{% highlight html %}
+{% highlight erb %}
 <li class="nav-item">
   <a class="nav-link <%= 'active' if current_page?(controller: 'pages', action: 'about') %>" href="/pages/about">About</a>
 </li>
