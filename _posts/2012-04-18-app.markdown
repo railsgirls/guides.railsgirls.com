@@ -23,7 +23,7 @@ We're going to create a new Rails app called *railsgirls*.
 First, open the Terminal app and type in these commands:
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
 {% highlight sh %}
 mkdir projects
 {% endhighlight %}
@@ -107,7 +107,7 @@ You should see a page with the Rails logo, which means that your Rails app is up
 Notice in the Terminal window the command prompt is not visible because you are now in the Rails server. The command prompt will look something like this, but it may be different on your laptop:
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
 {% highlight sh %}
 $
 {% endhighlight %}

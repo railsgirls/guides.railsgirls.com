@@ -126,7 +126,7 @@ Let's add-commit-push to your GitHub repo! See how nicely all the changes are no
 We now use Rails' scaffold functionality to generate and set up all that is necessary to list, add, remove, edit, and view our second resource: "touristic places".
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
 {% highlight sh %}
 rails generate scaffold place name:string address:string latitude:decimal longitude:decimal description:text picture:string user_id:integer
 {% endhighlight %}
@@ -138,7 +138,7 @@ The scaffold creates new files in your project directory. However, we have defin
 We are already using a database (see `gem 'sqlite'` in your Gemfile). Let's add the structure of "place" as a table to our database with the following.
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
 {% highlight sh %}
 bin/rails db:migrate
 {% endhighlight %}
@@ -270,7 +270,7 @@ That's it. Now view a user you have inserted to your application and there you s
 Just as well as we created a "place" resource and associated it with users, we can create a "comment" resource and associate it with places 9and with its author).
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
 {% highlight sh %}
 rails generate scaffold comment body:text user_id:integer place_id:integer
 bin/rails db:migrate
@@ -405,7 +405,7 @@ Then let's add a constraint over the length of the comment's body field (we'll u
 Open app/models/comment.rb and add between 'class' and 'end':
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
 {% highlight sh %}
   validates :body, length: { maximum: 140 }
 {% endhighlight %}

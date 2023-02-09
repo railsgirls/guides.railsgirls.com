@@ -79,7 +79,7 @@ __COACH__: Explain the Git commands used and .gitignore.
 We need the `.openshift` directory and `config/database.yml` file from the sample application for our Rails app to run on OpenShift. Copy these from the `openshiftapp` directory to the `railsgirls` directory. You can use Windows Explorer or another graphical file system tool to do this if you like, or alternatively run the following commands from the `railsgirls` directory in your terminal:
 
 <div class="os-specific">
-   <div class="nix">
+   <div class="mac nix">
 {% highlight sh %}
 cp -r ../openshiftapp/.openshift .
 cp ../openshiftapp/config/database.yml config

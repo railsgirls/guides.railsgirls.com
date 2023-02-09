@@ -29,7 +29,7 @@ First, let's open a terminal:
 Next, type these commands in the terminal:
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
 {% highlight sh %}
 mkdir projects
 {% endhighlight %}
@@ -125,7 +125,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser. You should 
 Notice in this window the command prompt is not visible because you are now in the Rails server, the command prompt looks like this:
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
 {% highlight sh %}
 $
 {% endhighlight %}
@@ -150,7 +150,7 @@ We're going to use Rails' scaffold functionality to generate a starting point th
 **Coach:** What is Rails scaffolding? (Explain the command, the model name and related database table, naming conventions, attributes and types, etc.) What are migrations and why do you need them?
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
 {% highlight sh %}
 rails generate scaffold idea name:string description:text picture:string
 {% endhighlight %}
@@ -166,7 +166,7 @@ rails generate scaffold idea name:string description:text picture:string
 The scaffold creates new files in your project directory, but to get it to work properly we need to run a couple of other commands to update our database and restart the server.
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
 {% highlight sh %}
 rails db:migrate
 rails server
