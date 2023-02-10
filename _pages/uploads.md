@@ -1,0 +1,106 @@
+---
+layout: default
+title: Add picture uploads
+permalink: uploads
+---
+
+# Add picture uploads
+
+The ideas we added in the previous guide can benefit from a visual element, like a picture or drawing. We can attach these by adding a file upload to the Idea model.
+
+## Installing a Ruby gem
+
+To let us upload files in Rails app, we'll need to install a piece of software in the app first.
+
+Open the `Gemfile` file in your Text Editor. Below the following line:
+
+{% highlight ruby %}
+gem "sqlite3"
+{% endhighlight %}
+
+add this line to the file and save it:
+
+{% highlight ruby %}
+gem "carrierwave"
+{% endhighlight %}
+
+Open the Terminal app and press <kbd>Ctrl</kbd>+<kbd>C</kbd> to quit the Rails server.
+
+Then run the following command in the Terminal:
+
+{% highlight sh %}
+bundle install
+{% endhighlight %}
+
+This will install the "carrierwave" gem we added to the `Gemfile` file.
+
+**Coach:** Explain what libraries (Ruby gems) are and why they are useful. Describe what Open Source software is.
+
+## Generating a picture uploader
+
+We can now generate the code for handling uploads. In the Terminal run the following command:
+
+{% highlight sh %}
+rails generate uploader Picture
+{% endhighlight %}
+
+If an error is shown that the uploader cannot be found also add the following line:
+{% highlight ruby %}
+gem "net-ssh"
+{% endhighlight %}
+
+If you added this gem, please run this command in the Terminal app again to install the missing gem:
+
+{% highlight sh %}
+bundle install
+{% endhighlight %}
+
+## Attaching the picture uploader to the idea model
+
+Open the `app/models/idea.rb` file in your Text Editor and under the following line:
+
+{% highlight ruby %}
+class Idea < ApplicationRecord
+{% endhighlight %}
+
+add this line and save it:
+
+{% highlight ruby %}
+mount_uploader :picture, PictureUploader
+{% endhighlight %}
+
+Open the `app/views/ideas/_form.html.erb` file in your Text Editor and change the following line:
+
+{% highlight erb %}
+<%= form.text_field :picture %>
+{% endhighlight %}
+
+to this line and save it:
+
+{% highlight erb %}
+<%= form.file_field :picture %>
+{% endhighlight %}
+
+In your browser open <http://localhost:3000/ideas/new>, create a new idea using the form, but this time select a picture as well using the "Browse..." or "Choose File" button.
+
+## Displaying the picture
+
+You've now added a picture to your idea! You can't see it yet after creating the idea, it will only show the filename right now. Let's change it so it shows the picture.
+
+To show the picture in the page of the idea itself, open the `app/views/ideas/_idea.html.erb` in the Text editor and change the following line:
+
+{% highlight erb %}
+<%= idea.picture %>
+{% endhighlight %}
+
+to this line and save the file:
+
+{% highlight erb %}
+<%= image_tag(idea.picture_url, width: 600) if idea.picture? %>
+{% endhighlight %}
+
+Using the `image_tag` we have told Rails to display the file upload as an image if it is present on the idea. Ideas without a picture will not show one.
+
+Refresh the Browser. Your uploaded image should now be visible!
+
+{% include other-guides.md %}

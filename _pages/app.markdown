@@ -1,22 +1,22 @@
 ---
 layout: default
-title: Rails Girls App Tutorial
+title: Build your first app
 permalink: app
 ---
 
-# Rails Girls App Tutorial
+# Build your first app
 
-*Created by Vesa Vänskä, [@vesan](https://twitter.com/vesan)*
+*Originally created by Vesa Vänskä, [@vesan](https://twitter.com/vesan)*
 
 **Make sure you have Rails installed.** [**Follow the installation guide**](/install) to get set up.
 
 Need some reminders along the way? Check out this [handy cheatsheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
 
-### Important
+## Important
 
 It is important that you select the instructions specific to your operating system - the commands you need to run on a Windows computer are slightly different to Mac or Linux. If you're having trouble check the Operating System switcher at the bottom of the commands. In case you're using a cloud service (e.g. Replit), you need to run the Linux commands even if you are on a Windows computer.
 
-## *1.* Creating the application
+## Creating the application
 
 We're going to create a new Rails app called *railsgirls*.
 
@@ -123,7 +123,7 @@ When the command prompt is not visible you cannot execute new commands. If you t
 
 **Coach:** Explain what each command does. What was generated? What does the server do?
 
-## *2.* Create Idea scaffold
+## Create Idea scaffold
 
 We're going to use Rails' scaffold functionality to generate a starting point that allows us to list, add, remove, edit, and view things; in our case ideas.
 
@@ -144,181 +144,7 @@ Open <http://localhost:3000/ideas> in your browser. Cloud service (e.g. Replit) 
 
 Click around and test what you got by running these few command-line commands. You should be able to make new ideas, view, edit and delete (destroy) them.
 
-## *3.* Design
-
-**Coach:** Talk about the relationship between HTML, CSS and Rails. What part of views is HTML and what is Embedded Ruby (ERB)? What is Model View Controller and how does this relate to it? (Models and controllers are responsible for generating the HTML views.)
-
-The app doesn't look very nice right now, plain black text on a white background. Let's improve that! We'll use the [Bootstrap project](https://getbootstrap.com) to give us a better looking website quickly.
-
-Open the `app/views/layouts/application.html.erb` file in your Text Editor and above the following line:
-
-{% highlight erb %}
-<%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-{% endhighlight %}
-
-add this line to the file:
-
-{% highlight erb %}
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-{% endhighlight %}
-
-Then replace this line:
-
-{% highlight erb %}
-<%= yield %>
-{% endhighlight %}
-
-with these lines of code in the same file:
-
-{% highlight erb %}
-<div class="container">
-  <%= yield %>
-</div>
-{% endhighlight %}
-
-and save the file.
-
-Already the app looks a bit better and has the app content front and center. Your app is now using the Bootstrap system for styling using its <abbr title="Cascading Style Sheets">CSS</abbr>. You may need to reload the page in your browser to see the changes.
-
-### Adding a navigation bar
-
-Let's add a navigation bar and footer to the layout to give it more the appearance of an app. In the same file, under the `<body>` tag add these lines of code. This will add a navigation bar to the app.
-
-{% highlight erb %}
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/ideas">The idea app</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link <%= 'active' if current_page?(controller: 'ideas') %>" href="/ideas">Ideas</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-{% endhighlight %}
-
-Then before the `</body>` tag at the end of the file, add these lines of code. This will add a footer saying "Rails Girls" along with the current year, and include the Bootstrap JavaScript needed for the navigation bar functionality.
-
-{% highlight erb %}
-<footer class="mt-5 text-center">
-  <div class="container">
-    Rails Girls <%= Time.now.year %>
-  </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-{% endhighlight %}
-
-Make sure you saved your files and refresh the browser to see what was changed. Did nothing change? It might be that you're not connected to the Wi-Fi anymore.
-
-Optional: To further style the app with HTML & CSS, you can edit the `app/assets/stylesheets/application.css` file in your Text Editor. Reference the [Bootstrap documentation](https://getbootstrap.com/docs/5.2/getting-started/introduction/) for more information on how to use Bootstrap for styling the app.
-
-**Coach:** Talk a little about CSS and layouts.
-
-## *4.* Adding picture uploads
-
-Ideas can benefit from a visual element, like a picture or drawing. We can attach these by adding a file upload to the Idea model.
-
-### Installing a Ruby gem
-
-To let us upload files in Rails app, we'll need to install a piece of software in the app first.
-
-Open the `Gemfile` file in your Text Editor. Below the following line:
-
-{% highlight ruby %}
-gem "sqlite3"
-{% endhighlight %}
-
-add this line to the file and save it:
-
-{% highlight ruby %}
-gem "carrierwave"
-{% endhighlight %}
-
-Open the Terminal app and press <kbd>Ctrl</kbd>+<kbd>C</kbd> to quit the Rails server.
-
-Then run the following command in the Terminal:
-
-{% highlight sh %}
-bundle install
-{% endhighlight %}
-
-This will install the "carrierwave" gem we added to the `Gemfile` file.
-
-**Coach:** Explain what libraries (Ruby gems) are and why they are useful. Describe what Open Source software is.
-
-### Generating a picture uploader
-
-We can now generate the code for handling uploads. In the Terminal run the following command:
-
-{% highlight sh %}
-rails generate uploader Picture
-{% endhighlight %}
-
-If an error is shown that the uploader cannot be found also add the following line:
-{% highlight ruby %}
-gem "net-ssh"
-{% endhighlight %}
-
-If you added this gem, please run this command in the Terminal app again to install the missing gem:
-
-{% highlight sh %}
-bundle install
-{% endhighlight %}
-
-### Attaching the picture uploader to the idea model
-
-Open the `app/models/idea.rb` file in your Text Editor and under the following line:
-
-{% highlight ruby %}
-class Idea < ApplicationRecord
-{% endhighlight %}
-
-add this line and save it:
-
-{% highlight ruby %}
-mount_uploader :picture, PictureUploader
-{% endhighlight %}
-
-Open the `app/views/ideas/_form.html.erb` file in your Text Editor and change the following line:
-
-{% highlight erb %}
-<%= form.text_field :picture %>
-{% endhighlight %}
-
-to this line and save it:
-
-{% highlight erb %}
-<%= form.file_field :picture %>
-{% endhighlight %}
-
-In your browser open <http://localhost:3000/ideas/new>, create a new idea using the form, but this time select a picture as well using the "Browse..." or "Choose File" button.
-
-### Displaying the picture
-
-You've now added a picture to your idea! You can't see it yet after creating the idea, it will only show the filename right now. Let's change it so it shows the picture.
-
-To show the picture in the page of the idea itself, open the `app/views/ideas/_idea.html.erb` in the Text editor and change the following line:
-
-{% highlight erb %}
-<%= idea.picture %>
-{% endhighlight %}
-
-to this line and save the file:
-
-{% highlight erb %}
-<%= image_tag(idea.picture_url, width: 600) if idea.picture? %>
-{% endhighlight %}
-
-Using the `image_tag` we have told Rails to display the file upload as an image if it is present on the idea. Ideas without a picture will not show one.
-
-Refresh the Browser. Your uploaded image should now be visible!
-
-## *5.* Finetune the routes
+## Finetune the routes
 
 Open <http://localhost:3000> (or your preview URL). It will show a page with only the Rails logo. Let's make it redirect to the ideas page instead.
 
@@ -332,60 +158,11 @@ Test the change by opening the root path (that is, <http://localhost:3000/> or y
 
 **Coach:** Talk about routes, and include details on the order of routes and their relation to static files.
 
-## *6.* Add an about page
-
-Let's add an about page to our app that will display information about the author of this application — you!
-
-In the Terminal app, run the following command:
-
-{% highlight sh %}
-rails generate controller pages about
-{% endhighlight %}
-
-This command will create a new directory under `app/views/` called `pages`. In that directory a file called `about.html.erb` will be created. This file will be your "about" page.
-
-It will also add a new route to your `config/routes.rb` showing this file.
-
-{% highlight ruby %}
-get "pages/about"
-{% endhighlight %}
-
-Open the `app/views/pages/about.html.erb` file. Add information about yourself in HTML. Something like the example below:
-
-{% highlight erb %}
-<h1>About me</h1>
-<p>Hello there! I am ... and this is my app!</p>
-{% endhighlight %}
-
-To see your new about page, take your browser to <http://localhost:3000/pages/about> or, or append `/pages/about` to your preview URL. You should now see the new page we just created!
-
-## *7.* Add a link to your navigation bar
-
-Now that we know the new page works, let's make sure people can visit it by creating a link for it in the navigation bar.
-
-Open `app/views/layouts/application.html.erb` in your Text Editor and under these lines:
-
-{% highlight erb %}
-<li class="nav-item">
-  <a class="nav-link <%= 'active' if current_page?(controller: 'ideas') %>" href="/ideas">Ideas</a>
-</li>
-{% endhighlight %}
-
-add the following lines to link to the new page:
-
-{% highlight erb %}
-<li class="nav-item">
-  <a class="nav-link <%= 'active' if current_page?(controller: 'pages', action: 'about') %>" href="/pages/about">About</a>
-</li>
-{% endhighlight %}
-
-Refresh the page in your Browser and click the newly created link to see if it works!
-
-## *8.* Next steps
+## Next steps
 
 You have now created your first app! Congratulations!
 
-From here we will put your app online so that others can see it as well, share the code with others, allow people to leave comments, improve the design with HTML and CSS, etc.
+From here we will continueing working on the app to improve the design with HTML and CSS, add more pages, add picture uploads, put your app online so that others can see it as well, share the code with others, allow people to leave comments, etc.
 
 Talk with your coach about the steps you took in this guide. Do you have questions about any of the steps? Ask them before moving on to the next guide.
 
