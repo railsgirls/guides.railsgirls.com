@@ -63,7 +63,7 @@ Decorate the place with balloons and posters. Put a fun <a href="http://open.spo
 
 Come up with activities to break the ice: ask the girls to write why they are attending the event on post-its or to draw and describe their dream web app.
 
-Remember to do a [FridayHug](http://fridayhug.com)!
+Remember to do a #FridayHug!
 
 21:00 -> Coach dinner (optional)
 Go through the application with the coaches during dinner.
@@ -466,7 +466,7 @@ This is a small checklist for your event. Rails Girls can be thrown together in 
 * Tweet!
 * Remember to take photos
 * Interview participants and speakers about their experiences
-* Do a Friday Hug! Learn more about Friday hugs at [Fridayhug.com](http://fridayhug.com)
+* Do a Friday Hug! Take a picture with everyone and share it on social media with the hashtag #FridayHug!
 * Have a Skype with other Rails Girls chapters hosting events at the same time
 
 #### After the event
