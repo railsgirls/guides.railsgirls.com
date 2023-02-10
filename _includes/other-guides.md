@@ -1,6 +1,6 @@
 <hr>
 
-## Other Guides
+## Guides
 
 * [Handy cheatsheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
 * Guide 0: [Get to know the tools](/tools) {% if include.page == 'tools' %}(Current page!){% endif %}
