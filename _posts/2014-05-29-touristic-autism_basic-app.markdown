@@ -33,7 +33,7 @@ First, let's open a terminal:
 Next, type these commands in the terminal:
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
 {% highlight sh %}
 mkdir projects
 {% endhighlight %}
@@ -117,7 +117,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser. You should 
 Notice in this window the command prompt is not visible because you are now in the Rails server, the command prompt looks like this:
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
 {% highlight sh %}
 $
 {% endhighlight %}

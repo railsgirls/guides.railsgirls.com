@@ -22,7 +22,7 @@ OpenShift is one of the cloud deployment services offering such facilities. It i
 [Create an OpenShift Online account](https://openshift.redhat.com/app/account/new?web_user[promo_code]=railsgirls), which allows you to put three apps online for free. Once you are signed up, install the OpenShift RHC Client Tools by adding the rhc gem in the production environment. Add the following to the Gemfiile (which is written in Ruby ndr):
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
     {% highlight sh %}
       group :production do
         gem 'rhc'
@@ -35,7 +35,7 @@ If you are not using RVM or RailsInstaller then follow [this guide](https://www.
 Then run in the terminal:
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
     {% highlight sh %}
   bundle install --without production
   rhc setup
@@ -54,7 +54,7 @@ Because the only gems we’ve added are restricted to a production environment, 
 Navigate to the "projects" folder. Run in the prompt:
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
     {% highlight sh %}
 rhc app create openshiftapp ruby-1.9 postgresql-9.2 --from-code=https://github.com/openshift/rails-example.git
 {% endhighlight %}
@@ -64,7 +64,7 @@ rhc app create openshiftapp ruby-1.9 postgresql-9.2 --from-code=https://github.c
 We need the .openshift directory and config/database.yml file from the sample application in order for our Rails app to run on OpenShift. Copy these from the openshiftapp directory to the railsgirls directory.
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
     {% highlight sh %}
 cd railsgirls-galway-2014 
 cp -r ../openshiftapp/.openshift .
@@ -77,7 +77,7 @@ Now add and commit in Git the new changes!
 OpenShift uses the PostgreSQL database, which means that we need to add the pg gem in the production environment to allow Rails to talk to Postgres. Note also the addition of the rails_12factor gem, which is used to serve static assets such as images and stylesheets. Substitute "gem sqlite" in Gemfile with the following:
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
     {% highlight sh %}
 gem 'sqlite3', :group => [:development, :test]
 gem 'pg', :group => [:production]
@@ -97,7 +97,7 @@ Add and commit your changes in Git
 We are now ready to deploy the Rails Girls app to OpenShift. We need to tell our Git repository where to push the code. To get the location of your OpenShift code repository, run the following command, and copy the Git URL from the output.
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
     {% highlight sh %}
        rhc app show openshiftapp
 {% endhighlight %}
@@ -107,7 +107,7 @@ We are now ready to deploy the Rails Girls app to OpenShift. We need to tell our
 Now run the following commands, replacing the SSH string with your Git URL. We are using ‘-f’ for force here because we are happy to wipe away the history of the current OpenShift repository, which contains the sample Rails app. When you are pushing future changes, you can just use ‘git push’.
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
     {% highlight sh %}
 git remote add openshift ssh://5387bff65973cadf3c000323@openshiftapp-railsgirlsgalway.rhcloud.com/~/git/openshiftapp.git/
 git push -f --set-upstream openshift master
@@ -119,7 +119,7 @@ Get a secret with "rake secret" assign it to the environment variable 'SECRET_KE
 OpenShift (but also Heroku) needs to serve static assets like images and CSS:
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
     {% highlight sh %}
 $ rake assets:precompile
 $ git add .
@@ -136,7 +136,7 @@ When we push a new version of the application, anything stored within OpenShift�
 To change the location of the production log, open config/environments/production.rb. Beneath the comment line:
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
     {% highlight sh %}
 config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
 {% endhighlight %}
@@ -146,7 +146,7 @@ config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
 Add the line:
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
     {% highlight sh %}
 config.logger = ActiveSupport::Logger.new(File.join(ENV['OPENSHIFT_RUBY_LOG_DIR'], "production.log"))
 {% endhighlight %}

@@ -14,7 +14,7 @@ The basic guides that have been merged and adapted are the [Ruby on Rails Tutori
 Navigate to the root directory of the first app and initialize a new repository:
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
     {% highlight sh %}
       $ git init
     {% endhighlight %}
@@ -24,7 +24,7 @@ Navigate to the root directory of the first app and initialize a new repository:
 Before adding the project to the repository, let's tell Git which files to ignore - because too frequently subject to changes - by listing them in the .gitignore file. The "rails new" command already create a .gitignore file but let's extend it with the following.
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
     {% highlight sh %}
 # Ignore other unneeded files.
 database.yml
@@ -44,7 +44,7 @@ doc/
 
 Add the changes (recursively adding every sub-directory, too).
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
     {% highlight sh %}
 git add . 
   {% endhighlight %}
@@ -54,7 +54,7 @@ git add .
 The "git add" command adds the project files to a staging area, which contains pending changes to your projectbu; you can see which files are in the staging area using the status command:
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
     {% highlight sh %}
 $ git status
   {% endhighlight %}
@@ -63,7 +63,7 @@ $ git status
 
 Now commit the changes while justifying them with a message:
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
     {% highlight sh %}
 $ git commit -m "Initialize repository"
   {% endhighlight %}
@@ -76,7 +76,7 @@ Now we want our changes to be pushed from our local machine to a remote reposito
 Push up your local changes to the remote repository as follows:
 
 <div class="os-specific">
-  <div class="nix">
+  <div class="mac nix">
     {% highlight sh %}
 $ git remote add origin https://github.com/<username>/railsgirls-galway-2014.git
 $ git push -u origin master

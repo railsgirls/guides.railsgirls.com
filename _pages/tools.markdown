@@ -31,21 +31,39 @@ In the Terminal app you'll do things like:
 
 Open the Terminal like so for your Operating System:
 
-### macOS/OSX
+<div class="os-specific">
+  <div class="mac">
+    <ul>
+      <li>
+        Open Spotlight:
+        <ul>
+          <li>Click the Magnifing glass icon in the menu bar at the uppermost top right of your screen, or;</li>
+          <li>Press <kbd>command + space bar</kbd> (The command key can be recognized by the <kbd>⌘</kbd> symbol).</li>
+        </ul>
+      </li>
+      <li>Type in "Terminal" or "iTerm".</li>
+      <li>Press <kbd>Enter</kbd> to open the Terminal app.</li>
+    </ul>
+  </div>
 
-- Open Spotlight:
-    - Click the Magnifing glass icon in the menu bar at the uppermost top right of your screen, or;
-    - Press <kbd>command + space bar</kbd> (The command key can be recognized by the <kbd>⌘</kbd> symbol).
-- Type in "Terminal" or "iTerm".
-- Press <kbd>Enter</kbd> to open the Terminal app.
+  <div class="win">
+    <ul>
+      <li>
+        Open the "Start" menu by:
+        <ul>
+          <li>Clicking on the Windows icon in the bottom left, or;</li>
+          <li>press the <kbd>Window flag</kbd> key on the keyboard.</li>
+        </ul>
+      </li>
+      <li>Type in "PowerShell" or "Command Prompt", whichever is available.</li>
+      <li>Press <kbd>Enter</kbd> to open the Terminal app.</li>
+    </ul>
+  </div>
 
-### Microsoft Windows
-
-- Open "Start" by:
-    - Clicking on the Windows icon in the bottom left, or;
-    - press the <kbd>Window flag key</kbd>.
-- Type in "PowerShell" or "Command Prompt", whichever is available.
-- Press <kbd>Enter</kbd> to open the Terminal app.
+  <div class="nix">
+    <p>Please consult your Linux distribution's documentation about how to open apps, and open the <em>Terminal</em> app.</p>
+  </div>
+</div>
 
 If the options above are not available, press the <kbd>Window flag key + R</kbd>, type in `cmd` and press <kbd>Enter</kbd> to open the Command Prompt Terminal app.
 
