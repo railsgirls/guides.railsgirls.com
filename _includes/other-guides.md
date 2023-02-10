@@ -1,8 +1,9 @@
 <hr>
 
+If you're ever stuck during a guide, please consult this [handy cheatsheet for Ruby, Rails, the console, the Text Editor etc](http://www.pragtob.info/rails-beginner-cheatsheet/).
+
 ## Guides
 
-* [Handy cheatsheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
 * Guide 0: [Get to know the tools](/tools) {% if include.page == 'tools' %}(Current page!){% endif %}
 * Guide 1: [Guide to install Rails](/install) {% if include.page == 'install' %}(Current page!){% endif %}
   - [Installation guide for macOS](/install/macos) {% if include.page == 'install/macos' %}(Current page!){% endif %}
