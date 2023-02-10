@@ -226,6 +226,15 @@ i.icon-browser {
   background-image: url('/images/icon-browser.png');
 }
 
+.text-center {
+  text-align: center;
+}
+
+.box {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .highlight {
   margin-left: 30px;
   margin-right: 0;
