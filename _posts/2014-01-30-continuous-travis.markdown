@@ -161,4 +161,4 @@ Logging out... OK
 
 This means your are done and good to go! 
 
-{% include other-guides.md page="travis" %}
+{% include other-guides.md %}

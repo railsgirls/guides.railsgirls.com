@@ -137,4 +137,4 @@ By now you can create more tests alone. Feel free to talk to your coach to do th
 
 Happy testing!
 
-{% include other-guides.md page="testing-rspec" %}
+{% include other-guides.md %}

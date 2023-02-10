@@ -438,4 +438,4 @@ Play with your application! Here are some further ideas you might want to add:
 - support for different categories of entries,
 - upload and display of images.
 
-{% include other-guides.md page="diary-app" %}
+{% include other-guides.md %}

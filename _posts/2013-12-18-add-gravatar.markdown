@@ -72,4 +72,4 @@ And, put the following code to the bottom of `app/assets/stylesheets/application
 
 Now open you app in your browser and login with an e-mail address that is associated with a Gravatar. You should be able to see your Gravatar.
 
-{% include other-guides.md page="gravatar" %}
+{% include other-guides.md %}

@@ -83,4 +83,4 @@ To fix this issue:
 > 6. To make sure this works, go back to Codeship. In the build that failed, click on the arrow next to the _Failed_ button and then click _Restart Build_.
 > 7. Celebrate when you see the Green _Success_ button meaning that the _Build Passed_ !
 
-{% include other-guides.md page="continuous" %}
+{% include other-guides.md %}

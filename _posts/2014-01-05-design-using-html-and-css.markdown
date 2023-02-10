@@ -96,4 +96,4 @@ add these lines to app/assets/stylesheets/ideas.css.scss
 
 **Coach:** explain how to use `border` in css, try modify the style of button like round the corner, add shadow or color etc.
 
-{% include other-guides.md page="design-html-css" %}
+{% include other-guides.md %}

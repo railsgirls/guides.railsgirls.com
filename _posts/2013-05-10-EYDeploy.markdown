@@ -104,4 +104,4 @@ Once you've got your app up & running, be sure to click the "stop" button to sto
 
 *	[Another Tutorial From the Engine Yard Site](https://support.cloud.engineyard.com/entries/20996751-Tutorial-How-to-Deploy-the-ToDo-Application-on-a-Trial-Account)
 
-{% include other-guides.md page="engineyard" %}
+{% include other-guides.md %}

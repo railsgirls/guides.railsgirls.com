@@ -109,4 +109,4 @@ touch test.txt
 
 Now let's check in our own operation system, if the shared folder contains a file called *test.txt. If so, we are ready with our virtual environment.
 
-{% include other-guides.md page="install/virtual-machine" %}
+{% include other-guides.md %}

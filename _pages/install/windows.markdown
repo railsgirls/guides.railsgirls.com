@@ -114,4 +114,4 @@ _If you run into any problems during this step, check the [Possible errors](#pos
 
 **Coach:** We recommend to verify by using the scaffold command and inputting data with the generated page with coaches to ensure everything is working. Also: remove the test app `myapp` to make super sure no-one is working in the wrong folder, following the steps of the workshop.
 
-{% include other-guides.md page="install/windows" %}
+{% include other-guides.md %}

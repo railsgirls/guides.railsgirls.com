@@ -83,4 +83,4 @@ Your Rails app is now running in the cloud on DigitalOcean. You can push your ch
 
 Keep an eye out when your free credits run out and delete the app if you no longer need it.
 
-{% include other-guides.md page="digitalocean" %}
+{% include other-guides.md %}

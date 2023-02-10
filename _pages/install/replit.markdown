@@ -62,4 +62,4 @@ When you log out and log back in to [replit.com], you can find your RailsGirls a
 
 [replit.com]: https://replit.com
 
-{% include other-guides.md page="install/replit" %}
+{% include other-guides.md %}

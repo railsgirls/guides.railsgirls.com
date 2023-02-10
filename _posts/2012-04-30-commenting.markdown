@@ -94,4 +94,4 @@ next, remove
 
 That's it. Now view an idea you have inserted to your application and there you should see the form for inserting a comment as well as deleting older comments.
 
-{% include other-guides.md page="commenting" %}
+{% include other-guides.md %}

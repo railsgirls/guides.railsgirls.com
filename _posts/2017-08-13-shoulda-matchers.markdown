@@ -119,4 +119,4 @@ Can you imagine another tests to make?
 
 Happy testing!
 
-{% include other-guides.md page="shoulda" %}
+{% include other-guides.md %}

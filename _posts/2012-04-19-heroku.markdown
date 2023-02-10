@@ -177,4 +177,4 @@ resources available which you can use to find your way:
 
 As always if you require any more information or assistance your coaches will be able to assist.
 
-{% include other-guides.md page="heroku" %}
+{% include other-guides.md %}

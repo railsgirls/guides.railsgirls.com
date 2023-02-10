@@ -100,4 +100,4 @@ Voila! You can now manage your Ideas from your new admin panel!
 
 * Add another resource to admin such as Blog and Comments
 
-{% include other-guides.md page="active-admin" %}
+{% include other-guides.md %}

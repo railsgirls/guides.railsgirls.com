@@ -84,4 +84,4 @@ In case your terminal does not have all the answers, the anynines team probably 
 
 Happy deploying!
 
-{% include other-guides.md page="anynines" %}
+{% include other-guides.md %}

@@ -389,4 +389,4 @@ From here we will put your app online so that others can see it as well, share t
 
 Talk with your coach about the steps you took in this guide. Do you have questions about any of the steps? Ask them before moving on to the next guide.
 
-{% include other-guides.md page="app" %}
+{% include other-guides.md %}

@@ -4,34 +4,34 @@ If you're ever stuck during a guide, please consult this [handy cheatsheet for R
 
 ## Guides
 
-* Guide 0: [Get to know the tools](/tools) {% if include.page == 'tools' %}(Current page!){% endif %}
-* Guide 1: [Guide to install Rails](/install) {% if include.page == 'install' %}(Current page!){% endif %}
-  - [Installation guide for macOS](/install/macos) {% if include.page == 'install/macos' %}(Current page!){% endif %}
-  - [Installation guide for Windows](/install/windows) {% if include.page == 'install/windows' %}(Current page!){% endif %}
-  - [Installation guide for Linux](/install/linux) {% if include.page == 'install/linux' %}(Current page!){% endif %}
-  - [Installation guide for a Virtual Machine](/install/virtual-machine) {% if include.page == 'install/virtual-machine' %}(Current page!){% endif %}
-  - [Installation guide for a Cloud service](/install/replit) {% if include.page == 'install/replit' %}(Current page!){% endif %}
-* Guide 2: [Build Your First App](/app) {% if include.page == 'app' %}(Current page!){% endif %}
-* Guide 3: [Push Your App to GitHub](/github) {% if include.page == 'github' %}(Current page!){% endif %}
-* Guide 4: Put your app online with...
-  - [Heroku](/heroku) {% if include.page == 'heroku' %}(Current page!){% endif %}
-  - [DigitalOcean](/digitalocean) {% if include.page == 'digitalocean' %}(Current page!){% endif %}
-  - [OpenShift](/openshift) {% if include.page == 'openshift' %}(Current page!){% endif %}
-  - [Anynines](/anynines) {% if include.page == 'anynines' %}(Current page!){% endif %}
-  - [Engine Yard](/engineyard) {% if include.page == 'engineyard' %}(Current page!){% endif %}
-  - [Prepare for deployment with Phusion Passenger](/passenger) {% if include.page == 'passenger' %}(Current page!){% endif %}
-* Guide 5: [Allow Comments on Your App](/commenting) {% if include.page == 'commenting' %}(Current page!){% endif %}
-* Guide 6: [Add design using HTML &amp; CSS](/design) {% if include.page == 'design' %}(Current page!){% endif %}
-* Guide 7: [Create thumbnails with Carrierwave](/thumbnails) {% if include.page == 'thumbnails' %}(Current page!){% endif %}
-* Guide 8: [Add Authentication (user accounts) with Devise](/devise) {% if include.page == 'devise' %}(Current page!){% endif %}
-* Guide 9: [Add Profile Pics with Gravatar](/gravatar) {% if include.page == 'gravatar' %}(Current page!){% endif %}
-* Guide 10: [Improve your design with HTML and CSS](/design-html-css) {% if include.page == 'design-html-css' %}(Current page!){% endif %}
+* Guide 0: [Get to know the tools](/tools) {% if page.permalink == 'tools' %}(Current page!){% endif %}
+* Guide 1: [Guide to install Rails](/install) {% if page.permalink == 'install' %}(Current page!){% endif %}
+  - [Installation guide for macOS](/install/macos) {% if page.permalink == 'install/macos' %}(Current page!){% endif %}
+  - [Installation guide for Windows](/install/windows) {% if page.permalink == 'install/windows' %}(Current page!){% endif %}
+  - [Installation guide for Linux](/install/linux) {% if page.permalink == 'install/linux' %}(Current page!){% endif %}
+  - [Installation guide for a Virtual Machine](/install/virtual-machine) {% if page.permalink == 'install/virtual-machine' %}(Current page!){% endif %}
+  - [Installation guide for a Cloud service](/install/replit) {% if page.permalink == 'install/replit' %}(Current page!){% endif %}
+* Guide 2: [Build Your First App](/app) {% if page.permalink == 'app' %}(Current page!){% endif %}
+* Guide 3: [Push Your App to GitHub](/github) {% if page.permalink == 'github' %}(Current page!){% endif %}
+* Guide 4: Put your app online with:
+  - [Heroku](/heroku) {% if page.permalink == 'heroku' %}(Current page!){% endif %}
+  - [DigitalOcean](/digitalocean) {% if page.permalink == 'digitalocean' %}(Current page!){% endif %}
+  - [OpenShift](/openshift) {% if page.permalink == 'openshift' %}(Current page!){% endif %}
+  - [Anynines](/anynines) {% if page.permalink == 'anynines' %}(Current page!){% endif %}
+  - [Engine Yard](/engineyard) {% if page.permalink == 'engineyard' %}(Current page!){% endif %}
+  - [Prepare for deployment with Phusion Passenger](/passenger) {% if page.permalink == 'passenger' %}(Current page!){% endif %}
+* Guide 5: [Allow Comments on Your App](/commenting) {% if page.permalink == 'commenting' %}(Current page!){% endif %}
+* Guide 6: [Add design using HTML &amp; CSS](/design) {% if page.permalink == 'design' %}(Current page!){% endif %}
+* Guide 7: [Create thumbnails with Carrierwave](/thumbnails) {% if page.permalink == 'thumbnails' %}(Current page!){% endif %}
+* Guide 8: [Add Authentication (user accounts) with Devise](/devise) {% if page.permalink == 'devise' %}(Current page!){% endif %}
+* Guide 9: [Add Profile Pics with Gravatar](/gravatar) {% if page.permalink == 'gravatar' %}(Current page!){% endif %}
+* Guide 10: [Improve your design with HTML and CSS](/design-html-css) {% if page.permalink == 'design-html-css' %}(Current page!){% endif %}
 * Guide 11: Continuous Deployment
-  - [Test your app with RSpec](testing-rspec) {% if include.page == 'testing-rspec' %}(Current page!){% endif %}
-  - [Simplifying your tests with Shoulda Matchers](testing-shoulda-matchers) {% if include.page == 'shoulda' %}(Current page!){% endif %}
-  - [CD with Travis-CI](/continuous-travis) {% if include.page == 'travis' %}(Current page!){% endif %}
-  - [CD with Codeship](/continuous) {% if include.page == 'continuous' %}(Current page!){% endif %}
-* Guide 12: [Build a voting app in Sinatra](/sinatra-app) {% if include.page == 'sinatra-app' %}(Current page!){% endif %}
-* Guide 13: [Build a diary app in Ruby on Rails](diary-app) {% if include.page == 'diary-app' %}(Current page!){% endif %}
-* Guide 14: [Add a back-end to your app (admin pages)](/backend-with-active-admin) {% if include.page == 'active-admin' %}(Current page!){% endif %}
+  - [Test your app with RSpec](/testing-rspec) {% if page.permalink == 'testing-rspec' %}(Current page!){% endif %}
+  - [Simplifying your tests with Shoulda Matchers](/testing-shoulda-matchers) {% if page.permalink == 'testing-shoulda-matchers' %}(Current page!){% endif %}
+  - [CD with Travis-CI](/continuous-travis) {% if page.permalink == 'travis' %}(Current page!){% endif %}
+  - [CD with Codeship](/continuous) {% if page.permalink == 'continuous' %}(Current page!){% endif %}
+* Guide 12: [Build a voting app in Sinatra](/sinatra-app) {% if page.permalink == 'sinatra-app' %}(Current page!){% endif %}
+* Guide 13: [Build a diary app in Ruby on Rails](/diary-app) {% if page.permalink == 'diary-app' %}(Current page!){% endif %}
+* Guide 14: [Add a back-end to your app (admin pages)](/backend-with-active-admin) {% if page.permalink == 'active-admin' %}(Current page!){% endif %}
 * Guide 15: [Go through additional explanations for the App](https://github.com/lbain/railsgirls)
