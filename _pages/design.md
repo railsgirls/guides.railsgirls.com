@@ -38,7 +38,7 @@ Open `app/views/ideas/_idea.html.erb` in your Text Editor and replace all the li
     <p><%= idea.description %></p>
     <small class="opacity-50 text-nowrap">Last updated <%= time_ago_in_words idea.updated_at %></small>
   </div>
-  <%= image_tag(idea.picture_url, width: 150, height: 150, class: "rounded flex-shrink-0 border") if idea.picture? %>
+  <%= image_tag(idea.picture_url, width: 150, height: 150, class: "img-thumbnail flex-shrink-0") if idea.picture? %>
 </div>
 {% endhighlight %}
 

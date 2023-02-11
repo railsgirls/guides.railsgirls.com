@@ -26,7 +26,7 @@ If you're ever stuck during a guide, please consult this [handy cheatsheet for R
   - [Prepare for deployment with Phusion Passenger](/passenger) {% if page.permalink == 'passenger' %}(Current page!){% endif %}
 * Guide 5: [Allow Comments on Your App](/commenting) {% if page.permalink == 'commenting' %}(Current page!){% endif %}
 * Guide 6: [Style the idea pages using HTML and CSS](/design) {% if page.permalink == 'design' %}(Current page!){% endif %}
-* Guide 7: [Create thumbnails with Carrierwave](/thumbnails) {% if page.permalink == 'thumbnails' %}(Current page!){% endif %}
+* Guide 7: [Create picture thumbnails](/thumbnails) {% if page.permalink == 'thumbnails' %}(Current page!){% endif %}
 * Guide 8: [Add Authentication (user accounts) with Devise](/devise) {% if page.permalink == 'devise' %}(Current page!){% endif %}
 * Guide 9: [Add Profile Pics with Gravatar](/gravatar) {% if page.permalink == 'gravatar' %}(Current page!){% endif %}
 * Guide 10: Continuous Deployment

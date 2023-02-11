@@ -115,4 +115,14 @@ Using the `image_tag` we have told Rails to display the file upload as an image 
 
 Refresh the Browser. Your uploaded image should now be visible!
 
+## Configure Git to ignore uploads
+
+By default your app saves all your images locally, which is fine during development, but we don't want to save them with your app source code.
+
+Open the `.gitignore` file add add this line at the bottom:
+
+{% highlight erb %}
+public/uploads/
+{% endhighlight %}
+
 {% include other-guides.md %}
