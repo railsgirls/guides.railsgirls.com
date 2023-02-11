@@ -33,6 +33,5 @@ If you're ever stuck during a guide, please consult this [handy cheatsheet for R
   - [Simplifying your tests with Shoulda Matchers](/testing-shoulda-matchers) {% if page.permalink == 'testing-shoulda-matchers' %}(Current page!){% endif %}
   - [CD with Travis-CI](/continuous-travis) {% if page.permalink == 'travis' %}(Current page!){% endif %}
   - [CD with Codeship](/continuous) {% if page.permalink == 'continuous' %}(Current page!){% endif %}
-* Help guide: [Go through additional explanations for the App](https://github.com/lbain/railsgirls)
 
 [View all guides](/)
