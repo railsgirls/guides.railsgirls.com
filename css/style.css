@@ -251,6 +251,19 @@ i.icon-browser {
   text-align: center;
 }
 
+.guides-intro {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.guides-intro h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.guides-intro h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
 .box {
   margin-top: 40px;
   margin-bottom: 40px;
