@@ -6,7 +6,7 @@ permalink: github
 
 # Push your app to GitHub
 
-*Created by Alyson La, [@realalysonla](https://www.twitter.com/realalysonla)*
+*Originally created by Alyson La, [@realalysonla](https://www.twitter.com/realalysonla)*
 
 Git is a tool with which it's possible to save your app's source code, view changes over time, share code online and collaborate with others.
 
