@@ -24,8 +24,8 @@ If you're ever stuck during a guide, please consult this [handy cheatsheet for R
   - [Anynines](/anynines) {% if page.permalink == 'anynines' %}(Current page!){% endif %}
   - [Engine Yard](/engineyard) {% if page.permalink == 'engineyard' %}(Current page!){% endif %}
   - [Prepare for deployment with Phusion Passenger](/passenger) {% if page.permalink == 'passenger' %}(Current page!){% endif %}
-* Guide 5: [Allow Comments on Your App](/commenting) {% if page.permalink == 'commenting' %}(Current page!){% endif %}
-* Guide 6: [Style the idea pages using HTML and CSS](/design) {% if page.permalink == 'design' %}(Current page!){% endif %}
+* Guide 5: [Style the idea pages using HTML and CSS](/design) {% if page.permalink == 'design' %}(Current page!){% endif %}
+* Guide 6: [Add comments to your app](/commenting) {% if page.permalink == 'commenting' %}(Current page!){% endif %}
 * Guide 7: [Create picture thumbnails](/thumbnails) {% if page.permalink == 'thumbnails' %}(Current page!){% endif %}
 * Guide 8: [Add Authentication (user accounts) with Devise](/devise) {% if page.permalink == 'devise' %}(Current page!){% endif %}
 * Guide 9: Continuous Deployment

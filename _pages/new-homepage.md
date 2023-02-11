@@ -22,7 +22,7 @@ touch app/views/pages/homepage.html.erb
   </div>
   <div class="win">
 {% highlight sh %}
-type nul > "app/views/pages/homepage.html.erb"
+ni app/views/pages/homepage.html.erb
 {% endhighlight %}
   </div>
 </div>
