@@ -27,11 +27,6 @@ If you're ever stuck during a guide, please consult this [handy cheatsheet for R
 * Guide 5: [Style the idea pages using HTML and CSS](/design) {% if page.permalink == 'design' %}(Current page!){% endif %}
 * Guide 6: [Add comments to your app](/commenting) {% if page.permalink == 'commenting' %}(Current page!){% endif %}
 * Guide 7: [Create picture thumbnails](/thumbnails) {% if page.permalink == 'thumbnails' %}(Current page!){% endif %}
-* Guide 8: [Add Authentication (user accounts) with Devise](/devise) {% if page.permalink == 'devise' %}(Current page!){% endif %}
-* Guide 9: Continuous Deployment
-  - [Test your app with RSpec](/testing-rspec) {% if page.permalink == 'testing-rspec' %}(Current page!){% endif %}
-  - [Simplifying your tests with Shoulda Matchers](/testing-shoulda-matchers) {% if page.permalink == 'testing-shoulda-matchers' %}(Current page!){% endif %}
-  - [CD with Travis-CI](/continuous-travis) {% if page.permalink == 'travis' %}(Current page!){% endif %}
-  - [CD with Codeship](/continuous) {% if page.permalink == 'continuous' %}(Current page!){% endif %}
+* Guide 8: [Test your app with RSpec](/testing-rspec) {% if page.permalink == 'testing-rspec' %}(Current page!){% endif %}
 
 [View all guides](/)
