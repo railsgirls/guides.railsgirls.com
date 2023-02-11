@@ -38,3 +38,5 @@ If you're ever stuck during a guide, please consult this [handy cheatsheet for R
 * Guide 13: [Build a diary app in Ruby on Rails](/diary-app) {% if page.permalink == 'diary-app' %}(Current page!){% endif %}
 * Guide 14: [Add a back-end to your app (admin pages)](/backend-with-active-admin) {% if page.permalink == 'active-admin' %}(Current page!){% endif %}
 * Guide 15: [Go through additional explanations for the App](https://github.com/lbain/railsgirls)
+
+[View all guides](/)
