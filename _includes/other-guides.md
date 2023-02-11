@@ -28,15 +28,11 @@ If you're ever stuck during a guide, please consult this [handy cheatsheet for R
 * Guide 6: [Style the idea pages using HTML and CSS](/design) {% if page.permalink == 'design' %}(Current page!){% endif %}
 * Guide 7: [Create picture thumbnails](/thumbnails) {% if page.permalink == 'thumbnails' %}(Current page!){% endif %}
 * Guide 8: [Add Authentication (user accounts) with Devise](/devise) {% if page.permalink == 'devise' %}(Current page!){% endif %}
-* Guide 9: [Add Profile Pics with Gravatar](/gravatar) {% if page.permalink == 'gravatar' %}(Current page!){% endif %}
-* Guide 10: Continuous Deployment
+* Guide 9: Continuous Deployment
   - [Test your app with RSpec](/testing-rspec) {% if page.permalink == 'testing-rspec' %}(Current page!){% endif %}
   - [Simplifying your tests with Shoulda Matchers](/testing-shoulda-matchers) {% if page.permalink == 'testing-shoulda-matchers' %}(Current page!){% endif %}
   - [CD with Travis-CI](/continuous-travis) {% if page.permalink == 'travis' %}(Current page!){% endif %}
   - [CD with Codeship](/continuous) {% if page.permalink == 'continuous' %}(Current page!){% endif %}
-* Guide 11: [Build a voting app in Sinatra](/sinatra-app) {% if page.permalink == 'sinatra-app' %}(Current page!){% endif %}
-* Guide 12: [Build a diary app in Ruby on Rails](/diary-app) {% if page.permalink == 'diary-app' %}(Current page!){% endif %}
-* Guide 13: [Add a back-end to your app (admin pages)](/backend-with-active-admin) {% if page.permalink == 'active-admin' %}(Current page!){% endif %}
-* Guide 14: [Go through additional explanations for the App](https://github.com/lbain/railsgirls)
+* Help guide: [Go through additional explanations for the App](https://github.com/lbain/railsgirls)
 
 [View all guides](/)
