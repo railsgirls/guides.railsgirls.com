@@ -1,4 +1,5 @@
 html {
+  --highlight: #e0330c;
   background: #f4f4f4;
 }
 
@@ -55,7 +56,7 @@ ul li {
 }
 
 a {
-  color: #e0330c;
+  color: var(--highlight);
 }
 
 a:hover {
@@ -119,75 +120,74 @@ footer {
   line-height: 1.5;
   text-align: center;
 }
-
 footer a {
   color: #111;
   border-color: #111;
 }
-
-.indent {
-  margin-left: 70px;
+footer p:last-child {
+  margin-bottom: 0;
 }
 
-.home {
-  list-style: none;
+.guides-list {
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
-
-.home li {
-  padding: 1.5em 0;
+.guides-list li {
+  padding: 20px 0;
+  min-height: 84px;
+}
+.guides-list li:not(:last-child) {
   border-bottom: 1px solid #ddd;
-  cursor: pointer;
+}
+.guides-list h3 {
+  margin: 0;
+  color: var(--highlight);
+}
+.guides-list p {
+  margin-left: 90px;
+  font-size: 18px;
 }
 
-.home li:last-child {
-  border-bottom: 0;
-}
+.guide-icon {
+  position: relative;
+  top: 3px;
+  margin-right: 20px;
 
-.home li i {
   width: 70px;
   height: 70px;
-  background-color: #d0d0d0;
   float: left;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 2em;
+
   color: #fff;
+  font-size: 1.8em;
   line-height: 70px;
-  font-style: normal;
   font-weight: bold;
+  text-align: center;
+
+  background-color: #d0d0d0;
   border-radius: 70px;
   transition: 0.1s background-color ease-in;
   -webkit-transition: 0.1s background-color ease-in;
   -moz-transition: 0.1s background-color ease-in;
 }
-
-.home li:hover i {
+.guide-icon:before {
+  content: attr(data-icon);
+  font-size: 120%;
+}
+.guide-icon-meta:before {
+  content: "?";
+  position: relative;
+}
+.guide-icon-other:before {
+  content: "❯";
+  position: relative;
+}
+a:hover .guide-icon,
+.guide-icon:hover {
   background-color: #d3360b;
   transition: 0.1s background-color ease-in;
   -webkit-transition: 0.1s background-color ease-in;
   -moz-transition: 0.1s background-color ease-in;
-}
-
-.home li > a,
-.home li > a:hover {
-  color: inherit;
-  text-decoration: none;
-}
-
-.home h3 {
-  margin: 0 0 0.5em;
-  margin-left: 90px;
-  color: #e0330c;
-}
-
-.home li:hover h3 {
-  text-decoration: underline;
-}
-
-.home p {
-  font-size: 18px;
-  margin-left: 90px;
 }
 
 .columns {
@@ -356,7 +356,6 @@ kbd {
     animation: octocat-wave 560ms ease-in-out;
   }
 }
-
 
 .navbar .brand {
   height: 24px;
