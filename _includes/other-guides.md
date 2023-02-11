@@ -14,7 +14,8 @@ If you're ever stuck during a guide, please consult this [handy cheatsheet for R
 * Guide 2: [Build Your First App](/app) {% if page.permalink == 'app' %}(Current page!){% endif %}
   - Guide 2a: [Style your app using HTML and CSS](/html-and-css) {% if page.permalink == 'html-and-css' %}(Current page!){% endif %}
   - Guide 2b: [Add a new page to your app](/new-page) {% if page.permalink == 'new-page' %}(Current page!){% endif %}
-  - Guide 2c: [Add picture uploads](/uploads) {% if page.permalink == 'uploads' %}(Current page!){% endif %}
+  - Guide 2c: [Add a new homepage to your app](/new-homepage) {% if page.permalink == 'new-homepage' %}(Current page!){% endif %}
+  - Guide 2d: [Add picture uploads](/uploads) {% if page.permalink == 'uploads' %}(Current page!){% endif %}
 * Guide 3: [Push Your App to GitHub](/github) {% if page.permalink == 'github' %}(Current page!){% endif %}
 * Guide 4: Put your app online with:
   - [Heroku](/heroku) {% if page.permalink == 'heroku' %}(Current page!){% endif %}

@@ -53,4 +53,20 @@ add the following lines to link to the new page:
 
 Refresh the page in your Browser and click the newly created link to see if it works! You can now navigate between the ideas and the about pages in your app through one unified navigation bar.
 
+## The changes in more detail
+
+By adding the new "nav item" to the navigation a new link has appeared in the navigation bar, styled by Bootstrap. This link points to the new about page.
+
+This link is made by using a `a`-element, which is the HTML for a link. Using the `href` property we tell the browser where to point to, in this case `/pages/about`. The "About" text between the `<a ... href="/pages/about">About</a>` link is what is shown as the label for the people looking at the page through the Browser.
+
+The middle part with the `class` property is what we use to indicate how the link should be displayed. If the link is "active", it is the page we're currently and it shows more brightly colored than the other link of the page we are currently not on.
+
+To check if the page is currently active, Rails provides a helper called `current_page?`. This condition will be "true" if it matches our page selection: `controller: 'pages', action: 'about'`. The `controller` is the entrypoint for anything in the `/pages` path of this part of the app, and the `action` is the specific page, which is "about".
+
+Knowing this, you can also add a [new homepage](/new-homepage) to your app.
+
+---
+
+When you're ready, move on to the next guide.
+
 {% include other-guides.md %}
