@@ -202,7 +202,6 @@ a:hover .guide-icon,
   flex-basis: 30%;
 }
 .column-60 {
-  min-width: 500px;
   flex-basis: 60%;
 }
 
