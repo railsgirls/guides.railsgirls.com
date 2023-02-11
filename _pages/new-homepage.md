@@ -32,8 +32,12 @@ Then open the newly created file in your Text editor: `app/views/pages/homepage.
 Add some content to it, like the following, and save the file:
 
 {% highlight erb %}
-<h1>The ideas app</h1>
-<p>Welcome to my ideas app!</p>
+<div class="px-4 py-5 my-5 text-center">
+  <h1 class="display-5 fw-bold">The ideas app</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">Welcome to my ideas app!</p>
+  </div>
+</div>
 {% endhighlight %}
 
 ## Configuring the route
