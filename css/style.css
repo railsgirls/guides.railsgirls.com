@@ -403,3 +403,11 @@ nav a:hover {
   text-decoration: none;
   background-color: transparent;
 }
+
+.guide-notice {
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 120%;
+  background-color: #FEF8EA;
+  border-radius: 10px;
+}

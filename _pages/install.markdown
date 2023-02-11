@@ -8,6 +8,8 @@ permalink: install
 
 <span class="muted">Cooking time: 5min active / 15-30min passive</span>
 
+{% include main-guide-intro.html %}
+
 To build apps and other things with Ruby on Rails, we need to setup some software and the developer environment for your computer.
 
 Follow the instructions for your operating system. If you run into any problems, don't panic. Check the [known errors section](#possible-errors-during-installation) or inform us at the event and we can solve it together.

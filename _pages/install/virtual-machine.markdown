@@ -6,6 +6,8 @@ permalink: install/virtual-machine
 
 # Setup on a Virtual Machine
 
+{% include main-guide-intro.html %}
+
 A development environment is the sum of all applications and tools with which a developer can do her daily work. Beyond an internet browser and a code editor all programs are included which are necessary for running and serving our application. For Ruby on Rails development, we certainly need Ruby, and the Rails framework and we also need a database, a web application server, etc.
 
 By default an experienced developer would install all of these tools to her environment, but it's an advanced task. Moreover you are working on different operating systems, most of you are working on Windows, where installing a proper Ruby development environment is a huge problem.

@@ -6,6 +6,8 @@ permalink: new-homepage
 
 # Add a new homepage
 
+{% include main-guide-intro.html %}
+
 In this guide we'll add another page. This will be our new homepage: the first page that will be shown when you open your app when you visit <http://localhost:3000>. Feel free to skip this guide if you know how Rails controllers, views and routes work.
 
 In the previous guide a "pages" controller was already generated, we do not need to do this again. Rails will stop us if we do try to. Instead, we'll need to add the page manually ourselves.

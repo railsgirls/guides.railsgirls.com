@@ -8,6 +8,8 @@ permalink: thumbnails
 
 *Originally created by Miha Filej, [@mfilej](https://twitter.com/mfilej)*
 
+{% include main-guide-intro.html %}
+
 The Internet is all about speed. The faster your page loads, the less likely people are to click away. And we want people to stick around to share our great ideas with our ideas app! Also, people with data plans visiting your website will thank you for requiring less data to be transmitted.
 
 One way to speed up page loads is by displaying images in a smaller size. The smaller an image is, the fast it will be transmitted over the Internet.

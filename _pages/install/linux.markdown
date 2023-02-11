@@ -6,6 +6,8 @@ permalink: install/linux
 
 # Setup for Linux
 
+{% include main-guide-intro.html %}
+
 To install the Ruby on Rails development environment you just need to copy the lines below for your Linux distribution (Ubuntu or Fedora), paste it in the Terminal and press Enter. Enjoy the text flying on the screen; it will take quite some time. Grabbing a refreshing drink before starting is encouraged.
 
 ## _1._ Install yarn

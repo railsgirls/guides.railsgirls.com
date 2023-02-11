@@ -6,6 +6,8 @@ permalink: new-page
 
 # Add a new page to your app
 
+{% include main-guide-intro.html %}
+
 Let's add an about page to our app that will display information about the author of this application — you!
 
 In the Terminal app, run the following command:

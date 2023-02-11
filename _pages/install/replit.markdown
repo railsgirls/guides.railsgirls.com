@@ -6,6 +6,8 @@ permalink: install/replit
 
 # Using a Cloud Service
 
+{% include main-guide-intro.html %}
+
 Instead of installing Ruby on Rails and an editor on your computer, you can use a webservice for development. All you need is a browser and an internet connection. This guide explains how to get started with [replit.com]. If you're using a different service, they may use a different wording, but the process is usually pretty similar.
 
 ## _1._ Create an account

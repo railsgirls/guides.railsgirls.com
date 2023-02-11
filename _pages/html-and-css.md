@@ -6,6 +6,8 @@ permalink: html-and-css
 
 # Style your app using HTML and CSS
 
+{% include main-guide-intro.html %}
+
 The app doesn't look very nice right now, plain black text on a white background. Let's improve that! We'll use the [Bootstrap project](https://getbootstrap.com) to give us a better looking website quickly.
 
 **Coach:** Talk about the relationship between HTML, CSS and Rails. What part of views is HTML and what is Embedded Ruby (ERB)? What is Model View Controller and how does this relate to it? (Models and controllers are responsible for generating the HTML views.)

@@ -6,6 +6,8 @@ permalink: install/macos
 
 # Setup for macOS
 
+{% include main-guide-intro.html %}
+
 To build apps and other things with Ruby on Rails, we need to setup some software and the developer environment for your computer.
 
 ## _1._ Let's check the version of the operating system.

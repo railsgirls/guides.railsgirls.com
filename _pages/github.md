@@ -8,6 +8,8 @@ permalink: github
 
 *Originally created by Alyson La, [@realalysonla](https://www.twitter.com/realalysonla)*
 
+{% include main-guide-intro.html %}
+
 Git is a tool with which it's possible to save your app's source code, view changes over time, share code online and collaborate with others.
 
 **COACH:** Talk a little about Git, version control, collaborating with others using Git, GitHub, deployment techniques using Git and Open Source.

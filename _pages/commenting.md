@@ -6,6 +6,8 @@ permalink: commenting
 
 # Add comments to your app
 
+{% include main-guide-intro.html %}
+
 We are going to add the possibility to comment on ideas in your *railsgirls* application. Comments are short messages that people can leave on websites. In this guide we'll be relying less on the Rails generators to create scaffolding. We'll be writing more Ruby code to implement this feature.
 
 ## Create comment model

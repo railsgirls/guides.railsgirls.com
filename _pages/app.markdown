@@ -8,9 +8,7 @@ permalink: app
 
 *Originally created by Vesa Vänskä, [@vesan](https://twitter.com/vesan)*
 
-**Make sure you have Rails installed.** [**Follow the installation guide**](/install) to get set up.
-
-Need some reminders along the way? Check out this [handy cheatsheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
+{% include main-guide-intro.html %}
 
 ## Important
 

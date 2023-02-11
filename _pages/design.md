@@ -8,6 +8,8 @@ permalink: design
 
 *Originally created by Alex Liao, [@alexliao](http://bannka.com/alex)*
 
+{% include main-guide-intro.html %}
+
 ## Style the idea list page
 
 The default Rails scaffolding allow us to build pages very quickly and get our app working. The design could use some work. For this we're going to be using [Bootstrap](https://getbootstrap.com/docs/5.2/) again. We'll be using some existing Bootstrap classes to make our own components, style links and buttons.

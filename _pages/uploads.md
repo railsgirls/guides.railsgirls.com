@@ -6,6 +6,8 @@ permalink: uploads
 
 # Add picture uploads
 
+{% include main-guide-intro.html %}
+
 The ideas we added in the previous guide can benefit from a visual element, like a picture or drawing to spark the imagination. We can attach pictures by adding a file upload to the Idea model.
 
 ## Installing a Ruby gem
