@@ -10,9 +10,27 @@ permalink: commenting
 
 We are going to add the possibility to comment on ideas in your *railsgirls* application. Comments are short messages that people can leave on websites. In this guide we'll be relying less on the Rails generators to create scaffolding. We'll be writing more Ruby code to implement this feature.
 
+## Add comment routes
+
+We'll start by creating a new route for the comments. This will be nested under the ideas routes, so we can derive which idea the comment belongs to from the route.
+
+Open the `config/routes.rb` file. Change the following line:
+
+{% highlight ruby %}
+resources :ideas
+{% endhighlight %}
+
+to these lines:
+
+{% highlight ruby %}
+resources :ideas do
+  resources :comments
+end
+{% endhighlight %}
+
 ## Create comment model
 
-We'll start by creating a comment model, like we did with the ideas before, but without the controller and a bunch of other things. In this guide we'll be making more changes ourselves, rather than relying on generated code.
+Next up, creating a comment model, like we did with the ideas before, but without the controller and a bunch of other things. In this guide we'll be making more changes ourselves, rather than relying on generated code.
 
 The command below will create a Comment model with a name, message body and with a reference to the ideas table. The latter will make it possible to leave comments on a specific idea, so they won't show on other idea pages.
 
