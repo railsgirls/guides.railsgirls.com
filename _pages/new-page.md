@@ -14,22 +14,22 @@ In the Terminal app, run the following command:
 rails generate controller pages about
 {% endhighlight %}
 
-This command will create a new directory under `app/views/` called `pages`. In that directory a file called `about.html.erb` will be created. This file will be your "about" page.
+This command will create a new directory under `app/views/` called `pages`. In that directory a file called `about.html.erb` will be created. This file contains the content that will be displayed on your "about" page.
 
-It will also add a new route to your `config/routes.rb` showing this file.
-
-{% highlight ruby %}
-get "pages/about"
-{% endhighlight %}
-
-Open the `app/views/pages/about.html.erb` file. Add information about yourself in HTML. Something like the example below:
+Open the `app/views/pages/about.html.erb` file. Add some information about yourself in the HTML. Something like the example below:
 
 {% highlight erb %}
 <h1>About me</h1>
 <p>Hello there! I am ... and this is my app!</p>
 {% endhighlight %}
 
-To see your new about page, take your browser to <http://localhost:3000/pages/about> or, or append `/pages/about` to your preview URL. You should now see the new page we just created!
+The same `rails generate` command has also added a new route to your `config/routes.rb`. This route configuration tells Rails which page should be shown when visiting that URL.
+
+{% highlight ruby %}
+get "pages/about"
+{% endhighlight %}
+
+To see your new about page, take your browser to <http://localhost:3000/pages/about> or, or append `/pages/about` to your preview URL. You should now see the new page you just created!
 
 ## Add a link to your navigation bar
 
@@ -51,6 +51,6 @@ add the following lines to link to the new page:
 </li>
 {% endhighlight %}
 
-Refresh the page in your Browser and click the newly created link to see if it works!
+Refresh the page in your Browser and click the newly created link to see if it works! You can now navigate between the ideas and the about pages in your app through one unified navigation bar.
 
 {% include other-guides.md %}
