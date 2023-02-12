@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: main_guide
 title: Put your app online
 permalink: deployment
 ---
@@ -15,5 +15,3 @@ Once you're done with one of the following guides, you'll have a URL that people
 There are many services that can host your app. They all are slightly different. Ask your coach which service they recommend.
 
 __COACH__: Please help choose the best, and possibly free, service to deploy the app. Preferably a PaaS like Heroku.
-
-{% include other-guides.md %}

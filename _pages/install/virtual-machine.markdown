@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: main_guide
 title: Setup on a Virtual Machine
 permalink: install/virtual-machine
 ---
@@ -110,5 +110,3 @@ touch test.txt
 {% endhighlight %}
 
 Now let's check in our own operation system, if the shared folder contains a file called *test.txt. If so, we are ready with our virtual environment.
-
-{% include other-guides.md %}

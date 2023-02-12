@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: main_guide
 title: Add a new page to your app
 permalink: new-page
 ---
@@ -70,5 +70,3 @@ Knowing this, you can also add a [new homepage](/new-homepage) to your app.
 ---
 
 When you're ready, move on to the next guide.
-
-{% include other-guides.md %}

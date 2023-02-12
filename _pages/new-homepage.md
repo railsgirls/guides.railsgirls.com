@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: main_guide
 title: Add a new homepage
 permalink: new-homepage
 ---
@@ -77,5 +77,3 @@ add a new link with the lines below, and save the file:
 {% endhighlight %}
 
 When you refresh the page in the browser, and click the "The ideas app" link, it will open the new homepage. Try out all the links in the navigation bar. Do they take you to the page you expected?
-
-{% include other-guides.md %}

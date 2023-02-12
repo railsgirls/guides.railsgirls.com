@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: main_guide
 title: Add commenting functionality to your app
 permalink: commenting
 ---
@@ -217,5 +217,3 @@ When you refresh your browser, the idea detail page should now have a form for a
 Congratulations! Your app now supports comments. We've added a new models for comments, named `Comment`, which talks to the database to store these comments. A new `CommentsController` controller that tells the model what to do, creating or deleting comments. The views are updated to show the comments per idea, create new comments with the form and delete them again with the delete buttons.
 
 If you're interested, check out the detail page of a different idea. If all goes well, you should not be seeing the same comments on that idea detail page as the other one.
-
-{% include other-guides.md %}

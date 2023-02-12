@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: main_guide
 title: Style the idea pages using HTML and CSS
 permalink: design
 ---
@@ -93,5 +93,3 @@ Did the design and styling catch your eye? Do you want to unleash your inner des
 
 * Use your new knowledge to design the new idea form located at `app/views/ideas/_form.html.erb`
 * Add more design to the other pages as you wish.
-
-{% include other-guides.md %}

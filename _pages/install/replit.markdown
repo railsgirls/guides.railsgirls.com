@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: main_guide
 title: Setup on Replit
 permalink: install/replit
 ---
@@ -63,5 +63,3 @@ When you log out and log back in to [replit.com], you can find your RailsGirls a
 ![Dashboard showing button to return to Rails project](/images/replit/re-open.png)
 
 [replit.com]: https://replit.com
-
-{% include other-guides.md %}

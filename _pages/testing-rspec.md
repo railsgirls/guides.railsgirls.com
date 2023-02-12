@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: main_guide
 title: Test your app with RSpec
 permalink: testing-rspec
 ---
@@ -135,5 +135,3 @@ __COACH__: Talk a bit about Behavior-Driven Development.
 By now you can create more tests alone. Feel free to talk to your coach to do that, or ways to create more tests.
 
 Happy testing!
-
-{% include other-guides.md %}

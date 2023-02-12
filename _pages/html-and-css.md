@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: main_guide
 title: Style your app using HTML and CSS
 permalink: html-and-css
 ---
@@ -84,5 +84,3 @@ Before the `</body>` tag at the end of the file, add these lines of code. This w
 Make sure you saved your files and refresh the browser to see what was changed.
 
 Optional: To further style the app with HTML & CSS, you can edit the `app/assets/stylesheets/application.css` file in your Text Editor if you already know some CSS. It's also possible to reference the [Bootstrap documentation](https://getbootstrap.com/docs/5.2/getting-started/introduction/) for more information on how to use Bootstrap for styling the app. You don't have to do this right now. We'll be updating more styling in future guides.
-
-{% include other-guides.md %}

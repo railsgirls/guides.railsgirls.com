@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: main_guide
 title: Setup on Linux
 permalink: install/linux
 ---
@@ -83,5 +83,3 @@ Go to `http://localhost:3000` in your browser, and you should see the 'Yay! You'
 Now you should have a working Ruby on Rails programming setup. Congrats!
 
 **Coach:** We recommend to verify by using the scaffold command and inputting data with the generated page with coaches to ensure everything is working. Also: remove the test app `myapp` to make super sure no-one is working in the wrong folder, following the steps of the workshop.
-
-{% include other-guides.md %}

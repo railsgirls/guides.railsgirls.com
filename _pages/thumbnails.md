@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: main_guide
 title: Create picture thumbnails
 permalink: thumbnails
 ---
@@ -105,5 +105,3 @@ to this line:
 Take a look at the [list of ideas](http://localhost:3000/ideas) in the Browser to see if your ideas now have a thumbnail.
 
 __Coach__: Explain what specifying the image width in HTML and how it differs from resizing images on the server. Both images may look small, but only one is resized as a thumbnail.
-
-{% include other-guides.md %}

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: main_guide
 title: Push your app to GitHub
 permalink: github
 ---
@@ -151,5 +151,3 @@ git push origin master
 * [Fork a repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo) (a "repo"), then clone and push changes to your fork. Share the changes with the originator by sending them a [pull request](https://help.github.com/articles/using-pull-requests)!
 * Create an issue on a project when you find a bug.
 * Explore other Open Source projects - search by programming language or keyword.
-
-{% include other-guides.md %}

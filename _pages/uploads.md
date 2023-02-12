@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: main_guide
 title: Add picture uploads
 permalink: uploads
 ---
@@ -126,5 +126,3 @@ Open the `.gitignore` file add add this line at the bottom:
 {% highlight erb %}
 public/uploads/
 {% endhighlight %}
-
-{% include other-guides.md %}
