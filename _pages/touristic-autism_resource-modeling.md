@@ -8,7 +8,7 @@ permalink: touristic-autism_resource-modeling
 
 *Created by Myriam Leggieri, [@iammyr](https://twitter.com/iammyr)*
 *for [Rails Girls Galway](https://github.com/RailsGirlsGalway)*
-The basic guides that have been merged and adapted are the [Ruby on Rails Tutorial](http://www.railstutorial.org/book), the [basic RailsGirls app](http://guides.railsgirls.com/app/) and the tutorials for [creating thumbnails](http://guides.railsgirls.com/thumbnails), [authenticating users](http://guides.railsgirls.com/devise/), [adding design](http://guides.railsgirls.com/design), [deploying to OpenShift](http://guides.railsgirls.com/openshift/) and [adding comments](http://guides.railsgirls.com/commenting).
+The basic guides that have been merged and adapted are the [Ruby on Rails Tutorial](https://www.railstutorial.org/book), the [basic RailsGirls app](/app) and the tutorials for [creating thumbnails](/thumbnails), [authenticating users](/devise), [adding design](/design), [deploying to OpenShift](/openshift/) and [adding comments](/commenting).
 
 What do we want our app to do? As a first thing, we would like to
 * authenticate **users**
@@ -89,7 +89,7 @@ Explain what user model has been generated. What are the fields? Note that a mod
 
 Now that you have set everything up you can create your first user. Devise creates all the code and routes required to create accounts, log in, log out, etc.
 
-Make sure your rails server is running, open [http://localhost:3000/users/sign_up](http://localhost:3000/users/sign_up) and create your user account.
+Make sure your rails server is running, open <http://localhost:3000/users/sign_up> and create your user account.
 
 ## Step 5: Add sign-up and login links
 
@@ -155,7 +155,7 @@ ruby bin/rails db:migrate
   </div>
 
 
-Then start the server again. Open [http://localhost:3000/places](http://localhost:3000/places) in your browser and check out all the new functionalities that our web application is now providing to handle "place" resources. All thanks to what Ruby on Rails automatically generates with `generate scaffold`.
+Then start the server again. Open (https://localhost:3000/places) in your browser and check out all the new functionalities that our web application is now providing to handle "place" resources. All thanks to what Ruby on Rails automatically generates with `generate scaffold`.
 Each new instance of "place" that will be stored in the database, will be automatically assigned a unique identifier called "primary key", with no need for us to specify it as one of the fields (along with picture, name, etc.)
 </div>
 
@@ -424,7 +424,7 @@ If we now try to enter more than 140 characters we'll get an error. (try it out!
 
 ## Finetune the routes
 
-If you try to open [http://localhost:3000](http://localhost:3000) it still shows the "Welcome aboard" page. Let's make it redirect to the places page.
+If you try to open (https://localhost:3000) it still shows the "Welcome aboard" page. Let's make it redirect to the places page.
 
 Open `config/routes.rb` and after the first line add
 
@@ -432,7 +432,7 @@ Open `config/routes.rb` and after the first line add
 root :to => redirect('/places')
 {% endhighlight %}
 
-Test the change by opening the root path (that is, http://localhost:3000/) in your browser.
+Test the change by opening the root path (that is, <http://localhost:3000/>) in your browser.
 
 {% coach %}
 Talk about routes, and include details on the order of routes and their relation to static files.

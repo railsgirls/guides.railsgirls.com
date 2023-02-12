@@ -15,7 +15,7 @@ To create your app you'll need to write code. This can be done with a Text Edito
 Choose an editor, go to the website linked below and install it following the instructions on the website.
 
 * [Visual Studio Code](https://code.visualstudio.com) (Recommended)
-* [Sublime Text](http://www.sublimetext.com)
+* [Sublime Text](https://www.sublimetext.com)
 
 ## <i class="icon-prompt"></i> Terminal {#terminal}
 

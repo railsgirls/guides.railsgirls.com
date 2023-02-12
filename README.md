@@ -81,11 +81,11 @@ Global mailing list for Rails Girls events can be found at https://groups.google
 
 ## Credits
 
-* Karri Saarinen / [@karrisaarinen](https://twitter.com/karrisaarinen) / [github](http://github.com/ksaa)
-* Linda Liukas / [@lindaliukas](https://twitter.com/lindaliukas) / [github](http://github.com/lindaliukas)
-* Vesa Vänskä / [@vesan](https://twitter.com/vesan) / [github](http://github.com/vesan)
-* Terence Lee / [@hone02](https://twitter.com/hone02) / [github](http://github.com/hone)
-* Tom de Bruijn / [@tombruijn](https://mastodon.social/@tombruijn) / [GitHub](http://github.com/tombruijn)
+* Karri Saarinen / [@karrisaarinen](https://twitter.com/karrisaarinen) / [github](https://github.com/ksaa)
+* Linda Liukas / [@lindaliukas](https://twitter.com/lindaliukas) / [github](https://github.com/lindaliukas)
+* Vesa Vänskä / [@vesan](https://twitter.com/vesan) / [github](https://github.com/vesan)
+* Terence Lee / [@hone02](https://twitter.com/hone02) / [github](https://github.com/hone)
+* Tom de Bruijn / [@tombruijn](https://mastodon.social/@tombruijn) / [GitHub](https://github.com/tombruijn)
 
 ..and all the other coaches and people making Rails Girls awesome. Please add yourself!
 

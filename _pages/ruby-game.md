@@ -8,9 +8,9 @@ permalink: ruby-game
 
 *Created by Patrick Huesler, [@phuesler](https://twitter.com/phuesler) & Floor Drees, [@floordrees](https://twitter.com/floordrees) for [Rails Girls The Hague](http://railsgirls.com/thehague)* 
 
-[gosu](http://www.libgosu.org/) is a 2D game development library. Gosu features easy to use and game-friendly interfaces to 2D graphics and text (accelerated by 3D hardware), sound samples and music as well as keyboard, mouse and gamepad/joystick input. Also includes demos for integration with RMagick, Chipmunk and OpenGL.
+[gosu](https://www.libgosu.org/) is a 2D game development library. Gosu features easy to use and game-friendly interfaces to 2D graphics and text (accelerated by 3D hardware), sound samples and music as well as keyboard, mouse and gamepad/joystick input. Also includes demos for integration with RMagick, Chipmunk and OpenGL.
 
-The actual source code, wiki, issue tracker etc. are all [hosted on GitHub](http://github.com/jlnr/gosu/). The best entry point into Gosu's documentation is the [wiki home page](http://github.com/jlnr/gosu/wiki).
+The actual source code, wiki, issue tracker etc. are all [hosted on GitHub](https://github.com/jlnr/gosu/). The best entry point into Gosu's documentation is the [wiki home page](https://github.com/jlnr/gosu/wiki).
 Install:
 {% highlight sh %}
 gem install gosu
@@ -105,4 +105,4 @@ And see the `Game.new.show`? That creates a new instance. It has no memory, so w
 
 The assets used in vim adventures, you can find them [here](http://www.lostgarden.com/2007/05/dancs-miraculously-flexible-game.html)
 
-The sounds usedm you'll find over at [Matthew Klingensmith (www.matthewklingensmith.com)](http://opengameart.org/content/matts-creative-commons-music)
+The sounds usedm you'll find over at [Matthew Klingensmith (www.matthewklingensmith.com)](https://opengameart.org/content/matts-creative-commons-music)

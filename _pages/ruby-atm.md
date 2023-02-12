@@ -209,7 +209,7 @@ end
 ### Refactor
 Once you have your tests passing, it's time to refactor.
 
-In programming, ['Magic Numbers'](http://en.wikipedia.org/wiki/Magic_number_(programming)) are a bad thing (don't be fooled by the name!). They refer to a hard-coded value that just sort of *appears* out of thin air, with no clear explanation of what that particular number represents.
+In programming, ['Magic Numbers'](https://en.wikipedia.org/wiki/Magic_number_(programming)) are a bad thing (don't be fooled by the name!). They refer to a hard-coded value that just sort of *appears* out of thin air, with no clear explanation of what that particular number represents.
 
 Consider how easy / hard it is to understand the following code snippets:
 

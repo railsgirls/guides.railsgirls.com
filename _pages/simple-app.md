@@ -120,7 +120,7 @@ ruby bin\rails server
 
 **Windows users:** You may need to replace `bin\rails` with `script\rails`, depending on the version of Rails you have installed.
 
-Open [http://localhost:3000](http://localhost:3000) in your browser. You should see "Welcome aboard" page, which means that the generation of your new app worked correctly.
+Open <http://localhost:3000> in your browser. You should see "Welcome aboard" page, which means that the generation of your new app worked correctly.
 
 Notice in this window the command prompt is not visible because you are now in the Rails server, the command prompt looks like this:
 
@@ -185,7 +185,7 @@ ruby bin\rails server
   </div>
 </div>
 
-Open [http://localhost:3000/ideas](http://localhost:3000/ideas) in your browser. Click around and test what you got by running these few command-line commands.
+Open <http://localhost:3000/ideas> in your browser. Click around and test what you got by running these few command-line commands.
 
 Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> to quit the server again when you've clicked around a little.
 
@@ -373,7 +373,7 @@ Talk a little about HTML.
 
 ## *5.* Finetune the routes
 
-If you try to open [http://localhost:3000](http://localhost:3000) it still shows the "Welcome aboard" page. Let's make it redirect to the ideas page.
+If you try to open <http://localhost:3000> it still shows the "Welcome aboard" page. Let's make it redirect to the ideas page.
 
 Open `config/routes.rb` and after the first line add
 
@@ -381,7 +381,7 @@ Open `config/routes.rb` and after the first line add
 root :to => redirect('/ideas')
 {% endhighlight %}
 
-Test the change by opening the root path (that is, http://localhost:3000/) in your browser.
+Test the change by opening the root path (that is, <http://localhost:3000/>) in your browser.
 
 {% coach %}
 Talk about routes, and include details on the order of routes and their relation to static files.
@@ -405,7 +405,7 @@ It also adds a new simple route to your routes.rb.
 get "pages/info"
 {% endhighlight %}
 
-Now you can open the file `app/views/pages/info.html.erb` and add information about you in HTML and then take your browser to [http://localhost:3000/pages/info](http://localhost:3000/pages/info) to see your new info page.
+Now you can open the file `app/views/pages/info.html.erb` and add information about you in HTML and then take your browser to <http://localhost:3000/pages/info> to see your new info page.
 
 ## What next?
 
@@ -417,12 +417,11 @@ Now you can open the file `app/views/pages/info.html.erb` and add information ab
 
 ## Additional Guides
 
-* Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
+* Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](https://www.pragtob.info/rails-beginner-cheatsheet/)
 * Guide 1: [Add commenting by Janika Liiv](/commenting)
 * Guide 2: [Put your app online with Heroku by Terence Lee](/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift)
 * Guide 3: [Build a map of workshop participants by Rails Girls Berlin](http://railsgirlsberlin.de/apptutorial/)
 * Guide 4: [Create thumbnail images for the uploads by Miha Filej](/thumbnails)
 * Guide 5: [Add design using HTML &amp; CSS by Alex Liao](/design)
-* Guide 6: [Add Authentication (user accounts) with Devise by Piotr Steininger](/devise/)
+* Guide 6: [Add Authentication (user accounts) with Devise by Piotr Steininger](/devise)
 * Guide 7: [Go through additional explanations for the App by Lucy Bain](https://github.com/lbain/railsgirls)
-

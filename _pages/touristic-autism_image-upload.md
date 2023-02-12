@@ -8,7 +8,7 @@ permalink: touristic-autism_image-upload
 
 *Created by Myriam Leggieri, [@iammyr](https://twitter.com/iammyr)*
 *for [Rails Girls Galway](https://github.com/RailsGirlsGalway)*
-The basic guides that have been merged and adapted are the [Ruby on Rails Tutorial](http://www.railstutorial.org/book), the [basic RailsGirls app](http://guides.railsgirls.com/app/) and the tutorials for [creating thumbnails](http://guides.railsgirls.com/thumbnails), [authenticating users](http://guides.railsgirls.com/devise/), [adding design](http://guides.railsgirls.com/design), [deploying to OpenShift](http://guides.railsgirls.com/openshift/) and [adding comments](http://guides.railsgirls.com/commenting).
+The basic guides that have been merged and adapted are the [Ruby on Rails Tutorial](https://www.railstutorial.org/book), the [basic RailsGirls app](/app/) and the tutorials for [creating thumbnails](/thumbnails), [authenticating users](/devise/), [adding design](/design), [deploying to OpenShift](/openshift/) and [adding comments](/commenting).
 
 
 We need to install a piece of software to let us upload files in Rails.
@@ -101,8 +101,8 @@ Explain what specifying the image width in HTML at the end of Step
 * Linux: On Ubuntu and Debian, run `sudo apt-get install imagemagick`. Use the
   appropriate package manager instead of `apt-get` for other distributions.
 
-  [im-win]: http://www.imagemagick.org/script/binary-releases.php?ImageMagick=vkv0r0at8sjl5qo91788rtuvs3#windows
-  [in-homebrew]: http://mxcl.github.io/homebrew/
+  [im-win]: https://imagemagick.org/script/download.php#windows
+  [in-homebrew]: https://brew.sh/
 
 {% coach %}
 What is ImageMagick and how is it different from libraries/gems we used before?

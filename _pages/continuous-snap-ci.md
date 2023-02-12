@@ -26,7 +26,7 @@ First, you need [a Snap CI account](https://snap-ci.com/). Sign in to the Snap C
 
 Back at the Snap CI, let’s create your first pipeline. The first step is to select GitHub as your repository provider. In the list of your GitHub repositories, search for the repository you want to set up and select it. In our case, that's the one called something like “railsgirls”.
 
-Once you select the repository you wish to build, Snap CI will perform detections on your repository and makes a best attempt to automatically setup your [deployment pipeline](http://martinfowler.com/bliki/DeploymentPipeline.html) for you which will allow you to run your tests and deployments.
+Once you select the repository you wish to build, Snap CI will perform detections on your repository and makes a best attempt to automatically setup your [deployment pipeline](https://martinfowler.com/bliki/DeploymentPipeline.html) for you which will allow you to run your tests and deployments.
 
 After a few seconds, Snap CI will automatically start building your repository, at this point you can click through the stages setup by Snap to see what they commands they run.
 

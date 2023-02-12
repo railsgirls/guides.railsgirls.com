@@ -15,7 +15,7 @@ permalink: design-html-css-chinese
     }
     ```
 
-    刷新页面，查看样式有什么变化。 此处解释什么是css选择器，学员可以尝试修改header的颜色，字体等。 简单的颜色选取参考网站： [http://color.uisdc.com/](http://color.uisdc.com/)
+    刷新页面，查看样式有什么变化。 此处解释什么是css选择器，学员可以尝试修改header的颜色，字体等。 简单的颜色选取参考网站： <https://color.uisdc.com/>
 
     **教练：**解释`display`的属性，什么是内联元素，什么是块级元素
 
@@ -35,7 +35,7 @@ permalink: design-html-css-chinese
 
 2.美化表格样式
 
- + 对于表格，我们可以使用[Bootstrap](http://www.bootcss.com/)的表格样式。打开`app/views/ideas/index.html.erb`文件，找到：
+ + 对于表格，我们可以使用[Bootstrap](https://www.bootcss.com/)的表格样式。打开`app/views/ideas/index.html.erb`文件，找到：
 
    ```
    <table>
@@ -67,7 +67,7 @@ permalink: design-html-css-chinese
   ```
 
 
- + 尝试为页面添加背景图片，使用`background-image`属性，背景纹理资源参考此网站[http://subtlepatterns.com/](http://subtlepatterns.com/)
+ + 尝试为页面添加背景图片，使用`background-image`属性，背景纹理资源参考此网站 <https://www.toptal.com/designers/subtlepatterns/>
 
 
 3.footer样式调整
@@ -85,7 +85,7 @@ permalink: design-html-css-chinese
 
 4.按钮样式
 
-  + 打开[http://localhost:3000/ideas/new](http://localhost:3000/ideas/new)页面，可以看到页面上的`Create Idea`按钮。
+  + 打开<http://localhost:3000/ideas/new>页面，可以看到页面上的`Create Idea`按钮。
 
    在文件`app/assets/stylesheets/ideas.css.scss`最后加入
 

@@ -6,9 +6,9 @@ permalink: contributing
 
 # Contributing a Guide
 
-The guides site uses [jekyll](https://github.com/mojombo/jekyll) to power the site and all the documents are written using [markdown](http://daringfireball.net/projects/markdown/). To contribute a guide, you just need to follow these simple steps.
+The guides site uses [Jekyll](https://github.com/mojombo/jekyll) to power the site and all the documents are written using [Markdown](https://daringfireball.net/projects/markdown/). To contribute a guide, you just need to follow these simple steps.
 
-1. Fork the [repository on github](https://github.com/railsgirls/railsgirls.github.com) by clicking on the "Fork" button.
+1. Fork the [repository on GitHub](https://github.com/railsgirls/railsgirls.github.com) by clicking on the "Fork" button.
 2. Do a `git clone` of your fork.
 
 ## If you want to add a new guide:
@@ -30,7 +30,7 @@ Make the change in the file you want to change! You don't need to make a new fil
 
 ## Then...
 
-1. Commit this new guide to your git repo.
+1. Commit this new guide to your Git repo.
 2. After you commit, push that to your fork.
 3. You can now open a pull request explaining your guide. That's it!
 

@@ -16,7 +16,7 @@ I said "around the world", didn't I?  Indeed, Rails Girls is on **every continen
 
 ## But seriously, why is Remote Pairing so great?
 
-Remote-pairing is so great because people who can benefit from people who would coach them are not always near to them.  I know this because as a coach for [Rails Girls Summer of Code](http://railsgirlssummerofcode.org) who lived in Virginia, while the team I coached lived in London and Pennsylvania.  If it weren't for remote pairing, I'd have to get on a plane or drive twelve hours just to show how to write a "hello, world!" example app!
+Remote-pairing is so great because people who can benefit from people who would coach them are not always near to them.  I know this because as a coach for [Rails Girls Summer of Code](https://railsgirlssummerofcode.org) who lived in Virginia, while the team I coached lived in London and Pennsylvania.  If it weren't for remote pairing, I'd have to get on a plane or drive twelve hours just to show how to write a "hello, world!" example app!
 
 ## Ok, I'm sold!  What do I need to remote pair?
 * An Internet connection.
@@ -41,9 +41,3 @@ It is the guide author's belief that Madeye is the best thing going for pair pro
 ## My last thought
 The Ruby community is such a great example of people helping others.  One has only to look at the folks nominated every year as [Ruby Heros](http://rubyheroes.com/) to see  this in action.
 What a great and generous world this would be, if all of us extended some of our privilege to someone who has less.  It would be a world that reflects that most common of sayings that you probably hear at meetings of your local Ruby/Rails meet-up: "MINSWAN" -- Matz is nice, so we are nice!  Let's get started being nice to each other!
-
-
-
-
-
-

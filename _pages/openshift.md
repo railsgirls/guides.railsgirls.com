@@ -46,7 +46,7 @@ rhc app create openshiftapp ruby-2.0 postgresql-9.2 --from-code=https://github.c
 
 If you see a message like `Are you sure you want to continue connecting (yes/no)?`, type `yes` and press enter.
 
-The terminal output should include a URL; open a browser window and go to the application URL to view the sample Rails application (the URL will have the form http://openshiftapp-*yourdomain*.rhcloud.com).
+The terminal output should include a URL; open a browser window and go to the application URL to view the sample Rails application (the URL will have the form https://openshiftapp-*yourdomain*.rhcloud.com).
 
 {% coach %}
 Explain what Git is and why we use version control systems.

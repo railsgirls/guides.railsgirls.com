@@ -19,7 +19,7 @@ Passenger is an open source web application server. It handles HTTP requests, ma
 {% endcoach %}
 
 
-[github-guide]: http://guides.railsgirls.com/github
+[github-guide]: /github
 
 ### Preparing your app
 
@@ -66,7 +66,7 @@ Run the Passenger server with the following command:
 bundle exec passenger start
 {% endhighlight %}
 
-Passenger is serving your app on http://0.0.0.0:3000/.
+Passenger is serving your app on <http://0.0.0.0:3000/>.
 Try and use your app a bit and then run `bundle exec passenger-status` to check your activity. Big (friendly, promised!) brother is watching you.
 
 There are two ways to stop the server. The first is by pressing Ctrl-C in the terminal. The second way is by running `passenger stop` in a new terminal window:
@@ -119,7 +119,7 @@ git push
 You can also choose to follow the [Heroku guide][heroku-guide] from here on.
 
 [passenger-guide]: https://www.phusionpassenger.com/library/walkthroughs/deploy/ruby/
-[heroku-guide]: http://guides.railsgirls.com/heroku
+[heroku-guide]: /heroku
 
 #### Troubleshooting
 

@@ -14,7 +14,7 @@ Talk about the benefits of deploying to anynines vs utilising US data centers.
 
 ### Get yourself some anynines
 
-1. [Create an anynines account](http://anynines.com/).
+1. [Create an anynines account](https://anynines.com/).
 
 2. [Download and install the Command Line Interface](https://anynines.zendesk.com/entries/60241846-How-to-install-the-CLI-v6) to interact with anynines.
 
@@ -34,7 +34,7 @@ cf login
 
 ... which will prompt you for your email address and password.
 
-Wonder what that `cf` stands for? It's short for [Cloud Foundry](http://www.cloudfoundry.com/), a system anynines is using behind the scenes.
+Wonder what that `cf` stands for? It's short for [Cloud Foundry](https://www.cloudfoundry.com/), a system anynines is using behind the scenes.
 
 ### Push your app online
 

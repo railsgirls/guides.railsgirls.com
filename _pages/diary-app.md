@@ -6,7 +6,7 @@ permalink: diary-app
 
 # Create your first diary app with Ruby on Rails
 
-*Created by Piotr Szotkowski ([chastell](http://chastell.net)) and Tomasz Stachewicz ([tomash](http://tomash.wrug.eu/about.html))*
+*Created by Piotr Szotkowski ([chastell](https://chastell.net)) and Tomasz Stachewicz ([tomash](https://tomash.wrug.eu/))*
 
 We will create a little voting app from scratch using a web development framework for Ruby called Rails. Think what your first application should be about – ideally something simple that includes a collection of some sort: e.g., a to-do list, a diary, etc. We’ll use a diary as the base here.
 
@@ -87,7 +87,7 @@ Add the following either before or after the above diary entries (again, do adju
     <ul>
       <li><a href="http://railsgirls.com">Rails Girls</a></li>
       <li><a href="https://en.wikibooks.org/wiki/Ruby_Programming">Wikibooks</a></li>
-      <li><a href="http://guides.rubyonrails.org">Ruby on Rails Guides</a></li>
+      <li><a href="/">Ruby on Rails Guides</a></li>
     </ul>
   </div>
   <img src="http://railsgirls.com/images/rg-warsaw.png" />
@@ -113,7 +113,7 @@ Explain how to navigate directories and run commands.
 
 ### Running the server
 
-Once in the `diary` directory run `rails server` and (once it finishes starting up) go to [http://localhost:3000](http://localhost:3000) in your browser. You should see the ‘Welcome aboard’ page. Stop the server by pressing `ctrl-c`.
+Once in the `diary` directory run `rails server` and (once it finishes starting up) go to <http://localhost:3000> in your browser. You should see the ‘Welcome aboard’ page. Stop the server by pressing `ctrl-c`.
 
 {% coach %}
 Explain what has happened and what’s the output in the terminal window. If the server fails to start due to a missing JavaScript runtime, `gem install therubyracer` and uncomment the relevant line in `Gemfile`.
@@ -123,7 +123,7 @@ Explain what has happened and what’s the output in the terminal window. If the
 
 Create the controller and the route
 
-Run `rails generate controller welcome index` – this will generate your first controller and a route that leads to it. Start your server and go to [http://localhost:3000](http://localhost:3000) to see that your application indeed does support the `/welcome/index` route.
+Run `rails generate controller welcome index` – this will generate your first controller and a route that leads to it. Start your server and go to <http://localhost:3000> to see that your application indeed does support the `/welcome/index` route.
 
 Stop the server and run `rake routes` to see all the routes supported by your application.
 
@@ -133,7 +133,7 @@ Explain URLs and the URL hierarchy. Explain how in Rails URLs map to ‘what hap
 
 ### Move the view to be the top of your site
 
-Edit the `config/routes.rb` file and uncomment (remove the `#` from the front) the `root ’welcome#index’` line (this will probably be the 7th line). This will make the root of your application be the view rendered by the `Welcome#index` action. Go to [http://localhost:3000](http://localhost:3000) and see that indeed the main page of your application now serves this view (rather than the ‘Welcome aboard’ page).
+Edit the `config/routes.rb` file and uncomment (remove the `#` from the front) the `root ’welcome#index’` line (this will probably be the 7th line). This will make the root of your application be the view rendered by the `Welcome#index` action. Go to <http://localhost:3000> and see that indeed the main page of your application now serves this view (rather than the ‘Welcome aboard’ page).
 
 {% coach %}
 Explain how the main page of an application is the root of the URL hierarchy and that it’s the page that people visit when they just put the host name into the browser’s address bar.
@@ -160,7 +160,7 @@ Replace the contents of the `<ul>` tags with the following:
   @websites = [
     ["http://railsgirls.com", "Rails Girls"],
     ["https://en.wikibooks.org/wiki/Ruby_Programming", "Wikibooks"],
-    ["http://guides.rubyonrails.org", "Ruby on Rails Guides"],
+    ["https://guides.rubyonrails.org", "Ruby on Rails Guides"],
   ]
 %>
 <% for url, name in @websites %>
@@ -182,7 +182,7 @@ class WelcomeController < ApplicationController
     @websites = [
       ["http://railsgirls.com", "Rails Girls"],
       ["https://en.wikibooks.org/wiki/Ruby_Programming", "Wikibooks"],
-      ["http://guides.rubyonrails.org", "Ruby on Rails Guides"],
+      ["https://guides.rubyonrails.org", "Ruby on Rails Guides"],
     ]
   end
 end
@@ -264,7 +264,7 @@ Explain how Rails’ route resources work and how they make URLs spring to exist
 
 ### A view of all the entries
 
-As can be seen in the `rake routes` output, the URLs are wired to their relative controller actions. Let’s see what’s missing – visit [http://localhost:3000/entries](http://localhost:3000/entries) in your browser. Uh-oh, it seems like the ‘index’ action is missing – let’s add it – open `app/controllers/entries_controller.rb` and add the below empty method inside the class definition:
+As can be seen in the `rake routes` output, the URLs are wired to their relative controller actions. Let’s see what’s missing – visit <http://localhost:3000/entries> in your browser. Uh-oh, it seems like the ‘index’ action is missing – let’s add it – open `app/controllers/entries_controller.rb` and add the below empty method inside the class definition:
 
 {% highlight ruby %}
 def index
@@ -285,7 +285,7 @@ Explain that even though this might look like little to no progress, there is a 
 
 ### A view of a single entry
 
-Note how, when you run `rake routes`, the output says that the `/entries/:id(.:format)` pattern maps to the `entries#show` controller action. Go to [http://localhost:3000/entries/1](http://localhost:3000/entries/1) – the URL for your first diary entry; notice how we’re, again, missing an action of the `EntriesController`. Add that (empty for now) action, then refresh the browser and add the (likewise, empty) missing view.
+Note how, when you run `rake routes`, the output says that the `/entries/:id(.:format)` pattern maps to the `entries#show` controller action. Go to <http://localhost:3000/entries/1> – the URL for your first diary entry; notice how we’re, again, missing an action of the `EntriesController`. Add that (empty for now) action, then refresh the browser and add the (likewise, empty) missing view.
 
 {% coach %}
 Guide through adding the missing action and view if needed; make sure the process (all the way from deciphering the right `rake routes` line) is well understood.
@@ -307,7 +307,7 @@ This line means ‘take the `id` parameter and use it in the `Entry.find` method
   <p><%= @entry.contents %></p>
 {% endhighlight %}
 
-Visit [http://localhost:3000/entries/1](http://localhost:3000/entries/1) and compare it with [http://localhost:3000/entries/2](http://localhost:3000/entries/2) to see how using `params[’id’]` means that different diary entries get displayed.
+Visit <http://localhost:3000/entries/1> and compare it with <http://localhost:3000/entries/2> to see how using `params[’id’]` means that different diary entries get displayed.
 
 {% coach %}
 Explain that the `:id` part of the URL template from `rake routes` is made into a key for the `params` hash; discuss what else can be found in the `params` hash.

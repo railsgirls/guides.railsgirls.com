@@ -6,7 +6,7 @@ permalink: sinatra-app-bg
 
 # Създайте сайт за гласуване със Sinatra
 
-*Базирано на [това ръководство](http://guides.railsgirls.com/sinatra-app/) от Piotr Szotkowski, [@chastell](https://twitter.com/chastell)*
+*Базирано на [това ръководство](https://guides.railsgirls.com/sinatra-app/) от Piotr Szotkowski, [@chastell](https://twitter.com/chastell)*
 
 We will create a little voting app from scratch using a web development framework for Ruby called Sinatra, which is much like Ruby on Rails. Just another tool to get the job done really, and a fun one too!
 

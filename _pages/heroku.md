@@ -177,6 +177,6 @@ While this functionality is a bit out of scope for this tutorial there are some
 resources available which you can use to find your way:
 
 * [How to: Make Carrierwave work on Heroku](https://github.com/carrierwaveuploader/carrierwave/wiki/How-to%3A-Make-Carrierwave-work-on-Heroku)
-* [Amazon S3 – The Beginner’s Guide](http://www.hongkiat.com/blog/amazon-s3-the-beginners-guide/)
+* [Amazon S3 – The Beginner’s Guide](https://www.hongkiat.com/blog/amazon-s3-the-beginners-guide/)
 
 As always if you require any more information or assistance your coaches will be able to assist.

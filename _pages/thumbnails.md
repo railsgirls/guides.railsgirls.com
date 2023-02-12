@@ -32,7 +32,7 @@ sudo apt-get install imagemagick
 {% endhighlight %}
   </div>
   <div class="win">
-<p>Download and run the <a href="http://www.imagemagick.org/script/download.php#windows">ImageMagick installer</a> (use the first <em>download</em> link). In the installation wizard, make sure you check the checkbox to install legacy binaries.</p>
+<p>Download and run the <a href="https://www.imagemagick.org/script/download.php#windows">ImageMagick installer</a> (use the first <em>download</em> link). In the installation wizard, make sure you check the checkbox to install legacy binaries.</p>
   </div>
 </div>
 

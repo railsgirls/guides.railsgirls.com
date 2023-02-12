@@ -83,7 +83,7 @@ Explain what user model has been generated. What are the fields?
 
 Now that you have set everything up you can create your first user. Devise creates all the code and routes required to create accounts, log in, log out, etc.
 
-Make sure your rails server is running, open [http://localhost:3000/users/sign_up](http://localhost:3000/users/sign_up) and create your user account.
+Make sure your rails server is running, open <http://localhost:3000/users/sign_up> and create your user account.
 
 ## *6.* Add sign-up and login links
 

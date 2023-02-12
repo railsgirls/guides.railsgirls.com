@@ -6,7 +6,7 @@ permalink: design
 
 # Style the idea pages using HTML and CSS
 
-*Originally created by Alex Liao, [@alexliao](http://bannka.com/alex)*
+*Originally created by Alex Liao, @alexliao*
 
 {% include main-guide-intro.html %}
 

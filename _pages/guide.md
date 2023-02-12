@@ -12,9 +12,9 @@ Our aim is to give tools for women to understand technology. The Rails Girls eve
 
 Rails Girls was founded in end of 2010 in Helsinki. Originally intended as a onetime event, we never thought we'd see so many local chapters all around the world! This guide has been put together to help you get started.
 
-If you want to organize an event, start by filling out [http://railsgirls.com/inyourcity](http://railsgirls.com/inyourcity) and you'll receive more instructions.
+If you want to organize an event, start by filling out <http://railsgirls.com/inyourcity> and you'll receive more instructions.
 
-A list of upcoming events can be viewed at [www.railsgirls.com](http://railsgirls.com).
+A list of upcoming events can be viewed at [railsgirls.com](http://railsgirls.com).
 
 You are also welcome to join our [organizers' Slack discussion forum](https://rails-girls-slack.herokuapp.com/).
 
@@ -34,16 +34,16 @@ The two-day event includes a lot of small group working and short focused talks 
 
 Rails Girls events are inclusive, friendly and safe environments. They have zero tolerance of harassment or bullying. You can include a Code of Conduct to your event. Below are examples:
 
-* [Rails Girls Summer of Code Code of Conduct](http://railsgirlssummerofcode.org/about/code-of-conduct/)
-* [PyLadies Code of Conduct](http://www.pyladies.com/CodeOfConduct/)
-* [Geek Feminism Wiki Anti Harassment example](http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy)
-* [Conf Code of Conduct](http://confcodeofconduct.com/)
+* [Rails Girls Summer of Code Code of Conduct](https://railsgirlssummerofcode.org/about/code-of-conduct/)
+* [PyLadies Code of Conduct](https://www.pyladies.com/CodeOfConduct/)
+* [Geek Feminism Wiki Anti Harassment example](https://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy)
+* [Conf Code of Conduct](https://confcodeofconduct.com/)
 * [Rails Girls DC Code of Conduct](https://docs.google.com/document/d/1XEnFI3R30IiGXOpC4idb0ku3pw8OoJcBpG9mg3iKiAo/edit)
 * [Rails Girls NZ Code of Conduct](https://docs.google.com/document/d/1EiTZ-__VDuXpN1OqgVKnYr2Km_N3fD9WWN3g5cv5hAA/edit)
 
 ### Example Program
 
-Every Rails Girls event starts with an installation-fest where the setup is pre-installed to the girl's computers. See [guides.railsgirls.com/install](http://guides.railsgirls.com/install) for readymade instructions. The installation-fest can include short talks, but the main point is to offer some sparkling wine, get everything set for the next day and the women to know each other. The timeframe is tentative - you know your audience and what suits them best. We've hosted events both during weekend and weekdays. Also, doing two evenings (4PM - 22 PM) might be a more suitable solution for your community needs.
+Every Rails Girls event starts with an installation-fest where the setup is pre-installed to the girl's computers. See [the install guide](/install) for readymade instructions. The installation-fest can include short talks, but the main point is to offer some sparkling wine, get everything set for the next day and the women to know each other. The timeframe is tentative - you know your audience and what suits them best. We've hosted events both during weekend and weekdays. Also, doing two evenings (4PM - 22 PM) might be a more suitable solution for your community needs.
 
 #### Learning objectives of the workshop:
 
@@ -58,7 +58,7 @@ Every Rails Girls event starts with an installation-fest where the setup is pre-
 
 Some installations will fail: be prepared to set women up in pairs, don't use endless amounts of time.
 
-Decorate the place with balloons and posters. Put a fun <a href="http://open.spotify.com/user/lindaliukas/playlist/1fgkUFCFDrSn621kf4iHhr">playlist</a> together for the evening.
+Decorate the place with balloons and posters. Put a fun <a href="https://open.spotify.com/playlist/1fgkUFCFDrSn621kf4iHhr">playlist</a> together for the evening.
 
 Come up with activities to break the ice: ask the girls to write why they are attending the event on post-its or to draw and describe their dream web app.
 
@@ -90,7 +90,7 @@ Themes to cover:
 Show & tell with <a href="https://ruby.github.io/TryRuby/">TryRuby</a>, first three-four exercises all together.
 
 11:30 - 13:00 Workshop time
-Going (slowly!) through the curriculum at <a href="http://guides.railsgirls.com/app">guides.railsgirls.com/app</a>. Stop to explain what you’re doing and what the different concepts mean.
+Going (slowly!) through the curriculum at <a href="/app">guides.railsgirls.com/app</a>. Stop to explain what you’re doing and what the different concepts mean.
 
 Try to aim for simple explanations even with the cost of accuracy. You don’t need to talk about all underlying concepts. Just try to answer questions when they arise, or move on if they’re too hard or out of scope. You are not here to teach perfect coding skills but to show how to get stuff done. One has to learn how to build web apps before learning how to do it well.
 
@@ -112,8 +112,8 @@ Putting technical jargon into a context with a conceptual model called Bentobox.
 
 Two exercises: 1) Going through the 10 technical concepts with the physical Bentobox boards.  2) Going through the words the women have themselves submitted with the coaches.
 
-+ [Bentobox slidedeck](http://speakerdeck.com/u/railsgirls/p/rails-girls-bentobox-exercise)
-+ [Instruction video](http://vimeo.com/39049632)
++ [Bentobox slidedeck](https://speakerdeck.com/railsgirls/rails-girls-bentobox-exercise)
++ [Instruction video](https://vimeo.com/39049632)
 
 14:30 - 18:00 Workshop time.
 
@@ -134,16 +134,15 @@ Invite everyone, also the local developers, boys, those who weren't accepted, to
 
 [Fork this project on GitHub][github], add yourself, and send us a pull request.
 
-[self]: http://guides.railsgirls.com/ "The Rails Girls Guide"
 [github]: https://github.com/railsgirls/railsgirls.github.com "Fork on GitHub"
 
 #### Materials
 
-+ [Download materials](http://www.speakerdeck.com/u/railsgirls)
++ [Download materials](https://speakerdeck.com/railsgirls)
 
 ### Promotion of Rails Girls
 
-Every Rails Girls workshop will get a custom website at railsgirls.com/city where the information is collected and then stored. For past cities, see [railsgirls.com/events](http://railsgirls.com/events)
+Every Rails Girls workshop will get a custom website at railsgirls.com/city where the information is collected and then stored. For past cities, see <http://railsgirls.com/events.html>
 
 You can also set up your own Facebook and Twitter page (remember to add links to your workshop's page!) or whatever service is popular in your community. Promoting the event through social media can go a long way these days, but make sure you have somebody to take care of the chosen channels. Some tips:
 
@@ -155,7 +154,7 @@ You can also set up your own Facebook and Twitter page (remember to add links to
 
 While the event is underway, remember to take pictures, collect tweets and ask questions of the participants. You'll be thankful for all of that for your next event. We love to write blog posts about the speaker and participant experiences. A list of the coaches is also required.
 
-+ [Download materials](http://www.speakerdeck.com/u/railsgirls)
++ [Download materials](https://speakerdeck.com/railsgirls)
 
 #### Website
 E-mail contact(a)railsgirls.com and ask to be included in the repo. Look for readme.txt for further instructions! Before making a site you should have at least two coaches and one sponsor onboard.
@@ -165,7 +164,7 @@ E-mail contact(a)railsgirls.com and ask to be included in the repo. Look for rea
 
 #### How to find local developers?
 
-* Google. Almost every country has some sort of a Rails or Ruby community (sometimes called Ruby Brigade or Ruby Tuesday). Look for [Hackernews](http://news.ycombinator.com) meetups, [GitHub](http://www.github.com) contributors or [Dribbble](http://dribbble) draftees. Find the local open source scene. Surf the technology conferences (here's [a list](http://rubythere.com/) of Ruby-themed ones, but others are cool too) and meetups at [meetup.com](http://www.meetup.com). Call software development houses, big and small. Don't forget IRC and podcasts!
+* Google. Almost every country has some sort of a Rails or Ruby community (sometimes called Ruby Brigade or Ruby Tuesday). Look for [Hackernews](https://news.ycombinator.com) meetups, [GitHub](https://www.github.com) contributors or [Dribbble](https://dribbble) draftees. Find the local open source scene. Surf the technology conferences of [Ruby-themed ones](https://rubyconferences.org/), but others are cool too) and meetups at [meetup.com](https://www.meetup.com). Call software development houses, big and small. Don't forget IRC and podcasts!
 
 * Check out hashtags like #rails #ruby and #opensource from [Twitter search](https://twitter.com/#!/search-home). To find people from, say, close to NYC, use the following search operators "near:NYC within:15mi". Some countries have specific hashtags like #Rubysur and #RubyArg they use, remember to ask!
 
@@ -177,9 +176,9 @@ E-mail contact(a)railsgirls.com and ask to be included in the repo. Look for rea
 
 * Use social media: Facebook, Twitter & local networks such as Weibo. Friends, girlfriends, co-workers!
 
-* Local [Girls in Tech](https://twitter.com/#!/gitweet), [DevChix](http://www.devchix.com/), [Geek Girl](http://geekgirlmeetup.com/) chapters etc. Check out also [Meetup.com](http://www.meetup.com/). Twitter lists like @anitaborg's [Tech Women Programs](https://twitter.com/#!/anitaborg_org/tech-women-programs) and similar.
+* Local [Girls in Tech](https://twitter.com/#!/gitweet), [DevChix](http://www.devchix.com/), [Geek Girl](https://www.geekgirlmeetup.com/) chapters etc. Check out also [Meetup.com](https://www.meetup.com/). Twitter lists like @anitaborg's [Tech Women Programs](https://twitter.com/#!/anitaborg_org/tech-women-programs) and similar.
 
-* Think outside the box: universities, book clubs, music stores, design agencies, [Etsy](http://www.etsy.com). We want women who are interested in technology, but they can still have very varied backgrounds.
+* Think outside the box: universities, book clubs, music stores, design agencies, [Etsy](https://www.etsy.com). We want women who are interested in technology, but they can still have very varied backgrounds.
 
 #### How to get press?
 
@@ -209,7 +208,7 @@ Rails Girls is a two-day non-profit event for women of all ages to give them a g
 
 Rails Girls is not just about programming, it’s about building things. During the workshop, we’ll build an application and also have inspiring lightning talks and exercises.
 
-For a closer look, please see www.railsgirls.com for past events and coverage. Here’s also a short video on the Berlin event held in April 2012: [http://vimeo.com/40852182](http://vimeo.com/40852182)
+For a closer look, please see www.railsgirls.com for past events and coverage. Here’s also a short video on the Berlin event held in April 2012: <https://vimeo.com/40852182>
 
 We are now looking for sponsors to help us realize this all.
 We’d love to have your support!
@@ -264,12 +263,12 @@ Anyone. What we look for is a group of people dedicated in making this a stellar
 * An inkling of an idea where to look for women interested in technology. University, literature, arts, sports - we try to look for people who are interested in Internet, but do not have experience in coding.
 * Willingness to guide the women in the future if they have questions or want to organize their own events or find local developer gatherings.
 
-Start by filling out [http://railsgirls.com/inyourcity](http://railsgirls.com/inyourcity) and someone from our team will be in contact
+Start by filling out <http://railsgirls.com/inyourcity> and someone from our team will be in contact
 
 #### Where can I find all the materials for posters, nametags, sample presentations and such?
 Check out below, and let us know if something is missing!
 
-+ [Download materials](http://www.speakerdeck.com/u/railsgirls)
++ [Download materials](https://speakerdeck.com/railsgirls)
 
 #### What kind of venue is needed?
 
@@ -291,7 +290,7 @@ Rails Girls events are organized around small groups, maximum of 4-5 persons per
 
 The coaches don’t need to be hardcore experts on Rails - basic knowledge and willingness to explain trumps expertise. So, if your local Rails community isn't very strong, do expand your search. You can have a mix of Rails experts and people with web development expertise in other frameworks. We are looking for people who like answering questions and can keep an upbeat and positive atmosphere through a period of 8 hours!
 
-You can get to know the curriculum by checking out [guides.railsgirls.com/app](http://guides.railsgirls.com/app). There is also always a pre-event coach dinner where we’ll go through some pedagogical suggestions and check everyone knows what is happening. Avoid jargon, tie examples to what your doing, encourage asking questions. The installation instructions can be found at [guides.railsgirls.com/install](http://guides.railsgirls.com/install). We also understand that coaches are human and that for most of the people this is the first time teaching something. Worry not - the women have always been really happy with whatever they learn and just the chance to ask questions is enough.
+You can get to know the curriculum by checking out [the guides index](/). There is also always a pre-event coach dinner where we’ll go through some pedagogical suggestions and check everyone knows what is happening. Avoid jargon, tie examples to what your doing, encourage asking questions. The installation instructions can be found in [the install guide](/install). We also understand that coaches are human and that for most of the people this is the first time teaching something. Worry not - the women have always been really happy with whatever they learn and just the chance to ask questions is enough.
 
 
 We hope the coaches are ok with having their name and twitter-id/github/some mean of contact on railsgirls.com so the women always have a local face to answer their questions.
@@ -332,7 +331,7 @@ So far we've had
 
 Also, check out:
 
-+ [Download materials](http://www.speakerdeck.com/u/railsgirls)
++ [Download materials](https://speakerdeck.com/railsgirls)
 
 #### How do I choose attendees?
 
@@ -357,7 +356,7 @@ Congratulations! We’re happy to invite you to join in on the  Rails Girls work
 
 What happens next?
 
-(Insert date for installation fest) starts at (insert time) with an installation fest - so please bring your laptop with you! You should also try to pre-install Rails with instructions from <http://guides.railsgirls.com/install/>
+(Insert date for installation fest) starts at (insert time) with an installation fest - so please bring your laptop with you! You should also try to pre-install Rails with instructions from </install>
 
 We will hold the event in (insert address)
 
@@ -400,13 +399,13 @@ Thank you for taking part in the Rails Girls event. We truly felt lucky to have 
 Three things we want to share:
 in
 Workshop Materials
-(Almost all) materials can be found in the guides section at http://guides.railsgirls.com. You can find presentations, materials and instructions from the workshop. If you took pictures or blogged about the event - let us know! We'll be publishing regularly on blog.railsgirls.com
+(Almost all) materials can be found in the guides section at <https://guides.railsgirls.com>. You can find presentations, materials and instructions from the workshop. If you took pictures or blogged about the event - let us know! We'll be publishing regularly on blog.railsgirls.com
 
 Make Rails Girls better - give us feedback!
 We want to hear from you! Give us feedback about the workshop or how we can make the event better – it’s really quick, and it’ll help us improve our workshop at railsgirls.com/feedback
 
 Keep on coding!
-We realize there was quite a lot of stuff in todays lecture and for most of you it all felt a little overwhelming. We strongly recommend trying out Rails for Zombies exercise at http://www.codeschool.com/ latest by next weekend, it'll refreshen all you've learned so far and teach you some more.
+We realize there was quite a lot of stuff in todays lecture and for most of you it all felt a little overwhelming. We strongly recommend trying out [Rails for Zombies exercise](https://www.pluralsight.com/codeschool) latest by next weekend, it'll refreshen all you've learned so far and teach you some more.
 
 Two things to keep you going:
 - (Insert here a couple of community events that the participants should take part in)
@@ -427,8 +426,8 @@ Inviting real developers to coach is Rails Girls sessions not only gives the par
 * Encourage them to continue practicing by trying different exercises like Codecademy and such.
 * Mention at least two forthcoming developer events where the local coaches will be. Try to get the women to attend actual developer meetups.
 * Invite everyone to the Facebook Group where they can ask questions.
-* Invite the women together again within a month. You can host these meetups at the Rails Girls global meetup page <http://www.meetup.com/Rails-Girls/> - we’ll be happy to promote events. However, it doesn't matter under which brand you want to continue meeting - the important thing'
-* Write about your event for blog.railsgirls.com by [submitting a story](http://blog.railsgirls.com/submit)
+* Invite the women together again within a month. You can host these meetups at the Rails Girls global meetup page <https://www.meetup.com/Rails-Girls/> - we’ll be happy to promote events. However, it doesn't matter under which brand you want to continue meeting - the important thing'
+* Write about your event for blog.railsgirls.com by [submitting a story](https://blog.railsgirls.com/submit)
 
 
 
@@ -452,7 +451,7 @@ This is a small checklist for your event. Rails Girls can be thrown together in 
   5. Partners - a two-paragraph sentence and a logo (100 x 100px or 250 x 90px and in png format)
   6. Coaches with twitter-handle
 
-* Start marketing the event, you can use materials from [here](http://www.speakerdeck.com/u/railsgirls)
+* Start marketing the event, you can use materials from [here](https://speakerdeck.com/railsgirls)
 * Start looking for sponsors
 * Reach out for press and write a pre-event story
 * E-mail accepted participants and non-accepted applicants
@@ -472,11 +471,11 @@ This is a small checklist for your event. Rails Girls can be thrown together in 
 
 * Update website to include pictures and blogposts
 * Collect slides from the speakers and add them to the [Rails Girls presentation](https://github.com/railsgirls/presentations) repo
-* Upload your photos to our [official Flickr group](http://flickr.com/groups/railsgirls/) (preferably under a [Creative Commons](http://www.flickr.com/groups/railsgirls/discuss/72157634650757777/) licence!)
+* Upload your photos to our [official Flickr group](https://www.flickr.com/groups/railsgirls/) (preferably under a [Creative Commons](https://www.flickr.com/groups/railsgirls/discuss/72157634650757777/) licence!)
 * Invite active participants to [global e-mail list](https://groups.google.com/group/rails-girls-team)
-* Send a thank you note to participants and ask for [feedback](http://www.railsgirls.com/feedback) (you can also create your own feedback form in your local language)
+* Send a thank you note to participants and ask for [feedback](http://railsgirls.com/feedback) (you can also create your own feedback form in your local language)
 * Send a thank you note to coaches
 * Send a thank you note for organizers
 * Add yourself to the [Rails Girls Map](http://rails-girls-map.herokuapp.com/)
 * Share the numbers of your event by filling out this short [Questionaire](https://railsgirls.wufoo.eu/forms/rails-girls-events-all-the-numbers/)
-* Write a blogpost to the global blog by [submitting your story](http://blog.railsgirls.com/submit) - or ask one of the participants or coaches to write one!
+* Write a blogpost to the global blog by [submitting your story](https://blog.railsgirls.com/submit) - or ask one of the participants or coaches to write one!

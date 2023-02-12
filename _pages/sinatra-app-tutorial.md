@@ -13,7 +13,7 @@ We will create a little voting app from scratch using a web development framewor
 Imagine your group of friends is figuring out what to order for your weekly movie watching marathon. With the many fast food options out there, this can become quite a discussion. This is where our app comes into play!
 
 {% coach %}
-Explain shortly what [Sinatra](http://www.sinatrarb.com) is.
+Explain shortly what [Sinatra](https://sinatrarb.com) is.
 {% endcoach %}
 
 ## Install Sinatra
@@ -35,7 +35,7 @@ end
 {% endhighlight %}
 
 
-You can actually call your Ruby file whatever you'd like. `vote.rb` for instance would totally work as well, when used consistently. But [suffragist](http://www.vocabulary.com/dictionary/suffragist) actually references to a super important event in the women's rights movement, so let's just go with that for now!  
+You can actually call your Ruby file whatever you'd like. `vote.rb` for instance would totally work as well, when used consistently. But [suffragist](https://www.vocabulary.com/dictionary/suffragist) actually references to a super important event in the women's rights movement, so let's just go with that for now!
 
 
 ### Run your app

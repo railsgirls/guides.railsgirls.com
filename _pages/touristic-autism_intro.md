@@ -10,7 +10,7 @@ permalink: touristic-autism_intro
 *for [Rails Girls Galway](https://github.com/RailsGirlsGalway)*
 
 
-This guide merges, adapts and extends some of the basic RailsGirls guides **for the scenario**: description, displaying and commenting touristic places and rate them with respect to their autism-friendliness. This application was requested by the [Galway Autism Partnership](http://www.galwayautismpartnership.com/) to support autistic adults during their travelings.
+This guide merges, adapts and extends some of the basic RailsGirls guides **for the scenario**: description, displaying and commenting touristic places and rate them with respect to their autism-friendliness. This application was requested by the [Galway Autism Partnership](https://galwayautismpartnership.com/) to support autistic adults during their travelings.
 
 The extension comprises of the following **new features**:
 
@@ -18,13 +18,13 @@ The extension comprises of the following **new features**:
 * Resource Rating
 * Authenticated User (via devise) permission setting
 
-The basic guides that have been merged and adapted are the [Ruby on Rails Tutorial](http://www.railstutorial.org/book), the [basic RailsGirls app](http://guides.railsgirls.com/app/) and the tutorials for [creating thumbnails](http://guides.railsgirls.com/thumbnails), [authenticating users](http://guides.railsgirls.com/devise/), [adding design](http://guides.railsgirls.com/design), [deploying to OpenShift](http://guides.railsgirls.com/openshift/) and [adding comments](http://guides.railsgirls.com/commenting).
+The basic guides that have been merged and adapted are the [Ruby on Rails Tutorial](https://www.railstutorial.org/book), the [basic RailsGirls app](/app) and the tutorials for [creating thumbnails](/thumbnails), [authenticating users](/devise), [adding design](/design), [deploying to OpenShift](/openshift/) and [adding comments](/commenting).
 
 
 
 ### [*0.* Installation](/install)
 
-**Make sure you have Rails and Git installed.** [**Follow the installation guide**](/install), the [**Installing Git section of Pro Git**](http://www.git-scm.com/book/en/Getting-Started-Installing-Git) to get set up. Then configure GitHub by typing the following in your terminal:
+**Make sure you have Rails and Git installed.** [**Follow the installation guide**](/install), the [**Installing Git section of Pro Git**](https://www.git-scm.com/book/en/Getting-Started-Installing-Git) to get set up. Then configure GitHub by typing the following in your terminal:
 
 {% highlight sh %}
 git config --global user.name "Your Name"
@@ -59,7 +59,7 @@ Sign up for a [free GitHub account](https://github.com/signup/free) if you donâ€
 
 ## Additional Guides
 
-* Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](http://www.pragtob.info/rails-beginner-cheatsheet/)
+* Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](https://www.pragtob.info/rails-beginner-cheatsheet/)
 * Guide 1: [Put your app online with Heroku by Terence Lee](/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift) / [Put your app online with anynines](/anynines) / [Put your app online with Trucker.io](/trucker)
 * Guide 2: [Adding profile pictures with Gravatar](/gravatar)
 * Guide 3: [Go through additional explanations for the App by Lucy Bain](https://github.com/lbain/railsgirls)

@@ -10,7 +10,7 @@ permalink: backend-with-active-admin
 
 **This guide assumes that you have already built a Rails Girls app by** [**following the app development guide**](/app).
 
-Active Admin is a Ruby on Rails plugin for generating administration style interfaces. It abstracts common business application patterns to make it simple for developers to implement beautiful and elegant interfaces with very little effort. You can read more about Active Admin [here](http://activeadmin.info/).
+Active Admin is a Ruby on Rails plugin for generating administration style interfaces. It abstracts common business application patterns to make it simple for developers to implement beautiful and elegant interfaces with very little effort. You can read more about Active Admin [here](https://activeadmin.info/).
 
 ## Adding the "Active Admin" gem
 Open up your `Gemfile` and add these lines
@@ -63,7 +63,7 @@ irb(main):002:0> exit
 {% endhighlight %}
 
 ## Accessing your admin panel
-Visit [http://localhost:3000/admin](http://localhost:3000/admin) and log in using your created credentials.
+Visit <http://localhost:3000/admin> and log in using your created credentials.
 
 Voila! You're on your brand new Active Admin dashboard.
 
@@ -77,7 +77,7 @@ Refresh your admin page and you will find [Ideas](http://localhost:3000/admin/id
 *You can replace "Idea" with whatever model you like to register another model with Active Admin.*
 
 ### Setting up Strong Parameters
-To prevent **ActiveModel::ForbiddenAttributesError in Admin::IdeasController#update** exception when updating a model you have to use the [permit_params](http://activeadmin.info/docs/2-resource-customization.html) method to define which attributes may be changed:
+To prevent **ActiveModel::ForbiddenAttributesError in Admin::IdeasController#update** exception when updating a model you have to use the [permit_params](https://activeadmin.info/2-resource-customization.html) method to define which attributes may be changed:
 
 Open up your `app/admin/idea.rb` file and add `:name`, `:description` and `:picture` to `permit_params`:
 {% highlight ruby %}

@@ -6,7 +6,7 @@ permalink: how-to-continue-with-programming
 
 # After The Event: How To Continue With Programming
 
-*Created and edited for general use by Daniel Puglisi, [@danielpuglisi](http://twitter.com/danielpuglisi).*
+*Created and edited for general use by Daniel Puglisi, [@danielpuglisi](https://twitter.com/danielpuglisi).*
 
 *This guide was originally written for the [Rails Girls Basel](http://railsgirls.com/basel) event
 and was published on
@@ -30,17 +30,17 @@ to take things to the next level:
 
 ### Courses
 
-* [Rails for Zombies](http://railsforzombies.org/) - A Rails Screencast which you can try for free. Pluralsight also provides a series of paid [Ruby and Rails](https://www.pluralsight.com/paths/ruby-language-fundamentals) courses which are awesome. You should really try them!
-* [Codecademy](http://www.codecademy.com/) - The world isn't just created with Ruby and Rails. There are also plenty of other languages like HTML/CSS, JavaScript, Python and so on. Try them out!
+* [Rails for Zombies](https://www.pluralsight.com/courses/code-school-rails-for-zombies) - A Rails Screencast which you can try for free. Pluralsight also provides a series of paid [Ruby and Rails](https://www.pluralsight.com/paths/ruby-language-fundamentals) courses which are awesome. You should really try them!
+* [Codecademy](https://www.codecademy.com/) - The world isn't just created with Ruby and Rails. There are also plenty of other languages like HTML/CSS, JavaScript, Python and so on. Try them out!
 
 ### Books
 
-* [Rails Tutorial](http://ruby.railstutorial.org/) - A awesome book which has a free HTML version and a paid print version. The book provides you with a lot of great material which we couldn't cover at the Rails Girls workshop.
+* [Rails Tutorial](https://www.railstutorial.org/) - A awesome book which has a free HTML version and a paid print version. The book provides you with a lot of great material which we couldn't cover at the Rails Girls workshop.
 
 ### Screencasts & Videos
 
 * Confreaks - Talks from conferences all over the world. There are playlists for RubyConf and RailsConf on the [Confreaks YouTube channel](https://www.youtube.com/user/Confreaks/playlists). Learn about the latest in the Ruby!
-* [Richard Schneems Screencasts](http://www.youtube.com/user/schneems/videos) on YouTube.
+* [Richard Schneems Screencasts](https://www.youtube.com/user/schneems/videos) on YouTube.
 * [Railscasts](http://railscasts.com/) - Short and simple screencasts about Rails by Ryan Bates. (Note: Ryan is no longer updating RailsCasts.)
 
 ### Even more!
@@ -86,7 +86,7 @@ For example: ask someone that was a coach at the workshop you attended.
 
 One of the girls at the Rails Girls Basel event (thanks [Helena](https://twitter.com/HBobbiRo)!) had the great idea
 that we could put up a list with all the attendees, coaches and organizers of the event.
-We created this list and it's on [GitHub](https://github.com/RailsGirlsSwitzerland/attendees) now, [check out the website](http://railsgirlsswitzerland.github.io/attendees/site/2013_04_basel.html).
+We created this list and it's on [GitHub](https://github.com/RailsGirlsSwitzerland/attendees) now, [check out the website](https://railsgirlsswitzerland.github.io/attendees/site/2013_04_basel.html).
 Feel free to fork the repository and adjust it to the needs of your Rails Girls event.
 
 Try to setup such a list for your event too, this way its a lot easier to stay in contact with everyone than just
@@ -112,5 +112,4 @@ Thats it, keep on coding and let's build the future!
 
 ## 5. More resources
 
-- [8 ways to enable workshop attendees to keep learning](http://pragtob.wordpress.com/2013/06/14/8-ways-to-enable-workshop-attendees-to-keep-learning/)
-
+- [8 ways to enable workshop attendees to keep learning](https://pragtob.wordpress.com/2013/06/14/8-ways-to-enable-workshop-attendees-to-keep-learning/)

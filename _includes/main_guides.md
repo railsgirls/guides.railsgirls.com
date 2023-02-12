@@ -1,6 +1,6 @@
 <hr>
 
-If you're ever stuck during a guide, please consult this [handy cheatsheet for Ruby, Rails, the console, the Text Editor etc](http://www.pragtob.info/rails-beginner-cheatsheet/).
+If you're ever stuck during a guide, please consult this [handy cheatsheet for Ruby, Rails, the console, the Text Editor etc](https://www.pragtob.info/rails-beginner-cheatsheet/).
 
 ## Guides
 

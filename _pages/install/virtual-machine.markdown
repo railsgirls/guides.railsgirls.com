@@ -16,7 +16,7 @@ Considering the things above, we created a virtual development environment for t
 
 ## Virtual Machine
 
-A [virtual machine (VM)](http://en.wikipedia.org/wiki/Virtual_machine) is a software-based emulation of a computer.
+A [virtual machine (VM)](https://en.wikipedia.org/wiki/Virtual_machine) is a software-based emulation of a computer.
 
 ### Limitations
 
@@ -55,7 +55,7 @@ If we click into this VirtualBox window, it catches our mouse, and it disappears
 ### Usage
 
 Now as our VM is up and running, let login to it. We could log in from the VirtualBox window described above, but using it would not be comfortable (it's not recognizing our keyboard's layout, copy-paste wouldn't work., etc.). We could also log in remotely (with a so-called SSH connection), but Windows doesn't have an SSH-client preinstalled, and installing one is a cumbersome.
-Because of this, you can log in to the VM with a browser. Open your favourite browser (Chrome :) ), and type in [http://localhost:57575](http://localhost:57575) as a URL.
+Because of this, you can log in to the VM with a browser. Open your favourite browser (Chrome :) ), and type in <http://localhost:57575> as a URL.
 If we did everything right, we should see a butterfly:
 
 ![Butterfly / Console in your browser](/images/butterfly_login.png)
@@ -91,7 +91,7 @@ Let's create a new folder called *railsgirls* on our machine (under our user's h
 In the appearing little window browse the created *railsgirls* forlder as a Folder Path. Give *railsgirls* as foldername and also select the option *Auto Mount* (all other options should be deselected).
 Start the VM again, and log into it with the known process:
 
-* open [http://localhost:57575](http://localhost:57575)
+* open <http://localhost:57575>
 * log in with vagrant / vagrant
 * don't forget to run `/bin/bash --login`
 
