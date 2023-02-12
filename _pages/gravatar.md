@@ -18,7 +18,9 @@ You need to have an e-mail address registered with Gravatar for this to work. If
 
 ## *1.* Add the Gravtastic gem
 
-__COACH__: At time of writing the [Gravtastic Ruby gem](https://rubygems.org/gems/gravtastic) is archived and no longer maintained. If you know of a maintained alternatives, please update the guide.
+{% coach %}
+At time of writing the [Gravtastic Ruby gem](https://rubygems.org/gems/gravtastic) is archived and no longer maintained. If you know of a maintained alternatives, please update the guide.
+{% endcoach %}
 
 Open up your gemfile and under your `devise` gem add
 

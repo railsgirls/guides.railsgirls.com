@@ -33,6 +33,16 @@ The guides use the [pygments](https://pygments.org/) library to do syntax highli
 
 If you aren't editing the code blocks, you can safely ignore this. If you want pygments, you can follow the [install instructions](https://jekyllrb.com/docs/installation/) in the "Pygments" section.
 
+### Coach highlights
+
+A custom Liquid tag is available for coach notes. Add these to guides when you want the coach to explain something. Use this tag to make sure the visual element is always the same and easy to recognize.
+
+```
+{% coach %}
+Add helpful text here for the coach!
+{% endcoach %}
+```
+
 ### Run jekyll
 
 ```

@@ -142,7 +142,9 @@ Now let's see what the browser sends to the server when you submit the form. Put
 GET /?what=flat+white&cost=3.50 HTTP/1.1
 {% endhighlight %}
 
-**Coach:** Talk about where the parameter names come from and what the question mark is doing.
+{% coach %}
+Talk about where the parameter names come from and what the question mark is doing.
+{% endcoach %}
 
 If it's not quite working, make sure your code looks like [this code](http://tjmcewan.github.io/coffeecalc/snippets/html_form.rb.txt).
 
@@ -163,7 +165,9 @@ Accept-Encoding: gzip,deflate,sdch
 Accept-Language: en-US,en;q=0.8
 {% endhighlight %}
 
-**Coach:** Explain what HTTP headers are and they mean.
+{% coach %}
+Explain what HTTP headers are and they mean.
+{% endcoach %}
 
 The important part to note is the first line, which shows you the HTTP verb and the URL it was called on.
 

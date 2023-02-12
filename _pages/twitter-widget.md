@@ -13,7 +13,9 @@ This exercise is intended to teach how to use twitter widget and how to add it t
 
 Where is 2 ways to do it, if you want to do it quick just adding a prepared code, go to paragraph 2.
 
-**Coach** explain what is widget.
+{% coach %}
+Explain what is widget.
+{% endcoach %}
 
 
 1. Twitter widget configuration

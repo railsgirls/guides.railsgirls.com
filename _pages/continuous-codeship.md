@@ -18,7 +18,9 @@ With a working continuous deployment chain in place you'll enforce Git deploymen
 
 There are a few great companies sailing the continuous wave, in this guide we'll set up continuous deployment for our Ruby on Rails app from GitHub to Heroku, using the [Codeship](http://www.codeship.io). 
 
-__COACH__: Talk about the benefits of continuous deployment.
+{% coach %}
+Talk about the benefits of continuous deployment.
+{% endcoach %}
 
 ### Sign up for Codeship
 

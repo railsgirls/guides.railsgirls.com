@@ -75,8 +75,9 @@ We'll use a bundled generator script to create the User model.
    rails db:migrate
 {% endhighlight %}
 
-**Coach:** Explain what user model has been generated. What are the
-fields?
+{% coach %}
+Explain what user model has been generated. What are the fields?
+{% endcoach %}
 
 ## *5.* Create your first user
 
@@ -121,7 +122,9 @@ after `class ApplicationController < ActionController::Base`.
 
 Open your browser and try logging in and out from.
 
-**Coach:** Talk about the `user_signed_in?` and `current_user` helpers. Why are they useful?
+{% coach %}
+Talk about the `user_signed_in?` and `current_user` helpers. Why are they useful?
+{% endcoach %}
 
 ## What next?
 

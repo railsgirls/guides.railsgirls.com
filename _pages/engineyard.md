@@ -43,7 +43,9 @@ You need to add your app to your Git repository. You can do this by running the 
 >	`git commit -m "initial commit"`
 
 
-__COACH__: This would be a good time to talk about version control systems and git.
+{% coach %}
+This would be a good time to talk about version control systems and git.
+{% endcoach %}
 
 ### Be Sure to Have a Rails Application in a Repository on Github
 
@@ -72,7 +74,9 @@ You should now be on a page that says "Allow Engine Yard access to private repos
 4.	Paste the block of text from your Engine Yard page here. Save it
 5.	Go back to your Engine Yard Page and Click the button that says, "My deploy key is in place".
 
-__COACH__: Talk about the difference between private and public repos and when to use either.
+{% coach %}
+Talk about the difference between private and public repos and when to use either.
+{% endcoach %}
 
 ### Creating and Configuring Your Environment
 
@@ -84,7 +88,9 @@ Once you click the "My deploy key is in place" button, you will be taken to a pa
 On this page, let's select the staging configuration.
 *	Click "Boot This Configuration". You will go to a new page where you see several status bars moving. Our Platform is provisioning your instances. We need to wait till these turn to green dots. This usually takes about 10 minutes, so does anyone need to take a break? It's a good time to go grab some water or a coffee.
 
-__COACH__: Talk about Staging vs. Production, and why it's important to have replicas. Talk about what is a master & Slave. How does Engine Yard's Failover work? Why is that important?
+{% coach %}
+Talk about Staging vs. Production, and why it's important to have replicas. Talk about what is a master & Slave. How does Engine Yard's Failover work? Why is that important?
+{% endcoach %}
 
 
 #### Deploying Your Application

@@ -36,7 +36,9 @@ sudo apt-get install imagemagick
   </div>
 </div>
 
-__Coach__: Explain what is ImageMagick and how is it different from libraries/gems we used before?
+{% coach %}
+Explain what is ImageMagick and how is it different from libraries/gems we used before?
+{% endcoach %}
 
 ## Install a Ruby gem for ImageMagick
 
@@ -74,7 +76,9 @@ Open `app/uploaders/picture_uploader.rb` and find the line that looks like this:
 
 Remove the `#` sign at the front of the line.
 
-__Coach__: Explain the concept of comments in code.
+{% coach %}
+Explain the concept of comments in code.
+{% endcoach %}
 
 Below the line you just changed, add these lines:
 
@@ -104,4 +108,6 @@ to this line:
 
 Take a look at the [list of ideas](http://localhost:3000/ideas) in the Browser to see if your ideas now have a thumbnail.
 
-__Coach__: Explain what specifying the image width in HTML and how it differs from resizing images on the server. Both images may look small, but only one is resized as a thumbnail.
+{% coach %}
+Explain what specifying the image width in HTML and how it differs from resizing images on the server. Both images may look small, but only one is resized as a thumbnail.
+{% endcoach %}

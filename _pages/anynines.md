@@ -8,7 +8,9 @@ permalink: anynines
 
 *Created by Floor Drees, [@floordrees](https://twitter.com/floordrees)*
 
-__COACH__: Talk about the benefits of deploying to anynines vs utilising US data centers.
+{% coach %}
+Talk about the benefits of deploying to anynines vs utilising US data centers.
+{% endcoach %}
 
 ### Get yourself some anynines
 
@@ -75,7 +77,9 @@ git add .
 git commit -m "add anynines deployment"
 {% endhighlight %}
 
-__COACH__: This would be a great time to talk about version control systems and git, if you haven't already.
+{% coach %}
+This would be a great time to talk about version control systems and git, if you haven't already.
+{% endcoach %}
 
 ### Help
 

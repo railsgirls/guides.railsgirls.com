@@ -14,7 +14,9 @@ Follow steps "Introduction" and "Set up" of the
 [Getting Started on Heroku with Ruby][heroku-guide] to sign up, install the
 Heroku CLI, and login.
 
-__COACH__: Talk about the benefits of deploying to Heroku vs traditional servers.
+{% coach %}
+Talk about the benefits of deploying to Heroku vs traditional servers.
+{% endcoach %}
 
 [heroku-guide]: https://devcenter.heroku.com/articles/getting-started-with-ruby#introduction
 
@@ -66,7 +68,9 @@ git add .
 git commit -m "Use postgres as production database"
 {% endhighlight %}
 
-__COACH__: You can talk about RDBMS and the different ones out there, plus include some details on Heroku's dependency on PostgreSQL.
+{% coach %}
+You can talk about RDBMS and the different ones out there, plus include some details on Heroku's dependency on PostgreSQL.
+{% endcoach %}
 
 ## Deploying your app
 

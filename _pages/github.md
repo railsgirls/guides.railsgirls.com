@@ -12,7 +12,9 @@ permalink: github
 
 Git is a tool with which it's possible to save your app's source code, view changes over time, share code online and collaborate with others.
 
-**COACH:** Talk a little about Git, version control, collaborating with others using Git, GitHub, deployment techniques using Git and Open Source.
+{% coach %}
+Talk a little about Git, version control, collaborating with others using Git, GitHub, deployment techniques using Git and Open Source.
+{% endcoach %}
 
 ## Installing Git
 
@@ -105,7 +107,9 @@ Now we want to _push_ to local changes in the Git repository to repository on Gi
 git push -u origin master
 {% endhighlight %}
 
-**COACH:** Please help with setting up GitHub authentication if the `git push` command fails. Either use an [SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) or [Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
+{% coach %}
+Please help with setting up GitHub authentication if the `git push` command fails. Either use an [SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) or [Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
+{% endcoach %}
 
 Congratulations your app is on GitHub! Refresh the page in the Browser and you should see a bunch of files there now.
 
@@ -127,7 +131,9 @@ git commit -m "Type your commit message here"
 
 Use a descriptive message so you can find back what you changed in which commit and why.
 
-**COACH:** Talk about what makes a good commit message (active, descriptive and short).
+{% coach %}
+Talk about what makes a good commit message (active, descriptive and short).
+{% endcoach %}
 
 And push the changes to GitHub:
 

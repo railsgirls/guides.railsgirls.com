@@ -81,7 +81,9 @@ We'll use a bundled generator script to create the User model.
    rails db:migrate
 {% endhighlight %}
 
-**Coach:** Explain what user model has been generated. What are the fields? Note that a model inherits abilities to interact with the DB from its ApplicationRecord super-class (ref. MVC).
+{% coach %}
+Explain what user model has been generated. What are the fields? Note that a model inherits abilities to interact with the DB from its ApplicationRecord super-class (ref. MVC).
+{% endcoach %}
 
 ## Step 4: Create your first user
 
@@ -117,7 +119,9 @@ after `class ApplicationController < ActionController::Base`.
 
 Open your browser and try logging in and out from.
 
-**Coach:** Talk about the `user_signed_in?` and `current_user` helpers. Why are they useful?
+{% coach %}
+Talk about the `user_signed_in?` and `current_user` helpers. Why are they useful?
+{% endcoach %}
 
 Let's add-commit-push to your GitHub repo! See how nicely all the changes are now on your GitHub profile? :)
 
@@ -156,7 +160,10 @@ Each new instance of "place" that will be stored in the database, will be automa
 </div>
 
 
-**Coach:** What is Rails scaffolding? What are migrations and why do you need them?
+{% coach %}
+What is Rails scaffolding? What are migrations and why do you need them?
+{% endcoach %}
+
 Note the pages that have been created to manipulate the "place" resources and their naming convention.
 Look at the server logging and explain it as a report of the following interaction (in the context of the MVC pattern):
 * The browser issues a request for the /places URL.
@@ -280,7 +287,9 @@ Start the server, check out the new service in your browser. Then, add-commit-pu
 </div>
 
 
-**Coach:** show that the scaffold generator has updated the Rails routes file with a rule for the Review resource
+{% coach %}
+Show that the scaffold generator has updated the Rails routes file with a rule for the Review resource
+{% endcoach %}
 
 
 ##Resource Association
@@ -425,6 +434,8 @@ root :to => redirect('/places')
 
 Test the change by opening the root path (that is, http://localhost:3000/) in your browser.
 
-**Coach:** Talk about routes, and include details on the order of routes and their relation to static files.
+{% coach %}
+Talk about routes, and include details on the order of routes and their relation to static files.
+{% endcoach %}
 
 **Rails 3 users:** You will need to delete the index.html from the `/public/` folder for this to work.

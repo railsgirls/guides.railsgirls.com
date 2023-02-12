@@ -141,13 +141,17 @@ When the command prompt is not visible you cannot execute new commands. If you t
 
 Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to quit the server.
 
-**Coach:** Explain what each command does. What was generated? What does the server do? You can find more details about the special template on [GitHub](https://github.com/Ben-M/simple_scaffold).
+{% coach %}
+Explain what each command does. What was generated? What does the server do? You can find more details about the special template on [GitHub](https://github.com/Ben-M/simple_scaffold).
+{% endcoach %}
 
 ## *2.* Create Idea scaffold
 
 We're going to use Rails' scaffold functionality to generate a starting point that allows us to list, add, remove, edit, and view things; in our case ideas.
 
-**Coach:** What is Rails scaffolding? (Explain the command, the model name and related database table, naming conventions, attributes and types, etc.) What are migrations and why do you need them?
+{% coach %}
+What is Rails scaffolding? (Explain the command, the model name and related database table, naming conventions, attributes and types, etc.) What are migrations and why do you need them?
+{% endcoach %}
 
 <div class="os-specific">
   <div class="mac nix">
@@ -188,7 +192,9 @@ Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> to quit the server again when you've clicked ar
 
 ## *3.* Design
 
-**Coach:** Talk about the relationship between HTML and Rails. What part of views is HTML and what is Embedded Ruby (ERB)? What is MVC and how does this relate to it? (Models and controllers are responsible for generating the HTML views.)
+{% coach %}
+Talk about the relationship between HTML and Rails. What part of views is HTML and what is Embedded Ruby (ERB)? What is MVC and how does this relate to it? (Models and controllers are responsible for generating the HTML views.)
+{% endcoach %}
 
 The app doesn't look very nice yet. Let's do something about that. We'll use the Twitter Bootstrap project to give us nicer styling really easily.
 
@@ -264,7 +270,9 @@ th { border-bottom: 1px solid #DDD !important; }
 
 Now make sure you saved your files and refresh the browser to see what was changed. You can also change the HTML & CSS further.
 
-**Coach:** Talk a little about CSS and layouts.
+{% coach %}
+Talk a little about CSS and layouts.
+{% endcoach %}
 
 
 ## *4.* Adding picture uploads
@@ -283,7 +291,9 @@ add
 gem 'carrierwave'
 {% endhighlight %}
 
-**Coach:** Explain what libraries are and why they are useful. Describe what open source software is.
+{% coach %}
+Explain what libraries are and why they are useful. Describe what open source software is.
+{% endcoach %}
 
 In the terminal run:
 
@@ -357,8 +367,9 @@ to
 
 Now refresh your browser to see what changed.
 
-**Coach:** Talk a little about HTML.
-
+{% coach %}
+Talk a little about HTML.
+{% endcoach %}
 
 ## *5.* Finetune the routes
 
@@ -372,7 +383,9 @@ root :to => redirect('/ideas')
 
 Test the change by opening the root path (that is, http://localhost:3000/) in your browser.
 
-**Coach:** Talk about routes, and include details on the order of routes and their relation to static files.
+{% coach %}
+Talk about routes, and include details on the order of routes and their relation to static files.
+{% endcoach %}
 
 **Rails 3 users:** You will need to delete the index.html from the `/public/` folder for this to work.
 

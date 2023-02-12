@@ -10,7 +10,9 @@ permalink: diary-app
 
 We will create a little voting app from scratch using a web development framework for Ruby called Rails. Think what your first application should be about – ideally something simple that includes a collection of some sort: e.g., a to-do list, a diary, etc. We’ll use a diary as the base here.
 
-__COACH__: For the rationale behind this slightly different beginners tutorial, take a look at this [post](http://dotclass.org/rails-girls-warsaw-programme/).
+{% coach %}
+For the rationale behind this slightly different beginners tutorial, take a look at this [post](http://dotclass.org/rails-girls-warsaw-programme/).
+{% endcoach %}
 
 
 **Make sure you have Rails installed.** [**Follow the installation guide**](/install) to get set up.
@@ -25,7 +27,9 @@ It is important that you select the instructions specific to your operating syst
 
 Create a new directory (folder) and create a file named `index.html` in it. Open that file in your editor and web browser.
 
-__COACH__: Explain that browsers can open local files, only the URL looks stranger than usual.
+{% coach %}
+Explain that browsers can open local files, only the URL looks stranger than usual.
+{% endcoach %}
 
 ### HTML skeleton
 
@@ -44,7 +48,9 @@ Start by adding a general skeleton for your HTML by writing the below into the `
 </html>
 {% endhighlight %}
 
-__COACH__: Explain the two main parts of HTML, `<head>` and `<body>`. Explain the `<title>` tag and (briefly) `<meta>` , `<link>` and `<script>` if needed. Bootstrap is there so that CSS can be skipped altogether (unless participants want to cover it).
+{% coach %}
+Explain the two main parts of HTML, `<head>` and `<body>`. Explain the `<title>` tag and (briefly) `<meta>` , `<link>` and `<script>` if needed. Bootstrap is there so that CSS can be skipped altogether (unless participants want to cover it).
+{% endcoach %}
 
 ### First visible content
 
@@ -67,7 +73,9 @@ Add the following HTML between the `<body>` and `</body>` tags (feel free to adj
 
 These are your first three diary entries. Note how the different tags get displayed and note the recurring structure.
 
-__COACH__: Tell a bit about HTML tags and their semantic meaning.
+{% coach %}
+Tell a bit about HTML tags and their semantic meaning.
+{% endcoach %}
 
 ### More HTML
 
@@ -87,7 +95,9 @@ Add the following either before or after the above diary entries (again, do adju
 
 This is an HTML unordered list with some list items containing anchors (links) with hypertext references (URLs) to other pages. It’s followed by a paragraph containing an image – and the image’s source is at the given URL.
 
-__COACH__: Explain how the Web works and talk a bit about HTML elements and attributes.
+{% coach %}
+Explain how the Web works and talk a bit about HTML elements and attributes.
+{% endcoach %}
 
 [Here](https://github.com/krzysztofbialek/Rails-Girls-Warsaw-App)'s a link to repo with styled basic app you can use.
 
@@ -97,13 +107,17 @@ __COACH__: Explain how the Web works and talk a bit about HTML elements and attr
 
 Open a terminal window (Command Prompt on Windows), change to the directory where your files are (using the `cd` command) and run `rails new diary` – this will take some time and end up creating a new Rails application. Run `cd diary` to change to the app’s directory.
 
-__COACH__: Explain how to navigate directories and run commands.
+{% coach %}
+Explain how to navigate directories and run commands.
+{% endcoach %}
 
 ### Running the server
 
 Once in the `diary` directory run `rails server` and (once it finishes starting up) go to [http://localhost:3000](http://localhost:3000) in your browser. You should see the ‘Welcome aboard’ page. Stop the server by pressing `ctrl-c`.
 
-__COACH__: Explain what has happened and what’s the output in the terminal window. If the server fails to start due to a missing JavaScript runtime, `gem install therubyracer` and uncomment the relevant line in `Gemfile`.
+{% coach %}
+Explain what has happened and what’s the output in the terminal window. If the server fails to start due to a missing JavaScript runtime, `gem install therubyracer` and uncomment the relevant line in `Gemfile`.
+{% endcoach %}
 
 ### First route and view
 
@@ -113,19 +127,25 @@ Run `rails generate controller welcome index` – this will generate your first 
 
 Stop the server and run `rake routes` to see all the routes supported by your application.
 
-__COACH__: Explain URLs and the URL hierarchy. Explain how in Rails URLs map to ‘what happens behind the scene’.
+{% coach %}
+Explain URLs and the URL hierarchy. Explain how in Rails URLs map to ‘what happens behind the scene’.
+{% endcoach %}
 
 ### Move the view to be the top of your site
 
 Edit the `config/routes.rb` file and uncomment (remove the `#` from the front) the `root ’welcome#index’` line (this will probably be the 7th line). This will make the root of your application be the view rendered by the `Welcome#index` action. Go to [http://localhost:3000](http://localhost:3000) and see that indeed the main page of your application now serves this view (rather than the ‘Welcome aboard’ page).
 
-__COACH__: Explain how the main page of an application is the root of the URL hierarchy and that it’s the page that people visit when they just put the host name into the browser’s address bar.
+{% coach %}
+Explain how the main page of an application is the root of the URL hierarchy and that it’s the page that people visit when they just put the host name into the browser’s address bar.
+{% endcoach %}
 
 ### Move the existing HTML to the right view
 
 Edit the `app/views/welcome/index.html.erb` file and copy the contents of the `<body>` tags from your original `index.html` file (i.e., the list of diary entries and the website links) there, replacing the two lines (with `<h1>` and `<p>`) in the view. Refresh the browser to see that the page now indeed contains the right contents.
 
-__COACH__: Explain that the view only contains the part between `<body>` and `</body>`, as the rest is common to the whole application and is defined elsewhere.
+{% coach %}
+Explain that the view only contains the part between `<body>` and `</body>`, as the rest is common to the whole application and is defined elsewhere.
+{% endcoach %}
 
 ## Iteration
 
@@ -150,7 +170,9 @@ Replace the contents of the `<ul>` tags with the following:
 
 Refresh the browser window to see whether your page still has the same links.
 
-__COACH__: Explain what happened – what is an array, what do `<%` and `<%=` ERb tags mean (and how they differ), how iteration works.
+{% coach %}
+Explain what happened – what is an array, what do `<%` and `<%=` ERb tags mean (and how they differ), how iteration works.
+{% endcoach %}
 
 Keeping code or data (like the above `@websites` array) in views is simple, but a bad practice and can bite in the long run. For starters let’s move the `@websites` array from the view to the controller. Remove it from the view and put it in `app/controllers/welcome_controller.rb` in the `index` method so it looks like this:
 
@@ -168,19 +190,25 @@ end
 
 Note that after refreshing your browser window nothing should change – this is because variables starting with @ (called ‘instance variables’) can be accessed by both the view and the controller.
 
-__COACH__: Explain the connection between the `WecomeController#index` action and the view; note and emphasise the difference between @-starting `@websites` and plain `url` or `name`.
+{% coach %}
+Explain the connection between the `WecomeController#index` action and the view; note and emphasise the difference between @-starting `@websites` and plain `url` or `name`.
+{% endcoach %}
 
 ### Create the model
 
 With the website links out of the hard-coded way, let’s do something with the diary entries. This time we won’t (ab)use a simple Ruby structure like an array, but a proper model that represents a given entry’s data. Let’s start with generating the model – run `rails generate model Entry title:string date:date contents:text` to create an `Entry` model that can represent a diary entry with a title, a publication date and some contents.
 
-__COACH__: Explain what models are and the `field:type` notation for generating them; explain the difference between `string` and `text` types if necessary.
+{% coach %}
+Explain what models are and the `field:type` notation for generating them; explain the difference between `string` and `text` types if necessary.
+{% endcoach %}
 
 ### Migrate the database
 
 Run `rails db:migrate` to migrate the database so that its structure contains a table for entries.
 
-__COACH__: Explain what databases are (in abstract terms, as vessels for storing our application’s data and providing model structures) and why they are needed. Explain that things which are in memory won’t get persisted by default and they need to be persisted explicitly to be available on the next request.
+{% coach %}
+Explain what databases are (in abstract terms, as vessels for storing our application’s data and providing model structures) and why they are needed. Explain that things which are in memory won’t get persisted by default and they need to be persisted explicitly to be available on the next request.
+{% endcoach %}
 
 ### Play with the model in the Rails console
 
@@ -196,7 +224,9 @@ Now that we have a model, we can start creating instances of that model – i.e.
 
 Note how the console – just like `rails server` – shows you a log of what happens in the background. You can always get an array of all existing entries via `Entry.all`.
 
-__COACH__: Explain what’s going on. Slowly.
+{% coach %}
+Explain what’s going on. Slowly.
+{% endcoach %}
 
 ## Viewing the persisted contents
 
@@ -218,7 +248,9 @@ Edit the `app/views/welcome/index.html.erb` view and replace the lines with the 
 <% end %>
 {% endhighlight %}
 
-__COACH__: Discuss what happened; discuss what’s the order of the entries and how they can be reordered (say, by reverse date) and where it should happen.
+{% coach %}
+Discuss what happened; discuss what’s the order of the entries and how they can be reordered (say, by reverse date) and where it should happen.
+{% endcoach %}
 
 ### Create a controller for diary entries
 
@@ -226,7 +258,9 @@ Now that we have a model we need to create a controller for handling actions rel
 
 Edit `config/routes.rb` and add a `resources "entries"` line somewhere inside the `Diary::Application.routes.draw` block. Run `rake routes` again: notice how now your application has all kinds of new routes.
 
-__COACH__: Explain how Rails’ route resources work and how they make URLs spring to existence and map to controller actions by default.
+{% coach %}
+Explain how Rails’ route resources work and how they make URLs spring to existence and map to controller actions by default.
+{% endcoach %}
 
 ### A view of all the entries
 
@@ -239,17 +273,23 @@ end
 
 Now refresh the browser – we no longer have an ‘unknown action’ problem, we now have a ‘template is missing’ problem. Save an empty file as `app/views/entries/index.html.erb` (note it’s just like the `index.html.erb` file in the ‘welcome’ directory before, but this time it’s in the ‘entries’ directory) and refresh the browser again – it should display an empty page. This is good, as our view is quite empty at the moment.
 
-__COACH__: Explain how actions render the related views by default.
+{% coach %}
+Explain how actions render the related views by default.
+{% endcoach %}
 
 Now go to the `app/controllers/welcome_controller.rb` file and find the `WelcomeController#index` method (the one that starts with `def index`). Find the line that sets the `@entries` variable (it should start with `@entries =`) and copy it to `EntriesController#index` (so to the `index` method of the `EntriesController`, which can be found in `app/controllers/entries_controller.rb`). Similarly, go to the `app/views/welcome/index.html.erb` view and copy the `@entries.each` block (all of the indented lines up to and including the matching `end`) to the `app/views/entries/index.html.erb` view. Refresh the browser: it should now show the list of all your diary entries.
 
-__COACH__: Explain that even though this might look like little to no progress, there is a significant change: we’re no longer operating in the context of the main page of our app, but rather a list of diary entries only (without the links to other websites, for example).
+{% coach %}
+Explain that even though this might look like little to no progress, there is a significant change: we’re no longer operating in the context of the main page of our app, but rather a list of diary entries only (without the links to other websites, for example).
+{% endcoach %}
 
 ### A view of a single entry
 
 Note how, when you run `rake routes`, the output says that the `/entries/:id(.:format)` pattern maps to the `entries#show` controller action. Go to [http://localhost:3000/entries/1](http://localhost:3000/entries/1) – the URL for your first diary entry; notice how we’re, again, missing an action of the `EntriesController`. Add that (empty for now) action, then refresh the browser and add the (likewise, empty) missing view.
 
-__COACH__: Guide through adding the missing action and view if needed; make sure the process (all the way from deciphering the right `rake routes` line) is well understood.
+{% coach %}
+Guide through adding the missing action and view if needed; make sure the process (all the way from deciphering the right `rake routes` line) is well understood.
+{% endcoach %}
 
 Now, let’s figure out how to interpret the `1` from the end of the URL to display the right entry. Make the `EntriesController#show` action look like this:
 
@@ -269,7 +309,9 @@ This line means ‘take the `id` parameter and use it in the `Entry.find` method
 
 Visit [http://localhost:3000/entries/1](http://localhost:3000/entries/1) and compare it with [http://localhost:3000/entries/2](http://localhost:3000/entries/2) to see how using `params[’id’]` means that different diary entries get displayed.
 
-__COACH__: Explain that the `:id` part of the URL template from `rake routes` is made into a key for the `params` hash; discuss what else can be found in the `params` hash.
+{% coach %}
+Explain that the `:id` part of the URL template from `rake routes` is made into a key for the `params` hash; discuss what else can be found in the `params` hash.
+{% endcoach %}
 
 ### Linking entries
 
@@ -281,7 +323,9 @@ Run `rake routes` again; notice how the row for the `entries#show` action starts
 
 Note how we use the `link_to` method that takes two parameters, the text to display (`entry.title`) and the path to link to. Check the source of the page to see what is the path for subsequent titles. Note how the path is created by calling the `entry_path` method with `entry` as its argument.
 
-__COACH__: Remind how the HTML for links looks like. Explain the relation between `entry_path` and the `entry` prefix from `rake routes`. Explain why the `entry_path` method needs the `entry` argument. Explain what the `entry_url` method does (and how it differs from the `entry_path`  method) if you want to.
+{% coach %}
+Remind how the HTML for links looks like. Explain the relation between `entry_path` and the `entry` prefix from `rake routes`. Explain why the `entry_path` method needs the `entry` argument. Explain what the `entry_url` method does (and how it differs from the `entry_path`  method) if you want to.
+{% endcoach %}
 
 Now let’s try to get back from an entry screen to the index of all entries: edit the `app/views/entries/show.html.erb` template and add a link to the entries index, like this:
 
@@ -305,7 +349,9 @@ Go to the index of all entries and add a link for creating new entry:
 
 Click the link – and add the missing action and view.
 
-__COACH__: Make sure this process is well understood by now.
+{% coach %}
+Make sure this process is well understood by now.
+{% endcoach %}
 
 Edit the `app/views/entries/new.html.erb` view and paste in the below:
 
@@ -322,7 +368,9 @@ Edit the `app/views/entries/new.html.erb` view and paste in the below:
 
 **Note:** we can skip labels for now
 
-__COACH__: Show how the HTML produced by the `form_for` helper looks like and try to explain how it works.
+{% coach %}
+Show how the HTML produced by the `form_for` helper looks like and try to explain how it works.
+{% endcoach %}
 
 ### Handling the ‘new entry’ form
 
@@ -336,7 +384,9 @@ end
 
 Refresh the browser and inspect what exactly the action gets as its params.
 
-__COACH__: Explain how filling a text field and a text area and submitting the form ends up with all the params being POSTed to the controller’s action. Explain what .inspect does.
+{% coach %}
+Explain how filling a text field and a text area and submitting the form ends up with all the params being POSTed to the controller’s action. Explain what .inspect does.
+{% endcoach %}
 
 ### Creating and persisting the new entry
 
@@ -365,14 +415,18 @@ entry_params = params["entry"].permit("title", "contents")
 
 Now try submitting the form again – this time it should work and you should get redirected to the newly-created entry.
 
-__COACH__: Make sure the plucking of the new entry’s parameters from `params` is well understood and that it’s accepted that certain fields need to be permitted explicitly.
+{% coach %}
+Make sure the plucking of the new entry’s parameters from `params` is well understood and that it’s accepted that certain fields need to be permitted explicitly.
 Editing via the UI
+{% endcoach %}
 
 ### Adding the ‘edit entry’ form
 
 Now that we can view and create entries, let’s also add the option to edit them. Run `rake routes` and try to guess which route is responsible for editing an entry.
 
-__COACH__: Make sure this is well understood by now.
+{% coach %}
+Make sure this is well understood by now.
+{% endcoach %}
 
 Edit the `app/views/entries/show.html.erb` view and add the below line somewhere:
 
@@ -382,7 +436,9 @@ Edit the `app/views/entries/show.html.erb` view and add the below line somewhere
 
 Refresh a given entry’s view and click the link. Add the missing action and an empty view.
 
-__COACH__: Again, make sure this is well understood.
+{% coach %}
+Again, make sure this is well understood.
+{% endcoach %}
 
 Let’s first make sure our `edit` action exposes the right entry to the view. Make sure the `edit` action looks just like the `show` action – i.e., it grabs the right entry based on the id from the URL:
 
@@ -406,7 +462,9 @@ Now copy the contents of the `app/views/entries/new.html.erb` view to the `app/v
 <p><%= link_to("Back to all entries", entries_path) %></p>
 {% endhighlight %}
 
-__COACH__: Make sure all of this is well understood.
+{% coach %}
+Make sure all of this is well understood.
+{% endcoach %}
 
 Now try to submit the form – which action is still missing? Create it in the controller:
 
@@ -421,7 +479,9 @@ end
 
 Check whether this all works and whether you can now edit the entries.
 
-__COACH__: Make sure the `update` action’s contents are well understood – from permitting params through finding entries to redirecting to the right path.
+{% coach %}
+Make sure the `update` action’s contents are well understood – from permitting params through finding entries to redirecting to the right path.
+{% endcoach %}
 
 ## Further ideas
 

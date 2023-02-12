@@ -14,7 +14,9 @@ Make sure you followed the [Push Your App to GitHub][github-guide] guide before 
 
 What follows is a guide to eases up developing your app (you know, the adding functionality and then checking if it actually works), with Passenger. The Ruby on Rails framework provides a builtin server tool, which you can access with the `rails server` command. The "rails server" is not an application server by itself, but just a small wrapper that launches your application in an application server. People do not use "rails server" in production (where other people can access and use your app). They use an application server such as Passenger.
 
-__COACH__: Passenger is an open source web application server. It handles HTTP requests, manages processes and resources, and enables administration, monitoring and problem diagnosis. For big shot developers there's an Enterprise Edition as well.
+{% coach %}
+Passenger is an open source web application server. It handles HTTP requests, manages processes and resources, and enables administration, monitoring and problem diagnosis. For big shot developers there's an Enterprise Edition as well.
+{% endcoach %}
 
 
 [github-guide]: http://guides.railsgirls.com/github
@@ -52,7 +54,9 @@ Your bundle is complete!
 
 Nginx and Apache are web servers. They provide HTTP transaction handling and serve static files. Application servers make it possible for Ruby apps to speak HTTP. Ruby apps (and frameworks like Rails) can't do that by themselves. In a typical production stack, one would use Nginx or Apache as the web server, Passenger as application server, and Capistrano as release automation tool. Passenger integrates with Nginx or Apache and manages the application and its resources.
 
-__COACH__: Sometimes you will need to specify the gem's version: `gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"`
+{% coach %}
+Sometimes you will need to specify the gem's version: `gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"`
+{% endcoach %}
 
 #### Let's check if that worked
 
@@ -95,7 +99,9 @@ Deactivate this mechanism by removing the file:
 rm tmp/always_restart.txt
 {% endhighlight %}
 
-__COACH__: Sometimes the carrierwave gem causes trouble. Adding `require 'carrierwave/orm/activerecord'` to the `environment.rb` file will often do the trick.
+{% coach %}
+Sometimes the carrierwave gem causes trouble. Adding `require 'carrierwave/orm/activerecord'` to the `environment.rb` file will often do the trick.
+{% endcoach %}
 
 
 ### Deploying your app

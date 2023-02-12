@@ -85,6 +85,8 @@ $ git push -u origin master
 The result is a page at GitHub (for instance, [here's mine](https://github.com/iammyr/railsgirls-galway-2014)) for our application repository, which provides nice rendering, sharing functionalities and statistics: take a look by yourself at https://github.com/<your username>/railsgirls-galway-2014
 </div>
 
-**Coach:** Explain the branch-edit-commit-merge workflow on GitHub: modify the README file to be more descriptive.
+{% coach %}
+Explain the branch-edit-commit-merge workflow on GitHub: modify the README file to be more descriptive.
 ([Slides by Myriam Leggieri @iammyr]())
+{% endcoach %}
 

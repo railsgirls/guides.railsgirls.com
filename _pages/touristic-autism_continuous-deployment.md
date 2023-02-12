@@ -48,8 +48,10 @@ If Bundler complains about a readline error, try adding gem ’rb-readline’ to
 Because the only gems we’ve added are restricted to a production environment, right now this command doesn’t actually install any additional local gems, but it’s needed to update Gemfile.lock. Now, let's commit these changes to GitHub!
 </div>
 
-**Coach:** Explain the benefits of deploying to a PaaS such as OpenShift, as opposed to traditional servers. What "production" means. Discuss SSH and why we need to upload a public key to communicate securely.
+{% coach %}
+Explain the benefits of deploying to a PaaS such as OpenShift, as opposed to traditional servers. What "production" means. Discuss SSH and why we need to upload a public key to communicate securely.
 [Slides by Gerry Kavanagh @gerryk]()
+{% endcoach %}
 
 Navigate to the "projects" folder. Run in the prompt:
 
@@ -91,8 +93,9 @@ On some platforms, this may generate platform-specific versions of your Gems tha
 Add and commit your changes in Git
 </div>
 
-**Coach:** Talk about relational databases and the differences between SQLite and PostgreSQL.
-
+{% coach %}
+Talk about relational databases and the differences between SQLite and PostgreSQL.
+{% endcoach %}
 
 We are now ready to deploy the Rails Girls app to OpenShift. We need to tell our Git repository where to push the code. To get the location of your OpenShift code repository, run the following command, and copy the Git URL from the output.
 
@@ -156,4 +159,6 @@ Rails 3 users: Change ‘ActiveSupport::Logger’ to ‘ActiveSupport::BufferedL
 
 You can tail your application’s logs with the command rhc tail openshiftapp (the output from the change you just made won’t show up until the new file has been committed and pushed to OpenShift).
 
-**Coach:** Discuss the value of application logging.
+{% coach %}
+{% endcoach %}
+Discuss the value of application logging.

@@ -48,7 +48,9 @@ This will style each idea in the list to show their idea name as a link to the i
 
 Visit the <http://localhost:3000/ideas> page to see your new idea app design.
 
-**Coach:** Explain how the design works line by line. What is HTML, what is CSS and what parts are Bootstrap?
+{% coach %}
+Explain how the design works line by line. What is HTML, what is CSS and what parts are Bootstrap?
+{% endcoach %}
 
 ## Style the idea detail page
 
@@ -77,7 +79,9 @@ Open `app/views/ideas/show.html.erb` in your text editor and replace all lines w
 
 The new page should look a lot better and a lot like how the ideas are shown on the index page. The actions you can perform on the idea now also are shown in highly visible buttons below the idea details.
 
-**Coach:** Explain how the design works line by line. What is HTML, what is CSS and what parts are Bootstrap?
+{% coach %}
+Explain how the design works line by line. What is HTML, what is CSS and what parts are Bootstrap?
+{% endcoach %}
 
 ## References
 

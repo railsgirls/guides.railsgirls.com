@@ -21,7 +21,9 @@ rhc setup
 
 The above instructions assume you installed Ruby using RVM or RailsInstaller. If you used another approach, there is more info about installing RHC for different set-ups in [this guide](https://www.openshift.com/developers/rhc-client-tools-install) (you may need to do `sudo gem install rhc`).
 
-__COACH__: Talk about the benefits of deploying to a PaaS such as OpenShift, as opposed to traditional servers. Discuss SSH and why we need to upload a public key to communicate securely.
+{% coach %}
+Talk about the benefits of deploying to a PaaS such as OpenShift, as opposed to traditional servers. Discuss SSH and why we need to upload a public key to communicate securely.
+{% endcoach %}
 
 ### Preparing your app
 
@@ -46,7 +48,9 @@ If you see a message like `Are you sure you want to continue connecting (yes/no)
 
 The terminal output should include a URL; open a browser window and go to the application URL to view the sample Rails application (the URL will have the form http://openshiftapp-*yourdomain*.rhcloud.com).
 
-__COACH__: Explain what Git is and why we use version control systems.
+{% coach %}
+Explain what Git is and why we use version control systems.
+{% endcoach %}
 
 #### Add version control
 
@@ -72,7 +76,9 @@ git add --all
 git commit -m "First commit of Ideas app"
 {% endhighlight %}
 
-__COACH__: Explain the Git commands used and .gitignore.
+{% coach %}
+Explain the Git commands used and .gitignore.
+{% endcoach %}
 
 #### Copy sample app code
 
@@ -133,7 +139,9 @@ git add --all
 git commit -m "Changed production database to PostgreSQL"
 {% endhighlight %}
 
-__COACH__: Talk about relational databases and the differences between SQLite and PostgreSQL.
+{% coach %}
+Talk about relational databases and the differences between SQLite and PostgreSQL.
+{% endcoach %}
 
 ### Deploy app to OpenShift
 
@@ -152,7 +160,9 @@ git push -f --set-upstream openshift master
 
 Refresh the app in your browser to see the result.
 
-__COACH__: Talk about Git remotes.
+{% coach %}
+Talk about Git remotes.
+{% endcoach %}
 
 ### Extra credit 
 
@@ -162,7 +172,9 @@ Congratulations - your Rails application is now online for the whole world to ad
 
 The app should be looking pretty good now, but there is an issue lurking because of the ephemeral nature of the deployment. When we push a new version of the application, anything stored within OpenShift's copy of the repo will be wiped to make way for the new files. This includes the images uploaded by users. To fix this, we can store these files in a persistent directory on OpenShift instead. The filepath of the location we need is stored in an environment variable.
 
-__COACH__: Explain the motivation for using environment variables.
+{% coach %}
+Explain the motivation for using environment variables.
+{% endcoach %}
 
 The directory where uploaded pictures are currently stored is within the app repository, so it will be deleted when we rebuild. To switch the uploads directory to one that will persist, open `app/uploaders/picture_uploader.rb` and replace
 
@@ -206,7 +218,9 @@ git push
 
 The images you uploaded before making this change will no longer display, but anything uploaded now will stick around between app rebuilds.
 
-__COACH__: Explain symbolic links.
+{% coach %}
+Explain symbolic links.
+{% endcoach %}
 
 #### Push code to GitHub
 
@@ -221,7 +235,9 @@ git push github master
 
 The 'master' branch of the local copy of your repository will be pushed to GitHub. Go to the GitHub website to check it out.
 
-__COACH__: Talk about Git branches and the benefits of open source code.
+{% coach %}
+Talk about Git branches and the benefits of open source code.
+{% endcoach %}
 
 ### Conclusion
 

@@ -14,7 +14,9 @@ permalink: testing-shoulda-matchers
 
 [Shoulda Matchers](https://github.com/thoughtbot/shoulda-matchers) is a Ruby testing gem, that provides RSpec- and Minitest-compatible one-liners that test common Rails functionality. These tests would otherwise be much longer, more complex, and error-prone.
 
-__COACH__: Talk about testing and Behavior-Driven Development.
+{% coach %}
+Talk about testing and Behavior-Driven Development.
+{% endcoach %}
 
 ## *1.* Add Shoulda Matchers gem
 
@@ -33,7 +35,9 @@ bundle install
 {% endhighlight %}
 to install the gem.
 
-__COACH__: Talk about googling terminal output.
+{% coach %}
+Talk about googling terminal output.
+{% endcoach %}
 
 ## *2.* Adjust your `rails_helper.rb`
 
@@ -51,7 +55,9 @@ Place above the last end tag (check the indentation):
   end
 {% endhighlight %}
 
-__COACH__: Talk about why we are adjusting the gem inside `rails_helper.rb`.
+{% coach %}
+Talk about why we are adjusting the gem inside `rails_helper.rb`.
+{% endcoach %}
 
 In your terminal run
 {% highlight sh %}
@@ -74,11 +80,15 @@ To test if that is working properly, we can add the lines below to our `spec/lib
 {% endhighlight %}
 
 This is an association test.
-__COACH__: Talk about association tests.
+{% coach %}
+Talk about association tests.
+{% endcoach %}
 
 ## *4.* Test-Driven Development
 
-__COACH__: Talk about TDD, and how we start adding features to our app by testing it first.
+{% coach %}
+Talk about TDD, and how we start adding features to our app by testing it first.
+{% endcoach %}
 
 Another feature we can add to our app is to make ideas always named. How could we do that? Let's get started saying ideas should always have a name.
 

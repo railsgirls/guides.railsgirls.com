@@ -144,7 +144,9 @@ end
 
 This controller will listen to requests to create and delete (destroy) comments. When it receives such a request, it will tell the database what to store or remove, and redirect you back to the page you came from. But first, let's make the pages that will talk to this controller.
 
-__COACH:__ Explain how controllers work and interact with HTTP requests, models and views.
+{% coach %}
+Explain how controllers work and interact with HTTP requests, models and views.
+{% endcoach %}
 
 ## Display the comments
 

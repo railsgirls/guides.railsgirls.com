@@ -12,7 +12,9 @@ We will create a little voting app from scratch using a web development framewor
 
 Imagine your group of friends is figuring out what to order for your weekly movie watching marathon. With the many fast food options out there, this can become quite a discussion. This is where our app comes into play!
 
-__COACH__: Explain shortly what [Sinatra](http://www.sinatrarb.com) is.
+{% coach %}
+Explain shortly what [Sinatra](http://www.sinatrarb.com) is.
+{% endcoach %}
 
 ## Install Sinatra
 
@@ -43,7 +45,9 @@ Now you can visit <a href="localhost:4567" target="_blank">localhost:4567</a>. Y
 see a ‘Hello, voter!’ page, which means that the generation of your new
 app worked correctly. Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to shut down the server. If <kbd>Ctrl</kbd>+<kbd>C</kbd> does not work for you it means you are probably Windows user and <kbd>Ctrl</kbd>+<kbd>Z</kbd>/ <kbd>Ctrl</kbd>+<kbd>Pause</kbd> / <kbd>Ctrl</kbd>+<kbd>Break</kbd> will fix the issue)
 
-__COACH__: Explain POST and GET methods, and how to communicate with the browser.
+{% coach %}
+Explain POST and GET methods, and how to communicate with the browser.
+{% endcoach %}
 
 
 
@@ -103,8 +107,10 @@ end
 Run `ruby suffragist.rb`, check your
 results and shut down the server with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
-__COACH__: Talk a little about HTML and erb. Explain
+{% coach %}
+Talk a little about HTML and erb. Explain
 templates. Explain what global constants are.
+{% endcoach %}
 
 
 
@@ -128,8 +134,10 @@ get '/' do
 end
 {% endhighlight %}
 
-__COACH__: Explain what instance variables are and
+{% coach %}
+Explain what instance variables are and
 how Sinatra makes them visible in the views.
+{% endcoach %}
 
 
 
@@ -164,8 +172,10 @@ and put there some HTML with embedded Ruby code:
 </html>
 {% endhighlight %}
 
-__COACH__: Explain how POST works. How to catch what
+{% coach %}
+Explain how POST works. How to catch what
 was sent in the form? Where do `params` come from?
+{% endcoach %}
 
 
 
@@ -192,8 +202,10 @@ directory. Put the following in there:
 Remove the above part from the other two templates
 (`index.erb` and `cast.erb` in the `views` directory).
 
-__COACH__: Talk about the structure of HTML documents and how factoring
+{% coach %}
+Talk about the structure of HTML documents and how factoring
 out common code work in general. Explain what `yield` does.
+{% endcoach %}
 
 
 
@@ -226,8 +238,10 @@ Create a new file in the `views` directory, called `results.erb`.
 Run `ruby suffragist.rb`, check
 your results and shut down the server with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
-__COACH__: Explain HTML tables and how the
+{% coach %}
+Explain HTML tables and how the
 missing values from the hash default to zero.
+{% endcoach %}
 
 
 
@@ -265,19 +279,25 @@ get '/results' do
 end
 {% endhighlight %}
 
-__COACH__: Explain what YAML is.
+{% coach %}
+Explain what YAML is.
+{% endcoach %}
 
 
 ### See how the YAML file changes when votes are cast
 
 Let’s open `votes.yml`. And vote. And check again.
 
-__COACH__: There will be situations when one or more students will
+{% coach %}
+There will be situations when one or more students will
 forget to shut down the server before running it again. It’s a good
 opportunity to search the Internet for a solution. They don’t
 have to know everything about killing processes to find a solution.
+{% endcoach %}
 
-__COACH__: In the end explain shortly the differences between Sinatra and Rails.
+{% coach %}
+In the end explain shortly the differences between Sinatra and Rails.
+{% endcoach %}
 
 
 

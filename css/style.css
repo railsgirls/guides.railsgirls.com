@@ -442,3 +442,16 @@ nav a:hover {
   background-color: #FEF8EA;
   border-radius: 10px;
 }
+.coach-notice {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  font-size: 120%;
+  border: 2px solid #8102BB;
+  border-radius: 10px;
+}
+.coach-notice > div {
+  cursor: help;
+}
+.coach-notice :last-child {
+  margin-bottom: 0;
+}

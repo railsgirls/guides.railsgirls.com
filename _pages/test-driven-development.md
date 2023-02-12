@@ -100,7 +100,9 @@ also.
 - Pick somebody to start in the hot seat. That person should follow all the
   steps until swapping seats is mentioned.
 
-**Coach:** Explain how pair programming can be useful.
+{% coach %}
+Explain how pair programming can be useful.
+{% endcoach %}
 
 ## *1.* Initial code
 
@@ -149,7 +151,9 @@ assertions, 1 failures, 0 errors, 0 skips`.
 
 **Stand up** and give the hot seat to the next person.
 
-**Coach:** Explain how TDD can be useful.
+{% coach %}
+Explain how TDD can be useful.
+{% endcoach %}
 
 ## *2.* Make the tests pass
 
@@ -182,7 +186,9 @@ like, you can also refactor the tests.
 Run your tests after refactoring. If they fail, you accidentally broke
 something.
 
-**Coach:** Explain how focusing on something small enough to test can be useful.
+{% coach %}
+Explain how focusing on something small enough to test can be useful.
+{% endcoach %}
 
 ## *4.* Write a new failing test
 

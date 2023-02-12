@@ -12,7 +12,9 @@ permalink: testing-rspec
 
 [RSpec](https://rspec.info/) is a Ruby testing framework, that describes our application's behavior in a syntax that doesn't look much like Ruby. It outputs test results in your terminal, so you'll test your reading skills as well (pun intended).
 
-__COACH__: Talk about testing and Behavior-Driven Development.
+{% coach %}
+Talk about testing and Behavior-Driven Development.
+{% endcoach %}
 
 ## *1.* Add the RSpec gem
 
@@ -130,7 +132,9 @@ end
 
 ## *5.* Behavior-Driven Development
 
-__COACH__: Talk a bit about Behavior-Driven Development.
+{% coach %}
+Talk a bit about Behavior-Driven Development.
+{% endcoach %}
 
 By now you can create more tests alone. Feel free to talk to your coach to do that, or ways to create more tests.
 

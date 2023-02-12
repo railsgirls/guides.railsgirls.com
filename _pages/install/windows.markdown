@@ -114,4 +114,6 @@ Now you should have a working Ruby on Rails programming setup. Congrats!
 
 _If you run into any problems during this step, check the [Possible errors](#possible-errors-during-installation) section for solutions._
 
-**Coach:** We recommend to verify by using the scaffold command and inputting data with the generated page with coaches to ensure everything is working. Also: remove the test app `myapp` to make super sure no-one is working in the wrong folder, following the steps of the workshop.
+{% coach %}
+We recommend to verify by using the scaffold command and inputting data with the generated page with coaches to ensure everything is working. Also: remove the test app `myapp` to make super sure no-one is working in the wrong folder, following the steps of the workshop.
+{% endcoach %}

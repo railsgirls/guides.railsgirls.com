@@ -36,7 +36,9 @@ bundle install
 
 This will install the "carrierwave" gem we added to the `Gemfile` file.
 
-**Coach:** Explain what libraries (Ruby gems) are and why they are useful. Describe what Open Source software is.
+{% coach %}
+Explain what libraries (Ruby gems) are and why they are useful. Describe what Open Source software is.
+{% endcoach %}
 
 ## Generating a picture uploader
 

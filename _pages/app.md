@@ -119,13 +119,17 @@ $
 
 When the command prompt is not visible you cannot execute new commands. If you try running `cd` or another command it will not work. To stop the Rails server and return to the normal command prompt in the same Terminal window, press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the Terminal to quit the Rails server.
 
-**Coach:** Explain what each command does. What was generated? What does the server do?
+{% coach %}
+Explain what each command does. What was generated? What does the server do?
+{% endcoach %}
 
 ## Create Idea scaffold
 
 We're going to use Rails' scaffold functionality to generate a starting point that allows us to list, add, remove, edit, and view things; in our case ideas.
 
-**Coach:** What is Rails scaffolding? (Explain the command, the model name and related database table, naming conventions, attributes and types, etc.) What are migrations and why do you need them?
+{% coach %}
+What is Rails scaffolding? (Explain the command, the model name and related database table, naming conventions, attributes and types, etc.) What are migrations and why do you need them?
+{% endcoach %}
 
 {% highlight sh %}
 rails generate scaffold idea name:string description:text picture:string
@@ -154,7 +158,9 @@ root to: redirect("/ideas")
 
 Test the change by opening the root path (that is, <http://localhost:3000/> or your preview URL) in your browser. It should now open the ideas index page when you visit the root path. The URL in the Browser's address bar should have automatically changed to <http://localhost:3000/ideas>.
 
-**Coach:** Talk about routes, and include details on the order of routes and their relation to static files.
+{% coach %}
+Talk about routes, and include details on the order of routes and their relation to static files.
+{% endcoach %}
 
 ## Next steps
 
