@@ -17,7 +17,7 @@ If you're ever stuck during a guide, please consult this [handy cheatsheet for R
 * Guide 6: [Add a new homepage to your app](/new-homepage) {% if page.permalink == 'new-homepage' %}(Current page!){% endif %}
 * Guide 7: [Add picture uploads](/uploads) {% if page.permalink == 'uploads' %}(Current page!){% endif %}
 * Guide 8: [Push Your App to GitHub](/github) {% if page.permalink == 'github' %}(Current page!){% endif %}
-* Guide 9: Put your app online with:
+* Guide 9: [Put your app online](/deployment) {% if page.permalink == 'deployment' %}(Current page!){% endif %} with:
   - [Heroku](/heroku) {% if page.permalink == 'heroku' %}(Current page!){% endif %}
   - [DigitalOcean](/digitalocean) {% if page.permalink == 'digitalocean' %}(Current page!){% endif %}
   - [OpenShift](/openshift) {% if page.permalink == 'openshift' %}(Current page!){% endif %}
