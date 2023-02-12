@@ -6,19 +6,16 @@ permalink: devise
 
 # Adding Authentication with Devise
 
-*Created by Piotr Steininger, [@polishprince](https://twitter.com/polishprince)*
-
-*Updated by Ernesto Jimenez, [@ernesto_jimenez](https://twitter.com/ernesto_jimenez)*
+*Created by Piotr Steininger, [@polishprince](https://twitter.com/polishprince). Updated by Ernesto Jimenez, [@ernesto_jimenez](https://twitter.com/ernesto_jimenez)*
 
 **This guide assumes that you have already built a Rails Girls app by** [**following the app development guide**](/app).
-
 
 ## *1.* Add devise gem
 
 Open up your `Gemfile` and add this line
 
 {% highlight ruby %}
-gem 'devise'
+gem "devise"
 {% endhighlight %}
 and run
 {% highlight sh %}
@@ -34,12 +31,11 @@ Run the following command in the terminal.
 rails g devise:install
 {% endhighlight %}
 
-
 ## *3.* Configure Devise
 
 Ensure you have defined default url options in your environments files. Open up `config/environments/development.rb` and add this line:
 {% highlight ruby %}
-   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+config.action_mailer.default_url_options = { host: "localhost", port: 3000 }
 {% endhighlight %}
 
 before the `end` keyword.
@@ -56,7 +52,7 @@ Open up `app/views/layouts/application.html.erb` and add:
 {% endhighlight %}
 right above
 {% highlight ruby %}
-   <%= yield %>
+  <%= yield %>
 {% endhighlight %}
 
 Open up `app/views/ideas/show.html.erb` and remove the line that says:
@@ -71,8 +67,8 @@ Do the same for `app/views/comments/show.html.erb`. These lines are not necessar
 
 We'll use a bundled generator script to create the User model.
 {% highlight sh %}
-   rails g devise user
-   rails db:migrate
+rails g devise user
+rails db:migrate
 {% endhighlight %}
 
 {% coach %}
@@ -94,11 +90,11 @@ In order to do that, edit `app/views/layouts/application.html.erb` add:
 <p class="navbar-text float-right">
 <% if user_signed_in? %>
   Logged in as <strong><%= current_user.email %></strong>.
-  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+  <%= link_to "Edit profile", edit_user_registration_path, class: "navbar-link" %> |
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "navbar-link"  %>
 <% else %>
-  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+  <%= link_to "Sign up", new_user_registration_path, class: "navbar-link"  %> |
+  <%= link_to "Login", new_user_session_path, class: "navbar-link"  %>
 <% end %>
 </p>
 {% endhighlight %}
@@ -115,7 +111,7 @@ right after
 Finally, force the user to redirect to the login page if the user was not logged in. Open up `app/controllers/application_controller.rb` and add:
 
 {% highlight ruby %}
-  before_action :authenticate_user!
+before_action :authenticate_user!
 {% endhighlight %}
 
 after `class ApplicationController < ActionController::Base`.
