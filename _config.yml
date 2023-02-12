@@ -6,6 +6,7 @@ exclude:
   - ".rvmrc"
   - ".rbenv-version"
   - ".ruby-version"
+  - "CNAME"
   - "Gemfile"
   - "Gemfile.lock"
   - "README.md"
