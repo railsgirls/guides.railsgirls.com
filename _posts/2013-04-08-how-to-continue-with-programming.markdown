@@ -10,19 +10,13 @@ permalink: how-to-continue-with-programming
 
 *This guide was originally written for the [Rails Girls Basel](http://railsgirls.com/basel) event
 and was published on
-[Daniel Puglisi's personal blog](http://danielpuglisi.com/articles/2013/04/rails-girls-after-the-event-how-to-continue-with-programming).*
+[Daniel Puglisi's personal blog](http://danielpuglisi.com/articles/2013/04/rails-girls-after-the-event-how-to-continue-with-programming) (link is no longer working 2023-02-12).*
 
-Unfortunately (!) the event is already over and I've written this
-blog post to help you find the best way to keep going with learning on
-how to program!
+## How To Continue With Programming
 
-There are 4 steps which I've come up with and I encourage you to
-really take them to your heart and do them.
+Unfortunately (!) the event is over. We'll hope this guide will help you find the best way to keep going with learning on how to program!
 
-Originally this article was planned as a talk for the end of the Rails Girls Basel event but the girls
-were so focused on coding that we just didn't wanted to interrupt them. :)
-
-So here it goes:
+There are 4 steps which Daniel has come up with and he encourage you to really take them to your heart and do them.
 
 ## 1. Keep on Coding
 
@@ -36,8 +30,8 @@ to take things to the next level:
 
 ### Courses
 
-* [Rails for Zombies](http://railsforzombies.org/) - A Rails Screencast which was created by [Codeschool](http://codeschool.com). Its free and Codeschool provides also a series of paid [Ruby and Rails](http://www.codeschool.com/paths/ruby#starting-rails) courses which are awesome. You should really try them!
-* [Codecademy](http://www.codecademy.com/) - The world isn't just created with rubiez. There are also plenty of other languages like HTML/CSS, JavaScript, Python and so on. Try them out.
+* [Rails for Zombies](http://railsforzombies.org/) - A Rails Screencast which you can try for free. Pluralsight also provides a series of paid [Ruby and Rails](https://www.pluralsight.com/paths/ruby-language-fundamentals) courses which are awesome. You should really try them!
+* [Codecademy](http://www.codecademy.com/) - The world isn't just created with Ruby and Rails. There are also plenty of other languages like HTML/CSS, JavaScript, Python and so on. Try them out!
 
 ### Books
 
@@ -45,19 +39,15 @@ to take things to the next level:
 
 ### Screencasts & Videos
 
-* [Railscasts](http://railscasts.com/) - Short and simple screencasts about Rails by Ryan Bates.
-  **Note**: *Ryan is giving away 3 month RailsCasts pro subscription coupons to all Rails Girls attendees for free.
-  If you haven't received one at the Rails Girls event you attended, ask your event organizer to [send an email to Ed Drain](mailto:geekprogrammer.ed@gmail.com). He will send the coupons to your event organizer.*
-* [Confreaks](http://www.confreaks.com/) - Talks from conferences all over the world.
-* [Peepcode](https://peepcode.com/) - Paid Screencasts by Geoffrey Grosenbach.
-* [Richard Schneems Screencast](http://www.youtube.com/user/schneems/videos)
+* Confreaks - Talks from conferences all over the world. There are playlists for RubyConf and RailsConf on the [Confreaks YouTube channel](https://www.youtube.com/user/Confreaks/playlists). Learn about the latest in the Ruby!
+* [Richard Schneems Screencasts](http://www.youtube.com/user/schneems/videos) on YouTube.
+* [Railscasts](http://railscasts.com/) - Short and simple screencasts about Rails by Ryan Bates. (Note: Ryan is no longer updating RailsCasts.)
 
-### MOAR
+### Even more!
 
 * [Thoughtbot Trail-Map](https://github.com/thoughtbot/trail-map) - Guides to different topics.
-* [Ruby on Rails Tutorial: Learn From Scratch](https://blog.udemy.com/ruby-on-rails-tutorial-learn-from-scratch/) - Explanations and definitions to different parts of Rails.
 
-> If you have any other good resources, [hit me](mailto:daniel@codegestalt.com) so I can put them into the list.
+If you have any other good resources, please add them by [contributing](/contributing) to this guide.
 
 ## 2. Build something real
 
@@ -72,8 +62,7 @@ And don't forget to show your application to your friends and the world.
 Ask for feedback and keep on learning.
 
 If you still have trouble finding something you can work on I have an idea for you:
-Build a Rails Girls website for your country or city. In Switzerland we encourage the girls to work
-on our swiss wide Rails Girls website: [railsgirls.ch](http://railsgirls.ch/).
+Build a Rails Girls website for your country or city if there isn't one already. (Ask your organizers!)
 
 ## 3. Get in touch
 
@@ -82,7 +71,7 @@ With this in mind, go out and find someone who you can talk to.
 Now is the best time for it,
 because you just got to know a lot of like minded people which have more or less the same level as you.
 There are a lot of ways to communicate nowadays,
-e.g. host a local meetup group, use Google Talk, create Facebook Groups or write a good ol' letter :)
+e.g. attend a local meetup group, create Facebook Groups or write a good ol' letter :)
 
 From my experience, knowing some people who have the same interests as you is one of the most important parts.
 Try to convince people, that programming is fun.
@@ -90,24 +79,14 @@ If you have a brother or a sister, show them what you've learned.
 Or show it to your parents, children or friends.
 Just try to build a circle of people with the same interest in programming and technology.
 
-Also try to find something like a mentor.
+Also try to find someone that can be a mentor to you.
 Programming can be really intimidating sometimes,
 so it can help to know someone which has more experience and can help you with your problems.
-For example: ask someone of the Coaches who attended at the Event.
-
-If you don't have the time to host your own meetup group, thats ok.
-There are already a few groups which you can join:
-
-* [Ruvetia](http://ruvetia.org/) - Ruvetia is a meetup (or drinkup) where we will come together every now and then and just socialize. This meetup is not about content, its about getting to know the people in the community. Every meetup is in a different city so check out the Ruvetia website from time to time where the next meetup will take place.
-* [Railshöck](http://www.meetup.com/rubyonrails-ch/events/80098992/) - A Rails meetup in Zurich
-* [Geneva Ruby Brigade](http://genevarb.com/) - Ruby group based in Geneva
-* [RoRganize.it](http://rorganize.it/) - Ruby groups app to find existing groups, especially in Germany
-
-> This list is Switzerland related and only used as an example, ask the organizers and coaches of your event for a list of local groups and meetups.
+For example: ask someone that was a coach at the workshop you attended.
 
 One of the girls at the Rails Girls Basel event (thanks [Helena](https://twitter.com/HBobbiRo)!) had the great idea
 that we could put up a list with all the attendees, coaches and organizers of the event.
-We created this list and its on [Github](https://github.com/RailsGirlsSwitzerland/attendees) now, check it out [here](http://railsgirlsswitzerland.github.io/attendees/site/2013_04_basel.html).
+We created this list and it's on [GitHub](https://github.com/RailsGirlsSwitzerland/attendees) now, [check out the website](http://railsgirlsswitzerland.github.io/attendees/site/2013_04_basel.html).
 Feel free to fork the repository and adjust it to the needs of your Rails Girls event.
 
 Try to setup such a list for your event too, this way its a lot easier to stay in contact with everyone than just
@@ -133,5 +112,5 @@ Thats it, keep on coding and let's build the future!
 
 ## 5. More resources
 
-- [8 ways to enable workshop attendess to keep learning](http://pragtob.wordpress.com/2013/06/14/8-ways-to-enable-workshop-attendess-to-keep-learning/)
+- [8 ways to enable workshop attendees to keep learning](http://pragtob.wordpress.com/2013/06/14/8-ways-to-enable-workshop-attendees-to-keep-learning/)
 

@@ -8,13 +8,17 @@ permalink: gravatar
 
 *Created by Catherine Jones*
 
-This guide assumes that you have already built a Rails Girls app by following this [app development guide](http://guides.railsgirls.com/app/) and added authentication using [Devise](http://guides.railsgirls.com/devise/).
+Gravatar is a service for hosting user avatars. If you sign up with Gravatar you don't need to upload your picture for a lot of services, as it automatically detects it from Gravatar.
 
-### Important
+## Important
 
-You need to have an e-mail address registered with Gravatar for this to work. If you do not already have one you can go to [gravatar.com](http://en.gravatar.com/).
+This guide assumes that you have already built a Rails Girls app by following this [app development guide](/app) and added authentication using [Devise](/devise).
+
+You need to have an e-mail address registered with Gravatar for this to work. If you do not already have one you can go to [gravatar.com](https://gravatar.com/).
 
 ## *1.* Add the Gravtastic gem
+
+__COACH__: At time of writing the [Gravtastic Ruby gem](https://rubygems.org/gems/gravtastic) is archived and no longer maintained. If you know of a maintained alternatives, please update the guide.
 
 Open up your gemfile and under your `devise` gem add
 

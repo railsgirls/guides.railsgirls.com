@@ -135,7 +135,7 @@ If you look at the structure of your list of links, it seems that every list ite
 
 Replace the contents of the `<ul>` tags with the following:
 
-{% highlight html %}
+{% highlight erb %}
 <%
   @websites = [
     ["http://railsgirls.com", "Rails Girls"],
