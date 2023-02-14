@@ -12,19 +12,11 @@ Start by getting familiar with the tools you'll be using in this workshop. Pleas
 
 Before we get started, it is important that you select the instructions specific to your Operating System. This website should detect it automatically, but if you're unsure, ask your coach.
 
-This step is important, because the commands you need to run on a Windows computer are different to Mac or Linux. The instructions for Windows will not work on Mac and vice versa. If you're using a cloud service to build your app (like Replit), you'll need to run the Linux commands even if you are on a Windows computer.
+We have detected you're using: <strong class="js-detected-os-label">Error: JavaScript not loaded</strong>. It should already be selected as the Operating System in the "Choose your Operating System:" element below here. No need to change it if it's correct.
 
 <div class="os-specific big"></div>
 
-## Help from the coach
-
-When you see the box below, ask your coach to read it and help out where necessary.
-
-{% coach %}
-Hi coach 👋 Thank you for helping out!
-
-Please verify the correct Operating System has been chosen for the laptop. Point out the smaller Operating System switcher in the Terminal section on this page if it's necessary to change the Operating System during the workshop. You can recognize it by the "Choose your Operating System" label.
-{% endcoach %}
+This step is important, because the commands you need to run on a Windows computer are different to Mac or Linux. The instructions for Windows will not work on Mac and vice versa. If you're using a cloud service to build your app (like Replit), you'll need to run the Linux commands even if you are on a Windows computer.
 
 ## <i class="icon-text-editor"></i> Text Editor {#text-editor}
 

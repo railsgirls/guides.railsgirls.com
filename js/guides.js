@@ -11,7 +11,6 @@ function loadOs() {
   } else {
     $(".os-specific").find(".win-link").click();
   }
-  return osFromCookie;
 }
 
 function detectOs() {
@@ -77,4 +76,23 @@ $(document).ready(function() {
   addIcons();
   initializeOsSwitchers();
   loadOs();
+
+  var osLabelElement = $(".js-detected-os-label");
+  if (osLabelElement.length > 0) {
+    var osLabel;
+    switch (detectOs()) {
+      case "win":
+        osLabel = "Windows";
+        break;
+      case "mac":
+        osLabel = "Mac";
+        break;
+      case "linux":
+        osLabel = "Linux";
+        break;
+      default:
+        osLabel = "Error: Unknown Operating System"
+    }
+    osLabelElement.text(osLabel);
+  }
 });
