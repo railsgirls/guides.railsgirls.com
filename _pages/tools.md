@@ -6,6 +6,8 @@ permalink: tools
 
 # Get to know the tools
 
+{% include main-guide-intro.html %}
+
 Start by getting familiar with the tools you'll be using in this workshop. Please install the tools you do not have yet installed and move on to the next guide.
 
 ## Instructions per Operating System
