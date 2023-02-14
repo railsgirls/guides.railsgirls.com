@@ -10,6 +10,8 @@ permalink: new-page
 
 Let's add an about page to our app that will display information about the author of this application — you!
 
+## Generate a new page
+
 In the Terminal app, run the following command:
 
 {% highlight sh %}
@@ -22,7 +24,7 @@ Open the `app/views/pages/about.html.erb` file. Add some information about yours
 
 {% highlight erb %}
 <h1>About me</h1>
-<p>Hello there! I am ... and this is my app!</p>
+<p>Hello there! I am YOUR NAME HERE and this is my amazing app!</p>
 {% endhighlight %}
 
 The same `rails generate` command has also added a new route to your `config/routes.rb`. This route configuration tells Rails which page should be shown when visiting that URL.
@@ -31,13 +33,17 @@ The same `rails generate` command has also added a new route to your `config/rou
 get "pages/about"
 {% endhighlight %}
 
-To see your new about page, take your browser to <http://localhost:3000/pages/about> or, or append `/pages/about` to your preview URL. You should now see the new page you just created!
+To see your new about page, take your browser to <http://localhost:3000/pages/about> (or append `/pages/about` to your preview URL). You should now see the new page you just created!
+
+{% coach %}
+Talk about routes for a moment. How does the `config/routes.rb` file define what routes Rails listens to? Explain that every page in the app needs a route in this file, otherwise Rails won't know how to show it.
+{% endcoach %}
 
 ## Add a link to your navigation bar
 
-Now that we know the new page works, let's make sure people can visit it by creating a link for it in the navigation bar.
+Now that we know the new page works, let's make sure people can visit it by creating a link for it in the navigation bar. That way they don't have to guess that page exists and try to find it on their own.
 
-Open `app/views/layouts/application.html.erb` in your Text Editor and under these lines:
+Open `app/views/layouts/application.html.erb` in your Text Editor and under these lines of HTML:
 
 {% highlight erb %}
 <li class="nav-item">
@@ -45,7 +51,7 @@ Open `app/views/layouts/application.html.erb` in your Text Editor and under thes
 </li>
 {% endhighlight %}
 
-add the following lines to link to the new page:
+add the following lines of HTML to link to the new page:
 
 {% highlight erb %}
 <li class="nav-item">
@@ -65,8 +71,8 @@ The middle part with the `class` property is what we use to indicate how the lin
 
 To check if the page is currently active, Rails provides a helper called `current_page?`. This condition will be "true" if it matches our page selection: `controller: 'pages', action: 'about'`. The `controller` is the entrypoint for anything in the `/pages` path of this part of the app, and the `action` is the specific page, which is "about".
 
-Knowing this, you can also add a [new homepage](/new-homepage) to your app.
+{% coach %}
+The above goes in a bit more technical detail about HTML works and how ERB can change what HTML is shown in the Browser. Help elaborate if things are unclear. Demonstrate how the page in the Browser changes by changing the HTML and ERB code.
+{% endcoach %}
 
----
-
-When you're ready, move on to the next guide.
+Knowing how to add a new page and change the nav bar, you can also add a [new homepage](/new-homepage) (the next guide) to your app.
