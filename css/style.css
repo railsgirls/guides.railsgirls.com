@@ -316,9 +316,48 @@ i.icon-small-browser {
   display: block;
   text-align: right;
 }
-
-.os-specific .active {
+.os-specific .picker-options .active {
   font-weight: bold;
+}
+.os-specific .picker-options > span:not(:last-child):after {
+  content: " | ";
+}
+.os-specific.big {
+  margin-bottom: 20px;
+}
+.os-specific.big .picker {
+  display: block;
+  text-align: center;
+}
+.os-specific.big .picker > span {
+  display: block;
+}
+.os-specific.big .picker-label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.os-specific.big .picker-options > span:not(:last-child) {
+  margin-right: 15px;
+}
+.os-specific.big .picker-options > span:after {
+  content: "";
+}
+.os-specific.big .picker-options {
+  padding-top: 20px;
+  font-size: 1.3rem;
+}
+.os-specific.big .picker-options a {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 2px 10px;
+
+  border: 2px solid #DDD;
+  border-radius: 10px;
+}
+.os-specific.big .picker-options a.active,
+.os-specific.big .picker-options a:focus,
+.os-specific.big .picker-options a:hover {
+  border-color: currentcolor;
 }
 
 /* Correct padding on smaller screens */

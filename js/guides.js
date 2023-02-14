@@ -38,10 +38,12 @@ function addIcons() {
 function initializeOsSwitchers() {
   var osInstructions = $(".os-specific");
   var switcher = osInstructions.prepend(
-    "<span class='picker'>Choose your operating system: " +
-      "<a href='#' class='win-link'>Windows</a> | " +
-      "<a href='#' class='mac-link'>Mac</a> | " +
-      "<a href='#' class='nix-link'>Linux</a> " +
+    "<span class='picker'><span class='picker-label'>Choose your Operating System:</span> " +
+      "<span class='picker-options'>" +
+        "<span><a href='#' class='os-link win-link'>Windows</a></span>" +
+        "<span><a href='#' class='os-link mac-link'>Mac</a></span>" +
+        "<span><a href='#' class='os-link nix-link'>Linux</a></span>" +
+      "</span>" +
     "</span>"
   );
 
@@ -49,21 +51,24 @@ function initializeOsSwitchers() {
     event.preventDefault();
     saveOs("win");
 
-    $(".os-specific .win-link").addClass("active").siblings().removeClass("active");
+    $(".os-specific .os-link").removeClass("active");
+    $(".os-specific .win-link").addClass("active");
     $(".os-specific").children("div").hide().filter(".win").show();
   });
   switcher.find(".mac-link").click(function(event) {
     event.preventDefault();
     saveOs("mac");
 
-    $(".os-specific .mac-link").addClass("active").siblings().removeClass("active");
+    $(".os-specific .os-link").removeClass("active");
+    $(".os-specific .mac-link").addClass("active");
     $(".os-specific").children("div").hide().filter(".mac").show();
   });
   switcher.find(".nix-link").click(function(event) {
     event.preventDefault();
     saveOs("nix");
 
-    $(".os-specific .nix-link").addClass("active").siblings().removeClass("active");
+    $(".os-specific .os-link").removeClass("active");
+    $(".os-specific .nix-link").addClass("active");
     $(".os-specific").children("div").hide().filter(".nix").show();
   });
 }

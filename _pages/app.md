@@ -10,9 +10,6 @@ permalink: app
 
 {% include main-guide-intro.html %}
 
-## Important
-
-It is important that you select the instructions specific to your operating system - the commands you need to run on a Windows computer are slightly different to Mac or Linux. If you're having trouble check the Operating System switcher at the bottom of the commands. In case you're using a cloud service (e.g. Replit), you need to run the Linux commands even if you are on a Windows computer.
 
 ## Creating the application
 

@@ -8,6 +8,14 @@ permalink: tools
 
 Start by getting familiar with the tools you'll be using in this workshop. Please install the tools you do not have yet installed and move on to the next guide.
 
+## Instructions per Operating System
+
+Before we get started, it is important that you select the instructions specific to your Operating System. This website should detect it automatically, but if you're unsure, ask your coach.
+
+This step is important, because the commands you need to run on a Windows computer are different to Mac or Linux. The instructions for Windows will not work on Mac and vice versa. If you're using a cloud service to build your app (like Replit), you'll need to run the Linux commands even if you are on a Windows computer.
+
+<div class="os-specific big"></div>
+
 ## <i class="icon-text-editor"></i> Text Editor {#text-editor}
 
 To create your app you'll need to write code. This can be done with a Text Editor made for writing code. Listed below are examples of text editors your can use for writing code and editing files. We recommend <strong>Visual Studio Code</strong> as it's a very complete package that works out of the box.
