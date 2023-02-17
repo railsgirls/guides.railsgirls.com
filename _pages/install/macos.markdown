@@ -38,11 +38,19 @@ xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 {% endhighlight %}
 
-### _3a3._ Install [rbenv](https://github.com/rbenv/rbenv):
-
 {% highlight sh %}
 brew update
 {% endhighlight %}
+
+### _3a3._ Install Git
+
+Install the Git version management system we'll be using for this workshop.
+
+{% highlight sh %}
+brew install git
+{% endhighlight %}
+
+### _3a4._ Install [rbenv](https://github.com/rbenv/rbenv):
 
 {% highlight sh %}
 brew install rbenv
@@ -74,7 +82,7 @@ echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 source ~/.zshrc
 {% endhighlight %}
 
-### _3a4._ Build Ruby with rbenv:
+### _3a5._ Build Ruby with rbenv:
 
 You can find the newest version of Ruby with the command "rbenv install -l".
 
@@ -92,7 +100,7 @@ brew install curl-ca-bundle
 cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
 {% endhighlight %}
 
-### _3a5._ Set default Ruby:
+### _3a6._ Set default Ruby:
 
 {% highlight sh %}
 rbenv global 3.1.3
@@ -113,7 +121,7 @@ ruby --version
 ruby 3.1.3p185 (2022-11-24 revision 1a6b16756e) [arm64-darwin22]
 {% endhighlight %}
 
-### _3a6._ Install rails:
+### _3a7._ Install rails:
 
 {% highlight sh %}
 gem install rails --no-document
