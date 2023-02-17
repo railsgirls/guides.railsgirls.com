@@ -2,6 +2,8 @@
 layout: guide
 title: Rails Girls Sinatra tutorial
 permalink: sinatra-app
+redirect_from:
+  - sinatra-app-bg
 ---
 
 # Create your first voting app with Sinatra
