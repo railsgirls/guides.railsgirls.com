@@ -78,10 +78,12 @@ cd myapp
 rails server
 {% endhighlight %}
 
-Go to `http://localhost:3000` in your browser, and you should see the 'Yay! You're on Rails!' page.
+Go to <http://localhost:3000> in your Browser, and you should see the Rails logo appear.
 
 Now you should have a working Ruby on Rails programming setup. Congrats!
 
+You're ready for the workshop. If you are preparing before the workshop, you don't have to continue with guides until the day of the workshop. See you then!
+
 {% coach %}
-We recommend to verify by using the scaffold command and inputting data with the generated page with coaches to ensure everything is working. Also: remove the test app `myapp` to make super sure no-one is working in the wrong folder, following the steps of the workshop.
+If there's a coach present, they can help verify the installation by using the scaffold command and inputting data with the generated page with coaches to ensure everything is working. Remove the test app `myapp` to make super sure no-one is working in the wrong folder, while following the steps of the workshop.
 {% endcoach %}

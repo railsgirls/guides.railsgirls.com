@@ -159,10 +159,10 @@ If you need more information than the following to install yarn, please check [y
 Check that everything is working by running the application generator command.
 
 {% highlight sh %}
-rails -v
+rails --version
 {% endhighlight %}
 
-Should output `Rails 6.0.0` (or a higher version).
+Should output `Rails 7.0.4.2`. A higher version is also good.
 
 {% highlight sh %}
 rails new myapp
@@ -176,10 +176,12 @@ cd myapp
 rails server
 {% endhighlight %}
 
-Go to `http://localhost:3000` in your browser, and you should see the 'Yay! You're on Rails!' page.
+Go to <http://localhost:3000> in your Browser, and you should see the Rails logo appear.
 
 Now you should have a working Ruby on Rails programming setup. Congrats!
 
+You're ready for the workshop. If you are preparing before the workshop, you don't have to continue with guides until the day of the workshop. See you then!
+
 {% coach %}
-We recommend to verify by using the scaffold command and inputting data with the generated page with coaches to ensure everything is working. Also: remove the test app `myapp` to make super sure no-one is working in the wrong folder, following the steps of the workshop.
+If there's a coach present, they can help verify the installation by using the scaffold command and inputting data with the generated page with coaches to ensure everything is working. Remove the test app `myapp` to make super sure no-one is working in the wrong folder, while following the steps of the workshop.
 {% endcoach %}

@@ -10,7 +10,9 @@ permalink: install/windows
 
 To install Rails for Windows we'll need to install Ruby and several supporting tools such as Git, Node.js and SQLite. Follow the steps below in order to install these tools on your computer. When you're done with these steps you will have a Rails app running on your computer.
 
-_During these steps we'll ask you to open and close the Windows Command Prompt every now and then. This can be either the "Command Prompt" or "Powershell" app. We ask you to close and re-open it, because when the Command Prompt starts it loads in the environment. When we install a new app, the environment does not get automatically updated in the Command Prompt. To test if the installation was successful we need to restart the Command Prompt and load the new environment._
+During these steps we'll ask you to open and close the Windows Command Prompt every now and then. This can be either the "Command Prompt" or "Powershell" app. We ask you to close and re-open it, because when the Command Prompt starts it loads in the environment. When we install a new app, the environment does not get automatically updated in the Command Prompt. To test if the installation was successful we need to restart the Command Prompt and load the new environment.
+
+If you run into any problems during this guide, check the [Possible errors] section for solutions.
 
 ## _1._ Install Ruby
 
@@ -55,7 +57,7 @@ yarn --version
 
 ## _4._ Install SQLite
 
-- Visit [sqlite.org/download.html](https://sqlite.org/download.html)
+- Visit the [SQLite download page](https://sqlite.org/download.html).
 - Scroll down to the "Precompiled Binaries for Windows" section.
 - Download the `sqlite-dll-win32-x86-xxxxxxx.zip` package (where `xxxxxxx` is the most recent version number).
 - Download the `sqlite-tools-win32-x86-xxxxxxx.zip` package (where `xxxxxxx` is the most recent version number).
@@ -70,10 +72,7 @@ yarn --version
     - `setx path "c:\sqlite3"`
 - Close the Windows Command Prompt app.
 - Re-open the Windows Command Prompt and run the following command to check if the installation was successful. It should output a version number like `3.31.1` (your version may differ).
-  {% highlight sh %}
-  sqlite3 --version
-  {% endhighlight %}
-
+  {% highlight sh %}sqlite3 --version{% endhighlight %}
 - Close the Windows Command Prompt app.
 
 ## _5._ Install Rails
@@ -90,7 +89,7 @@ gem install rails bundler --no-document
 rails --version
 {% endhighlight %}
 
-_If you run into any problems during this step, check the [Possible errors](#possible-errors-during-installation) section for possible solutions._
+_If you run into any problems during this step, check the [Possible errors] section for possible solutions._
 
 ## _6._ Check the environment
 
@@ -108,12 +107,14 @@ cd myapp
 rails server
 {% endhighlight %}
 
-Go to [`http://localhost:3000`](http://localhost:3000) in your browser, and you should see the "Yay! You're on Rails!" page.
+Go to <http://localhost:3000> in your Browser, and you should see the Rails logo appear.
 
 Now you should have a working Ruby on Rails programming setup. Congrats!
 
-_If you run into any problems during this step, check the [Possible errors](#possible-errors-during-installation) section for solutions._
+You're ready for the workshop. If you are preparing before the workshop, you don't have to continue with guides until the day of the workshop. See you then!
 
 {% coach %}
-We recommend to verify by using the scaffold command and inputting data with the generated page with coaches to ensure everything is working. Also: remove the test app `myapp` to make super sure no-one is working in the wrong folder, following the steps of the workshop.
+If there's a coach present, they can help verify the installation by using the scaffold command and inputting data with the generated page with coaches to ensure everything is working. Remove the test app `myapp` to make super sure no-one is working in the wrong folder, while following the steps of the workshop.
 {% endcoach %}
+
+[Possible errors]: /install#possible-errors-during-installation
