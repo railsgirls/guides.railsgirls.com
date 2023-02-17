@@ -108,4 +108,4 @@ You should already have a webbrowser installed. It's what you use to view this p
 
 ---
 
-You should now have a Text Editor installed, you know where to find the Terminal and you have your browser open. On to the next guide!
+You should now have a Text Editor installed, you know where to find the Terminal and you have your browser open. On to the next guide to [install Rails](/install)!
