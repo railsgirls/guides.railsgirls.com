@@ -14,11 +14,15 @@ Welcome to the workshop! This is the guide you'll be starting with on the day of
 
 ## Help from the coach
 
-When you see the box below, ask your coach to read it and help out where necessary. 
+When you see the box below, ask your coach to read it and help out where necessary.
 
 {% coach %}
 Hi coach 👋 Thank you so much for helping out today!
 {% endcoach %}
+
+## Try Ruby
+
+In these next couple guides you're going to create a new app. For this you'll be using the Ruby on Rails framework. The Rails framework is written in the Ruby programming language. To get a better idea of how Ruby works, go to [try.ruby-lang.org](https://try.ruby-lang.org/) for a 30 minute course before you continue.
 
 ## Creating the application
 
