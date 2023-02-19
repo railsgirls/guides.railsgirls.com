@@ -6,9 +6,11 @@ permalink: install/virtual-machine
 
 # Setup on a Virtual Machine
 
+<span class="muted">Cooking time: 15min active / 1 hour passive</span>
+
 {% include main-guide-intro.html %}
 
-<span class="muted">Cooking time: 15min active / 1 hour passive</span>
+<p class="warning-notice">This guide has been recently updated on the 19th of February, 2023. It has not been fully tested. Please continue with caution.</p>
 
 A development environment is a collection of applications and tools with which a developer can do their daily work. For Ruby on Rails development, we need a collection of tools like: Ruby, the Rails framework, a database, etc.
 
