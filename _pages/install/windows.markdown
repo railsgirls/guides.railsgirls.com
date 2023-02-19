@@ -19,6 +19,7 @@ If you run into any problems during this guide, check the [Possible errors] sect
 - Download the [RubyInstaller](https://rubyinstaller.org/downloads/) for Windows.
   - [Direct link to Ruby 3.1.3 installer with Devkit](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.1.3-1/rubyinstaller-3.1.3-1-x86.exe) for 32-bit architecture.
 - Run the installer. Click through the installer using all the default options.
+  - Make sure the "Run 'ridk install'" checkmark is checked partway through the installer before continuing.
   - When prompted with the "MSYS2" installer, enter `1` and press Enter.
   - When prompted with the same "MSYS2" installer again, only press Enter.
 
@@ -34,7 +35,7 @@ If you run into any problems during this guide, check the [Possible errors] sect
   - Select the "LTS" version tab, selected by default.
   - From the "Windows Installer (.msi)" row, click the link for the 32-bit architecture to download it.
 - Run the installer. Click through the installer using all the default options.
-- Open the Windows Command Prompt and run the following command to check if the installation was successful. It should output a version number like `v12.16.0` (your version may differ).
+- Open the Windows Command Prompt and run the following command to check if the installation was successful. It should output a version number like `v18.14.1` (your version may differ).
 
 {% highlight sh %}
 node --version
