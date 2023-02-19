@@ -18,7 +18,7 @@ If you're ever stuck during a guide, please ask your coach for help and also con
 * Guide 7: [Add a new homepage to your app](/new-homepage) {% if page.permalink == 'new-homepage' %}(Current page!){% endif %}
 * Guide 8: [Add picture uploads](/uploads) {% if page.permalink == 'uploads' %}(Current page!){% endif %}
 * Guide 9: [Push Your App to GitHub](/github) {% if page.permalink == 'github' %}(Current page!){% endif %}
-* Guide 10: [Put your app online](/deployment) {% if page.permalink == 'deployment' %}(Current page!){% endif %} with:
+* Guide 10: [Put your app online](/deployment) {% if page.permalink == 'deployment' %}(Current page!){% endif %} with one of these services:
   - [Fly.io](/deployment/fly-io) {% if page.permalink == 'deployment/fly-io' %}(Current page!){% endif %}
   - [Heroku](/heroku) {% if page.permalink == 'heroku' %}(Current page!){% endif %}
   - [DigitalOcean](/digitalocean) {% if page.permalink == 'digitalocean' %}(Current page!){% endif %}

@@ -148,3 +148,7 @@ fly open
 {% endhighlight %}
 
 You now have your first app deploy! Congratulations! Share the link you see in your Browser's address bar!
+
+---
+
+You do not need to deploy your app on another services. Continue with the next numbered guide in the list below.
