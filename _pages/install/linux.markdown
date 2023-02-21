@@ -17,16 +17,8 @@ If you need more information than the following to install yarn, please check [y
 ### For Ubuntu
 
 {% highlight sh %}
+sudo apt-get update
 sudo apt-get install curl
-{% endhighlight %}
-
-{% highlight sh %}
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-{% endhighlight %}
-
-{% highlight sh %}
-sudo apt update && sudo apt install yarn
 {% endhighlight %}
 
 ### For Fedora
