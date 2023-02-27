@@ -115,7 +115,7 @@ This step creates a Git _remote_, a _connection_, named "origin" pointing to the
 
 Next you need to [create the PAT](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic). 
 
-You can access your GitHub personal access tokens here: https://github.com/settings/tokens. Or, when you are logged in to GitHub, you can start on any page and click on your avatar in the top right. Then click "Settings", then "Developer settings", then "Personal access tokens", then "Tokens (classic)".
+You can access your GitHub personal access tokens here: <https://github.com/settings/tokens>. Or, when you are logged in to GitHub, you can start on any page and click on your avatar in the top right. Then click "Settings", then "Developer settings", then "Personal access tokens", then "Tokens (classic)".
 
 Once you are on the "Personal access tokens (classic)" page, click on the "Generate new token" dropdown menu and select "Generate new token (classic)". If you have set up two-factor authentication in your GitHub account, you will need to 2FA authenticate now. 
 
@@ -127,11 +127,11 @@ Click "Generate token" at the bottom of the page.
 
 On the next page you'll see your PAT. This is the only time you'll have access to it, so don't click away from this page until you have completed the _push_ step in the next section. 
 
-Copy and save the PAT token, ideally in a secure password manager. Be careful not to copy and spaces before or after the token -- you can use the two-squares copy button at the end of the token to be certain. You can keep the browser window open until you've completed the next step.
+Copy and save the PAT token, ideally in a secure password manager. Be careful not to copy any spaces before or after the token -- you can use the two-squares copy button at the end of the token to be certain. You can keep the browser window open until you've completed the next step.
 
 ## Push your app to GitHub using the command line (part 2)
 
-Now we want to _push_ to local changes in the Git repository to repository on GitHub with the following command in your terminal.
+Now we want to _push_ the local changes in the Git repository to the repository on GitHub with the following command in your terminal.
 
 {% highlight sh %}
 git push -u origin master
@@ -144,10 +144,10 @@ Username: <your GitHub username>
 Password: <paste in your personal access token>
 {% endhighlight %}
 
-You will need your PAT every time you want to push your code, or you can save the PAT in your computer. This process varies per operating system, so your coach can help you with this process if you plan to keep pushing your code to GitHub. 
+You may need your PAT every time you want to push your code, or you can save the PAT on your computer. This process varies per operating system, so your coach can help you with this process if you plan to keep pushing your code to GitHub.
 
 {% coach %}
-Please help with caching the PAT, if the participants wants to. Find the latest guide for their operating system, or check out a guide like [this](https://mgimond.github.io/Colby-summer-git-workshop-2021/authenticating-with-github.html#saving-tokens-in-windows)
+Please help with caching the PAT, if the participants wants to. Find the latest guide for their operating system, or check out this guide for [storing the PAT on different Operating Systems](https://mgimond.github.io/Colby-summer-git-workshop-2021/authenticating-with-github.html#saving-tokens-in-windows).
 {% endcoach %}
 
 Congratulations your app is on GitHub! Refresh the page in the Browser and you should see a bunch of files there now.
