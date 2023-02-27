@@ -90,8 +90,6 @@ Visit the [GitHub website](https://github.com) and create an account or login if
 
 ## Securely sharing your code with GitHub
 
-Previously, you could use a username and password to authenticate your connection to your GitHub remote repository. Now, GitHub requires a more complicated, but more secure, way to authenticate who is accessing your code on their site.
-
 The easiest method for managing authentication is creating a [Personal Access Token (PAT)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) that will have matching parts stored on your computer and also on the GitHub site.
 
 Because you are trying to get the code on your computer into your account on the GitHub website, you'll need to connect via the internet. GitHub offers connections over HTTPS and SSH. Using a Personal Access Token (PAT) requires that you use an HTTPS connection. This will be important in the next section, when you'll create your PAT. 
