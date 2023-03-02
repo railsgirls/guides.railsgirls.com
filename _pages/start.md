@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Start of the guide
+description: "Start your journey to building your first Ruby on Rails app here!"
 permalink: start
 ---
 

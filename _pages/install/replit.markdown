@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Setup on Replit
+description: "Prepare development of your app on the Replit service to develop your app in the cloud."
 permalink: install/replit
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Put your app online with Fly.io
+description: "Deploy your app to Fly.io by following this guide."
 permalink: deployment/fly-io
 ---
 

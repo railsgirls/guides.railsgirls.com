@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Add a new page to your app
+description: "Add more pages to your Rails app by generating controlelrs and changing routes."
 permalink: new-page
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Get to know the tools
+description: "Install the required tools to make your first Ruby on Rails app. A Text Editor, find the Terminal app and launch a web Browser."
 permalink: tools
 ---
 

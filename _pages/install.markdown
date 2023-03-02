@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Setup recipe for Rails Girls
+description: "Install Ruby and Rails on your computer and get prepared for the Rails Girls workshop."
 permalink: install
 ---
 

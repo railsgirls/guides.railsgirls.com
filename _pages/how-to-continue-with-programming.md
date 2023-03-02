@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: "After The Event: How To Continue With Programming"
+description: "A guide to keep you going with learning how to program."
 permalink: how-to-continue-with-programming
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Style the idea pages using HTML and CSS
+description: "Make your app look even better using Bootstrap by styling the idea pages."
 permalink: design
 ---
 

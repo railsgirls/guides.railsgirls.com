@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Put your app online
+description: "Publish your app online on one of the many available web hosting services."
 permalink: deployment
 ---
 

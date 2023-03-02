@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Rails Girls on anynines
+description: "Deploy your app to Anynines by following this guide."
 permalink: anynines
 ---
 

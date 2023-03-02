@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Setup on a Virtual Machine
+description: "Prepare development of your app using a Virtual Machine."
 permalink: install/virtual-machine
 ---
 

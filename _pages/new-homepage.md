@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Add a new homepage
+description: "Customize your app's homepage with your own page."
 permalink: new-homepage
 ---
 

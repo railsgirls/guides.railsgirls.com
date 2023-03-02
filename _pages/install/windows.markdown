@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Setup on Windows
+description: "Install Ruby and Rails on your Windows computer and get prepared for the Rails Girls workshop."
 permalink: install/windows
 ---
 

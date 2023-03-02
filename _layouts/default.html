@@ -2,8 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>{{ page.title }} - Rails Girls</title>
-    <link rel="canonical" href="{{ site.url }}/{{page.permalink}}">
+    {% capture page_title_capture %}
+      {% if page.title == nil %}
+        {{ site.site_title }}
+      {% else %}
+        {{ page.title }} - {{ site.site_title }}
+      {% endif %}
+    {% endcapture %}
+    {% assign page_title = page_title_capture | strip %}
+
+    {% capture page_description_capture %}
+      {% if page.description == nil %}
+        {{ site.default_page_description }}
+      {% else %}
+        {{ page.description }}
+      {% endif %}
+    {% endcapture %}
+    {% assign page_description = page_description_capture | strip %}
+
+    {% capture canonical_url %}{{ site.url }}/{{ page.permalink }}{% endcapture %}
+    <title>{{ page_title }}</title>
+    <link rel="canonical" href="{{ canonical_url }}">
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -17,6 +36,22 @@
     <link href="/css/style.css" rel="stylesheet" />
     <link href="/favicon.png" rel="shortcut icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:site_name" content="{{ site.site_title }}">
+    <meta property="og:title" content="{{ page_title }}">
+    <meta name="og:description" content="{{ page_description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:image" content="{{ site.url }}/images/rails-girls-sq.png">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="281">
+
+    <meta name="twitter:site" content="@railsgirls">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ page_title }}">
+    <meta name="twitter:description" content="{{ page_description }}">
+    <meta name="twitter:image" content="{{ site.url }}/images/rails-girls-sq.png">
+    <meta name="twitter:url" content="{{ canonical_url }}">
   </head>
   <body>
     {% include header.html %}

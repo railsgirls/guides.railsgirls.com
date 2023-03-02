@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Contributing a Guide
+description: "Contribute back to the Rails Girls community with your own guide!"
 permalink: contributing
 ---
 

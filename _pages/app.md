@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Build your first app
+description: "Start building your first Ruby on Rails app with Rails generators."
 permalink: app
 ---
 

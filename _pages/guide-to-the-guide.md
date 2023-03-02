@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: The Guide to the Guide
+descriptive: "The guide for coaches to follow along with the guides the workshop participants are following."
 permalink: guide-to-the-guide
 ---
 

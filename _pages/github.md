@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Push your app to GitHub
+description: "Share your code with others by pushing your app's code to GitHub."
 permalink: github
 ---
 

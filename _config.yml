@@ -19,3 +19,5 @@ url: https://guides.railsgirls.com
 source_url: https://github.com/railsgirls/railsgirls.github.io/blob/master/
 plugins:
   - jekyll-redirect-from
+site_title: "Rails Girls Guides"
+default_page_description: "Learn how to make your own web apps with the Rails Girls guides."

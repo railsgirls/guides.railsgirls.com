@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Test your app with RSpec
+description: "Make sure your app doesn't accidentally break by testing it using RSpec."
 permalink: testing-rspec
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: guide
-title: Guides
+title: Host your own Rails Girls event
+descriptive: "Want to organize your own Rails Girls workshop? Follow this guide to learn how."
 permalink: guide
 ---
 

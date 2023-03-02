@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Style your app using HTML and CSS
+description: "Give your app a new look with HTML and CSS using Bootstrap."
 permalink: html-and-css
 ---
 

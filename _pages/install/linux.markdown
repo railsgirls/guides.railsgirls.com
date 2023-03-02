@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Setup on Linux
+description: "Install Ruby and Rails on your Linux computer and get prepared for the Rails Girls workshop."
 permalink: install/linux
 ---
 

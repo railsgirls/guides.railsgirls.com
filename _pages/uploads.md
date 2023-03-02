@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Add picture uploads
+description: "Make your ideas pop with image uploads in your Rails app."
 permalink: uploads
 ---
 

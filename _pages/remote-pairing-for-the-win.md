@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Remote Pairing For the Win!
+description: "Continue working together and learning remotely after the Rails Girls event."
 permalink: remote
 ---
 

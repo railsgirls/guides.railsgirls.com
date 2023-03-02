@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Guides
+descriptive: "The guide for coaches to prepare their participation in a Rails Girls workshop."
 permalink: coach
 ---
 
@@ -41,7 +42,7 @@ Believe it or not, for most, it is really important. It makes the environment di
 
 
 ### Inclusivity
-Rails Girls is a an inclusive, safe and welcoming experience to everyone. The workshops are primarily intended for beginner women and crafted for this specific user group, but we've always been open to including other skill-levels and genders. Rails Girls coaches are male and female. The end goal of Rails Girls is to enriched the entire Rails community by encouraging more diverse people to join it. If you want to make a different curriculum or group, all the material is online and you are welcome to use it under another name and brand.
+Rails Girls is a inclusive, safe and welcoming experience to everyone. The workshops are primarily intended for beginner women and crafted for this specific user group, but we've always been open to including other skill-levels and genders. Rails Girls coaches are male and female. The end goal of Rails Girls is to enriched the entire Rails community by encouraging more diverse people to join it. If you want to make a different curriculum or group, all the material is online and you are welcome to use it under another name and brand.
 
 
 

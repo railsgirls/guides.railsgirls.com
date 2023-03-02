@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Add commenting functionality to your app
+description: "Allow other people to leave comments on your ideas by adding a commenting feature to your Rails app."
 permalink: commenting
 ---
 

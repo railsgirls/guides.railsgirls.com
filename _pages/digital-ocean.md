@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Rails Girls on DigitalOcean
+description: "Deploy your app to DigitalOcean by following this guide."
 permalink: digitalocean
 ---
 

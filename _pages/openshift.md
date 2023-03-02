@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Rails Girls on OpenShift
+description: "Deploy your app to OpenShift by following this guide."
 permalink: openshift
 ---
 

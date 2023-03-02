@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Setup on macOS
+description: "Install Ruby and Rails on your Mac computer and get prepared for the Rails Girls workshop."
 permalink: install/macos
 ---
 

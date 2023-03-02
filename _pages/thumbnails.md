@@ -1,6 +1,7 @@
 ---
 layout: main_guide
 title: Create picture thumbnails
+description: "Optimize image uploads by creating thumbnails: smaller versions of the original file uploads."
 permalink: thumbnails
 ---
 
