@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Adding Authentication with Devise
+description: "Let users of your Rails app sign in using Devise."
 permalink: devise
 ---
 

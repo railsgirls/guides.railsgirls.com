@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Adding Gravatar to you app
+description: "Load user avatars using the Gravatar service. That way your users don't need to upload an avatar to your app."
 permalink: gravatar
 ---
 

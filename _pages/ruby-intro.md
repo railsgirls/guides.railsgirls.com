@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Introduction to Ruby
+description: "Learn how the Ruby language syntax works and how to make dynamic HTML in your Rails app views."
 permalink: ruby-intro
 ---
 
@@ -420,7 +421,6 @@ A short reference of how ERB works:
 <%= object.method_name %>
 <%= item.title %>
 {% endhighlight %}
-
 
 ## Next steps
 
