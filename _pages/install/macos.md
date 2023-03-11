@@ -27,15 +27,19 @@ If your version number starts with 10.6, 10.7, 10.8, 10.9, 10.10, 10.11 or highe
 
 ## _3a._ If your OS X / macOS version is 10.9 or higher:
 
-If your version number starts with 10.9, 10.10, 10.11 or higher, follow these steps. We are installing homebrew and rbenv.
+If your version number starts with 10.9, 10.10, 10.11 or higher, follow these steps. We are installing Homebrew to install packages and rbenv to install Ruby.
 
 ### _3a1._ Install Command line tools on terminal:
+
+First, we'll need to install some tools for the Mac on the machine. Enter the following command in the Terminal app and press the <kbd>Enter</kbd> key. You may be asked to enter a password, this is the password of your user account on your Mac. Enter your password and press <kbd>Enter</kbd>.
 
 {% highlight sh %}
 xcode-select --install
 {% endhighlight %}
 
 ### _3a2._ Install [Homebrew](https://brew.sh/):
+
+Next, we'll need to install a tool for the Mac to install even more tools on the machine. Enter the following command in the Terminal app and press the <kbd>Enter</kbd> key. You will be asked to enter a password, this is the password of your user account on your Mac. Enter your password and press <kbd>Enter</kbd>.
 
 {% highlight sh %}
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -55,31 +59,37 @@ brew install git
 
 ### _3a4._ Install [rbenv](https://github.com/rbenv/rbenv):
 
+Install the rbenv Ruby version manager we'll need to install Ruby itself.
+
 {% highlight sh %}
 brew install rbenv
 {% endhighlight %}
 
-Find out what your `shell` is:
+To make rbenv work for your Mac you'll first need to find out what your `shell` is and configure it:
 
 {% highlight sh %}
 basename -a "$SHELL"
 {% endhighlight %}
 
-If the output is `bash`:
+If the output of this command is `bash`, run this command:
 
 {% highlight sh %}
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 {% endhighlight %}
 
+Followed by this command:
+
 {% highlight sh %}
 source ~/.bash_profile
 {% endhighlight %}
 
-If the output is `zsh`:
+And if the output is `zsh`, run the following command:
 
 {% highlight sh %}
 echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 {% endhighlight %}
+
+Followed by this command:
 
 {% highlight sh %}
 source ~/.zshrc
@@ -87,7 +97,7 @@ source ~/.zshrc
 
 ### _3a5._ Build Ruby with rbenv:
 
-You can find the newest version of Ruby with the command "rbenv install -l".
+Install Ruby with the next command:
 
 {% highlight sh %}
 rbenv install 3.1.3
@@ -104,6 +114,8 @@ cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts Op
 {% endhighlight %}
 
 ### _3a6._ Set default Ruby:
+
+Run the following commands to make sure the version of Ruby you just installed is always used.
 
 {% highlight sh %}
 rbenv global 3.1.3
@@ -124,11 +136,15 @@ ruby --version
 ruby 3.1.3p185 (2022-11-24 revision 1a6b16756e) [arm64-darwin22]
 {% endhighlight %}
 
-### _3a7._ Install rails:
+### _3a7._ Install Rails:
+
+Finally, we've arrived at the part where you'll install Rails, the tool we'll focus on during the workshop:
 
 {% highlight sh %}
 gem install rails --no-document
 {% endhighlight %}
+
+And run this command:
 
 {% highlight sh %}
 rbenv rehash
