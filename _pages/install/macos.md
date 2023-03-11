@@ -11,6 +11,8 @@ permalink: install/macos
 
 To build apps and other things with Ruby on Rails, we need to setup some software and the developer environment for your computer.
 
+<div class="help-notice">Make sure you're familiar with <a href="/tools">the tools you'll need for this guides</a> before continuing.</div>
+
 ## _1._ Let's check the version of the operating system.
 
 Click the Apple menu and choose _About this Mac_.

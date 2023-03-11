@@ -11,7 +11,7 @@ permalink: install
 
 {% include main-guide-intro.html %}
 
-To build apps and other things with Ruby on Rails, we need to setup some software and the developer environment for your computer.
+To build apps and other things with Ruby on Rails, we need to setup some software and the developer environment for your computer. Make sure you're familiar with [the tools you'll need for these guides](/tools) before continuing.
 
 Follow the instructions for your operating system. If you run into any problems, don't panic. Check the [known errors section](#possible-errors-during-installation) or inform us at the event and we can solve it together.
 

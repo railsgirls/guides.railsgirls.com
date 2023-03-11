@@ -11,6 +11,8 @@ permalink: install/windows
 
 To install Rails for Windows we'll need to install Ruby and several supporting tools such as Git, Node.js and SQLite. Follow the steps below in order to install these tools on your computer. When you're done with these steps you will have a Rails app running on your computer.
 
+<div class="help-notice">Make sure you're familiar with <a href="/tools">the tools you'll need for this guides</a> before continuing.</div>
+
 During these steps we'll ask you to open and close the Windows Command Prompt every now and then. This can be either the "Command Prompt" or "Powershell" app. We ask you to close and re-open it, because when the Command Prompt starts it loads in the environment. When we install a new app, the environment does not get automatically updated in the Command Prompt. To test if the installation was successful we need to restart the Command Prompt and load the new environment.
 
 If you run into any problems during this guide, check the [Possible errors] section for solutions.

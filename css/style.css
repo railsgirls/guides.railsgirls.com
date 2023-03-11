@@ -489,6 +489,13 @@ nav a:hover {
 .guide-notice {
   background-color: #FEF8EA;
 }
+.help-notice {
+  background-color: #FEF8EA;
+}
+.help-notice:before {
+  content: "ℹ️";
+  margin-right: 10px;
+}
 .coach-notice {
   border: 2px solid #8102BB;
 }
