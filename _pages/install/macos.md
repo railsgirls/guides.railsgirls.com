@@ -103,7 +103,7 @@ Install Ruby with the next command:
 rbenv install 3.1.3
 {% endhighlight %}
 
-If you got "OpenSSL::SSL::SSLError: ... : certificate verify failed" error, try it this way.
+If you got "OpenSSL::SSL::SSLError: ... : certificate verify failed" error, run these commands:
 
 {% highlight sh %}
 brew install curl-ca-bundle
@@ -112,6 +112,8 @@ brew install curl-ca-bundle
 {% highlight sh %}
 cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
 {% endhighlight %}
+
+And then run the same `rbenv` command at the start of this step.
 
 ### _3a6._ Set default Ruby:
 
@@ -129,12 +131,15 @@ rbenv local 3.1.3
 rbenv shell 3.1.3
 {% endhighlight %}
 
-Check that your `ruby` version matches what you installed. It will look something like the output below, make sure the `ruby 3.1.3` part matches.
+Check that your `ruby` version matches what you installed.
 
 {% highlight sh %}
 ruby --version
-ruby 3.1.3p185 (2022-11-24 revision 1a6b16756e) [arm64-darwin22]
 {% endhighlight %}
+
+The output of which will look something like the text below. Make sure the `ruby 3.1.3` part matches.
+
+> ruby 3.1.3p185 (2022-11-24 revision 1a6b16756e) [arm64-darwin22]
 
 ### _3a7._ Install Rails:
 
@@ -167,6 +172,8 @@ gem update rails --no-document
 
 ## _4._ Install yarn:
 
+Install the yarn tool, a requirement for Rails:
+
 {% highlight sh %}
 brew install yarn
 {% endhighlight %}
@@ -175,29 +182,37 @@ If you need more information than the following to install yarn, please check [y
 
 ## _5._ Check the environment
 
-Check that everything is working by running the application generator command.
+Check that everything is working by checking what Rails version was installed:
 
 {% highlight sh %}
 rails --version
 {% endhighlight %}
 
-Should output `Rails 7.0.4.2`. A higher version is also good.
+This should output `Rails 7.0.4.2`. A higher version is also good.
+
+You can briefly try to create a Rails app with the following steps. Create a new Rails app with the command below:
 
 {% highlight sh %}
 rails new myapp
 {% endhighlight %}
 
+Navigate into the directory of the app:
+
 {% highlight sh %}
 cd myapp
 {% endhighlight %}
+
+Start the Rails server briefly to make sure it starts properly:
 
 {% highlight sh %}
 rails server
 {% endhighlight %}
 
-Go to <http://localhost:3000> in your Browser, and you should see the Rails logo appear.
+Go to <http://localhost:3000> in your Browser. You should see the Rails logo appear.
 
-Now you should have a working Ruby on Rails programming setup. Congrats!
+If at any point during this guide you ran into a problem and can't continue. Not a problem! Contact the workshop organizers and let them know about your problem. Most workshops have dedicated set up evenings or they can help you on the day of the workshop itself.
+
+If you do see a Rails logo in your Browser, you now have a working Ruby on Rails programming setup. Congrats!
 
 You're ready for the workshop. If you are preparing before the workshop, you don't have to continue with guides until the day of the workshop. See you then!
 

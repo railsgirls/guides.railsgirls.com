@@ -111,9 +111,11 @@ cd myapp
 rails server
 {% endhighlight %}
 
-Go to <http://localhost:3000> in your Browser, and you should see the Rails logo appear.
+Go to <http://localhost:3000> in your Browser. You should see the Rails logo appear.
 
-Now you should have a working Ruby on Rails programming setup. Congrats!
+If at any point during this guide you ran into a problem and can't continue. Not a problem! Contact the workshop organizers and let them know about your problem. Most workshops have dedicated set up evenings or they can help you on the day of the workshop itself.
+
+If you do see a Rails logo in your Browser, you now have a working Ruby on Rails programming setup. Congrats!
 
 You're ready for the workshop. If you are preparing before the workshop, you don't have to continue with guides until the day of the workshop. See you then!
 
