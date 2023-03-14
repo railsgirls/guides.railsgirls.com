@@ -11,11 +11,15 @@ permalink: install
 
 {% include main-guide-intro.html %}
 
-To build apps and other things with Ruby on Rails, we need to setup some software and the developer environment for your computer. Make sure you're familiar with [the tools you'll need for these guides](/tools) before continuing.
+To build apps and other things with Ruby on Rails, we need to setup some software and the developer environment for your computer. Make sure you're familiar with [the tools you'll need for these guides](/tools) before continuing. From there we'll guide you through the steps needed to prepare for the workshop, and while doing so give you a bit of background info on what we're doing.
 
-Follow the instructions for your operating system. If you run into any problems, don't panic. Check the [known errors section](#possible-errors-during-installation) or inform us at the event and we can solve it together.
+Don't worry too much about the installation steps and understand everything about them. These are the required steps to get through to get to the real programming part of the workshop.
 
-- [Setup for macOS](/install/macos)
+These setup guides assume no prior knowledge. That's easier said than done. Things that may seem obvious to us might be _abracadabra_ to you. If this is the case, please: let your event organizers know. We can use your feedback to improve these guides!
+
+Please follow the instructions for your Operating System from the list below. If you run into any problems, don't panic. Check the [known errors section](#possible-errors-during-installation) or inform the organizers/coaches at the event and we can solve it together.
+
+- [Setup for Mac](/install/macos)
 - [Setup for Windows](/install/windows)
 - [Setup for Linux](/install/linux)
 - Alternative installation methods. Use these if the above guides do not work.

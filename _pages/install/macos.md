@@ -1,11 +1,11 @@
 ---
 layout: main_guide
-title: Setup on macOS
+title: Setup on Mac
 description: "Install Ruby and Rails on your Mac computer and get prepared for the Rails Girls workshop."
 permalink: install/macos
 ---
 
-# Setup for macOS
+# Setup for Mac
 
 {% include main-guide-intro.html %}
 
@@ -13,33 +13,23 @@ To build apps and other things with Ruby on Rails, we need to setup some softwar
 
 <div class="help-notice">Make sure you're familiar with <a href="/tools">the tools you'll need for this guides</a> before continuing.</div>
 
-## _1._ Let's check the version of the operating system.
+## Install the Command Line Tools
 
-Click the Apple menu and choose _About this Mac_.
+Most Mac users never get into programming, so Apple figured it'd be a good idea not to ship the tools needed to run programming languages with every laptop to save some space. They did make it easy to install them, running just a single command.
 
-![Apple menu](/images/1.png "Apple menu")
-
-## _2._ In the window you will find the version of your operating system.
-
-If your version number starts with 10.6, 10.7, 10.8, 10.9, 10.10, 10.11 or higher this guide is for you. If it's something else, we can setup your machine at the event.
-
-![About this Mac dialog](/images/2.png "About this Mac dialog")
-
-## _3a._ If your OS X / macOS version is 10.9 or higher:
-
-If your version number starts with 10.9, 10.10, 10.11 or higher, follow these steps. We are installing Homebrew to install packages and rbenv to install Ruby.
-
-### _3a1._ Install Command line tools on terminal:
-
-First, we'll need to install some tools for the Mac on the machine. Enter the following command in the Terminal app and press the <kbd>Enter</kbd> key. You may be asked to enter a password, this is the password of your user account on your Mac. Enter your password and press <kbd>Enter</kbd>.
+Enter the following command in the Terminal app and press the <kbd>Enter</kbd> key. You may be asked to enter a password, this is the password of your user account on your Mac. Enter your password and press <kbd>Enter</kbd>.
 
 {% highlight sh %}
 xcode-select --install
 {% endhighlight %}
 
-### _3a2._ Install [Homebrew](https://brew.sh/):
+A window will pop up asking you to confirm that you want to install these tools, and agree to the Terms and Conditions. Once you do, an installer will start downloading and installing the tools. This will take quite some time, so feel free to grab a tea or coffee. The steps following this one will only work after the Command Line Tools installer has completed, so no point in skipping ahead.
 
-Next, we'll need to install a tool for the Mac to install even more tools on the machine. Enter the following command in the Terminal app and press the <kbd>Enter</kbd> key. You will be asked to enter a password, this is the password of your user account on your Mac. Enter your password and press <kbd>Enter</kbd>.
+## Install Homebrew
+
+[Homebrew](https://brew.sh/), like the Command Line Tools, is a stepping stone towards being able to install Ruby. Homebrew allows us to install other tools using simple, standardised commands. Otherwise we'd have to figure out how each of these other tools needs to be installed. By having Homebrew figure that out for us, we can focus on the good stuff: building apps.
+
+Enter the following command in the Terminal app and press the <kbd>Enter</kbd> key. You will be asked to enter a password–this is the password you use to unlock your laptop. Enter your password and press <kbd>Enter</kbd>.
 
 {% highlight sh %}
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -49,99 +39,59 @@ Next, we'll need to install a tool for the Mac to install even more tools on the
 brew update
 {% endhighlight %}
 
-### _3a3._ Install Git
+## Install Git
 
-Install the Git version management system we'll be using for this workshop.
+Using Homebrew, we can now install Git, the version management system we'll be using for this workshop. A version management system gives you a particularly handy superpower: it allows us to travel back and forth in time. Well, at least while working with files on our computer. We'll show you how to use this during the workshop!
 
 {% highlight sh %}
 brew install git
 {% endhighlight %}
 
-### _3a4._ Install [rbenv](https://github.com/rbenv/rbenv):
+## Install rbenv
 
-Install the rbenv Ruby version manager we'll need to install Ruby itself.
+Ruby, the programming language we use, releases new versions all the time. Some clever folks wrote a tool that allows us to easily install specific versions. We'll use this to make sure you're running the same version as the rest of us.
+
+Run the following commands to install [rbenv](https://github.com/rbenv/rbenv) via Homebrew:
 
 {% highlight sh %}
 brew install rbenv
 {% endhighlight %}
 
-To make rbenv work for your Mac you'll first need to find out what your `shell` is and configure it:
-
-{% highlight sh %}
-basename -a "$SHELL"
-{% endhighlight %}
-
-If the output of this command is `bash`, run this command:
-
-{% highlight sh %}
-echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
-{% endhighlight %}
-
-Followed by this command:
-
-{% highlight sh %}
-source ~/.bash_profile
-{% endhighlight %}
-
-And if the output is `zsh`, run the following command:
-
 {% highlight sh %}
 echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 {% endhighlight %}
-
-Followed by this command:
 
 {% highlight sh %}
 source ~/.zshrc
 {% endhighlight %}
 
-### _3a5._ Build Ruby with rbenv:
+## Install Ruby with rbenv
 
-Install Ruby with the next command:
+Now that rbenv is installed, let's install Ruby! We'll be installing version 3.1.3, but it could be that during the event you'll be asked to install a different version. In that case, just replace the version number in the command.
 
 {% highlight sh %}
 rbenv install 3.1.3
 {% endhighlight %}
 
-If you got "OpenSSL::SSL::SSLError: ... : certificate verify failed" error, run these commands:
+## Set default Ruby
 
-{% highlight sh %}
-brew install curl-ca-bundle
-{% endhighlight %}
-
-{% highlight sh %}
-cp /usr/local/opt/curl-ca-bundle/share/ca-bundle.crt `ruby -ropenssl -e 'puts OpenSSL::X509::DEFAULT_CERT_FILE'`
-{% endhighlight %}
-
-And then run the same `rbenv` command at the start of this step.
-
-### _3a6._ Set default Ruby:
-
-Run the following commands to make sure the version of Ruby you just installed is always used.
+rbenv allows us to manage a bunch of Ruby versions, but it doesn't always quite know which version you want to use. To help it with that, we'll tell it that the version we just installed is in fact the one we want to use.
 
 {% highlight sh %}
 rbenv global 3.1.3
 {% endhighlight %}
 
-{% highlight sh %}
-rbenv local 3.1.3
-{% endhighlight %}
-
-{% highlight sh %}
-rbenv shell 3.1.3
-{% endhighlight %}
-
-Check that your `ruby` version matches what you installed.
+Check that your Ruby version matches what you installed.
 
 {% highlight sh %}
 ruby --version
 {% endhighlight %}
 
-The output of which will look something like the text below. Make sure the `ruby 3.1.3` part matches.
+The result should be something that includes the number `3.1.3`.
 
-> ruby 3.1.3p185 (2022-11-24 revision 1a6b16756e) [arm64-darwin22]
+If the version you get starts with `2.6` something went wrong when setting up rbenv, and your Terminal is still using an older version of Ruby that ships with your Mac. Ask your coach, if present, for help, otherwise stop here and ask for help on the day of the workshop from one of the coaches.
 
-### _3a7._ Install Rails:
+## Install Rails
 
 Finally, we've arrived at the part where you'll install Rails, the tool we'll focus on during the workshop:
 
@@ -149,70 +99,45 @@ Finally, we've arrived at the part where you'll install Rails, the tool we'll fo
 gem install rails --no-document
 {% endhighlight %}
 
-And run this command:
-
-{% highlight sh %}
-rbenv rehash
-{% endhighlight %}
-
-## _3b._ If your OS X version is 10.6, 10.7, or 10.8:
-
-Download the RailsInstaller for your version of OS X:
-
-- [RailsInstaller for 10.7 and 10.8](https://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.7.app.tgz) <span class="muted">(325MB)</span>
-- [RailsInstaller for 10.6](https://railsinstaller.s3.amazonaws.com/RailsInstaller-1.0.4-osx-10.6.app.tgz) <span class="muted">(224MB)</span>
-
-Double click the downloaded file and it will unpack it into the current directory. Double click the the newly unpacked 'RailsInstaller-1.0.4-osx-10.7.app' or 'RailsInstaller-1.0.4-osx-10.6.app' and follow the instructions. It will open a README file with 'Rails Installer OS X' at the top. Please **ignore** the instructions in this file.
-
-If the Rails version wasn't the latest, you could update it using a following command on terminal.
-
-{% highlight sh %}
-gem update rails --no-document
-{% endhighlight %}
-
-## _4._ Install yarn:
-
-Install the yarn tool, a requirement for Rails:
-
-{% highlight sh %}
-brew install yarn
-{% endhighlight %}
-
-If you need more information than the following to install yarn, please check [yarn's installation docs](https://yarnpkg.com/lang/en/docs/install/).
-
-## _5._ Check the environment
-
-Check that everything is working by checking what Rails version was installed:
+Just like we did with Ruby, let's check whether Rails also installed successfully:
 
 {% highlight sh %}
 rails --version
 {% endhighlight %}
 
-This should output `Rails 7.0.4.2`. A higher version is also good.
+This should output `Rails 7.0.4.2`, but a higher version is also good.
 
-You can briefly try to create a Rails app with the following steps. Create a new Rails app with the command below:
+## Test if Rails works
+
+Almost there! We've installed a chain of tools: Command Line Tools, Homebrew, Git, rbenv, Ruby and now finally: Rails. Let's see if everything works as intended.
+
+To test this, we'll create a new app. Don't expect too much, it will just show a single webpage showing the "Rails" logo. During the workshop you'll turn that page into an actual app. For now, we just need to make sure that you can see that logo. Let's get started with our final set of Terminal commands!
+
+Check that everything is working by first running the application generator command. This will create a new Rails app which we can test with.
 
 {% highlight sh %}
-rails new myapp
+rails new railsgirlsapp
 {% endhighlight %}
 
-Navigate into the directory of the app:
+The `rails new` command creates a new folder on your computer called "railsgirlsapp", containing all the code for your application. Let's open that directory in the Terminal using the `cd` command:
 
 {% highlight sh %}
-cd myapp
+cd railsgirlsapp
 {% endhighlight %}
 
-Start the Rails server briefly to make sure it starts properly:
+Next, you'll start the Rails server briefly to make sure it starts properly. This is where the magic happens.
 
 {% highlight sh %}
 rails server
 {% endhighlight %}
 
+Unlike previous commands, this one will not stop until you press the <kbd>ctrl</kbd> + <kbd>c</kbd> keys together to stop it. You have just started a web server on your laptop, and it is ready to start taking visitors and show them your sample application. Let's not keep it waiting.
+
 Go to <http://localhost:3000> in your Browser. You should see the Rails logo appear.
 
-If at any point during this guide you ran into a problem and can't continue. Not a problem! Contact the workshop organizers and let them know about your problem. Most workshops have dedicated set up evenings or they can help you on the day of the workshop itself.
+If at any point during this guide you ran into a problem and can't continue. Not a problem! Contact the workshop organizers and let them know about your problem. Some workshops have dedicated set up evenings and otherwise they can help you on the day of the workshop itself.
 
-If you do see a Rails logo in your Browser, you now have a working Ruby on Rails programming setup. Congrats!
+If you do see a Rails logo in your Browser, you now have a working Ruby on Rails programming setup. Congratulations!
 
 You're ready for the workshop. If you are preparing before the workshop, you don't have to continue with guides until the day of the workshop. See you then!
 
