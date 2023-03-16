@@ -9,7 +9,7 @@ permalink: install/windows
 
 {% include main-guide-intro.html %}
 
-To install Rails for Windows we'll need to install Ruby and several supporting tools such as Git, Node.js and SQLite. Follow the steps below in order to install these tools on your computer. When you're done with these steps you will have a Rails app running on your computer.
+To install Rails for Windows we'll need to install Ruby and several supporting tools such as Git and SQLite. Follow the steps below in order to install these tools on your computer. When you're done with these steps you will have a Rails app running on your computer.
 
 <div class="help-notice">Make sure you're familiar with <a href="/tools">the tools you'll need for this guides</a> before continuing.</div>
 
