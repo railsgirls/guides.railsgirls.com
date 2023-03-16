@@ -32,34 +32,7 @@ If you run into any problems during this guide, check the [Possible errors] sect
   - Click the link for the "32-bit Git for Windows Setup" installer to download it.
 - Run the installer. Click through the installer using all the default options.
 
-## _3._ Install Node.js
-
-- Visit [nodejs.org/en/download](https://nodejs.org/en/download/).
-  - Select the "LTS" version tab, selected by default.
-  - From the "Windows Installer (.msi)" row, click the link for the 32-bit architecture to download it.
-- Run the installer. Click through the installer using all the default options.
-- Open the Windows Command Prompt and run the following command to check if the installation was successful. It should output a version number like `v18.14.1` (your version may differ).
-
-{% highlight sh %}
-node --version
-{% endhighlight %}
-
-- Close the Windows Command Prompt app.
-
-## _3a._ Install yarn
-
-- Visit the [yarn download page](https://yarnpkg.com/lang/en/docs/install/#windows-stable).
-- Download the installer by clicking the "Download installer" button.
-- Run the installer. Click through the installer using all the default options.
-- Open the Windows Command Prompt and run the following command to check if the installation was successful. It should output a version number like `1.22.0` (your version may differ).
-
-{% highlight sh %}
-yarn --version
-{% endhighlight %}
-
-- Close the Windows Command Prompt app.
-
-## _4._ Install SQLite
+## _3._ Install SQLite
 
 - Visit the [SQLite download page](https://sqlite.org/download.html).
 - Scroll down to the "Precompiled Binaries for Windows" section.
@@ -79,7 +52,7 @@ yarn --version
   {% highlight sh %}sqlite3 --version{% endhighlight %}
 - Close the Windows Command Prompt app.
 
-## _5._ Install Rails
+## _4._ Install Rails
 
 - Open the Windows Command Prompt run the following command. This will install the Rails and bundler gems on your computer.
 
@@ -95,7 +68,7 @@ rails --version
 
 _If you run into any problems during this step, check the [Possible errors] section for possible solutions._
 
-## _6._ Check the environment
+## _5._ Check the environment
 
 Check that everything is working by running the application generator command.
 
