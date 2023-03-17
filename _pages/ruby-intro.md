@@ -19,13 +19,13 @@ All good apps start with the "Hello world!" starter. You write your first code a
 
 Create a new file on your laptop–anywhere will do for now, just remember where–and name it `app.rb`. The `.rb` extension tells you, your (future) team and the computer what kind of file it is: a Ruby program.
 
-In this `app.rb` file you can write Ruby code. Open the file in your Text Editor. Start by copying in this small example:
+In this `app.rb` file you can write Ruby code. Open the file in your Text Editor. Start by copying in this small example below to the new file and save the file.
 
 {% highlight ruby %}
 puts "Hello world!"
 {% endhighlight %}
 
-This app `puts` something. That means it will print something to the Terminal. In this case the text "Hello world!"
+This app `puts` something. That means it will print something to the Terminal. In this case the text "Hello world!". Text values are indicated with double quotes (`"`) or single quotes (`'`) surrounding it.
 
 In the Terminal app you can run this app with the following command:
 
@@ -33,7 +33,7 @@ In the Terminal app you can run this app with the following command:
 ruby app.rb
 {% endhighlight %}
 
-Make sure you're in the same directory in the Terminal app as you created your `app.rb` file in. (You can also type in `ruby ` and drag the file to your Terminal. It should add the path to the file to the Terminal command.)
+Make sure you're in the same directory in the Terminal app as you created your `app.rb` file in. (You can also type in `ruby` and drag the file to your Terminal. It should add the path to the file to the Terminal command.)
 
 If it ran successfully you should see this output in the Terminal app:
 
@@ -52,7 +52,9 @@ puts 100 + 23
 # 123
 {% endhighlight %}
 
-**Quick explanation about comments**: If you see the hashtag symbol (`#`), also known as the number or pound symbol, everything after that is considered a comment. Comments won't be run as Ruby code in your program. In the example above, when you see a `# some text` this is there to help explain what's happening and can be left out of your app code. It shows the printed output or the result of a line of code.
+**Quick explanation about how to run Ruby apps**: Every time you see an example like the one above, you can copy the code into a local file, `app.rb` or a new one, to test it out. Then run it with the `ruby` command and the filename to see the output. For example: `ruby app.rb`
+
+**Quick explanation about comments**: If you see the hashtag symbol (`#`)—also known as the number or pound symbol–in a code example, everything after that is considered a comment. Comments won't be run as Ruby code in your program. When you see a line of text with `# some text`, this is there to help explain what's happening and can be left out of your app code. It shows the printed output or the result of a line of code. It is also used to explain what certain code is doing in code examples themselves, without interfering with how the code works.
 
 A couple other ways to perform calculations are shown below:
 
@@ -97,6 +99,8 @@ if 20 > 10 # if 20 is larger than 10
   puts "20 is larger than 10"
 end
 {% endhighlight %}
+
+An if-statement consists of a `if` and `end`keyword. The `if` keyword starts the if-statement, and the `end` keyword closes it.  Every line of code between the `if` and `end` keywords is what Ruby will run if the condition after the `if` keyword is true.
 
 There are several ways to check values, some examples:
 
@@ -210,6 +214,8 @@ puts say_hello("Your name")
 {% endhighlight %}
 
 When the `say_hello` method is called, the "Your name" value becomes the variable `your_name` in the method code. You can recognize this in the method definition line `def say_hello(your_name)`. The text `your_name` between the parentheses is the variable name. Then on the line with the `puts`, it's combined with the greeting: `"Hello #{your_name}!"`.
+
+**Quick explanation on the `#` symbol usage**: Previously, this guide said that the hashtag symbol is used to indicate code comments. There are a couple exceptions, the most common one being combing two text values. In combination with curly brackets in double quoted text values, a variable can be inserted into another text value: `Text #{variable}`.
 
 You'll notice that the way we call the method has changed, it now includes parentheses around the method parameters. The parentheses can be left out when no parameters are given.
 
