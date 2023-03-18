@@ -89,7 +89,7 @@ ruby --version
 
 The result should be something that includes the number `3.1.3`.
 
-If the version you get starts with `2.6` something went wrong when setting up rbenv, and your Terminal is still using an older version of Ruby that ships with your Mac. Ask your coach, if present, for help, otherwise stop here and ask for help on the day of the workshop from one of the coaches.
+If the version you get starts with `2.6`, first try restarting your terminal. If it still shows the wrong version something went wrong when setting up rbenv, and your Terminal is still using an older version of Ruby that ships with your Mac. Ask your coach, if present, for help, otherwise stop here and ask for help on the day of the workshop from one of the coaches.
 
 ## Install Rails
 
