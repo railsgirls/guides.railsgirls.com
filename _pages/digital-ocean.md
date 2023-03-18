@@ -9,6 +9,70 @@ permalink: digitalocean
 
 *Created by [Colin Alston](https://github.com/calston)*
 
+## Change the production database
+
+Locally your app uses SQLite as the database to store your ideas. It's easier to use another database on DigitalOcean deploys. To deploy with DigitalOcean we'll change the database in production to use PostgreSQL.
+
+### Install the pg gem
+
+Open the `Gemfile` file in your Text Editor and change the following line:
+
+{% highlight ruby %}
+gem "sqlite3"
+{% endhighlight %}
+
+into these lines:
+
+{% highlight ruby %}
+group :development do
+  gem "sqlite3"
+end
+group :production do
+  gem "pg"
+end
+{% endhighlight %}
+
+Next, run the command below to setup the new database gem:
+
+{% highlight sh %}
+bundle install --without production
+{% endhighlight %}
+
+### Update the database configuration
+
+Up next, you'll need to change the database configuration for the production environment.
+
+{% coach %}
+Explain what the different Rails environments are. What is "production"?
+{% endcoach %}
+
+Open the `config/database.yml` file in your Text Editor. Change the following lines in the file:
+
+{% highlight yaml %}
+production:
+  <<: *default
+  database: db/production.sqlite3
+{% endhighlight %}
+
+to these lines:
+
+{% highlight yaml %}
+production:
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  database: railsgirls_production
+  username: railsgirls
+  password: <%= ENV["RAILSGIRLS_DATABASE_PASSWORD"] %>
+{% endhighlight %}
+
+Save the changes in Git by creating a new commit. We'll need to update our app in Git to deploy these changes.
+
+{% highlight sh %}
+git add .
+git commit -m "Use PostgreSQL as the production database"
+{% endhighlight %}
+
 ## Create an account
 
 Head to [https://www.digitalocean.com/go/app-platform](https://www.digitalocean.com/go/app-platform) and sign up for the 60 day free trial.
