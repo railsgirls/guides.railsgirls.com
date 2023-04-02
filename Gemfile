@@ -1,4 +1,5 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'github-pages', '>= 105'
-gem 'webrick'
+gem "jekyll"
+gem "jekyll-redirect-from"
+gem "webrick"
