@@ -15,7 +15,7 @@ exclude:
   - "vendor/cache/"
   - "vendor/gems/"
   - "vendor/ruby/"
-url: https://guides.railsgirls.com
+url: https://guides.railsgirls.org
 source_url: https://github.com/railsgirls/railsgirls.github.io/blob/master/
 plugins:
   - jekyll-redirect-from

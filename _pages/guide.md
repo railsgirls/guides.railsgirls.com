@@ -400,7 +400,7 @@ Thank you for taking part in the Rails Girls event. We truly felt lucky to have 
 Three things we want to share:
 in
 Workshop Materials
-(Almost all) materials can be found in the guides section at <https://guides.railsgirls.com>. You can find presentations, materials and instructions from the workshop. If you took pictures or blogged about the event - let us know! We'll be publishing regularly on blog.railsgirls.com
+(Almost all) materials can be found in the guides section at <https://guides.railsgirls.org>. You can find presentations, materials and instructions from the workshop. If you took pictures or blogged about the event - let us know! We'll be publishing regularly on blog.railsgirls.com
 
 Make Rails Girls better - give us feedback!
 We want to hear from you! Give us feedback about the workshop or how we can make the event better – it’s really quick, and it’ll help us improve our workshop at railsgirls.com/feedback
