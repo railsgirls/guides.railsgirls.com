@@ -1,16 +1,16 @@
 # Rails Girls Guides
 
-<a href="http://railsgirls.com" target="_blank"><img alt="Rails Girls" src="/images/rails-girls-logo.png" width="15%" align="right"></a>
+<a href="https://railsgirls.org" target="_blank"><img alt="Rails Girls" src="/images/rails-girls-logo.png" width="15%" align="right"></a>
 
 The purpose of Rails Girls is to give tools for women to understand technology. The Rails Girls events do this by providing a great first experience on building the Internet.
 
 Rails Girls was founded at the end of 2010 in Helsinki. Originally intended as a one-time event, we never thought to see so many chapters from all around the world! This guide will help you get started.
 
-You can use our materials and instructions to roll out your own workshop in your city, workplace or kitchen! Read more about Rails Girls at http://railsgirls.com
+You can use our materials and instructions to roll out your own workshop in your city, workplace or kitchen! Read more about Rails Girls at https://railsgirls.org
 
 ## Quick start
 
-View the guides at https://guides.railsgirls.com or clone this repo and install & run [jekyll](https://github.com/mojombo/jekyll)
+View the guides at https://guides.railsgirls.org or clone this repo and install & run [jekyll](https://github.com/mojombo/jekyll)
 
 ### Installing jekyll
 
@@ -65,7 +65,7 @@ You might find some useful hints in this jekyll issue if it's not working as exp
 
 ## Contributing a Guide
 
-To contribute a guide, view the instructions at https://guides.railsgirls.com/contributing
+To contribute a guide, view the instructions at https://guides.railsgirls.org/contributing
 
 ## Twitter
 
@@ -73,7 +73,7 @@ For updates and more, follow [@railsgirls](https://twitter.com/railsgirls)
 
 ## Website & Blog
 
-Official website and blog for Rails Girls movement can be found at http://railsgirls.com
+Official website and blog for Rails Girls movement can be found at https://railsgirls.org
 
 ## E-mail list
 
