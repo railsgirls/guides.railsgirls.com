@@ -47,14 +47,14 @@ You can verify you are now in an empty directory or folder by again running the 
     </div>
 
 {% highlight sh %}
-rails new railsgirls -m http://railsgirls.com/simple_scaffold.rb
+rails new railsgirls -m https://railsgirls.org/simple_scaffold.rb
 {% endhighlight %}
 
     <div>
         <code>rails new railsgirls</code> tells Rails to generate a project called railsgirls with all the files that our application needs.
     </div>
     <div>
-        <code>-m http://railsgirls.com/simple_scaffold.rb</code> tells Rails to download a special template from railsgirls.com which makes the files a bit simpler and easier for beginners to understand.
+        <code>-m https://railsgirls.org/simple_scaffold.rb</code> tells Rails to download a special template from railsgirls.com which makes the files a bit simpler and easier for beginners to understand.
     </div>
     <div>
 This will create a new app in the folder <code>railsgirls</code>, so we again want to change the directory to be inside of our rails app by running:
@@ -91,14 +91,14 @@ You can verify you are now in an empty directory or folder by again running the 
     </div>
 
 {% highlight sh %}
-rails new railsgirls -m http://railsgirls.com/simple_scaffold.rb
+rails new railsgirls -m https://railsgirls.org/simple_scaffold.rb
 {% endhighlight %}
 
     <div>
         <code>rails new railsgirls</code> tells Rails to generate a project called railsgirls with all the files that our application needs.
     </div>
     <div>
-        <code>-m http://railsgirls.com/simple_scaffold.rb</code> tells Rails to download a special template from railsgirls.com which makes the files a bit simpler and easier for beginners to understand.
+        <code>-m https://railsgirls.org/simple_scaffold.rb</code> tells Rails to download a special template from railsgirls.com which makes the files a bit simpler and easier for beginners to understand.
     </div>
     <div>
 This will create a new app in the folder <code>railsgirls</code>, so we again want to change the directory to be inside of our rails app by running:

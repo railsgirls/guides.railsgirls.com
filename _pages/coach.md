@@ -11,7 +11,7 @@ permalink: coach
 
 ### What do I need to be a Rails Girls coach?
 
-So, you've heard about [Rails Girls](http://railsgirls.com) and are wondering if you've got what it takes to be a coach at one of the workshops? That's awesome! Your interest in helping beginners dip their toes into web programming is already a great prerequisite! What else do you need?
+So, you've heard about [Rails Girls](https://railsgirls.org) and are wondering if you've got what it takes to be a coach at one of the workshops? That's awesome! Your interest in helping beginners dip their toes into web programming is already a great prerequisite! What else do you need?
 
 - Patience, willingness to help, and a friendly attitude :)
 - Being able to answer all sorts of questions in a beginner friendly way (even if the explanation isn't *technically* completely exact) throughout the duration of the workshop.

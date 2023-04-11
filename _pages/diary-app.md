@@ -85,12 +85,12 @@ Add the following either before or after the above diary entries (again, do adju
 <div>
   <h1>My favourite websites</h1>
     <ul>
-      <li><a href="http://railsgirls.com">Rails Girls</a></li>
+      <li><a href="https://railsgirls.org">Rails Girls</a></li>
       <li><a href="https://en.wikibooks.org/wiki/Ruby_Programming">Wikibooks</a></li>
       <li><a href="/">Ruby on Rails Guides</a></li>
     </ul>
   </div>
-  <img src="http://railsgirls.com/images/rg-warsaw.png" />
+  <img src="https://railsgirls.org/images/rg-warsaw.png" />
 {% endhighlight %}
 
 This is an HTML unordered list with some list items containing anchors (links) with hypertext references (URLs) to other pages. It’s followed by a paragraph containing an image – and the image’s source is at the given URL.
@@ -158,7 +158,7 @@ Replace the contents of the `<ul>` tags with the following:
 {% highlight erb %}
 <%
   @websites = [
-    ["http://railsgirls.com", "Rails Girls"],
+    ["https://railsgirls.org", "Rails Girls"],
     ["https://en.wikibooks.org/wiki/Ruby_Programming", "Wikibooks"],
     ["https://guides.rubyonrails.org", "Ruby on Rails Guides"],
   ]
@@ -180,7 +180,7 @@ Keeping code or data (like the above `@websites` array) in views is simple, but 
 class WelcomeController < ApplicationController
   def index
     @websites = [
-      ["http://railsgirls.com", "Rails Girls"],
+      ["https://railsgirls.org", "Rails Girls"],
       ["https://en.wikibooks.org/wiki/Ruby_Programming", "Wikibooks"],
       ["https://guides.rubyonrails.org", "Ruby on Rails Guides"],
     ]
