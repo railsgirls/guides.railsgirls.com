@@ -376,14 +376,14 @@ In an ERB file you'll find HTML tags. You can recognize them by the lines that s
 <p>I am a paragraph</p>
 
 <p>
-  <a href="https://guides.railsgirls.org/">I am a link!</a>
+  <a href="https://guides.railsgirls.com/">I am a link!</a>
 </p>
 
 <div>
   <h1>I am a heading</h1>
   <p>
     I am a piece of text with
-    <a href="https://guides.railsgirls.org/">a link</a>.
+    <a href="https://guides.railsgirls.com/">a link</a>.
   </p>
 </div>
 {% endhighlight %}
