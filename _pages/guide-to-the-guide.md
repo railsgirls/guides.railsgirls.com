@@ -254,7 +254,7 @@ CSS (Cascading Style Sheets) is a language used to describe the formatting of pa
 For each Rails application there is a default layout file called `application.html.erb`, located in the layouts folder of your views directory. With this file you can create a default format for all of the pages in your application.
 
 {% highlight html %}
-<link rel="stylesheet" href="https://railsgirls.org/assets/bootstrap.css">
+<link rel="stylesheet" href="https://railsgirls.com/assets/bootstrap.css">
 {% endhighlight %}
 
 In the above code, the `link rel` (link relation) is defining the nature of the URL that the `href` (hypertext reference) attribute is requesting content from. This argument indicates that the external source requested is a stylesheet and the web browser will need to fetch this file to render the page properly.

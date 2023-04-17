@@ -13,9 +13,9 @@ Our aim is to give tools for women to understand technology. The Rails Girls eve
 
 Rails Girls was founded in end of 2010 in Helsinki. Originally intended as a onetime event, we never thought we'd see so many local chapters all around the world! This guide has been put together to help you get started.
 
-If you want to organize an event, start by filling out <https://railsgirls.org/inyourcity> and you'll receive more instructions.
+If you want to organize an event, start by filling out <https://railsgirls.com/inyourcity> and you'll receive more instructions.
 
-A list of upcoming events can be viewed at [railsgirls.com](https://railsgirls.org).
+A list of upcoming events can be viewed at [railsgirls.com](https://railsgirls.com).
 
 You are also welcome to join our [organizers' Slack discussion forum](https://rails-girls-slack.herokuapp.com/).
 
@@ -143,7 +143,7 @@ Invite everyone, also the local developers, boys, those who weren't accepted, to
 
 ### Promotion of Rails Girls
 
-Every Rails Girls workshop will get a custom website at railsgirls.com/city where the information is collected and then stored. For past cities, see <https://railsgirls.org/events.html>
+Every Rails Girls workshop will get a custom website at railsgirls.com/city where the information is collected and then stored. For past cities, see <https://railsgirls.com/events.html>
 
 You can also set up your own Facebook and Twitter page (remember to add links to your workshop's page!) or whatever service is popular in your community. Promoting the event through social media can go a long way these days, but make sure you have somebody to take care of the chosen channels. Some tips:
 
@@ -183,7 +183,7 @@ E-mail contact(a)railsgirls.com and ask to be included in the repo. Look for rea
 
 #### How to get press?
 
-One of the big aims of Rails Girls is to make it more mainstream for women to build the web. That’s why we like to engage the local press and highlight the participants and their enthusiasm. We’d be happy to help prepare a press-release for the media. Check out [railsgirls.com/press](https://railsgirls.org/press) for more. If you're working with a big company as a sponsor, their PR department might be able to help you spread the message about the workshop.
+One of the big aims of Rails Girls is to make it more mainstream for women to build the web. That’s why we like to engage the local press and highlight the participants and their enthusiasm. We’d be happy to help prepare a press-release for the media. Check out [railsgirls.com/press](https://railsgirls.com/press) for more. If you're working with a big company as a sponsor, their PR department might be able to help you spread the message about the workshop.
 
 Send the press release to local blogs, find contact at various media outlets. The more doors you knock on, the greater you chance of getting through. Make a list of journalists and bloggers you contact, mark those that respond to your emails, so they can be the first ones to receive your next press release. You can also write a press release after the event that includes photos and statements from satisfied participants.
 
@@ -264,7 +264,7 @@ Anyone. What we look for is a group of people dedicated in making this a stellar
 * An inkling of an idea where to look for women interested in technology. University, literature, arts, sports - we try to look for people who are interested in Internet, but do not have experience in coding.
 * Willingness to guide the women in the future if they have questions or want to organize their own events or find local developer gatherings.
 
-Start by filling out <https://railsgirls.org/inyourcity> and someone from our team will be in contact
+Start by filling out <https://railsgirls.com/inyourcity> and someone from our team will be in contact
 
 #### Where can I find all the materials for posters, nametags, sample presentations and such?
 Check out below, and let us know if something is missing!
@@ -440,7 +440,7 @@ This is a small checklist for your event. Rails Girls can be thrown together in 
 
 ### Before the event:
 
-* Fill in the [application](https://railsgirls.org/inyourcity) and the team will contact you!
+* Fill in the [application](https://railsgirls.com/inyourcity) and the team will contact you!
 * Start working with the project plan template on Google Docs
 * Decide dates and set a venue
 * Reach out for the local coaches - try finding five people who commit to taking part
@@ -474,7 +474,7 @@ This is a small checklist for your event. Rails Girls can be thrown together in 
 * Collect slides from the speakers and add them to the [Rails Girls presentation](https://github.com/railsgirls/presentations) repo
 * Upload your photos to our [official Flickr group](https://www.flickr.com/groups/railsgirls/) (preferably under a [Creative Commons](https://www.flickr.com/groups/railsgirls/discuss/72157634650757777/) licence!)
 * Invite active participants to [global e-mail list](https://groups.google.com/group/rails-girls-team)
-* Send a thank you note to participants and ask for [feedback](https://railsgirls.org/feedback) (you can also create your own feedback form in your local language)
+* Send a thank you note to participants and ask for [feedback](https://railsgirls.com/feedback) (you can also create your own feedback form in your local language)
 * Send a thank you note to coaches
 * Send a thank you note for organizers
 * Add yourself to the [Rails Girls Map](http://rails-girls-map.herokuapp.com/)

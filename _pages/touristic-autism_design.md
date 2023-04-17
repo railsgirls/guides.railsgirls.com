@@ -212,7 +212,7 @@ of button like round the corner, add shadow or color etc.
 Open `app/views/layouts/application.html.erb` in your text editor and replace the line
 
 {% highlight html %}
-<link rel="stylesheet" href="https://railsgirls.org/assets/bootstrap.css">
+<link rel="stylesheet" href="https://railsgirls.com/assets/bootstrap.css">
 {% endhighlight %}
 
 with

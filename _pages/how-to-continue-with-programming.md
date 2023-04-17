@@ -9,7 +9,7 @@ permalink: how-to-continue-with-programming
 
 *Created and edited for general use by Daniel Puglisi, [@danielpuglisi](https://twitter.com/danielpuglisi).*
 
-*This guide was originally written for the [Rails Girls Basel](https://railsgirls.org/basel) event
+*This guide was originally written for the [Rails Girls Basel](https://railsgirls.com/basel) event
 and was published on
 [Daniel Puglisi's personal blog](http://danielpuglisi.com/articles/2013/04/rails-girls-after-the-event-how-to-continue-with-programming) (link is no longer working 2023-02-12).*
 
