@@ -37,7 +37,7 @@ Talk about the relationship between HTML and Rails.
 - What is Model View Controller and how does this relate to it?
     - Models and controllers are responsible for generating the HTML views.
 
-Resources: Mozilla [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML), Rails Beginner [ERB](https://www.pragtob.info/rails-beginner-cheatsheet#rails-erb) and Mozilla [MVC](https://developer.mozilla.org/en-US/docs/Glossary/MVC)
+Resources: Guide to the guide [Design](https://guides.railsgirls.com/guide-to-the-guide#4_design)
 {% endcoach %}
 
 ## What is CSS?

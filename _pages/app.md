@@ -136,13 +136,13 @@ When the command prompt is not visible you cannot execute new commands. If you t
 - Briefly explain what the `rails server` command does and why we need it.
 - Briefly explain how can you stop the server.
 
-Resources: Rails Beginner [console basics](https://www.pragtob.info/rails-beginner-cheatsheet#console) & [rails commands](https://www.pragtob.info/rails-beginner-cheatsheet#rails-commands), Rails Guides [rails new](https://guides.rubyonrails.org/getting_started.html#creating-the-blog-application)
+Resources: Guide to the Guide [creating the application](https://guides.railsgirls.com/guide-to-the-guide#1_create_the_application), Rails Guides [rails new](https://guides.rubyonrails.org/getting_started.html#creating-the-blog-application)
 
 {% endcoach %}
 
 ## Create Idea scaffold
 
-You now have you own app, but it doesn't do anything yet. It only shows the Rails logo.
+You now have your own app, but it doesn't do anything yet. It only shows the Rails logo.
 
 Next you're going to use Rails' scaffold functionality to generate a starting point that allows you to list, add, remove, edit, and view things; in your case _ideas_.
 
@@ -158,7 +158,7 @@ rails generate scaffold idea name:string description:text picture:string
     - What is the model name argument?
     - How do you specify database fields with `name:string` and what do they parts mean?
 
-Resource: Rails Beginner [rails commands](https://www.pragtob.info/rails-beginner-cheatsheet#rails-commands)
+Resource: Guide to the guide [scaffolding](https://guides.railsgirls.com/guide-to-the-guide#2_create_idea_scaffold)
 {% endcoach %}
 
 The scaffold creates new files in your project directory, but to get it to work properly we need to run a couple of other commands to update our database and restart the server.
@@ -171,7 +171,7 @@ rails server
 {% coach %}
 What are database migrations and why do you need them?
 
-Resource: Rails Beginner [rails commands](https://www.pragtob.info/rails-beginner-cheatsheet#rails-commands)
+Resource: Guide to the guide [scaffolding](https://guides.railsgirls.com/guide-to-the-guide#2_create_idea_scaffold) or Rails Beginner [rails commands](https://www.pragtob.info/rails-beginner-cheatsheet#rails-commands)
 {% endcoach %}
 
 Open <http://localhost:3000/ideas> in your Browser. Cloud service (e.g. Replit) users need to append `/ideas` to their preview URL instead (see [installation guide](/install/replit)).
