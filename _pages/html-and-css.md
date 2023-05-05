@@ -56,7 +56,7 @@ Talk about the relationship between HTML, CSS and Rails.
 - How does Bootstrap work and how does it style the app pages?
 - Briefly show some [Bootstrap examples](https://getbootstrap.com/docs/5.2/examples/) and show what you can accomplish with using a framework like Bootstrap.
 
-Resource: W3Schools [What is Boostrap](https://www.w3schools.com/whatis/whatis_bootstrap.asp)
+Resource: W3Schools [What is Bootstrap](https://www.w3schools.com/whatis/whatis_bootstrap.asp)
 {% endcoach %}
 
 ## Add Bootstrap to help style your app
