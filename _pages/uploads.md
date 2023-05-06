@@ -39,6 +39,8 @@ This will install the "carrierwave" gem we added to the `Gemfile` file.
 
 {% coach %}
 Explain what libraries (Ruby gems) are and why they are useful. Describe what Open Source software is.
+
+Resources: RubyGems GitHub [introduction](https://github.com/rubygems/rubygems#rubygems-) and Wikipedia [OSS](https://en.wikipedia.org/wiki/Open-source_software)
 {% endcoach %}
 
 ## Generating a picture uploader

@@ -36,6 +36,8 @@ Talk about the relationship between HTML and Rails.
 - What part of Rails views are HTML and what is Embedded Ruby (ERB)?
 - What is Model View Controller and how does this relate to it?
     - Models and controllers are responsible for generating the HTML views.
+
+Resources: Guide to the guide [Design](https://guides.railsgirls.com/guide-to-the-guide#4_design)
 {% endcoach %}
 
 ## What is CSS?
@@ -53,6 +55,8 @@ Talk about the relationship between HTML, CSS and Rails.
 
 - How does Bootstrap work and how does it style the app pages?
 - Briefly show some [Bootstrap examples](https://getbootstrap.com/docs/5.2/examples/) and show what you can accomplish with using a framework like Bootstrap.
+
+Resource: W3Schools [What is Bootstrap](https://www.w3schools.com/whatis/whatis_bootstrap.asp)
 {% endcoach %}
 
 ## Add Bootstrap to help style your app

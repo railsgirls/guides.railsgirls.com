@@ -38,6 +38,8 @@ To see your new about page, take your browser to <http://localhost:3000/pages/ab
 
 {% coach %}
 Talk about routes for a moment. How does the `config/routes.rb` file define what routes Rails listens to? Explain that every page in the app needs a route in this file, otherwise Rails won't know how to show it.
+
+Resource: Guide to the guide [finetune the routes](https://guides.railsgirls.com/guide-to-the-guide#3_finetune_the_routes) or Rails Guides [first route](https://guides.rubyonrails.org/getting_started.html#say-hello-rails)
 {% endcoach %}
 
 ## Add a link to your navigation bar
@@ -74,6 +76,8 @@ To check if the page is currently active, Rails provides a helper called `curren
 
 {% coach %}
 The above goes in a bit more technical detail about HTML works and how ERB can change what HTML is shown in the Browser. Help elaborate if things are unclear. Demonstrate how the page in the Browser changes by changing the HTML and ERB code.
+
+Resource: Rails Beginner [ERB](https://www.pragtob.info/rails-beginner-cheatsheet#rails-erb)
 {% endcoach %}
 
 Knowing how to add a new page and change the nav bar, you can also add a [new homepage](/new-homepage) (the next guide) to your app.
