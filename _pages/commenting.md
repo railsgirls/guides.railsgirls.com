@@ -108,7 +108,7 @@ Open the file you just created in your Text Editor, it should be empty, and copy
 
 {% highlight ruby %}
 class CommentsController < ApplicationController
-  before_action :set_idea, only: %i[create]
+  before_action :set_idea, only: %i[create destroy]
   before_action :set_comment, only: %i[destroy]
 
   def create
@@ -124,7 +124,7 @@ class CommentsController < ApplicationController
   def destroy
     @comment.destroy
 
-    redirect_to comments_url, notice: "Comment was successfully destroyed."
+    redirect_to idea_path(@idea), notice: "Comment was successfully destroyed."
   end
 
   private
