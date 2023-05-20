@@ -58,7 +58,7 @@ Inside the new test file, we will want to make sure our idea has a name. In orde
 {% highlight ruby %}
 require "rails_helper"
 
-RSpec.describe Idea, type: :model do
+RSpec.describe Idea do
   it "has a name" do
     skip
   end
@@ -78,7 +78,7 @@ Let's add something to our test to make sure the idea has a name!
 {% highlight ruby %}
 require "rails_helper"
 
-RSpec.describe Idea, type: :model do
+RSpec.describe Idea do
   it "has a name" do # yep, you can totally use 'it'
     idea = Idea.create!(name: "My Awesome Idea Name") # creating a new idea 'instance'
     expect(idea.name).to eq("My Awesome Idea Name") # this is our expectation
@@ -115,7 +115,7 @@ We have our first test, we test if our idea has a name, but our idea can hold ma
 {% highlight ruby %}
 require "rails_helper"
 
-RSpec.describe Idea, type: :model do
+RSpec.describe Idea do
   # Your other tests here...
 
   it "has comments" do
