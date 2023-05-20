@@ -170,7 +170,7 @@ Open `app/views/ideas/show.html.erb` and at the very bottom add these lines:
 <% end %>
 
 <h2>Add a new comment</h2>
-<%= render partial: "comments/form", locals: { comment: @comment } %>
+<%= render partial: "comments/form", locals: { idea: @idea } %>
 {% endhighlight %}
 
 This code will show the comments, but first we'll need a way to create comments. For that the last two lines render a comment submission form, which we'll create next.
