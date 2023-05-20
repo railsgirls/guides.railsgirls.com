@@ -162,7 +162,7 @@ Open `app/views/ideas/show.html.erb` and at the very bottom add these lines:
     <div>
       <p><strong><%= comment.user_name %></strong></p>
       <p><%= comment.body %></p>
-      <%= button_to "Destroy this comment", comment_path(comment), method: :delete, class: "btn btn-danger", form: { data: { turbo_confirm: "Are you sure?" } } %>
+      <%= button_to "Destroy this comment", idea_comment_path(@idea, comment), method: :delete, class: "btn btn-danger", form: { data: { turbo_confirm: "Are you sure?" } } %>
     </div>
   <% end %>
 <% else %>
