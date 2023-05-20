@@ -7,7 +7,7 @@ permalink: deployment/fly-io
 
 # Put your app online with Fly.io
 
-In this guide you'll deploy your app with [Fly.io](https://fly.io/app) to make it available to everyone online. After this guide you can share the link with your friends and family to show what you have created during this workshop.
+In this guide you'll deploy your app with [Fly.io](https://fly.io) to make it available to everyone online. After this guide you can share the link with your friends and family to show what you have created during this workshop.
 
 Deploying a single small app with Fly.io is free, with some limitations.
 
