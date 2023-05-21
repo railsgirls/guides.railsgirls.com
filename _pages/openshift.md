@@ -165,7 +165,7 @@ Refresh the app in your browser to see the result.
 Talk about Git remotes.
 {% endcoach %}
 
-### Extra credit 
+### Extra credit
 
 Congratulations - your Rails application is now online for the whole world to admire. The following sections explain optional further steps you can take to improve and share your app. 
 

@@ -37,7 +37,7 @@ Then run "bundle install". Then create a file called Rakefile in your main proje
 
 {% highlight sh %}
 require 'rspec/core/rake_task'
- 
+
 RSpec::Core::RakeTask.new do |task|
   task.rspec_opts = ['--color', '--format', 'doc']
 end
@@ -55,7 +55,7 @@ guard 'rspec' do
   watch(%r{^app/views/(.+).html.rb$}) do |m|
     "spec/features/#{m[1]}_spec.rb"
   end
- 
+
 # watch /spec/ files
   watch(%r{^spec/features/(.+).rb$}) do |m|
     "spec/features/#{m[1]}.rb"
@@ -82,7 +82,7 @@ Typically, if you write your application code first (so you're not doing TDD), t
 This is why TDD is considered the better practice and the preferred development method to use, because every line of code you will produce has been produced for a reason: to get a failing specification (your actual business requirement) to pass. 
 
 Let's write the test "home.html.erb_spec.rb as:
-	
+
 {% highlight sh %}
 require 'spec_helper'
 
@@ -91,7 +91,7 @@ describe "test for the static page Home" do
     render
     rendered.should contain("Hello world!")
   end
-end 
+end
 {% endhighlight %}
 
 
@@ -107,7 +107,7 @@ Here is the code:
 
 {% highlight sh %}
 $ << File.join(File.dirname(FILE), '..', 'app/views')
- 
+
 require 'pry'
 require 'home'
 {% endhighlight %}
@@ -168,9 +168,9 @@ For the purpose of demonstrating Pry we are going to add more code to our contro
 {% highlight sh %}
 class PagesController < ApplicationController
 attr_accessor :test
- 
+
   @@class_property = "I'm a class property"
- 
+
   def home
     binding.pry
     @instance_property = "I'm an instance property"
@@ -178,7 +178,7 @@ attr_accessor :test
     privs
     "Hello RSpec!"
   end
- 
+
   def about
     test_var = "I'm a test variable"
     test_var
@@ -186,9 +186,9 @@ attr_accessor :test
 
   def help
   end
- 
+
   private
- 
+
   def privs
     puts "I'm private"
   end
@@ -222,18 +222,18 @@ The .travis.yml file determines the configuration settings for Travis-CI so it k
 {% highlight sh %}
 language: ruby
 cache: bundler
- 
+
 rvm:
   - 1.25.26
- 
+
 script: 'bundle exec rake spec'
- 
+
 bundler_args: --without development
- 
+
 branches:
   only:
     - master
- 
+
 notifications:
   email:
     - you@example.com
@@ -250,17 +250,17 @@ Also, let's add to spec/spec_helper.rb the following:
 
 and make clear in our Gemfile which gems are required for testing and which for development:
 
-{% highlight sh %} 
+{% highlight sh %}
 group :test do
   gem 'rake'
   gem 'rspec'
 end
- 
+
 group :development do
   gem 'guard'
   gem 'guard-rspec'
   gem 'pry'
- 
+
   # Adds debugging steps to Pry
   # continue, step, next
   gem 'pry-remote'
