@@ -151,7 +151,7 @@ Explain how controllers work and interact with HTTP requests, models and views.
 
 ## Display the comments
 
-We can the relationship between ideas and comments to fetch them from the database and show them in your app.
+We can use the relationship between ideas and comments to fetch them from the database and show them in your app.
 
 Open `app/views/ideas/show.html.erb` and at the very bottom add these lines:
 
