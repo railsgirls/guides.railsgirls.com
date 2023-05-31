@@ -54,7 +54,7 @@ Every Rails Girls event starts with an installation-fest where the setup is pre-
 
 #### Friday evening: Installation
 
-19:00 - 21:00 Installations and getting to know each other  
+19:00 - 21:00 Installations and getting to know each other
 *Hint*: Have a coach table where problematic computers can be brought.
 
 Some installations will fail: be prepared to set women up in pairs, don't use endless amounts of time.
@@ -71,15 +71,15 @@ Go through the application with the coaches during dinner.
 
 #### Saturday: Workshop
 
-09:00 - 10:00 Registration and coffee  
+09:00 - 10:00 Registration and coffee
 *Hint* Reserve enough time for people to mingle and to solve any problems there might be with installations. Give out workbooks, collect acronyms for the Bento exercise.
 
-10:00 - 10:10 Welcoming words  
+10:00 - 10:10 Welcoming words
 *Hint* Mention sponsors, show what we'll build, tell what programming is.
 
 10:30 - 11:00 UX workshop
 
-11:00 - 11:30 Introduction to programming  
+11:00 - 11:30 Introduction to programming
 *Hint* Ask one of the coaches to do this. Explain why learning Ruby basics is important even though they'll be using Rails.
 
 Themes to cover:

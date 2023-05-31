@@ -32,8 +32,8 @@ Now your repository is connected and you can set up your test commands. We've cr
 
 Now let's finish your setup and go to the dashboard. You can trigger a so-called 'new build' for your application by changing something and then pushing to your repository: 
 {% highlight sh %}
-git add .  
-git commit -m "test Codeship integration"  
+git add .
+git commit -m "test Codeship integration"
 git push origin master
 {% endhighlight %}
 
@@ -55,8 +55,8 @@ From now on the Codeship will deploy your application to Heroku, every time you 
 Now let's push a change and see if it gets deployed. Change something in your application first, then commit and push the change.
 
 {% highlight sh %}
-git add .  
-git commit -m "this changes everything"  
+git add .
+git commit -m "this changes everything"
 git push
 {% endhighlight %}
 

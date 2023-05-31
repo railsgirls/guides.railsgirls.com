@@ -6,15 +6,15 @@ permalink: continuous-travis
 
 # Continuous Deployment with Travis
 
-*Created by Floor Drees, [@floordrees](https://twitter.com/floordrees)* 
+*Created by Floor Drees, [@floordrees](https://twitter.com/floordrees)*
 
 ### What is this Continuous Deployment thing?
 
-Continuous deployment is part of the continuous delivery 'movement'. The idea behind continuous delivery is to automate the software delivery process as far as possible. 
+Continuous deployment is part of the continuous delivery 'movement'. The idea behind continuous delivery is to automate the software delivery process as far as possible.
 
 With a working continuous deployment chain in place you'll enforce Git deployments (everything must be committed to be tested and everything must be tested to be deployed), making collaboration easier and deployment faster. So you can focus on making your app even more awesome!
 
-There are a few great companies sailing the continuous wave, in this guide we'll set up continuous deployment for our Ruby on Rails app from GitHub to anynines, using [Travis-ci](http://about.travis-ci.org/). 
+There are a few great companies sailing the continuous wave, in this guide we'll set up continuous deployment for our Ruby on Rails app from GitHub to anynines, using [Travis-ci](http://about.travis-ci.org/).
 
 {% coach %}
 Talk about the benefits of continuous deployment.
@@ -49,8 +49,8 @@ Your app now contains the Travis configuration but how should Travis know when t
 Commit and push a code change to your repository and check travis-ci.org to see if your test suite is being executed. You should also receive an email that your build succeeded.
 
 {% highlight sh %}
-git add .  
-git commit -m "test Travis integration"  
+git add .
+git commit -m "test Travis integration"
 git push origin master
 {% endhighlight %}
 
@@ -161,4 +161,4 @@ Push successful! App 'railsgirls' available at http://railsgirls.de.a9sapp.eu
 Logging out... OK
 {% endhighlight %}
 
-This means your are done and good to go! 
+This means your are done and good to go!
