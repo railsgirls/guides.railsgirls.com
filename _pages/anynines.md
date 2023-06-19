@@ -35,7 +35,7 @@ cf login
 
 ... which will prompt you for your email address and password.
 
-Wonder what that `cf` stands for? It's short for [Cloud Foundry](https://www.cloudfoundry.com/), a system anynines is using behind the scenes.
+Wonder what that `cf` stands for? It's short for [Cloud Foundry](https://www.cloudfoundry.org/), a system anynines is using behind the scenes.
 
 ### Push your app online
 
