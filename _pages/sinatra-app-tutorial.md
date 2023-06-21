@@ -61,28 +61,33 @@ a directory for our views (and name it `views`).
 Put this code into an `index.erb` file in the `views` directory:
 
 {% highlight erb %}
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset='UTF-8' />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Suffragist</title>
-    <link href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css' rel='stylesheet' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
-  <body class='container'>
-    <p>What's for dinner?</p>
-    <form action='cast' method='post'>
-      <ul class='unstyled'>
-        <% Choices.each do |id, text| %>
-          <li>
-            <label class='radio'>
-              <input type='radio' name='vote' value='<%= id %>' id='vote_<%= id %>' />
-              <%= text %>
-            </label>
-          </li>
-        <% end %>
-      </ul>
-      <button type='submit' class='btn btn-primary'>Cast this vote!</button>
-    </form>
+  <body>
+    <div class="container">
+      <p>What's for dinner?</p>
+
+      <form action="cast" method="post">
+        <div class="mb-3">
+          <% Choices.each do |id, text| %>
+            <div class="form-check">
+              <input type="radio" name="vote" value="<%= id %>" class="form-check-input" id="vote_<%= id %>" />
+              <label class="form-check-label" for="vote_<%= id %>">
+                <%= text %>
+              </label>
+            </div>
+          <% end %>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Cast this vote!</button>
+      </form>
+    </div>
   </body>
 </html>
 {% endhighlight %}
@@ -122,9 +127,10 @@ Adjust the `index.erb` file in the `views`
 directory and add the `<h1>…</h1>` line:
 
 {% highlight erb %}
-  <body class='container'>
-    <h1><%= @title %></h1>
-    <p>What's for dinner?</p>
+  <body>
+    <div class="container">
+      <h1><%= @title %></h1>
+      <p>What's for dinner?</p>
 {% endhighlight %}
 
 Change the `get` action:
@@ -159,17 +165,20 @@ Create a new file in the `views` directory, `cast.erb`,
 and put there some HTML with embedded Ruby code:
 
 {% highlight erb %}
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset='UTF-8' />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Suffragist</title>
-    <link href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css' rel='stylesheet' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
-  <body class='container'>
-    <h1><%= @title %></h1>
-    <p>You cast: <%= Choices[@vote] %></p>
-    <p><a href='/results'>See the results!</a></p>
+  <body>
+    <div class="container">
+      <h1><%= @title %></h1>
+      <p>You cast: <%= Choices[@vote] %></p>
+      <p><a href="/results">See the results!</a></p>
+    </div>
   </body>
 </html>
 {% endhighlight %}
@@ -187,16 +196,20 @@ Create a `layout.erb` file in the `views`
 directory. Put the following in there:
 
 {% highlight erb %}
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset='UTF-8' />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Suffragist</title>
-    <link href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css' rel='stylesheet' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
-  <body class='container'>
-    <h1><%= @title %></h1>
-    <%= yield %>
+  <body>
+    <div class="container">
+      <h1><%= @title %></h1>
+      <%= yield %>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
 {% endhighlight %}
@@ -225,7 +238,7 @@ end
 Create a new file in the `views` directory, called `results.erb`.
 
 {% highlight erb %}
-<table class='table table-hover table-striped'>
+<table class="table table-hover table-striped">
   <% Choices.each do |id, text| %>
     <tr>
       <th><%= text %></th>
@@ -234,7 +247,7 @@ Create a new file in the `views` directory, called `results.erb`.
     </tr>
   <% end %>
 </table>
-<p><a href='/'>Cast more votes!</a></p>
+<p><a href="/">Cast more votes!</a></p>
 {% endhighlight %}
 
 Run `ruby suffragist.rb`, check
