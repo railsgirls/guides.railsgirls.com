@@ -320,4 +320,5 @@ Try to change things in the app in any way you see fit:
 * Add some additional logic to the views.
 * Redirect to the results outright.
 * Add other votings; how would the YAML file need to change?
+* Sort the results by the number of votes.
 * Try to style the file in different ways.
