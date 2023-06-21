@@ -260,11 +260,21 @@ require 'yaml/store'
 Add some more code into `suffragist.rb` – replace
 `post '/cast'` and `get '/results'` with the following:
 
+<!--
+Do not change the .yaml extension to .yml.
+
+rerun, the most popular solution for restarting Sinatra if source files change, watches for .yml
+files by default.
+
+As a result, if after an attendee starts using rerun, rerun will restart the server any time a vote
+is cast, leading to unexpected behavior from the app.
+-->
+
 {% highlight ruby %}
 post '/cast' do
   @title = 'Thanks for casting your vote!'
   @vote  = params['vote']
-  @store = YAML::Store.new 'votes.yml'
+  @store = YAML::Store.new 'votes.yaml'
   @store.transaction do
     @store['votes'] ||= {}
     @store['votes'][@vote] ||= 0
@@ -275,7 +285,7 @@ end
 
 get '/results' do
   @title = 'Results so far:'
-  @store = YAML::Store.new 'votes.yml'
+  @store = YAML::Store.new 'votes.yaml'
   @votes = @store.transaction { @store['votes'] }
   erb :results
 end
@@ -288,7 +298,7 @@ Explain what YAML is.
 
 ### See how the YAML file changes when votes are cast
 
-Let’s open `votes.yml`. And vote. And check again.
+Let’s open `votes.yaml`. And vote. And check again.
 
 {% coach %}
 There will be situations when one or more students will
