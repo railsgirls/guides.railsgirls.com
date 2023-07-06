@@ -56,8 +56,7 @@ ul li {
   line-height: 1.5;
 }
 
-a,
-a:focus {
+a {
   color: var(--highlight);
 }
 
@@ -91,7 +90,7 @@ nav {
   margin: 0 0 0 250px;
 }
 
-nav a {
+nav a, nav a:focus {
   color: #fff;
   text-decoration: none;
   font-weight: 300;
