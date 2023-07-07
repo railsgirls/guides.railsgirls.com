@@ -104,6 +104,11 @@ nav a:after {
   content: url(../images/star.png);
 }
 
+nav a:focus {
+  outline-offset: 10px;
+  outline: 2px dashed white;
+}
+
 nav a:last-child:after {
   content: none;
 }
