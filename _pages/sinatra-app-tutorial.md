@@ -22,7 +22,9 @@ Explain shortly what [Sinatra](https://sinatrarb.com) is.
 
 Remember how we needed to install Ruby on Rails? Similarly we need to install Sinatra:
 
-`gem install sinatra webrick`
+{% highlight sh %}
+gem install sinatra webrick
+{% endhighlight%}
 
 ### Create your first Sinatra app
 
@@ -36,27 +38,19 @@ get '/' do
 end
 {% endhighlight %}
 
-
 You can actually call your Ruby file whatever you'd like. `vote.rb` for instance would totally work as well, when used consistently. But [suffragist](https://www.vocabulary.com/dictionary/suffragist) actually references to a super important event in the women's rights movement, so let's just go with that for now!
-
 
 ### Run your app
 
-Go to the directory where you put your app and run `ruby suffragist.rb`.
-Now you can visit <a href="localhost:4567" target="_blank">localhost:4567</a>. You should
-see a ‘Hello, voter!’ page, which means that the generation of your new
-app worked correctly. Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to shut down the server. If <kbd>Ctrl</kbd>+<kbd>C</kbd> does not work for you it means you are probably Windows user and <kbd>Ctrl</kbd>+<kbd>Z</kbd>/ <kbd>Ctrl</kbd>+<kbd>Pause</kbd> / <kbd>Ctrl</kbd>+<kbd>Break</kbd> will fix the issue)
+Go to the directory where you put your app and run `ruby suffragist.rb`. Now you can visit <a href="localhost:4567" target="_blank">localhost:4567</a>. You should see a 'Hello, voter!' page, which means that the generation of your new app worked correctly. Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to shut down the server. If <kbd>Ctrl</kbd>+<kbd>C</kbd> does not work for you it means you are probably Windows user and <kbd>Ctrl</kbd>+<kbd>Z</kbd> / <kbd>Ctrl</kbd>+<kbd>Pause</kbd> / <kbd>Ctrl</kbd>+<kbd>Break</kbd> will fix the issue.
 
 {% coach %}
 Explain POST and GET methods, and how to communicate with the browser.
 {% endcoach %}
 
-
-
 ### Add the index view
 
-To keep everything in order let’s make
-a directory for our views (and name it `views`).
+To keep everything in order let's make a directory for our views (and name it `views`).
 
 Put this code into an `index.erb` file in the `views` directory:
 
@@ -111,20 +105,15 @@ get '/' do
 end
 {% endhighlight %}
 
-Run `ruby suffragist.rb`, check your
-results and shut down the server with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
+Run `ruby suffragist.rb`, check your results and shut down the server with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
 {% coach %}
-Talk a little about HTML and erb. Explain
-templates. Explain what global constants are.
+Talk a little about HTML and erb. Explain templates. Explain what global constants are.
 {% endcoach %}
-
-
 
 ### Templates
 
-Adjust the `index.erb` file in the `views`
-directory and add the `<h1>…</h1>` line:
+Adjust the `index.erb` file in the `views` directory and add the `<h1>…</h1>` line:
 
 {% highlight erb %}
   <body>
@@ -143,11 +132,8 @@ end
 {% endhighlight %}
 
 {% coach %}
-Explain what instance variables are and
-how Sinatra makes them visible in the views.
+Explain what instance variables are and how Sinatra makes them visible in the views.
 {% endcoach %}
-
-
 
 ### Add the ability to POST results
 
@@ -161,8 +147,7 @@ post '/cast' do
 end
 {% endhighlight %}
 
-Create a new file in the `views` directory, `cast.erb`,
-and put there some HTML with embedded Ruby code:
+Create a new file in the `views` directory, `cast.erb`, and put there some HTML with embedded Ruby code:
 
 {% highlight erb %}
 <!doctype html>
@@ -184,16 +169,12 @@ and put there some HTML with embedded Ruby code:
 {% endhighlight %}
 
 {% coach %}
-Explain how POST works. How to catch what
-was sent in the form? Where do `params` come from?
+Explain how POST works. How to catch what was sent in the form? Where do `params` come from?
 {% endcoach %}
-
-
 
 ### Factor out a common layout
 
-Create a `layout.erb` file in the `views`
-directory. Put the following in there:
+Create a `layout.erb` file in the `views` directory. Put the following in there:
 
 {% highlight erb %}
 <!doctype html>
@@ -214,15 +195,11 @@ directory. Put the following in there:
 </html>
 {% endhighlight %}
 
-Remove the above part from the other two templates
-(`index.erb` and `cast.erb` in the `views` directory).
+Remove the above part from the other two templates (`index.erb` and `cast.erb` in the `views` directory).
 
 {% coach %}
-Talk about the structure of HTML documents and how factoring
-out common code work in general. Explain what `yield` does.
+Talk about the structure of HTML documents and how factoring out common code work in general. Explain what `yield` does.
 {% endcoach %}
-
-
 
 ### Add the results route and the results view
 
@@ -250,19 +227,15 @@ Create a new file in the `views` directory, called `results.erb`.
 <p><a href="/">Cast more votes!</a></p>
 {% endhighlight %}
 
-Run `ruby suffragist.rb`, check
-your results and shut down the server with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
+Run `ruby suffragist.rb`, check your results and shut down the server with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
 {% coach %}
-Explain HTML tables and how the
-missing values from the hash default to zero.
+Explain HTML tables and how the missing values from the hash default to zero.
 {% endcoach %}
-
-
 
 ### Persist the results using YAML::Store
 
-Time for something new! Let’s store our choices.
+Time for something new! Let's store our choices.
 
 Add the following to the top of `suffragist.rb`:
 
@@ -270,17 +243,14 @@ Add the following to the top of `suffragist.rb`:
 require 'yaml/store'
 {% endhighlight %}
 
-Add some more code into `suffragist.rb` – replace
-`post '/cast'` and `get '/results'` with the following:
+Add some more code into `suffragist.rb` – replace `post '/cast'` and `get '/results'` with the following:
 
 <!--
 Do not change the .yaml extension to .yml.
 
-rerun, the most popular solution for restarting Sinatra if source files change, watches for .yml
-files by default.
+rerun, the most popular solution for restarting Sinatra if source files change, watches for .yml files by default.
 
-As a result, if after an attendee starts using rerun, rerun will restart the server any time a vote
-is cast, leading to unexpected behavior from the app.
+As a result, if after an attendee starts using rerun, rerun will restart the server any time a vote is cast, leading to unexpected behavior from the app.
 -->
 
 {% highlight ruby %}
@@ -308,23 +278,17 @@ end
 Explain what YAML is.
 {% endcoach %}
 
-
 ### See how the YAML file changes when votes are cast
 
-Let’s open `votes.yaml`. And vote. And check again.
+Let's open `votes.yaml`. And vote. And check again.
 
 {% coach %}
-There will be situations when one or more students will
-forget to shut down the server before running it again. It’s a good
-opportunity to search the Internet for a solution. They don’t
-have to know everything about killing processes to find a solution.
+There will be situations when one or more students will forget to shut down the server before running it again. It's a good opportunity to search the Internet for a solution. They don't have to know everything about killing processes to find a solution.
 {% endcoach %}
 
 {% coach %}
 In the end explain shortly the differences between Sinatra and Rails.
 {% endcoach %}
-
-
 
 ## Play with the app
 
