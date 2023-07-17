@@ -40,7 +40,7 @@ You can actually call your Ruby file whatever you'd like. `vote.rb` for instance
 
 ### Run your app
 
-Go to the directory where you put your app and run `ruby suffragist.rb`. Now you can visit <a href="localhost:4567" target="_blank">localhost:4567</a>. You should see a ‘Hello, voter!’ page, which means that the generation of your new app worked correctly. Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to shut down the server. If <kbd>Ctrl</kbd>+<kbd>C</kbd> does not work for you it means you are probably Windows user and <kbd>Ctrl</kbd>+<kbd>Z</kbd> / <kbd>Ctrl</kbd>+<kbd>Pause</kbd> / <kbd>Ctrl</kbd>+<kbd>Break</kbd> will fix the issue)
+Go to the directory where you put your app and run `ruby suffragist.rb`. Now you can visit <a href="localhost:4567" target="_blank">localhost:4567</a>. You should see a 'Hello, voter!' page, which means that the generation of your new app worked correctly. Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to shut down the server. If <kbd>Ctrl</kbd>+<kbd>C</kbd> does not work for you it means you are probably Windows user and <kbd>Ctrl</kbd>+<kbd>Z</kbd> / <kbd>Ctrl</kbd>+<kbd>Pause</kbd> / <kbd>Ctrl</kbd>+<kbd>Break</kbd> will fix the issue)
 
 {% coach %}
 Explain POST and GET methods, and how to communicate with the browser.
@@ -48,7 +48,7 @@ Explain POST and GET methods, and how to communicate with the browser.
 
 ### Add the index view
 
-To keep everything in order let’s make a directory for our views (and name it `views`).
+To keep everything in order let's make a directory for our views (and name it `views`).
 
 Put this code into an `index.erb` file in the `views` directory:
 
@@ -233,7 +233,7 @@ Explain HTML tables and how the missing values from the hash default to zero.
 
 ### Persist the results using YAML::Store
 
-Time for something new! Let’s store our choices.
+Time for something new! Let's store our choices.
 
 Add the following to the top of `suffragist.rb`:
 
@@ -278,10 +278,10 @@ Explain what YAML is.
 
 ### See how the YAML file changes when votes are cast
 
-Let’s open `votes.yaml`. And vote. And check again.
+Let's open `votes.yaml`. And vote. And check again.
 
 {% coach %}
-There will be situations when one or more students will forget to shut down the server before running it again. It’s a good opportunity to search the Internet for a solution. They don’t have to know everything about killing processes to find a solution.
+There will be situations when one or more students will forget to shut down the server before running it again. It's a good opportunity to search the Internet for a solution. They don't have to know everything about killing processes to find a solution.
 {% endcoach %}
 
 {% coach %}
