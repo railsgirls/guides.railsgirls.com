@@ -40,7 +40,7 @@ You can actually call your Ruby file whatever you'd like. `vote.rb` for instance
 
 ### Run your app
 
-Go to the directory where you put your app and run `ruby suffragist.rb`. Now you can visit <a href="localhost:4567" target="_blank">localhost:4567</a>. You should see a 'Hello, voter!' page, which means that the generation of your new app worked correctly. Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to shut down the server. If <kbd>Ctrl</kbd>+<kbd>C</kbd> does not work for you it means you are probably Windows user and <kbd>Ctrl</kbd>+<kbd>Z</kbd> / <kbd>Ctrl</kbd>+<kbd>Pause</kbd> / <kbd>Ctrl</kbd>+<kbd>Break</kbd> will fix the issue)
+Go to the directory where you put your app and run `ruby suffragist.rb`. Now you can visit <a href="localhost:4567" target="_blank">localhost:4567</a>. You should see a 'Hello, voter!' page, which means that the generation of your new app worked correctly. Hit <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal to shut down the server. If <kbd>Ctrl</kbd>+<kbd>C</kbd> does not work for you it means you are probably Windows user and <kbd>Ctrl</kbd>+<kbd>Z</kbd> / <kbd>Ctrl</kbd>+<kbd>Pause</kbd> / <kbd>Ctrl</kbd>+<kbd>Break</kbd> will fix the issue.
 
 {% coach %}
 Explain POST and GET methods, and how to communicate with the browser.
