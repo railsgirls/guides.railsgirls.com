@@ -22,7 +22,9 @@ Explain shortly what [Sinatra](https://sinatrarb.com) is.
 
 Remember how we needed to install Ruby on Rails? Similarly we need to install Sinatra:
 
-`gem install sinatra webrick`
+{% highlight sh %}
+gem install sinatra webrick
+{% endhighlight%}
 
 ### Create your first Sinatra app
 
