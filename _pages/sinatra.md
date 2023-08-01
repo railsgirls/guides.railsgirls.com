@@ -216,7 +216,7 @@ If you're still stuck, [check here](https://tjmcewan.github.io/coffeecalc/snippe
 
 If you're storing your params correctly, you should be able to refresh the browser and see that a new hash gets added to the `$coffees` array each time.
 
-## *6.* Tidy Up
+## *7.* Tidy Up
 
 That big chunk of HTML in our `get` code is making it a bit hard to see what our app does. Let's move it to its own method.
 
@@ -241,7 +241,7 @@ This will also make it easier to re-use the form, should we ever need to.
 
 **Hint:** [Check here](https://tjmcewan.github.io/coffeecalc/snippets/template_method.rb.txt) if something went awry.
 
-## *7.* Moving Beyond GET
+## *8.* Moving Beyond GET
 
 As you saw in the store coffees section, if you refresh your browser, your app adds the information into the `$coffees` global variable repeatedly. This is because we're storing the params from the URL each time our `get` code is requested.
 
@@ -265,7 +265,7 @@ end
 
 This is Sinatra's way of telling you that the route you requested doesn't exist. You may also know this as HTTP error number 404: *page not found*.
 
-## *8.* Add Post
+## *9.* Add Post
 
 Let's *add* our `post` code into Sinatra (don't remove the get one!):
 
@@ -285,7 +285,7 @@ Remember GET requests are asking to fetch a resource, whereas POST requests are 
 
 However, if you refresh a page on a POST request, this means you are resending the POST request, and could be creating a new resource each time you refresh. That's why the browser gives you a warning before allowing you to do it.
 
-## *9.* Add a Redirect
+## *10.* Add a Redirect
 
 In order to get around this form-resubmission problem, lets tell the browser to load a different page as soon as it receives the response to our `POST`.  We do this using a special HTTP response known as a "redirect".
 
