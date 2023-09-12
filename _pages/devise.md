@@ -7,19 +7,14 @@ permalink: devise
 
 # Adding Authentication with Devise
 
-*Created by Piotr Steininger, [@polishprince](https://twitter.com/polishprince). Updated by Ernesto Jimenez, [@ernesto_jimenez](https://twitter.com/ernesto_jimenez)*
+*Created by Piotr Steininger, [@polishprince](https://twitter.com/polishprince). Updated by Ernesto Jimenez, [@ernesto_jimenez](https://twitter.com/ernesto_jimenez)*, and [Hasan Diwan](https://units.d8u.us/twitter?src`=railsgirlsGuide)
 
 **This guide assumes that you have already built a Rails Girls app by** [**following the app development guide**](/app).
 
 ## *1.* Add devise gem
 
-Open up your `Gemfile` and add this line
-
-{% highlight ruby %}
-gem "devise"
-{% endhighlight %}
-and run
 {% highlight sh %}
+bundle add devise
 bundle install
 {% endhighlight %}
 to install the gem. **Also remember to restart the Rails server**.
