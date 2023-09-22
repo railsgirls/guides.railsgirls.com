@@ -67,9 +67,9 @@ You might find some useful hints in this jekyll issue if it's not working as exp
 
 To contribute a guide, view the instructions at https://guides.railsgirls.com/contributing
 
-## Twitter
+## X
 
-For updates and more, follow [@railsgirls](https://twitter.com/railsgirls)
+For updates and more, follow [@railsgirls](https://twitter.com/railsgirls) on X
 
 ## Website & Blog
 

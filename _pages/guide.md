@@ -145,7 +145,7 @@ Invite everyone, also the local developers, boys, those who weren't accepted, to
 
 Every Rails Girls workshop will get a custom website at railsgirls.com/city where the information is collected and then stored. For past cities, see <https://railsgirls.com/events.html>
 
-You can also set up your own Facebook and Twitter page (remember to add links to your workshop's page!) or whatever service is popular in your community. Promoting the event through social media can go a long way these days, but make sure you have somebody to take care of the chosen channels. Some tips:
+You can also set up your own Facebook and X page (remember to add links to your workshop's page!) or whatever service is popular in your community. Promoting the event through social media can go a long way these days, but make sure you have somebody to take care of the chosen channels. Some tips:
 
 * Keep the tone of posts friendly, positive and welcoming. Be direct in inviting fans/followers to share the event with their friends.
 * Photos are especially powerful messengers. Create your own graphics (*some ideas: "I'm a Rails Girl" Facebook cover for the event, word cloud with first names of women who signed up, an infographic of applications*) or promote photos from other workshops if this is your event. Follow other Rails Girls pages and account to get ideas for content and pass it along to your community.
@@ -175,9 +175,9 @@ E-mail contact(a)railsgirls.com and ask to be included in the repo. Look for rea
 
 #### How to find participants?
 
-* Use social media: Facebook, Twitter & local networks such as Weibo. Friends, girlfriends, co-workers!
+* Use social media: Facebook, X & local networks such as Weibo. Friends, girlfriends, co-workers!
 
-* Local [Girls in Tech](https://twitter.com/#!/gitweet), [DevChix](http://www.devchix.com/), [Geek Girl](https://www.geekgirlmeetup.com/) chapters etc. Check out also [Meetup.com](https://www.meetup.com/). Twitter lists like @anitaborg's [Tech Women Programs](https://twitter.com/#!/anitaborg_org/tech-women-programs) and similar.
+* Local [Girls in Tech](https://twitter.com/#!/gitweet), [DevChix](http://www.devchix.com/), [Geek Girl](https://www.geekgirlmeetup.com/) chapters etc. Check out also [Meetup.com](https://www.meetup.com/). X lists like @anitaborg's [Tech Women Programs](https://twitter.com/#!/anitaborg_org/tech-women-programs) and similar.
 
 * Think outside the box: universities, book clubs, music stores, design agencies, [Etsy](https://www.etsy.com). We want women who are interested in technology, but they can still have very varied backgrounds.
 
@@ -300,7 +300,7 @@ In addition, we encourage coaches to come up with additional exercises for the g
 
 #### How to find coaches?
 
-Ask around, ask sponsors (tech companies), ask anyone to help you out. Once you do get some coaches on board, they can help you out with their own contacts. Influential bloggers or Twitter users in your local dev community can help you out by broadcasting a call for coaches. *Hint: You can also thank coaches for their help by providing a spot at the workshop for their girlfriends ;)*
+Ask around, ask sponsors (tech companies), ask anyone to help you out. Once you do get some coaches on board, they can help you out with their own contacts. Influential bloggers or X users in your local dev community can help you out by broadcasting a call for coaches. *Hint: You can also thank coaches for their help by providing a spot at the workshop for their girlfriends ;)*
 
 ##### Sample letter for potential coaches
 
