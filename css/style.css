@@ -454,7 +454,7 @@ kbd {
 .navbar .btn-navbar[disabled] {
   color: #ffffff;
   background-color: inherit;
-  *background-color: inherit;
+  background-color: inherit;
 }
 
 .navbar .btn-navbar .icon-bar {
