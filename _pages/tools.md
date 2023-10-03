@@ -19,11 +19,11 @@ We have detected you're using: <strong class="js-detected-os-label">Error: JavaS
 
 <div class="os-specific big"></div>
 
-This step is important, because the commands you need to run on a Windows computer are different to Mac or Linux. The instructions for Windows will not work on Mac and vice versa. If you're using a cloud service to build your app (like Replit), you'll need to run the Linux commands even if you are on a Windows computer.
+This step is important, because the commands you need to run on a Windows computer are different from Mac or Linux. The instructions for Windows will not work on Mac and vice versa. If you're using a cloud service to build your app (like Replit), you'll need to run the Linux commands even if you are on a Windows computer.
 
 ## <i class="icon-text-editor"></i> Text Editor {#text-editor}
 
-To create your app you'll need to write code. This can be done with a Text Editor made for writing code. Listed below are examples of text editors your can use for writing code and editing files. We recommend <strong>Visual Studio Code</strong> as it's a very complete package that works out of the box.
+To create your app you'll need to write code. This can be done with a Text Editor made for writing code. Listed below are examples of text editors you can use for writing code and editing files. We recommend <strong>Visual Studio Code</strong> as it's a very complete package that works out of the box.
 
 Choose an editor, go to the website linked below and install it following the instructions on the website.
 
@@ -50,7 +50,7 @@ Open the Terminal like so for your Operating System:
       <li>
         Open Spotlight:
         <ul>
-          <li>Click the Magnifing glass icon in the menu bar at the uppermost top right of your screen, or;</li>
+          <li>Click the Magnifying glass icon in the menu bar at the uppermost top right of your screen, or;</li>
           <li>Press <kbd>command + space bar</kbd> (The command key can be recognized by the <kbd>⌘</kbd> symbol).</li>
         </ul>
       </li>
