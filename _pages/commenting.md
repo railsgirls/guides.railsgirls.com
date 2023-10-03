@@ -47,7 +47,7 @@ rails db:migrate
 
 ## Add relations to models
 
-Your app needs to knows about the relation between the two objects, ideas and comments, so you can fetch only the comments that belong to a specific idea. One idea can have many comments, but a comment can only belong to one idea.
+Your app needs to know about the relation between the two objects, ideas and comments, so you can fetch only the comments that belong to a specific idea. One idea can have many comments, but a comment can only belong to one idea.
 
 Open `app/models/idea.rb` and below the line:
 
