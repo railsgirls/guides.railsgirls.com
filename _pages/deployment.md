@@ -9,7 +9,7 @@ permalink: deployment
 
 {% include main-guide-intro.html %}
 
-Now that you have you very first app made, let's share it with others by putting it online!
+Now that you have your very first app made, let's share it with others by putting it online!
 
 Once you're done with one of the following guides, you'll have a URL that people can enter in their browser and see what you made today. During the workshop you can continue working on your app (by following these guides), and deploying new and improved versions of your app.
 
