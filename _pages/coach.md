@@ -29,7 +29,7 @@ You mean besides incredibly good karma? Here are some very likely outcomes:
 - You'll help break down stereotypes about women not being interested in technology and programming and thus help your sisters, female friends and relatives, (future) daughters have more choices in their future. And you can add all that on your CV!
 
 ### Choice of technology
-Rails Girls workshops give the first experience in software craftsmanship through introducing the participants to Ruby, Rails and HTML/CSS. The curriculum has been built around these technologies. If the workshop is too difficult or deep, it will not encourage the beginners to continue as it's perceived too hard. Rails Girls workshops are not about learning programming fast and efficiently. It's about the open environment, excitement and getting to know the tools they can use, and having a great day learning about programming, the community, web apps and more. We would love to see other additions to e.g.follow up meetups. If you'd like to host a beginner-friendly, welcome event for women in other technologies or frameworks, we strongly encourage you to do so and use the existing materials. All Rails Girls content is licensed under creative commons.
+Rails Girls workshops give the first experience in software craftsmanship through introducing the participants to Ruby, Rails and HTML/CSS. The curriculum has been built around these technologies. If the workshop is too difficult or deep, it will not encourage the beginners to continue as it's perceived too hard. Rails Girls workshops are not about learning programming fast and efficiently. It's about the open environment, excitement and getting to know the tools they can use, and having a great day learning about programming, the community, web apps and more. We would love to see other additions to e.g. follow up meetups. If you'd like to host a beginner-friendly, welcome event for women in other technologies or frameworks, we strongly encourage you to do so and use the existing materials. All Rails Girls content is licensed under creative commons.
 
 
 ### Time to complete app
@@ -42,7 +42,7 @@ Believe it or not, for most, it is really important. It makes the environment di
 
 
 ### Inclusivity
-Rails Girls is a inclusive, safe and welcoming experience to everyone. The workshops are primarily intended for beginner women and crafted for this specific user group, but we've always been open to including other skill-levels and genders. Rails Girls coaches are male and female. The end goal of Rails Girls is to enriched the entire Rails community by encouraging more diverse people to join it. If you want to make a different curriculum or group, all the material is online and you are welcome to use it under another name and brand.
+Rails Girls is an inclusive, safe and welcoming experience to everyone. The workshops are primarily intended for beginner women and crafted for this specific user group, but we've always been open to including other skill-levels and genders. Rails Girls coaches are male and female. The end goal of Rails Girls is to enrich the entire Rails community by encouraging more diverse people to join it. If you want to make a different curriculum or group, all the material is online and you are welcome to use it under another name and brand.
 
 
 
@@ -54,7 +54,7 @@ Usually there'll be at least somebody at the event who works with Rails on a reg
 
 ### What exactly will I be doing as a coach?
 
-The structure of workshop varies a bit from city to city, so your local organizer group will be able you to guide you through the details. Usually there's a pre-event meeting or dinner with coaches where you can ask all you questions.
+The structure of workshop varies a bit from city to city, so your local organizer group will be able to guide you through the details. Usually there's a pre-event meeting or dinner with coaches where you can ask all you questions.
 
 ### Answering questions
 Often coaches who are just one step ahead of attendees are the best at explaining :) Use real life metaphors and explain very high-level. Explaining too deep will cause a flood of information that is not necessary at the beginning.
@@ -85,7 +85,7 @@ Some other great first-hand tips from Rails Girls coaches:
 
 - [4 lessons learned from teaching at Rails Girls Berlin](https://pragtob.wordpress.com/2012/08/14/4-lessons-learned-from-teaching-at-rails-girls-berlin/)
 - [I infiltrated #railsgirlslj, here’s what it was like](https://swizec.com/blog/i-infiltrated-railsgirlsj-heres-what-it-was-like/swizec/5717)
-- [8 ways to enable workshop attendess to keep learning](https://pragtob.wordpress.com/2013/06/14/8-ways-to-enable-workshop-attendees-to-keep-learning/)
+- [8 ways to enable workshop attendees to keep learning](https://pragtob.wordpress.com/2013/06/14/8-ways-to-enable-workshop-attendees-to-keep-learning/)
 - [What I learned learning Rails / becoming a better teacher](https://floordrees.tumblr.com/post/58784746482/what-i-learned-learning-rails-becoming-a-better)
 - [Tips for coaching a programming study group](https://coaching.rubymonstas.org/)
 
