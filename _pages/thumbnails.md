@@ -29,7 +29,8 @@ brew install imagemagick
   <div class="nix">
     <p>If you are on Ubuntu, run the following command in the Terminal app:</p>
 {% highlight sh %}
-sudo apt-get install imagemagick
+sudo apt-get update
+sudo apt-get install -y imagemagick
 {% endhighlight %}
   </div>
   <div class="win">
