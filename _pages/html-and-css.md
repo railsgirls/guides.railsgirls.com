@@ -15,7 +15,7 @@ The app doesn't look very nice right now: it's the standard plain black text on 
 
 HTML (HyperText Markup Language) is used to structure your app. It tells the browser what is a heading, a list, a table, a link, etc. on the website. The scaffolding that was generated in the [previous guide](/app) is also made up of HTML, with some Ruby added to it to make it more dynamic.
 
-Open up the `app/views/ideas/index.html` file and you should see something like the example below. The parts of the file that start with a `<name>` tag opens an HTML tag, and the one with the forward slash symbol in it `</name>`, closes it. You can add all kinds of properties to it, like `style`, `id` and `class`.
+Open up the `app/views/ideas/index.html.erb` file and you should see something like the example below. The parts of the file that start with a `<name>` tag opens an HTML tag, and the one with the forward slash symbol in it `</name>`, closes it. You can add all kinds of properties to it, like `style`, `id` and `class`.
 
 {% highlight erb %}
 <h1>Ideas</h1>
