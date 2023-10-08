@@ -98,6 +98,8 @@ to this line and save it:
 <%= form.file_field :picture %>
 {% endhighlight %}
 
+Run `rails server`.
+
 In your browser open <http://localhost:3000/ideas/new>.  Your "New idea" form will now show a different element on the page for the "Picture" field. Instead of a text field a file chooser is visible, recognizable by either a "Browse..." or "Choose File" button.
 
 Fill in the form to create a new idea, but this time select a picture as well using this new element/button. Any random image you have on your laptop will do, it's just a test.
