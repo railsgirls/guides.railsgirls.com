@@ -12,6 +12,7 @@ GEM
     ffi (1.15.5)
     forwardable-extended (2.6.0)
     google-protobuf (3.22.2-arm64-darwin)
+    google-protobuf (3.22.2-x64-mingw-ucrt)
     google-protobuf (3.22.2-x86_64-darwin)
     google-protobuf (3.22.2-x86_64-linux)
     http_parser.rb (0.8.0)
@@ -59,6 +60,8 @@ GEM
     safe_yaml (1.0.5)
     sass-embedded (1.60.0-arm64-darwin)
       google-protobuf (~> 3.21)
+    sass-embedded (1.60.0-x64-mingw-ucrt)
+      google-protobuf (~> 3.21)
     sass-embedded (1.60.0-x86_64-darwin)
       google-protobuf (~> 3.21)
     sass-embedded (1.60.0-x86_64-linux-gnu)
@@ -72,6 +75,7 @@ PLATFORMS
   arm64-darwin-20
   arm64-darwin-21
   arm64-darwin-22
+  x64-mingw-ucrt
   x86_64-darwin-20
   x86_64-linux
 
