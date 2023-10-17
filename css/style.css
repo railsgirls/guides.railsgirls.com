@@ -75,10 +75,14 @@ table {
 }
 
 header {
-  min-height: 70px;
+  min-height: 60px;
   color: #fff;
-  padding-top: 50px;
+  padding-top: 20px;
   background: #d3360b;
+}
+
+header .container .visible-desktop {
+  margin-right: 4rem;
 }
 
 header #logo {
@@ -90,13 +94,14 @@ nav {
   margin: 0 0 0 250px;
 }
 
-nav a, nav a:focus {
+nav a,
+nav a:focus {
   color: #fff;
   text-decoration: none;
   font-weight: 300;
   font-size: 20px;
   letter-spacing: 1px;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 nav a:after {
@@ -132,6 +137,15 @@ footer a {
 }
 footer p:last-child {
   margin-bottom: 0;
+}
+
+.nav {
+  margin-bottom: 0;
+  padding: 20px auto;
+}
+
+.visible-desktop .span3 {
+  margin-left: 0;
 }
 
 .guides-list {
@@ -242,15 +256,15 @@ i.icon-browser {
   line-height: 50px;
 }
 i.icon-text-editor {
-  background-image: url('/images/icon-text-editor.png');
+  background-image: url("/images/icon-text-editor.png");
 }
 
 i.icon-prompt {
-  background-image: url('/images/icon-prompt.png');
+  background-image: url("/images/icon-prompt.png");
 }
 
 i.icon-browser {
-  background-image: url('/images/icon-browser.png');
+  background-image: url("/images/icon-browser.png");
 }
 
 .text-center {
@@ -308,13 +322,13 @@ i.icon-small-browser {
   float: left;
 }
 i.icon-small-text-editor {
-  background-image: url('/images/icon-small-text-editor.png');
+  background-image: url("/images/icon-small-text-editor.png");
 }
 i.icon-small-prompt {
-  background-image: url('/images/icon-small-prompt.png');
+  background-image: url("/images/icon-small-prompt.png");
 }
 i.icon-small-browser {
-  background-image: url('/images/icon-small-browser.png');
+  background-image: url("/images/icon-small-browser.png");
 }
 
 .os-specific .picker {
@@ -356,7 +370,7 @@ i.icon-small-browser {
   margin-bottom: 20px;
   padding: 2px 10px;
 
-  border: 2px solid #DDD;
+  border: 2px solid #ddd;
   border-radius: 10px;
 }
 .os-specific.big .picker-options a.active,
@@ -481,27 +495,27 @@ nav a:hover {
   background-color: transparent;
 }
 
-[class*=-notice] {
+[class*="-notice"] {
   margin-bottom: 20px;
   padding: 10px 15px;
   font-size: 120%;
   border-radius: 10px;
 }
-[class*=-notice] :last-child {
+[class*="-notice"] :last-child {
   margin-bottom: 0;
 }
 .guide-notice {
-  background-color: #FEF8EA;
+  background-color: #fef8ea;
 }
 .help-notice {
-  background-color: #FEF8EA;
+  background-color: #fef8ea;
 }
 .help-notice:before {
   content: "ℹ️";
   margin-right: 10px;
 }
 .coach-notice {
-  border: 2px solid #8102BB;
+  border: 2px solid #8102bb;
 }
 .coach-notice > div {
   cursor: help;
