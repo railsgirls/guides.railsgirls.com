@@ -12,12 +12,31 @@ permalink: design-html-css-chinese
     .navbar {
       min-height: 38px;
       background-color: #f55e55;
+      overflow: hidden;
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
     }
     ```
 
     刷新页面，查看样式有什么变化。 此处解释什么是css选择器，学员可以尝试修改header的颜色，字体等。 简单的颜色选取参考网站： <https://color.uisdc.com/>
 
     **教练：**解释`display`的属性，什么是内联元素，什么是块级元素
+
+  <script>const navbar = document.querySelector('#NavBar');
+let top = navbar.offsetTop;
+function stickynavbar() {
+  if (window.scrollY >= top) {    
+    navbar.classList.add('sticky');
+  } else {
+    navbar.classList.remove('sticky');    
+  }
+}</script>
+window.addEventListener('scroll', stickynavbar);
+
 
 + 在文件底部加入下面的代码：
 
