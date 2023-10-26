@@ -105,13 +105,13 @@ function topFunction() {
   });
 }
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll", function(){
   if(window.scrollY > 100){
     $(".go-to-top-arrow").addClass("active");
   }else{
     $(".go-to-top-arrow").removeClass("active");
   }
-})
+});
 
 
 
