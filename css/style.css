@@ -514,7 +514,7 @@ nav a:hover {
   display: block;
   font-weight: bold;
 }
-#myBtn {
+.go-to-top-arrow {
   display: block;
   position: fixed;
   bottom: 20px;
@@ -526,12 +526,24 @@ nav a:hover {
   background-color: red;
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 14px;
   border-radius: 30px;
+  opacity: 0;
+  transition: all .4s;
 }
-#myBtn:hover {
+.go-to-top-arrow:hover {
   background-color: #555;
 }
-.arrow-img{
-  height: 20px;
+.go-to-top-arrow.active{
+  opacity: 99;
+}
+.arrow{
+  display: inline-block;
+  border: solid black;
+  margin-bottom: -9px;
+  margin-top: 2px;
+  border-width: 0 7px 7px 0;
+  padding: 7px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
 }

@@ -97,13 +97,21 @@ $(document).ready(function() {
   }
 });
 
-
-let mybutton = document.getElementById("myBtn");
-
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
 }
+
+window.addEventListener("scroll", () => {
+  if(window.scrollY > 100){
+    $(".go-to-top-arrow").addClass("active");
+  }else{
+    $(".go-to-top-arrow").removeClass("active");
+  }
+})
 
 
 
