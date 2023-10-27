@@ -528,29 +528,27 @@ nav a:hover {
   font-weight: bold;
 }
 .go-to-top-arrow {
-  display: block;
+  display: none;
   position: fixed;
   bottom: 20px;
   right: 30px;
-  width: 45px;
-  height: 45px;
   z-index: 99;
   font-size: 18px;
   border: none;
   outline: none;
   background-color: red;
   color: white;
+  cursor: pointer;
   padding: 14px;
   border-radius: 30px;
-  opacity: 0;
   transition: all .4s;
 }
-.go-to-top-arrow.active{
-  opacity: 99;
-}
-.go-to-top-arrow.active:hover{
+.go-to-top-arrow:hover {
   background-color: #555;
-  cursor: pointer;
+}
+.go-to-top-arrow.active{
+  display: block;
+  opacity: 99;
 }
 .arrow{
   position: absolute;
