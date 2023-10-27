@@ -532,6 +532,8 @@ nav a:hover {
   position: fixed;
   bottom: 20px;
   right: 30px;
+  width: 45px;
+  height: 45px;
   z-index: 99;
   font-size: 18px;
   border: none;
@@ -551,12 +553,14 @@ nav a:hover {
   opacity: 99;
 }
 .arrow{
+  position: absolute;
+  top: 16px;
+  left: 13px;
+  width: 15px;
+  height: 15px;
   display: inline-block;
-  border: solid black;
-  margin-bottom: -9px;
-  margin-top: 2px;
-  border-width: 0 7px 7px 0;
-  padding: 7px;
+  border: solid #FFF;
+  border-width: 0 5px 5px 0;
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
 }
