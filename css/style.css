@@ -528,7 +528,8 @@ nav a:hover {
   font-weight: bold;
 }
 .go-to-top-arrow {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -549,7 +550,8 @@ nav a:hover {
   background-color: #555;
 }
 .go-to-top-arrow.active{
-  display: block;
+  visibility: visible;
+  opacity: 1;
   opacity: 99;
 }
 .arrow{
