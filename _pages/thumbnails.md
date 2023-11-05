@@ -96,7 +96,7 @@ The images uploaded from now on will be resized to a smaller size, but the ones 
 
 We haven't changed how the idea pictures are displayed, so it should still be showing the original larger image. Let's change the views to display the thumbnail instead.
 
-Open `app/views/ideas/index.html.erb` and change the line:
+Open `app/views/ideas/_idea.html.erb` and change the line:
 
 {% highlight erb %}
 <%= image_tag(@idea.picture_url, width: 150, height: 150, class: "img-thumbnail flex-shrink-0") if @idea.picture? %>
