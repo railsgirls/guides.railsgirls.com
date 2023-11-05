@@ -48,7 +48,7 @@ This adds the following files which are used for configuration:
 
 ## *2.* Create your first test!
 
-Rubyists often use the words 'test' and 'specification' interchangeably, that's why you'll store your tests in the 'specs' directory.
+Rubyists often use the words 'test' and 'specification' interchangeably, that's why you'll store your tests in the 'spec' directory.
 To do that, do the following steps:
 
 We will be creating a test for our `Idea` model. Create a `models` directory in your `spec` directory. Then create a new file called `idea_spec.rb` (`<model_name>_spec.rb`) in that directory.
