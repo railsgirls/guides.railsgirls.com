@@ -15,7 +15,7 @@ View the guides at https://guides.railsgirls.com or clone this repo and install 
 ### Installing jekyll
 
 ```
-$ cd railsgirls.github.io
+$ cd guides.railsgirls.com
 ```
 
 ```
