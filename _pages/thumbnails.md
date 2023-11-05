@@ -99,13 +99,13 @@ We haven't changed how the idea pictures are displayed, so it should still be sh
 Open `app/views/ideas/_idea.html.erb` and change the line:
 
 {% highlight erb %}
-<%= image_tag(@idea.picture_url, width: 150, height: 150, class: "img-thumbnail flex-shrink-0") if @idea.picture? %>
+<%= image_tag(idea.picture_url, width: 150, height: 150, class: "img-thumbnail flex-shrink-0") if idea.picture? %>
 {% endhighlight %}
 
 to this line:
 
 {% highlight erb %}
-<%= image_tag(@idea.picture_url(:thumb), width: 150, height: 150, class: "img-thumbnail flex-shrink-0") if @idea.picture? %>
+<%= image_tag(idea.picture_url(:thumb), width: 150, height: 150, class: "img-thumbnail flex-shrink-0") if idea.picture? %>
 {% endhighlight %}
 
 Take a look at the [list of ideas](http://localhost:3000/ideas) in the Browser to see if your ideas now have a thumbnail.
