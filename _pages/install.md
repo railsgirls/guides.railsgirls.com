@@ -28,53 +28,6 @@ Please follow the instructions for your Operating System from the list below. If
 
 ## Possible errors during installation
 
-### Gem::RemoteFetcher error
-
-If you get this error when running `rails new railsgirls` or `gem update rails`:
-
-{% highlight sh %}
-Gem::RemoteFetcher::FetchError: SSL_connect returned=1 errno=0 state=SSLv3 read
-server certificate B: certificate verify failed (https://rubygems.org/gems/i18n-0.6.11.gem)
-{% endhighlight %}
-
-This means you have an older version of Rubygems and will need to update it manually first verify your Rubygems version
-
-{% highlight sh %}
-gem -v
-{% endhighlight %}
-
-If it is lower than `2.6.5` you will need to manually update it:
-
-First download the [ruby-gems-update gem](https://rubygems.org/gems/rubygems-update-2.6.11.gem). Move the file to `c:\\rubygems-update-2.6.11.gem` then run:
-
-{% highlight sh %}
-gem install --local c:\\rubygems-update-2.6.11.gem
-{% endhighlight %}
-
-{% highlight sh %}
-update_rubygems --no-document
-{% endhighlight %}
-
-{% highlight sh %}
-gem uninstall rubygems-update -x
-{% endhighlight %}
-
-Check your version of rubygems
-
-{% highlight sh %}
-gem -v
-{% endhighlight %}
-
-Make sure it is equal or higher than `2.6.11`. Re-run the command that was failing previously.
-
-If you are still running into problems you can always find the latest version of rubygems online at [rubygems.org](https://rubygems.org/pages/download). If you click on **GEM** you will get the latest version.
-
-### During bundle install
-
-The `Gem::RemoteFetcher::FetchError: SSL_connect` can also occur during the `bundle install` stage when creating a new rails app.
-
-The error will make mention of [this RailsApps guide](https://railsapps.github.io/openssl-certificate-verify-failed.html). What is relevant for Windows users at this point is [this GitHub gist](https://gist.github.com/867550). The described manual way has proven to be successful to solve the `bundle install` error.
-
 ### 'x64_mingw' is not a valid platform Error
 
 Sometimes you get the following error when running `rails server`:
