@@ -47,7 +47,7 @@ In the field under Template, type in `rails`.
 - In the middle, you find the editor where you can modify your files.
 - Click the `Run` bottom at the top to start up the freshly installed Ruby on Rails app.
 
-![Run button highlighted to start the Rails app](images/replit/run.png)
+![Run button highlighted to start the Rails app](/images/replit/run.png)
 
 - You'll see a mini web browser to the top right showing you your fresh Rails app running the default homepage with the Rails logo.
 
