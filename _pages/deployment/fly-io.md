@@ -57,7 +57,7 @@ Open the `config/database.yml` file in your Text Editor. Change the following li
 {% highlight yaml %}
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: storage/production.sqlite3
 {% endhighlight %}
 
 to these lines:
