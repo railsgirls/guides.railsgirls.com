@@ -49,7 +49,7 @@ Change the following lines in the file:
 {% highlight yaml %}
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: storage/production.sqlite3
 {% endhighlight %}
 
 to these lines:
