@@ -400,7 +400,7 @@ Thank you for taking part in the Rails Girls event. We truly felt lucky to have 
 Three things we want to share:
 in
 Workshop Materials
-(Almost all) materials can be found in the guides section at <https://guides.railsgirls.com>. You can find presentations, materials and instructions from the workshop. If you took pictures or blogged about the event - let us know! We'll be publishing regularly on blog.railsgirls.com
+(Almost all) materials can be found in the guides section at <https://guides.railsgirls.com>. You can find presentations, materials and instructions from the workshop. If you took pictures or blogged about the event - let us know! We'll be publishing regularly on railsgirls.tumblr.com
 
 Make Rails Girls better - give us feedback!
 We want to hear from you! Give us feedback about the workshop or how we can make the event better – it’s really quick, and it’ll help us improve our workshop at railsgirls.com/feedback
@@ -428,7 +428,7 @@ Inviting real developers to coach is Rails Girls sessions not only gives the par
 * Mention at least two forthcoming developer events where the local coaches will be. Try to get the women to attend actual developer meetups.
 * Invite everyone to the Facebook Group where they can ask questions.
 * Invite the women together again within a month. You can host these meetups at the Rails Girls global meetup page <https://www.meetup.com/Rails-Girls/> - we’ll be happy to promote events. However, it doesn't matter under which brand you want to continue meeting - the important thing'
-* Write about your event for blog.railsgirls.com by [submitting a story](https://blog.railsgirls.com/submit)
+* Write about your event for railsgirls.tumblr.com by [submitting a story](https://railsgirls.tumblr.com/submit)
 
 
 
@@ -477,6 +477,5 @@ This is a small checklist for your event. Rails Girls can be thrown together in 
 * Send a thank you note to participants and ask for [feedback](https://railsgirls.com/feedback) (you can also create your own feedback form in your local language)
 * Send a thank you note to coaches
 * Send a thank you note for organizers
-* Add yourself to the [Rails Girls Map](http://rails-girls-map.herokuapp.com/)
 * Share the numbers of your event by filling out this short [Questionaire](https://railsgirls.wufoo.eu/forms/rails-girls-events-all-the-numbers/)
-* Write a blogpost to the global blog by [submitting your story](https://blog.railsgirls.com/submit) - or ask one of the participants or coaches to write one!
+* Write a blogpost to the global blog by [submitting your story](https://railsgirls.tumblr.com/submit) - or ask one of the participants or coaches to write one!

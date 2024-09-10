@@ -8,7 +8,7 @@ permalink: touristic-autism_git
 
 *Created by Myriam Leggieri, [@iammyr](https://twitter.com/iammyr)*
 *for [Rails Girls Galway](https://github.com/RailsGirlsGalway)*
-The basic guides that have been merged and adapted are the [Ruby on Rails Tutorial](https://www.railstutorial.org/book), the [basic RailsGirls app](/app/) and the tutorials for [creating thumbnails](/thumbnails), [authenticating users](/devise), [adding design](/design), [deploying to OpenShift](/openshift/) and [adding comments](/commenting).
+The basic guides that have been merged and adapted are the [Ruby on Rails Tutorial](https://www.railstutorial.org/book), the [basic RailsGirls app](/app) and the tutorials for [creating thumbnails](/thumbnails), [authenticating users](/devise), [adding design](/design), [deploying to OpenShift](/openshift) and [adding comments](/commenting).
 
 
 Navigate to the root directory of the first app and initialize a new repository:
@@ -89,4 +89,3 @@ The result is a page at GitHub (for instance, [here's mine](https://github.com/i
 Explain the branch-edit-commit-merge workflow on GitHub: modify the README file to be more descriptive.
 ([Slides by Myriam Leggieri @iammyr]())
 {% endcoach %}
-

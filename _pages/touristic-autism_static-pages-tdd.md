@@ -8,7 +8,7 @@ permalink: touristic-autism_static-pages-tdd
 
 *Created by Myriam Leggieri, [@iammyr](https://twitter.com/iammyr)*
 *for [Rails Girls Galway](https://github.com/RailsGirlsGalway)*
-The basic guides that have been merged and adapted are the [Ruby on Rails Tutorial](https://www.railstutorial.org/book), the [basic RailsGirls app](/app/) and the tutorials for [creating thumbnails](/thumbnails), [authenticating users](/devise/), [adding design](/design), [deploying to OpenShift](/openshift/), [adding comments](/commenting) and [Mark McDonnell's tutorial](https://code.tutsplus.com/tutorials/testing-your-ruby-code-with-guard-rspec-pry--cms-19974).
+The basic guides that have been merged and adapted are the [Ruby on Rails Tutorial](https://www.railstutorial.org/book), the [basic RailsGirls app](/app) and the tutorials for [creating thumbnails](/thumbnails), [authenticating users](/devise), [adding design](/design), [deploying to OpenShift](/openshift), [adding comments](/commenting) and [Mark McDonnell's tutorial](https://code.tutsplus.com/tutorials/testing-your-ruby-code-with-guard-rspec-pry--cms-19974).
 
 Rails includes a default Test::Unit framework used to test your code. We will use a more advanced testing framework called RSpec to write a thorough test suite. We need to be able to write tests that are fast and give us instant feedback on problems with our code. 
 
@@ -269,4 +269,3 @@ end
 {% endhighlight %}
 
 **Note:** if you have any issues regarding Travis-CI then you can join the "#travis" channel on IRC freenode to get help answering any questions you may have.
-
