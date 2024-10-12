@@ -155,32 +155,71 @@ This will generate a couple of controllers, including omniauth_callbacks_control
 - In the ```app/controllers/users/omniauth_callbacks_controller.rb```
 - Add the following code: 
 <code> 
-      # frozen_string_literal: true
-    class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
+        # frozen_string_literal: true
 
-      def google_oauth2
+    class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
+    def google_oauth2
         user = User.from_omniauth(auth)
 
         if user.present?
-          sign_out_all_scopes 
-          flash[:success] = t 'devise.omniauth_callbacks.success', kind: 'Google'
-          sign_in_and_redirect user, event: :authentication
+        sign_out_all_scopes 
+        flash[:success] = t 'devise.omniauth_callbacks.success', kind: 'Google'
+        sign_in_and_redirect user, event: :authentication
         else
-          flash[:alert] = 
+        flash[:alert] = 
             t 'devise.omniauth_callbacks.failure', kind: 'Google', reason: "#{auth.email} is not authorized"
-          redirect_to new_user_session_path
+        redirect_to new_user_session_path
         end
-      end
+    end
 
-      private
 
-      def auth
+    private
+
+    def auth
         @auth ||= request.env['omniauth.auth'] 
-      end
+    end
     end
 </code>
 
 ### Update the Sessions Controller
+- In the ```sessions_controller.rb```n add the following code:
+    <code> 
+        def after_sign_out_path_for(_resource_or_scope)
+        new_user_session_path
+        end
+        def after_sign_in_path_for(resource_or_scope)
+            stored_location_for(resource_or_scope) || root_path  
+        end
+    </code> 
+
+### Update the Regstrations controller 
+- In the ```registrations_controller.rb``` add the following code: 
+
+<code>  def update_resource(resource, params)
+    if resource.provider == 'google_oauth2'
+      params.delete('current_password')
+      resource.password = params['password']
+
+      resource.update_without_password(params)
+    else
+      resource.update_with_password(params)
+    end
+  end
+</code>
+
+### Configure User model for Omniauth support
+- In user.rb file, add the following code: 
+<code> 
+  def self.from_omniauth(auth)
+    where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
+      user.email = auth.info.email
+      user.password = Devise.friendly_token[0, 20]
+      user.full_name = auth.info.full_name # assuming user model has name
+      user.avatar_url = auth.info.image # assuming user model has an image
+    end
+  end
+</code>
+
 
 ### Set Up Routes
 - Add OmniAuth routes for callbacks. In ```config/routes``` add the following code: 
@@ -197,18 +236,21 @@ This will generate a couple of controllers, including omniauth_callbacks_control
   </code>
 
 
-
-
-
-
-
 ### Set up OAuth credentials
-To do this you need to register your app pn the Google Developers Console and get the OAUth credentials: 
+To do this you need to register your app on the Google Developers Console and get the OAUth credentials: 
 - Go to [Google Developers Console](https://console.developers.google.com).
 - Create a new project.
 - In the “APIs & Services” section, enable the Google+ API or Google People API.
-- Go to Credentials, and create OAuth 2.0 Client IDs.
-- Set the callback URL to your Rails app (e.g., ```http://localhost:3000/users/auth/google_oauth2/callback```).
+- Click on 'OAuth consent screen' to configure your application.
+- Select External as the user type, since the project will likely start in development mode which is the testing phase You can change it later on for production.
+- Fill in the app registration form, including the name, logo and developer's contact information. You can skip out on the domain info, unless you have an authorised one. 
+- Skip the questions about scopes too
+- Add a test user and then save and continue.
+- Head back to the dashboard and then go to Credentials, and create OAuthClient IDs.
+- Select the application type, in this case a web application and fill in the app name.
+- Add an authorised redirect uri, ```http://localhost:3000/users/auth/google_oauth2/callback```.  
+- Click create and then copy your client ID and secret.
+
 
 ### Store your credentials in ENV or Rails Credentials
 - You can store your credentials in an environment variable or in Rails Credentials.
@@ -221,16 +263,12 @@ google_oauth_client_secret: your_client_secret</code>
 
 
 ### Initialise OmniAuth
-
 - Configure Devise to use OmniAuth strategy in ```config/initializers/devise.rb``` 
  <code>
  config.omniauth :google_oauth2, 
                   Rails.application.credentials.dig(:google_oauth_client_id),
                   Rails.application.credentials.dig(:google_oauth_client_secret)
   </code>
-- Replace the secrets with their actual credentials.
-
-
 
 ### Update Views
 Now, let's update views to include links to be authenticated by google, and for easy page navigation. 
