@@ -325,3 +325,18 @@ Now, let's update views to include links to be authenticated by google, and for 
   </div>
 
  </code>
+
+
+ ### Run the app
+
+We're finally done with building the app. Restart your server and you can try out all the features:
+ - Create a new user with the google provider,
+ - Create a new user without the provider and upload a profile picture,
+  - Create a new user without the provider and without a profile picture to view the default picture,
+  - Edit and update your user profile and profile picture once logged in to the app.
+
+  ### Extra feature
+  * Add styling and design for an appealing visual and structure
+  * You can use Tailwindcss for styling and Simple form to design the devise forms( You'll have to install simple form before Devise so it'll be integrated into Devise)
+  * Add extra features as needed for your app
+  
