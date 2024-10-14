@@ -60,7 +60,7 @@ gem "omniauth-rails_csrf_protection", "~> 1.0"
       # user.skio_confirmation! 
     end
     </code>
-- Navigate to ```db/migrate/devise_create_users.rb``` file to add few extra features. We'll be adding the avatar url and user id from google, fullname and provider as well. It should look like this: 
+- Navigate to ```db/migrate/devise_create_users.rb``` file to add few extra features. We'll be adding user id from google, fullname and provider as well. It should look like this: 
 
 <code>
     # frozen_string_literal: true
@@ -73,7 +73,6 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.0]
       t.string :encrypted_password, null: false, default: ""
       t.string :full_name 
       t.string :uid
-      t.string :avatar_url
       t.string :provider
 
       ## Recoverable
@@ -118,32 +117,46 @@ end
 <code> rails db:migrate </code>
 
 
-### Configure Devise for OmniAuth
+### Configure Devise for OmniAuth Support
 - In the User model, add the following code to include OmniAuth Support:
 
   <code> 
   class User < ApplicationRecord
-    # Include default devise modules. Others available are:
-    # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-    devise :database_authenticatable, :registerable,
-          :recoverable, :rememberable, :validatable,
-          :omniauthable, omniauth_providers: [:google_oauth2]
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable,
+         :omniauthable, omniauth_providers: [:google_oauth2]
 
-    def self.from_omniauth(auth)
-      where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
-        user.email = auth.info.email
-        user.password = Devise.friendly_token[0, 20]
-        user.full_name = auth.info.full_name # assuming user model has name
-        user.avatar_url = auth.info.image # assuming user model has an image
+  has_one_attached :avatar
 
-        ## if you're using confirmable and the provider you use validate emails,
-        # uncomment the line below to skip the confirmation emails.
-        # user.skip_confirmation! 
+  def self.from_omniauth(auth)
+    where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
+      user.email = auth.info.email
+      user.password = Devise.friendly_token[0, 20]
+      user.full_name = auth.info.full_name
+
+      if auth.info.image.present?
+        user.avatar.attach(io: URI.open(auth.info.image), filename: 'avatar.jpg', content_type: 'image/jpeg')
       end
     end
   end
 
+  def avatar_url
+    if avatar.attached?
+      Rails.application.routes.url_helpers.rails_blob_path(avatar, only_path: true)
+    else
+      ActionController::Base.helpers.asset_path("default_avatar.jpg")
+    end
+  end
+end
+
+
 </code>
+
+- Add a default image called ```default_avatar.jpg``` in your ```app/assets/images folder```
+
+### Setup ActiveStorage
+- To use ActiveStorage to manage image uploads, run: ```rails active_storage:install``` and then ```rails db:migrate```
+
 
 ### Set up User controllers using devise
 - To set up user controllers, run : 
@@ -195,7 +208,16 @@ This will generate a couple of controllers, including omniauth_callbacks_control
 ### Update the Regstrations controller 
 - In the ```registrations_controller.rb``` add the following code: 
 
-<code>  def update_resource(resource, params)
+<code> 
+# frozen_string_literal: true
+
+class Users::RegistrationsController < Devise::RegistrationsController
+   before_action :configure_sign_up_params, only: [:create]
+  # before_action :configure_account_update_params, only: [:update]
+
+
+   
+  def update_resource(resource, params)
     if resource.provider == 'google_oauth2'
       params.delete('current_password')
       resource.password = params['password']
@@ -205,19 +227,9 @@ This will generate a couple of controllers, including omniauth_callbacks_control
       resource.update_with_password(params)
     end
   end
-</code>
 
-### Configure User model for Omniauth support
-- In user.rb file, add the following code: 
-<code> 
-  def self.from_omniauth(auth)
-    where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
-      user.email = auth.info.email
-      user.password = Devise.friendly_token[0, 20]
-      user.full_name = auth.info.full_name # assuming user model has name
-      user.avatar_url = auth.info.image # assuming user model has an image
-    end
-  end
+end
+
 </code>
 
 
@@ -273,7 +285,7 @@ google_oauth_client_secret: your_client_secret</code>
 
 ### Update Views
 Now, let's update views to include links to be authenticated by google, and for easy page navigation. 
- - Set up the home page to check for current user and display links based on current user authentication: 
+ - Set up the home page to check for current user, display links based on current user authentication and display user avatar default or otherwise: 
  <code> 
  <h1>Home#index</h1>
  
@@ -289,3 +301,27 @@ Now, let's update views to include links to be authenticated by google, and for 
  <% end %>
  </code>
 
+
+ - Update ```devise/registrations/edit.html.erb``` file to include an avatar upload field:
+ <code>
+   <!-- Add avatar upload field -->
+  <div class="field">
+    <%= f.label :avatar, "Upload Avatar" %><br />
+    <%= f.file_field :avatar %>
+    <% if resource.avatar.attached? %>
+      <p>Current avatar:</p>
+      <%= image_tag resource.avatar, size: "100x100" %>
+    <% end %>
+  </div>
+
+</code>
+
+ - Update ```devise/registrations/new.html.erb``` file to include an avatar upload field:
+ <code> 
+    <!-- Add avatar upload field -->
+  <div class="field">
+    <%= f.label :avatar, "Upload Avatar" %><br />
+    <%= f.file_field :avatar %>
+  </div>
+
+ </code>
