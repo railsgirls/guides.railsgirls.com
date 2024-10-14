@@ -270,7 +270,22 @@ google_oauth_client_secret: your_client_secret</code>
                   Rails.application.credentials.dig(:google_oauth_client_secret)
   </code>
 
+
 ### Update Views
 Now, let's update views to include links to be authenticated by google, and for easy page navigation. 
-- In devise/sessions/new.html.erb:  <cdoe> <%= link_to "Sign in with Google", user_google_oauth2_omniauth_authorize_path %>
-</code>
+ - Set up the home page to check for current user and display links based on current user authentication: 
+ <code> 
+ <h1>Home#index</h1>
+ 
+ <% if current_user %>
+   <%=image_tag(current_user.avatar_url)  %>
+    <h2> <%= current_user.email %> </h2>
+  
+    <%= link_to "Edit Account", edit_user_registration_path %>
+    <%= button_to "Logout", destroy_user_session_path, data: {turbo: false}, method: :delete %>
+ <% else %>
+    <%= link_to "Login", new_user_session_path %>
+    <%= link_to "Sign up", new_user_registration_path %>
+ <% end %>
+ </code>
+
