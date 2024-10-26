@@ -467,7 +467,7 @@ kbd {
 .navbar .btn-navbar[disabled] {
   color: #ffffff;
   background-color: inherit;
-  *background-color: inherit;
+  background-color: inherit;
 }
 
 .navbar .btn-navbar .icon-bar {
@@ -565,4 +565,33 @@ nav a:hover {
   border-width: 0 5px 5px 0;
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
+}
+
+#toggle-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+
+#toggle-icon {
+  filter: brightness(0) invert(1); 
+  width: 24px; 
+  height: 24px; 
+}
+
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode #toggle-icon {
+  content: url('/images/moon-icon.png'); 
+}
+#toggle-button:focus {
+  outline: none; 
 }
