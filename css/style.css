@@ -90,6 +90,75 @@ header #logo {
   float: left;
 }
 
+/* Additional styles for header navigation */
+header nav a {
+  transition: color 0.3s, transform 0.3s;
+}
+
+header nav a:hover {
+  color: #f6e58d;
+  transform: scale(1.05);
+}
+
+/* Style for mobile menu */
+.navbar .nav-collapse {
+  background: #d3360b;
+}
+
+.navbar .nav-collapse ul {
+  padding: 10px 0;
+}
+
+.navbar .nav-collapse li {
+  padding: 5px 0;
+}
+
+/* Additional footer styles */
+footer {
+  border-top: 1px solid #ddd;
+}
+
+footer a:hover {
+  color: var(--highlight);
+  text-decoration: underline;
+}
+
+/* Button styles */
+.btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--highlight);
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    padding-top: 15px;
+  }
+
+  nav {
+    margin: 0;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* Subtle hover effects on list items */
+.guides-list li:hover {
+  background-color: #f9f9f9;
+  transition: background-color 0.3s;
+}
+
 nav {
   margin: 0 0 0 250px;
 }
