@@ -13,8 +13,6 @@ The basic guides that have been merged and adapted are the [Ruby on Rails Tutori
 <h3>GitHub</h3>
 [Slides - by Kevin Lyda @]()
 
-</div>
-
 ### Important
 
 It is important that you select the instructions specific to your operating system - the commands you need to run on a Windows computer are slightly different to Mac or Linux. If you're having trouble check the Operating System switcher at the bottom of the commands.
