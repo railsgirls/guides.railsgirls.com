@@ -79,6 +79,10 @@ header {
   color: #fff;
   padding-top: 20px;
   background: #d3360b;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
 }
 
 header .container .visible-desktop {
