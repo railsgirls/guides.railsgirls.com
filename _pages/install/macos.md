@@ -67,10 +67,10 @@ source ~/.zshrc
 
 ## Install Ruby with rbenv
 
-Now that rbenv is installed, let's install Ruby! We'll be installing version 3.4.1, but it could be that during the event you'll be asked to install a different version. In that case, just replace the version number in the command.
+Now that rbenv is installed, let's install Ruby! We'll be installing version 3.4.7, but it could be that during the event you'll be asked to install a different version. In that case, just replace the version number in the command.
 
 {% highlight sh %}
-rbenv install 3.4.1
+rbenv install 3.4.7
 {% endhighlight %}
 
 ## Set default Ruby
@@ -78,7 +78,7 @@ rbenv install 3.4.1
 rbenv allows us to manage a bunch of Ruby versions, but it doesn't always quite know which version you want to use. To help it with that, we'll tell it that the version we just installed is in fact the one we want to use.
 
 {% highlight sh %}
-rbenv global 3.4.1
+rbenv global 3.4.7
 {% endhighlight %}
 
 Check that your Ruby version matches what you installed.
@@ -87,7 +87,7 @@ Check that your Ruby version matches what you installed.
 ruby --version
 {% endhighlight %}
 
-The result should be something that includes the number `3.4.1`.
+The result should be something that includes the number `3.4.7`.
 
 If the version you get starts with `2.6`, first try restarting your terminal. If it still shows the wrong version something went wrong when setting up rbenv, and your Terminal is still using an older version of Ruby that ships with your Mac. Ask your coach, if present, for help, otherwise stop here and ask for help on the day of the workshop from one of the coaches.
 
@@ -105,7 +105,7 @@ Just like we did with Ruby, let's check whether Rails also installed successfull
 rails --version
 {% endhighlight %}
 
-This should output `Rails 8.0.1`, but a higher version is also good.
+This should output `Rails 8.0.3`, but a higher version is also good.
 
 ## Test if Rails works
 
