@@ -142,5 +142,5 @@ If you do see a Rails logo in your Browser, you now have a working Ruby on Rails
 You're ready for the workshop. If you are preparing before the workshop, you don't have to continue with guides until the day of the workshop. See you then!
 
 {% coach %}
-If there's a coach present, they can help verify the installation by using the scaffold command and inputting data with the generated page with coaches to ensure everything is working. Remove the test app `myapp` to make super sure no-one is working in the wrong folder, while following the steps of the workshop.
+If there's a coach present, they can help verify the installation by using the scaffold command and inputting data with the generated page with coaches to ensure everything is working. Remove the test app `railsgirlsapp` to make super sure no-one is working in the wrong folder, while following the steps of the workshop.
 {% endcoach %}
