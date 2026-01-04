@@ -1,4 +1,36 @@
+:root {
+    --primary-color: #10b981; /* emerald-600 */
+    --primary-hover: #059669;
+    --secondary-color: #f59e0b; /* yellow-500 */
+    --background-light: #ffffff;
+    --background-dark: #111827; /* gray-900 */
+    --card-bg-light: #f9fafb; /* gray-50 */
+    --card-bg-dark: #1f2937; /* gray-800 */
+    --text-light: #000000; 
+    --text-dark: #ffffff;
+    --text-muted-light: #6b7280; /* gray-500 */
+    --text-muted-dark: #9ca3af; /* gray-400 */
+    --border-light: #e5e7eb;
+    --border-dark: #374151;
+
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html.dark {
+    --background: var(--background-dark);
+    --card-bg: var(--card-bg-dark);
+    --text-color: var(--text-dark);
+    --text-muted: var(--text-muted-dark);
+    --border-color: var(--border-dark);
+}
+
 html {
+    --background: var(--background-light);
+    --card-bg: var(--card-bg-light);
+    --text-color: var(--text-light);
+    --text-muted: var(--text-muted-light);
+    --border-color: var(--border-light);
+    scroll-behavior: smooth;html {
   --highlight: #e0330c;
   background: #f4f4f4;
 }
