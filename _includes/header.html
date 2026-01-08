@@ -1,40 +1,64 @@
-<header>
-  {% include github-corner.html %}
-  <div class="container">
-    <div class="visible-desktop">
-      <a class="span3" href="/" id="logo">
-        <img alt="Rails Girls Guides" src="/images/railsgirls-guides.png" />
-      </a>
-      <nav class="nav pull-right">
-        <a href="https://railsgirls.com/">Home</a>
-        <a href="https://railsgirls.com/events.html">Events</a>
-        <a href="https://railsgirls.tumblr.com/">Blog</a>
-        <a href="/guide">Organizers</a>
-        <a href="/">Guides</a>
-      </nav>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rails Girls Guides</title>
+    
+</head>
+<body>
+    <header>
+        {% include github-corner.html %}
+        <div class="container">
+            <div class="visible-desktop">
+                <a class="span3" href="/" id="logo">
+                    <img alt="Rails Girls Guides" src="/images/railsgirls-guides.png" />
+                </a>
+                <nav class="nav pull-right">
+                    <a href="https://railsgirls.com/">Home</a>
+                    <a href="https://railsgirls.com/events.html">Events</a>
+                    <a href="https://railsgirls.com/tumblr.com/">Blog</a>
+                    <a href="/guide">Organizers</a>
+                    <a href="/">Guides</a>
+                    
+                    <button id="toggle-button" class="btn btn-link" aria-label="Toggle Dark Mode">
+                        <img id="toggle-icon" src="/images/sun-icon.png" alt="Toggle Dark Mode" />
+                    </button>
+                </nav>
+            </div>
 
-    <!-- Phone/Tablet -->
-    <div class="visible-tablet visible-phone">
-      <div class="nav navbar nav-pills">
-        <a class="btn btn-link btn-navbar collapsed" onclick="toggleMobileMenu()">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </a>
+            <!-- Phone/Tablet -->
+            <div class="visible-tablet visible-phone">
+                <div class="nav navbar nav-pills">
+                    <a class="btn btn-link btn-navbar collapsed" onclick="toggleMobileMenu()">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
 
-        <a class="brand" href="/">Rails Girls Guides</a>
+                    <a class="brand" href="/">Rails Girls Guides</a>
 
-        <div class="nav-collapse navbar-responsive-collapse navbar-collapse" id='navbar-list' style='height: 0;'>
-          <ul class="nav">
-            <li><a href="https://railsgirls.com/">Home</a></li>
-            <li><a href="https://railsgirls.com/events.html">Events</a></li>
-            <li><a href="https://railsgirls.tumblr.com/">Blog</a></li>
-            <li><a href="/guide">Organizers</a></li>
-            <li><a href="/">Guides</a></li>
-          </ul>
+                    <div class="nav-collapse navbar-responsive-collapse navbar-collapse" id='navbar-list' style='height: 0;'>
+                        <ul class="nav">
+                            <li><a href="https://railsgirls.com/">Home</a></li>
+                            <li><a href="https://railsgirls.com/events.html">Events</a></li>
+                            <li><a href="https://railsgirls.tumblr.com/">Blog</a></li>
+                            <li><a href="/guide">Organizers</a></li>
+                            <li><a href="/">Guides</a></li>
+                            
+                            <li>
+                                <button id="toggle-button" class="btn btn-link" aria-label="Toggle Dark Mode">
+                                    <img id="toggle-icon" src="/images/sun-icon.png" alt="Toggle Dark Mode" />
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</header>
+    </header>
+
+   
+    <script src="js/dark-mode-toggle.js"></script>
+</body>
+</html>
