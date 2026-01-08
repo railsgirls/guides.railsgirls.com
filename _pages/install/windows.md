@@ -22,7 +22,7 @@ If you run into any problems during this guide, check the [Possible errors] sect
 We'll start by installing Ruby, the primary programming language used during the workshop. This can be done using the RubyInstaller described below.
 
 - Download the [RubyInstaller](https://rubyinstaller.org/downloads/) for Windows.
-  - [Direct link to Ruby 3.1.3 installer with Devkit](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.1.3-1/rubyinstaller-3.1.3-1-x86.exe) for 32-bit architecture.
+  - [Direct link to Ruby 3.4.7 installer with Devkit](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.4.7-1/rubyinstaller-devkit-3.4.7-1-x64.exe) for 64-bit architecture.
 - Run the installer. Click through the installer using all the default options.
   - Make sure the "Run 'ridk install'" checkmark is checked partway through the installer before continuing.
   - When prompted with the "MSYS2" installer, enter `1` and press Enter.
@@ -78,7 +78,7 @@ Let's check whether Rails was installed successfully. Open the Windows Command P
 rails --version
 {% endhighlight %}
 
-This should output `Rails 7.0.4.2`, but a higher version is also good.
+This should output `Rails 8.0.3`, but a higher version is also good.
 
 _If you run into any problems during this step, check the [Possible errors] section for possible solutions._
 
