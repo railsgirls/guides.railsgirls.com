@@ -41,7 +41,7 @@ After you did that, please use your Command Prompt again and type `bundle update
 
 ### The sqlite3 gem failed to install
 
-When running `rails new myapp` the `sqlite3` gem may fail to install. When this happens, first close the Windows Command Prompt app. Then re-open the Windows Command Prompt.
+When running `rails new railsgirlsapp` the `sqlite3` gem may fail to install. When this happens, first close the Windows Command Prompt app. Then re-open the Windows Command Prompt.
 
 Next, install the `sqlite3` gem separately from the `rails` gem by running the following command:
 
@@ -49,4 +49,4 @@ Next, install the `sqlite3` gem separately from the `rails` gem by running the f
 gem install sqlite3
 {% endhighlight %}
 
-If this succeeds, remove the `myapp` directory the rails installer created and return to the installation instructions, to run `rails new myapp` again.
+If this succeeds, remove the `railsgirlsapp` directory the rails installer created and return to the installation instructions, to run `rails new railsgirlsapp` again.
