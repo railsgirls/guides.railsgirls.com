@@ -39,13 +39,13 @@ bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/
 Check that everything is working by running the application generator command.
 
 {% highlight sh %}
-rails new myapp
+rails new railsgirlsapp
 {% endhighlight %}
 
 Navigate into the app directory:
 
 {% highlight sh %}
-cd myapp
+cd railsgirlsapp
 {% endhighlight %}
 
 Start the Rails server:
