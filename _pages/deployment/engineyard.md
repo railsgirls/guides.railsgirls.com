@@ -2,7 +2,7 @@
 layout: main_guide
 title: Rails Girls on Engine Yard
 description: "Deploy your app to Engine Yard by following this guide."
-permalink: engineyard
+permalink: deployment/engineyard
 ---
 
 # Put Your App Online With Engine Yard
