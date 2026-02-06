@@ -2,7 +2,7 @@
 layout: main_guide
 title: Put your app online with Heroku
 description: "Deploy your app to Heroku by following this guide."
-permalink: heroku
+permalink: deployment/heroku
 ---
 
 # Put your app online with Heroku

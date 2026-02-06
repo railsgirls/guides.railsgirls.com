@@ -20,7 +20,7 @@ If you're ever stuck during a guide, please ask your coach for help and also con
 * Guide 9: [Push Your App to GitHub](/github) {% if page.permalink == 'github' %}(Current page!){% endif %}
 * Guide 10: [Put your app online](/deployment) {% if page.permalink == 'deployment' %}(Current page!){% endif %} with one of these services:
   - [Fly.io](/deployment/fly-io) {% if page.permalink == 'deployment/fly-io' %}(Current page!){% endif %}
-  - [Heroku](/heroku) {% if page.permalink == 'heroku' %}(Current page!){% endif %}
+  - [Heroku](/deployment/heroku) {% if page.permalink == 'deployment/heroku' %}(Current page!){% endif %}
   - [DigitalOcean](/digitalocean) {% if page.permalink == 'digitalocean' %}(Current page!){% endif %}
   - [OpenShift](/openshift) {% if page.permalink == 'openshift' %}(Current page!){% endif %}
   - [Anynines](/anynines) {% if page.permalink == 'anynines' %}(Current page!){% endif %}
