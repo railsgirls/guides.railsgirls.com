@@ -119,7 +119,7 @@ git push
 You can also choose to follow the [Heroku guide][heroku-guide] from here on.
 
 [passenger-guide]: https://www.phusionpassenger.com/library/walkthroughs/deploy/ruby/
-[heroku-guide]: /heroku
+[heroku-guide]: /deployment/heroku
 
 #### Troubleshooting
 

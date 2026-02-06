@@ -2,7 +2,7 @@
 layout: main_guide
 title: Rails Girls on OpenShift
 description: "Deploy your app to OpenShift by following this guide."
-permalink: openshift
+permalink: deployment/openshift
 ---
 
 # Put Your App Online With OpenShift
