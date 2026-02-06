@@ -23,7 +23,7 @@ If you're ever stuck during a guide, please ask your coach for help and also con
   - [Heroku](/deployment/heroku) {% if page.permalink == 'deployment/heroku' %}(Current page!){% endif %}
   - [DigitalOcean](/deployment/digitalocean) {% if page.permalink == 'deployment/digitalocean' %}(Current page!){% endif %}
   - [OpenShift](/deployment/openshift) {% if page.permalink == 'deployment/openshift' %}(Current page!){% endif %}
-  - [Anynines](/anynines) {% if page.permalink == 'anynines' %}(Current page!){% endif %}
+  - [Anynines](/deployment/anynines) {% if page.permalink == 'deployment/anynines' %}(Current page!){% endif %}
   - [Engine Yard](/engineyard) {% if page.permalink == 'engineyard' %}(Current page!){% endif %}
 * Guide 11: [Style the idea pages using HTML and CSS](/design) {% if page.permalink == 'design' %}(Current page!){% endif %}
 * Guide 12: [Add comments to your app](/commenting) {% if page.permalink == 'commenting' %}(Current page!){% endif %}
