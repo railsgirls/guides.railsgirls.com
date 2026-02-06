@@ -18,7 +18,7 @@ The extension comprises of the following **new features**:
 * Resource Rating
 * Authenticated User (via devise) permission setting
 
-The basic guides that have been merged and adapted are the [Ruby on Rails Tutorial](https://www.railstutorial.org/book), the [basic RailsGirls app](/app) and the tutorials for [creating thumbnails](/thumbnails), [authenticating users](/devise), [adding design](/design), [deploying to OpenShift](/openshift) and [adding comments](/commenting).
+The basic guides that have been merged and adapted are the [Ruby on Rails Tutorial](https://www.railstutorial.org/book), the [basic RailsGirls app](/app) and the tutorials for [creating thumbnails](/thumbnails), [authenticating users](/devise), [adding design](/design), [deploying to OpenShift](/deployment/openshift) and [adding comments](/commenting).
 
 
 
@@ -60,7 +60,7 @@ Sign up for a [free GitHub account](https://github.com/signup/free) if you donâ€
 ## Additional Guides
 
 * Guide 0: [Handy cheatsheet for Ruby, Rails, console etc.](https://www.pragtob.info/rails-beginner-cheatsheet/)
-* Guide 1: [Put your app online with Heroku by Terence Lee](/deployment/heroku) / [Put your app online with OpenShift by Katie Miller](/openshift) / [Put your app online with anynines](/anynines)
+* Guide 1: [Put your app online with Heroku by Terence Lee](/deployment/heroku) / [Put your app online with OpenShift by Katie Miller](/deployment/openshift) / [Put your app online with anynines](/anynines)
 * Guide 2: [Adding profile pictures with Gravatar](/gravatar)
 * Guide 3: [Go through additional explanations for the App by Lucy Bain](https://github.com/lbain/railsgirls)
 
