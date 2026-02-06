@@ -21,7 +21,7 @@ If you're ever stuck during a guide, please ask your coach for help and also con
 * Guide 10: [Put your app online](/deployment) {% if page.permalink == 'deployment' %}(Current page!){% endif %} with one of these services:
   - [Fly.io](/deployment/fly-io) {% if page.permalink == 'deployment/fly-io' %}(Current page!){% endif %}
   - [Heroku](/deployment/heroku) {% if page.permalink == 'deployment/heroku' %}(Current page!){% endif %}
-  - [DigitalOcean](/digitalocean) {% if page.permalink == 'digitalocean' %}(Current page!){% endif %}
+  - [DigitalOcean](/deployment/digitalocean) {% if page.permalink == 'deployment/digitalocean' %}(Current page!){% endif %}
   - [OpenShift](/openshift) {% if page.permalink == 'openshift' %}(Current page!){% endif %}
   - [Anynines](/anynines) {% if page.permalink == 'anynines' %}(Current page!){% endif %}
   - [Engine Yard](/engineyard) {% if page.permalink == 'engineyard' %}(Current page!){% endif %}
