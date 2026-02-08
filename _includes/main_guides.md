@@ -20,11 +20,11 @@ If you're ever stuck during a guide, please ask your coach for help and also con
 * Guide 9: [Push Your App to GitHub](/github) {% if page.permalink == 'github' %}(Current page!){% endif %}
 * Guide 10: [Put your app online](/deployment) {% if page.permalink == 'deployment' %}(Current page!){% endif %} with one of these services:
   - [Fly.io](/deployment/fly-io) {% if page.permalink == 'deployment/fly-io' %}(Current page!){% endif %}
-  - [Heroku](/heroku) {% if page.permalink == 'heroku' %}(Current page!){% endif %}
-  - [DigitalOcean](/digitalocean) {% if page.permalink == 'digitalocean' %}(Current page!){% endif %}
-  - [OpenShift](/openshift) {% if page.permalink == 'openshift' %}(Current page!){% endif %}
-  - [Anynines](/anynines) {% if page.permalink == 'anynines' %}(Current page!){% endif %}
-  - [Engine Yard](/engineyard) {% if page.permalink == 'engineyard' %}(Current page!){% endif %}
+  - [Heroku](/deployment/heroku) {% if page.permalink == 'deployment/heroku' %}(Current page!){% endif %}
+  - [DigitalOcean](/deployment/digitalocean) {% if page.permalink == 'deployment/digitalocean' %}(Current page!){% endif %}
+  - [OpenShift](/deployment/openshift) {% if page.permalink == 'deployment/openshift' %}(Current page!){% endif %}
+  - [Anynines](/deployment/anynines) {% if page.permalink == 'deployment/anynines' %}(Current page!){% endif %}
+  - [Engine Yard](/deployment/engineyard) {% if page.permalink == 'deployment/engineyard' %}(Current page!){% endif %}
 * Guide 11: [Style the idea pages using HTML and CSS](/design) {% if page.permalink == 'design' %}(Current page!){% endif %}
 * Guide 12: [Add comments to your app](/commenting) {% if page.permalink == 'commenting' %}(Current page!){% endif %}
 * Guide 13: [Create picture thumbnails](/thumbnails) {% if page.permalink == 'thumbnails' %}(Current page!){% endif %}
