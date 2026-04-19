@@ -38,9 +38,22 @@ body {
   background: var(--bg-primary);
   color: var(--text-primary);
   text-rendering: optimizeLegibility;
-  font-size: 15px;
+  font-size: 16px; /* Slightly larger for better readability */
   line-height: 1.6;
   transition: background 0.3s ease, color 0.3s ease;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.container {
+  max-width: 1200px; /* Limit max width for ultra-wide screens */
+  margin: 0 auto;
+  padding: 0 20px;
+  width: auto !important; /* Override fixed Bootstrap widths for fluidity */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -77,9 +90,9 @@ h4 {
 }
 
 p {
-  font-size: 16px;
-  margin-bottom: 1em;
-  line-height: 1.5;
+  font-size: 1.1rem;
+  margin-bottom: 1.2em;
+  line-height: 1.6;
 }
 
 ul li {
@@ -118,7 +131,9 @@ header {
 }
 
 header .container .visible-desktop {
-  margin-right: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header #logo {
@@ -127,7 +142,10 @@ header #logo {
 }
 
 nav {
-  margin: 0 0 0 250px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 nav a,
@@ -135,9 +153,10 @@ nav a:focus {
   color: var(--header-text);
   text-decoration: none;
   font-weight: 300;
-  font-size: 20px;
-  letter-spacing: 1px;
-  margin-left: 10px;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  margin-left: 15px;
+  white-space: nowrap;
 }
 
 nav a:after {
@@ -203,7 +222,7 @@ footer p:last-child {
 }
 .guides-list p {
   margin-left: 90px;
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 
 .guide-icon {
@@ -276,6 +295,9 @@ a:hover .guide-icon,
     display: block;
     gap: 0;
   }
+  .column {
+    margin-bottom: 30px;
+  }
   .workshop-image {
     display: none;
   }
@@ -301,6 +323,74 @@ i.icon-prompt {
 
 i.icon-browser {
   background-image: url("/images/icon-browser.png");
+}
+
+@media (max-width: 980px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 1.8rem; }
+}
+
+@media (max-width: 767px) {
+  .guides-intro {
+    text-align: center;
+  }
+  
+  .guides-list li {
+    padding: 15px 0;
+  }
+
+  .guides-list h3, 
+  .guides-list p {
+    margin-left: 0;
+    text-align: center;
+    clear: both;
+  }
+
+  .guide-icon {
+    float: none;
+    margin: 0 auto 15px;
+    display: block;
+  }
+
+  .nav-collapse .nav {
+    margin: 10px 0;
+    float: none;
+    display: block;
+  }
+
+  .nav-collapse .nav li a {
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    display: block;
+    text-align: left;
+    margin: 0;
+  }
+
+  .visible-tablet, .visible-phone {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .navbar {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .nav-collapse {
+    width: 100%;
+  }
+
+  .theme-toggle {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  .guides-intro h1 { margin-bottom: 10px; }
 }
 
 .text-center {
@@ -370,6 +460,13 @@ i.icon-small-browser {
 .os-specific .picker {
   display: block;
   text-align: right;
+}
+
+@media (max-width: 767px) {
+  .os-specific .picker {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 .os-specific .picker-options .active {
   font-weight: bold;
