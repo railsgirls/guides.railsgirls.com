@@ -1,12 +1,12 @@
 function saveOs(os) {
-  Cookies.set("os", os, { expires: 1825, path: "/" }); // expires in 5 years
+  Cookies.set("os", os, { expires: 1825, path: '/' }); // expires in 5 years
 }
 
 function getPreferredTheme() {
   return window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
+    window.matchMedia('(prefers-color-scheme: dark)').matches
+    ? 'dark'
+    : 'light';
 }
 
 function getStoredTheme() {
@@ -19,7 +19,7 @@ function getStoredTheme() {
 
 function getTheme() {
   var storedTheme = getStoredTheme();
-  if (storedTheme === "light" || storedTheme === "dark") {
+  if (storedTheme === 'light' || storedTheme === 'dark') {
     return storedTheme;
   }
 
@@ -33,43 +33,43 @@ function saveTheme(theme) {
 }
 
 function updateThemeToggleLabels(theme) {
-  var nextTheme = theme === "dark" ? "light" : "dark";
-  var ariaLabel = "Switch to " + nextTheme + " theme";
-  var buttonLabel = nextTheme === "dark" ? "Dark Mode" : "Light Mode";
+  var nextTheme = theme === 'dark' ? 'light' : 'dark';
+  var ariaLabel = 'Switch to ' + nextTheme + ' theme';
+  var buttonLabel = nextTheme === 'dark' ? 'Dark Mode' : 'Light Mode';
 
-  $("[data-theme-toggle]").text(buttonLabel).attr("aria-label", ariaLabel);
+  $('[data-theme-toggle]').text(buttonLabel).attr('aria-label', ariaLabel);
 }
 
 function applyTheme(theme) {
-  document.documentElement.setAttribute("data-theme", theme);
+  document.documentElement.setAttribute('data-theme', theme);
   updateThemeToggleLabels(theme);
 }
 
 function initializeThemeToggle() {
   applyTheme(getTheme());
 
-  $("[data-theme-toggle]").click(function () {
+  $('[data-theme-toggle]').click(function() {
     var nextTheme =
-      document.documentElement.getAttribute("data-theme") === "dark"
-        ? "light"
-        : "dark";
+      document.documentElement.getAttribute('data-theme') === 'dark'
+        ? 'light'
+        : 'dark';
     saveTheme(nextTheme);
     applyTheme(nextTheme);
   });
 }
 
 function loadOs() {
-  var osFromCookie = Cookies.get("os");
+  var osFromCookie = Cookies.get('os');
   if (osFromCookie) {
-    $(".os-specific")
-      .find("." + osFromCookie + "-link")
+    $('.os-specific')
+      .find('.' + osFromCookie + '-link')
       .click();
   } else if (detectOs()) {
-    $(".os-specific")
-      .find("." + detectOs() + "-link")
+    $('.os-specific')
+      .find('.' + detectOs() + '-link')
       .click();
   } else {
-    $(".os-specific").find(".win-link").click();
+    $('.os-specific').find('.win-link').click();
   }
 }
 
@@ -77,11 +77,11 @@ function detectOs() {
   try {
     var browserVersion = navigator.appVersion;
     if (browserVersion.match(/Win/i)) {
-      return "win";
+      return 'win';
     } else if (browserVersion.match(/Macintosh/i)) {
-      return "mac";
+      return 'mac';
     } else {
-      return "nix";
+      return 'nix';
     }
   } catch (e) {
     return false;
@@ -89,21 +89,19 @@ function detectOs() {
 }
 
 function addIcons() {
-  $("code.language-sh, code.language-bat")
-    .closest(".highlight")
+  $('code.language-sh, code.language-bat')
+    .closest('.highlight')
     .before('<i class="icon-small-prompt"></i>');
-  $(
-    "code.language-erb, code.language-html, code.language-ruby, code.language-css",
-  )
-    .closest(".highlight")
+  $('code.language-erb, code.language-html, code.language-ruby, code.language-css')
+    .closest('.highlight')
     .before('<i class="icon-small-text-editor"></i>');
-  $("code.language-browser")
-    .closest(".highlight")
+  $('code.language-browser')
+    .closest('.highlight')
     .before('<i class="icon-small-browser"></i>');
 }
 
 function initializeOsSwitchers() {
-  var osInstructions = $(".os-specific");
+  var osInstructions = $('.os-specific');
   var switcher = osInstructions.prepend(
     "<span class='picker'><span class='picker-label'>Choose your Operating System:</span> " +
       "<span class='picker-options'>" +
@@ -111,12 +109,12 @@ function initializeOsSwitchers() {
       "<span><a href='#' class='os-link mac-link'>Mac</a></span>" +
       "<span><a href='#' class='os-link nix-link'>Linux</a></span>" +
       "</span>" +
-      "</span>",
+      "</span>"
   );
 
-  switcher.find(".win-link").click(function (event) {
+  switcher.find('.win-link').click(function(event) {
     event.preventDefault();
-    saveOs("win");
+    saveOs('win');
 
     $(".os-specific .os-link").removeClass("active");
     $(".os-specific .win-link").addClass("active");
