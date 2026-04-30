@@ -2,6 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <script>
+      (function() {
+        var storedTheme = null;
+
+        try {
+          storedTheme = localStorage.getItem("theme");
+        } catch (error) {}
+
+        var theme = storedTheme;
+        if (theme !== "light" && theme !== "dark") {
+          theme = window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
     {% capture page_title_capture %}
       {% if page.title == nil %}
         {{ site.site_title }}
@@ -36,6 +53,7 @@
     <link href="/css/style.css" rel="stylesheet" />
     <link href="/favicon.png" rel="shortcut icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
 
     <meta property="og:site_name" content="{{ site.site_title }}">
     <meta property="og:title" content="{{ page_title }}">

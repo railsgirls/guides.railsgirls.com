@@ -1,13 +1,73 @@
 function saveOs(os) {
-  Cookies.set("os", os, { expires: 1825, path: '/' }); // expires in 5 years
+  Cookies.set("os", os, { expires: 1825, path: "/" }); // expires in 5 years
+}
+
+function getPreferredTheme() {
+  return window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+}
+
+function getStoredTheme() {
+  try {
+    return localStorage.getItem("theme");
+  } catch (error) {
+    return null;
+  }
+}
+
+function getTheme() {
+  var storedTheme = getStoredTheme();
+  if (storedTheme === "light" || storedTheme === "dark") {
+    return storedTheme;
+  }
+
+  return getPreferredTheme();
+}
+
+function saveTheme(theme) {
+  try {
+    localStorage.setItem("theme", theme);
+  } catch (error) {}
+}
+
+function updateThemeToggleLabels(theme) {
+  var nextTheme = theme === "dark" ? "light" : "dark";
+  var ariaLabel = "Switch to " + nextTheme + " theme";
+  var buttonLabel = nextTheme === "dark" ? "Dark Mode" : "Light Mode";
+
+  $("[data-theme-toggle]").text(buttonLabel).attr("aria-label", ariaLabel);
+}
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  updateThemeToggleLabels(theme);
+}
+
+function initializeThemeToggle() {
+  applyTheme(getTheme());
+
+  $("[data-theme-toggle]").click(function () {
+    var nextTheme =
+      document.documentElement.getAttribute("data-theme") === "dark"
+        ? "light"
+        : "dark";
+    saveTheme(nextTheme);
+    applyTheme(nextTheme);
+  });
 }
 
 function loadOs() {
   var osFromCookie = Cookies.get("os");
-  if(osFromCookie) {
-    $(".os-specific").find("." + osFromCookie + "-link").click();
-  } else if(detectOs()) {
-    $(".os-specific").find("." + detectOs() + "-link").click();
+  if (osFromCookie) {
+    $(".os-specific")
+      .find("." + osFromCookie + "-link")
+      .click();
+  } else if (detectOs()) {
+    $(".os-specific")
+      .find("." + detectOs() + "-link")
+      .click();
   } else {
     $(".os-specific").find(".win-link").click();
   }
@@ -23,15 +83,23 @@ function detectOs() {
     } else {
       return "nix";
     }
-  } catch(e) {
+  } catch (e) {
     return false;
   }
 }
 
 function addIcons() {
-  $("code.language-sh, code.language-bat").closest('.highlight').before('<i class="icon-small-prompt"></i>');
-  $("code.language-erb, code.language-html, code.language-ruby, code.language-css").closest('.highlight').before('<i class="icon-small-text-editor"></i>');
-  $("code.language-browser").closest('.highlight').before('<i class="icon-small-browser"></i>');
+  $("code.language-sh, code.language-bat")
+    .closest(".highlight")
+    .before('<i class="icon-small-prompt"></i>');
+  $(
+    "code.language-erb, code.language-html, code.language-ruby, code.language-css",
+  )
+    .closest(".highlight")
+    .before('<i class="icon-small-text-editor"></i>');
+  $("code.language-browser")
+    .closest(".highlight")
+    .before('<i class="icon-small-browser"></i>');
 }
 
 function initializeOsSwitchers() {
@@ -39,14 +107,14 @@ function initializeOsSwitchers() {
   var switcher = osInstructions.prepend(
     "<span class='picker'><span class='picker-label'>Choose your Operating System:</span> " +
       "<span class='picker-options'>" +
-        "<span><a href='#' class='os-link win-link'>Windows</a></span>" +
-        "<span><a href='#' class='os-link mac-link'>Mac</a></span>" +
-        "<span><a href='#' class='os-link nix-link'>Linux</a></span>" +
+      "<span><a href='#' class='os-link win-link'>Windows</a></span>" +
+      "<span><a href='#' class='os-link mac-link'>Mac</a></span>" +
+      "<span><a href='#' class='os-link nix-link'>Linux</a></span>" +
       "</span>" +
-    "</span>"
+      "</span>",
   );
 
-  switcher.find(".win-link").click(function(event) {
+  switcher.find(".win-link").click(function (event) {
     event.preventDefault();
     saveOs("win");
 
@@ -54,7 +122,7 @@ function initializeOsSwitchers() {
     $(".os-specific .win-link").addClass("active");
     $(".os-specific").children("div").hide().filter(".win").show();
   });
-  switcher.find(".mac-link").click(function(event) {
+  switcher.find(".mac-link").click(function (event) {
     event.preventDefault();
     saveOs("mac");
 
@@ -62,7 +130,7 @@ function initializeOsSwitchers() {
     $(".os-specific .mac-link").addClass("active");
     $(".os-specific").children("div").hide().filter(".mac").show();
   });
-  switcher.find(".nix-link").click(function(event) {
+  switcher.find(".nix-link").click(function (event) {
     event.preventDefault();
     saveOs("nix");
 
@@ -72,7 +140,8 @@ function initializeOsSwitchers() {
   });
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
+  initializeThemeToggle();
   addIcons();
   initializeOsSwitchers();
   loadOs();
@@ -91,7 +160,7 @@ $(document).ready(function() {
         osLabel = "Linux";
         break;
       default:
-        osLabel = "Error: Unknown Operating System"
+        osLabel = "Error: Unknown Operating System";
     }
     osLabelElement.text(osLabel);
   }
@@ -105,7 +174,7 @@ function topFunction() {
   });
 }
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   if (window.scrollY > 100) {
     $(".go-to-top-arrow").addClass("active");
   } else {

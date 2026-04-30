@@ -1,3 +1,17 @@
+.highlight {
+  color: var(--code-text);
+  background: var(--code-background);
+  border: 1px solid var(--code-border);
+  border-radius: 8px;
+}
+
+.highlight pre {
+  margin: 0;
+  padding: 14px 16px;
+  color: inherit;
+  background: transparent;
+}
+
 .highlight .hll { background-color: #ffffcc }
 /*.highlight  { background: #f0f0f0; }*/
 .highlight .c { color: #60a0b0; font-style: italic } /* Comment */
@@ -60,3 +74,52 @@
 .highlight .vg { color: #bb60d5 } /* Name.Variable.Global */
 .highlight .vi { color: #bb60d5 } /* Name.Variable.Instance */
 .highlight .il { color: #40a070 } /* Literal.Number.Integer.Long */
+
+html[data-theme="dark"] .highlight .hll { background-color: #3b3419 }
+html[data-theme="dark"] .highlight .c,
+html[data-theme="dark"] .highlight .cm,
+html[data-theme="dark"] .highlight .c1,
+html[data-theme="dark"] .highlight .cs { color: #8bb7c8 }
+html[data-theme="dark"] .highlight .k,
+html[data-theme="dark"] .highlight .kc,
+html[data-theme="dark"] .highlight .kd,
+html[data-theme="dark"] .highlight .kn,
+html[data-theme="dark"] .highlight .kr,
+html[data-theme="dark"] .highlight .ow,
+html[data-theme="dark"] .highlight .kp { color: #f2c879 }
+html[data-theme="dark"] .highlight .o,
+html[data-theme="dark"] .highlight .w,
+html[data-theme="dark"] .highlight .go { color: #a2a2a2 }
+html[data-theme="dark"] .highlight .m,
+html[data-theme="dark"] .highlight .mf,
+html[data-theme="dark"] .highlight .mh,
+html[data-theme="dark"] .highlight .mi,
+html[data-theme="dark"] .highlight .mo,
+html[data-theme="dark"] .highlight .il { color: #8cdca8 }
+html[data-theme="dark"] .highlight .s,
+html[data-theme="dark"] .highlight .sb,
+html[data-theme="dark"] .highlight .sc,
+html[data-theme="dark"] .highlight .sd,
+html[data-theme="dark"] .highlight .s1,
+html[data-theme="dark"] .highlight .s2,
+html[data-theme="dark"] .highlight .se,
+html[data-theme="dark"] .highlight .sh,
+html[data-theme="dark"] .highlight .si,
+html[data-theme="dark"] .highlight .sx,
+html[data-theme="dark"] .highlight .sr,
+html[data-theme="dark"] .highlight .ss { color: #9ecbff }
+html[data-theme="dark"] .highlight .na,
+html[data-theme="dark"] .highlight .nc,
+html[data-theme="dark"] .highlight .nn,
+html[data-theme="dark"] .highlight .nt,
+html[data-theme="dark"] .highlight .nf { color: #7fd4ff }
+html[data-theme="dark"] .highlight .nb,
+html[data-theme="dark"] .highlight .bp { color: #c9df86 }
+html[data-theme="dark"] .highlight .no,
+html[data-theme="dark"] .highlight .nv,
+html[data-theme="dark"] .highlight .vc,
+html[data-theme="dark"] .highlight .vg,
+html[data-theme="dark"] .highlight .vi { color: #d9a4ff }
+html[data-theme="dark"] .highlight .gp,
+html[data-theme="dark"] .highlight .ni,
+html[data-theme="dark"] .highlight .sx { color: #ffb07e }
