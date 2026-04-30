@@ -49,10 +49,9 @@ function initializeThemeToggle() {
   applyTheme(getTheme());
 
   $('[data-theme-toggle]').click(function() {
-    var nextTheme =
-      document.documentElement.getAttribute('data-theme') === 'dark'
-        ? 'light'
-        : 'dark';
+    var nextTheme = document.documentElement.getAttribute('data-theme') === 'dark' ?
+      'light' :
+      'dark';
     saveTheme(nextTheme);
     applyTheme(nextTheme);
   });
