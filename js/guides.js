@@ -72,10 +72,26 @@ function initializeOsSwitchers() {
   });
 }
 
+function initializeThemeToggle() {
+  const toggleBtn = $('#theme-toggle');
+  const toggleBtnMobile = $('#theme-toggle-mobile');
+
+  function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  }
+
+  toggleBtn.on('click', toggleTheme);
+  toggleBtnMobile.on('click', toggleTheme);
+}
+
 $(document).ready(function() {
   addIcons();
   initializeOsSwitchers();
   loadOs();
+  initializeThemeToggle();
 
   var osLabelElement = $(".js-detected-os-label");
   if (osLabelElement.length > 0) {
