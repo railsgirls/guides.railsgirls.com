@@ -69,7 +69,7 @@ To contribute a guide, view the instructions at https://guides.railsgirls.com/co
 
 ## X
 
-For updates and more, follow [@railsgirls](https://twitter.com/railsgirls) on X
+For updates and more, follow [@railsgirls](https://twitter.com/railsgirls) on X/Twiter
 
 ## Website & Blog
 
