@@ -33,6 +33,7 @@ to take things to the next level:
 
 * [Rails for Zombies](https://www.pluralsight.com/courses/code-school-rails-for-zombies) - A Rails Screencast which you can try for free. Pluralsight also provides a series of paid [Ruby and Rails](https://www.pluralsight.com/paths/ruby-language-fundamentals) courses which are awesome. You should really try them!
 * [Codecademy](https://www.codecademy.com/) - The world isn't just created with Ruby and Rails. There are also plenty of other languages like HTML/CSS, JavaScript, Python and so on. Try them out!
+* [Coddy](https://coddy.tech/landing/ruby) - Interactive Ruby lessons you run in the browser, free with a daily limit. It also teaches HTML/CSS, JavaScript, Python and more.
 
 ### Books
 
