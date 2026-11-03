@@ -27,6 +27,8 @@ Remote-pairing is so great because people who can benefit from people who would 
     - Ideally the app you're using to call can also share your screen so the other person can see your screen.
     - It's even better if the other person can also control your screen from their end. If this is not possible in the call app itself, you can use the Visual Studio Code Text Editor plugin Live Share to share your code in your editor. Learn about how to [install the Live Share extension](https://learn.microsoft.com/en-us/visualstudio/liveshare/use/install-live-share-visual-studio-code) and how to [share your project with Live Share](https://learn.microsoft.com/en-us/visualstudio/liveshare/use/share-project-join-session-visual-studio-code).
 
+Before a pairing call, two people can use the optional [Hybrid-room pointing rehearsal record](https://light-tracer.com/wp-content/uploads/2026/10/hybrid-pointing-rehearsal-record-open-v1.pdf) (Light Tracer, CC BY 4.0) to check whether an indicated code detail reaches the shared view, then note one change and a recheck. For remote-only pairing, leave the room column unused. The recorded-view column is optional and applies only to an agreed rehearsal recording. Unused checks stay Not tested.
+
 ## Last thoughts
 
 The Ruby community is such a great example of people helping others.  One has only to look at the folks nominated every year as [Ruby Heros](http://rubyheroes.com/) to see  this in action.
